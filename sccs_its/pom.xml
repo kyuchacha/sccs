@@ -14,31 +14,21 @@
 		<spring.maven.artifact.version>4.3.16.RELEASE</spring.maven.artifact.version>
 		<egovframework.rte.version>3.8.0</egovframework.rte.version>
 	</properties>
-
+	
 	<repositories>
 		<repository>
-			<id>mvn2</id>
-			<url>http://repo1.maven.org/maven2/</url>
+			<id>mvn2s</id>
+			<url>https://repo1.maven.org/maven2/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
 			<snapshots>
 				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>egovframe2</id>
-			<url>http://maven.egovframe.kr:8080/maven/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
 			</snapshots>
 		</repository>
 		<repository>
 			<id>egovframe</id>
-			<url>http://www.egovframe.go.kr/maven/</url>
+			<url>https://www.egovframe.go.kr/maven/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -170,6 +160,15 @@
 			<version>5.1.31</version>
 		</dependency>
 
+
+		<dependency>
+			<groupId>cleopatra</groupId>
+			<artifactId>cleopatra</artifactId>
+			<version>1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/cleopatra_server.jar</systemPath>
+		</dependency>
+		
 		<dependency>
 			<groupId>ojdbc</groupId>
 			<artifactId>ojdbc</artifactId>
@@ -228,14 +227,6 @@
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-template</artifactId>
 			<version>3.0.5</version>
-		</dependency>
-
-		<dependency>
-			<groupId>ojdbc</groupId>
-			<artifactId>ojdbc</artifactId>
-			<version>6</version>
-			<scope>system</scope>
-			<systemPath>C:/installed/eGov/eGovFrameDev-3.5.1-64bit/workspace/koem_pms/src/main/webapp/WEB-INF/lib/ojdbc-6.jar</systemPath>
 		</dependency>
 
 		<dependency>
