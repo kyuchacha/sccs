@@ -47,4 +47,11 @@
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 		<nature>kr.co.tomatosystem.exbuilder.server.dynamicweb.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>.exbuilder-fragments/sccs-ui</name>
+			<type>2</type>
+			<locationURI>EBFRAG_BUILD_OF_sccs-ui</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
