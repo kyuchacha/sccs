@@ -16,57 +16,6 @@
 	</properties>
 	
 	
-	<build>
- 		<finalName>sccs_its</finalName>
- 		<plugins>
- 		<plugin>
- 		<artifactId>maven-resources-plugin</artifactId>
- 		<executions>
-			<!-- Web Project의 exbuilder6.json 파일을 WEB-INF/classes 하위에 파일복사 -->
- 			<execution>
- 				<id>copy-exbuilder.json</id>
- 				<!-- here the phase you need -->
- 				<phase>validate</phase>
- 				<goals>
- 					<goal>copy-resources</goal>
- 				</goals>
- 					<configuration>
- 						<outputDirectory>${basedir}/target/{Web Project Deploy Name}/WEB-INF/classes</outputDirectory>
- 						<resources>
- 							<resource>
- 								<directory>exbuilder/config</directory>
- 								<filtering>true</filtering>
- 							</resource>
- 						</resources>
- 					</configuration>
- 			</execution>
-		<!-- 각 eXbuilder6 프로젝트의 env.json 파일을 웹 프로젝트에 포함시키도록 파일 복사 -->
- 			<execution>
-	 			<id>copy-env.json</id>
- 				<!-- here the phase you need -->
- 				<phase>validate</phase>
- 				<goals>
- 					<goal>copy-resources</goal>
- 				</goals>
- 				<configuration>
- 					<outputDirectory>${basedir}/target/{Web Project DeployName}/ui</outputDirectory>
- 					<resources>
- 						<resource>
-	 						<directory>.exbuilder-fragments/{eXbuilder6 Project Name}</directory>
-	 						<includes>
-	 							<include>env.json</include>
-	 						</includes>
-	 						<filtering>true</filtering>
- 						</resource>
- 					</resources>
- 				</configuration>
- 				</execution>
- 				</executions>
- 			</plugin>
- 		</plugins>
-	<!-- eXbiulder6 build를 위해 추가 -->
- 	</build>
- 
  
 	<repositories>
 		<repository>
@@ -532,7 +481,54 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.9.1</version>
 			</plugin>
-		</plugins>
+		
+		
+ 		<plugin>
+ 		<artifactId>maven-resources-plugin</artifactId>
+ 		<executions>
+			<!-- Web Project의 exbuilder6.json 파일을 WEB-INF/classes 하위에 파일복사 -->
+ 			<execution>
+ 				<id>copy-exbuilder.json</id>
+ 				<!-- here the phase you need -->
+ 				<phase>validate</phase>
+ 				<goals>
+ 					<goal>copy-resources</goal>
+ 				</goals>
+ 					<configuration>
+ 						<outputDirectory>${basedir}/target/{Web Project Deploy Name}/WEB-INF/classes</outputDirectory>
+ 						<resources>
+ 							<resource>
+ 								<directory>exbuilder/config</directory>
+ 								<filtering>true</filtering>
+ 							</resource>
+ 						</resources>
+ 					</configuration>
+ 			</execution>
+		<!-- 각 eXbuilder6 프로젝트의 env.json 파일을 웹 프로젝트에 포함시키도록 파일 복사 -->
+ 			<execution>
+	 			<id>copy-env.json</id>
+ 				<!-- here the phase you need -->
+ 				<phase>validate</phase>
+ 				<goals>
+ 					<goal>copy-resources</goal>
+ 				</goals>
+ 				<configuration>
+ 					<outputDirectory>${basedir}/target/{Web Project DeployName}/ui</outputDirectory>
+ 					<resources>
+ 						<resource>
+	 						<directory>.exbuilder-fragments/{eXbuilder6 Project Name}</directory>
+	 						<includes>
+	 							<include>env.json</include>
+	 						</includes>
+	 						<filtering>true</filtering>
+ 						</resource>
+ 					</resources>
+ 				</configuration>
+ 				</execution>
+ 				</executions>
+ 			</plugin>
+ 		</plugins>
+	<!-- eXbiulder6 build를 위해 추가 -->
 	</build>
 	<reporting>
 		<outputDirectory>${basedir}/target/site</outputDirectory>
