@@ -495,7 +495,7 @@
  					<goal>copy-resources</goal>
  				</goals>
  					<configuration>
- 						<outputDirectory>${basedir}/target/{Web Project Deploy Name}/WEB-INF/classes</outputDirectory>
+ 						<outputDirectory>${basedir}/target/sccs_its/WEB-INF/classes</outputDirectory>
  						<resources>
  							<resource>
  								<directory>exbuilder/config</directory>
@@ -513,10 +513,10 @@
  					<goal>copy-resources</goal>
  				</goals>
  				<configuration>
- 					<outputDirectory>${basedir}/target/{Web Project DeployName}/ui</outputDirectory>
+ 					<outputDirectory>${basedir}/target/sccs_its/ui</outputDirectory>
  					<resources>
  						<resource>
-	 						<directory>.exbuilder-fragments/{eXbuilder6 Project Name}</directory>
+	 						<directory>.exbuilder-fragments/sccs_ui</directory>
 	 						<includes>
 	 							<include>env.json</include>
 	 						</includes>
