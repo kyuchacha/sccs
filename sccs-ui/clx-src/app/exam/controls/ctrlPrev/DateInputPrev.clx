@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d8facbd9" version="1.0.3164">
+  <head std:sid="head-ce92ef5d">
+    <screen std:sid="screen-9af5b6fe" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-1bd35ad8" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-9276f21b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-2515f964" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-28aca45a">
+      <cl:datamap std:sid="d-map-8d4e62cb" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-15b0ae0d" name="column1" defaultvalue="202102"/>
+          <cl:datacolumn std:sid="d-column-77924fde" name="column2" defaultvalue="20210201"/>
+          <cl:datacolumn std:sid="d-column-3351a760" name="column3" defaultvalue="20210228"/>
+          <cl:datacolumn std:sid="d-column-c367a416" name="column4" defaultvalue="20210201"/>
+          <cl:datacolumn std:sid="d-column-9345bcb0" name="column5" defaultvalue="20210301"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="데이트인풋 관련 속성"/>
+  </head>
+  <body std:sid="body-18e3e352">
+    <cl:group std:sid="group-2a458441" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-ba0a5856" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-25dfb842" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-bfbd2ddc" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-c00858dc" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-a5482fa8" id="grpData">
+      <cl:verticaldata std:sid="v-data-3afb09d0" width="400px" height="644px"/>
+      <cl:output std:sid="output-8710d70e" value="데이트인풋(DateInput)은 날짜를 입력하는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-8cc780bd" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-68e5dd5e" row="1" col="0"/>
+        <cl:output std:sid="output-37f32a80" id="opt1" value="[calendarType = yearmonth]&#xD;&#xA;[format = YYYYMM]&#xD;&#xA;[mask = YYYY-MM]&#xD;&#xA;1. 달력 버튼을 클릭한다.&#xD;&#xA;2. 연월 달력이 펼쳐진다.&#xD;&#xA;3. 날짜 포맷이 YYYY-MM 포맷으로 표시된다.">
+          <cl:formdata std:sid="f-data-bcbc6d7d" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a1c37800" id="opt3" value="[hideButton = true]&#xD;&#xA;1. 달력 버튼이 보이지 않는다.">
+          <cl:formdata std:sid="f-data-1a528e5d" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-279d5733" id="opt4" value="[mask = YYYY/MM/DD]&#xD;&#xA;1. 날짜가 YYYY/MM/DD 포맷으로 표시된다.">
+          <cl:formdata std:sid="f-data-f98b149c" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-25ed18ab" id="opt5" value="[readOnly = true]&#xD;&#xA;1. 달력 버튼를 클릭한다.&#xD;&#xA;2. 캘린더가 펼쳐지지 않는다.">
+          <cl:formdata std:sid="f-data-e98eea3c" row="3" col="0"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-207980b5" id="dip4" hidebutton="true">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+          <cl:formdata std:sid="f-data-f91396c3" halign="LEFT" valign="CENTER" width="150" row="1" col="1"/>
+        </cl:dateinput>
+        <cl:dateinput std:sid="d-input-b361330c" id="dip6" readonly="true">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+          <cl:formdata std:sid="f-data-712fd9c6" halign="LEFT" valign="CENTER" width="150" row="3" col="1"/>
+        </cl:dateinput>
+        <cl:group std:sid="group-35f49dd6" id="grp3">
+          <cl:formdata std:sid="f-data-71a0c913" row="0" col="1"/>
+          <cl:dateinput std:sid="d-input-9283f021" id="dip1" calendartype="yearmonth" mask="YYYY-MM" format="YYYYMM">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+            <cl:formdata std:sid="f-data-553bfa73" halign="LEFT" valign="CENTER" width="150" row="0" col="0"/>
+          </cl:dateinput>
+          <cl:output std:sid="output-8fd097e7" id="opt9" style="color:#757272;" value="mask, format 속성을 '년월' 포맷으로 지정하고, calendarType을 yearmonth를 지정한다.">
+            <cl:formdata std:sid="f-data-d510bd6f" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-0c83b84b" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-4d4d47f9" id="grp5">
+          <cl:formdata std:sid="f-data-e0b11133" row="2" col="1"/>
+          <cl:dateinput std:sid="d-input-1d91c754" id="dip5" mask="YYYY/MM/DD">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="column4"/>
+            <cl:formdata std:sid="f-data-d2b6daee" halign="LEFT" valign="CENTER" width="150" row="0" col="0"/>
+          </cl:dateinput>
+          <cl:output std:sid="output-ec4ad75f" id="opt6" style="color:#757272;" value="날짜를 입력 및 표시하는 포맷변경시 mask 속성을 통해 지정한다.">
+            <cl:formdata std:sid="f-data-0b9f2b8e" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-c915a38d" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-fae4f66e" value="[spinButton = true]&#xD;&#xA;[spinLoop = true]&#xD;&#xA;1. 날짜에 월을 클릭한다.&#xD;&#xA;2. 우측에 화살표로 월을 변경한다.&#xD;&#xA;3. 1보다 작거나 12보다 커지면 숫자가 순환한다.">
+          <cl:formdata std:sid="f-data-aec08b49" row="4" col="0" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-f66ddae1" value="[preventeInput = true]&#xD;&#xA;1. 날짜를 클릭한다.&#xD;&#xA;2. 숫자를 입력한다.&#xD;&#xA;3. 입력되지 않는다.">
+          <cl:formdata std:sid="f-data-faab9705" row="7" col="0"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-8905b39f" id="dti2" preventinput="true">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+          <cl:formdata std:sid="f-data-6e218dc1" halign="LEFT" valign="CENTER" width="150" row="7" col="1"/>
+        </cl:dateinput>
+        <cl:dateinput std:sid="d-input-6e6166d3" id="dti3" mask="YYYY/MM/DD" enabledinputmask="false">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+          <cl:formdata std:sid="f-data-9cccb40e" halign="LEFT" valign="CENTER" width="150" row="8" col="1"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-a24112fd" value="[enabledInputMask = false]&#xD;&#xA;1. 날짜를 클릭한다.&#xD;&#xA;2. 한글이나 영어를 입력한다.&#xD;&#xA;3. 입력이 된다.">
+          <cl:formdata std:sid="f-data-6523a063" row="8" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-90e694b5" value="[showClearButton = true]&#xD;&#xA;[ButtonFoucsable = true (tab키로 버튼이동)]&#xD;&#xA;1. 달력 버튼 왼쪽에 x 표시가 보인다.&#xD;&#xA;2. x 표시를 클릭한다.&#xD;&#xA;3. 날짜가 초기화된다.">
+          <cl:formdata std:sid="f-data-398af48b" row="9" col="0"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-4ab72778" id="dti4" value="2021-07-14" showclearbutton="true" buttonfocusable="true">
+          <cl:formdata std:sid="f-data-31b19f7b" halign="LEFT" valign="CENTER" width="150" row="9" col="1"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-dcaa2a83" value="[buttonPosition = left]&#xD;&#xA;1. 달력 버튼이 왼쪽에 보인다.">
+          <cl:formdata std:sid="f-data-f1ac6f58" row="5" col="0"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-8f75ea74" id="dip7" buttonposition="left">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+          <cl:formdata std:sid="f-data-310394f4" halign="LEFT" valign="CENTER" width="150" row="5" col="1"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-40fd4146" value="[popupPosition = top]&#xD;&#xA;1. 달력 버튼을 클릭한다.&#xD;&#xA;2. 달력 팝업이 위 쪽으로 펼쳐진다.">
+          <cl:formdata std:sid="f-data-ae2632fc" row="6" col="0"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-075a5ee5" id="dip8" popupposition="top">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+          <cl:formdata std:sid="f-data-07723762" halign="LEFT" valign="CENTER" width="150" row="6" col="1"/>
+        </cl:dateinput>
+        <cl:group std:sid="group-aa625662" id="grp6">
+          <cl:formdata std:sid="f-data-0cc616dc" row="4" col="1" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-01f77250" style="color:#757272;" value="spinLoop = true 인 경우 날짜가 순환한다.">
+            <cl:formdata std:sid="f-data-835a2eb1" row="1" col="0"/>
+          </cl:output>
+          <cl:dateinput std:sid="d-input-54c638fd" id="dti1" spinbutton="true">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="column3"/>
+            <cl:formdata std:sid="f-data-f49ba285" halign="LEFT" valign="CENTER" width="150" row="0" col="0"/>
+          </cl:dateinput>
+          <cl:formlayout std:sid="f-layout-55245e50" hspace="5px" vspace="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="75" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="55" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="60" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="60" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-9cc5f315" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-b891b404"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

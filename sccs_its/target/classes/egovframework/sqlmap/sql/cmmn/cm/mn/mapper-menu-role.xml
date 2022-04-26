@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="menuMappingRole">
+
+	<select id="selectMenuMappingRoleList" parameterType="hashMap" resultType="hashMap">
+        SELECT A.ROLE_ID
+             , A.ROLE_NM
+             , CASE WHEN B.ROLE_ID IS NULL THEN 'N'
+               ELSE 'Y'
+               END AS ROLE_YN
+        FROM TBCMUA000 A,
+             ( SELECT B.ROLE_ID AS ROLE_ID
+               FROM  TBCMMN000 A,
+                     TBCMMN001 B
+               WHERE A.MENU_ID = B.MENU_ID
+                 AND A.MENU_ID = #{MENU_ID}
+               ) B
+        WHERE A.ROLE_ID = B.ROLE_ID(+)
+	</select>
+	
+	<insert id="createMenuMappingRole" parameterType="hashMap">
+        INSERT INTO TBCMMN001 (
+            MENU_ID
+          , ROLE_ID
+          , REG_DT
+          , REG_ID 
+        ) VALUES (
+            #{MENU_ID}
+          , #{ROLE_ID}
+          , TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS')
+          , #{REG_ID}
+        )
+	</insert>
+	
+	<insert id="deleteMenuMappingRole" parameterType="hashMap">
+        DELETE FROM TBCMMN001 WHERE MENU_ID = #{MENU_ID}
+	</insert>
+
+</mapper>

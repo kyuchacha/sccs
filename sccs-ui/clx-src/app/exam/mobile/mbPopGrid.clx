@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f78a5f65" version="1.0.3125">
+  <head std:sid="head-5569595b">
+    <screen std:sid="screen-b5517aef" id="mobile" name="mobile" width="350px" height="525px" customHeight="600" customWidth="800" active="true"/>
+    <cl:model std:sid="model-15007d1b">
+      <cl:dataset std:sid="d-set-238c7317" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="아이디" std:sid="d-column-327711ed" name="id"/>
+          <cl:datacolumn comment="이름" std:sid="d-column-306da6e4" name="first_name"/>
+          <cl:datacolumn comment="성" std:sid="d-column-1b6488a1" name="last_name"/>
+          <cl:datacolumn comment="이메일" std:sid="d-column-3fe14193" name="email"/>
+          <cl:datacolumn comment="성별" std:sid="d-column-76137dc8" name="gender"/>
+          <cl:datacolumn comment="IP 주소" std:sid="d-column-37ffa2dc" name="ip_address"/>
+          <cl:datacolumn comment="등록일자" std:sid="d-column-81d8bbd4" name="join_date"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-a9f2475a" id="subList" action="app/exam/data/temp/default-data.json">
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="모바일 팝업 그리드"/>
+  </head>
+  <body std:sid="body-48088e02" class="content-card">
+    <cl:listener std:sid="listener-58989a6f" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-e4cba9cb" name="screen-change" handler="onBodyScreenChange"/>
+    <cl:output std:sid="output-5250ebca" class="h3" value="모바일 그리드">
+      <cl:verticaldata std:sid="v-data-201d35a6" width="288px" height="43px" autosize="none"/>
+    </cl:output>
+    <cl:output std:sid="output-38b86dab" value="convertGridToForm API 를 통해 모바일 형태의 그리드를 생성 할 수 있습니다.&#xD;&#xA;아래의 모바일 형태 그리드를 확인 하십시오.">
+      <cl:verticaldata std:sid="v-data-1c3e0215" width="288px" height="71px" autosize="height"/>
+    </cl:output>
+    <cl:grid std:sid="grid-ffee6253" id="grdList" fieldLabel="모바일 그리드" datasetid="dsList" resizablecolumns="all" columnMovable="true">
+      <cl:verticaldata std:sid="v-data-48bcbf88" width="300px" height="219px" autosize="none"/>
+      <cl:gridcolumn std:sid="g-column-a88792f9" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-89c09bc3"/>
+      <cl:gridcolumn std:sid="g-column-728b2451"/>
+      <cl:gridcolumn std:sid="g-column-e7b1a32d"/>
+      <cl:gridcolumn std:sid="g-column-77f192a9"/>
+      <cl:gridcolumn std:sid="g-column-eb2115e6"/>
+      <cl:gridcolumn std:sid="g-column-c03b0d6e"/>
+      <cl:gridheader std:sid="gh-band-6a0f1330">
+        <cl:gridrow std:sid="g-row-061ab8f9" height="35px"/>
+        <cl:gridcell std:sid="gh-cell-2cf1ae5f" rowindex="0" colindex="0" sortable="false" filterable="false" text="순번"/>
+        <cl:gridcell std:sid="gh-cell-5c50e015" rowindex="0" colindex="1" targetcolumnname="first_name" sortable="false" filterable="false" text="이름"/>
+        <cl:gridcell std:sid="gh-cell-6cd045c3" rowindex="0" colindex="2" targetcolumnname="last_name" sortable="false" filterable="false" text="성"/>
+        <cl:gridcell std:sid="gh-cell-f4d49b4d" rowindex="0" colindex="3" targetcolumnname="email" sortable="false" filterable="false" text="이메일"/>
+        <cl:gridcell std:sid="gh-cell-3ceb62c4" rowindex="0" colindex="4" targetcolumnname="gender" sortable="false" filterable="false" text="성별"/>
+        <cl:gridcell std:sid="gh-cell-f18e4e5a" rowindex="0" colindex="5" targetcolumnname="ip_address" sortable="false" filterable="false" text="IP 주소"/>
+        <cl:gridcell std:sid="gh-cell-23449f70" rowindex="0" colindex="6" targetcolumnname="join_date" sortable="false" filterable="false" text="등록일자"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-ed37966b">
+        <cl:gridrow std:sid="g-row-fb1f5b02" height="35px"/>
+        <cl:gridcell std:sid="gd-cell-c45ea81e" rowindex="0" colindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-69843638" rowindex="0" colindex="1" columnname="first_name"/>
+        <cl:gridcell std:sid="gd-cell-08afba60" rowindex="0" colindex="2" columnname="last_name"/>
+        <cl:gridcell std:sid="gd-cell-be96316c" rowindex="0" colindex="3" columnname="email"/>
+        <cl:gridcell std:sid="gd-cell-0fda8393" rowindex="0" colindex="4" columnname="gender"/>
+        <cl:gridcell std:sid="gd-cell-7a1529c9" rowindex="0" colindex="5" columnname="ip_address"/>
+        <cl:gridcell std:sid="gd-cell-1d9210a4" rowindex="0" colindex="6" columnname="join_date"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:verticallayout std:sid="v-layout-bf102105" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

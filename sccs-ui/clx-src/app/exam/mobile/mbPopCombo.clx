@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3053a592" version="1.0.3125">
+  <head std:sid="head-da4cb456">
+    <screen std:sid="screen-e3e88327" id="mobile" name="mobile" width="350px" height="525px" active="true"/>
+    <cl:model std:sid="model-2c90ad9e"/>
+    <cl:appspec title="모바일 팝업 콤보박스"/>
+  </head>
+  <body std:sid="body-cc29852a" class="content-card">
+    <cl:listener std:sid="listener-d43678bc" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-adc548f9" name="init" handler="onBodyInit"/>
+    <cl:output std:sid="output-5250ebca" class="h3" value="모바일 콤보박스">
+      <cl:verticaldata std:sid="v-data-3af43e80" width="288px" height="43px" autosize="height"/>
+    </cl:output>
+    <cl:output std:sid="output-38b86dab" value="별도의 스크립팅 없이 사용자 속성을 통해 기능을 확인 할 수 있습니다.&#xD;&#xA;* 사용자 속성 : combo-pop&#xD;&#xA;&#xD;&#xA;아래 콤보박스를 클릭하여 모바일 콤보박스 팝업을 확인하십시오.">
+      <cl:verticaldata std:sid="v-data-3770c68a" width="288px" height="152px" autosize="height"/>
+    </cl:output>
+    <cl:combobox std:sid="c-box-8822a5f5" id="cmb7" fieldLabel="모바일 콤보박스">
+      <cl:attribute name="combo-pop" value="true"/>
+      <cl:verticaldata std:sid="v-data-922f151b" width="288px" height="30px" autosize="none"/>
+      <cl:item std:sid="t-item-6eea14ff" label="가지" value="value1"/>
+      <cl:item std:sid="t-item-ca6b086b" label="냄비" value="value2"/>
+      <cl:item std:sid="t-item-c42d4a47" label="다리미" value="value3"/>
+      <cl:item std:sid="t-item-1bbf0427" label="리어카" value="value4"/>
+    </cl:combobox>
+    <cl:verticallayout std:sid="v-layout-60462776" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

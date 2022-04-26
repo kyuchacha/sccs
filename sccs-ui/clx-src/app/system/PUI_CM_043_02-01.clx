@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d61ba4cb" version="1.0.3556">
+  <head std:sid="head-8aec05fc">
+    <screen std:sid="screen-0f67fba8" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-e1665e18" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-daf9e657" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-a751d840" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-5d7b31f2">
+      <cl:dataset std:sid="d-set-abee5c4c" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="도움말명" std:sid="d-column-accf9b82" name="column1"/>
+          <cl:datacolumn comment="도움말 설명" std:sid="d-column-cd929279" name="column2"/>
+          <cl:datacolumn comment="메뉴 전체경로" std:sid="d-column-7073d205" name="column3"/>
+          <cl:datacolumn comment="등록일자" std:sid="d-column-d309b459" name="column4"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[센서 등록 절차]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[해당 도움말은 센서 등록 시 절차 설명]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[통합시설관리 > 센서관리 > 센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[20220301]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="&lt;퍼블리싱 코멘트>&#xD;&#xA;" title="도움말 관리"/>
+  </head>
+  <body std:sid="body-3ab0e8af">
+    <cl:group std:sid="group-797bfd48" id="grpHeader" class="header-box">
+      <cl:verticaldata std:sid="v-data-9e82dd5c" width="760px" height="67px" autosize="height"/>
+      <cl:udc std:sid="ud-control-26z2neey" id="appheader" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-f489482c" width="1320px" height="30px" autosize="none"/>
+        <cl:property name="grpDataIds" value="grpData" type="string"/>
+        <cl:property name="ctrl" value="frfMain" type="control"/>
+        <cl:property name="focusColumnName" value="PGM_ID" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-463b34e9" id="grpSearch" class="search-box">
+        <cl:attribute name="mobile-column-count" value="2"/>
+        <cl:attribute name="tablet-column-count" value="2"/>
+        <cl:verticaldata std:sid="v-data-5cde8614" width="1320px" height="37px" autosize="height"/>
+        <cl:output std:sid="output-133195b8" value="검색">
+          <cl:formdata std:sid="f-data-b5eb4adc" row="0" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-efedffc5">
+          <cl:formdata std:sid="f-data-45524ed8" row="0" col="1"/>
+        </cl:combobox>
+        <cl:inputbox std:sid="i-box-9bf557c5">
+          <cl:formdata std:sid="f-data-6db82375" row="0" col="2"/>
+        </cl:inputbox>
+        <cl:group std:sid="group-db847603">
+          <cl:formdata std:sid="f-data-2ebd266b" height="25" row="0" col="3" rowspan="1" colspan="2"/>
+          <cl:udc std:sid="ud-control-416f01a3" id="combtnsearch1" type="udc.com.comBtnSearch">
+            <cl:formdata std:sid="f-data-0712c4df" halign="RIGHT" valign="FILL" width="60" row="0" col="1"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-6b407e27">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-d71c9c17" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="400" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-3064a56b" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-9fzd160s" id="grpData">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:verticaldata std:sid="v-data-c7bda241" width="760px" height="608px" autosize="none"/>
+      <cl:group std:sid="group-b2d1cb22">
+        <cl:formdata std:sid="f-data-221737da" row="0" col="0"/>
+        <cl:group std:sid="group-2cb8b1d4">
+          <cl:formdata std:sid="f-data-6197063d" row="0" col="0" rowspan="1" colspan="1"/>
+          <cl:udc std:sid="ud-control-96f4a800" id="comtitle1" type="udc.com.comTitle">
+            <cl:formdata std:sid="f-data-52e1e072" row="0" col="0"/>
+            <cl:property name="ctrl" value="grdMain" type="control"/>
+          </cl:udc>
+          <cl:udc std:sid="ud-control-8c0f1085" id="combutton1" type="udc.com.comButton">
+            <cl:formdata std:sid="f-data-3d08e3a6" row="0" col="1"/>
+            <cl:property name="grid" value="grdMain" type="control"/>
+            <cl:property name="focusColumnName" value="EMPNO" type="string"/>
+            <cl:property name="visibleRestoreButton" value="false" type="boolean"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-31deb0fa">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="195" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-yf9p4oo0" id="grdMain" fieldLabel="도움말 정보 목록" datasetid="ds1" autofit="3, 4, 5, 6" resizablecolumns="none">
+          <cl:attribute name="bindDataFormId" value="frfMain"/>
+          <cl:formdata std:sid="f-data-2ad82bdd" row="1" col="0" rowspan="1" colspan="1"/>
+          <cl:gridcolumn std:sid="g-column-x8ikfe38" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-w0p5fn6w" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-2121mphb" width="40px"/>
+          <cl:gridcolumn std:sid="g-column-c68c1cc3"/>
+          <cl:gridcolumn std:sid="g-column-3b7c7fa2" width="300px"/>
+          <cl:gridcolumn std:sid="g-column-9fbf0bc1" width="200px"/>
+          <cl:gridcolumn std:sid="g-column-7afd284c"/>
+          <cl:gridheader std:sid="gh-band-ps1mzyt4">
+            <cl:gridrow std:sid="g-row-k20754x4" height="27px"/>
+            <cl:gridcell std:sid="gh-cell-zu02ii6t" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-268w017u" rowindex="0" colindex="1" text="F"/>
+            <cl:gridcell std:sid="gh-cell-1e0e93aw" rowindex="0" colindex="2" text="No"/>
+            <cl:gridcell std:sid="gh-cell-4997416c" rowindex="0" colindex="3" text="도움말명"/>
+            <cl:gridcell std:sid="gh-cell-3a2e5787" rowindex="0" colindex="4" text="도움말 설명"/>
+            <cl:gridcell std:sid="gh-cell-8f5beb88" rowindex="0" colindex="5" text="메뉴 전체경로"/>
+            <cl:gridcell std:sid="gh-cell-c6780525" rowindex="0" colindex="6" text="등록일자"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-07825384">
+            <cl:gridrow std:sid="g-row-nh7gl17j" height="25px"/>
+            <cl:gridcell std:sid="gd-cell-suahd082" rowindex="0" colindex="0" style="text-align:center;" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-g2kiw0mg" rowindex="0" colindex="1">
+              <cl:output std:sid="output-muxgqk04" style="text-align:center;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-x45s4706" rowindex="0" colindex="2" style="text-align:center;" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-d6962fb9" rowindex="0" colindex="3" columnname="column1">
+              <cl:inputbox std:sid="i-box-1171e9a5" id="ipb2">
+                <cl:celldata std:sid="c-data-ab7dfe46"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-6ae9d06d" rowindex="0" colindex="4" columnname="column2">
+              <cl:inputbox std:sid="i-box-38a1c0e6" id="ipb3">
+                <cl:celldata std:sid="c-data-11f1fd1f"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-98590155" rowindex="0" colindex="5" columnname="column3">
+              <cl:inputbox std:sid="i-box-881eb30c" id="ipb4" enabled="false">
+                <cl:celldata std:sid="c-data-3734a84b"/>
+              </cl:inputbox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-55374ae3" rowindex="0" colindex="6" columnname="column4">
+              <cl:inputbox std:sid="i-box-cabd8291" id="ipb5" class="text-center" enabled="false">
+                <cl:celldata std:sid="c-data-5748dd78"/>
+              </cl:inputbox>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-ff550218">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-1e846ef2">
+        <cl:formdata std:sid="f-data-ae11677a" row="1" col="0"/>
+        <cl:udc std:sid="ud-control-a839a0ef" id="comformtitle1" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-5cfcb904" row="0" col="0"/>
+          <cl:property name="ctrl" value="frfMain" type="control"/>
+          <cl:property name="title" value="도움말 정보 등록" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-7y3vwr17" id="frfMain" class="form-box" fieldLabel="도움말 정보 등록">
+          <cl:attribute name="mobile-column-count" value="2"/>
+          <cl:attribute name="tablet-column-count" value="2"/>
+          <cl:selectioncontext selectionProvider="#grid-yf9p4oo0"/>
+          <cl:formdata std:sid="f-data-8c0c374d" height="177" row="1" col="0" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-9055b13e" class="require" value="도움말 명">
+            <cl:formdata std:sid="f-data-2679be40" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-bc6acdae">
+            <cl:relativebind property="value" columnname="column1"/>
+            <cl:formdata std:sid="f-data-2c22982e" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-00eeb5c8" class="require" value="메뉴">
+            <cl:formdata std:sid="f-data-6dced324" row="1" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-a416b914">
+            <cl:formdata std:sid="f-data-87dec341" height="25" row="1" col="1"/>
+            <cl:inputbox std:sid="i-box-3fab7578" id="ipb1" readonly="false">
+              <cl:relativebind property="value" columnname="column3"/>
+              <cl:formdata std:sid="f-data-5718fe7d" row="0" col="0"/>
+            </cl:inputbox>
+            <cl:button std:sid="button-44f5cd85" class="btn-gray" value="메뉴찾기">
+              <cl:listener std:sid="listener-7d611fc0" name="click" handler="onButtonClick"/>
+              <cl:formdata std:sid="f-data-f6c92f76" row="0" col="1"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-5739fc50" scrollable="false" hspace="5px" vspace="0px">
+              <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-01d34d89" class="require" value="첨부파일">
+            <cl:formdata std:sid="f-data-0fccfbaa" row="2" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-d46a6077">
+            <cl:formdata std:sid="f-data-b610713a" height="25" row="2" col="1"/>
+            <cl:button std:sid="button-8a8573c1" id="btn3" class="btn-icon btn-save" value="">
+              <cl:formdata std:sid="f-data-745956bf" row="0" col="0"/>
+            </cl:button>
+            <cl:fileinput std:sid="f-input-7a358ec7" id="fi1">
+              <cl:formdata std:sid="f-data-423796be" row="0" col="1"/>
+            </cl:fileinput>
+            <cl:button std:sid="button-8e887b8a" id="btn4" class="btn-gray" value="파일찾기">
+              <cl:listener std:sid="listener-1528a34e" name="click" handler="onBtn4Click"/>
+              <cl:formdata std:sid="f-data-45aebf05" row="0" col="2"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-d1c3a7d6" scrollable="false" hspace="4px" vspace="0px">
+              <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-6c887d48" class="require" value="설명">
+            <cl:formdata std:sid="f-data-7777bd8f" row="3" col="0"/>
+          </cl:output>
+          <cl:textarea std:sid="t-area-a3793cd6">
+            <cl:relativebind property="value" columnname="column2"/>
+            <cl:formdata std:sid="f-data-b3178a95" row="3" col="1"/>
+          </cl:textarea>
+          <cl:formlayout std:sid="f-layout-c13d1b93" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="120" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-49b6d18b">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-521e0aad" user-resizing-mode="standard" hspace="5px" vspace="5px">
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-73c51332"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

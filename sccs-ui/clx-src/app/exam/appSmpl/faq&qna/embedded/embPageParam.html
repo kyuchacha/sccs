@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1 style="text-align: center;">임베디드 페이지 컨트롤로 불러온 HTML 파일</h1>
+	<script type="text/javascript">
+	function run() {
+		if (app) {
+			if (app.hasAppMethod("test")) {
+				app.callAppMethod("test");
+			}
+		}
+	}
+	</script>
+	<textarea rows="20" cols="100" style="vertical-align: center;" readonly="readonly">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1 style="text-align: center;">임베디드 페이지 컨트롤로 불러온 HTML 파일</h1>
+		<script type="text/javascript">
+		function run() {
+			if (app) {
+				if (app.hasAppMethod("test")) {
+					app.callAppMethod("test");
+				}
+			}
+		}
+		</script>
+	</body>
+</html>
+	</textarea>
+</body>
+</html>

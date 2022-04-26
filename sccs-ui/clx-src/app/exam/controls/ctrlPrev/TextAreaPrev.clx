@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-fce1a349" version="1.0.3164">
+  <head std:sid="head-72b68613">
+    <screen std:sid="screen-2c4c6d8f" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-d73529f0" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-c2637065" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-6f4949c9" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-38de04b2"/>
+    <cl:appspec title="텍스트에리어 관련 속성"/>
+  </head>
+  <body std:sid="body-7e18a7cb">
+    <cl:group std:sid="group-a059580e" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-f0786f38" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-ba5cae50" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-08c4c6ab" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-ad41470e" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-9d054284" id="grpData">
+      <cl:verticaldata std:sid="v-data-8562057f" width="400px" height="646px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="텍스트에리어(TextArea)는 여러 줄의 텍스트를 입력할 수 있는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-be6f0c5a" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-96c4f270" row="1" col="0"/>
+        <cl:output std:sid="output-37f32a80" id="opt1" value="[placeholder = 입력하세요]&#xD;&#xA;1. 텍스트에리어에 '입력하세요' 텍스트가 보인다.">
+          <cl:formdata std:sid="f-data-d7f8b9c1" row="0" col="0"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-9fcda65e" id="txa1" placeholder="입력하세요">
+          <cl:formdata std:sid="f-data-70272664" row="0" col="1"/>
+        </cl:textarea>
+        <cl:output std:sid="output-a1c37800" id="opt3" value="[maxLength = 50]&#xD;&#xA;1. 텍스트에리어에 텍스트를 입력한다.&#xD;&#xA;2. 50글자 이상 입력되지 않는다.">
+          <cl:formdata std:sid="f-data-1a528e5d" row="1" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-4b573ae4" id="grp2">
+          <cl:formdata std:sid="f-data-ebd363a0" row="1" col="1"/>
+          <cl:output std:sid="output-8fd097e7" id="opt9" style="color:#757272;" value="DB의 문자셋에 따라 lengthUnit 값이 달라질 수 있다. 해당값은 일반적으로 매칭되는 DB 컬럼 사이즈를 지정한다.">
+            <cl:formdata std:sid="f-data-10a4bff8" row="1" col="0"/>
+          </cl:output>
+          <cl:textarea std:sid="t-area-e868fc1e" id="txa2" maxlength="50">
+            <cl:formdata std:sid="f-data-aafcc1b3" row="0" col="0"/>
+          </cl:textarea>
+          <cl:formlayout std:sid="f-layout-0a8b07cc" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-dbfbfba1" value="[autoSkip = true]&#xD;&#xA;[maxLength = 5]&#xD;&#xA;1. 텍스트에리어에 5자 이상 텍스트를 입력한다.&#xD;&#xA;2. 포커싱이 다음으로 넘어간다.">
+          <cl:formdata std:sid="f-data-88cd7922" row="2" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-0758d91d" id="grp3">
+          <cl:formdata std:sid="f-data-8acaac0f" row="2" col="1"/>
+          <cl:output std:sid="output-3e336856" style="color:#757272;" value="maxLength만큼 입력했거나 enter키를 눌렀을 때 다음 컨트롤로 포커스 이동 설정">
+            <cl:formdata std:sid="f-data-d85a2bd8" row="1" col="0"/>
+          </cl:output>
+          <cl:textarea std:sid="t-area-b144203a" id="txa4" maxlength="5" autoskip="true">
+            <cl:formdata std:sid="f-data-2208d9a4" row="0" col="0"/>
+          </cl:textarea>
+          <cl:formlayout std:sid="f-layout-9f7bfa19" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-b02ab889" value="[autoSelect = true]&#xD;&#xA;1. 텍스트에리어를 클릭한다.&#xD;&#xA;2. 전체선택 된다.">
+          <cl:formdata std:sid="f-data-84adf921" row="3" col="0"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-4d784b67" id="txa3" value="가나다라" autoselect="true">
+          <cl:formdata std:sid="f-data-00459368" row="3" col="1"/>
+        </cl:textarea>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-e92f21d7" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-6ec5d021"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-bec5d47f" version="1.0.3552">
+  <head std:sid="head-799f324d">
+    <screen std:sid="screen-433fd07d" id="default" name="default" width="1024px" height="768px" active="true"/>
+    <screen std:sid="screen-02d4b83f" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-0856b409" id="mobile" name="mobile" width="350px" height="525px" active="false"/>
+    <cl:model std:sid="model-f9997b1d">
+      <cl:dataset std:sid="d-set-5bcf373e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-695c132d" name="empNo"/>
+          <cl:datacolumn std:sid="d-column-226e380d" name="empNm"/>
+          <cl:datacolumn std:sid="d-column-0bc49d9c" name="deptNm"/>
+          <cl:datacolumn std:sid="d-column-60339157" name="regDt"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="empNo">emp_no1</cl:datavalue>
+            <cl:datavalue columnname="empNm">value1</cl:datavalue>
+            <cl:datavalue columnname="deptNm">parent1</cl:datavalue>
+            <cl:datavalue columnname="regDt">appid1</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-1dc032ad" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-92ea425e" name="deptNm"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-b16cd5b4" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-130cfdd9" name="empNo"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-67037589" id="resultData">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-aa4c9a22" name="deptNm"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-a03b2c85" id="sampleList" async="true" action="com/sampleList.do" mediatype="application/x-www-form-urlencoded" fallbackContentType="application/json">
+        <cl:listener std:sid="listener-2ef5e716" name="submit-success" handler="onSampleListSubmitSuccess"/>
+        <cl:responsedata dataid="ds1"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-69ef44ac" id="sms1" action="com/selectDeptNm.do">
+        <cl:listener std:sid="listener-d4c475c6" name="submit-success" handler="onSms1SubmitSuccess"/>
+        <cl:requestdata dataid="dmParam"/>
+        <cl:responsedata dataid="resultData"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-c7575534">
+    <cl:listener std:sid="listener-c3014394" name="load" handler="onBodyLoad"/>
+    <cl:grid std:sid="grid-ffbc52e4" id="grd1" datasetid="ds1" resizablecolumns="all" columnMovable="true">
+      <cl:listener std:sid="listener-ff1fabc1" name="click" handler="onGrd1Click"/>
+      <cl:xylayoutdata std:sid="xyl-data-fd9810b9" top="118px" left="64px" width="668px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-c3a852c5"/>
+      <cl:gridcolumn std:sid="g-column-cbc1be55"/>
+      <cl:gridcolumn std:sid="g-column-4541118f"/>
+      <cl:gridcolumn std:sid="g-column-bb861679"/>
+      <cl:gridheader std:sid="gh-band-410bcf38">
+        <cl:gridrow std:sid="g-row-9cd39c06"/>
+        <cl:gridcell std:sid="gh-cell-850cc382" rowindex="0" colindex="0" targetcolumnname="empNo" sortable="false" filterable="false" text="emp_no"/>
+        <cl:gridcell std:sid="gh-cell-0cea94d0" rowindex="0" colindex="1" targetcolumnname="empNm" sortable="false" filterable="false" text="EMP_NM"/>
+        <cl:gridcell std:sid="gh-cell-50c448f5" rowindex="0" colindex="2" targetcolumnname="deptNm" sortable="false" filterable="false" text="DEPT_NM"/>
+        <cl:gridcell std:sid="gh-cell-8133263f" rowindex="0" colindex="3" targetcolumnname="regDt" sortable="false" filterable="false" text="REG_DT"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-fe12561e">
+        <cl:gridrow std:sid="g-row-ab076bc0"/>
+        <cl:gridcell std:sid="gd-cell-ba9b6196" rowindex="0" colindex="0" columnname="empNo"/>
+        <cl:gridcell std:sid="gd-cell-d6a30193" rowindex="0" colindex="1" columnname="empNm"/>
+        <cl:gridcell std:sid="gd-cell-b9ce931d" rowindex="0" colindex="2" columnname="deptNm"/>
+        <cl:gridcell std:sid="gd-cell-6cdb3f12" rowindex="0" colindex="3" columnname="regDt"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:output std:sid="output-017ae0a1" value="sample Test">
+      <cl:xylayoutdata std:sid="xyl-data-8a6d8f03" top="60px" left="64px" width="100px" height="20px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+    </cl:output>
+    <cl:group std:sid="group-aaff0bee" id="form1" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-d27c28f3" top="359px" left="77px" width="400px" height="200px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-ec9064a7" value="부서명">
+        <cl:formdata std:sid="f-data-947a9357" row="0" col="0"/>
+      </cl:output>
+      <cl:output std:sid="output-fd51bfb5" id="out1">
+        <cl:datamapbind property="value" category="PROPERTY" datacontrolid="resultData" columnname="deptNm"/>
+        <cl:formdata std:sid="f-data-237114d5" row="0" col="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-4658685f" id="ipb1">
+        <cl:datamapbind property="value" datacontrolid="resultData" columnname="deptNm"/>
+        <cl:formdata std:sid="f-data-3de27418" row="1" col="1"/>
+      </cl:inputbox>
+      <cl:formlayout std:sid="f-layout-1be9e8b8" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL" shadetype="BY_CLASS"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-d2e17401"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

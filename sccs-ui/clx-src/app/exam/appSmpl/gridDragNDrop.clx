@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-f3ddac42">
+      <cl:dataset std:sid="d-set-741e567b" id="dsJob">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ff752969" name="CD_NM"/>
+          <cl:datacolumn std:sid="d-column-271cf556" name="CD"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-258675a6" id="dsEmp" info="EMPNO">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d4e24a93" name="EMPNO" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-fe6cbf17" name="ENAME"/>
+          <cl:datacolumn std:sid="d-column-a6b42478" name="JOB"/>
+          <cl:datacolumn std:sid="d-column-b5000dbd" name="MGR" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-cc5f1a0c" name="HIREDATE"/>
+          <cl:datacolumn std:sid="d-column-359fdfa7" name="SAL" datatype="decimal"/>
+          <cl:datacolumn std:sid="d-column-7a701430" name="COMM" datatype="decimal"/>
+          <cl:datacolumn std:sid="d-column-18ca17b9" name="DEPTNO" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[BLACK]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-05-01]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2850]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">1</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7499]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[ALLEN]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-02-20]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1600]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">2</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7521]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[WARD]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-02-22]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1250]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">3</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7654]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[MARTIN]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-09-28]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1250]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">4</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7844]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[TURNER]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-09-08]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1500]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">5</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7900]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[JAMES]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-12-03]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[950]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">6</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[KING]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA04]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-11-17]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[5000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">7</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7782]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[CLARK]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-06-09]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2450]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">8</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7934]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[MILLER]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7782]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1992-01-23]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1300]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">9</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7788]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[SCOTT]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA01]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-04-19]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[3000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">10</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7902]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[FORD]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA01]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-12-03]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[3000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">11</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[JONES]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-04-02]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2975]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">12</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7369]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[SMITH]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7902]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1980-12-17]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[800]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">13</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[7876]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[ADAMS]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7788]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-05-23]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1100]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">14</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6698]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[홍길동]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-05-01]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2850]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">15</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6499]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[김태희]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-02-20]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1600]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">16</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6521]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[전지현]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-02-22]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1250]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">17</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6654]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[유재석]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-09-28]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1250]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">18</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6844]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[송혜교]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-09-08]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1500]]></cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6900]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[강호동]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-12-03]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[950]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">19</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6839]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[신동엽]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA04]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-11-17]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[5000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">20</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6782]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[이시영]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-06-09]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2450]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">21</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6934]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[김구라]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7782]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1992-01-23]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1300]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">22</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6788]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[박나래]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA01]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-04-19]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[3000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">23</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6902]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[이경규]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA01]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-12-03]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[3000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">24</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6566]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[김숙]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-04-02]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2975]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">25</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6369]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[전현무]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7902]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1980-12-17]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[800]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">26</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[6876]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[이영자]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7788]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-05-23]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1100]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">27</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8698]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[AMY]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-05-01]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2850]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">28</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8499]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[JOHN]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-02-20]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1600]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">29</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8521]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[LOEN]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-02-22]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1250]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">30</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO">30</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8654]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[MIKLE]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-09-28]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1250]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">31</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8844]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[MICHEL]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA05]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-09-08]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1500]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">32</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8900]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[JOSEPH]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7698]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-12-03]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[950]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">33</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8839]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[ROBERT]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA04]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-11-17]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[5000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">34</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[80]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8782]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[JEAN]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-06-09]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2450]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">35</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[40]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8934]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[TES]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7782]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1992-01-23]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1300]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">36</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[50]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8788]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[LUTIN]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA01]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-04-19]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[3000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">37</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[60]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8902]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[VALY]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA01]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7566]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-12-03]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[3000]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">38</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[70]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8566]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[NAY]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA03]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7839]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-04-02]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[2975]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">39</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8369]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[LAME]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7902]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1980-12-17]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[800]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">40</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="EMPNO"><![CDATA[8876]]></cl:datavalue>
+            <cl:datavalue columnname="ENAME"><![CDATA[PASTOR]]></cl:datavalue>
+            <cl:datavalue columnname="JOB"><![CDATA[AAA02]]></cl:datavalue>
+            <cl:datavalue columnname="MGR"><![CDATA[7788]]></cl:datavalue>
+            <cl:datavalue columnname="HIREDATE"><![CDATA[1981-05-23]]></cl:datavalue>
+            <cl:datavalue columnname="SAL"><![CDATA[1100]]></cl:datavalue>
+            <cl:datavalue columnname="COMM">41</cl:datavalue>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-2ee036ae" id="dsDept" info="DEPTNO">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bb69b9fb" name="DEPTNO" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-afaf1306" name="DNAME"/>
+          <cl:datacolumn std:sid="d-column-f945c0e3" name="LOC"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO">1</cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[Administration]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[Venice]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[Purchasing]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[NEW YORK]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[Marketing]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[DALLAS]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[Finance]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[Venice]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[Treasury]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[CHICAGO]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[Corporate Tax]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[BOSTON]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[50]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[Treasury]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[London]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[IT]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[Venice]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[60]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[IT Support]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[CHICAGO]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[70]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[IT Helpdesk]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[Geneva]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="DEPTNO"><![CDATA[80]]></cl:datavalue>
+            <cl:datavalue columnname="DNAME"><![CDATA[NOC]]></cl:datavalue>
+            <cl:datavalue columnname="LOC"><![CDATA[Utrecht]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="templates/SmplTmpl.clx 템플릿 사용하여 작성 함.&#xA;templates/CTmpl.clx 템플릿 사용하여 작성 함." title="그리드행이동"/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:listener std:sid="listener-442708eb" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-d1f5be83" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-01a0e506" width="1320px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3acdc2bb" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-80e24452" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-3e351495"/>
+    </cl:group>
+    <cl:group std:sid="group-72e4444f" id="grpData">
+      <cl:verticaldata std:sid="v-data-dd43b459" width="1320px" height="2056px" autosize="height"/>
+      <cl:group std:sid="group-b3d8d80f" id="grp1">
+        <cl:verticaldata std:sid="v-data-d00c67f8" width="1270px" height="150px" autosize="height"/>
+        <cl:group std:sid="group-7a48379f" id="grp3">
+          <cl:verticaldata std:sid="v-data-5f5680c1" width="1270px" height="40px" autosize="height"/>
+          <cl:output std:sid="output-bd633362" style="font-weight:bold; padding-left:1rem; font-size:2.5rem;" value="그리드 행 이동">
+            <cl:formdata std:sid="f-data-d357b6a6" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3535aed2" scrollable="false" hspace="5px" vspace="5px" right-margin="50px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-36cb926d" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="이 페이지는 원그리드와 투그리드 간 드래그앤드랍 행 이동 예제입니다.">
+          <cl:verticaldata std:sid="v-data-cb26d0fa" width="1210px" height="46px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-7c14d27b" spacing="30" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-36fd7cc9" id="grp2">
+        <cl:verticaldata std:sid="v-data-28f18b44" width="1270px" height="345px" autosize="height"/>
+        <cl:output std:sid="output-d78c906d" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="시나리오">
+          <cl:verticaldata std:sid="v-data-0ccc2823" width="100px" height="40px"/>
+        </cl:output>
+        <cl:output std:sid="output-5ed83aea" id="ipbScenario" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="1. 원그리드에서 행을 드래그 앤 드랍해서 위치를 이동시켜정상적으로 작동하는지 확인합니다.&#xD;&#xA;2. 탭폴더에서 '그리드 + 그리드' 아이템을 클릭해서 투그리드 화면으로 이동합니다.&#xD;&#xA;3. 왼쪽 그리드에서 오른쪽 그리드로 행을 이동시켜 정상적으로 작동하는지 확인합니다.&#xD;&#xA;4. 오른쪽에서 왼쪽 그리드로 행을 이동시켜 정상적으로 작동하는지 확인합니다.">
+          <cl:verticaldata std:sid="v-data-560570a9" width="1210px" height="107px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-4fffe72b" spacing="30" topmargin="10" bottommargin="30"/>
+      </cl:group>
+      <cl:group std:sid="group-17cf44cc" id="grpFunction">
+        <cl:verticaldata std:sid="v-data-60df3a1f" width="1270px" height="700px" autosize="height"/>
+        <cl:group std:sid="group-38132eaf" id="grpFuncFloating">
+          <cl:attribute name="floating-header" value="true"/>
+          <cl:verticaldata std:sid="v-data-bf7c3b0a" width="1270px" height="700px" autosize="height"/>
+          <cl:output std:sid="output-1688a0bc" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="기능확인">
+            <cl:verticaldata std:sid="v-data-7f4968b6" width="1270px" height="40px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-c852421b" id="grp11" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#dedede; border-right-width:1px; border-left-color:#dedede; border-right-color:#dedede; border-left-width:1px; border-top-style:solid; background-color:#F0F0F0; border-left-style:solid; border-bottom-width:1px; border-top-color:#dedede; border-bottom-style:solid;">
+            <cl:verticaldata std:sid="v-data-153b5759" width="1210px" height="700px" autosize="height"/>
+            <cl:tabfolder std:sid="t-folder-bdac8a67" id="tab1">
+              <cl:listener std:sid="listener-481fbec5" name="selection-change" handler="onTab1SelectionChange"/>
+              <cl:verticaldata std:sid="v-data-a2dcc339" width="1310px" height="635px" autosize="none"/>
+              <cl:tabitem comment="원그리드 예제" std:sid="t-item-07aed56a" selected="true" text="그리드">
+                <cl:group std:sid="group-90b6ad07" id="grp4">
+                  <std:metadata>
+                    <std:property key="locked" value="true"/>
+                  </std:metadata>
+                  <cl:group std:sid="group-463b34e9" id="grpSearch1" class="search-box">
+                    <cl:attribute name="mobile-column-count" value="2"/>
+                    <cl:attribute name="tablet-column-count" value="2"/>
+                    <cl:formdata std:sid="f-data-e9e88e46" row="0" col="0"/>
+                    <cl:output std:sid="output-5d79a0ea" value="학번">
+                      <cl:formdata std:sid="f-data-cc109b34" row="0" col="0"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-3118ab79" id="ipb2" tooltip="학번">
+                      <cl:attribute name="autoKeydownSearch" value="Y"/>
+                      <cl:formdata std:sid="f-data-6bc1bbea" row="0" col="1"/>
+                    </cl:inputbox>
+                    <cl:group std:sid="group-fe093515" id="grp10">
+                      <cl:formdata std:sid="f-data-db8f6647" row="0" col="2" rowspan="1" colspan="2"/>
+                      <cl:udc std:sid="ud-control-970928f4" id="combtnsearch" type="udc.com.comBtnSearch">
+                        <cl:listener std:sid="listener-37d53ce9" name="search" handler="onCombtnsearchSearch"/>
+                        <cl:formdata std:sid="f-data-f1be4058" halign="FILL" width="60" row="0" col="1"/>
+                      </cl:udc>
+                      <cl:formlayout std:sid="f-layout-8baf4bd0" hspace="5px" vspace="5px">
+                        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      </cl:formlayout>
+                    </cl:group>
+                    <cl:formlayout std:sid="f-layout-d71c9c17" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+                      <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+                      <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-bba5c835" id="grpData1">
+                    <cl:formdata std:sid="f-data-b3d4a0fb" row="2" col="0"/>
+                    <cl:group std:sid="group-f16fd064" id="grp12">
+                      <cl:attribute name="mobile-column-count" value=""/>
+                      <cl:attribute name="tablet-column-count" value=""/>
+                      <cl:formdata std:sid="f-data-d2d32fbe" row="0" col="0"/>
+                      <cl:udc std:sid="ud-control-96f4a800" id="comtitle1" type="udc.com.comTitle">
+                        <cl:expbind property="rowCount" category="PROPERTY" expression="#dsEmp.getRowCount()"/>
+                        <cl:formdata std:sid="f-data-bc86dbe6" row="0" col="0"/>
+                        <cl:property name="ctrl" value="grdMain" type="control"/>
+                      </cl:udc>
+                      <cl:udc std:sid="ud-control-ef97520d" id="combutton1" type="udc.com.comButton">
+                        <cl:formdata std:sid="f-data-2bc0f8e5" row="0" col="1"/>
+                        <cl:property name="focusColumnName" value="PARTY_ID" type="string"/>
+                        <cl:property name="grid" value="grdMain" type="control"/>
+                      </cl:udc>
+                      <cl:formlayout std:sid="f-layout-d121d507">
+                        <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+                        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        <cl:columns length="260" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      </cl:formlayout>
+                    </cl:group>
+                    <cl:grid std:sid="grid-yf9p4oo0" id="grdMain" fieldLabel="직원 정보" datasetid="dsEmp" autofit="3, 4, 5, 6, 7, 8, 9, 10" resizablecolumns="5, 6, 7, 8, 9, 10">
+                      <cl:formdata std:sid="f-data-2ebcd26e" row="1" col="0"/>
+                      <cl:gridcolumn std:sid="g-column-x8ikfe38" width="25px"/>
+                      <cl:gridcolumn std:sid="g-column-w0p5fn6w" width="25px"/>
+                      <cl:gridcolumn std:sid="g-column-2121mphb" width="40px"/>
+                      <cl:gridcolumn std:sid="g-column-4ea0f050"/>
+                      <cl:gridcolumn std:sid="g-column-c9ffa02d"/>
+                      <cl:gridcolumn std:sid="g-column-5d1fd393"/>
+                      <cl:gridcolumn std:sid="g-column-26334cdf" width="120px"/>
+                      <cl:gridcolumn std:sid="g-column-4aeafcf7"/>
+                      <cl:gridcolumn std:sid="g-column-56cdb7b9"/>
+                      <cl:gridcolumn std:sid="g-column-da685fba"/>
+                      <cl:gridcolumn std:sid="g-column-913d46b9"/>
+                      <cl:gridheader std:sid="gh-band-ps1mzyt4">
+                        <cl:gridrow std:sid="g-row-k20754x4" height="27px"/>
+                        <cl:gridcell std:sid="gh-cell-zu02ii6t" rowindex="0" colindex="0" columntype="checkbox"/>
+                        <cl:gridcell std:sid="gh-cell-268w017u" rowindex="0" colindex="1" text="F"/>
+                        <cl:gridcell std:sid="gh-cell-1e0e93aw" rowindex="0" colindex="2" text="No"/>
+                        <cl:gridcell std:sid="gh-cell-bb92f9ef" rowindex="0" colindex="3" class="require" targetcolumnname="EMPNO" text="사원번호"/>
+                        <cl:gridcell std:sid="gh-cell-33b7c4fd" rowindex="0" colindex="4" targetcolumnname="ENAME" text="사원명"/>
+                        <cl:gridcell std:sid="gh-cell-6eb8a382" rowindex="0" colindex="10" targetcolumnname="DEPTNO" text="부서코드"/>
+                        <cl:gridcell std:sid="gh-cell-e3c81989" rowindex="0" colindex="9" targetcolumnname="COMM" text="성과금"/>
+                        <cl:gridcell std:sid="gh-cell-032f5639" rowindex="0" colindex="8" targetcolumnname="SAL" text="급여"/>
+                        <cl:gridcell std:sid="gh-cell-915328fd" rowindex="0" colindex="7" targetcolumnname="HIREDATE" text="입사일"/>
+                        <cl:gridcell std:sid="gh-cell-f6f32820" rowindex="0" colindex="6" targetcolumnname="MGR" text="관리자 사원번호"/>
+                        <cl:gridcell std:sid="gh-cell-9c104a6d" rowindex="0" colindex="5" targetcolumnname="JOB" text="직급"/>
+                      </cl:gridheader>
+                      <cl:griddetail std:sid="gd-band-07825384">
+                        <cl:gridrow std:sid="g-row-nh7gl17j" height="25px"/>
+                        <cl:gridcell std:sid="gd-cell-suahd082" rowindex="0" colindex="0" style="text-align:center;" columntype="checkbox"/>
+                        <cl:gridcell std:sid="gd-cell-g2kiw0mg" rowindex="0" colindex="1">
+                          <cl:output std:sid="output-muxgqk04" style="text-align:center;"/>
+                        </cl:gridcell>
+                        <cl:gridcell std:sid="gd-cell-x45s4706" rowindex="0" colindex="2" style="text-align:center;" columntype="rowindex"/>
+                        <cl:gridcell std:sid="gd-cell-bc4427a9" rowindex="0" colindex="3" columnname="EMPNO">
+                          <cl:inputbox std:sid="i-box-3d95e9fb" id="ipb1" style="text-align:center;"/>
+                        </cl:gridcell>
+                        <cl:gridcell std:sid="gd-cell-ac4fb608" rowindex="0" colindex="4" columnname="ENAME">
+                          <cl:inputbox std:sid="i-box-511eb7c3" id="ipb4" style="text-align:center;"/>
+                        </cl:gridcell>
+                        <cl:gridcell std:sid="gd-cell-e9f2bc44" rowindex="0" colindex="10" columnname="DEPTNO">
+                          <cl:inputbox std:sid="i-box-28d0d782" id="ipb5" style="text-align:center;"/>
+                        </cl:gridcell>
+                        <cl:gridcell std:sid="gd-cell-ff98562f" rowindex="0" colindex="9" columnname="COMM">
+                          <cl:numbereditor std:sid="n-editor-7b405759" id="nbe4"/>
+                        </cl:gridcell>
+                        <cl:gridcell std:sid="gd-cell-ec14101d" rowindex="0" colindex="8" columnname="SAL">
+                          <cl:numbereditor std:sid="n-editor-c853ef60" id="nbe1"/>
+                        </cl:gridcell>
+                        <cl:gridcell std:sid="gd-cell-89c8adb2" rowindex="0" colindex="7" columnname="HIREDATE">
+                          <cl:dateinput std:sid="d-input-f0b83331" id="dti1" format="YYYY-MM-DD"/>
+                        </cl:gridcell>
+                        <cl:gridcell std:sid="gd-cell-8f04ba48" rowindex="0" colindex="6" columnname="MGR">
+                          <cl:inputbox std:sid="i-box-5a4ace94" id="ipb6" style="text-align:center;"/>
+                        </cl:gridcell>
+                        <cl:gridcell std:sid="gd-cell-c9ae8163" rowindex="0" colindex="5" columnname="JOB">
+                          <cl:inputbox std:sid="i-box-d5be93b6" id="ipb13" style="text-align:center;">
+                            <cl:celldata std:sid="c-data-bee93225"/>
+                          </cl:inputbox>
+                        </cl:gridcell>
+                      </cl:griddetail>
+                    </cl:grid>
+                    <cl:formlayout std:sid="f-layout-ac960930" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+                      <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-f483ec25" id="grp13">
+                    <cl:formdata std:sid="f-data-2a97c5e2" row="1" col="0"/>
+                    <cl:output std:sid="output-8c09ae30" value="원그리드 간 드래그앤드랍 행 이동 예제입니다.">
+                      <cl:formdata std:sid="f-data-b264d6f8" row="0" col="0"/>
+                    </cl:output>
+                    <cl:formlayout std:sid="f-layout-9ad6970a" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:formlayout std:sid="f-layout-0135429f" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+                    <cl:rows length="37" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                    <cl:rows length="25" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                    <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                  </cl:formlayout>
+                </cl:group>
+              </cl:tabitem>
+              <cl:tabitem std:sid="t-item-34e06862" text="그리드+그리드">
+                <std:metadata>
+                  <std:property key="is-active-item" value="true"/>
+                </std:metadata>
+                <cl:group std:sid="group-f862236d" id="grp14">
+                  <std:metadata>
+                    <std:property key="locked" value="true"/>
+                  </std:metadata>
+                  <cl:group std:sid="group-6d6150c4" id="grpSearch" class="search-box">
+                    <cl:attribute name="mobile-column-count" value="2"/>
+                    <cl:attribute name="tablet-column-count" value="2"/>
+                    <cl:formdata std:sid="f-data-743e1065" row="0" col="0"/>
+                    <cl:output std:sid="output-cdcc400f" value="사원명">
+                      <cl:formdata std:sid="f-data-a8fbcab6" row="0" col="0"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-9708a920" id="ipbEName" fieldLabel="사원명">
+                      <cl:attribute name="autoKeydownSearch" value="Y"/>
+                      <cl:formdata std:sid="f-data-7e44a59a" row="0" col="1"/>
+                    </cl:inputbox>
+                    <cl:output std:sid="output-133195b8" value="직급">
+                      <cl:formdata std:sid="f-data-b5eb4adc" row="0" col="2"/>
+                    </cl:output>
+                    <cl:combobox std:sid="c-box-c58827e2" id="cmbJob" fieldLabel="직급">
+                      <cl:formdata std:sid="f-data-cdd12c91" row="0" col="3"/>
+                      <cl:item std:sid="t-item-5d1ac583" label="전체" value=""/>
+                      <cl:itemset datasetid="dsJob" label="CD_NM" value="CD"/>
+                    </cl:combobox>
+                    <cl:group std:sid="group-db847603" id="grp19">
+                      <cl:formdata std:sid="f-data-1d091468" row="0" col="4" rowspan="1" colspan="2"/>
+                      <cl:udc std:sid="ud-control-688e8fa9" id="combtnsearch2" type="udc.com.comBtnSearch">
+                        <cl:listener std:sid="listener-f46b77f4" name="search" handler="onCombtnsearch2Search"/>
+                        <cl:formdata std:sid="f-data-0712c4df" halign="RIGHT" valign="FILL" width="60" row="0" col="1"/>
+                      </cl:udc>
+                      <cl:formlayout std:sid="f-layout-6b407e27">
+                        <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      </cl:formlayout>
+                    </cl:group>
+                    <cl:formlayout std:sid="f-layout-010e3a09" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+                      <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="120" unit="PIXEL" autoSizing="false" minlength="0"/>
+                      <cl:columns length="120" unit="PIXEL" autoSizing="false" minlength="0"/>
+                      <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+                      <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-0e998dd1" id="grp20">
+                    <cl:formdata std:sid="f-data-496212a4" row="1" col="0"/>
+                    <cl:output std:sid="output-0363c649" value="투그리드 간 드래그앤드랍 행 이동 예제입니다.">
+                      <cl:formdata std:sid="f-data-4c39233a" row="0" col="0"/>
+                    </cl:output>
+                    <cl:formlayout std:sid="f-layout-3648a45f" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-9b0ee2cd" id="grpData2">
+                    <cl:formdata std:sid="f-data-2d0ccfe9" row="2" col="0"/>
+                    <cl:group std:sid="group-j10s80uw" id="grpMain">
+                      <cl:formdata std:sid="f-data-161b3fb0" row="0" col="0"/>
+                      <cl:group std:sid="group-2682170f" id="grp17">
+                        <cl:formdata std:sid="f-data-4fd815a6" row="0" col="0"/>
+                        <cl:udc std:sid="ud-control-06ce8312" id="comtitle3" type="udc.com.comTitle">
+                          <cl:formdata std:sid="f-data-e1579a65" row="0" col="0"/>
+                          <cl:property name="ctrl" value="grdMain2" type="control"/>
+                        </cl:udc>
+                        <cl:udc std:sid="ud-control-5d55675a" id="combutton2" type="udc.com.comButton">
+                          <cl:formdata std:sid="f-data-4e56480d" row="0" col="1"/>
+                          <cl:property name="grid" value="grdMain2" type="control"/>
+                          <cl:property name="focusColumnName" value="EMPNO" type="string"/>
+                        </cl:udc>
+                        <cl:formlayout std:sid="f-layout-0d102b7c" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                          <cl:columns length="260" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        </cl:formlayout>
+                      </cl:group>
+                      <cl:grid std:sid="grid-11a0c450" id="grdMain2" fieldLabel="사원정보" datasetid="dsEmp" showdeletedrow="false" autofit="3, 4, 5, 6, 7, 8, 9, 10">
+                        <cl:formdata std:sid="f-data-cfc8baee" row="1" col="0" rowspan="1" colspan="1"/>
+                        <cl:gridcolumn std:sid="g-column-1476c10c" width="25px"/>
+                        <cl:gridcolumn std:sid="g-column-d45dcef9" width="25px"/>
+                        <cl:gridcolumn std:sid="g-column-9e323b97" width="40px"/>
+                        <cl:gridcolumn std:sid="g-column-df2b92bf"/>
+                        <cl:gridcolumn std:sid="g-column-1bde55ed"/>
+                        <cl:gridcolumn std:sid="g-column-e26bd6e2"/>
+                        <cl:gridcolumn std:sid="g-column-c26f25c4" width="120px"/>
+                        <cl:gridcolumn std:sid="g-column-cfc5c84f"/>
+                        <cl:gridcolumn std:sid="g-column-2ae7d9e5"/>
+                        <cl:gridcolumn std:sid="g-column-e34991e3"/>
+                        <cl:gridcolumn std:sid="g-column-d8b33706"/>
+                        <cl:gridheader std:sid="gh-band-9b584abf">
+                          <cl:gridrow std:sid="g-row-dbfb3344" height="27px"/>
+                          <cl:gridcell std:sid="gh-cell-27d02ee5" rowindex="0" colindex="0" columntype="checkbox"/>
+                          <cl:gridcell std:sid="gh-cell-68b6954e" rowindex="0" colindex="1" text="F"/>
+                          <cl:gridcell std:sid="gh-cell-fb81d677" rowindex="0" colindex="2" text="No"/>
+                          <cl:gridcell std:sid="gh-cell-ed62d780" rowindex="0" colindex="3" class="require" text="사원번호"/>
+                          <cl:gridcell std:sid="gh-cell-9ae87a4f" rowindex="0" colindex="4" text="사원명"/>
+                          <cl:gridcell std:sid="gh-cell-01ed7c82" rowindex="0" colindex="10" text="부서코드"/>
+                          <cl:gridcell std:sid="gh-cell-1c47d8c9" rowindex="0" colindex="9" text="성과금"/>
+                          <cl:gridcell std:sid="gh-cell-4f61d225" rowindex="0" colindex="8" text="급여"/>
+                          <cl:gridcell std:sid="gh-cell-8c1b0bf1" rowindex="0" colindex="7" text="입사일"/>
+                          <cl:gridcell std:sid="gh-cell-0a56a091" rowindex="0" colindex="6" text="관리자 사원번호"/>
+                          <cl:gridcell std:sid="gh-cell-d8842a79" rowindex="0" colindex="5" text="직급"/>
+                        </cl:gridheader>
+                        <cl:griddetail std:sid="gd-band-de2ec708">
+                          <cl:gridrow std:sid="g-row-835aef23" height="25px"/>
+                          <cl:gridcell std:sid="gd-cell-38051cc7" rowindex="0" colindex="0" style="text-align:center;" columntype="checkbox"/>
+                          <cl:gridcell std:sid="gd-cell-e0156e7f" rowindex="0" colindex="1">
+                            <cl:output std:sid="output-6e6063c2" style="text-align:center;"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-2810292d" rowindex="0" colindex="2" style="text-align:center;" columntype="rowindex"/>
+                          <cl:gridcell std:sid="gd-cell-01898461" rowindex="0" colindex="3" columnname="EMPNO">
+                            <cl:inputbox std:sid="i-box-525d5533" id="ipb7" style="text-align:center;" inputfilter="[0-9]">
+                              <cl:attribute name="required" value="Y"/>
+                            </cl:inputbox>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-99f0190b" rowindex="0" colindex="4" columnname="ENAME">
+                            <cl:inputbox std:sid="i-box-4a2af45c" id="ipb8" style="text-align:center;"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-15d9c1e9" rowindex="0" colindex="10" columnname="DEPTNO">
+                            <cl:inputbox std:sid="i-box-b782e863" id="ipb9" style="text-align:center;"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-898a62c8" rowindex="0" colindex="9" columnname="COMM">
+                            <cl:numbereditor std:sid="n-editor-97960f47" id="nbe2"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-b6d532a7" rowindex="0" colindex="8" columnname="SAL">
+                            <cl:numbereditor std:sid="n-editor-94d9e6a9" id="nbe3"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-85fdac64" rowindex="0" colindex="7" columnname="HIREDATE">
+                            <cl:dateinput std:sid="d-input-06cc8c8e" id="dti2" format="YYYY-MM-DD"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-4fb35f50" rowindex="0" colindex="6" columnname="MGR">
+                            <cl:inputbox std:sid="i-box-a0b5163c" id="ipb10" style="text-align:center;"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-3ddc1650" rowindex="0" colindex="5" columnname="JOB">
+                            <cl:inputbox std:sid="i-box-b25059be" id="ipb14" style="text-align:center;">
+                              <cl:celldata std:sid="c-data-47fd769c"/>
+                            </cl:inputbox>
+                          </cl:gridcell>
+                        </cl:griddetail>
+                      </cl:grid>
+                      <cl:udc std:sid="ud-control-befa2bff" id="udcsplit1" type="udc.com.udcSplit">
+                        <cl:formdata std:sid="f-data-f49e0832" row="1" col="1"/>
+                        <cl:property name="leftGrpId" value="grpMain" type="string"/>
+                        <cl:property name="rightGrpId" value="grpSub" type="string"/>
+                        <cl:property name="leftGridId" value="grdMain" type="string"/>
+                      </cl:udc>
+                      <cl:formlayout std:sid="f-layout-9e7aa8c7">
+                        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        <cl:rows length="1" unit="FRACTION"/>
+                        <cl:columns length="1" unit="FRACTION"/>
+                        <cl:columns length="9" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      </cl:formlayout>
+                    </cl:group>
+                    <cl:group std:sid="group-bd740d9e" id="grpSub">
+                      <cl:formdata std:sid="f-data-23c17dcd" row="0" col="1"/>
+                      <cl:group std:sid="group-bd035ba3" id="grp18">
+                        <cl:formdata std:sid="f-data-785ba938" row="0" col="0"/>
+                        <cl:udc std:sid="ud-control-poquw6v7" id="comtitle2" type="udc.com.comTitle">
+                          <cl:formdata std:sid="f-data-2e97d17a" row="0" col="0"/>
+                          <cl:property name="ctrl" value="grdSub" type="control"/>
+                        </cl:udc>
+                        <cl:udc std:sid="ud-control-99dfa9c9" id="combutton3" type="udc.com.comButton">
+                          <cl:formdata std:sid="f-data-4abb31fa" row="0" col="1"/>
+                          <cl:property name="ctrl" value="grdSub" type="control"/>
+                          <cl:property name="grid" value="grdSub" type="control"/>
+                          <cl:property name="focusColumnName" value="DEPTNO" type="string"/>
+                        </cl:udc>
+                        <cl:formlayout std:sid="f-layout-e757a427" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                          <cl:columns length="1" unit="FRACTION"/>
+                          <cl:columns length="260" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        </cl:formlayout>
+                      </cl:group>
+                      <cl:grid std:sid="grid-5ev3w9cn" id="grdSub" fieldLabel="부서정보" datasetid="dsDept" showdeletedrow="false" autofit="3, 4, 5">
+                        <cl:formdata std:sid="f-data-fe0a6e71" row="1" col="0"/>
+                        <cl:gridcolumn std:sid="g-column-54t42y2g" width="25px"/>
+                        <cl:gridcolumn std:sid="g-column-dmuc0913" width="25px"/>
+                        <cl:gridcolumn std:sid="g-column-9282d20b" width="40px"/>
+                        <cl:gridcolumn std:sid="g-column-f471cfcf"/>
+                        <cl:gridcolumn std:sid="g-column-e8eee6a5"/>
+                        <cl:gridcolumn std:sid="g-column-8f3646ec"/>
+                        <cl:gridheader std:sid="gh-band-7x8y3eo6">
+                          <cl:gridrow std:sid="g-row-82a550aq" height="27px"/>
+                          <cl:gridcell std:sid="gh-cell-34ip9919" rowindex="0" colindex="0" columntype="checkbox"/>
+                          <cl:gridcell std:sid="gh-cell-5474b9hc" rowindex="0" colindex="1" text="F"/>
+                          <cl:gridcell std:sid="gh-cell-07w31uvf" rowindex="0" colindex="2" text="번호"/>
+                          <cl:gridcell std:sid="gh-cell-343fc203" rowindex="0" colindex="5" targetcolumnname="LOC" text="장소"/>
+                          <cl:gridcell std:sid="gh-cell-d4db9c62" rowindex="0" colindex="4" targetcolumnname="DNAME" text="부서명"/>
+                          <cl:gridcell std:sid="gh-cell-4a0aba7c" rowindex="0" colindex="3" class="require" targetcolumnname="DEPTNO" text="부서코드"/>
+                        </cl:gridheader>
+                        <cl:griddetail std:sid="gd-band-v0tkp3j1">
+                          <cl:gridrow std:sid="g-row-7l10un27" height="25px"/>
+                          <cl:gridcell std:sid="gd-cell-7p4jn959" rowindex="0" colindex="0" style="text-align:center;" columntype="checkbox"/>
+                          <cl:gridcell std:sid="gd-cell-0b28iw9h" rowindex="0" colindex="1">
+                            <cl:output std:sid="output-nvp2609o" id="opt2" style="text-align:center;"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-jzlyv3v7" rowindex="0" colindex="2" style="text-align:center;" columntype="rowindex"/>
+                          <cl:gridcell std:sid="gd-cell-43b84b58" rowindex="0" colindex="5" columnname="LOC">
+                            <cl:inputbox std:sid="i-box-988c2785" id="ipb3" style="text-align:center;"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-23c8fc90" rowindex="0" colindex="4" columnname="DNAME">
+                            <cl:inputbox std:sid="i-box-a6f66c92" id="ipb11" style="text-align:center;"/>
+                          </cl:gridcell>
+                          <cl:gridcell std:sid="gd-cell-53036f2e" rowindex="0" colindex="3" columnname="DEPTNO">
+                            <cl:inputbox std:sid="i-box-40e5e3bf" id="ipb12" style="text-align:center;">
+                              <cl:attribute name="required" value="Y"/>
+                            </cl:inputbox>
+                          </cl:gridcell>
+                        </cl:griddetail>
+                      </cl:grid>
+                      <cl:formlayout std:sid="f-layout-871b9a90" hspace="5px" vspace="5px">
+                        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                        <cl:rows length="1" unit="FRACTION"/>
+                        <cl:columns length="1" unit="FRACTION"/>
+                      </cl:formlayout>
+                    </cl:group>
+                    <cl:formlayout std:sid="f-layout-e0c91123" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:formlayout std:sid="f-layout-88d709e9" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+                    <cl:rows length="37" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                    <cl:rows length="25" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                  </cl:formlayout>
+                </cl:group>
+              </cl:tabitem>
+            </cl:tabfolder>
+            <cl:verticallayout std:sid="v-layout-93d454ee" leftmargin="30" rightmargin="30" topmargin="5" bottommargin="10"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-216b8a05" bottommargin="30"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-010e6b4c"/>
+      </cl:group>
+      <cl:output std:sid="output-35ca5e35" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="주요코드">
+        <cl:verticaldata std:sid="v-data-11eef6ad" width="1210px" height="40px" autosize="none"/>
+      </cl:output>
+      <cl:group std:sid="group-039b282d" id="grp15">
+        <cl:verticaldata std:sid="v-data-af83974e" width="1270px" height="350px" autosize="height"/>
+        <cl:group std:sid="group-ab27f594" id="grp7">
+          <cl:verticaldata std:sid="v-data-4c46d89c" width="1210px" height="310px" autosize="height"/>
+          <cl:group std:sid="group-0f31d2b7" id="grp9" class="form-box">
+            <cl:formdata std:sid="f-data-1e958806" row="0" col="0"/>
+            <cl:udc std:sid="ud-control-593e2675" id="ace1" type="udc.tmp.Ace">
+              <cl:listener std:sid="listener-b28f0b50" name="afterLoad" handler="onAce1AfterLoad"/>
+              <cl:verticaldata std:sid="v-data-9d1414d6" width="300px" height="300px" autosize="height"/>
+            </cl:udc>
+            <cl:verticallayout std:sid="v-layout-0e931855"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-37f3904b" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8f1d189a" spacing="20" leftmargin="30" rightmargin="30" topmargin="0" bottommargin="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8031eb1c" leftmargin="20" rightmargin="30" topmargin="30" bottommargin="30"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

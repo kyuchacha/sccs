@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f9bd75ea" version="1.0.0.0">
+  <head std:sid="head-a9a4d351">
+    <title>Template101_Img</title>
+    <screen std:sid="screen-e81e3090" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" useCustomWidth="true" useCustomHeight="true" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-8cd91e05" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-80d7ac59" id="tablet" name="tablet" minwidth="500px" maxwidth="1019px" width="500px" height="667px"/>
+    <screen std:sid="screen-2951f515" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-30893e9c">
+      <cl:dataset std:sid="d-set-7d897c8f" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-2d74ba2a" name="단체증번"/>
+          <cl:datacolumn std:sid="d-column-2b4eb919" name="수금인"/>
+          <cl:datacolumn std:sid="d-column-105a03f8" name="수금인사번"/>
+          <cl:datacolumn std:sid="d-column-39a3ba48" name="수금기관"/>
+          <cl:datacolumn std:sid="d-column-f2e99407" name="담당자"/>
+          <cl:datacolumn std:sid="d-column-c1cf1836" name="담당자사번"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번1</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인1</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번1</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관1</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자1</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번2</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인2</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번2</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관2</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자2</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번3</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인3</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번3</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관3</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자3</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번4</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인4</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번4</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관4</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자4</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번5</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인5</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번5</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관5</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자5</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번6</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인6</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번6</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관6</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자6</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번6</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번7</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인7</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번7</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관7</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자7</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번7</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번8</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인8</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번8</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관8</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자8</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번8</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번9</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인9</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번9</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관9</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자9</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번9</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번10</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인10</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번10</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관10</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자10</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번10</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번11</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인11</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번11</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관11</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자11</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번11</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번12</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인12</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번12</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관12</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자12</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번12</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번13</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인13</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번13</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관13</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자13</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번13</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번14</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인14</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번14</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관14</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자14</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번14</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="단체증번">단체증번15</cl:datavalue>
+            <cl:datavalue columnname="수금인">수금인15</cl:datavalue>
+            <cl:datavalue columnname="수금인사번">수금인사번15</cl:datavalue>
+            <cl:datavalue columnname="수금기관">수금기관15</cl:datavalue>
+            <cl:datavalue columnname="담당자">담당자15</cl:datavalue>
+            <cl:datavalue columnname="담당자사번">담당자사번15</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="팝업"/>
+  </head>
+  <body std:sid="body-dc44638b" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-b39020c9" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-1cf619ea" id="grp8" class="header-box">
+      <cl:verticaldata std:sid="v-data-5c96575d" width="800px" height="60px" autosize="height"/>
+      <cl:udc std:sid="ud-control-ee7e4022" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-a5aab139" width="790px" height="30px" autosize="none"/>
+        <cl:property name="groupBoxIds" value="grp1" type="string"/>
+        <cl:property name="searchBoxId" value="grpSearch" type="string"/>
+        <cl:property name="visibleNewButton" value="true" type="boolean"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:group std:sid="group-4f490d46" id="grpSearch" class="search-box">
+        <cl:verticaldata std:sid="v-data-ef4cc2f5" width="790px" height="25px" autosize="height"/>
+        <cl:group std:sid="group-ad1148d3" id="grp9">
+          <cl:flowlayoutdata std:sid="f-data-1adb6f36" width="300px" height="25px"/>
+          <cl:output std:sid="output-a51ff4d8" value="파라미터_코드">
+            <cl:formdata std:sid="f-data-3d064520" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-e1fe9c02" id="ipbCd">
+            <cl:formdata std:sid="f-data-d0108f3c" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-4bc07d1b">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-7e57179e" id="grp10">
+          <cl:flowlayoutdata std:sid="f-data-540ed7c9" width="300px" height="25px"/>
+          <cl:output std:sid="output-50d6a25e" value="파라미터_명칭">
+            <cl:formdata std:sid="f-data-ffd35d1f" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-16929c30" id="ipbNm">
+            <cl:formdata std:sid="f-data-9233e1b0" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-49d192e8">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="100" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:udc std:sid="ud-control-31ece948" id="combtnsearch1" type="udc.com.comBtnSearch">
+          <cl:flowlayoutdata std:sid="f-data-b0c35aec" width="60px" height="25px" autosize="none"/>
+        </cl:udc>
+        <cl:flowlayout std:sid="f-layout-c2fd4481"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-663e21d3" scrollable="false" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-66beb213" id="grp1">
+      <cl:verticaldata std:sid="v-data-2775d397" width="1292px" height="535px" autosize="none"/>
+      <cl:group std:sid="group-da5b28fd" id="grp6">
+        <cl:formdata std:sid="f-data-45b4d855" row="0" col="0"/>
+        <cl:grid std:sid="grid-b9c71899" id="grdMst" datasetid="ds1">
+          <cl:formdata std:sid="f-data-254eea2c" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-01804a18"/>
+          <cl:gridcolumn std:sid="g-column-820eb823"/>
+          <cl:gridcolumn std:sid="g-column-2f3b2d04"/>
+          <cl:gridcolumn std:sid="g-column-535ffce9"/>
+          <cl:gridcolumn std:sid="g-column-5f8dbab4"/>
+          <cl:gridcolumn std:sid="g-column-b0fc738d"/>
+          <cl:gridheader std:sid="gh-band-af7697a7">
+            <cl:gridrow std:sid="g-row-5ed45150"/>
+            <cl:gridcell std:sid="gh-cell-0a160cc0" rowindex="0" colindex="0" targetcolumnname="단체증번" sortable="false" filterable="false" text="단체증번"/>
+            <cl:gridcell std:sid="gh-cell-f429547a" rowindex="0" colindex="1" targetcolumnname="수금인" sortable="false" filterable="false" text="수금인"/>
+            <cl:gridcell std:sid="gh-cell-7485e287" rowindex="0" colindex="2" targetcolumnname="수금인사번" sortable="false" filterable="false" text="수금인사번"/>
+            <cl:gridcell std:sid="gh-cell-f0d1a290" rowindex="0" colindex="3" targetcolumnname="수금기관" sortable="false" filterable="false" text="수금기관"/>
+            <cl:gridcell std:sid="gh-cell-5ccfc16a" rowindex="0" colindex="4" targetcolumnname="담당자" sortable="false" filterable="false" text="담당자"/>
+            <cl:gridcell std:sid="gh-cell-54b9614d" rowindex="0" colindex="5" targetcolumnname="담당자사번" sortable="false" filterable="false" text="담당자사번"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-b1fe2bfd">
+            <cl:gridrow std:sid="g-row-14ed3ecf"/>
+            <cl:gridcell std:sid="gd-cell-3dedee38" rowindex="0" colindex="0" columnname="단체증번"/>
+            <cl:gridcell std:sid="gd-cell-f4d5a279" rowindex="0" colindex="1" columnname="수금인"/>
+            <cl:gridcell std:sid="gd-cell-d43226c5" rowindex="0" colindex="2" columnname="수금인사번"/>
+            <cl:gridcell std:sid="gd-cell-5f175f3d" rowindex="0" colindex="3" columnname="수금기관"/>
+            <cl:gridcell std:sid="gd-cell-84ad151c" rowindex="0" colindex="4" columnname="담당자"/>
+            <cl:gridcell std:sid="gd-cell-6c9dd768" rowindex="0" colindex="5" columnname="담당자사번"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:textarea std:sid="t-area-b9a98781" id="txaScript" class="form-box">
+          <cl:formdata std:sid="f-data-629c0c9c" row="3" col="0"/>
+        </cl:textarea>
+        <cl:udc std:sid="ud-control-a4d56c82" id="comformtitle3" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-1604fcba" row="0" col="0"/>
+          <cl:property name="title" value="목록" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-83b3f373" id="comformtitle2" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-3c915423" row="2" col="0"/>
+          <cl:property name="title" value="스크립트 내용" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-723678d6" hspace="0px" vspace="0px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-9e1e302b" id="grp3">
+        <cl:formdata std:sid="f-data-f337bc88" row="1" col="0"/>
+        <cl:button std:sid="button-4d94704c" id="btnClose2" class="btn-pop-close" visible="false" value="화면닫기">
+          <cl:listener std:sid="listener-1e8b5fe0" name="click" handler="onBtnClose2Click"/>
+          <cl:formdata std:sid="f-data-e6793ca6" row="0" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-85cd144e" id="btnSelect" class="btn-pop-close" value="선택닫기">
+          <cl:listener std:sid="listener-d9834c54" name="click" handler="onBtnSelectClick"/>
+          <cl:formdata std:sid="f-data-b100c73b" row="0" col="2"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-366e667b" top-margin="5px" right-margin="0px" bottom-margin="5px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="70" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="70" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="5" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c9d396b5" hspace="0px" vspace="0px">
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-78557cfd"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="35"/>
+      <std:guide position="50"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

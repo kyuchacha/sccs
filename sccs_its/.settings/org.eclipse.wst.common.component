@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+                    
+    
+    
+    
+    <wb-module deploy-name="sccs_its-1.0.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/resource" source-path="/exbuilder/runtime" tag="exbuilderClientSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/exbuilder/config" tag="exbuilderConfig"/>
+        <wb-resource deploy-path="/" source-path="/.exbuilder-fragments/sccs-ui" tag="exbuilderProjectReference"/>
+                                        
+        
+        
+        
+        <property name="java-output-path" value="/sccs_its/target/classes"/>
+                        
+        
+        <property name="context-root" value="sccs_its"/>
+                                    
+    
+    
+    
+    </wb-module>
+                
+
+
+
+</project-modules>

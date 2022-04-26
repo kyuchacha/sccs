@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="help">
+
+	<select id="getTotalCount" resultType="int">
+		SELECT COUNT(*) 
+		FROM TBCMHM004
+		WHERE 1 = 1
+		<if test='EMP_NM != null and EMP_NM != ""'>
+		  AND NAME LIKE '%' || #{EMP_NM} || '%'
+		</if>
+		<if test='DEPT_CD != null and DEPT_CD != ""'>
+		  AND DEPT_CD = #{DEPT_CD}
+		</if>
+	</select>	
+	
+	<select id="getList" resultType="HashMap">
+		SELECT *
+		FROM (  SELECT SEQ_NO
+					 , HPCM_NM
+					 , MENU_DC
+					 , MENU_ID
+					 , '최상위메뉴 > 상위메뉴 > 메뉴' AS MENU_PATH
+					 , FILE_ID
+					 , REG_DT
+					 , ROW_NUMBER() OVER(ORDER BY HPCM_NM ASC) AS RN
+				FROM TBCMHM004
+				WHERE 1 = 1
+				<if test='EMP_NM != null and EMP_NM != ""'>
+				  AND NAME LIKE '%' || #{EMP_NM} || '%'
+				</if>
+				<if test='DEPT_CD != null and DEPT_CD != ""'>
+				  AND DEPT_CD = #{DEPT_CD}
+				</if>
+				)
+		WHERE RN BETWEEN #{startPageIdx} AND #{endPageIdx}
+	</select>
+	
+	
+</mapper>

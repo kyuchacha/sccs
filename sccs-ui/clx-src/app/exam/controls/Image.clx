@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-f3ddac42"/>
+    <cl:appspec dev-comment="templates/CtrlTmpl.clx 템플릿 사용하여 작성 함." title="이미지 관련 속성"/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:group std:sid="group-83e2c69a" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-dd803572" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-793bae76" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-000a9f26" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+        <cl:property name="searchBoxId" value="grpHeader" type="string"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-275b97fe" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-237d4771" id="grpData">
+      <cl:verticaldata std:sid="v-data-9e585805" width="400px" height="3000px" autosize="height"/>
+      <cl:group std:sid="group-cd8e0265">
+        <cl:verticaldata std:sid="v-data-721e5155" width="400px" height="700px" autosize="height"/>
+        <cl:output std:sid="output-439ecc8e" style="font-weight:700; font-size:2.5rem; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="이미지">
+          <cl:verticaldata std:sid="v-data-8c3d53dc" width="100px" height="45px" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-48b7b760" style="font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" class="opt-tmpl" value="사진 등의 이미지를 출력하는 컨트롤입니다.&#xD;&#xA;&#xD;&#xA;사용자가 원하는 파일 경로를 저장 후 출력이 가능합니다.&#xD;&#xA;이미지 지원 파일에는 jpg, jpeg, gif, png 등이 있습니다.">
+          <cl:verticaldata std:sid="v-data-189f5ff8" width="100px" height="150px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-36bfc6ee" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid;" class="attach-box">
+          <cl:verticaldata std:sid="v-data-f290ad19" width="1220px" height="381px" autosize="height"/>
+          <cl:group std:sid="group-7b83ef54">
+            <cl:flowlayoutdata std:sid="f-data-3af64b97" width="300px" height="300px" autosize="none"/>
+            <cl:output std:sid="output-f372885d" class="text-center" value="&lt;기본 이미지 컨트롤>">
+              <cl:formdata std:sid="f-data-e1f0286b" row="1" col="0"/>
+            </cl:output>
+            <cl:img std:sid="image-0baa0aa9" id="defaultImg" src="빌딩.PNG">
+              <cl:formdata std:sid="f-data-cb2263c1" row="0" col="0"/>
+            </cl:img>
+            <cl:formlayout std:sid="f-layout-0695157e" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-815ebff0">
+            <cl:flowlayoutdata std:sid="f-data-dd4a60a1" width="450px" height="300px" autosize="both"/>
+            <cl:output std:sid="output-24c723f0" class="text-center" value="&lt;컨트롤 동적 생성 코드>">
+              <cl:formdata std:sid="f-data-628e689a" row="1" col="0"/>
+            </cl:output>
+            <cl:udc std:sid="ud-control-45c1b289" id="ace1" type="udc.tmp.Ace">
+              <cl:formdata std:sid="f-data-ce3f300b" row="0" col="0"/>
+              <cl:property name="value" value="var image_1 = new cpr.controls.Image();&#xD;&#xA;&#xD;&#xA;image_1.src = &quot;app/exam/controls/빌딩.PNG&quot;;" type="string"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-a2969db7" scrollable="true" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="20" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:flowlayout std:sid="f-layout-05fc9744" scrollable="false" hspacing="40" vspacing="20" halign="center" valign="middle" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-7f9d24d7" spacing="30" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-de8c1411" class="card-inner">
+        <cl:verticaldata std:sid="v-data-b599e456" width="1100px" height="2000px" autosize="height"/>
+        <cl:output std:sid="output-93a4182c" style="font-weight:700; font-size:26px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" class="h1 pl-3 bg-primary text-white" value="자주 사용되는 속성">
+          <cl:verticaldata std:sid="v-data-b93d60a0" width="1220px" height="38px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-63aedf87" value="자주 사용되는 속성과 시나리오를 통한 예제를 확인할 수 있습니다. 자세한 사항은 Help Contents를 참조하시기 바랍니다.">
+          <cl:verticaldata std:sid="v-data-7a20e9d2" width="100px" height="141px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-27b9f331" class="card-inner">
+          <cl:verticaldata std:sid="v-data-8c86fba2" width="1220px" height="1500px" autosize="height"/>
+          <cl:output std:sid="output-696ccd84" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="areaCoordinate">
+            <cl:verticaldata std:sid="v-data-fa6edbdf" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-6a755066" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-7a15b452" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-d6122608" style="font-weight:700;" class="opt-tmpl" value="이미지 영역의 좌표를 설정하는 속성입니다. 기본값은 absolute며, image-size로 변경할 수 있습니다.&#xD;&#xA;- absolute(default) : 이미지 영역의 모든 좌표를 절대 취급합니다.&#xD;&#xA;- image-size : 이미지 영역의 모든 좌표를 표시하는 이미지 파일의 원래 크기에 대한 상대 좌표로 취급합니다.">
+              <cl:verticaldata std:sid="v-data-157990b2" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-3d91933b" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:group std:sid="group-345b8d4f" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-6a3f6084" width="1220px" height="125px" autosize="height"/>
+            <cl:output std:sid="output-aff6cf8a" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="type">
+              <cl:formdata std:sid="f-data-23146d5b" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-3e30447e" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="AreaCoordinate">
+              <cl:formdata std:sid="f-data-c6a14470" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-787e3657" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="get">
+              <cl:formdata std:sid="f-data-560e5407" row="1" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-bee01d75" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="set">
+              <cl:formdata std:sid="f-data-f6726655" row="2" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-f36a0864" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="이미지 맵 경로 정보의 좌표계를 얻습니다.">
+              <cl:formdata std:sid="f-data-bb39fa7e" row="1" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-98dcf500" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="이미지 맵 경로 정보의 좌표계를 지정합니다.">
+              <cl:formdata std:sid="f-data-e3fe8c78" row="2" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-5d5dd3ff" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:columns length="2" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-c9d1f0de" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-a8c9897a" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-647f8d4d" style="border-right-style:none; background-color:transparent; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="label" value="시나리오">
+              <cl:formdata std:sid="f-data-2293ec44" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-39377523" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="입력값">
+              <cl:formdata std:sid="f-data-f407e800" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-aa82cf29" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="기능확인">
+              <cl:formdata std:sid="f-data-9fbea777" row="0" col="2"/>
+            </cl:output>
+            <cl:output std:sid="output-a018938a" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="opt-tmpl" value="1) 하단의 이미지 컨트롤에서 학동역 3번 출구에 마우스를 올려놓습니다.&#xD;&#xA;2) 지정한 영역이 보이는 것을 확인할 수 있습니다.">
+              <cl:formdata std:sid="f-data-e0b41856" row="1" col="0"/>
+            </cl:output>
+            <cl:button std:sid="button-e2de2607" id="btnInit" class="btn-primary" value="실행">
+              <cl:formdata std:sid="f-data-3b4bb04d" valign="CENTER" height="30" row="1" col="2"/>
+            </cl:button>
+            <cl:output std:sid="output-615ea0c8" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="opt-tmpl" value="areaCoordinate = &quot;image-size&quot;">
+              <cl:formdata std:sid="f-data-dee07c30" row="1" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-b586c799" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="250" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-4fca0a9f" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid; background-image:none;" class="attach-box">
+            <cl:verticaldata std:sid="v-data-cf6397a1" width="1220px" height="800px" autosize="height"/>
+            <cl:group std:sid="group-2d521c14">
+              <cl:flowlayoutdata std:sid="f-data-6b68db1b" width="500px" height="500px" autosize="both"/>
+              <cl:output std:sid="output-8297705a" class="text-center" value="&lt;기능 확인 컨트롤>">
+                <cl:formdata std:sid="f-data-d2ecfabf" row="1" col="0"/>
+              </cl:output>
+              <cl:img std:sid="image-575d9388" id="samplgeImg" src="빌딩.PNG" areacoordinate="image-size">
+                <cl:formdata std:sid="f-data-f0f92a0a" row="0" col="0"/>
+                <cl:area std:sid="a-item-5575eb13" label="label1" value="value1" shape="circle" coords="393,428,11"/>
+              </cl:img>
+              <cl:formlayout std:sid="f-layout-297521a3" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:flowlayout std:sid="f-layout-89a29829" scrollable="false" hspacing="20" vspacing="20" halign="center" valign="middle" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-8f3e7bcb" spacing="15" leftmargin="40" rightmargin="40" topmargin="20" bottommargin="40"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-fea69ec9" spacing="30" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-004c7dc4" spacing="20" leftmargin="50" rightmargin="50" topmargin="20" bottommargin="60"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="33"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

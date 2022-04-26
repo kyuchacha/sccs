@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7f58e514" version="1.0.3655">
+  <head std:sid="head-862f67bf">
+    <screen std:sid="screen-3ade6afc" id="default" name="default" minwidth="1280px" width="1280px" height="900px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-39df3127" id="tablet" name="tablet" maxwidth="1279px" width="760px" height="820px"/>
+    <cl:model std:sid="model-1bcc3d3a"/>
+    <cl:appspec title="회원 탈퇴 시 휴대폰 번호 입력 화면"/>
+  </head>
+  <body std:sid="body-7da0131c">
+    <cl:udc std:sid="ud-control-ed24ae0c" id="appheader1" visible="false" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-5d562e77" width="1280px" height="30px"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+    </cl:udc>
+    <cl:group std:sid="group-1e846ef2" id="grpData">
+      <cl:verticaldata std:sid="v-data-1babf71a" width="1280px" height="90px" autosize="height"/>
+      <cl:group std:sid="group-a88ee847" id="grp4">
+        <cl:formdata std:sid="f-data-78f9a6e1" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:udc std:sid="ud-control-f0242f08" id="comformtitle2" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-9dd1a149" row="0" col="0"/>
+          <cl:property name="ctrl" type="control"/>
+          <cl:property name="title" value="회원 탈퇴승인" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-28a9f7b7" id="grp5">
+          <cl:formdata std:sid="f-data-41d9172f" row="0" col="1"/>
+          <cl:button std:sid="button-f3648001" id="btn1" class="btn-primary" value="확인">
+            <cl:flowlayoutdata std:sid="f-data-fb1a7f92" width="60px" height="25px" autosize="none"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-42bb875e" scrollable="false" halign="right" linewrap="false"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-94a29707">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-c34bc05a" id="grp6" class="form-box">
+        <cl:formdata std:sid="f-data-53f8e3d3" row="1" col="0"/>
+        <cl:output std:sid="output-7abf2028" class="require" value="휴대폰 번호">
+          <cl:formdata std:sid="f-data-54bcdef7" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-252b9805" id="ipb2">
+          <cl:formdata std:sid="f-data-f3c82369" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-49bba08c" scrollable="false" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="0" vseparatorwidth="0">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-9e1e302b" id="grp7">
+        <cl:formdata std:sid="f-data-39ef78c1" row="2" col="0"/>
+        <cl:button std:sid="button-85cd144e" id="btnSelect" class="btn-pop-close" value="취소">
+          <cl:formdata std:sid="f-data-3f12f3d8" row="0" col="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-366e667b" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-49b6d18b">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="30" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-9fca1fe3" spacing="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

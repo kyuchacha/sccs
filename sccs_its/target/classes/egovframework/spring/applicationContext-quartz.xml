@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<!-- 스프링 프레임웍에 설정된 스케줄러(쿼츠)의 제어 SchedulerFactory : 쿼츠 스케줄러의 시작, 일시정지, 재시작, 
+		종료를 제어 Trigger : 스케줄링(년, 월, 주, 시, 분, 초) 설정 Job : 설정된 스케줄에 따라 주기적으로 실행되어야 
+		하는 코드 -->
+	<bean id="quartzJobClazz" class="com.sccs.cm.sys.cmmn.quartz.TimeCheckJob" />
+	<bean id="timeCheckJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean"
+		p:targetObject-ref="quartzJobClazz"
+		p:targetMethod="currentTimePrt"
+		p:concurrent="false">
+	</bean>
+
+	<bean id="timeCronTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean"
+		p:jobDetail-ref="timeCheckJob" p:cronExpression="0 0 12 * * ?">
+	</bean>
+
+	<!-- ScheDulerFactoryBean은 인스턴스화되면 자동으로 스케줄을 실행. -->
+	<bean id="schedulerFactory"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean"
+		lazy-init="true">
+		<property name="triggers">
+			<list>
+				<ref bean="timeCronTrigger" />
+			</list>
+		</property>
+	</bean>
+</beans>

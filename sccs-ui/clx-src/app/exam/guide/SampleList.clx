@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-08c4aeab" version="1.0.0.0">
+  <head std:sid="head-2d9009a6">
+    <title>Template01</title>
+    <screen std:sid="screen-7830b854" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-0db0cefa" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-8efd9377" id="tablet" name="tablet" minwidth="800px" maxwidth="1019px" width="800px" height="768px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-4da98612" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-d4196624">
+      <cl:dataset std:sid="d-set-cb867e61" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="메뉴" std:sid="d-column-410ec6d7" name="menu"/>
+          <cl:datacolumn comment="화면명" std:sid="d-column-558e050e" name="name"/>
+          <cl:datacolumn comment="화면ID" std:sid="d-column-8f94e2b6" name="appId"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[화면호출]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[임베디드]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[MoveSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[화면호출]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[다이얼로그]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[MoveSample03]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[화면호출]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[MDI전환]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[MoveSample02]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[그리드 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[그리드 행/컬럼 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSample02]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[그리드 복사/이동 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSample03]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 데이터셋의 익스프레션]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSampleEtc02]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 그리드 체크박스 조건]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSampleEtc04]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 그리드 필수값 체크]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSampleEtc01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 그리드 자동합산/특정행 합계]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSampleEtc03]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 그리드 소계 푸터]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSampleEtc06]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 그리드 그룹소계디자인]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSampleEtc07]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 그리드 트리구조(트리셀)]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSampleEtc08]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[그리드]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 그리드내 레이어화면 호출]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[GridSampleEtc09]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[프리폼]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[프리폼 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[FormSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[프리폼]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 그리드행과 폼 바인딩]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[FormSampleEtc01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[프리폼]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[기타활용예제 > 폼내의 필수값 체크]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[FormSampleEtc02]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[데이터셋,맵]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[ 데이터셋 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[DataSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[데이터셋,맵]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[데이터맵 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[DataSample02]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[탭]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[탭 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[TabSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[컨트롤 ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[컨트롤 속성제어]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[ControlSample02]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[컨트롤 ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[선택형 컨트롤 속성제어]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[ControlSample03]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[컨트롤 ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[그룹 컨트롤]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[ControlSample04]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[컨트롤 ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[visible 및 스크립트 동적제어]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[ControlSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[Util ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[ValueUtil 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[UtilSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[Util ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[DateUtil 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[UtilSample02]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[Util ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Validator 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[UtilSample03]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[Util ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[포맷예제]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[UtilSample04]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[트리]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[트리 기능]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[TreeSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[파일처리 ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[엑셀파일미리보기 ]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[FileSample01]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[파일처리 ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[멀티파일업로드 ]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[FileSample03]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="menu"><![CDATA[아코디언 ]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[아코디언 목록형 예제]]></cl:datavalue>
+            <cl:datavalue columnname="appId"><![CDATA[AcodSample01]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-089c730c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-f793dd88" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-baf26ee4" width="1320px" height="30px"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+    </cl:udc>
+    <cl:group std:sid="group-b144c0ae" id="grpData">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-c97ae852" width="1320px" height="645px"/>
+      <cl:udc std:sid="ud-control-96f4a800" id="comtitle1" type="udc.com.comTitle">
+        <cl:formdata std:sid="f-data-232d690f" row="0" col="0"/>
+        <cl:property name="ctrl" value="grdMain" type="control"/>
+        <cl:property name="showExportExcel" value="false" type="boolean"/>
+      </cl:udc>
+      <cl:grid std:sid="grid-6114c4de" id="grdMain" fieldLabel="예제/샘플 목록" readonly="true" datasetid="dsList" autofit="1, 2, 3" columnMovable="true">
+        <cl:formdata std:sid="f-data-8f2ba60d" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:gridcolumn std:sid="g-column-48ae0458" width="50px"/>
+        <cl:gridcolumn std:sid="g-column-e21eae9e" width="110px" visible="true"/>
+        <cl:gridcolumn std:sid="g-column-fb6a8da9" width="255px"/>
+        <cl:gridcolumn std:sid="g-column-43de4550" width="114px"/>
+        <cl:gridheader std:sid="gh-band-34455ccc">
+          <cl:gridrow std:sid="g-row-6cc2420f" height="27px"/>
+          <cl:gridcell std:sid="gh-cell-2cb22693" rowindex="0" colindex="0" sortable="false" filterable="false" text="No"/>
+          <cl:gridcell std:sid="gh-cell-84ed8e97" rowindex="0" colindex="1" targetcolumnname="menu" sortable="false" filterable="false" text="메뉴"/>
+          <cl:gridcell std:sid="gh-cell-f64306f7" rowindex="0" colindex="2" targetcolumnname="name" sortable="false" filterable="false" text="화면명"/>
+          <cl:gridcell std:sid="gh-cell-d48bd871" rowindex="0" colindex="3" targetcolumnname="appId" sortable="false" filterable="false" text="화면ID"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-cb6e411a">
+          <cl:gridrow std:sid="g-row-29dd12d4"/>
+          <cl:gridcell std:sid="gd-cell-14dd454f" rowindex="0" colindex="0" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-9ef3cef9" rowindex="0" colindex="1" style="text-align:left;" columnname="menu" suppressible="true"/>
+          <cl:gridcell std:sid="gd-cell-cd35632e" rowindex="0" colindex="2" style="text-align:left;" columnname="name"/>
+          <cl:gridcell std:sid="gd-cell-017c3c30" rowindex="0" colindex="3" style="text-align:left;" columnname="appId">
+            <cl:output std:sid="output-855c0926" id="otp1" unselectable="false"/>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-dd7e89fc" scrollable="false">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="4" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-b9d25771"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

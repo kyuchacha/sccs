@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:task="http://www.springframework.org/schema/task"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+						   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+						   http://www.springframework.org/schema/context
+						   http://www.springframework.org/schema/context/spring-context-4.0.xsd
+						   http://www.springframework.org/schema/mvc
+						   http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+						   http://www.springframework.org/schema/aop
+						   http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+						   http://www.springframework.org/schema/task
+						   http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+    <!-- Json -->
+    <mvc:annotation-driven />
+	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+	</bean>
+	<!-- Json -->
+
+    <context:component-scan base-package="com" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+
+   <!-- view resolver -->
+    <bean id="jstlViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+    
+    <!-- exbuilder request mapping adapter -->
+    <!-- eXbuilder6 프로토콜을 파싱하여 DataRequest 파라미터를 자동으로 생성해주는 리졸버 추가 -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+	<mvc:annotation-driven>
+		<mvc:argument-resolvers>
+			<bean class="com.cleopatra.spring.DataRequestResolver" />
+		</mvc:argument-resolvers>
+	</mvc:annotation-driven>
+
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" />
+    <bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+        <property name="paramName" value="language" />
+    </bean>
+
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="defaultErrorView" value="cmmn/egovError"/>
+        <property name="exceptionMappings">
+            <props>
+                <prop key="org.springframework.dao.DataAccessException">cmmn/dataAccessFailure</prop>
+                <prop key="org.springframework.transaction.TransactionException">cmmn/transactionFailure</prop>
+                <prop key="egovframework.rte.fdl.cmmn.exception.EgovBizException">cmmn/egovError</prop>
+                <prop key="org.springframework.security.AccessDeniedException">cmmn/egovError</prop>
+            </props>
+        </property>
+    </bean>
+    
+    <bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
+        <property name="order" value="0"/>
+    </bean>
+    
+    <bean id="excelDownloadView" class="com.sccs.cm.sys.cmmn.util.ExcelDownloadView"/>
+    
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver" p:order="2"
+	    p:viewClass="org.springframework.web.servlet.view.JstlView"
+	    p:prefix="/WEB-INF/jsp/" p:suffix=".jsp"/>
+
+    <mvc:view-controller path="/cmmn/validator.do" view-name="cmmn/validator"/>
+    
+	<mvc:interceptors>
+	<mvc:interceptor>
+	        <mvc:mapping path="/**/*.do"/>
+	        <mvc:exclude-mapping path="/index.do"/>
+	        <mvc:exclude-mapping path="/*login*.do"/>
+	        <mvc:exclude-mapping path="/**/actionLog*.do"/>
+	        <bean class="com.sccs.cm.sys.cmmn.intercepter.LoginInterceptor"/>
+	    </mvc:interceptor>
+	</mvc:interceptors>
+
+<!--     로그인 체크가 필요한 URL과 권한 여부를 체크  -->
+<!--     <mvc:interceptors> -->
+<!--         <mvc:interceptor> -->
+<!--         	<mvc:mapping path="/**/*.do"/> -->
+<!--             <mvc:exclude-mapping path="/*/*/main.do"/> -->
+<!--             <mvc:exclude-mapping path="/login*.do"/> -->
+<!-- 		    <bean class="com.cmmn.intercepter.AuthenticInterceptor" /> -->
+<!--         </mvc:interceptor> -->
+<!--     </mvc:interceptors> -->
+    <!-- 로그인 체크가 필요한 URL과 권한 여부를 체크  -->
+    
+    <!-- batch scheduled -->
+<!-- 	<task:annotation-driven></task:annotation-driven> -->
+</beans>

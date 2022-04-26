@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a45da1f5" version="1.0.0.0">
+  <head std:sid="head-44fc976a">
+    <title>MenuDialog</title>
+    <screen std:sid="screen-16aa29ca" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="450" customWidth="300"/>
+    <screen std:sid="screen-37bc4ba0" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-e006e31b" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-d0a29d40">
+      <cl:dataset std:sid="d-set-612e54c0" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-0b4e47c6" name="DEPT_CD"/>
+          <cl:datacolumn std:sid="d-column-6b930358" name="DEPT_NM"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset comment="메가 메뉴" std:sid="d-set-a1e801ff" id="dsAllMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-1a75e7e3" name="MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-b7d0e3e2" name="MENU_NM"/>
+          <cl:datacolumn std:sid="d-column-ce8bf8b8" name="UP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-18380ef4" name="TOP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-b7879d44" name="CALL_PAGE"/>
+          <cl:datacolumn std:sid="d-column-9bdc2fe6" name="PGM_ID"/>
+          <cl:datacolumn std:sid="d-column-4c100870" name="ICON"/>
+          <cl:datacolumn std:sid="d-column-a2bd6f9f" name="MENU_KEY"/>
+          <cl:datacolumn std:sid="d-column-1d8b7278" name="MOBILE_YN"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-4b95b438" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-df257562" name="strDept"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-6e26c1b1" id="subOnLoad" method="get" action="app/exam/data/main/main.json">
+        <cl:responsedata dataid="dsAllMenu"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec dev-comment="다이얼로그(팝업) 실습&#xD;&#xA;&#xD;&#xA;해당 화면으로 데이터 셋, 그리드, 바인딩 그리고 다이얼로그에 대한 내용을 실습합니다.&#xD;&#xA;&#xD;&#xA;진행 순서는 다음과 같습니다.&#xD;&#xA;&#xD;&#xA;1. 팝업으로 띄울 화면을 디자인 하고, 다이얼로그로 띄웠을 때 화면이 제대로 표시되기 위해 앵커를 지정합니다.&#xD;&#xA;&#xD;&#xA;2. dsList 라는 이름의 데이터셋을 생성하고, DEPT_NO 컬럼과 DEPT_NAME 컬럼을 추가합니다.&#xD;&#xA;&#xD;&#xA;3. dmParam 이라는 이름의 데이터맵을 생성하고, strDept 라는 컬럼을 추가합니다.&#xD;&#xA;&#xD;&#xA;4. dsList는 그리드에 바인딩하고, dmParam의 strDept 컬럼은 조회조건의 인풋박스와 데이터맵 바인딩합니다.&#xD;&#xA;&#xD;&#xA;5. subDeptList 라는 이름의 서브미션을 생성합니다. action, 요청 데이터, 응답 데이터를 설정합니다.&#xD;&#xA;&#xD;&#xA;6. search 버튼을 클릭했을 때 서브미션 통신을 할 수 있도록 스크립트를 작성합니다.&#xD;&#xA;&#xD;&#xA;7. 앱이 로드될 때 바로 조회가 될 수 있도록 로드 이벤트에 initValue를 받아 설정하는 스크립트과 조회하는 스크립트를 작성합니다.&#xD;&#xA;&#xD;&#xA;8. 선택닫기 버튼을 클릭했을 때 그리드에 선택한 행에 대한 데이터를 다이얼로그를 호출한 쪽으로 returnValue를 넘겨주는 스크립트를 작성합니다.&#xD;&#xA;&#xD;&#xA;9. 닫기 버튼을 클릭했을 때 다이얼로그를 닫을 수 있도록 스크립트를 작성합니다.&#xD;&#xA;&#xD;&#xA;10. 앱의 title을 작성하여 팝업의 제목을 설정합니다.&#xD;&#xA;&#xD;&#xA;11. 정상적으로 기능이 작동하는지 확인합니다." title="메뉴팝업"/>
+  </head>
+  <body std:sid="body-c7b0e420" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-f3bf58cc" name="load" handler="onBodyLoad"/>
+    <cl:button std:sid="button-c556197e" value="선택닫기">
+      <cl:listener std:sid="listener-682dc641" name="click" handler="onButtonClick3"/>
+      <cl:xylayoutdata std:sid="xyl-data-3be6f87f" bottom="20px" left="20px" width="100px" height="30px" horizontalAnchor="LEFT" verticalAnchor="BOTTOM"/>
+    </cl:button>
+    <cl:button std:sid="button-0d2afbf0" value="닫기">
+      <cl:listener std:sid="listener-5d1b2187" name="click" handler="onButtonClick2"/>
+      <cl:xylayoutdata std:sid="xyl-data-d8a1ed0a" right="20px" bottom="20px" width="100px" height="30px" horizontalAnchor="RIGHT" verticalAnchor="BOTTOM"/>
+    </cl:button>
+    <cl:tree std:sid="tree-0ac24e4a" id="treMenu" class="sidebar" indent="10" ellipsis="true" autoOpen="0">
+      <cl:xylayoutdata std:sid="xyl-data-632a9026" top="-1px" left="0px" width="280px" height="391px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:treeitemset datasetid="dsAllMenu" label="MENU_NM" value="MENU_ID" icon="ICON" tooltip="MENU_NM" parent="UP_MENU_ID"/>
+      <cl:itemstyle>
+        <cl:expbind property="class" category="CLASS" expression="CALL_PAGE != null &amp;&amp; CALL_PAGE != &quot;&quot;&#xD;&#xA; ?  &quot;aria-level-3&quot; : &quot;aria-level-&quot; + (depth + 1)"/>
+      </cl:itemstyle>
+    </cl:tree>
+    <cl:xylayout std:sid="xylayout-c1329d47"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cdca6b6f" version="1.0.3263">
+  <head std:sid="head-3b27f648">
+    <screen std:sid="screen-47cf6598" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-0e655730" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-0d472091" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-29d9979c">
+      <cl:dataset std:sid="d-set-3d2e8a77" id="dsAppList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f74a2726" name="value"/>
+          <cl:datacolumn std:sid="d-column-a6cce98c" name="name"/>
+          <cl:datacolumn std:sid="d-column-0e18a260" name="tooltip"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-d131a23c" id="dsDataList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-66953ab7" name="value"/>
+          <cl:datacolumn std:sid="d-column-9224b9f5" name="name"/>
+          <cl:datacolumn std:sid="d-column-22d96d27" name="parent"/>
+          <cl:datacolumn std:sid="d-column-7bcf0229" name="tooltip"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-6cfe7dfc" id="dsGroup">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f0359d9d" name="value"/>
+          <cl:datacolumn std:sid="d-column-43ed5190" name="name"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="데이터 확인 팝업"/>
+  </head>
+  <body std:sid="body-0f9fe4f7">
+    <cl:listener std:sid="listener-25b0a9b3" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-f89c44ea" id="grpTop">
+      <cl:formdata std:sid="f-data-6eeafe4c" row="0" col="0"/>
+      <cl:group std:sid="group-72a93be7" id="grpSearch" class="form-box">
+        <cl:attribute name="tablet-column-count" value="2"/>
+        <cl:attribute name="mobile-column-count" value="2"/>
+        <cl:verticaldata std:sid="v-data-d89baa39" width="400px" height="78px"/>
+        <cl:output std:sid="output-a99a1be0" id="opt1" style="font-weight:bold;" value="메뉴이름">
+          <cl:formdata std:sid="f-data-cd84534e" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-fc5bbdc1" id="opt2" style="font-weight:bold;" value="포함된 화면목록">
+          <cl:formdata std:sid="f-data-f043a434" row="1" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-45485edf" id="cmbAppList">
+          <cl:listener std:sid="listener-9ef77d32" name="selection-change" handler="onCmbAppListSelectionChange"/>
+          <cl:formdata std:sid="f-data-4b01622c" row="1" col="1" rowspan="1" colspan="1"/>
+          <cl:itemset datasetid="dsAppList" label="name" value="value"/>
+        </cl:combobox>
+        <cl:output std:sid="output-d982ede7" id="opt3" style="font-weight:bold;" value="데이터 목록">
+          <cl:formdata std:sid="f-data-f8ad6093" row="1" col="2"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-ed2fcd85" id="cmbDataList" maxvisibleitems="10" autoselect="true">
+          <cl:listener std:sid="listener-e27b2073" name="click" handler="onCmbDataListClick"/>
+          <cl:listener std:sid="listener-cd7acc61" name="selection-change" handler="onCmbDataListSelectionChange"/>
+          <cl:formdata std:sid="f-data-c52f5cd8" row="1" col="3" rowspan="1" colspan="1"/>
+          <cl:item std:sid="t-item-ed82412c" label="선택" value=""/>
+          <cl:itemset datasetid="dsDataList" label="name" value="value" tooltip="tootip"/>
+        </cl:combobox>
+        <cl:output std:sid="output-f43c8c8e" id="optMenuNm" value="Output" unselectable="false">
+          <cl:formdata std:sid="f-data-5e623f0f" row="0" col="1" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-9919fc2a" id="opt5" style="font-weight:bold;" value="앱주소">
+          <cl:formdata std:sid="f-data-38149fc6" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-fc153ad2" id="optAppId" value="Output" unselectable="false">
+          <cl:formdata std:sid="f-data-def8d321" row="0" col="3" rowspan="1" colspan="1"/>
+        </cl:output>
+        <cl:checkbox std:sid="c-box-e1a99763" id="chk1" value="N" truevalue="Y" falsevalue="N" text="그룹필터링 사용">
+          <cl:listener std:sid="listener-7925b9ba" name="value-change" handler="onChk1ValueChange"/>
+          <cl:formdata std:sid="f-data-141286b8" row="1" col="4"/>
+        </cl:checkbox>
+        <cl:combobox std:sid="c-box-ced17edd" id="cmbGrpList" visible="false">
+          <cl:listener std:sid="listener-6faa3a1e" name="selection-change" handler="onCmbGrpListSelectionChange"/>
+          <cl:formdata std:sid="f-data-9745f4f2" row="1" col="5"/>
+          <cl:item std:sid="t-item-f8d0b660" label="선택" value=""/>
+          <cl:itemset datasetid="dsGroup" label="name" value="value"/>
+        </cl:combobox>
+        <cl:formlayout std:sid="f-layout-569f1ebd" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" vseparatorwidth="1">
+          <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="28" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="105" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="130" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-1b523ea4" scrollable="false"/>
+    </cl:group>
+    <cl:group std:sid="group-baa74ee6" id="grp1">
+      <cl:formdata std:sid="f-data-d6f87cf0" row="1" col="0" rowspan="1" colspan="1"/>
+      <cl:group std:sid="group-940780a3" id="grp2">
+        <cl:formdata std:sid="f-data-89865e7e" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:grid std:sid="grid-94c94504" id="grd1" autofit="none">
+          <cl:formdata std:sid="f-data-667b502e" row="0" col="0"/>
+          <cl:gridcolumn std:sid="g-column-29721c12" width="25px"/>
+          <cl:gridheader std:sid="gh-band-8bac0adc">
+            <cl:gridrow std:sid="g-row-702a64b0"/>
+            <cl:gridcell std:sid="gh-cell-b96e8d6f" rowindex="0" colindex="0" text="F"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-b803d65e">
+            <cl:gridrow std:sid="g-row-9f3084fd"/>
+            <cl:gridcell std:sid="gd-cell-f601708c" rowindex="0" colindex="0">
+              <cl:output std:sid="output-21801977" id="opt4"/>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-628778f3" scrollable="false" hspace="10px" vspace="10px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-44a1749d" scrollable="false" hspace="10px" vspace="10px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-e7768aad" scrollable="false" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+      <cl:rows length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

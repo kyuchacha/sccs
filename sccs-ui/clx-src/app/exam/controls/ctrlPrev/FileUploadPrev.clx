@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7ef65dc6" version="1.0.3164">
+  <head std:sid="head-60e91380">
+    <screen std:sid="screen-d4338669" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-758394d1" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-f8d96193" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-8ffef520" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-c8fea29b">
+      <cl:dataset std:sid="d-set-a4616d5e" id="dsFileInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c8fe62b3" name="name"/>
+          <cl:datacolumn std:sid="d-column-1c0d65f1" name="size"/>
+          <cl:datacolumn std:sid="d-column-fda133b6" name="url" datatype="expression" expression="&quot;../export/&quot;+name + &quot;.pdf&quot;"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[fileUpload1]]></cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[1500]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[fileUpload2]]></cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[1500]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-85a64b80" id="subDownLoad" action="" responsetype="filedownload"/>
+    </cl:model>
+    <cl:appspec title="파일업로드 관련 속성"/>
+  </head>
+  <body std:sid="body-5eeaaa3c">
+    <cl:listener std:sid="listener-d27ad02a" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-40f7f032" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-4d5f8ee6" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-78697c8d" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-48283f7f" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-30afc421" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-08dc832b" id="grpData">
+      <cl:verticaldata std:sid="v-data-23ea342c" width="400px" height="645px" autosize="height"/>
+      <cl:output std:sid="output-d896dc92" value="파일업로드(FileUplad)는 다수의 파일을 동시에 업로드 할 수 있는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-2143a9c9" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-2695d53d" id="grp3" class="cl-form-group">
+        <cl:formdata std:sid="f-data-acc32a7a" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-10a6484f" value="[extensions = .jpg]&#xD;&#xA;1. 추가 버튼을 클릭한다.&#xD;&#xA;2. 파일 업로드 창 우측 하단에 확장자가 JPEG이다.">
+          <cl:formdata std:sid="f-data-bcc3d39e" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-2b33041e" value="[limitFileSize = 1]&#xD;&#xA;[limitFileSizeUnit = mb]&#xD;&#xA;1. 업로드된 파일 용량의 전체 합이 1mb이상이 되도록 업로드한다.&#xD;&#xA;2. 업로드가 되지 않는다.">
+          <cl:formdata std:sid="f-data-96e1bb18" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-df48a7a7" value="[limitSizePerFile = 50]&#xD;&#xA;[limitSizePerFileUnit = kb]&#xD;&#xA;1. 추가버튼을 클릭한다.&#xD;&#xA;2. 50kb가 넘는 파일을 업로드한다.&#xD;&#xA;3. 업로드 되지 않는다.">
+          <cl:formdata std:sid="f-data-14151178" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-0d89fb7b" value="[emptyMessage = &quot;더블 클릭이나 드래그 앤 드롭으로 추가하세요&quot;]&#xD;&#xA;1. 파일업로드 창에 &quot;더블 클릭이나 드래그 앤 드롭으로 추가하세요&quot;라는 텍스트가 표시된다.&#xD;&#xA;&#xD;&#xA;[buttons = [send, add]]&#xD;&#xA;1. 파일업로드 우측 하단에 버튼이 보내기, 추가 순서로 표시된다.">
+          <cl:formdata std:sid="f-data-aef5db8a" row="0" col="0"/>
+        </cl:output>
+        <cl:fileupload std:sid="f-upload-1e7d46f4" id="fid1" limitfileunit="mb" limitfilesize="1">
+          <cl:listener std:sid="listener-791be238" name="download-click" handler="onFid1DownloadClick"/>
+          <cl:formdata std:sid="f-data-c20bdd2e" row="1" col="1"/>
+        </cl:fileupload>
+        <cl:fileupload std:sid="f-upload-7f66e65d" id="fid3" limitfileunit="kb" limitsizeperfile="50">
+          <cl:formdata std:sid="f-data-bb9766d3" row="2" col="1"/>
+        </cl:fileupload>
+        <cl:fileupload std:sid="f-upload-c22f69bd" id="fid4" extensions=".jpg">
+          <cl:formdata std:sid="f-data-e1191e35" row="3" col="1"/>
+        </cl:fileupload>
+        <cl:fileupload std:sid="f-upload-5b449fe0" id="fid5" buttons="send add" emptyMessage="더블 클릭이나 드래그 앤 드롭으로 추가하세요">
+          <cl:formdata std:sid="f-data-59a7d2b7" row="0" col="1"/>
+        </cl:fileupload>
+        <cl:output std:sid="output-93168153" value="[maxFileCount = 3]&#xD;&#xA;1. 파일 4개를 업로드 한다.&#xD;&#xA;2. 파일이 3개까지 업로드 된다.&#xD;&#xA;&#xD;&#xA;[droppableFile = false]&#xD;&#xA;1. 파일을 드래그한다.&#xD;&#xA;2. 파일 업로드 창에 드롭한다.&#xD;&#xA;3. 파일이 업로드 되지 않는다.">
+          <cl:formdata std:sid="f-data-3efee07f" row="4" col="0"/>
+        </cl:output>
+        <cl:fileupload std:sid="f-upload-bbbb3a3a" id="fid2" maxfilecount="3" droppablefile="false">
+          <cl:formdata std:sid="f-data-e4f872b3" row="4" col="1"/>
+        </cl:fileupload>
+        <cl:formlayout std:sid="f-layout-73423bea" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="118" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="118" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="118" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="118" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="118" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-bee268f6" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-6cdcfacc"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

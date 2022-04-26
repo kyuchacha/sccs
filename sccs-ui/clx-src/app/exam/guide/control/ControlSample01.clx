@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-08c4aeab" version="1.0.0.0">
+  <head std:sid="head-2d9009a6">
+    <title>Template01</title>
+    <screen std:sid="screen-125a25e8" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-5d6caf7d" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-4d0c58d5" id="tablet" name="tablet" minwidth="800px" maxwidth="1019px" width="800px" height="768px"/>
+    <screen std:sid="screen-fc6c9e47" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-d4196624">
+      <cl:dataset std:sid="d-set-8ca0fb89" id="dsDetail">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-3287450c" name="column1"/>
+          <cl:datacolumn std:sid="d-column-32319555" name="column2"/>
+          <cl:datacolumn std:sid="d-column-8c5f4a21" name="column3"/>
+          <cl:datacolumn std:sid="d-column-fc5694b5" name="column4" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-f597b164" name="column5" datatype="string"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">운용</cl:datavalue>
+            <cl:datavalue columnname="column2">운용관리계약서</cl:datavalue>
+            <cl:datavalue columnname="column3">2020-04-30</cl:datavalue>
+            <cl:datavalue columnname="column4">N</cl:datavalue>
+            <cl:datavalue columnname="column5">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">운용</cl:datavalue>
+            <cl:datavalue columnname="column2">자산관리계약서</cl:datavalue>
+            <cl:datavalue columnname="column3">2020-04-30</cl:datavalue>
+            <cl:datavalue columnname="column4">N</cl:datavalue>
+            <cl:datavalue columnname="column5">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">운용</cl:datavalue>
+            <cl:datavalue columnname="column2">자산관리협정서</cl:datavalue>
+            <cl:datavalue columnname="column3">2020-04-30</cl:datavalue>
+            <cl:datavalue columnname="column4">N</cl:datavalue>
+            <cl:datavalue columnname="column5">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">운용</cl:datavalue>
+            <cl:datavalue columnname="column2">법인인감증명서</cl:datavalue>
+            <cl:datavalue columnname="column3">2020-04-30</cl:datavalue>
+            <cl:datavalue columnname="column4">N</cl:datavalue>
+            <cl:datavalue columnname="column5">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">운용</cl:datavalue>
+            <cl:datavalue columnname="column2">운용관리계약서</cl:datavalue>
+            <cl:datavalue columnname="column3">2020-04-30</cl:datavalue>
+            <cl:datavalue columnname="column4">N</cl:datavalue>
+            <cl:datavalue columnname="column5">N</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">운용</cl:datavalue>
+            <cl:datavalue columnname="column2">운용관리계약서</cl:datavalue>
+            <cl:datavalue columnname="column3">2020-04-30</cl:datavalue>
+            <cl:datavalue columnname="column4">N</cl:datavalue>
+            <cl:datavalue columnname="column5">N</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-0d42a116" id="dsCombo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-48fc831f" name="L"/>
+          <cl:datacolumn std:sid="d-column-8b5e91df" name="V"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="L">L1</cl:datavalue>
+            <cl:datavalue columnname="V">V1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="L">L2</cl:datavalue>
+            <cl:datavalue columnname="V">V2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="L">L3</cl:datavalue>
+            <cl:datavalue columnname="V">V3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="L">L4</cl:datavalue>
+            <cl:datavalue columnname="V">V4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="L">L5</cl:datavalue>
+            <cl:datavalue columnname="V">V5</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-49462326" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-cea28932" name="col1"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="동적제어 예제"/>
+  </head>
+  <body std:sid="body-089c730c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-593d7140" name="init" handler="onBodyInit"/>
+    <cl:listener std:sid="listener-b5c85445" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-bcd0c673" width="1320px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grp1" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-b144c0ae" id="grp1">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-a390d754" width="972px" height="645px" syncminheight="false" autosize="none"/>
+      <cl:group std:sid="group-8f9f54ae" id="grpMainForm">
+        <cl:formdata std:sid="f-data-efa26a8a" row="0" col="0"/>
+        <cl:udc std:sid="ud-control-e934af7e" id="comformtitle1" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-7161d585" row="0" col="0"/>
+          <cl:property name="title" value="visible 동적제어(조회조건을 변경 시) 예제" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-899278bf" id="grp4" class="form-box">
+          <cl:formdata std:sid="f-data-faa8cb31" row="1" col="0"/>
+          <cl:output std:sid="output-d4a8e2d3" id="otp14" value="라디오버튼 선택 변경">
+            <cl:formdata std:sid="f-data-94d9dc41" row="0" col="0"/>
+          </cl:output>
+          <cl:radiobutton std:sid="r-button-1ce53b33" id="rdb4" value="value1">
+            <cl:listener std:sid="listener-6144e57b" name="selection-change" handler="onRdb4SelectionChange"/>
+            <cl:formdata std:sid="f-data-696602ba" row="0" col="1"/>
+            <cl:item std:sid="item-59f3fc7b" label="정보그룹_3행" value="3"/>
+            <cl:item std:sid="item-c801955e" label="정보그룹_4행" value="4"/>
+          </cl:radiobutton>
+          <cl:formlayout std:sid="f-layout-20ba8885" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="160" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="240" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-d11da11c" id="grpForm1" class="form-box">
+          <cl:formdata std:sid="f-data-48dbfe25" row="2" col="0"/>
+          <cl:output std:sid="output-e3de423d" value="통합증번">
+            <cl:formdata std:sid="f-data-3d6fe9ed" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-16f1cbc5" id="ipb2" enabled="false" readonly="true" value="내용">
+            <cl:formdata std:sid="f-data-a4951907" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-c41e1a61" value="통합단체명">
+            <cl:formdata std:sid="f-data-eaf70d12" row="0" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-549bb34f" id="ipb7" enabled="false">
+            <cl:formdata std:sid="f-data-32bd2add" row="0" col="3" rowspan="1" colspan="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-c5c537b3" value="계약일자">
+            <cl:formdata std:sid="f-data-8c958821" row="0" col="6"/>
+          </cl:output>
+          <cl:dateinput std:sid="d-input-9ee7bc9b" id="dti3" enabled="false" value="2020-04-20" format="YYYY-MM-DD">
+            <cl:formdata std:sid="f-data-90b97cb2" row="0" col="7"/>
+          </cl:dateinput>
+          <cl:output std:sid="output-33a1027b" value="계약상태">
+            <cl:formdata std:sid="f-data-7d184ae6" row="1" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-d510a801" id="ipb3" enabled="false" value="">
+            <cl:formdata std:sid="f-data-23fe6475" row="1" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-f7dd29f0" value="계약형태">
+            <cl:formdata std:sid="f-data-b4caf315" row="1" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-8548805c" id="ipb5" enabled="false">
+            <cl:formdata std:sid="f-data-8a1ad028" row="1" col="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-bacdd271" value="제도종류">
+            <cl:formdata std:sid="f-data-8e8181c4" row="1" col="4"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-28ac8f28" id="ipb8" enabled="false">
+            <cl:formdata std:sid="f-data-e803ff1d" row="1" col="5"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-dd15bf76" value="당사역할">
+            <cl:formdata std:sid="f-data-0922b536" row="1" col="6"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-8aaea444" id="ipb10" enabled="false">
+            <cl:formdata std:sid="f-data-4859070b" row="1" col="7"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-bcc0ff90" value="설정비율(%)">
+            <cl:formdata std:sid="f-data-5ffbfb3f" row="2" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-c1514065" id="ipb4" enabled="false">
+            <cl:formdata std:sid="f-data-a5a63209" row="2" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-54602648" value="수금기관">
+            <cl:formdata std:sid="f-data-c2b77d93" row="2" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-cc068cea" id="ipb6" enabled="false">
+            <cl:formdata std:sid="f-data-7a2ef9c8" row="2" col="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-9dfddcc7" value="수금인">
+            <cl:formdata std:sid="f-data-049ab62f" row="2" col="4"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-b9cefe77" id="ipb9" enabled="false">
+            <cl:formdata std:sid="f-data-617a4cd8" row="2" col="5"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-d37a7942" value="연락처">
+            <cl:formdata std:sid="f-data-67d15125" row="2" col="6"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-62fc8eac" id="ipb11" enabled="false">
+            <cl:formdata std:sid="f-data-2dee0a08" row="2" col="7"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-861e8751" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="85" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="85" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="73" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="73" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-031462ef" id="grpForm2" class="form-box">
+          <cl:formdata std:sid="f-data-3dabb210" row="3" col="0"/>
+          <cl:output std:sid="output-50e296b3" id="otp1" value="통합증번">
+            <cl:formdata std:sid="f-data-932985f7" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-484c27f8" id="ipb1" enabled="false" readonly="true" value="정보내용">
+            <cl:formdata std:sid="f-data-1648f595" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-7fbacbc5" id="otp4" value="통합단체명">
+            <cl:formdata std:sid="f-data-969f941f" row="0" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-2adf5eb8" id="ipb16" enabled="false">
+            <cl:formdata std:sid="f-data-5301efa1" row="0" col="3" rowspan="1" colspan="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-1c172771" id="otp2" value="계약상태">
+            <cl:formdata std:sid="f-data-d521a321" row="1" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-de124f85" id="ipb12" enabled="false" value="내용표시 항목">
+            <cl:formdata std:sid="f-data-35a21c87" row="1" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-c34a97e7" id="otp5" value="계약형태">
+            <cl:formdata std:sid="f-data-4cb1a5ae" row="1" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-40caf285" id="ipb14" enabled="false">
+            <cl:formdata std:sid="f-data-5d5bcad8" row="1" col="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-6b826b3f" id="otp7" value="제도종류">
+            <cl:formdata std:sid="f-data-4239dfed" row="1" col="4"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-eb97f282" id="ipb17" enabled="false">
+            <cl:formdata std:sid="f-data-600fe896" row="1" col="5"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-2a3a9bc4" id="otp3" value="설정비율(%)">
+            <cl:formdata std:sid="f-data-38030355" row="2" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-453ee377" id="ipb13" enabled="false">
+            <cl:formdata std:sid="f-data-34bcc5e2" row="2" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-73542f32" id="otp6" value="수금기관">
+            <cl:formdata std:sid="f-data-816bd74c" row="2" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-0410e6d2" id="ipb15" enabled="false">
+            <cl:formdata std:sid="f-data-7c3aa52e" row="2" col="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-927b2566" id="otp8" value="수금인">
+            <cl:formdata std:sid="f-data-648443b4" row="2" col="4"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-af53bcaa" id="ipb18" enabled="false">
+            <cl:formdata std:sid="f-data-f4ad120a" row="2" col="5"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-a036798f" id="otp11" value="라벨명">
+            <cl:formdata std:sid="f-data-01559ab0" row="3" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-d174ad69" id="ipb20" enabled="false">
+            <cl:formdata std:sid="f-data-2773b1d8" row="3" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-b81d07dd" id="otp9" value="여섯글자입력">
+            <cl:formdata std:sid="f-data-41b6532c" row="3" col="2"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-6882a68d" id="ipb19" enabled="false">
+            <cl:formdata std:sid="f-data-ddbc03da" row="3" col="3"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-03816dea" id="otp10" value="사업자등록번호">
+            <cl:formdata std:sid="f-data-5b3876ab" row="3" col="4"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-2ba961b7" id="ipb21" enabled="false">
+            <cl:formdata std:sid="f-data-c06090f1" row="3" col="5"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-8edd8957" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="0" vseparatorwidth="0">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="85" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="97" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="109" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-9d5ca0a3" id="grpFormDetail" class="form-box">
+          <cl:formdata std:sid="f-data-a2e77715" row="5" col="0" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-b968567e" id="otp13" value="스크립트동적제어">
+            <cl:formdata std:sid="f-data-36220ae7" row="0" col="0" rowspan="1" colspan="1"/>
+          </cl:output>
+          <cl:radiobutton std:sid="r-button-46fdbea7" id="rdb2">
+            <cl:listener std:sid="listener-e10baa54" name="selection-change" handler="onRbd2SelectionChange"/>
+            <cl:formdata std:sid="f-data-a82eb4b1" row="0" col="1"/>
+            <cl:item std:sid="item-2276e7a7" label="선택1" value="Y"/>
+            <cl:item std:sid="item-47367505" label="선택2" value="N"/>
+          </cl:radiobutton>
+          <cl:formlayout std:sid="f-layout-ed290f5d" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="121" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:udc std:sid="ud-control-c78f7b9d" id="comformtitle2" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-f7b8fd58" row="4" col="0"/>
+          <cl:property name="title" value="스크립트 동적제어(라디오버튼 변경 시 스크립트 동적제어) 예제" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-41ce8649">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="95" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="120" unit="PIXEL" autoSizing="true" hidden="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:udc std:sid="ud-control-33281f0d" id="comformtitle3" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-aae514f9" row="1" col="0"/>
+        <cl:property name="title" value="시나리오" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-ba4bd0f2" id="grpFormCont" class="form-box">
+        <cl:formdata std:sid="f-data-8add031d" row="2" col="0"/>
+        <cl:output std:sid="output-5b7c19cc" id="otp25" value="시나리오">
+          <cl:formdata std:sid="f-data-25c1fad4" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f7e92ec3" id="otp24" style="background-color:white; font-weight:normal; text-align:left;" value="1. visible 속성 동적제어 &#xD;&#xA;   조회조건의 라디오 버튼을 선택변경시, 하단의 정보그룹이 선택값에 따라 변경되어 표시된다. &#xD;&#xA;&#xD;&#xA;2. 스크립트 동적제어&#xD;&#xA;  하단의 스크립트동적제어 라디오 버튼 변경시, &#xD;&#xA;  선택1은 콤보박스를 생성하고 &#xD;&#xA;  선택2는 라디오버튼을 생성하도록 스크립트를 동적 생성한다.">
+          <cl:formdata std:sid="f-data-26d7c4a3" row="0" col="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-bea260c3" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:udc std:sid="ud-control-7828efba" id="comformtitle4" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-4202e18b" row="3" col="0"/>
+        <cl:property name="title" value="스크립트 내용" type="string"/>
+      </cl:udc>
+      <cl:textarea std:sid="t-area-b9a98781" id="txaScript">
+        <cl:formdata std:sid="f-data-5de07e8a" row="4" col="0"/>
+      </cl:textarea>
+      <cl:formlayout std:sid="f-layout-874dc477">
+        <cl:rows length="300" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="140" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-4e185142"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

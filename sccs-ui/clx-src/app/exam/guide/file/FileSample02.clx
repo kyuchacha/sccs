@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-f3ddac42">
+      <cl:dataset std:sid="d-set-99c52604" id="dsCombo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-dd0124c0" name="L"/>
+          <cl:datacolumn std:sid="d-column-31373c18" name="V"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="L">남</cl:datavalue>
+            <cl:datavalue columnname="V">M</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="L">여</cl:datavalue>
+            <cl:datavalue columnname="V">F</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-a7109f43" id="dsSubList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e1c60a6c" name="GRCD"/>
+          <cl:datacolumn std:sid="d-column-b68da810" name="CD"/>
+          <cl:datacolumn std:sid="d-column-d178fb1d" name="CNM"/>
+          <cl:datacolumn std:sid="d-column-fa402655" name="CD_DESC"/>
+          <cl:datacolumn std:sid="d-column-cfb43c91" name="SORT_ODR"/>
+          <cl:datacolumn std:sid="d-column-f88bbd28" name="LOAD_YN"/>
+          <cl:datacolumn std:sid="d-column-a88c375e" name="OUT_YN"/>
+          <cl:datacolumn std:sid="d-column-61671145" name="USE_YN"/>
+          <cl:datacolumn std:sid="d-column-b540e5d9" name="FRST_REG_DT"/>
+          <cl:datacolumn std:sid="d-column-1f0e8816" name="LAST_UPT_DT"/>
+          <cl:datacolumn std:sid="d-column-ec0dea5d" name="LAST_UPTR_ID"/>
+          <cl:datacolumn std:sid="d-column-a54a3541" name="ATTACH_FILE_ID"/>
+          <cl:datacolumn std:sid="d-column-c263a6c9" name="ATTACH_FILE_NAME"/>
+          <cl:datacolumn std:sid="d-column-1721b12b" name="FILE_MNG_SEQ"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-f638c2f7" id="dsCode33">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-cf3037c3" name="GRCD"/>
+          <cl:datacolumn std:sid="d-column-3294f838" name="CD"/>
+          <cl:datacolumn std:sid="d-column-1327edcc" name="CNM"/>
+          <cl:datacolumn std:sid="d-column-b7dd64de" name="CD_DESC"/>
+          <cl:datacolumn std:sid="d-column-e4782319" name="SORT_ODR"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-eaa80949" id="dsCode03">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bee19dc2" name="cd"/>
+          <cl:datacolumn std:sid="d-column-adca3740" name="cd_nm" displayonly="false"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="cd">Y</cl:datavalue>
+            <cl:datavalue columnname="cd_nm">Y</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd">N</cl:datavalue>
+            <cl:datavalue columnname="cd_nm">N</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="templates/SmplTmpl.clx 템플릿 사용하여 작성 함.&#xA;templates/CTmpl.clx 템플릿 사용하여 작성 함."/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:group std:sid="group-d1f5be83" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-01a0e506" width="1320px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3acdc2bb" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-80e24452" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-3e351495"/>
+    </cl:group>
+    <cl:group std:sid="group-72e4444f">
+      <cl:verticaldata std:sid="v-data-dd43b459" width="1320px" height="2800px" autosize="height"/>
+      <cl:group std:sid="group-b3d8d80f" id="grpTitle">
+        <cl:verticaldata std:sid="v-data-d00c67f8" width="1270px" height="150px" autosize="height"/>
+        <cl:group std:sid="group-7a48379f">
+          <cl:verticaldata std:sid="v-data-5f5680c1" width="1270px" height="40px" autosize="height"/>
+          <cl:output std:sid="output-bd633362" id="optTitle" style="font-weight:bold; padding-left:1rem; font-size:2.5rem;" value="단일 파일 업로드">
+            <cl:formdata std:sid="f-data-d357b6a6" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3535aed2" scrollable="false" hspace="5px" vspace="5px" right-margin="50px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-36cb926d" id="optSummary" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="해당 문서에서는 단일 파일 업로드의 예제를 확인 할 수 있습니다.">
+          <cl:verticaldata std:sid="v-data-cb26d0fa" width="1210px" height="46px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-7c14d27b" spacing="30" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-36fd7cc9" id="scenarioGrp">
+        <cl:verticaldata std:sid="v-data-28f18b44" width="1270px" height="370px" autosize="height"/>
+        <cl:output std:sid="output-d78c906d" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="시나리오">
+          <cl:verticaldata std:sid="v-data-0ccc2823" width="100px" height="40px"/>
+        </cl:output>
+        <cl:output std:sid="output-5ed83aea" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="첨부파일 업로드를 클릭하여 , 단일 파일이 업로드 되는것을 확인 할 수 있습니다.">
+          <cl:verticaldata std:sid="v-data-560570a9" width="1210px" height="107px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-8f14d7fc" id="groAddExp" style="background-color:#dff7fb;">
+          <cl:verticaldata std:sid="v-data-b32de9ee" width="1100px" height="150px" autosize="height"/>
+          <cl:output std:sid="output-564d9426" style="color:#09c2de; font-weight:bold;" class="ref-title" value="추가설명">
+            <cl:verticaldata std:sid="v-data-076d9fe9" width="100px" height="25px"/>
+          </cl:output>
+          <cl:output std:sid="output-28ab6d03" style="color:#09c2de;" value="* 해당 예제는 공통모듈이 필요합니다. ( common.module.js )">
+            <cl:verticaldata std:sid="v-data-37c1bfe5" width="100px" height="25px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-ec928def" spacing="10" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-4fffe72b" spacing="30" topmargin="10" bottommargin="30"/>
+      </cl:group>
+      <cl:group std:sid="group-17cf44cc" id="grpFunction">
+        <cl:verticaldata std:sid="v-data-60df3a1f" width="1270px" height="450px" autosize="height"/>
+        <cl:group std:sid="group-38132eaf" id="grpFuncFloating">
+          <cl:attribute name="floating-header" value="true"/>
+          <cl:verticaldata std:sid="v-data-bf7c3b0a" width="1270px" height="450px" autosize="height"/>
+          <cl:output std:sid="output-1688a0bc" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="기능확인">
+            <cl:verticaldata std:sid="v-data-7f4968b6" width="1270px" height="40px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-c852421b" id="grp1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#dedede; border-right-width:1px; border-left-color:#dedede; border-right-color:#dedede; border-left-width:1px; border-top-style:solid; background-color:#F0F0F0; border-left-style:solid; border-bottom-width:1px; border-top-color:#dedede; border-bottom-style:solid;">
+            <cl:verticaldata std:sid="v-data-153b5759" width="1210px" height="400px" autosize="height"/>
+            <cl:group std:sid="group-2d521c14" id="grp2">
+              <cl:verticaldata std:sid="v-data-be39343d" width="200px" height="300px" autosize="height"/>
+              <cl:output std:sid="output-8297705a" class="text-center" value="&lt;기능 확인 컨트롤>">
+                <cl:formdata std:sid="f-data-d2ecfabf" row="1" col="0"/>
+              </cl:output>
+              <cl:group std:sid="group-67fffb34" id="grpForm1" class="form-box">
+                <cl:selectioncontext/>
+                <cl:formdata std:sid="f-data-a0369247" row="0" col="0"/>
+                <cl:output std:sid="output-01d299e5" id="otp9" value="코드">
+                  <cl:formdata std:sid="f-data-77fb1a99" row="0" col="0"/>
+                </cl:output>
+                <cl:output std:sid="output-66e729f7" id="otp10" value="로드여부">
+                  <cl:formdata std:sid="f-data-dd8d86ca" row="1" col="0"/>
+                </cl:output>
+                <cl:output std:sid="output-02a70c5e" id="otp11" value="사용여부">
+                  <cl:formdata std:sid="f-data-75f34a70" row="2" col="0"/>
+                </cl:output>
+                <cl:output std:sid="output-4c6efe18" id="otp12" value="코드명">
+                  <cl:formdata std:sid="f-data-3b0e3457" row="0" col="2"/>
+                </cl:output>
+                <cl:output std:sid="output-492261b5" id="otp13" value="출력여부">
+                  <cl:formdata std:sid="f-data-6141520a" row="1" col="2"/>
+                </cl:output>
+                <cl:output std:sid="output-ac6fa9cc" id="otp14" value="정렬순서">
+                  <cl:formdata std:sid="f-data-fc413e7d" row="2" col="2"/>
+                </cl:output>
+                <cl:output std:sid="output-ac7efa6a" id="otp16" value="코드설명">
+                  <cl:formdata std:sid="f-data-c3cd63e3" row="3" col="0"/>
+                </cl:output>
+                <cl:inputbox std:sid="i-box-7ca91e27" id="ipbCnm">
+                  <cl:relativebind property="value" columnname="CNM"/>
+                  <cl:formdata std:sid="f-data-ec7514ec" row="0" col="3"/>
+                </cl:inputbox>
+                <cl:inputbox std:sid="i-box-167434f5" id="ipbCd" readonly="true">
+                  <cl:relativebind property="value" columnname="CD"/>
+                  <cl:formdata std:sid="f-data-4be58a16" row="0" col="1"/>
+                </cl:inputbox>
+                <cl:inputbox std:sid="i-box-d6383516" id="ipbCdDesc">
+                  <cl:relativebind property="value" columnname="CD_DESC"/>
+                  <cl:formdata std:sid="f-data-8c0d10be" row="3" col="1" rowspan="1" colspan="3"/>
+                </cl:inputbox>
+                <cl:inputbox std:sid="i-box-33b3eeb3" id="ipbStOd">
+                  <cl:relativebind property="value" columnname="SORT_ODR"/>
+                  <cl:formdata std:sid="f-data-a141f6b3" row="2" col="3"/>
+                </cl:inputbox>
+                <cl:combobox std:sid="c-box-bd84d8aa" id="cmbLdYn">
+                  <cl:relativebind property="value" columnname="LOAD_YN"/>
+                  <cl:formdata std:sid="f-data-6a715575" row="1" col="1"/>
+                  <cl:item std:sid="item-d8193d0c" label="전체" value=""/>
+                  <cl:itemset datasetid="dsCode03" label="cd_nm" value="cd"/>
+                </cl:combobox>
+                <cl:combobox std:sid="c-box-8c49bc32" id="cmbUsYn">
+                  <cl:relativebind property="value" columnname="USE_YN"/>
+                  <cl:formdata std:sid="f-data-c01c9842" row="2" col="1"/>
+                  <cl:item std:sid="item-81f041bd" label="전체" value=""/>
+                  <cl:itemset datasetid="dsCode03" label="cd_nm" value="cd"/>
+                </cl:combobox>
+                <cl:combobox std:sid="c-box-4f53c7d1" id="cmbOtYn">
+                  <cl:relativebind property="value" columnname="OUT_YN"/>
+                  <cl:formdata std:sid="f-data-29da15fb" row="1" col="3"/>
+                  <cl:item std:sid="item-6083cfe1" label="전체" value=""/>
+                  <cl:itemset datasetid="dsCode03" label="cd_nm" value="cd"/>
+                </cl:combobox>
+                <cl:output std:sid="output-59f5d310" id="otp1" style="background-color:white; text-align:left;" unselectable="false">
+                  <cl:relativebind property="value" columnname="FILE_MNG_SEQ"/>
+                  <cl:formdata std:sid="f-data-997a06b6" row="5" col="1" rowspan="1" colspan="2"/>
+                </cl:output>
+                <cl:output std:sid="output-59b7dd75" id="otp3" value="파일관리번호">
+                  <cl:formdata std:sid="f-data-0159bcd6" row="5" col="0"/>
+                </cl:output>
+                <cl:output std:sid="output-a755d2af" id="otp4" value="첨부파일">
+                  <cl:formdata std:sid="f-data-5a2b5274" row="4" col="0"/>
+                </cl:output>
+                <cl:udc std:sid="ud-control-511472d6" id="udccmnpfileupload1" type="udc.cmn.udcCmnPFileUpload">
+                  <cl:formdata std:sid="f-data-c519c9db" row="4" col="1" rowspan="1" colspan="1"/>
+                </cl:udc>
+                <cl:formlayout std:sid="f-layout-0cf33268" scrollable="true" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+                  <cl:rows length="25" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:rows length="25" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:rows length="25" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:rows length="25" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:rows length="25" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:rows length="25" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-297521a3" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-93d454ee" leftmargin="30" rightmargin="30" topmargin="5" bottommargin="10"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-216b8a05" bottommargin="30"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-010e6b4c"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8031eb1c" leftmargin="20" rightmargin="30" topmargin="30" bottommargin="30"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

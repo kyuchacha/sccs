@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a3a52abc" version="1.0.3533">
+  <head std:sid="head-e8a2e99c">
+    <screen std:sid="screen-4d4097aa" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="300" customWidth="300"/>
+    <screen std:sid="screen-407562e7" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-a1a01c9c" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-69787891">
+      <cl:dataset std:sid="d-set-2af0e1f1" id="ds1">
+        <cl:listener std:sid="listener-dd9d11fd" name="filter" handler="onDs1Filter"/>
+        <cl:listener std:sid="listener-4ccd624d" name="update" handler="onDs1Update"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b9ae94a0" name="label"/>
+          <cl:datacolumn std:sid="d-column-cf6cc977" name="value"/>
+          <cl:datacolumn std:sid="d-column-3219ea88" name="checked"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="필터 콤보박스 리스트">
+      <cl:property name="combobox" type="control"/>
+      <cl:property name="dataset" type="control"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-557a0706" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-add4100b" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-0bf24e2f" name="screen-change" handler="onBodyScreenChange"/>
+    <cl:group std:sid="group-71457b16" id="grp" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#cccccc; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:#cccccc; border-top-color:#cccccc; border-bottom-style:solid; border-right-color:#cccccc; border-left-width:1px; border-top-style:solid;">
+      <cl:listener std:sid="listener-8b78abc9" name="mouseleave" handler="onGrpMouseleave"/>
+      <cl:verticaldata std:sid="v-data-8ac4a494" width="300px" height="104px" autosize="height"/>
+      <cl:group std:sid="group-8bfa7c61" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#cccccc; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:#cccccc; border-top-color:#cccccc; border-bottom-style:solid; border-right-color:#cccccc; border-left-width:1px; border-top-style:solid;">
+        <cl:formdata std:sid="f-data-ebc04bc2" row="0" col="0"/>
+        <cl:group std:sid="group-fa753111">
+          <cl:formdata std:sid="f-data-c24aed32" row="1" col="0"/>
+          <cl:button std:sid="button-c28d830d" id="btnAllChk" class="btnAllChk" value="전체선택" icon="../../../../theme/common/images/button/ico-check.jpg">
+            <cl:listener std:sid="listener-6a602cc5" name="click" handler="onButtonClick"/>
+            <cl:formdata std:sid="f-data-b8949e02" row="0" col="0"/>
+          </cl:button>
+          <cl:button std:sid="button-af85fcad" class="btnAllChk" value="전체취소" icon="../../../../thirdparty/ckeditor4/skins/moono-lisa/images/hidpi/close.png" iconalign="right">
+            <cl:listener std:sid="listener-6ece4765" name="click" handler="onButtonClick2"/>
+            <cl:formdata std:sid="f-data-2b02fdc0" row="0" col="1"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-a185e97c" scrollable="true" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-8ac5af3b">
+          <cl:formdata std:sid="f-data-ee1e87f1" row="0" col="0"/>
+          <cl:output std:sid="output-481496bf" style="text-align:center;" value="Filter :">
+            <cl:formdata std:sid="f-data-9228ff73" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-b0ff1c19" id="ipb1">
+            <cl:listener std:sid="listener-2de09cbc" name="keyup" handler="onIpb1Keyup"/>
+            <cl:listener std:sid="listener-14ebac07" name="keydown" handler="onIpb1Keydown"/>
+            <cl:formdata std:sid="f-data-0c0d3da9" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-60ac2584" scrollable="true" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="50" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-f5d7a264" scrollable="true" hspace="0px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="35" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-87c27ceb" id="grd1" class="grdDtl" datasetid="ds1" autofit="1" clickmode="edit">
+        <cl:listener std:sid="listener-5f2cf3ac" name="row-check" handler="onGrd1RowCheck"/>
+        <cl:listener std:sid="listener-8af08b26" name="row-uncheck" handler="onGrd1RowUncheck"/>
+        <cl:formdata std:sid="f-data-4b5eb14e" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-89f42f5d" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-159c8562"/>
+        <cl:gridcolumn std:sid="g-column-b88eac17" visible="false"/>
+        <cl:griddetail std:sid="gd-band-0801448b">
+          <cl:gridrow std:sid="g-row-ec287376"/>
+          <cl:gridcell std:sid="gd-cell-97bc2117" rowindex="0" colindex="0" columnname="checked">
+            <cl:checkbox std:sid="c-box-d2496119" id="cbx1" falsevalue="false">
+              <cl:listener std:sid="listener-9bf1e049" name="value-change" handler="onCbx1ValueChange"/>
+              <cl:celldata std:sid="c-data-0bec3d90"/>
+            </cl:checkbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-7c8420df" rowindex="0" colindex="1" style="text-align:left;" columnname="label"/>
+          <cl:gridcell std:sid="gd-cell-9333a635" rowindex="0" colindex="2" columnname="value"/>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-76fe0fe7" scrollable="true" hspace="0px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="70" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="20" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-aba40950"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

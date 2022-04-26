@@ -1,0 +1,483 @@
+@import "../custom-settings.part.less";
+
+/* 그리드 */
+.cl-grid {
+	font: @font-base;
+	background-color: @table-background-color;
+	border: @table-border-base;
+	border-top-color: @black;
+	border-radius: @table-border-radius;
+	color: @table-text-color;
+	
+	&.cl-disabled {
+		background-color: @component-disabled-background-color;
+		border-color: @component-disabled-border-color;
+		border-top-color: @black;
+		color: @component-disabled-text-color;
+	}
+
+	/* 그리드 헤더 */
+	.cl-grid-header {
+		background-image: @table-header-background-image;
+		background-color: @table-header-background-color;
+		
+		/* 그리드 헤더 셀 */
+		.cl-grid-cell {
+			color: @table-header-text-color;
+			font-weight: @table-header-text-weight;
+			
+			/* 그리드 헤더 셀에 임베딩 된 컨트롤 */
+			.cl-control {
+				font-weight: @table-header-text-weight;
+			}
+		}
+
+		/* 
+		@deprecated (header의 sortColumnName속성)
+		그리드 헤더 셀 소트 인디케이터 
+		*/
+		.cl-sort {
+			// width: 20px;
+
+			/* 그리드 헤더 셀 소트 인디케이터 - 소트 가능 */
+			&.cl-sortable {
+				// background-image: url(icons/grid-sortable.png);
+			}
+
+			/* 그리드 헤더 셀 소트 인디케이터 - 오름차순 정렬됨 */
+			&.cl-sort-asc {
+				// background-image: url(icons/grid-sort-asc.png);
+			}
+
+			/* 그리드 헤더 셀 소트 인디케이터 - 내림차순 정렬됨 */
+			&.cl-sort-desc {
+				// background-image: url(icons/grid-sort-desc.png);
+			}
+		}
+
+		/* 그리드 헤더 셀 필터 인디케이터 */
+		.cl-filter {
+			background-image: url("../images/controls/grid/filter.png");
+			background-size: 12px 10px;
+			background-position: left center;
+			width: 18px;
+			
+			/* 그리드 헤더 셀 필터 인디케이터에 마우스가 호버되었을 때 스타일 */
+			&:hover {
+				 background-image: url("../images/controls/grid/filter-focus.png");
+			}
+
+			/* 그리드 헤더 셀 필터 인디케이터 - 필터되었을 때 스타일 */
+			&.cl-filtered {
+				background-image: url("../images/controls/grid/filter-selected.png");
+			}
+		}
+		
+		/* 그리드 헤더 셀이 소트가능 한 셀일 때 스타일 */
+		.cl-sortable-cell {
+//			padding-left: 16px;
+			
+			/* 그리드 헤더 셀 소트 인디케이터 */
+			.cl-sort {
+				
+				.cl-sort-icon {
+				}
+				
+				/* 그리드 헤더 셀 소트 인디케이터 - 소트 가능한 아이콘 */
+				.cl-sort-icon:before {
+					 content: "△";
+					 color: @transparent;
+					 background-image: url("../images/controls/grid/sortable.png");
+					 background-repeat: no-repeat;
+					 background-position: bottom center;
+				}
+
+				/* 그리드 헤더 셀 소트 인디케이터 - 소트 우선 순위 영역*/
+				.cl-sort-seq {
+				}
+			}
+
+			/* 그리드 헤더 셀 소트 인디케이터 - 오름차순 정렬됨  */
+			&.cl-sort-asc {
+				/* 그리드 헤더 셀 소트 인디케이터 - 오름차순 아이콘 */
+				.cl-sort-icon:before {
+					 content: "▲";
+					 background-image: url("../images/controls/grid/sort-asc.png");
+				}
+			}
+
+			/* 그리드 헤더 셀 소트 인디케이터 - 내림차순 정렬됨  */
+			&.cl-sort-desc {
+				/* 그리드 헤더 셀 소트 인디케이터 - 내림차순 아이콘 */
+				.cl-sort-icon:before {
+					 content: "▼";
+					 background-image: url("../images/controls/grid/sort-desc.png");
+				}
+			}
+		}
+	}
+
+	/* 그리드 푸터 */
+	.cl-grid-footer {
+		background-color: @table-footer-background-color;
+		border-top: @table-border-base;
+		
+		.cl-grid-cell {
+			.cl-text {
+				padding: @input-padding-0 10px;
+			}
+		}
+	}
+
+	/* 그리드 헤더 외곽 영역 */
+	.cl-grid-header {
+		/* 디테일에 스크롤이 생길시 우측에 생기는 빈 영역 */
+		.cl-blank {
+			background-color: #f1f1f1;
+		}
+	}
+
+	/* 그리드 디테일 외곽 영역 */
+	.cl-grid-detail {
+		/* 디테일에 스크롤이 생길시 우측하단에 생기는 빈 영역 */
+		.cl-blank {
+			background-color: #f1f1f1;
+		}
+	}
+
+	/* 그리드 푸터 외곽 영역 */
+	.cl-grid-footer {
+		/* 디테일에 스크롤이 생길시 우측에 생기는 빈 영역 */
+		.cl-blank {
+			background-color: #f1f1f1;
+		}
+	}
+
+	/* 왼쪽 틀고정된 그리드의 스타일 */
+	&.cl-leftsplit {
+		/* 스플릿 시 좌측 그리드 래퍼 */
+		.cl-grid-leftsplit {
+		}
+		.cl-grid-centersplit {
+			// border-left: 1px solid @default-border-color;
+		}
+	}
+
+	/* 오른쪽 틀고정된 그리드의 스타일 */
+	&.cl-rightsplit {
+		/* 스플릿 시 우측 그리드 래퍼 */
+		.cl-grid-rightsplit {
+		}
+		.cl-grid-centersplit {
+			// border-right: 1px solid @default-border-color;
+		}
+	} 
+
+	/* 스플릿 상단 그리드 래퍼 */
+	.cl-grid-topsplit {
+		border-bottom: double 3px #333;
+	}
+
+	/* 스플릿 하단 그리드 래퍼 */
+	.cl-grid-bottomsplit {
+		border-top: double 3px #333;
+	}
+
+	/* noDataMessage 보여질 때 해당 텍스트영역 스타일 */
+	.cl-nodatamsg {
+		color: @input-placeholder-text-color;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+
+/* 그리드 필터 사용시 필터 다이얼로그가 펼쳐지는 영역 스타일*/
+.cl-gridfilter {
+
+	/* 필터 다이얼로그 뒤에 비활성화 영역을 표현하기 위해 덮히는 막 */
+	&.cl-overlay {
+		 background-color:  @modal-overlay-background-color;
+	}
+
+	/* 필터 다이얼로그 */
+	.cl-filterdlg {
+		background-color: @modal-background-color;
+		border: @modal-border-base;
+		border-radius: @modal-border-radius;
+		box-shadow: @modal-box-shadow;
+		color: @modal-text-color;
+		padding: 0px;
+		width: 315px;
+		height: 265px;
+	
+		/* 필터 다이얼로그 - 타이틀 영역 */
+		.cl-filterdlg-header {
+			 background-image: @component-background-image;
+			 background-color: @lighter;
+			 border-bottom: @component-border-base;
+			 padding: 6px 10px;
+
+			/* 필터 다이얼로그 - 타이틀 영역의 글자 스타일 */
+			.cl-text {
+				color: @modal-text-color;
+				font-weight: @modal-header-text-weight;
+				outline: none;
+			}
+
+			/* 필터 다이얼로그 - 타이틀 영역의 닫기 버튼 스타일 */
+			.cl-filterdlg-close {
+				background-image: url("../images/controls/inputbox/clear-button.png");
+				background-size: 10px;
+			}
+		}
+
+		/* 필터 다이얼로그 - 필터 찾기 영역 */
+		 .cl-filterdlg-search{
+		 	margin: 5px;
+			
+		 	.cl-search-input {
+		 		font: @font-base;
+		 		background-color: @input-background-color;
+		 		border: @input-border-base;
+		 		color: @input-text-color;
+		 		padding: @input-padding-0 @input-padding-x;
+		 		height: 28px;
+		 		
+		 		&:focus {
+					outline: none;
+					border-color: @input-focus-border-color;
+				}
+				
+				/* IE10 이상을 위한 css */
+				&::placeholder {
+					color: @input-placeholder-text-color;
+					opacity: 1; /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+				}
+				&::-webkit-input-placeholder {
+					color: @input-placeholder-text-color;
+				}
+				/* IE */
+				&:-ms-input-placeholder {
+					color: @input-placeholder-text-color;
+				}
+				/* Firefox */
+				&:-mos-input-placeholder {
+					color: @input-placeholder-text-color;
+				}
+		 	}
+		 }
+
+		/* 필터 다이얼로그 - 필터 아이템 리스트 영역 */
+		.cl-filterdlg-itemlist {
+
+			/* 필터 다이얼로그 - 필터 아이템 리스트 영역의 아이템 스타일 */
+			.cl-filterdlg-item {
+				height: 25px;
+
+				/* 필터 다이얼로그 - 아이템 체크박스 스타일 */
+				.cl-checkbox-icon {
+					background-image: url("../images/controls/checkbox/checkbox.png");
+				}
+
+				/* 필터 다이얼로그 - 아이템 체크박스가 체크되었을 때의 스타일 */
+				&.cl-checked .cl-checkbox-icon {
+					background-image: url("../images/controls/checkbox/checkbox-checked.png");
+				}
+	
+				/* 필터 다이얼로그 - 아이템 글자 스타일 */
+				.cl-text {
+				}
+			}
+		}
+	
+		/* 필터 다이얼로그 - 하단에 버튼 영역 */
+		.cl-filterdlg-buttons {
+			background-color: @modal-footer-background-color;
+			border-top: @component-border-base;
+			margin: 0px;
+		    height: 35px;
+		    display: flex;
+		    align-items: center;
+		    padding: 0px;
+		    justify-content: flex-end;
+
+			/* 필터 다이얼로그 - 하단에 버튼 영역의 버튼 스타일 */
+			.cl-button {
+				width: 50px;
+				
+				/* 필터 다이얼로그 - 버튼 영역의 확인 버튼 스타일 */
+				&.cl-select {
+				}
+
+				/* 필터 다이얼로그 - 버튼 영역의 취소 버튼 스타일 */
+				&.cl-cancel {
+					margin: 0px 5px;
+				}
+			}
+			
+			.cl-checkbox {
+				padding: 0px 5px 0px 0px;
+				
+				.cl-checkbox-icon {
+					background-image: url("../images/controls/checkbox/checkbox.png");
+				}
+				
+				&.cl-checked {
+					background-image: url("../images/controls/checkbox/checkbox-checked.png");
+				}
+			}
+		}
+	}
+}
+
+/* 행 스타일 */
+.cl-grid-row {
+	/* 보기 모드의 로우 */
+	&.cl-viewing {
+		.cl-grid-cell {
+			.cl-inputbox, .cl-maskeditor, .cl-numbereditor, .cl-dateinput, .cl-combobox, .cl-searchinput, .cl-output {
+			}
+		}
+	}
+
+	/* 홀수 로우 */
+	&.cl-odd-row {
+	}
+
+	/* 짝수 로우 */
+	&.cl-even-row {
+	}
+
+	/* 추가된 로우 */
+	&.cl-inserted {
+		background-color: @table-row-inserted-background-color;
+		color: @table-row-inserted-text-color;
+		
+		.cl-default-cell, .cl-inputbox, .cl-output, .cl-maskeditor, .cl-numbereditor, .cl-dateinput, .cl-button, .cl-textarea, .cl-combobox, .cl-treecell, .cl-fileinput, .cl-searchinput {
+			font-weight: @font-weight-regular;
+		}
+	}
+
+	/* 수정된 로우 */
+	&.cl-modified {
+		background-color: @table-row-updated-background-color;
+		color: @table-row-updated-text-color;
+		
+		.cl-default-cell, .cl-inputbox, .cl-output, .cl-maskeditor, .cl-numbereditor, .cl-dateinput, .cl-button, .cl-textarea, .cl-combobox, .cl-treecell, .cl-fileinput, .cl-searchinput {
+			font-weight: @font-weight-regular;
+		}
+	}
+
+	/* 삭제된 로우 */
+	&.cl-deleted {
+		background-color: @table-row-deleted-background-color;
+		color: @table-row-deleted-text-color;
+		
+		.cl-default-cell, .cl-inputbox, .cl-output, .cl-maskeditor, .cl-numbereditor, .cl-dateinput, .cl-button, .cl-textarea, .cl-combobox, .cl-treecell, .cl-fileinput, .cl-searchinput {
+			&:not(.cl-disabled) {
+				color: @table-row-deleted-text-color;
+			}
+			font-style: normal;
+		}
+	}
+	
+	/* 추가 후 삭제된 로우*/
+	&.cl-nullified {
+		background-color: @table-row-deleted-background-color;
+		color: @table-row-deleted-text-color;
+		
+		.cl-default-cell, .cl-inputbox, .cl-output, .cl-maskeditor, .cl-numbereditor, .cl-dateinput, .cl-button, .cl-textarea, .cl-combobox, .cl-treecell, .cl-fileinput, .cl-searchinput {
+			&:not(.cl-disabled) {
+				color: @table-row-deleted-text-color;
+			}
+			font-style: normal;
+		}
+	}
+
+	/* 선택된 로우 - 보기 모드 */
+	&.cl-selected {
+		 background-color: @table-row-selected-background-color;
+		 color: @table-row-selected-text-color;
+
+		/* 포커스 셀 */
+		:focus, .cl-focus {
+		}
+	}
+	
+		/* 호버된 행의 로우 스타일 */
+	&:hover {
+		 background-color: @table-row-hover-background-color;
+	}
+			
+	/* 편집중인 로우 */
+	&.cl-editing {
+		background-color: @table-row-edit-background-color;
+		color: @table-row-edit-text-color;
+	}
+
+	/* 행 그룹시 그룹의 헤더 */
+	&.cl-rowgroup-header {
+		background-color: @table-group-header-background-color;
+	}
+
+	/* 행 그룹시 그룹의 푸터 */
+	&.cl-rowgroup-footer {
+		background-color: @table-group-footer-background-color;
+	}
+}
+
+/* 모든 셀 스타일 */
+.cl-grid-cell {
+	border-right: @table-border-base;
+	border-bottom: @table-border-base;
+	
+	&.cl-last-column {
+		border-right: none;
+	}
+	
+	/* 셀에 포함된 컨트롤 */
+	.cl-control {
+		&.cl-inputbox, &.cl-maskeditor, &.cl-numbereditor, &.cl-dateinput,
+		&.cl-combobox, &.cl-searchinput, &.cl-fileinput, &.cl-output {
+			.cl-text {
+				padding: @input-padding-0 @input-padding-x;
+			}
+		}
+		&.cl-textarea {
+			.cl-text {
+				padding: @input-padding-y @input-padding-x;
+			}
+		}
+		
+		&.cl-button.btn-outline-primary {
+			color: @primary;
+		}
+	}
+
+	/* 그룹 펼침/접힘 버튼 */
+	.cl-expander {
+
+		/* 그룹 접혀짐 버튼 */
+		&.cl-collapsed {
+			 background-image: url("../images/controls/tree/tree-collapse.png");
+		}
+
+		/* 그룹 펼쳐짐 버튼 */
+		&.cl-expanded {
+			 background-image: url("../images/controls/tree/tree-expand.png");
+		}
+	}
+}
+
+/* Grid 기본 셀 스타일 */
+.cl-default-cell {
+	.cl-text {
+	}
+
+	&.cl-control {
+	}
+	
+	&.cl-disabled {
+		background-color: @table-disabled-background-color;
+	}
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-637ca43b" version="1.0.3164">
+  <head std:sid="head-a8879e32">
+    <screen std:sid="screen-99b14f88" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9644abd4" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-a4f32041" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-08462253" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-43ec42a1"/>
+    <cl:appspec title="슬라이더 관련 속성"/>
+  </head>
+  <body std:sid="body-80ecc369">
+    <cl:group std:sid="group-d95959dd" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-64a280cc" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-7f457b66" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-4942eba8" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-15c9fa5d" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-6cbab447" id="grpData">
+      <cl:verticaldata std:sid="v-data-8cb3418d" width="400px" height="645px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="슬라이더(Slider)는 범위 조절이 가능한 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-19792d90" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp2" class="cl-form-group">
+        <cl:formdata std:sid="f-data-24ff0483" row="1" col="0"/>
+        <cl:slider std:sid="slider-0d01585b" id="sld2" value="30" direction="backward">
+          <cl:formdata std:sid="f-data-695ccd54" row="2" col="1"/>
+        </cl:slider>
+        <cl:slider std:sid="slider-ecabc7a3" id="sld3" value="30" range="true">
+          <cl:formdata std:sid="f-data-1074f3d4" row="3" col="1"/>
+        </cl:slider>
+        <cl:output std:sid="output-82e37a3b" value="[value = 30]&#xD;&#xA;1. 슬라이더 값이 30이다.">
+          <cl:formdata std:sid="f-data-6f55b1f4" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-ccd78943" value="[direction = backward]&#xD;&#xA;1. 슬라이더가 역방향이다.">
+          <cl:formdata std:sid="f-data-b1c5d386" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f7bcbac5" value="[range = true]&#xD;&#xA;1. 값의 범위를 조절할 수 있도록 슬라이더 값이 2개이다.">
+          <cl:formdata std:sid="f-data-749c0bf5" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-2579fec1" value="[orientation = vertical]&#xD;&#xA;1. 슬라이더의 방향이 세로이다.">
+          <cl:formdata std:sid="f-data-9d227314" row="4" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-d2732a17" id="grp3">
+          <cl:formdata std:sid="f-data-2569b7ba" row="0" col="1" rowspan="1" colspan="1"/>
+          <cl:slider std:sid="slider-dccece6c" id="sld1" value="30">
+            <cl:formdata std:sid="f-data-4129996a" row="0" col="0"/>
+          </cl:slider>
+          <cl:formlayout std:sid="f-layout-a23c4536" hspace="5px" vspace="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-0ee96b46" id="grp4">
+          <cl:formdata std:sid="f-data-a19ef36d" row="4" col="1"/>
+          <cl:slider std:sid="slider-798a1f1d" id="sld4" orientation="vertical">
+            <cl:formdata std:sid="f-data-0b706c77" row="0" col="0"/>
+          </cl:slider>
+          <cl:formlayout std:sid="f-layout-b09d3b39" hspace="5px" vspace="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-504f2c5c" value="[step  = 20]&#xD;&#xA;1. 슬라이더가 20씩 이동한다.">
+          <cl:formdata std:sid="f-data-a02093e7" row="5" col="0"/>
+        </cl:output>
+        <cl:slider std:sid="slider-ed763e46" id="sld7" step="20.0">
+          <cl:formdata std:sid="f-data-c3880cff" row="5" col="1"/>
+        </cl:slider>
+        <cl:slider std:sid="slider-b7343707" id="sld5" value="50,70" range="true">
+          <cl:formdata std:sid="f-data-41e48098" row="1" col="1"/>
+        </cl:slider>
+        <cl:output std:sid="output-5d89c942" value="[value = 50, 70]&#xD;&#xA;1. 슬라이더 값이 50, 70이다.">
+          <cl:formdata std:sid="f-data-26b6c1b6" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-52609c70" value="[max =80.0]&#xD;&#xA;1. 슬라이더 최대값이 80이다.">
+          <cl:formdata std:sid="f-data-c859fd97" row="6" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-0b10ecff" value="[min = 20.0]&#xD;&#xA;1. 슬라이더 최소값이 20이다.">
+          <cl:formdata std:sid="f-data-9420fba1" row="7" col="0"/>
+        </cl:output>
+        <cl:slider std:sid="slider-b54f4543" id="sld8" value="80" max="80.0">
+          <cl:formdata std:sid="f-data-9b19ef93" row="6" col="1"/>
+        </cl:slider>
+        <cl:slider std:sid="slider-d5231dc5" id="sld9" value="20" min="20.0">
+          <cl:formdata std:sid="f-data-fb62fd12" row="7" col="1"/>
+        </cl:slider>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c754e38f" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-ebeda02b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

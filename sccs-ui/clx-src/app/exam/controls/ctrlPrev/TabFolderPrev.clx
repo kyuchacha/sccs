@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-438fdd7a" version="1.0.3164">
+  <head std:sid="head-a1cf6f9a">
+    <screen std:sid="screen-25409b72" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-ec26b6d0" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-b8442285" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-e85fc817" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-07e94d3b"/>
+    <cl:appspec title="탭폴더 관련 속성"/>
+  </head>
+  <body std:sid="body-ee50b45c">
+    <cl:group std:sid="group-27d5f02c" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-88dbe495" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-e5bce982" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-ed63c431" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-1dd089b3" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-dcbcdd83" id="grpData">
+      <cl:verticaldata std:sid="v-data-0229ae1a" width="400px" height="645px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="탭폴더(TabFolder)는 여러 페이지 중 사용자가 선택한 하나의 페이지를 표시하는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-d3bd7932" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp2" class="cl-form-group">
+        <cl:formdata std:sid="f-data-beb6d35b" row="1" col="0"/>
+        <cl:output std:sid="output-d53c26af" value="[tab1 > closable = true]&#xD;&#xA;[tab4 > selected = true]&#xD;&#xA;1. tab4가 선택되어 있다.&#xD;&#xA;2. tab1은 x 표시가 있다.">
+          <cl:formdata std:sid="f-data-27726a91" row="0" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-9bb599c0" id="tab1">
+          <cl:formdata std:sid="f-data-36a002ea" row="0" col="1"/>
+          <cl:tabitem std:sid="t-item-b9e5ba2b" text="tab1" closable="true">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-829efe00" id="grp3">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-5c0ae1a9" id="txa1" value="tab1">
+                <cl:flowlayoutdata std:sid="f-data-4888238a" width="285px" height="74px"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-8eddd022"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-a5b6e75f" text="tab 2">
+            <cl:group std:sid="group-222720b5" id="grp5">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-b1d7e5be" id="txa4" value="tab2">
+                <cl:flowlayoutdata std:sid="f-data-2f20dba8" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-e611068e"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-29fcc3c3" text="tab 3">
+            <cl:group std:sid="group-ba675c6c" id="grp6">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-5e848ae8" id="txa5" value="tab3">
+                <cl:flowlayoutdata std:sid="f-data-6c6ec3eb" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-cca57fcb"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-fd340878" selected="true" text="tab 4">
+            <cl:group std:sid="group-8eccf187" id="grp7">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-1a5c08d8" id="txa6" value="tab4">
+                <cl:flowlayoutdata std:sid="f-data-6926ff70" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-bf56bd29"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:tabfolder std:sid="t-folder-2e0a3991" id="tab2" headerposition="bottom" headercheckable="true">
+          <cl:formdata std:sid="f-data-0e13d41a" row="4" col="1"/>
+          <cl:tabitem std:sid="t-item-b9fb8609" selected="true" text="tab1">
+            <cl:group std:sid="group-f16ec177" id="grp8">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-5fd53f58"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-db295d75" text="tab 2">
+            <cl:group std:sid="group-ce3eedbc" id="grp9">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-4fdc811f"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-acd72f31" text="tab 3">
+            <cl:group std:sid="group-98958d2a" id="grp10">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-acf6498c"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-37b166ad" text="tab 4">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-76b56609" id="grp11">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-5d1f994d"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-a0a7c7f1" text="tab 5">
+            <cl:group std:sid="group-4b6f0353" id="grp12">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-4adb3f9a"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-c8455cd2" text="tab 6">
+            <cl:group std:sid="group-cd218ff7" id="grp13">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-b1191922"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-6f1ea85b" text="tab 7">
+            <cl:group std:sid="group-aa89a736" id="grp14">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-d8bbd04d"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-e1413c9b" text="tab 8">
+            <cl:group std:sid="group-72d719a3" id="grp15">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-5d8af01c"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-b7ca2d48" text="tab 9">
+            <cl:group std:sid="group-12da4464" id="grp16">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-202fe14b"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:output std:sid="output-874fc690" value="[headerPosition = bottom]&#xD;&#xA;[headerCheckable = true]&#xD;&#xA;1. 탭폴더 헤더가 아래 표시된다.&#xD;&#xA;2. 헤더에 체크박스가 표시된다.">
+          <cl:formdata std:sid="f-data-9dfeb9a5" row="4" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-126d197f" id="tab4" item-sizing="fixed" preferred-item-width="50">
+          <cl:formdata std:sid="f-data-2311a12c" row="8" col="1"/>
+          <cl:tabitem std:sid="t-item-583bed21" selected="true" text="tab1" closable="true">
+            <cl:group std:sid="group-7c098462" id="grp20">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-dcc2603b"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-fb6efa5e" text="tab 2" closable="true">
+            <cl:group std:sid="group-a50389cc" id="grp21">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-0cc11271"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-ff32809d" text="tab 3" closable="true">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-1339a46a" id="grp22">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-467273b4"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-903cf54f" text="tab 4" closable="true">
+            <cl:group std:sid="group-151c850b" id="grp23">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-65eeb538"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:output std:sid="output-71ebe26e" value="[itemSizing = fixed]&#xD;&#xA;preferredItemWidth = 50&#xD;&#xA;1. 탭 아이템 너비가 50px로 고정되어있다.">
+          <cl:formdata std:sid="f-data-a3ef4970" row="8" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-f3ffc1bf" id="tab5" item-dragging-mode="global">
+          <cl:formdata std:sid="f-data-7f206e8e" row="10" col="1"/>
+          <cl:tabitem std:sid="t-item-fdd73cd7" selected="true" text="tab1">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-4c484642" id="grp24">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-625d3308"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-edc51320" text="tab 2">
+            <cl:group std:sid="group-2f2fcc02" id="grp26">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-97c25053"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-50784ea2" text="tab 3">
+            <cl:group std:sid="group-469f415b" id="grp27">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-2d945e5b"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-ed645a6f" text="tab 4">
+            <cl:group std:sid="group-ee060bdf" id="grp28">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-1fb3a732"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:output std:sid="output-5cdc21b8" value="[itemDraggingMode = global]&#xD;&#xA;1. 탭 아이템을 드래그해서 다른 탭폴더로 가져간다.&#xD;&#xA;2. 마우스에 불가 표시가 보이지 않는다.">
+          <cl:formdata std:sid="f-data-8d7725db" row="10" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-7a926aa3" value="[headerArrowPosition = right]&#xD;&#xA;1. 탭폴더 오른쪽 끝에 화살표가 표시된다.">
+          <cl:formdata std:sid="f-data-ad85f78c" row="3" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-eadeeb0a" id="tab7" headerarrowposition="right">
+          <cl:formdata std:sid="f-data-cd42afa6" row="3" col="1"/>
+          <cl:tabitem std:sid="t-item-dbd01a27" selected="true" text="tab1">
+            <cl:group std:sid="group-730d91b1" id="grp33">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-fcf30032"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-0621c9c8" text="tab 2">
+            <cl:group std:sid="group-6cc2211f" id="grp34">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-6026aea3"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-47ce8c23" text="tab 3">
+            <cl:group std:sid="group-b366b817" id="grp35">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-2a8e8696"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-ef27907a" text="tab 4">
+            <cl:group std:sid="group-868a6856" id="grp36">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-44831ff4"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-9b7ad010" text="tab 5">
+            <cl:group std:sid="group-66ca5c06" id="grp37">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-e733001b"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-f0f3a2c8" text="tab 6">
+            <cl:group std:sid="group-733d88cd" id="grp38">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-bb1ac8ba"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-29017374" text="tab 7">
+            <cl:group std:sid="group-ce1c9112" id="grp39">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-994a794e"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-5b7a5be8" text="tab 8">
+            <cl:group std:sid="group-cd498440" id="grp40">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-3cd63abe"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-c32c5318" text="tab 9">
+            <cl:group std:sid="group-cbd0a32e" id="grp41">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-2076b19b"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-3a71e80a" text="tab 10">
+            <cl:group std:sid="group-a0dee862" id="grp81">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-0ad79675"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-eb72370f" text="tab 11">
+            <cl:group std:sid="group-ba08bf1c" id="grp82">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-040f4dd3"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-a82924a7" text="tab 12">
+            <cl:group std:sid="group-93bc3f0e" id="grp83">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-47ef5d0a"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-91ffce7b" text="tab 13">
+            <cl:group std:sid="group-30671ab2" id="grp84">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-578c70fb"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-90a9081d" text="tab 14">
+            <cl:group std:sid="group-931d5f6b" id="grp85">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-52e3a0d6"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-cdfb7edf" text="tab 15">
+            <cl:group std:sid="group-fe623e31" id="grp86">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-460eeae8"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-85bc6b38" text="tab 16">
+            <cl:group std:sid="group-1753a2e0" id="grp87">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-1f32d2a9"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-05b5494b" text="tab 17">
+            <cl:group std:sid="group-57a48af6" id="grp88">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-18469cc6"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-f5bbc3cc" text="tab 18">
+            <cl:group std:sid="group-81154029" id="grp18">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-47523899"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-c3cedc03" text="tab 19">
+            <cl:group std:sid="group-654ab905" id="grp19">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-0eb4245a"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-a64a2402" text="tab 20">
+            <cl:group std:sid="group-81385ea8" id="grp25">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-914a0ac7"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-9a98c493" text="tab 21">
+            <cl:group std:sid="group-60bf4a71" id="grp29">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-5662e38c"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-537b799a" text="tab 22">
+            <cl:group std:sid="group-a06a265f" id="grp30">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-c856841a"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-8858a946" text="tab 23">
+            <cl:group std:sid="group-efa14c8d" id="grp31">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-073b4d86"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-d1250a5a" text="tab 24">
+            <cl:group std:sid="group-56f58fa1" id="grp32">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-b5192c49"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-5fbe7b92" text="tab 25">
+            <cl:group std:sid="group-9e431aea" id="grp49">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-21e74cc3"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-24e11b62" text="tab 26">
+            <cl:group std:sid="group-50ee6390" id="grp50">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-7b091a51"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-cf995091" text="tab 27">
+            <cl:group std:sid="group-0a831ff0" id="grp69">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-9b305613"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-efd7e99a" text="tab 28">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-bd70fa52" id="grp70">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-8919725e"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:output std:sid="output-1bfd70bd" value="[itemAlign = trailing]&#xD;&#xA;[itemSpacing = 20]&#xD;&#xA;1. 탭폴더가 오른쪽으로 붙어 정렬되어있다.&#xD;&#xA;2. 아이템 간의 간격이 20px 이다.&#xD;&#xA;">
+          <cl:formdata std:sid="f-data-9ce6d4b7" row="5" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-ae602230" id="tab8" item-align="trailing" item-spacing="20">
+          <cl:formdata std:sid="f-data-f1352584" row="5" col="1"/>
+          <cl:tabitem std:sid="t-item-d5920bd1" selected="true" text="tab1">
+            <cl:group std:sid="group-ef88aa05" id="grp42">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-f60fe786"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-fe8958c1" text="tab 2">
+            <cl:group std:sid="group-4a368ca8" id="grp43">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-7ac48cab"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-9184fcf8" text="tab 3">
+            <cl:group std:sid="group-346390ff" id="grp44">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-a081292c"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-2ddd68e8" text="tab 4">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-ad6626e8" id="grp45">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-d76a9d3c"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-73bfdb19" text="tab 5">
+            <cl:group std:sid="group-fea98a91" id="grp46">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-12d7a70f"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-868b7469" text="tab 6">
+            <cl:group std:sid="group-fdd643cf" id="grp47">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-f72d1658"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-7de3f66b" text="tab 7">
+            <cl:group std:sid="group-21919a4a" id="grp48">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-eaf57969"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:output std:sid="output-9f79580e" value="[showCloseOnlyActive = true]&#xD;&#xA;1. 활성화된 탭폴더는 x 표시가 보인다.">
+          <cl:formdata std:sid="f-data-a40ac6b2" row="6" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-7c7dd4c3" id="tab10" showCloseOnlyActive="true">
+          <cl:formdata std:sid="f-data-56727ac9" row="6" col="1"/>
+          <cl:tabitem std:sid="t-item-e7d798e0" selected="true" text="tab1" closable="true">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-784ecefe" id="grp60">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-0ed196c6"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-8f53830d" text="tab 2" closable="true">
+            <cl:group std:sid="group-aa9f2bc1" id="grp61">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-ee1203fc"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-98184a07" text="tab 3" closable="true">
+            <cl:group std:sid="group-33ea37a4" id="grp62">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-26f694ca"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-29bd3921" text="tab 4" closable="true">
+            <cl:group std:sid="group-424a98e5" id="grp63">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-0bf5522e"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:output std:sid="output-00f2e3f2" value="[itemSizing = fill]&#xD;&#xA;[useItemTextEllipsis = true]&#xD;&#xA;1. 탭폴더가 화면에 꽉 차도록 정렬되어있다.&#xD;&#xA;2. 첫번째 탭폴더 말줄임표가 표시된다.">
+          <cl:formdata std:sid="f-data-6644636e" row="7" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-5b6744ce" id="tab9" item-sizing="fill" use-item-text-ellipsis="true">
+          <cl:formdata std:sid="f-data-27ebde28" row="7" col="1"/>
+          <cl:tabitem std:sid="t-item-a7874bc7" selected="true" text="tab1tab1tab1tab1tab1tab1tab1">
+            <cl:group std:sid="group-a37f7c16" id="grp51">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-941afe18"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-29cc9626" text="tab 2">
+            <cl:group std:sid="group-954aef5b" id="grp52">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-665c6963"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-166d6511" text="tab 3">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-b22f515f" id="grp53">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-d6f91b7b"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-04cc11d9" text="tab 4">
+            <cl:group std:sid="group-b6148854" id="grp54">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-44c1456e"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-901f5f27" text="tab 5">
+            <cl:group std:sid="group-b0cafd9b" id="grp55">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-e451745d"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-fa9d2057" text="tab 6">
+            <cl:group std:sid="group-85b0373d" id="grp56">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-a1082a0d"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-344da860" text="tab 7">
+            <cl:group std:sid="group-607c3ec7" id="grp57">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-ee684176"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-a9a41f84" text="tab 8">
+            <cl:group std:sid="group-13074e2a" id="grp58">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-7954bef9"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-7634d4b2" text="tab 9">
+            <cl:group std:sid="group-29acbc0e" id="grp67">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-9f30622d"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-8a8f77a3" text="tab 10">
+            <cl:group std:sid="group-8fb76428" id="grp68">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-fe51bc7b"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-6d771b40" text="tab 11">
+            <cl:group std:sid="group-cfd92e8b" id="grp1">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-b0712443"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-d567c23c" text="tab 12">
+            <cl:group std:sid="group-3908d7ef" id="grp4">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-8a5cdf57"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-be3b5a0d" text="tab 13">
+            <cl:group std:sid="group-13ba7315" id="grp17">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-b17c212e"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:output std:sid="output-d3bd55e9" value="[itemDraggingMode = internal]&#xD;&#xA;1. tab1을 드래그해서 tab2 오른쪽에 드랍한다.&#xD;&#xA;2. tab2에 위치가 변경된다.">
+          <cl:formdata std:sid="f-data-bd88ffc7" row="9" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-d9513c32" id="tab11" item-dragging-mode="internal" preferred-item-width="100">
+          <cl:formdata std:sid="f-data-78398443" row="9" col="1"/>
+          <cl:tabitem std:sid="t-item-252a3e3f" selected="true" text="tab1">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-e009ccc0" id="grp59">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-f1356a1c"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-170c4525" text="tab 2">
+            <cl:group std:sid="group-0b122390" id="grp64">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-3d2e2acc"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-d591e23e" text="tab 3">
+            <cl:group std:sid="group-b6b39f47" id="grp65">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-d7762528"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-fc618d5e" text="tab 4">
+            <cl:group std:sid="group-f6a8e544" id="grp66">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:xylayout std:sid="xylayout-6770ed05"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:output std:sid="output-fde61bf2" value="[tab2 > enabled = false (비활성화)]&#xD;&#xA;1. tab2를 클릭한다.&#xD;&#xA;2. 클릭 되지 않는다.">
+          <cl:formdata std:sid="f-data-b8fe85e9" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a41fab24" value="[tab3 > visible = false]&#xD;&#xA;1. tab3은 보이지 않는다.">
+          <cl:formdata std:sid="f-data-e58ab521" row="2" col="0"/>
+        </cl:output>
+        <cl:tabfolder std:sid="t-folder-513065cc" id="tab12">
+          <cl:formdata std:sid="f-data-f217304a" row="1" col="1"/>
+          <cl:tabitem std:sid="t-item-1702d119" text="tab1">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-a8b73426" id="grp73">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-64e460e2" id="txa2" value="tab1">
+                <cl:flowlayoutdata std:sid="f-data-5d506177" width="285px" height="74px"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-722fe8af"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-bf75e45b" text="tab 2" enabled="false">
+            <cl:group std:sid="group-ff799c56" id="grp74">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-e4427699" id="txa7" value="tab2">
+                <cl:flowlayoutdata std:sid="f-data-fc14cd66" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-4f1ff820"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-9540b685" text="tab 3">
+            <cl:group std:sid="group-611616e0" id="grp75">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-a145924b" id="txa8" value="tab3">
+                <cl:flowlayoutdata std:sid="f-data-ce7768d1" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-55f38a62"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-4b219963" text="tab 4">
+            <cl:group std:sid="group-5a960cf5" id="grp76">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-d03253b7" id="txa9" value="tab4">
+                <cl:flowlayoutdata std:sid="f-data-698419ae" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-815d7543"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:tabfolder std:sid="t-folder-969decd9" id="tab13">
+          <cl:formdata std:sid="f-data-f69e60d4" row="2" col="1"/>
+          <cl:tabitem std:sid="t-item-2fb36667" text="tab1">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-f3ed1010" id="grp77">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-4e9673dd" id="txa3" value="tab1">
+                <cl:flowlayoutdata std:sid="f-data-8a4d51df" width="285px" height="74px"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-bfb7ef7d"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-9ffb8e6a" text="tab 2">
+            <cl:group std:sid="group-3602a42a" id="grp78">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-f54cfd8d" id="txa10" value="tab2">
+                <cl:flowlayoutdata std:sid="f-data-4582c4cb" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-53028aeb"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-ba4bf746" text="tab 3" visible="false">
+            <cl:group std:sid="group-83cd3b12" id="grp79">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-afad6644" id="txa11" value="tab3">
+                <cl:flowlayoutdata std:sid="f-data-4b8ad744" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-e78af261"/>
+            </cl:group>
+          </cl:tabitem>
+          <cl:tabitem std:sid="t-item-983a81e6" text="tab 4">
+            <cl:group std:sid="group-0b09e26d" id="grp80">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-5bd5aba5" id="txa12" value="tab4">
+                <cl:flowlayoutdata std:sid="f-data-93542bee" width="285px" height="74px" autosize="none"/>
+              </cl:textarea>
+              <cl:flowlayout std:sid="f-layout-93fc41cc"/>
+            </cl:group>
+          </cl:tabitem>
+        </cl:tabfolder>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="52" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="52" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-650fdf42" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-a6269211"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

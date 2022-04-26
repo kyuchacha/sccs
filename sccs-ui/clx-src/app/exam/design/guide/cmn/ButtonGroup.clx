@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8cf7c57a" version="1.0.0.0">
+  <head std:sid="head-fa73910b">
+    <title>ButtonGroup</title>
+    <screen std:sid="screen-3854c69c" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-ffa8544c" id="tablet" name="tablet" minwidth="850px" maxwidth="1023px" width="850px" height="768px"/>
+    <screen std:sid="screen-937cca58" id="mobile" name="mobile" maxwidth="849px" width="550px" height="768px"/>
+    <cl:model std:sid="model-51dfa35d"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-c360925a" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-457e3e6b" width="984px" height="26px" autosize="none"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Buttons Group">
+        <cl:formdata std:sid="f-data-c8d7556a" row="0" col="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.template.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" row="0" col="1"/>
+        <cl:property name="values" value="DESIGN GUIDE,BUTTONS GROUP" type="string"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Basic Example">
+      <cl:verticaldata std:sid="v-data-cdd3afa4" width="984px" height="25px" autosize="none"/>
+    </cl:output>
+    <cl:group std:sid="group-5238bfd7" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-65061828" width="984px" height="168px" autosize="height"/>
+      <cl:group std:sid="group-bac3e12f">
+        <cl:verticaldata std:sid="v-data-af28c103" width="400px" height="125px"/>
+        <cl:output std:sid="output-959f9605" class="card-subtitle fw-bold" value="DEFAUL BUTTONS">
+          <cl:formdata std:sid="f-data-c392e445" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-8489458c" class="card-subtitle fw-bold" value="SECONDARY">
+          <cl:formdata std:sid="f-data-5e0d6741" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-37b5b7cb" class="card-subtitle fw-bold" value="OUTLINE BUTTONS">
+          <cl:formdata std:sid="f-data-f1cd4eea" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-31db438c" class="card-subtitle fw-bold" value="INFO">
+          <cl:formdata std:sid="f-data-1d5f7938" row="2" col="2"/>
+        </cl:output>
+        <cl:group std:sid="group-09c3773d" class="btn-group">
+          <cl:formdata std:sid="f-data-1c51d7b2" row="1" col="0"/>
+          <cl:button std:sid="button-78c78824" id="btn1" value="Left">
+            <cl:xylayoutdata std:sid="xyl-data-ffffe05c" top="0px" bottom="0px" left="0px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-8360d4f2" id="btn3" value="Middle">
+            <cl:xylayoutdata std:sid="xyl-data-00f39f4d" top="0px" bottom="0px" left="79px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-f672f2c0" id="btn4" value="Right">
+            <cl:xylayoutdata std:sid="xyl-data-d1897319" top="0px" bottom="0px" left="158px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-42c86936"/>
+        </cl:group>
+        <cl:group std:sid="group-0f070ee1" class="btn-group">
+          <cl:formdata std:sid="f-data-37a1a436" row="3" col="0"/>
+          <cl:button std:sid="button-62e1c898" id="btn5" class="btn-outline-primary" value="Left">
+            <cl:xylayoutdata std:sid="xyl-data-f598668c" top="0px" bottom="0px" left="0px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-943c24be" id="btn6" class="btn-outline-primary" value="Middle">
+            <cl:xylayoutdata std:sid="xyl-data-bf398b5b" top="0px" bottom="0px" left="79px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-11f04d6f" id="btn8" class="btn-outline-primary" value="Right">
+            <cl:xylayoutdata std:sid="xyl-data-f8835bda" top="0px" bottom="0px" left="158px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-dbfcde7d"/>
+        </cl:group>
+        <cl:group std:sid="group-ab5861af" class="btn-group">
+          <cl:formdata std:sid="f-data-bee7a0ab" row="1" col="2"/>
+          <cl:button std:sid="button-c2db8ab9" id="btn2" class="btn-primary btn-dim" value="Left">
+            <cl:xylayoutdata std:sid="xyl-data-bbf8b900" top="0px" bottom="0px" left="0px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-109c97cb" id="btn7" class="btn-primary btn-dim" value="Middle">
+            <cl:xylayoutdata std:sid="xyl-data-96a646b5" top="0px" bottom="0px" left="79px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-c980b234" id="btn9" class="btn-primary btn-dim" value="Right">
+            <cl:xylayoutdata std:sid="xyl-data-660f8189" top="0px" bottom="0px" left="158px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-9dbb6a59"/>
+        </cl:group>
+        <cl:group std:sid="group-95b77383" class="btn-group">
+          <cl:formdata std:sid="f-data-22fcd1ab" row="3" col="2"/>
+          <cl:button std:sid="button-f048b469" id="btn10" class="btn-outline-primary btn-dim" value="Left">
+            <cl:xylayoutdata std:sid="xyl-data-24d9ecb5" top="0px" bottom="0px" left="0px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-09fbea72" id="btn11" class="btn-outline-primary btn-dim" value="Middle">
+            <cl:xylayoutdata std:sid="xyl-data-a4f3ee1e" top="0px" bottom="0px" left="79px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-1b5592fd" id="btn12" class="btn-outline-primary btn-dim" value="Right">
+            <cl:xylayoutdata std:sid="xyl-data-d59999d0" top="0px" bottom="0px" left="158px" width="80px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-de608758"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-9f58c49c" hspace="5px" vspace="5px">
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:rows length="20"/>
+          <cl:rows length="35"/>
+          <cl:columns length="240" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="240" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-e6511f99" spacing="5" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:output std:sid="output-d67467aa" class="h6" value="Button Toolbar">
+      <cl:verticaldata std:sid="v-data-f94a24da" width="984px" height="25px" autosize="none"/>
+    </cl:output>
+    <cl:group std:sid="group-a4e28f58" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-3a4bc4d9" width="984px" height="74px" autosize="height"/>
+      <cl:group std:sid="group-ab449f1d">
+        <cl:verticaldata std:sid="v-data-324f09cb" width="400px" height="35px" autosize="height"/>
+        <cl:group std:sid="group-14e18a49" class="btn-group">
+          <cl:flowlayoutdata std:sid="f-data-25fc06e9" width="171px" height="35px" autosize="none"/>
+          <cl:button std:sid="button-4b2568ee" id="btn13" value="1">
+            <cl:xylayoutdata std:sid="xyl-data-6d74b929" top="0px" bottom="0px" left="0px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-c2c7bb26" id="btn14" value="2">
+            <cl:xylayoutdata std:sid="xyl-data-3a0d3670" top="0px" bottom="0px" left="34px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-e2e46182" id="btn15" value="3">
+            <cl:xylayoutdata std:sid="xyl-data-c4ff888a" top="0px" bottom="0px" left="68px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-819253e0" id="btn16" value="4">
+            <cl:xylayoutdata std:sid="xyl-data-6f68ccde" top="0px" bottom="0px" left="102px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-790963f5" id="btn17" value="5">
+            <cl:xylayoutdata std:sid="xyl-data-b188c886" top="0px" bottom="0px" left="136px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-e73dc851"/>
+        </cl:group>
+        <cl:group std:sid="group-d7d291e4" class="btn-group">
+          <cl:flowlayoutdata std:sid="f-data-82ca8d0c" width="103px" height="35px" autosize="none"/>
+          <cl:button std:sid="button-91a4b516" id="btn18" value="6">
+            <cl:xylayoutdata std:sid="xyl-data-68cb62d3" top="0px" bottom="0px" left="0px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-fe9a3dc1" id="btn19" value="7">
+            <cl:xylayoutdata std:sid="xyl-data-b8450977" top="0px" bottom="0px" left="34px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-8b48adb7" id="btn20" value="8">
+            <cl:xylayoutdata std:sid="xyl-data-ad71cba2" top="0px" bottom="0px" left="68px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-1de75ce7"/>
+        </cl:group>
+        <cl:group std:sid="group-78cf641e" class="btn-group">
+          <cl:flowlayoutdata std:sid="f-data-ec05da5b" width="35px" height="35px" autosize="none"/>
+          <cl:button std:sid="button-e5e89778" id="btn21" value="9">
+            <cl:xylayoutdata std:sid="xyl-data-64f488bb" top="0px" bottom="0px" left="0px" width="35px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-86dfcaf4"/>
+        </cl:group>
+        <cl:flowlayout std:sid="f-layout-dd916ce1" scrollable="false"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-2be079e3" spacing="5" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-b90bc922" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,1911 @@
+{
+   "dmGlobalConfig":{
+      "mdiWindowMaxCount":"10",
+      "defaultLocale":null,
+      "deputyLoginYn":"",
+      "useSearchBoxClear":"N",
+      "divideMdiUseYn":"N",
+      "webSocketUrl":"",
+      "userViewPartPopOut":"Y",
+      "megaMenuCount":4,
+      "webSocketYn":"N"
+   },
+   "dmUserInfo":{
+      "L_LOGIN_DT":"20200915150937889946",
+      "USER_NM":"Admin",
+      "LOGIN_ID":"temp",
+      "LAYOUT":"default",
+      "USER_ID":"TST014",
+      "L_LOGIN_IP":"211.109.xx.xxx",
+      "USER_DIV_CD":"GUEST",
+      "LANG":"ko",
+      "PARTY_ID":"000000000000017",
+      "SYS_MGR_YN":null,
+      "DUP_PERMIT_YN":null
+   },
+   "dsAllMenu":[
+      {
+         "MENU_ID":"LEVEL01-01",
+         "MENU_NM":"컨트롤",
+         "CALL_PAGE":null,
+         "UP_MENU_ID":null,
+         "ICON":"",
+         "MENU_LVL":0,
+         "DESC":null,
+         "CLASS" : "ctl"
+      },
+      {
+         "MENU_ID":"LEVEL01-02",
+         "MENU_NM":"공통모듈예제",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"",
+         "ICON":"",
+         "MENU_LVL":0,
+         "DESC":null,
+         "CLASS" : "mod"
+      },
+      {
+         "MENU_ID":"LEVEL01-03",
+         "MENU_NM":"유형별 화면패턴",
+         "CALL_PAGE":null,
+         "UP_MENU_ID":null,
+         "ICON":"",
+         "MENU_LVL":0,
+         "DESC":null,
+         "CLASS" : "pat"
+      },
+      {
+         "MENU_ID":"LEVEL01-04",
+         "MENU_NM":"응용 예제",
+         "CALL_PAGE":null,
+         "UP_MENU_ID":null,
+         "ICON":"",
+         "MENU_LVL":0,
+         "DESC":null,
+         "CLASS" : "exm"
+      },
+      {
+         "MENU_ID":"LEVEL02-02-01",
+         "MENU_NM":"목차",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-02-02",
+         "MENU_NM":"화면 호출",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-02-03",
+         "MENU_NM":"그리드",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-02-04",
+         "MENU_NM":"프리폼",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-02-05",
+         "MENU_NM":"데이터 셋/맵",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-02-06",
+         "MENU_NM":"탭/트리/컨트롤",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID": "LEVEL02-02-07",
+         "MENU_NM": "Auth",
+         "CALL_PAGE": "",
+         "UP_MENU_ID": "LEVEL01-02",
+         "ICON": "",
+         "MENU_LVL": 3,
+         "DESC": null
+      },
+      {
+         "MENU_ID":"LEVEL02-02-08",
+         "MENU_NM":"Util",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-02-09",
+         "MENU_NM":"모바일 컨트롤",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-02-10",
+         "MENU_NM":"유효성 체크2",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-03-01-01",
+         "MENU_NM":"리스트",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-03",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-03-01-02",
+         "MENU_NM":"폼",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-03",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-03-01-03",
+         "MENU_NM":"탭 ",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-03",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-03-01-04",
+         "MENU_NM":"혼합",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-03",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-03-01-05",
+         "MENU_NM":"트리",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-03",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-03-01-06",
+         "MENU_NM":"반응형",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-03",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-03-02",
+         "MENU_NM":"디자인",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-03",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-01-01",
+         "MENU_NM":"CRUD(with DB)",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-01-02",
+         "MENU_NM":"파일 처리",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-02-02",
+         "MENU_NM":"트리",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-02-03",
+         "MENU_NM":"UDC",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-02-04",
+         "MENU_NM":"익스프레션",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-02-05",
+         "MENU_NM":"임베디드",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-02-06",
+         "MENU_NM":"기타",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-02-01",
+         "MENU_NM":"그리드",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-04-03",
+         "MENU_NM":"THIRD-PARTY",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-04",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-01-01-01",
+         "MENU_NM":"인풋",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-01",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-01-01-02",
+         "MENU_NM":"아웃풋",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-01",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-01-01-03",
+         "MENU_NM":"리스트형",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-01",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-01-01-04",
+         "MENU_NM":"선택형",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-01",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-01-01-05",
+         "MENU_NM":"임베디드",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-01",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-01-01-06",
+         "MENU_NM":"미디어",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-01",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-01-01-07",
+         "MENU_NM":"데이터 처리",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-01",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"LEVEL02-01-01-08",
+         "MENU_NM":"유틸",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"LEVEL01-01",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"DateInput",
+         "MENU_NM":"DateInput",
+         "CALL_PAGE":"app/exam/controls/DateInput.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"DateInput 주요 속성"
+      },
+      {
+         "MENU_ID":"FileInput",
+         "MENU_NM":"FileInput",
+         "CALL_PAGE":"app/exam/controls/FileInput.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"FileInput 주요 속성"
+      },
+      {
+         "MENU_ID":"FileUpload",
+         "MENU_NM":"FileUpload",
+         "CALL_PAGE":"app/exam/controls/FileUpload.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"FileUpload 주요 속성"
+      },
+      {
+         "MENU_ID":"InputBox",
+         "MENU_NM":"InputBox",
+         "CALL_PAGE":"app/exam/controls/InputBox.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"InputBox 주요 속성"
+      },
+      {
+         "MENU_ID":"MaskEditor",
+         "MENU_NM":"MaskEditor",
+         "CALL_PAGE":"app/exam/controls/MaskEditor.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"MaskEditor 주요 속성"
+      },
+      {
+         "MENU_ID":"NumberEditor",
+         "MENU_NM":"NumberEditor",
+         "CALL_PAGE":"app/exam/controls/NumberEditor.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"NumberEditor 주요 속성"
+      },
+      {
+         "MENU_ID":"SearchInput",
+         "MENU_NM":"SearchInput",
+         "CALL_PAGE":"app/exam/controls/SearchInput.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"SearchInput 주요 속성"
+      },
+      {
+         "MENU_ID":"TextArea",
+         "MENU_NM":"TextArea",
+         "CALL_PAGE":"app/exam/controls/TextArea.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"TextArea 주요 속성"
+      },
+      {
+         "MENU_ID":"Accordion",
+         "MENU_NM":"Accordion",
+         "CALL_PAGE":"app/exam/controls/Accordion.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Accordion 주요 속성"
+      },
+      {
+         "MENU_ID":"Button",
+         "MENU_NM":"Button",
+         "CALL_PAGE":"app/exam/controls/Button.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Button 주요 속성"
+      },
+      {
+         "MENU_ID":"Output",
+         "MENU_NM":"Output",
+         "CALL_PAGE":"app/exam/controls/Output.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Output 주요 속성"
+      },
+      {
+         "MENU_ID":"ListBox",
+         "MENU_NM":"ListBox",
+         "CALL_PAGE":"app/exam/controls/ListBox.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"ListBox 주요 속성"
+      },
+      {
+         "MENU_ID":"LinkedComboBox",
+         "MENU_NM":"LinkedComboBox",
+         "CALL_PAGE":"app/exam/controls/LinkedComboBox.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"LinkedComboBox 주요 속성"
+      },
+      {
+         "MENU_ID":"LinkedListBox",
+         "MENU_NM":"LinkedListBox",
+         "CALL_PAGE":"app/exam/controls/LinkedListBox.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"LinkedListBox 주요 속성"
+      },
+      {
+         "MENU_ID":"Menu",
+         "MENU_NM":"Menu",
+         "CALL_PAGE":"app/exam/controls/Menu.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Menu 주요 속성"
+      },
+      {
+         "MENU_ID":"NavigationBar",
+         "MENU_NM":"NavigationBar",
+         "CALL_PAGE":"app/exam/controls/NavigationBar.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"NavigationBar 주요 속성"
+      },
+      {
+         "MENU_ID":"SideNavigation",
+         "MENU_NM":"SideNavigation",
+         "CALL_PAGE":"app/exam/controls/SideNavigation.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"SideNavigation 주요 속성"
+      },
+      {
+         "MENU_ID":"Tree",
+         "MENU_NM":"Tree",
+         "CALL_PAGE":"app/exam/controls/Tree.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Tree 주요 속성"
+      },
+      {
+         "MENU_ID":"CheckBox",
+         "MENU_NM":"CheckBox",
+         "CALL_PAGE":"app/exam/controls/CheckBox.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-04",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CheckBox 주요 속성"
+      },
+      {
+         "MENU_ID":"CheckBoxGroup",
+         "MENU_NM":"CheckBoxGroup",
+         "CALL_PAGE":"app/exam/controls/CheckBoxGroup.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-04",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CheckBoxGroup 주요 속성"
+      },
+      {
+         "MENU_ID":"ComboBox",
+         "MENU_NM":"ComboBox",
+         "CALL_PAGE":"app/exam/controls/ComboBox.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-04",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"ComboBox 주요 속성"
+      },
+      {
+         "MENU_ID":"RadioButton",
+         "MENU_NM":"RadioButton",
+         "CALL_PAGE":"app/exam/controls/RadioButton.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-04",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"RadioButton 주요 속성"
+      },
+      {
+         "MENU_ID":"EmbeddedApp",
+         "MENU_NM":"EmbeddedApp",
+         "CALL_PAGE":"app/exam/controls/EmbeddedApp.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"EmbeddedApp 주요 속성"
+      },
+      {
+         "MENU_ID":"EmbeddedPage",
+         "MENU_NM":"EmbeddedPage",
+         "CALL_PAGE":"app/exam/controls/EmbeddedPage.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"EmbeddedPage 주요 속성"
+      },
+      {
+         "MENU_ID":"HTMLSnippet",
+         "MENU_NM":"HTMLSnippet",
+         "CALL_PAGE":"app/exam/controls/HTMLSnippet.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"HTMLSnippet 주요 속성"
+      },
+      {
+         "MENU_ID":"UIControlShell",
+         "MENU_NM":"UIControlShell",
+         "CALL_PAGE":"app/exam/controls/UIControlShell.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"UIControlShell 주요 속성"
+      },
+      {
+         "MENU_ID":"Audio",
+         "MENU_NM":"Audio",
+         "CALL_PAGE":"app/exam/controls/Audio.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Audio 주요 속성"
+      },
+      {
+         "MENU_ID":"Image",
+         "MENU_NM":"Image",
+         "CALL_PAGE":"app/exam/controls/Image.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Image 주요 속성"
+      },
+      {
+         "MENU_ID":"Video",
+         "MENU_NM":"Video",
+         "CALL_PAGE":"app/exam/controls/Video.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Video 주요 속성"
+      },
+      {
+         "MENU_ID":"Grid",
+         "MENU_NM":"Grid",
+         "CALL_PAGE":"app/exam/controls/Grid.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-07",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Grid 주요 속성"
+      },
+      {
+         "MENU_ID":"TreeCell",
+         "MENU_NM":"TreeCell",
+         "CALL_PAGE":"app/exam/controls/TreeCell.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-07",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"TreeCell 주요 속성"
+      },
+      {
+         "MENU_ID":"Calendar",
+         "MENU_NM":"Calendar",
+         "CALL_PAGE":"app/exam/controls/Calendar.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-08",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Calendar 주요 속성"
+      },
+      {
+         "MENU_ID":"Notifier",
+         "MENU_NM":"Notifier",
+         "CALL_PAGE":"app/exam/controls/Notifier.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-08",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Notifier 주요 속성"
+      },
+      {
+         "MENU_ID":"PageIndexer",
+         "MENU_NM":"PageIndexer",
+         "CALL_PAGE":"app/exam/controls/PageIndexer.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-08",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"PageIndexer 주요 속성"
+      },
+      {
+         "MENU_ID":"Progress",
+         "MENU_NM":"Progress",
+         "CALL_PAGE":"app/exam/controls/Progress.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-08",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Progress 주요 속성"
+      },
+      {
+         "MENU_ID":"Slider",
+         "MENU_NM":"Slider",
+         "CALL_PAGE":"app/exam/controls/Slider.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-08",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"Slider 주요 속성"
+      },
+      {
+         "MENU_ID":"TabFolder",
+         "MENU_NM":"TabFolder",
+         "CALL_PAGE":"app/exam/controls/TabFolder.clx",
+         "UP_MENU_ID":"LEVEL02-01-01-08",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"TabFolder 주요 속성"
+      },
+      {
+         "MENU_ID":"CModIndex",
+         "MENU_NM":"공통모듈 전체보기",
+         "CALL_PAGE":"app/exam/guide/index/CModIndex.clx",
+         "UP_MENU_ID":"LEVEL02-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"MoveSample01",
+         "MENU_NM":"임베디드 앱",
+         "CALL_PAGE":"app/exam/guide/move/MoveSample01.clx",
+         "UP_MENU_ID":"LEVEL02-02-02",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"MoveSample02",
+         "MENU_NM":"MDI 전환",
+         "CALL_PAGE":"app/exam/guide/move/MoveSample02.clx",
+         "UP_MENU_ID":"LEVEL02-02-02",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"MoveSample03",
+         "MENU_NM":"다이얼로그",
+         "CALL_PAGE":"app/exam/guide/move/MoveSample03.clx",
+         "UP_MENU_ID":"LEVEL02-02-02",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"MoveSample04",
+         "MENU_NM":"메시지",
+         "CALL_PAGE":"app/exam/guide/move/MoveSample04.clx",
+         "UP_MENU_ID":"LEVEL02-02-02",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridSample01",
+         "MENU_NM":"그리드 기능",
+         "CALL_PAGE":"app/exam/guide/grid/GridSample01.clx",
+         "UP_MENU_ID":"LEVEL02-02-03",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridSample02",
+         "MENU_NM":"그리드 행/컬럼 기능",
+         "CALL_PAGE":"app/exam/guide/grid/GridSample02.clx",
+         "UP_MENU_ID":"LEVEL02-02-03",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridSample03",
+         "MENU_NM":"그리드 복사/이동 기능",
+         "CALL_PAGE":"app/exam/guide/grid/GridSample03.clx",
+         "UP_MENU_ID":"LEVEL02-02-03",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridSampleEtc01",
+         "MENU_NM":"그리드 필수값 체크",
+         "CALL_PAGE":"app/exam/guide/grid/GridSampleEtc01.clx",
+         "UP_MENU_ID":"LEVEL02-02-03",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"FormSample01",
+         "MENU_NM":"프리폼 기능",
+         "CALL_PAGE":"app/exam/guide/form/FormSample01.clx",
+         "UP_MENU_ID":"LEVEL02-02-04",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"FormSampleEtc02",
+         "MENU_NM":"폼 내의 필수값 체크",
+         "CALL_PAGE":"app/exam/guide/form/FormSampleEtc02.clx",
+         "UP_MENU_ID":"LEVEL02-02-04",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"DataSample01",
+         "MENU_NM":"데이터 셋 기능",
+         "CALL_PAGE":"app/exam/guide/data/DataSample01.clx",
+         "UP_MENU_ID":"LEVEL02-02-05",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"DataSample02",
+         "MENU_NM":"데이터 맵 기능",
+         "CALL_PAGE":"app/exam/guide/data/DataSample02.clx",
+         "UP_MENU_ID":"LEVEL02-02-05",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"ControlSample02",
+         "MENU_NM":"컨트롤 속성제어",
+         "CALL_PAGE":"app/exam/guide/control/ControlSample02.clx",
+         "UP_MENU_ID":"LEVEL02-02-06",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"ControlSample03",
+         "MENU_NM":"선택형 컨트롤 속성제어",
+         "CALL_PAGE":"app/exam/guide/control/ControlSample03.clx",
+         "UP_MENU_ID":"LEVEL02-02-06",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"ControlSample04",
+         "MENU_NM":"그룹 컨트롤",
+         "CALL_PAGE":"app/exam/guide/control/ControlSample04.clx",
+         "UP_MENU_ID":"LEVEL02-02-06",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"TabSample01",
+         "MENU_NM":"탭 기능",
+         "CALL_PAGE":"app/exam/guide/tab/TabSample01.clx",
+         "UP_MENU_ID":"LEVEL02-02-06",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"TreeSample01",
+         "MENU_NM":"트리 기능",
+         "CALL_PAGE":"app/exam/guide/tree/TreeSample01.clx",
+         "UP_MENU_ID":"LEVEL02-02-06",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+      	"MENU_ID":"AuthSample01",
+         "MENU_NM":"사용자 세션 예제",
+         "CALL_PAGE":"app/exam/guide/auth/AuthSample01.clx",
+         "UP_MENU_ID":"LEVEL02-02-07",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"UtilSample01",
+         "MENU_NM":"ValueUtil 기능",
+         "CALL_PAGE":"app/exam/guide/util/UtilSample01.clx",
+         "UP_MENU_ID":"LEVEL02-02-08",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"UtilSample02",
+         "MENU_NM":"DateUtil 기능",
+         "CALL_PAGE":"app/exam/guide/util/UtilSample02.clx",
+         "UP_MENU_ID":"LEVEL02-02-08",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"UtilSample03",
+         "MENU_NM":"Validator 기능",
+         "CALL_PAGE":"app/exam/guide/util/UtilSample03.clx",
+         "UP_MENU_ID":"LEVEL02-02-08",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"mbCalendar",
+         "MENU_NM":"모바일 캘린더",
+         "CALL_PAGE":"app/exam/mobile/mbCalendar.clx",
+         "UP_MENU_ID":"LEVEL02-02-09",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":""
+      },
+      {
+         "MENU_ID":"mbComboBox",
+         "MENU_NM":"모바일 콤보박스",
+         "CALL_PAGE":"app/exam/mobile/mbComboBox.clx",
+         "UP_MENU_ID":"LEVEL02-02-09",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":""
+      },
+      {
+         "MENU_ID":"mbGrid",
+         "MENU_NM":"모바일 그리드",
+         "CALL_PAGE":"app/exam/mobile/mbGrid.clx",
+         "UP_MENU_ID":"LEVEL02-02-09",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":""
+      },
+      {
+         "MENU_ID":"girdFormValidation",
+         "MENU_NM":"그리드/폼(단건) 유효성 체크",
+         "CALL_PAGE":"app/exam/validation2/girdFormValidation.clx",
+         "UP_MENU_ID":"LEVEL02-02-10",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":""
+      },
+      {
+         "MENU_ID":"oneGridValidation",
+         "MENU_NM":"원그리드 유효성 체크",
+         "CALL_PAGE":"app/exam/validation2/oneGridValidation.clx",
+         "UP_MENU_ID":"LEVEL02-02-10",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":""
+      },
+      {
+         "MENU_ID":"templateGridCollapse",
+         "MENU_NM":"그리드 그룹(접기)",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridCollapse.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridExpr",
+         "MENU_NM":"그리드 익스프레션",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridExpr.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridMerged",
+         "MENU_NM":"그리드 셀/열 병합",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridMerged.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridMultiRow",
+         "MENU_NM":"그리드 다중 행",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridMultiRow.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridRollUp",
+         "MENU_NM":"그리드 소계/합계",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridRollUp.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridRowStyle",
+         "MENU_NM":"그리드 행 스타일",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridRowStyle.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridSplit",
+         "MENU_NM":"그리드 틀 고정",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridSplit.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateOneGrid",
+         "MENU_NM":"그리드",
+         "CALL_PAGE":"app/exam/layout/pattern/templateOneGrid.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templatePageIndexer",
+         "MENU_NM":"그리드 페이지인덱서",
+         "CALL_PAGE":"app/exam/layout/pattern/templatePageIndexer.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateThreeGrid",
+         "MENU_NM":"멀티 그리드",
+         "CALL_PAGE":"app/exam/layout/pattern/templateThreeGrid.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateTwoGrid",
+         "MENU_NM":"그리드(상) + 그리드(하)",
+         "CALL_PAGE":"app/exam/layout/pattern/templateTwoGrid.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateTwoGridLR",
+         "MENU_NM":"그리드(좌) + 그리드(우)",
+         "CALL_PAGE":"app/exam/layout/pattern/templateTwoGridLR.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateForm",
+         "MENU_NM":"폼",
+         "CALL_PAGE":"app/exam/layout/pattern/templateForm.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"tamplateTabs",
+         "MENU_NM":"탭(탭속의 탭)",
+         "CALL_PAGE":"app/exam/layout/pattern/tamplateTabs.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateTabForm",
+         "MENU_NM":"탭(폼)",
+         "CALL_PAGE":"app/exam/layout/pattern/templateTabForm.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateTabGrid",
+         "MENU_NM":"탭(그리드)",
+         "CALL_PAGE":"app/exam/layout/pattern/templateTabGrid.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateTabSearchBox",
+         "MENU_NM":"탭(탭별 검색조건)",
+         "CALL_PAGE":"app/exam/layout/pattern/templateTabSearchBox.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridForm",
+         "MENU_NM":"그리드(좌) + 폼(우)",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridForm.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-04",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridFormTB",
+         "MENU_NM":"그리드(상) + 폼(하)",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridFormTB.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-04",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridTab",
+         "MENU_NM":"그리드 + 탭",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridTab.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-04",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateGridTreeCellDepth",
+         "MENU_NM":"그리드 트리셀",
+         "CALL_PAGE":"app/exam/layout/pattern/templateGridTreeCellDepth.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateTree",
+         "MENU_NM":"트리 + 그리드",
+         "CALL_PAGE":"app/exam/layout/pattern/templateTree.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"templateTreeForm",
+         "MENU_NM":"트리 + 폼",
+         "CALL_PAGE":"app/exam/layout/pattern/templateTreeForm.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"Responsive_01",
+         "MENU_NM":"레이아웃V1",
+         "CALL_PAGE":"app/exam/responsive/Responsive_01.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"Responsive_02",
+         "MENU_NM":"레이아웃V2",
+         "CALL_PAGE":"app/exam/responsive/Responsive_02.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"Responsive_03",
+         "MENU_NM":"그리드",
+         "CALL_PAGE":"app/exam/responsive/Responsive_03.clx",
+         "UP_MENU_ID":"LEVEL02-03-01-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"DesignGuide",
+         "MENU_NM":"디자인가이드(최신)",
+         "CALL_PAGE":"app/exam/design/DesignGuide.clx",
+         "UP_MENU_ID":"LEVEL02-03-02",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"Overview",
+         "MENU_NM":"디자인가이드",
+         "CALL_PAGE":"app/exam/design/guide/Overview.clx",
+         "UP_MENU_ID":"LEVEL02-03-02",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"gridForm",
+         "MENU_NM":"그리드 + 폼(응용)",
+         "CALL_PAGE":"app/exam/dev/gridForm.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CRUD, 파일업로드 서버 연동-서버모듈필요(eXCFrame-eGov)"
+      },
+      {
+         "MENU_ID":"multiTabs",
+         "MENU_NM":"멀티탭(응용)",
+         "CALL_PAGE":"app/exam/dev/multiTabs.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CRUD 서버 연동-서버모듈필요(eXCFrame-eGov)"
+      },
+      {
+         "MENU_ID":"oneGrid",
+         "MENU_NM":"그리드(응용)",
+         "CALL_PAGE":"app/exam/dev/oneGrid.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CRUD 서버 연동-서버모듈필요(eXCFrame-eGov)"
+      },
+      {
+         "MENU_ID":"tabEmbedded",
+         "MENU_NM":"그리드+탭(임베디드앱)(응용)",
+         "CALL_PAGE":"app/exam/dev/tabEmbedded.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CRUD 서버 연동-서버모듈필요(eXCFrame-eGov)"
+      },
+      {
+         "MENU_ID":"tabGrid",
+         "MENU_NM":"그리드 + 탭(응용)",
+         "CALL_PAGE":"app/exam/dev/tabGrid.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CRUD 서버 연동-서버모듈필요(eXCFrame-eGov)"
+      },
+      {
+         "MENU_ID":"tsvmass",
+         "MENU_NM":"TSV(응용)",
+         "CALL_PAGE":"app/exam/dev/tsvmass.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"대용량 데이터 조회-서버모듈필요(eXCFrame-eGov)"
+      },
+      {
+         "MENU_ID":"twoGrid",
+         "MENU_NM":"그리드 + 그리드(응용)",
+         "CALL_PAGE":"app/exam/dev/twoGrid.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CRUD 서버 연동-서버모듈필요(eXCFrame-eGov)"
+      },
+      {
+         "MENU_ID":"FileSample01",
+         "MENU_NM":"엑셀데이터 업로드",
+         "CALL_PAGE":"app/exam/guide/file/FileSample01.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-02",
+         "DESC":"서버모듈필요(eXCFrame-eGov)",
+         "MENU_LVL":4
+      },
+      {
+         "MENU_ID":"FileSample02",
+         "MENU_NM":"단일 파일업로드",
+         "CALL_PAGE":"app/exam/guide/file/FileSample02.clx",
+         "UP_MENU_ID":"LEVEL02-04-01-02",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"서버모듈필요(eXCFrame-eGov)"
+      },
+      {
+         "MENU_ID":"FormSampleEtc01",
+         "MENU_NM":"그리드 행과 폼 바인딩",
+         "CALL_PAGE":"app/exam/guide/form/FormSampleEtc01.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridSampleEtc03",
+         "MENU_NM":"그리드 자동합산/특정행 합계",
+         "CALL_PAGE":"app/exam/guide/grid/GridSampleEtc03.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridSampleEtc04",
+         "MENU_NM":"그리드 체크박스 조건",
+         "CALL_PAGE":"app/exam/guide/grid/GridSampleEtc04.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"setCheckRowIndex"
+      },
+      {
+         "MENU_ID":"GridSampleEtc06",
+         "MENU_NM":"그리드 소계 푸터",
+         "CALL_PAGE":"app/exam/guide/grid/GridSampleEtc06.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridSampleEtc07",
+         "MENU_NM":"그리드 그룹소계디자인",
+         "CALL_PAGE":"app/exam/guide/grid/GridSampleEtc07.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridSampleEtc08",
+         "MENU_NM":"그리드 트리구조(트리셀)",
+         "CALL_PAGE":"app/exam/guide/grid/GridSampleEtc08.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":null
+      },
+      {
+         "MENU_ID":"GridContext",
+         "MENU_NM":"그리드 컨텍스트 메뉴",
+         "CALL_PAGE":"app/exam/appSmpl/GridContext.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"app.floatControl"
+      },
+      {
+         "MENU_ID":"gridDragNDrop",
+         "MENU_NM":"그리드 행 이동 예제",
+         "CALL_PAGE":"app/exam/appSmpl/gridDragNDrop.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"cpr.controls.DragSource"
+      },
+      {
+         "MENU_ID":"GridSampleEtc09",
+         "MENU_NM":"그리드 내 레이어화면 호출",
+         "CALL_PAGE":"app/exam/guide/grid/GridSampleEtc09.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"common.module.js"
+      },
+      {
+         "MENU_ID":"gridAddedEdit",
+         "MENU_NM":"그리드 신규행만 편집",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/gridAddedEdit.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"insertRow"
+      },
+      {
+         "MENU_ID":"gridRowSwitch",
+         "MENU_NM":"그리드 로우 위치변경",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/gridRowSwitch.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"changeRowIndex"
+      },
+      {
+         "MENU_ID":"gridEachExport",
+         "MENU_NM":"그리드 개별시트 export",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/gridEachExport.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"getExportData, cpr.utils.ExportUtil.getExportData, cpr.utils.ExportUtil.merge"
+      },
+      {
+         "MENU_ID":"gridCellColor",
+         "MENU_NM":"그리드 셀 배경색바인딩",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/gridCellColor.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"cell.style.bind"
+      },
+      {
+         "MENU_ID":"gridLocalStorage",
+         "MENU_NM":"그리드 개인화",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/gridLocalStorage.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"getColumnLayout, columnVisible, setColumnLayout, init"
+      },
+      {
+         "MENU_ID":"gridCellControls",
+         "MENU_NM":"그리드 임베딩 컨트롤",
+         "CALL_PAGE":"app/exam/appSmpl/gridCellControls.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-01",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"Grid.updateConstraint, Grid.resetGrid"
+      },
+      {
+         "MENU_ID":"TreeContext",
+         "MENU_NM":"트리 컨텍스트 메뉴",
+         "CALL_PAGE":"app/exam/appSmpl/TreeContext.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":" app.floatControl"
+      },
+      {
+         "MENU_ID":"treeDragAndDrop",
+         "MENU_NM":"트리 드래그 & 드롭",
+         "CALL_PAGE":"app/exam/appSmpl/treeDragAndDrop.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"cpr.controls.DragSource"
+      },
+      {
+         "MENU_ID":"treeParentValue",
+         "MENU_NM":"트리 최상위 부모값",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/treeParentValue.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"getItemValue"
+      },
+      {
+         "MENU_ID":"treeCellAllRowCheck",
+         "MENU_NM":"트리 체크박스 전체 선택",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/treeCellAllRowCheck.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-02",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"columnTypeAfterRowCheck, checkboxAfterRowCheck"
+      },
+      {
+         "MENU_ID":"imageViewer",
+         "MENU_NM":"이미지 뷰어",
+         "CALL_PAGE":"app/exam/appSmpl/imageViewer.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"UDC"
+      },
+      {
+         "MENU_ID":"UdcTemplate",
+         "MENU_NM":"UDC 템플릿",
+         "CALL_PAGE":"app/exam/appSmpl/UdcTemplate.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-03",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"UDC"
+      },
+      {
+         "MENU_ID":"oneGridMultiControl",
+         "MENU_NM":"원그리드 다중컨트롤",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/oneGridMultiControl.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-03",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"getAppProperty"
+      },
+      {
+         "MENU_ID":"GridSampleEtc02",
+         "MENU_NM":"데이터 셋의 익스프레션",
+         "CALL_PAGE":"app/exam/guide/grid/GridSampleEtc02.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-04",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"상대컬럼바인딩"
+      },
+      {
+         "MENU_ID":"expEginSmpl",
+         "MENU_NM":"익스프레션 엔진 표현식",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/expEginSmpl.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-04",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"registerFunction"
+      },
+      {
+         "MENU_ID":"expressionCallApp",
+         "MENU_NM":"익스프레션 App 호출",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/expressionCallApp.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-04",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"cpr.expression.ExpressionEngine.INSTANCE.registerFunction, bind.toExpression"
+      },
+      {
+         "MENU_ID":"embeddedParam",
+         "MENU_NM":"임베디드앱 파라미터전달",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/embeddedParam.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-05",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"initValue, setAppProperty"
+      },
+      {
+         "MENU_ID":"embPageParam",
+         "MENU_NM":"임베디드페이지 메소드",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/embPageParam.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-05",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"app.callAppMethod"
+      },
+      {
+         "MENU_ID":"messaging",
+         "MENU_NM":"통신 예제",
+         "CALL_PAGE":"app/exam/appSmpl/messaging.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"setPageProperty, window.open, openWindow.postMessage, exports, hasAppMethod, callAppMethod"
+      },
+      {
+         "MENU_ID":"callParentMethod",
+         "MENU_NM":"부모 메소드 실행",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/callParentMethod.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-05",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"exports, hasAppMethod, callAppMethod"
+      },
+      {
+         "MENU_ID":"FormatSample",
+         "MENU_NM":"포맷예제",
+         "CALL_PAGE":"app/exam/appSmpl/FormatSample.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":4,
+         "DESC":"dataType, format"
+      },
+      {
+         "MENU_ID":"controlDragNDrop",
+         "MENU_NM":"컨트롤 드래그 & 드롭",
+         "CALL_PAGE":"app/exam/appSmpl/controlDragNDrop.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"cpr.controls.DragSource"
+      },
+      {
+         "MENU_ID":"languageChange",
+         "MENU_NM":"다국어 샘플",
+         "CALL_PAGE":"app/exam/appSmpl/languageChange.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"language.json, cpr.I18N.INSTANCE.currentLanguage"
+      },
+      {
+         "MENU_ID":"accordionAllSectionClose",
+         "MENU_NM":"아코디언 전체닫기",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/accordionAllSectionClose.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"setSelectedSections"
+      },
+      {
+         "MENU_ID":"closeDialog",
+         "MENU_NM":"다이얼로그 닫는 방법들",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/closeDialog.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"close"
+      },
+      {
+         "MENU_ID":"queryString",
+         "MENU_NM":"QueryString 반환받는 방법",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/queryString.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"history.pushState, url.searchParams.get"
+      },
+      {
+         "MENU_ID":"inputValidation",
+         "MENU_NM":"인풋박스 유효성 체크",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/inputValidation.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"before0value-change, value-change"
+      },
+      {
+         "MENU_ID":"platformParam",
+         "MENU_NM":"Plaform 초기파라미터",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/platformParam.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"cpr.core.Platform.INSTANCE.getParameter"
+      },
+      {
+         "MENU_ID":"respDataText",
+         "MENU_NM":"응답데이터 텍스트전환",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/respDataText.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"xhr.responseText"
+      },
+      {
+         "MENU_ID":"preventDropdown",
+         "MENU_NM":"드래그 앤 드롭 동작 방지",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/preventDropdown.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"onDrop"
+      },
+      {
+         "MENU_ID":"targetControls",
+         "MENU_NM":"타겟 컨트롤 반환값",
+         "CALL_PAGE":"app/exam/appSmpl/targetControls.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"targetControl.type"
+      },
+      {
+         "MENU_ID":"tabfolderItemChange",
+         "MENU_NM":"탭폴더 아이템 순서 변경",
+         "CALL_PAGE":"app/exam/appSmpl/faq&qna/tabfolderItemChange.clx",
+         "UP_MENU_ID":"LEVEL02-04-02-06",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"reorderTabItem"
+      },
+      {
+         "MENU_ID":"CreateBarcode&QRcode",
+         "MENU_NM":"바코드&QR 생성",
+         "CALL_PAGE":"app/exam/thirdparty/BarcodeQR.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"QR코드, 바코드 생성 라이브러리 연동, JsBarcode.js, qrcode.js"
+      },
+      {
+         "MENU_ID":"Chart01",
+         "MENU_NM":"차트",
+         "CALL_PAGE":"app/exam/thirdparty/Chart01.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"echart 연동"
+      },
+      {
+         "MENU_ID":"ckEditor",
+         "MENU_NM":"CK 에디터",
+         "CALL_PAGE":"app/exam/thirdparty/ckEditor.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"CK 에디터 연동"
+      },
+      {
+         "MENU_ID":"colorPicker",
+         "MENU_NM":"Color Picker",
+         "CALL_PAGE":"app/exam/thirdparty/colorPicker.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"jquery-minicolor 연동, ResourceLoader"
+      },
+      {
+         "MENU_ID":"editor",
+         "MENU_NM":"HTML에디터",
+         "CALL_PAGE":"app/exam/thirdparty/editor.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"smartEditor2 연동"
+      },
+      {
+         "MENU_ID":"excelImportExport",
+         "MENU_NM":"엑셀 Import/Export",
+         "CALL_PAGE":"app/exam/thirdparty/excelImportExport.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"클라이언트 엑셀 EXPORT 라이브러리 연동, sheet.js, excel.js, util.module, FailSaver.js"
+      },
+      {
+         "MENU_ID":"fullCalendar",
+         "MENU_NM":"캘린더",
+         "CALL_PAGE":"app/exam/thirdparty/fullCalendar.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"fullCalendar 연동"
+      },
+      {
+         "MENU_ID":"html2canvas",
+         "MENU_NM":"캡처",
+         "CALL_PAGE":"app/exam/thirdparty/html2canvas.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"html2canvas 연동, htmlAttr"
+      },
+      {
+         "MENU_ID":"qrcode",
+         "MENU_NM":"QR 코드",
+         "CALL_PAGE":"app/exam/thirdparty/qrcode.clx",
+         "UP_MENU_ID":"LEVEL02-04-03",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"QR 코드 연동, html5-QRcode"
+      }, {
+         "MENU_ID":"M0000",
+         "MENU_NM":"퍼블리싱",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"",
+         "ICON":"",
+         "MENU_LVL":1,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2000",
+         "MENU_NM":"시스템관리",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"M0000",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2001",
+         "MENU_NM":"사용자정보목록",
+         "CALL_PAGE":"app/system/PUI_CM_039_01-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2002",
+         "MENU_NM":"사용자승인신청목록",
+         "CALL_PAGE":"app/system/PUI_CM_039_01-02.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2004",
+         "MENU_NM":"사용자정보조회",
+         "CALL_PAGE":"app/system/PUI_CM_039_03-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2005",
+         "MENU_NM":"업무별메뉴관리",
+         "CALL_PAGE":"app/system/PUI_CM_041_01-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2006",
+         "MENU_NM":"공통코드관리",
+         "CALL_PAGE":"app/system/PUI_CM_042_01-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2007",
+         "MENU_NM":"기타코드관리",
+         "CALL_PAGE":"app/system/PUI_CM_042_02-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2008",
+         "MENU_NM":"도움말정보목록",
+         "CALL_PAGE":"app/system/PUI_CM_043_02-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2011",
+         "MENU_NM":"접속통계",
+         "CALL_PAGE":"app/system/PUI_CM_108_00-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2012",
+         "MENU_NM":"접속로그",
+         "CALL_PAGE":"app/system/PUI_CM_108_00-02.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2013",
+         "MENU_NM":"알림설정정보목록",
+         "CALL_PAGE":"app/system/PUI_CM_111_00-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M2016",
+         "MENU_NM":"SMS설정정보목록",
+         "CALL_PAGE":"app/system/PUI_CM_111_01-01.clx",
+         "UP_MENU_ID":"M2000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M3000",
+         "MENU_NM":"사용자",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"M0000",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M3001",
+         "MENU_NM":"사용자정보조회",
+         "CALL_PAGE":"app/system/PUI_CM_039_03-01.clx",
+         "UP_MENU_ID":"M3000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M4000",
+         "MENU_NM":"단위시스템",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"M0000",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M4001",
+         "MENU_NM":"메뉴등록신청목록",
+         "CALL_PAGE":"app/system/PUI_CM_041_01-02.clx",
+         "UP_MENU_ID":"M4000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M5000",
+         "MENU_NM":"팝업확인",
+         "CALL_PAGE":"",
+         "UP_MENU_ID":"M0000",
+         "ICON":"",
+         "MENU_LVL":2,
+         "DESC":"퍼블리싱"
+      }, {
+         "MENU_ID":"M5001",
+         "MENU_NM":"팝업확인",
+         "CALL_PAGE":"app/system/POPUP.clx",
+         "UP_MENU_ID":"M5000",
+         "ICON":"",
+         "MENU_LVL":3,
+         "DESC":"퍼블리싱"
+      },
+		{
+			"MENU_ID": "LEVEL09-01",
+			"MENU_NM": "개발자 메뉴",
+			"CALL_PAGE": null,
+			"UP_MENU_ID": null,
+			"ICON": "theme/common/images/menu/icon/lnb_ico_01_w.png",
+			"MENU_LVL": 0,
+			"DESC": null
+		},
+		{
+			"MENU_ID": "LEVEL09-11",
+			"MENU_NM": "도움말관리",
+			"CALL_PAGE": "app/cm/hm/PUI_CM_043_02-01.clx",
+			"UP_MENU_ID": "LEVEL09-01",
+			"ICON": "",
+			"MENU_LVL": 1,
+			"DESC": null
+		},
+		{
+			"MENU_ID": "LEVEL09-12",
+			"MENU_NM": "샘플",
+			"CALL_PAGE": "app/sample/EmployeeList.clx",
+			"UP_MENU_ID": "LEVEL09-01",
+			"ICON": "",
+			"MENU_LVL": 1,
+			"DESC": null
+		}
+   ]
+}

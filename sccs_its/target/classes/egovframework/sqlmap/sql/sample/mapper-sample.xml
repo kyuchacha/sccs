@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="sample">
+	
+	
+	<select id="sampleList" resultType="egovMap">
+		SELECT
+			*
+		FROM
+		(
+		SELECT 
+				EMPNO as EMP_NO
+				,EMP_NM
+				,DEPT_NM
+				,REG_DT 
+				,ROW_NUMBER() OVER(ORDER BY X.REG_DT DESC) AS RN
+		FROM t_cmmn_user X
+		)TT
+		WHERE TT.RN <![CDATA[ < ]]> 5		
+	</select>
+	
+	
+	<select id="selectDeptNm" resultType="egovMap" parameterType="HashMap">
+		SELECT DEPT_NM FROM  T_CMMN_USER
+		WHERE EMPNO = #{empNo} 
+	</select>
+	
+	
+	<select id="selectMsCodeList" resultType="egovMap" parameterType="HashMap">
+		SELECT 
+				GRP_CD
+				,GRP_CD_NM
+				,USE_YN 
+		FROM TBCMCC000
+		WHERE 1=1
+		<if test="searchTxt != null and searchTxt != '' ">
+			<if test="searchCmb == 1 ">
+				AND GRP_CD = #{searchTxt} 				
+			</if>
+			<if test="searchCmb == 2 ">
+				AND GRP_CD_NM = #{searchTxt} 				
+			</if>
+		</if>
+	</select>
+	
+	<select id="selectSubCodeList" resultType="egovMap" parameterType="HashMap">
+		SELECT 
+				GRP_CD
+				,CMMN_CD
+				,CMMN_CD_NM
+				,CD_DC
+				,ETC_VALU
+				,SORT_SN
+				,USE_YN
+				,REG_DT
+				,REG_ID
+				,UPDT_DT
+				,UPDT_ID				
+		FROM TBCMCC001	
+		WHERE GRP_CD = #{grpCd}		
+		ORDER BY SORT_SN 				
+	
+	</select>
+	
+	<insert id="insertMsCode" parameterType="HashMap">
+		INSERT INTO TBCMCC000
+			(
+				GRP_CD,GRP_CD_NM,USE_YN,REG_DT,REG_ID
+			)
+		VALUES
+			(
+				#{grpCd},#{grpCdNm},#{useYn},SYSDATE,'admin'
+			)
+	
+	</insert>
+	
+	<update id="upDateMsCode" parameterType="HashMap">
+		UPDATE	 TBCMCC000
+		   SET	 GRP_CD_NM = #{grpCdNm}
+		   		,USE_YN = #{useYn}
+		   		,UPDT_DT = SYSDATE
+		   		,UPDT_ID = 'admin'
+		WHERE	GRP_CD = #{grpCd}		   		
+	</update>
+	
+	<insert id="insertSubCode" parameterType="HashMap">
+		INSERT INTO TBCMCC001
+			(
+				 GRP_CD
+				,CMMN_CD
+				,CMMN_CD_NM
+				,CD_DC
+				,ETC_VALU
+				,SORT_SN
+				,USE_YN
+				,REG_DT
+				,REG_ID
+				,UPDT_DT
+				,UPDT_ID
+			)
+		VALUES
+			(
+				  #{grpCd}
+				 ,#{cmmnCd}
+				 ,#{cmmnCdNm}
+				 ,#{cdDc}
+				 ,'HardCodding'
+				 ,#{sortSn}
+				 ,#{useYn}
+				 ,SYSDATE
+				 ,'admin'
+				 ,SYSDATE
+				 ,'admin'
+			)
+	</insert>
+	
+	
+	<update id="updateSubCode" parameterType="HashMap">
+		UPDATE 	 TBCMCC001
+		   SET	 CMMN_CD_NM = #{cmmnCdNm}
+		   		,CD_DC = #{cdDc}
+		   		,SORT_SN = #{sortSn}
+		   		,USE_YN = #{useYn}
+		   		,UPDT_DT = #{updtDt}
+		   		,UPDT_ID = #{updtId}
+		WHERE	GRP_CD = #{grpCd}
+		  AND	CMMN_CD = #{cmmnCd}		   		
+	</update>
+</mapper>

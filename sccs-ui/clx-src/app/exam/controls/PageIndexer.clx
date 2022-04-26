@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-f3ddac42"/>
+    <cl:appspec dev-comment="templates/CtrlTmpl.clx 템플릿 사용하여 작성 함." title="페이지인덱서 관련 속성"/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:group std:sid="group-83e2c69a" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-dd803572" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-793bae76" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-000a9f26" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+        <cl:property name="searchBoxId" value="grpHeader" type="string"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-275b97fe" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-237d4771" id="grpData">
+      <cl:verticaldata std:sid="v-data-9e585805" width="400px" height="5200px" autosize="height"/>
+      <cl:group std:sid="group-cd8e0265">
+        <cl:verticaldata std:sid="v-data-721e5155" width="400px" height="700px" autosize="height"/>
+        <cl:output std:sid="output-439ecc8e" style="font-weight:700; font-size:2.5rem; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="페이지 인덱서">
+          <cl:verticaldata std:sid="v-data-8c3d53dc" width="100px" height="45px" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-48b7b760" style="font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" class="opt-tmpl" value="대용량 데이터가 보이는 컨트롤에서 총 데이터 양과 관계없이 화면에 출력하고자 하는 데이터양만큼만 보이도록 도와주는 컨트롤입니다.&#xD;&#xA;&#xD;&#xA;그리드의 Paging 처리 시 사용할 수 있습니다.&#xD;&#xA;&#xD;&#xA;페이지 인덱서가 구성되는 데에는 연결된 그리드의 전체 행의 수(totalRowCount)가 필요합니다. 전체 행의 수를 입력하게 되면 한 페이지에 보일 행의 수(pageRowCount)로 나누어 총 페이지 수를 계산합니다. 그리고 보이는 페이지 수(viewPageCount)에 의해 해당 페이지 수만큼만 한 번에 보이게 됩니다.">
+          <cl:verticaldata std:sid="v-data-189f5ff8" width="100px" height="150px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-36bfc6ee" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid;" class="attach-box">
+          <cl:verticaldata std:sid="v-data-f290ad19" width="1220px" height="381px" autosize="height"/>
+          <cl:group std:sid="group-7b83ef54">
+            <cl:flowlayoutdata std:sid="f-data-3af64b97" width="200px" height="50px" autosize="both"/>
+            <cl:output std:sid="output-f372885d" class="text-center" value="&lt;기본 페이지 인덱서 컨트롤>">
+              <cl:formdata std:sid="f-data-e1f0286b" row="1" col="0"/>
+            </cl:output>
+            <cl:pageindexer std:sid="p-indexer-9f20a2f8" id="defaultPix" totalrowcount="10000" startpageindex="2" currentpageindex="5">
+              <cl:formdata std:sid="f-data-e3396028" row="0" col="0"/>
+            </cl:pageindexer>
+            <cl:formlayout std:sid="f-layout-0695157e" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-815ebff0">
+            <cl:flowlayoutdata std:sid="f-data-dd4a60a1" width="450px" height="300px" autosize="both"/>
+            <cl:output std:sid="output-24c723f0" class="text-center" value="&lt;컨트롤 동적 생성 코드>">
+              <cl:formdata std:sid="f-data-628e689a" row="1" col="0"/>
+            </cl:output>
+            <cl:udc std:sid="ud-control-45c1b289" id="ace1" type="udc.tmp.Ace">
+              <cl:formdata std:sid="f-data-ce3f300b" row="0" col="0"/>
+              <cl:property name="value" value="var pageIndexer = new cpr.controls.PageIndexer();&#xD;&#xA;&#xD;&#xA;// 페이지 인덱서의 totalRowCount를 1000, startPageIndex를  2, currentPageIndex를 5로 설정합니다.&#xD;&#xA;pageIndexer.init(1000, 2, 5);" type="string"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-a2969db7" scrollable="true" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="20" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:flowlayout std:sid="f-layout-05fc9744" scrollable="false" hspacing="40" vspacing="20" halign="center" valign="middle" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-7f9d24d7" spacing="30" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-de8c1411" class="card-inner">
+        <cl:verticaldata std:sid="v-data-b599e456" width="1100px" height="4400px" autosize="height"/>
+        <cl:output std:sid="output-93a4182c" style="font-weight:700; font-size:26px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" class="h1 pl-3 bg-primary text-white" value="자주 사용되는 속성">
+          <cl:verticaldata std:sid="v-data-b93d60a0" width="1220px" height="38px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-63aedf87" value="자주 사용되는 속성과 시나리오를 통한 예제를 확인할 수 있습니다. 자세한 사항은 Help Contents를 참조하시기 바랍니다.">
+          <cl:verticaldata std:sid="v-data-7a20e9d2" width="100px" height="141px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-27b9f331" class="card-inner">
+          <cl:verticaldata std:sid="v-data-8c86fba2" width="1220px" height="780px" autosize="height"/>
+          <cl:output std:sid="output-696ccd84" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="totalRowCount">
+            <cl:verticaldata std:sid="v-data-fa6edbdf" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-6a755066" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-7a15b452" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-d6122608" style="font-weight:700;" class="opt-tmpl" value="페이지 인덱서로 정렬할 전체 행의 수를 설정하는 속성입니다.">
+              <cl:verticaldata std:sid="v-data-157990b2" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-3d91933b" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:output std:sid="output-c9e19b2c" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="pageRowCount">
+            <cl:verticaldata std:sid="v-data-3c155e44" width="1140px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-c93174b1" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-4b1c5d8d" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-f50e62df" style="font-weight:700;" class="opt-tmpl" value="페이지 인덱서에서 한 페이지에 보여질 행의 수를 설정하는 속성입니다.">
+              <cl:verticaldata std:sid="v-data-f4c9c9de" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-c090be73" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:group std:sid="group-c9d1f0de" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-a8c9897a" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-647f8d4d" style="border-right-style:none; background-color:transparent; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="label" value="시나리오">
+              <cl:formdata std:sid="f-data-2293ec44" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-39377523" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="입력값">
+              <cl:formdata std:sid="f-data-f407e800" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-aa82cf29" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="기능확인">
+              <cl:formdata std:sid="f-data-9fbea777" row="0" col="2"/>
+            </cl:output>
+            <cl:button std:sid="button-e2de2607" id="btnInit" class="btn-primary" value="실행">
+              <cl:formdata std:sid="f-data-3b4bb04d" valign="CENTER" height="30" row="1" col="2"/>
+            </cl:button>
+            <cl:output std:sid="output-aaa229e2" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" value="하단의 페이지 인덱서 컨트롤에서 입력값이 설정된 해당 속성의 기능을 확인할 수 있습니다.">
+              <cl:formdata std:sid="f-data-d453a07d" row="1" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-24973e41" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" value="totalRowCount = 100&#xD;&#xA;pageRowCount = 10">
+              <cl:formdata std:sid="f-data-f0780f57" row="1" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-b586c799" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="300" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-4fca0a9f" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid; background-image:none;" class="attach-box">
+            <cl:verticaldata std:sid="v-data-cf6397a1" width="1220px" height="337px" autosize="height"/>
+            <cl:group std:sid="group-2d521c14">
+              <cl:flowlayoutdata std:sid="f-data-6b68db1b" width="200px" height="50px" autosize="both"/>
+              <cl:output std:sid="output-8297705a" class="text-center" value="&lt;기능 확인 컨트롤>">
+                <cl:formdata std:sid="f-data-d2ecfabf" row="1" col="0"/>
+              </cl:output>
+              <cl:pageindexer std:sid="p-indexer-f6abfcc7" id="samplePix1" totalrowcount="100" pagerowcount="10">
+                <cl:formdata std:sid="f-data-d19f44c5" row="0" col="0"/>
+              </cl:pageindexer>
+              <cl:formlayout std:sid="f-layout-297521a3" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:flowlayout std:sid="f-layout-89a29829" scrollable="false" hspacing="20" vspacing="20" halign="center" valign="middle" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-8f3e7bcb" spacing="15" leftmargin="40" rightmargin="40" topmargin="20" bottommargin="40"/>
+        </cl:group>
+        <cl:group std:sid="group-2ed0b335" class="card-inner">
+          <cl:verticaldata std:sid="v-data-a779da39" width="1220px" height="780px" autosize="height"/>
+          <cl:output std:sid="output-08db3f67" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="startPageIndex">
+            <cl:verticaldata std:sid="v-data-2a7374ba" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-24ad757d" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-3542933d" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-61683fbd" style="font-weight:700;" class="opt-tmpl" value="페이지 인덱서의 현재 시작 인덱스 페이지를 선택하는 속성입니다. 기본값은 1입니다.">
+              <cl:verticaldata std:sid="v-data-a84d1267" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-e6059ca7" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:output std:sid="output-8d84532f" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="currentPageIndex">
+            <cl:verticaldata std:sid="v-data-55fea472" width="1140px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-1f43af0a" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-864697ca" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-3b53dc7a" style="font-weight:700;" class="opt-tmpl" value="페이지 인덱서에서 초기에 선택된 페이지 인덱스를 설정하는 속성입니다.">
+              <cl:verticaldata std:sid="v-data-25636de0" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-fad8b563" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:group std:sid="group-22789b09" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-9592f2d4" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-d7c0de80" style="border-right-style:none; background-color:transparent; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="label" value="시나리오">
+              <cl:formdata std:sid="f-data-f087fe25" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-c2b91d07" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="입력값">
+              <cl:formdata std:sid="f-data-0bbdfd9f" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-1e4a777b" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="기능확인">
+              <cl:formdata std:sid="f-data-bdf752fe" row="0" col="2"/>
+            </cl:output>
+            <cl:button std:sid="button-3d4baa81" id="btnInit6" class="btn-primary" value="실행">
+              <cl:formdata std:sid="f-data-cc6c9dd3" valign="CENTER" height="30" row="1" col="2"/>
+            </cl:button>
+            <cl:output std:sid="output-2d8f0b29" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" value="하단의 페이지 인덱서 컨트롤에서 입력값이 설정된 해당 속성의 기능을 확인할 수 있습니다.">
+              <cl:formdata std:sid="f-data-74303c68" row="1" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-da4c4113" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" value="startPageIndex = 3&#xD;&#xA;currentPageIndex = 6">
+              <cl:formdata std:sid="f-data-95e043e0" row="1" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-a9e0dfbe" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-be274298" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid; background-image:none;" class="attach-box">
+            <cl:verticaldata std:sid="v-data-278f54da" width="1220px" height="337px" autosize="height"/>
+            <cl:group std:sid="group-a2e14850">
+              <cl:flowlayoutdata std:sid="f-data-9fbb28cb" width="200px" height="50px" autosize="both"/>
+              <cl:output std:sid="output-208d6af7" class="text-center" value="&lt;기능 확인 컨트롤>">
+                <cl:formdata std:sid="f-data-2a5b57ba" row="1" col="0"/>
+              </cl:output>
+              <cl:pageindexer std:sid="p-indexer-0c39d096" id="samplePix2" totalrowcount="100" startpageindex="3" currentpageindex="6" pagerowcount="10">
+                <cl:formdata std:sid="f-data-ab0786a5" row="0" col="0"/>
+              </cl:pageindexer>
+              <cl:formlayout std:sid="f-layout-4927bcb5" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:flowlayout std:sid="f-layout-f11ce1d8" scrollable="false" hspacing="20" vspacing="20" halign="center" valign="middle" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-932ed076" spacing="15" leftmargin="40" rightmargin="40" topmargin="20" bottommargin="40"/>
+        </cl:group>
+        <cl:group std:sid="group-33d0c568" class="card-inner">
+          <cl:verticaldata std:sid="v-data-d1fba1be" width="1220px" height="780px" autosize="height"/>
+          <cl:output std:sid="output-1cdfab2a" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="viewPageCount">
+            <cl:verticaldata std:sid="v-data-d16a9ce0" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-4b611016" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-4f4b584b" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-0649c62e" style="font-weight:700;" class="opt-tmpl" value="보여지는 페이지 숫자를 설정하는 속성입니다.">
+              <cl:verticaldata std:sid="v-data-5078dd1a" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-80d2752e" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:group std:sid="group-8b86a101" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-037d3393" width="1220px" height="125px" autosize="height"/>
+            <cl:output std:sid="output-d87a21df" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="type">
+              <cl:formdata std:sid="f-data-02578c93" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-594b69ee" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="Number">
+              <cl:formdata std:sid="f-data-2ba69eec" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-cff11e57" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="get">
+              <cl:formdata std:sid="f-data-646fe6b7" row="1" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-fff04332" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="set">
+              <cl:formdata std:sid="f-data-c79234a3" row="2" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-9ae7ab3e" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="보여지는 페이지 수를 반환합니다.">
+              <cl:formdata std:sid="f-data-2f275f3d" row="1" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-aae9e6d2" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="보여지는 페이지 수를 설정합니다.">
+              <cl:formdata std:sid="f-data-075eef3d" row="2" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-4261c4d7" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:columns length="2" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-2f2575e0" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-6160e9cb" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-80c2f4e1" style="border-right-style:none; background-color:transparent; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="label" value="시나리오">
+              <cl:formdata std:sid="f-data-512df41f" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-ccded192" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="입력값">
+              <cl:formdata std:sid="f-data-bf48ea6a" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-5ef9c91a" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="기능확인">
+              <cl:formdata std:sid="f-data-15b69746" row="0" col="2"/>
+            </cl:output>
+            <cl:button std:sid="button-9fbd56db" id="btnInit2" class="btn-primary" value="실행">
+              <cl:listener std:sid="listener-88a4ab7d" name="click" handler="onBtnInit2Click"/>
+              <cl:formdata std:sid="f-data-0ababd5a" valign="CENTER" height="30" row="1" col="2"/>
+            </cl:button>
+            <cl:output std:sid="output-ae2d613d" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="opt-tmpl" value="1) 입력값을 선택하고 실행 버튼을 클릭합니다.&#xD;&#xA;2) 하단의 페이지 인덱서의 페이지 수가 달라지는 것을 확인할 수 있습니다.">
+              <cl:formdata std:sid="f-data-3baf3abd" row="1" col="0"/>
+            </cl:output>
+            <cl:combobox std:sid="c-box-194f0a5f" id="sampleCmb1" value="60px">
+              <cl:formdata std:sid="f-data-4d778369" row="1" col="1"/>
+              <cl:item std:sid="t-item-535db785" label="3" value="3"/>
+              <cl:item std:sid="t-item-bd5ff09e" label="4" value="4"/>
+              <cl:item std:sid="t-item-75c89bd0" label="5" value="5"/>
+            </cl:combobox>
+            <cl:formlayout std:sid="f-layout-0d1552b4" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-6cf0eefe" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid; background-image:none;" class="attach-box">
+            <cl:verticaldata std:sid="v-data-1f3716c3" width="1220px" height="337px" autosize="height"/>
+            <cl:group std:sid="group-d40c8945">
+              <cl:flowlayoutdata std:sid="f-data-213505f3" width="200px" height="50px" autosize="both"/>
+              <cl:output std:sid="output-85912881" class="text-center" value="&lt;기능 확인 컨트롤>">
+                <cl:formdata std:sid="f-data-0fe6d5a2" row="1" col="0"/>
+              </cl:output>
+              <cl:pageindexer std:sid="p-indexer-0ed5f61e" id="samplePix3" totalrowcount="100" pagerowcount="10">
+                <cl:formdata std:sid="f-data-f47c345d" row="0" col="0"/>
+              </cl:pageindexer>
+              <cl:formlayout std:sid="f-layout-4826542a" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:flowlayout std:sid="f-layout-0f50df3c" scrollable="false" hspacing="20" vspacing="20" halign="center" valign="middle" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-4006e5e9" spacing="15" leftmargin="40" rightmargin="40" topmargin="20" bottommargin="40"/>
+        </cl:group>
+        <cl:group std:sid="group-eb57918a" class="card-inner">
+          <cl:verticaldata std:sid="v-data-3a958d74" width="1220px" height="780px" autosize="height"/>
+          <cl:output std:sid="output-9d1d914c" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="pageIndexWidth">
+            <cl:verticaldata std:sid="v-data-6838cfba" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-bfd5ed1c" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-5ef9355d" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-dc709acb" style="font-weight:700;" class="opt-tmpl" value="페이지 인덱서 버튼의 width를 지정하는 속성입니다. 단위는 px입니다.">
+              <cl:verticaldata std:sid="v-data-85af4a3a" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-9d021119" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:group std:sid="group-5f68bd7e" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-46de6b71" width="1220px" height="125px" autosize="height"/>
+            <cl:output std:sid="output-4d8f5d90" style="border-right-style:none; background-color:transparent; border-left-style:none; font-size:16px; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="type">
+              <cl:formdata std:sid="f-data-4f1c8559" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-ce09905b" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="String">
+              <cl:formdata std:sid="f-data-29ca977c" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-586a6fb5" style="border-right-style:none; background-color:transparent; border-left-style:none; font-size:16px; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="get">
+              <cl:formdata std:sid="f-data-4860f670" row="1" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-a6d5aafc" style="border-right-style:none; background-color:transparent; border-left-style:none; font-size:16px; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="set">
+              <cl:formdata std:sid="f-data-426233af" row="2" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-c6330a22" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="페이지 인덱스 버튼의 width 설정을 반환합니다.">
+              <cl:formdata std:sid="f-data-b3ce1b55" row="1" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-d239bbbc" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="페이지 인덱스 버튼의 width를 설정합니다. ">
+              <cl:formdata std:sid="f-data-ae116d9d" row="2" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-9dcbc6cb" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:columns length="2" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-96d3d143" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-5775da60" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-4d83e427" style="border-right-style:none; background-color:transparent; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="label" value="시나리오">
+              <cl:formdata std:sid="f-data-5563984b" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-716c91e3" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="입력값">
+              <cl:formdata std:sid="f-data-88c92d6a" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-0b338442" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="기능확인">
+              <cl:formdata std:sid="f-data-b451e160" row="0" col="2"/>
+            </cl:output>
+            <cl:button std:sid="button-9c81edfd" id="btnInit3" class="btn-primary" value="실행">
+              <cl:listener std:sid="listener-3ce7532d" name="click" handler="onBtnInit3Click"/>
+              <cl:formdata std:sid="f-data-73580f98" valign="CENTER" height="30" row="1" col="2"/>
+            </cl:button>
+            <cl:combobox std:sid="c-box-69edbb39" id="sampleCmb2" value="60px">
+              <cl:formdata std:sid="f-data-8016178f" row="1" col="1"/>
+              <cl:item std:sid="t-item-36500bdb" label="50px" value="50px" icon=""/>
+              <cl:item std:sid="t-item-5c6ab38e" label="60px" value="60px" icon=""/>
+              <cl:item std:sid="t-item-2d8f7310" label="70px" value="70px"/>
+            </cl:combobox>
+            <cl:output std:sid="output-8620bdbe" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="opt-tmpl" value="1) 입력값을 선택하고 실행 버튼을 클릭합니다.&#xD;&#xA;2) 하단의 페이지 인덱서 버튼의 크기가 달라지는것을 확인 할 수 있습니다.">
+              <cl:formdata std:sid="f-data-ed8956ca" row="1" col="0"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-ee6bc480" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-84919127" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid; background-image:none;" class="attach-box">
+            <cl:verticaldata std:sid="v-data-f994a5c2" width="1220px" height="337px" autosize="height"/>
+            <cl:group std:sid="group-7c55ad4c">
+              <cl:flowlayoutdata std:sid="f-data-4467dea2" width="200px" height="50px" autosize="both"/>
+              <cl:output std:sid="output-715a5204" class="text-center" value="&lt;기능 확인 컨트롤>">
+                <cl:formdata std:sid="f-data-1cec95db" row="1" col="0"/>
+              </cl:output>
+              <cl:pageindexer std:sid="p-indexer-7409af2d" id="samplePix4" totalrowcount="100" pagerowcount="10" pageindexwidth="50px">
+                <cl:formdata std:sid="f-data-be128582" row="0" col="0"/>
+              </cl:pageindexer>
+              <cl:formlayout std:sid="f-layout-bc602f05" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:flowlayout std:sid="f-layout-9435a438" scrollable="false" hspacing="20" vspacing="20" halign="center" valign="middle" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-08b67edd" spacing="15" leftmargin="40" rightmargin="40" topmargin="20" bottommargin="40"/>
+        </cl:group>
+        <cl:group std:sid="group-36abc295" class="card-inner">
+          <cl:verticaldata std:sid="v-data-4a58b0e5" width="1220px" height="780px" autosize="height"/>
+          <cl:output std:sid="output-0f17f34c" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="visibleFirstButton, visibleLastButton, visibleNextButton, visiblePrevButton">
+            <cl:verticaldata std:sid="v-data-0a0569ed" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-e7a05783" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-12f31deb" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-c4d111fc" style="font-weight:700;" class="opt-tmpl" value="각 페이지의  처음버튼(&lt;&lt;) , 마지막버튼(>>) , 이후버튼(>) , 이전버튼(&lt;) 의 visible 여부를 설정하는 속성입니다. 기본값은 true입니다.">
+              <cl:verticaldata std:sid="v-data-9d74534b" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-a7d1df99" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:group std:sid="group-5f25aa2d" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-a64b8bf4" width="1220px" height="125px" autosize="height"/>
+            <cl:output std:sid="output-7b34a0f5" style="border-right-style:none; background-color:transparent; border-left-style:none; font-size:16px; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="type">
+              <cl:formdata std:sid="f-data-31ee8629" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-9fc04737" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="Boolean ( Default : true )">
+              <cl:formdata std:sid="f-data-5db1e704" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-840b5cda" style="border-right-style:none; background-color:transparent; border-left-style:none; font-size:16px; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="get">
+              <cl:formdata std:sid="f-data-2086c1f7" row="1" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-0baedee1" style="border-right-style:none; background-color:transparent; border-left-style:none; font-size:16px; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="set">
+              <cl:formdata std:sid="f-data-7709fc84" row="2" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-f7215846" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="각 버튼의 visible 설정을 반환합니다.">
+              <cl:formdata std:sid="f-data-cb3bb3fb" row="1" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-ca8bc4c1" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" value="각 버튼의 visible 설정을 설정합니다.">
+              <cl:formdata std:sid="f-data-416d7fbc" row="2" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-bc023c77" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:columns length="2" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-91ae2e64" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-8c634ae1" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-52da0686" style="border-right-style:none; background-color:transparent; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="label" value="시나리오">
+              <cl:formdata std:sid="f-data-9923906f" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-99a8a7e0" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="입력값">
+              <cl:formdata std:sid="f-data-6ccf6db1" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-34667832" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="기능확인">
+              <cl:formdata std:sid="f-data-7a75c80b" row="0" col="2"/>
+            </cl:output>
+            <cl:button std:sid="button-b12606a9" id="btnInit4" class="btn-primary" value="실행">
+              <cl:listener std:sid="listener-f1f9d3e2" name="click" handler="onBtnInit4Click"/>
+              <cl:formdata std:sid="f-data-d90eb054" valign="CENTER" height="30" row="1" col="2"/>
+            </cl:button>
+            <cl:output std:sid="output-fedba8a1" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="opt-tmpl" value="1) 입력값을 선택하고 실행 버튼을 클릭합니다.&#xD;&#xA;2) 하단의 페이지 인덱서 버튼에서 해당 속성에 따른 기능을 확인할 수 있습니다.">
+              <cl:formdata std:sid="f-data-f07ba231" row="1" col="0"/>
+            </cl:output>
+            <cl:combobox std:sid="c-box-720ebd18" id="sampleCmb3" value="false">
+              <cl:formdata std:sid="f-data-3b350d07" row="1" col="1"/>
+              <cl:item std:sid="t-item-0ffc82ab" label="true" value="true"/>
+              <cl:item std:sid="t-item-c0cff9f8" label="false" value="false"/>
+            </cl:combobox>
+            <cl:formlayout std:sid="f-layout-ef403284" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-902159a4" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid; background-image:none;" class="attach-box">
+            <cl:verticaldata std:sid="v-data-dbdf15d4" width="1220px" height="337px" autosize="height"/>
+            <cl:group std:sid="group-861dcd14">
+              <cl:flowlayoutdata std:sid="f-data-f188f056" width="200px" height="50px" autosize="both"/>
+              <cl:output std:sid="output-4d3490c1" class="text-center" value="&lt;기능 확인 컨트롤>">
+                <cl:formdata std:sid="f-data-913eb53e" row="1" col="0"/>
+              </cl:output>
+              <cl:pageindexer std:sid="p-indexer-916de4bf" id="samplePix5" totalrowcount="100" pagerowcount="10">
+                <cl:formdata std:sid="f-data-29203fd8" row="0" col="0"/>
+              </cl:pageindexer>
+              <cl:formlayout std:sid="f-layout-5a87fb2b" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:flowlayout std:sid="f-layout-5b978ff7" scrollable="false" hspacing="20" vspacing="20" halign="center" valign="middle" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-5ed4ef24" spacing="15" leftmargin="40" rightmargin="40" topmargin="20" bottommargin="40"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-fea69ec9" spacing="30" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-004c7dc4" spacing="20" leftmargin="50" rightmargin="50" topmargin="20" bottommargin="60"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="33"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

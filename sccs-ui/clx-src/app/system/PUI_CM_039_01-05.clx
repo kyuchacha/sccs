@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3a63285c" version="1.0.3655">
+  <head std:sid="head-a1a3d613">
+    <screen std:sid="screen-f2e88f51" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-6006fccf" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-fffbab0c" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-20ad4047" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-9184760b"/>
+    <cl:appspec title="회원 가입"/>
+  </head>
+  <body std:sid="body-d25d3caa">
+    <cl:udc std:sid="ud-control-ed24ae0c" id="appheader1" visible="false" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-2ce42119" width="1320px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grpData" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-1e846ef2" id="grpData">
+      <cl:verticaldata std:sid="v-data-16a724e4" width="1320px" height="160px" autosize="height"/>
+      <cl:group std:sid="group-90573034" id="grp4">
+        <cl:formdata std:sid="f-data-5269c021" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:udc std:sid="ud-control-4fceffb3" id="comformtitle2" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-7d955697" row="0" col="0"/>
+          <cl:property name="ctrl" type="control"/>
+          <cl:property name="title" value="회원가입" type="string"/>
+        </cl:udc>
+        <cl:group std:sid="group-28a9f7b7" id="grp5">
+          <cl:formdata std:sid="f-data-5a427d66" row="0" col="1" ignore-layout-spacing="false"/>
+          <cl:button std:sid="button-4d94704c" id="btnClose2" class="btn-save" value="저장">
+            <cl:flowlayoutdata std:sid="f-data-b9d9d8e2" width="60px" height="25px" autosize="none"/>
+          </cl:button>
+          <cl:flowlayout std:sid="f-layout-42bb875e" scrollable="false" halign="right" linewrap="false"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-80c02227">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-98277724" id="grp1" class="form-box">
+        <cl:formdata std:sid="f-data-63534927" height="127" row="1" col="0"/>
+        <cl:output std:sid="output-f9c2441a" class="require" value="아이디">
+          <cl:formdata std:sid="f-data-7eeab570" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-1b2518ca" id="grp2">
+          <cl:formdata std:sid="f-data-a4245618" row="0" col="1" rowspan="1" colspan="3"/>
+          <cl:inputbox std:sid="i-box-7d0e800e" id="ipb1">
+            <cl:formdata std:sid="f-data-a1fcedef" row="0" col="0"/>
+          </cl:inputbox>
+          <cl:button std:sid="button-48848ec9" id="btn1" class="btn-gray" value="아이디 중복 조회">
+            <cl:formdata std:sid="f-data-cbefdce8" halign="LEFT" valign="FILL" width="110" height="23" row="0" col="1" rowspan="1" colspan="2"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-d61ca3d3" scrollable="false" hspace="4px" vspace="4px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="0">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="120" unit="PIXEL" autoSizing="true" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-bb0d5607" class="require" value="비밀번호">
+          <cl:formdata std:sid="f-data-83295ca2" row="1" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-87a5f058" id="ipb2" secret="true">
+          <cl:formdata std:sid="f-data-3d7e1b9f" row="1" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-8aec2f3e" class="require" value="비밀번호 확인">
+          <cl:formdata std:sid="f-data-943ca124" row="1" col="2"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-05b50b00" id="ipb3" secret="true">
+          <cl:formdata std:sid="f-data-492b8ed0" row="1" col="3"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-ac0601d4" class="require" value="성명">
+          <cl:formdata std:sid="f-data-75a3640f" row="2" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-387c8457" id="ipb4">
+          <cl:formdata std:sid="f-data-112d80a2" row="2" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-1762d1a6" class="require" value="부서명">
+          <cl:formdata std:sid="f-data-ec8d0c9c" row="2" col="2"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-c1d5ebb4" id="ipb5">
+          <cl:formdata std:sid="f-data-761d3b50" row="2" col="3"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-8bf0b25c" value="연락처(사무실)">
+          <cl:formdata std:sid="f-data-3cd9f82d" row="3" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-a1dc4175" id="ipb6">
+          <cl:formdata std:sid="f-data-1471572d" row="3" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-f347ed83" value="이메일">
+          <cl:formdata std:sid="f-data-08c85db2" row="3" col="2"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-640b6a81" id="ipb7">
+          <cl:formdata std:sid="f-data-88ea39f5" row="3" col="3"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-de180b69" scrollable="false" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="0" vseparatorwidth="0">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-9e1e302b" id="grp3">
+        <cl:formdata std:sid="f-data-488f6777" row="2" col="0"/>
+        <cl:button std:sid="button-85cd144e" id="btnSelect" class="btn-pop-close" value="취소">
+          <cl:formdata std:sid="f-data-3f12f3d8" row="0" col="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-366e667b" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-49b6d18b">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-170c9924" spacing="5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

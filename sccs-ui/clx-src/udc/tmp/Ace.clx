@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-47035cff" version="1.0.0.0">
+  <head std:sid="head-9a872970">
+    <title>Ace</title>
+    <screen std:sid="screen-221a9237" id="default" name="default" minwidth="1200px" width="1200px" height="768px"/>
+    <screen std:sid="screen-65672d50" id="tablet" name="tablet" minwidth="850px" maxwidth="1199px" width="850px" height="768px"/>
+    <screen std:sid="screen-17410e38" id="test" name="mobile" maxwidth="849px" width="544px" height="768px"/>
+    <cl:model std:sid="model-e00eda09"/>
+    <cl:appspec>
+      <cl:property name="value" type="string" bindable="true" std:desc="소스 값"/>
+      <cl:property name="language" type="enumeration" default="javascript" std:desc="표시 언어 설정">
+        <cl:available-value>javascript</cl:available-value>
+        <cl:available-value>text/css</cl:available-value>
+        <cl:available-value>text/x-less</cl:available-value>
+        <cl:available-value>application/xml</cl:available-value>
+        <cl:available-value>text/html</cl:available-value>
+        <cl:available-value>text/x-java</cl:available-value>
+      </cl:property>
+      <cl:event name="afterLoad" type="cpr.events.CAppEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-3daa66c1" style="top:0px; left:0px; width:300px; height:300px; text-align:left;">
+    <cl:listener std:sid="listener-dfeb7d5b" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-083a5ab0" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:listener std:sid="listener-0ba1407a" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-a9c497f1" id="grp1" class="ace-editor-buttons">
+      <cl:formdata std:sid="f-data-5cd25087" row="0" col="0"/>
+      <cl:button std:sid="button-6c56c629" id="btnDwld" class="btn-transparent btn-share" visible="false" value="">
+        <std:metadata>
+          <std:property key="hidden" value="true"/>
+        </std:metadata>
+        <cl:flowlayoutdata std:sid="f-data-5744f364" width="25px" height="25px"/>
+      </cl:button>
+      <cl:button std:sid="button-a50c1457" id="btn1" style="background-color:white; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none;" class="btn-transparent btn-copy" value="">
+        <cl:listener std:sid="listener-e94c1135" name="click" handler="onBtn1Click"/>
+        <cl:flowlayoutdata std:sid="f-data-79544562" width="25px" height="25px"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-6f19f9c5" scrollable="false" hspacing="10" vspacing="10" halign="right" valign="middle" linewrap="false" leftmargin="10" rightmargin="10" topmargin="5" bottommargin="5"/>
+    </cl:group>
+    <cl:uicontrolshell std:sid="uic-shell-51dfc700" id="shlCdMr" class="border rounded-bottom">
+      <cl:listener std:sid="listener-6d59df1d" name="init" handler="onShlCdMrInit"/>
+      <cl:listener std:sid="listener-97a2eaa7" name="load" handler="onShlCdMrLoad"/>
+      <cl:formdata std:sid="f-data-8f23373f" row="1" col="0"/>
+    </cl:uicontrolshell>
+    <cl:formlayout std:sid="f-layout-2996db65" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

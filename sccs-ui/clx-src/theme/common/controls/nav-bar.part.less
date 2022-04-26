@@ -1,0 +1,180 @@
+@import "../custom-settings.part.less";
+
+ /* 네비게이션 바 */
+ .cl-navigationbar {
+	font: @font-base;
+	background-color: @list-background-color;
+	border: @list-border-base;
+	color: @list-text-color;
+
+	/* 상단 바 */
+	.cl-navigationbar-bar {
+		
+		/* 네비게이션 바 아이템 */
+		.cl-navigationbar-item {
+
+			/* 네비게이션 바 아이템 아이콘 */
+			.cl-navigationbar-icon {
+			}
+
+			/* 네비게이션 바 아이템 텍스트 */
+			.cl-text {
+			}
+
+			/* 네비게이션 바 아이템 단축키*/
+			.cl-navigationbar-accesskey{
+			}
+			
+			/* 네비게이션 바 아이템 드랍다운 아이콘 */
+			.cl-navigationbar-arrow {
+				 background-image: url("../images/controls/navigationbar/drill-arrow.png");
+				 background-size: 10px 6px;
+			}
+
+			/* 네비게이션 바 아이템 - 호버 */
+			&.cl-hover{
+				background-color: @list-item-hover-background-color;
+				color: @list-item-hover-text-color;
+			}
+
+			/* 네비게이션 바 아이템 - 활성화 */
+			&:not(.cl-disabled){
+				/* 네비게이션 바 아이템 - 호버 */
+				&:not(.cl-selected):hover, &.cl-hover{
+					background-color: @list-item-hover-background-color;
+					color: @list-item-hover-text-color;
+					
+					.cl-navigationbar-arrow {
+						background-image: url("../images/controls/navigationbar/drill-arrow.png");
+					}
+				}
+			}
+
+			/* 네비게이션 바 아이템 - disabled */
+			&.cl-disabled {
+				color: @list-item-disabled-text-color;
+				
+				.cl-navigationbar-arrow {
+					 background-image: url("../images/controls/navigationbar/drill-arrow-disabled.png");
+				}
+				
+				/* 네비게이션 바 아이템 - 선택됨, disabled */
+				&.cl-selected {
+					background-color: @list-item-disabled-selected-background-color;
+					color: @list-item-disabled-selected-text-color;
+				}
+			}
+		
+			/* 네비게이션 바 아이템 - 선택됨 */
+			&.cl-selected {
+				background-color: @list-item-selected-background-color;
+				color: @list-item-selected-text-color;
+				
+				.cl-navigationbar-arrow {
+					background-image: url("../images/controls/navigationbar/drill-arrow-selected.png");
+				}
+			}
+		}
+	}
+	/* 네비게이션 바 - 포커스 */
+	&.cl-focus {
+		border-color: @list-focus-border-color;
+	}
+	
+	&.cl-disabled {
+		background-color: @list-disabled-background-color;
+	}
+}
+
+/* 네비게이션 바 드랍다운 메뉴 */
+.cl-navigationbar-list {
+	font: @font-base;
+	border: @list-border-base;
+	margin-top: -1px;
+
+	/* megamenu 타입의 카테고리 */
+	.cl-navigationbar-category{
+		
+		/* 카테고리의 아이템 영역 */
+		.sub-items {
+			
+			/* 카테고리의 목록 아이템*/
+			.cl-navigationbar-listitem{
+				
+			}
+		}
+	}
+
+	/* 네비게이션 바 드랍다운 메뉴 아이템 */
+	.cl-navigationbar-listitem {
+		color: @list-item-text-color;
+		
+		.cl-navigationbar-icon-wrapper{
+
+			/* 네비게이션 바 드랍다운 메뉴 아이템 아이콘 */
+			.cl-navigationbar-icon{
+			}
+		}
+		
+		&.cl-folder > .cl-navigationbar-arrow-wrapper .cl-navigationbar-arrow {
+			background-image: url("../images/controls/navigationbar/list-arrow.png");
+			background-size: 6px 10px;
+		}
+
+		.cl-navigationbar-arrow-wrapper{
+			.cl-navigationbar-arrow {
+
+			}
+		}
+
+		/* 네비게이션 바 드랍다운 메뉴 아이템 텍스트 */
+		.cl-text {
+		}
+
+		.cl-navigationbar-accesskey-wrapper{
+			/* 네비게이션 바 드랍다운 메뉴 아이템 단축키 */
+			.cl-navigationbar-accesskey{
+			}
+		}
+
+		/* 네비게이션 드랍다운 메뉴 아이템 - 활성화 */
+		&:not(.cl-disabled){
+			/* 네비게이션 드랍다운 메뉴 아이템 - 호버 */
+			&:not(.cl-selected):hover, &.cl-hover{
+				background-color: @list-item-hover-background-color;
+				color: @list-item-hover-text-color;
+				
+				&.cl-folder > .cl-navigationbar-arrow-wrapper .cl-navigationbar-arrow {
+					background-image: url("../images/controls/navigationbar/list-arrow.png");
+				}
+			}
+		}
+
+		/* 네비게이션 바 드랍다운 메뉴 아이템 - 호버 */
+		&.cl-hover{
+			background-color: @list-item-hover-background-color;
+			color: @list-item-hover-text-color;
+		}
+
+		/* 네비게이션 바 드랍다운 메뉴 아이템 - disabled */
+		&.cl-disabled {
+			color: @list-item-disabled-text-color;
+
+			/* 네비게이션 바 드랍다운 메뉴 아이템 - disabled, 선택됨 */
+			&.cl-selected {
+				background-color: @list-item-disabled-selected-background-color;
+				color: @list-item-disabled-selected-text-color;
+			}
+		}
+
+		/* 네비게이션 바 드랍다운 메뉴 아이템 - 선택됨 */
+		&.cl-selected {
+			background-color: @list-item-selected-background-color;
+			color: @list-item-selected-text-color;
+			
+			&.cl-folder > .cl-navigationbar-arrow-wrapper .cl-navigationbar-arrow {
+				background-image: url("../images/controls/navigationbar/list-arrow-selected.png");
+			}
+		}
+	}
+}

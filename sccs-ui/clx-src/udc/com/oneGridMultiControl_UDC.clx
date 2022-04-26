@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7564d454" version="1.0.3645">
+  <head std:sid="head-6c1fa23f">
+    <screen std:sid="screen-61f35d08" id="default" name="default" minwidth="1200px" width="1200px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-1e10700a" id="tablet" name="tablet" minwidth="850px" maxwidth="1199px" width="850px" height="768px"/>
+    <screen std:sid="screen-58c155ff" id="mobile" name="mobile" maxwidth="849px" width="544px" height="768px"/>
+    <cl:model std:sid="model-1635bbd8"/>
+    <cl:appspec>
+      <cl:property name="cellValue" type="string" default="셀 값" bindable="true"/>
+      <cl:property name="inputboxVisible" type="boolean" bindable="true"/>
+      <cl:property name="buttonVisible" type="boolean" bindable="true"/>
+      <cl:property name="outputVisible" type="boolean" bindable="true"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-b8855740" style="top:0px; left:0px; width:300px; height:29px;">
+    <cl:inputbox std:sid="i-box-d587d34a" id="ipb1">
+      <cl:apppropbind property="visible" category="PROPERTY" app-property="inputboxVisible"/>
+      <cl:apppropbind property="value" category="PROPERTY" app-property="cellValue"/>
+      <cl:verticaldata std:sid="v-data-db3ad88c" width="100px" height="29px"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-9d2a8ad9" id="btn1">
+      <cl:apppropbind property="value" category="PROPERTY" app-property="cellValue"/>
+      <cl:apppropbind property="visible" category="PROPERTY" app-property="buttonVisible"/>
+      <cl:verticaldata std:sid="v-data-657d82d1" width="100px" height="29px"/>
+    </cl:button>
+    <cl:output std:sid="output-cfb31177">
+      <cl:apppropbind property="value" category="PROPERTY" app-property="cellValue"/>
+      <cl:apppropbind property="visible" category="PROPERTY" app-property="outputVisible"/>
+      <cl:verticaldata std:sid="v-data-f3468a37" width="100px" height="29px"/>
+    </cl:output>
+    <cl:verticallayout std:sid="v-layout-895b71b4" spacing="0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

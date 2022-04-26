@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <link std:sid="link-9080808b" href="../../../thirdparty/jquery/jquery.minicolors.css" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-f3ddac42"/>
+    <cl:appspec dev-comment="templates/SmplTmpl.clx 템플릿 사용하여 작성 함.&#xA;templates/CTmpl.clx 템플릿 사용하여 작성 함." title="color picker"/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:listener std:sid="listener-51ff32e8" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-d1f5be83" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-01a0e506" width="1320px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3acdc2bb" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-80e24452" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-3e351495"/>
+    </cl:group>
+    <cl:group std:sid="group-72e4444f" id="grpData">
+      <cl:verticaldata std:sid="v-data-dd43b459" width="1320px" height="2056px" autosize="height"/>
+      <cl:group std:sid="group-b3d8d80f" id="grp1">
+        <cl:verticaldata std:sid="v-data-d00c67f8" width="1270px" height="150px" autosize="height"/>
+        <cl:group std:sid="group-7a48379f" id="grp3">
+          <cl:verticaldata std:sid="v-data-5f5680c1" width="1270px" height="40px" autosize="height"/>
+          <cl:output std:sid="output-bd633362" style="font-weight:bold; padding-left:1rem; font-size:2.5rem;" value="Color Picker">
+            <cl:formdata std:sid="f-data-d357b6a6" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3535aed2" scrollable="false" hspace="5px" vspace="5px" right-margin="50px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-36cb926d" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="이 페이지는 Color Picker 창을 팝업으로 띄우는 예제입니다.">
+          <cl:verticaldata std:sid="v-data-cb26d0fa" width="1210px" height="46px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-7c14d27b" spacing="30" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-36fd7cc9" id="grp2">
+        <cl:verticaldata std:sid="v-data-28f18b44" width="1270px" height="345px" autosize="height"/>
+        <cl:output std:sid="output-d78c906d" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="시나리오">
+          <cl:verticaldata std:sid="v-data-0ccc2823" width="100px" height="40px"/>
+        </cl:output>
+        <cl:output std:sid="output-5ed83aea" id="ipbScenario" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="1. 색상표 팝업 버튼을 눌렀을 때 팝업이 정상적으로 뜨는지 확인합니다.&#xD;&#xA;2. 팝업창에서 색을 선택 후, 우측 하단에 선택닫기를 눌러 색상표 팝업 버튼 옆에 해당 색상이 표시되는지 확인합니다.">
+          <cl:verticaldata std:sid="v-data-560570a9" width="1210px" height="107px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-4fffe72b" spacing="30" topmargin="10" bottommargin="30"/>
+      </cl:group>
+      <cl:group std:sid="group-17cf44cc" id="grpFunction">
+        <cl:verticaldata std:sid="v-data-60df3a1f" width="1270px" height="450px" autosize="height"/>
+        <cl:group std:sid="group-38132eaf" id="grpFuncFloating">
+          <cl:attribute name="floating-header" value="true"/>
+          <cl:verticaldata std:sid="v-data-bf7c3b0a" width="1270px" height="450px" autosize="height"/>
+          <cl:output std:sid="output-1688a0bc" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="기능확인">
+            <cl:verticaldata std:sid="v-data-7f4968b6" width="1270px" height="40px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-c852421b" id="grp11" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#dedede; border-right-width:1px; border-left-color:#dedede; border-right-color:#dedede; border-left-width:1px; border-top-style:solid; background-color:#F0F0F0; border-left-style:solid; border-bottom-width:1px; border-top-color:#dedede; border-bottom-style:solid;">
+            <cl:verticaldata std:sid="v-data-153b5759" width="1210px" height="400px" autosize="height"/>
+            <cl:udc std:sid="ud-control-8785df8a" id="comformtitle1" type="udc.com.comFormTitle">
+              <cl:verticaldata std:sid="v-data-33c0e3c0" width="1320px" height="25px" autosize="none"/>
+              <cl:property name="ctrl" value="grp10" type="control"/>
+            </cl:udc>
+            <cl:group std:sid="group-3e7f8ebf" id="grp10" fieldLabel="jquery-minicolor로 구현">
+              <cl:verticaldata std:sid="v-data-fa06a7c2" width="1208px" height="150px"/>
+              <cl:htmlsnippet std:sid="htmlsnippet-5b7d06e0" id="colorpicker" style="border-right-style:none; border-left-style:none; font-size:10pt; border-bottom-style:none; border-top-style:none;" class="colorpicker" value="&lt;div class=&quot;minicolors minicolors-theme-default minicolors-position-bottom&quot;>&#xD;&#xA;&lt;input type=&quot;text&quot; id=&quot;text-field&quot; class=&quot;demo minicolors-input&quot; value=&quot;#ff61d2&quot; size=&quot;7&quot; >&#xD;&#xA;&lt;span class=&quot;minicolors-swatch minicolors-sprite minicolors-input-swatch&quot;>&#xD;&#xA;&lt;span id =&quot;background-field&quot; class=&quot;minicolors-swatch-color&quot; style=&quot;background-color: #ff61d2;&quot;>&lt;/span>&lt;/span>&#xD;&#xA;&lt;div class=&quot;minicolors-panel minicolors-slider-hue&quot;>&#xD;&#xA;&lt;div class=&quot;minicolors-slider minicolors-sprite&quot;>&lt;div class=&quot;minicolors-picker&quot; style=&quot;top: 107.917px;&quot;>&lt;/div>&lt;/div>&#xD;&#xA;&lt;div class=&quot;minicolors-opacity-slider minicolors-sprite&quot;>&lt;div class=&quot;minicolors-picker&quot;>&lt;/div>&lt;/div>&#xD;&#xA;&lt;div class=&quot;minicolors-grid minicolors-sprite&quot; style=&quot;background-color: rgb(81, 255, 0);&quot;>&#xD;&#xA;&lt;div class=&quot;minicolors-grid-inner&quot;>&lt;/div>&#xD;&#xA;&lt;div class=&quot;minicolors-picker&quot; style=&quot;top: 35px; left: 93px;&quot;>&#xD;&#xA;&lt;div>&lt;/div>&lt;/div>&lt;/div>&lt;/div>&lt;/div>">
+                <cl:listener std:sid="listener-a57edc88" name="click" handler="onColorpickerClick"/>
+                <cl:verticaldata std:sid="v-data-2993f2e8" width="150px" height="150px" autosize="none"/>
+              </cl:htmlsnippet>
+              <cl:verticallayout std:sid="v-layout-0d6ed1ca"/>
+            </cl:group>
+            <cl:udc std:sid="ud-control-7f8c5f0c" id="comformtitle2" type="udc.com.comFormTitle">
+              <cl:verticaldata std:sid="v-data-fe8f4f58" width="1208px" height="25px" autosize="none"/>
+              <cl:property name="ctrl" value="grp4" type="control"/>
+            </cl:udc>
+            <cl:group std:sid="group-05ab3027" id="grp4" fieldLabel="다이얼로그로 구현">
+              <cl:verticaldata std:sid="v-data-69a87f28" width="1208px" height="150px" autosize="none"/>
+              <cl:button std:sid="button-d38e42fd" id="btn1" value="색상표 팝업">
+                <cl:listener std:sid="listener-9e38959d" name="click" handler="onBtn1Click"/>
+                <cl:xylayoutdata std:sid="xyl-data-b2fc12f3" top="30px" left="30px" width="138px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+              </cl:button>
+              <cl:group std:sid="group-54dba988" id="grpColor" visible="false">
+                <cl:xylayoutdata std:sid="xyl-data-b42ef367" top="30px" left="178px" width="389px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                <cl:output std:sid="output-b18f9d05" id="opt1" style="font-weight:bold; font-size:15px; text-align:right;">
+                  <cl:formdata std:sid="f-data-a52c2f8d" row="0" col="0"/>
+                </cl:output>
+                <cl:output std:sid="output-849d2462" id="optColor" value="">
+                  <cl:formdata std:sid="f-data-fdd94779" row="0" col="1"/>
+                </cl:output>
+                <cl:formlayout std:sid="f-layout-89069eaf" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:xylayout std:sid="xylayout-b0b21b84"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-93d454ee" leftmargin="30" rightmargin="30" topmargin="5" bottommargin="10"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-216b8a05" bottommargin="30"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-010e6b4c"/>
+      </cl:group>
+      <cl:output std:sid="output-35ca5e35" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="주요코드">
+        <cl:verticaldata std:sid="v-data-11eef6ad" width="1210px" height="40px" autosize="none"/>
+      </cl:output>
+      <cl:group std:sid="group-039b282d" id="grp15">
+        <cl:verticaldata std:sid="v-data-af83974e" width="1270px" height="350px" autosize="height"/>
+        <cl:group std:sid="group-ab27f594" id="grp7">
+          <cl:verticaldata std:sid="v-data-4c46d89c" width="1210px" height="310px" autosize="height"/>
+          <cl:group std:sid="group-0f31d2b7" id="grp9" class="form-box">
+            <cl:formdata std:sid="f-data-1e958806" row="0" col="0"/>
+            <cl:udc std:sid="ud-control-593e2675" id="ace1" type="udc.tmp.Ace">
+              <cl:listener std:sid="listener-c5173a25" name="afterLoad" handler="onAce1AfterLoad"/>
+              <cl:verticaldata std:sid="v-data-9d1414d6" width="300px" height="300px" autosize="height"/>
+            </cl:udc>
+            <cl:verticallayout std:sid="v-layout-0e931855"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-37f3904b" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8f1d189a" spacing="20" leftmargin="30" rightmargin="30" topmargin="0" bottommargin="0"/>
+      </cl:group>
+      <cl:group std:sid="group-f59d0528" id="grp5" class="card-inner">
+        <cl:verticaldata std:sid="v-data-435cdabd" width="1270px" height="500px" autosize="height"/>
+        <cl:output std:sid="output-1ff5d155" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="서드파티 버전 및 라이센스 정책">
+          <cl:verticaldata std:sid="v-data-9f576dbb" width="1270px" height="40px" autosize="none"/>
+        </cl:output>
+        <cl:group std:sid="group-62079995" id="grp6" style="background-color:#FFF5EF;">
+          <cl:verticaldata std:sid="v-data-f752b593" width="1040px" height="100px" autosize="height"/>
+          <cl:output std:sid="output-a9b248ef" style="color:#FF9149; font-weight:bolder;" value="서드파티 버전">
+            <cl:verticaldata std:sid="v-data-8dbfa4b4" width="100px" height="25px"/>
+          </cl:output>
+          <cl:output std:sid="output-532ac550" style="color:#FF9149;" value="jQuery MiniColors v2.1">
+            <cl:verticaldata std:sid="v-data-7f6b1b60" width="100px" height="25px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-7607fc8d" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+        </cl:group>
+        <cl:group std:sid="group-9a8ded81" id="grp8" style="background-color:#FFF5EF;">
+          <cl:verticaldata std:sid="v-data-15b617f4" width="1270px" height="211px" autosize="height"/>
+          <cl:output std:sid="output-9fc01ac9" style="color:#FF9149; font-weight:bolder;" value="라이센스 정책 및 호환">
+            <cl:verticaldata std:sid="v-data-75febddf" width="100px" height="25px"/>
+          </cl:output>
+          <cl:output std:sid="output-dcfc5241" style="color:#FF9149;" value=" - jQuery와 함께 MIT 라이센스를 따릅니다">
+            <cl:verticaldata std:sid="v-data-0245a6fc" width="100px" height="80px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-8385cd89" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-25a6e49a" spacing="15" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8031eb1c" leftmargin="20" rightmargin="30" topmargin="30" bottommargin="30"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

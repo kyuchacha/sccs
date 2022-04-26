@@ -1,0 +1,50 @@
+.cl-container{
+	&.grp-overlay {
+		background-color: rgba(30, 61, 115, .25);
+	}
+	
+	&.grp-toolbar {
+		border-radius: 10px;
+		background-color: #ffffff;
+		opacity: 0.5;
+	}
+	
+	&.img-box {
+	}
+}
+
+.cl-button.img-btn {
+	border: 0px;
+	border-radius: 0px;
+	background-color: unset;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center center;
+	&.arrow-prev {
+		&:hover {
+			background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0.6) 100%), url("../images/icon/arrow-left.svg");
+		}
+	}
+	
+	&.arrow-next {
+		&:hover {
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0.6) 100%) , url("../images/icon/arrow-right.svg");
+		}
+	}
+	
+	&.rotate-ccw {
+		background-image: url("../images/icon/rotate-ccw.svg");
+	}
+	
+	&.rotate-cw {
+		background-image: url("../images/icon/rotate-cw.svg");
+	}
+	
+	&.plus {
+		background-image: url("../images/icon/plus-circle.svg");
+	}
+	
+	&.minus {
+		background-image: url("../images/icon/minus-circle.svg");
+	}
+}

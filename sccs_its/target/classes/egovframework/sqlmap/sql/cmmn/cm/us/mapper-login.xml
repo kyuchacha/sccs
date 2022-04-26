@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="login">
+
+	<select id="actionLogin" resultType="com.sccs.cm.us.services.LoginVO">
+        SELECT USER_ID   AS userId
+             , ROLE_CD AS roleCd
+             , DEPT_NM AS deptNm
+             , PSWD_ENCPT AS pswdEncpt
+             , TMPR_PSWD_ENCPT AS tmprPswdEncpt
+             , USER_NM AS userNm
+             , CTTPC_ENCPT AS cttpcEncpt
+             , EML_ENCPT AS emlEncpt
+             , STTS_CD AS sttsCd
+             , WHDWL_APLY_DT AS whdwlAplyDt
+             , WHDWL_APRV_DT AS whdwlAprvDt
+             , WHDWL_DTLS AS whdwlDtls
+             , LGN_FAILR_CO AS lgnFailrCo
+             , LAST_CNTN_DT AS lastCntnDt
+             , REG_DT AS regDt
+             , REG_ID AS regId
+             , MDFCN_DT AS mdfcnDt
+             , MDFCN_ID AS mdfcnId
+        FROM TBCMUS000
+		WHERE USER_ID = #{userId}
+		  AND PSWD_ENCPT = #{pswdEncpt}
+	</select>
+	
+	<select id="selectUserInfoByUserId" resultType="com.sccs.cm.us.services.LoginVO">
+        SELECT USER_ID   AS userId
+             , ROLE_CD AS roleCd
+             , DEPT_NM AS deptNm
+             , PSWD_ENCPT AS pswdEncpt
+             , TMPR_PSWD_ENCPT AS tmprPswdEncpt
+             , USER_NM AS userNm
+             , CTTPC_ENCPT AS cttpcEncpt
+             , EML_ENCPT AS emlEncpt
+             , STTS_CD AS sttsCd
+             , WHDWL_APLY_DT AS whdwlAplyDt
+             , WHDWL_APRV_DT AS whdwlAprvDt
+             , WHDWL_DTLS AS whdwlDtls
+             , LGN_FAILR_CO AS lgnFailrCo
+             , LAST_CNTN_DT AS lastCntnDt
+             , REG_DT AS regDt
+             , REG_ID AS regId
+             , MDFCN_DT AS mdfcnDt
+             , MDFCN_ID AS mdfcnId
+        FROM TBCMUS000
+		WHERE USER_ID = #{userId}
+	</select>
+	
+	<update id="updateLoginFailCnt" parameterType="com.sccs.cm.us.services.LoginVO">
+        UPDATE TBCMUS000
+            SET LGN_FAILR_CO = #{lgnFailrCo}
+              , STTS_CD = #{sttsCd}
+              <if test="lastCntnDt != '' and lastCntnDt != null">
+              , LAST_CNTN_DT = #{lastCntnDt}
+              </if>
+              , MDFCN_DT = TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS')
+              , MDFCN_ID = #{userId}
+        WHERE USER_ID = #{userId}
+	</update>
+	
+</mapper>

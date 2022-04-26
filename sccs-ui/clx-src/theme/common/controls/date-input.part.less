@@ -1,0 +1,103 @@
+@import "../custom-settings.part.less";
+
+ /* 데이트 인풋 */
+.cl-dateinput {
+	font: @font-base;
+	background-image: @input-background-image;
+	background-color: @input-background-color;
+	border: @input-border-base;
+	border-radius: @input-border-radius;
+	color: @input-text-color;
+	text-align: center;
+	
+	/* 데이트 인풋 텍스트 */
+	.cl-text {
+		padding: @input-padding-0 @input-padding-x;
+		
+		&.cl-placeholder {
+			color: @input-placeholder-text-color !important;
+			font-style: @input-placeholder-text-style;
+			font-weight: @input-placeholder-text-weight;
+		}
+	}
+
+	/* 데이트 인풋 버튼 */
+	.cl-dateinput-button {
+		background-image: url("../images/controls/dateinput/dateinput-button.svg");
+		background-position: left center;
+		background-size: 16px;
+		width:20px;
+	}
+
+	&.cl-disabled{ 
+		/* 데이트 인풋 disabled 상태 버튼 */
+		.cl-dateinput-button {
+			background-image: url("../images/controls/dateinput/dateinput-button-disabled.svg");
+		}
+	}
+	
+	// 스핀 버튼 영역
+	.cl-dateinput-spinbuttons {
+		border-left: @input-border-base;
+		
+		// 증가 버튼
+		.cl-dateinput-increase  {
+			background-image: url("../images/controls/numbereditor/numbereditor-spin-up.png");
+			background-size: 7px 4px;
+		}
+
+		// 감소 버튼
+		.cl-dateinput-decrease {
+			background-image: url("../images/controls/numbereditor/numbereditor-spin-down.png");
+			background-size: 7px 4px;
+		}
+	}
+	&:not(.cl-disabled) {
+		.cl-dateinput-increase:hover {
+			background-color: @component-hover-background-color;
+			background-image: url("../images/controls/numbereditor/numbereditor-spin-up.png");
+		}
+		.cl-dateinput-increase:active {
+			background-color: @component-selected-background-color;
+			background-image: url("../images/controls/numbereditor/numbereditor-spin-up-on.png");
+		}
+
+		.cl-dateinput-decrease:hover {
+			background-color: @component-hover-background-color;
+			background-image: url("../images/controls/numbereditor/numbereditor-spin-down.png");
+		}
+		.cl-dateinput-decrease:active {
+			background-color: @component-selected-background-color;
+			background-image: url("../images/controls/numbereditor/numbereditor-spin-down-on.png");
+		}
+	}
+}
+
+/* 데이트 인풋 disabled 상태 */
+.cl-dateinput.cl-disabled {
+	color: @input-disabled-text-color;
+	background-color: @input-disabled-background-color;
+	border-color: @input-disabled-border-color;
+
+	/* 데이트 인풋 disabled 상태 텍스트*/
+	.cl-dateinput-spinbuttons {
+		border-left-color: @input-disabled-border-color;
+		
+		.cl-dateinput-increase {
+			background-image: url("../images/controls/numbereditor/numbereditor-spin-up-disabled.png");
+		}
+		
+		.cl-dateinput-decrease {
+			background-image: url("../images/controls/numbereditor/numbereditor-spin-down-disabled.png");
+		}
+	}
+}
+
+/* 데이트 인풋 포커스 상태 */
+.cl-dateinput.cl-focus {
+	border-color: @input-focus-border-color;
+	
+	.cl-dateinput-spinbuttons {
+		border-left-color: @input-focus-border-color;
+	}
+}

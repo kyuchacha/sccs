@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-f3ddac42">
+      <cl:dataset std:sid="d-set-99f76bf6" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-2d20752d" name="label"/>
+          <cl:datacolumn std:sid="d-column-eee93c92" name="value"/>
+          <cl:datacolumn std:sid="d-column-5023038f" name="pValue"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[사과]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[apple]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[pValue1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[딸기]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[strawberry]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[apple]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[복숭아]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[peach]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[apple]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[포도]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[grape]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[apple]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[망고]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[mango]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[pValue2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[파인애플]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[pineapple]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[mango]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[자두]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[plum]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[mango]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[체리]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[cherry]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[mango]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[바나나]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[banana]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[mango]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[멜론]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[melon]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[키위]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[kiwi]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-0afe951f" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-94264da9" name="label"/>
+          <cl:datacolumn std:sid="d-column-7f290bd3" name="value"/>
+          <cl:datacolumn std:sid="d-column-7c482e21" name="pValue"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[토마토]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[tomato]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[배추]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[cabbage]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[tomato]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[시금치]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[spinach]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[tomato]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[상추]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[lettuce]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[tomato]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[깻잎]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[sesame]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[tomato]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[마늘]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[garlic]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[고추]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[pepper]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[garlic]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[올리브]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[olive]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[garlic]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[호박]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[pumpkin]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="templates/SmplTmpl.clx 템플릿 사용하여 작성 함.&#xA;templates/CTmpl.clx 템플릿 사용하여 작성 함." title="트리 드래그&amp;드롭"/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:listener std:sid="listener-cca5ee3e" name="init" handler="onBodyInit2"/>
+    <cl:group std:sid="group-d1f5be83" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-01a0e506" width="1320px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3acdc2bb" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-80e24452" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-3e351495"/>
+    </cl:group>
+    <cl:group std:sid="group-72e4444f" id="grpData">
+      <cl:verticaldata std:sid="v-data-dd43b459" width="1320px" height="2056px" autosize="height"/>
+      <cl:group std:sid="group-b3d8d80f" id="grp1">
+        <cl:verticaldata std:sid="v-data-d00c67f8" width="1270px" height="150px" autosize="height"/>
+        <cl:group std:sid="group-7a48379f" id="grp3">
+          <cl:verticaldata std:sid="v-data-5f5680c1" width="1270px" height="40px" autosize="height"/>
+          <cl:output std:sid="output-bd633362" style="font-weight:bold; padding-left:1rem; font-size:2.5rem;" value="트리 드래그 앤 드랍">
+            <cl:formdata std:sid="f-data-4b7f459c" row="0" col="0" rowspan="1" colspan="2"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3535aed2" scrollable="false" hspace="5px" vspace="5px" right-margin="50px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-36cb926d" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="이 페이지는 트리 컨트롤 드래그 앤 드랍 동작으로 생성하는 예제입니다.">
+          <cl:verticaldata std:sid="v-data-cb26d0fa" width="1210px" height="46px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-7c14d27b" spacing="30" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-36fd7cc9" id="grp2">
+        <cl:verticaldata std:sid="v-data-28f18b44" width="1270px" height="345px" autosize="height"/>
+        <cl:output std:sid="output-d78c906d" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="시나리오">
+          <cl:verticaldata std:sid="v-data-0ccc2823" width="100px" height="40px"/>
+        </cl:output>
+        <cl:output std:sid="output-5ed83aea" id="ipbScenario" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="1. 왼쪽 트리에서 오른쪽 트리로 아이템을 드래그 앤 드랍해서 아이템이 정상적으로 동작하는지 확인합니다.&#xD;&#xA;2. 오른쪽 트리에서 왼쪽 트리로 아이템을 드래그 앤 드랍해서 아이템이 정상적으로 동작하는지 확인합니다.&#xD;&#xA;3. 왼쪽에서 왼쪽, 오른쪽에서 오른쪽 트리로 아이템을 드래그 앤 드랍해서 아이템이 정상적으로 동작하는지 확인합니다.">
+          <cl:verticaldata std:sid="v-data-560570a9" width="1210px" height="107px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-4fffe72b" spacing="30" topmargin="10" bottommargin="30"/>
+      </cl:group>
+      <cl:group std:sid="group-17cf44cc" id="grpFunction">
+        <cl:verticaldata std:sid="v-data-60df3a1f" width="1270px" height="700px" autosize="height"/>
+        <cl:group std:sid="group-38132eaf" id="grpFuncFloating">
+          <cl:attribute name="floating-header" value="true"/>
+          <cl:verticaldata std:sid="v-data-bf7c3b0a" width="1270px" height="700px" autosize="height"/>
+          <cl:output std:sid="output-1688a0bc" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="기능확인">
+            <cl:verticaldata std:sid="v-data-7f4968b6" width="1270px" height="40px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-c852421b" id="grp11" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#dedede; border-right-width:1px; border-left-color:#dedede; border-right-color:#dedede; border-left-width:1px; border-top-style:solid; background-color:#F0F0F0; border-left-style:solid; border-bottom-width:1px; border-top-color:#dedede; border-bottom-style:solid;">
+            <cl:verticaldata std:sid="v-data-153b5759" width="1210px" height="700px" autosize="height"/>
+            <cl:udc std:sid="ud-control-ddc7bd0b" id="comformtitle1" type="udc.com.comFormTitle">
+              <cl:verticaldata std:sid="v-data-a5b1c3a2" width="1320px" height="25px" autosize="none"/>
+              <cl:property name="ctrl" value="grpData" type="control"/>
+            </cl:udc>
+            <cl:checkbox std:sid="c-box-4811775b" id="cbx1" value="" truevalue="Y" text="*가장 하위 요소에 드롭 시, 해당 요소의 하위로 이동">
+              <cl:verticaldata std:sid="v-data-ccb0235e" width="658px" height="45px" autosize="none"/>
+            </cl:checkbox>
+            <cl:group std:sid="group-d3fe87ad" id="grp4">
+              <cl:verticaldata std:sid="v-data-9fd57165" width="1320px" height="535px" autosize="none"/>
+              <cl:tree std:sid="tree-e5b09388" id="tre1" autoOpen="1">
+                <cl:xylayoutdata std:sid="xyl-data-fd56e4f7" top="5px" left="5px" width="300px" height="500px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                <cl:treeitemset datasetid="ds1" label="label" value="value" parent="pValue"/>
+              </cl:tree>
+              <cl:tree std:sid="tree-74fb0420" id="tre2" autoOpen="1">
+                <cl:xylayoutdata std:sid="xyl-data-fae884c6" top="5px" left="415px" width="300px" height="500px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                <cl:treeitemset datasetid="ds2" label="label" value="value" parent="pValue"/>
+              </cl:tree>
+              <cl:xylayout std:sid="xylayout-b8526488"/>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-93d454ee" leftmargin="30" rightmargin="30" topmargin="5" bottommargin="10"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-216b8a05" bottommargin="30"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-010e6b4c"/>
+      </cl:group>
+      <cl:output std:sid="output-35ca5e35" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="주요코드">
+        <cl:verticaldata std:sid="v-data-11eef6ad" width="1210px" height="40px" autosize="none"/>
+      </cl:output>
+      <cl:group std:sid="group-039b282d" id="grp15">
+        <cl:verticaldata std:sid="v-data-af83974e" width="1270px" height="350px" autosize="height"/>
+        <cl:group std:sid="group-ab27f594" id="grp7">
+          <cl:verticaldata std:sid="v-data-4c46d89c" width="1210px" height="310px" autosize="height"/>
+          <cl:group std:sid="group-0f31d2b7" id="grp9" class="form-box">
+            <cl:formdata std:sid="f-data-1e958806" row="0" col="0"/>
+            <cl:udc std:sid="ud-control-593e2675" id="ace1" type="udc.tmp.Ace">
+              <cl:listener std:sid="listener-bb4af24e" name="afterLoad" handler="onAce1AfterLoad"/>
+              <cl:verticaldata std:sid="v-data-9d1414d6" width="300px" height="300px" autosize="height"/>
+            </cl:udc>
+            <cl:verticallayout std:sid="v-layout-0e931855"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-37f3904b" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8f1d189a" spacing="20" leftmargin="30" rightmargin="30" topmargin="0" bottommargin="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8031eb1c" leftmargin="20" rightmargin="30" topmargin="30" bottommargin="30"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,39 @@
+@import "../custom-settings.part.less";
+
+/* 컬럼 음영 스타일 */
+.cl-formlayout-column-shade {
+	background-color: @lighter;
+}
+
+/* 행 음영 스타일 */
+.cl-formlayout-row-shade {
+	background-color: @lighter;
+}
+
+
+/* 구분 선 스타일 */
+.cl-formlayout-vertical-separator,
+.cl-formlayout-horizontal-separator {
+	background-color: @component-border-color;
+}
+
+.cl-form-group {
+	background-color: @component-background-color;
+	border: @component-border-base;
+	border-top-color: @black;
+	
+	.cl-output.label {
+		padding-left: 4px;
+		
+		&.required {
+			background-image: url("../images/controls/output/required.png");
+			background-position: left top;
+			color: @primary;
+		}
+	}
+}
+
+.cl-formlayout-vertical-lightweight-resizer,
+.cl-formlayout-horizontal-lightweight-resizer {
+	/* lightweight resizer style */
+}

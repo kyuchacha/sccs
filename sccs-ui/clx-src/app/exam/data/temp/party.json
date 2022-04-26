@@ -1,0 +1,79 @@
+{
+	"dsParty": [
+		{
+			"RESNO": "9104151777777",
+			"NAT_RCD": "CMN019.001",
+			"NAT_NM": "대한민국",
+			"NM_KOR": "홍길동",
+			"BRTDY": "19910415",
+			"LNR_SLR_DIV_NM": "양력",
+			"GENDER_NM": "남",
+			"GENDER_RCD": "CMN012.01",
+			"LNR_SLR_DIV_RCD": "CMN013.02",
+			"USER_DIV_CD": "",
+			"NM_ENG": "KANGSEOKMIN",
+			"PARTY_ID": "7900",
+			"NM_CHA": "姜錫珉"
+		},
+		{
+			"RESNO": "9106271888888",
+			"NAT_RCD": "CMN019.001",
+			"NAT_NM": "대한민국",
+			"NM_KOR": "유재석",
+			"BRTDY": "19910627",
+			"LNR_SLR_DIV_NM": "양력",
+			"GENDER_NM": "남",
+			"GENDER_RCD": "CMN012.01",
+			"LNR_SLR_DIV_RCD": "CMN013.02",
+			"USER_DIV_CD": "",
+			"NM_ENG": "KIMSEONGHYEOK",
+			"PARTY_ID": "7901",
+			"NM_CHA": "金聖赫"
+		},
+		{
+			"RESNO": "",
+			"NAT_RCD": "CMN019.001",
+			"NAT_NM": "대한민국",
+			"NM_KOR": "강호동",
+			"BRTDY": "",
+			"LNR_SLR_DIV_NM": "양력",
+			"GENDER_NM": "남",
+			"GENDER_RCD": "CMN012.01",
+			"LNR_SLR_DIV_RCD": "CMN013.02",
+			"USER_DIV_CD": "TST001",
+			"NM_ENG": "",
+			"PARTY_ID": "7902",
+			"NM_CHA": ""
+		},
+		{
+			"RESNO": "",
+			"NAT_RCD": "CMN019.001",
+			"NAT_NM": "대한민국",
+			"NM_KOR": "김희철",
+			"BRTDY": "",
+			"LNR_SLR_DIV_NM": "양력",
+			"GENDER_NM": "남",
+			"GENDER_RCD": "CMN012.01",
+			"LNR_SLR_DIV_RCD": "CMN013.02",
+			"USER_DIV_CD": "",
+			"NM_ENG": "",
+			"PARTY_ID": "7904",
+			"NM_CHA": ""
+		},
+		{
+			"RESNO": "",
+			"NAT_RCD": "CMN019.001",
+			"NAT_NM": "대한민국",
+			"NM_KOR": "김태희",
+			"BRTDY": "",
+			"LNR_SLR_DIV_NM": "양력",
+			"GENDER_NM": "여",
+			"GENDER_RCD": "CMN012.02",
+			"LNR_SLR_DIV_RCD": "CMN013.02",
+			"USER_DIV_CD": "TST001",
+			"NM_ENG": "",
+			"PARTY_ID": "7906",
+			"NM_CHA": ""
+		}
+	]
+}

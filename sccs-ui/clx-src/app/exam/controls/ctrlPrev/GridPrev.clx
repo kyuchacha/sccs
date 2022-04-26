@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-00a23614" version="1.0.3164">
+  <head std:sid="head-62bbbd0a">
+    <screen std:sid="screen-50715d40" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-758c6920" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-57838d4e" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-0408aacd" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-05480fb3">
+      <cl:dataset std:sid="d-set-792e8149" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e924cbec" name="Alpabet"/>
+          <cl:datacolumn std:sid="d-column-20a1d31e" name="Number"/>
+          <cl:datacolumn std:sid="d-column-7d3ced05" name="Hangul"/>
+          <cl:datacolumn std:sid="d-column-e0e6779d" name="Characters"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[A]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[가]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[!]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[B]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[나]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[@]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[C]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[가]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[#]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[D]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[라]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[$]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[E]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[라]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[%]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[F]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[다]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[^]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[G]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[사]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[&]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[H]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[나]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[*]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[I]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[9]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[다]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[(]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Alpabet"><![CDATA[J]]></cl:datavalue>
+            <cl:datavalue columnname="Number"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="Hangul"><![CDATA[가]]></cl:datavalue>
+            <cl:datavalue columnname="Characters"><![CDATA[)]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-9453f831" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c9d92df6" name="productGroup"/>
+          <cl:datacolumn std:sid="d-column-24b8da83" name="productName" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-dbe993cc" name="price" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-ac5635d6" name="rate" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-58becb6c" name="ratedprice" datatype="expression" expression="price * (100 - rate) / 100"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="productName"><![CDATA[TV]]></cl:datavalue>
+            <cl:datavalue columnname="price"><![CDATA[1000000]]></cl:datavalue>
+            <cl:datavalue columnname="rate"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="productGroup"><![CDATA[가전제품]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="productName"><![CDATA[냉장고]]></cl:datavalue>
+            <cl:datavalue columnname="price"><![CDATA[1500000]]></cl:datavalue>
+            <cl:datavalue columnname="rate"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="productGroup"><![CDATA[가전제품]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="productName"><![CDATA[전자렌지]]></cl:datavalue>
+            <cl:datavalue columnname="price"><![CDATA[100000]]></cl:datavalue>
+            <cl:datavalue columnname="rate"><![CDATA[0]]></cl:datavalue>
+            <cl:datavalue columnname="productGroup"><![CDATA[가전제품]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="productName"><![CDATA[에어컨]]></cl:datavalue>
+            <cl:datavalue columnname="price"><![CDATA[1800000]]></cl:datavalue>
+            <cl:datavalue columnname="rate"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="productGroup"><![CDATA[가전제품]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="productGroup"><![CDATA[생활용품]]></cl:datavalue>
+            <cl:datavalue columnname="productName"><![CDATA[세제]]></cl:datavalue>
+            <cl:datavalue columnname="price"><![CDATA[13000]]></cl:datavalue>
+            <cl:datavalue columnname="rate"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="productGroup"><![CDATA[생활용품]]></cl:datavalue>
+            <cl:datavalue columnname="productName"><![CDATA[휴지]]></cl:datavalue>
+            <cl:datavalue columnname="price"><![CDATA[20000]]></cl:datavalue>
+            <cl:datavalue columnname="rate"><![CDATA[20]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="productGroup"><![CDATA[생활용품]]></cl:datavalue>
+            <cl:datavalue columnname="productName"><![CDATA[샴푸]]></cl:datavalue>
+            <cl:datavalue columnname="price"><![CDATA[10000]]></cl:datavalue>
+            <cl:datavalue columnname="rate"><![CDATA[10]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="productGroup"><![CDATA[생활용품]]></cl:datavalue>
+            <cl:datavalue columnname="productName"><![CDATA[비누]]></cl:datavalue>
+            <cl:datavalue columnname="price"><![CDATA[5000]]></cl:datavalue>
+            <cl:datavalue columnname="rate"><![CDATA[0]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="그리드 관련 속성"/>
+  </head>
+  <body std:sid="body-5a2e50b6">
+    <cl:listener std:sid="listener-0240c255" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-8ca3f3a7" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-9604eb6b" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-7a38d310" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-f45b5133" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-f60256c5" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-011decd4" id="grpData">
+      <cl:verticaldata std:sid="v-data-b1298225" width="400px" height="1260px" autosize="height"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="그리드(Grid)는 테이블 형태의 컨트롤입니다.">
+        <cl:verticaldata std:sid="v-data-04b5af0b" width="1320px" height="25px"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp2" class="cl-form-group">
+        <cl:verticaldata std:sid="v-data-ca38c8a8" width="1320px" height="1250px" autosize="height"/>
+        <cl:grid std:sid="grid-403584dc" id="grd1" datasetid="ds2" leftsplit="2" leftsplitwidth="200" selectionunit="cell" selectionmulti="multi" resizablecolumns="all" columnMovable="true">
+          <cl:formdata std:sid="f-data-ab56512f" row="0" col="1"/>
+          <cl:gridcolumn std:sid="g-column-18dd0959"/>
+          <cl:gridcolumn std:sid="g-column-aa209032"/>
+          <cl:gridcolumn std:sid="g-column-ccd68889"/>
+          <cl:gridcolumn std:sid="g-column-244fdcee"/>
+          <cl:gridcolumn std:sid="g-column-f493a0bd"/>
+          <cl:gridheader std:sid="gh-band-f47912df">
+            <cl:gridrow std:sid="g-row-a94ad4c8"/>
+            <cl:gridcell std:sid="gh-cell-cc5b5bf6" rowindex="0" colindex="0" targetcolumnname="productGroup" sortable="false" filterable="false" text="상품그룹"/>
+            <cl:gridcell std:sid="gh-cell-fa6952fb" rowindex="0" colindex="1" targetcolumnname="productName" sortable="false" filterable="false" text="상품명"/>
+            <cl:gridcell std:sid="gh-cell-da87d982" rowindex="0" colindex="2" targetcolumnname="price" sortable="false" filterable="false" text="가격"/>
+            <cl:gridcell std:sid="gh-cell-fdf6e768" rowindex="0" colindex="3" targetcolumnname="rate" sortable="false" filterable="false" text="할인율"/>
+            <cl:gridcell std:sid="gh-cell-37ed3336" rowindex="0" colindex="4" targetcolumnname="ratedprice" sortable="false" filterable="false" text="할인된가격"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-4e37224c">
+            <cl:gridrow std:sid="g-row-fd6797f0"/>
+            <cl:gridcell std:sid="gd-cell-4b4e53af" rowindex="0" colindex="0" columnname="productGroup"/>
+            <cl:gridcell std:sid="gd-cell-cbf4f0b2" rowindex="0" colindex="1" columnname="productName"/>
+            <cl:gridcell std:sid="gd-cell-7dacb86a" rowindex="0" colindex="2" columnname="price"/>
+            <cl:gridcell std:sid="gd-cell-67974060" rowindex="0" colindex="3" columnname="rate"/>
+            <cl:gridcell std:sid="gd-cell-f7928239" rowindex="0" colindex="4" columnname="ratedprice"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:output std:sid="output-2580a830" value="[selectionUnit = cell]&#xD;&#xA;[selectionMulti = multi]&#xD;&#xA;1. 그리드를 선택한다.&#xD;&#xA;2. 셀 하나가 선택된다.&#xD;&#xA;3. 셀을 드래그한다.&#xD;&#xA;4. 셀들이 다중선택 된다.&#xD;&#xA;&#xD;&#xA;[resizableColumn = all]&#xD;&#xA;[columnMovable = true]&#xD;&#xA;1. 그리드 헤더에 칼럼 사이를 드래그한다.&#xD;&#xA;2. 칼럼크기가 변경된다.&#xD;&#xA;3. 그리드 헤더를 옆 헤더로 드래그 앤 드롭한다.&#xD;&#xA;4. 칼럼 위치가 변경된다.&#xD;&#xA;&#xD;&#xA;[leftSplit = 2]&#xD;&#xA;[leftSplitWidth = 200]&#xD;&#xA;1. 왼쪽 2개 칼럼의 크기가 200px이다.">
+          <cl:formdata std:sid="f-data-3481238f" row="0" col="0"/>
+        </cl:output>
+        <cl:grid std:sid="grid-f61fd66e" id="grd2" datasetid="ds2" collapsible="true">
+          <cl:formdata std:sid="f-data-f18ec3c0" row="1" col="1"/>
+          <cl:gridcolumn std:sid="g-column-422b249c"/>
+          <cl:gridcolumn std:sid="g-column-bc15901b"/>
+          <cl:gridcolumn std:sid="g-column-c4b438cf"/>
+          <cl:gridcolumn std:sid="g-column-6147847e"/>
+          <cl:gridcolumn std:sid="g-column-0af8089e"/>
+          <cl:gridheader std:sid="gh-band-26fd0619">
+            <cl:gridrow std:sid="g-row-8a4fdbe2"/>
+            <cl:gridcell std:sid="gh-cell-841f7f9a" rowindex="0" colindex="1" targetcolumnname="productName" sortable="false" filterable="false" text="상품명"/>
+            <cl:gridcell std:sid="gh-cell-063508a1" rowindex="0" colindex="2" targetcolumnname="price" sortable="false" filterable="false" text="가격"/>
+            <cl:gridcell std:sid="gh-cell-9d7b4fad" rowindex="0" colindex="3" targetcolumnname="rate" sortable="false" filterable="false" text="할인율"/>
+            <cl:gridcell std:sid="gh-cell-b9be6dee" rowindex="0" colindex="4" targetcolumnname="ratedprice" text="할인된가격"/>
+            <cl:gridcell std:sid="gh-cell-96108c70" rowindex="0" colindex="0" targetcolumnname="productGroup" text="상품그룹"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-e77220f2">
+            <cl:gridrow std:sid="g-row-c265dc34"/>
+            <cl:gridcell std:sid="gd-cell-93179dec" rowindex="0" colindex="1" columnname="productName">
+              <cl:output std:sid="output-141dd5da" style="text-align:center;" value="Output"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-7c933666" rowindex="0" colindex="2" columnname="price">
+              <cl:output std:sid="output-33cb8d92" style="text-align:center;" value="Output" datatype="number" format="s#,##0" displayexp="text + &quot;원&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f33bb3ce" rowindex="0" colindex="3" columnname="rate">
+              <cl:output std:sid="output-a1590526" style="text-align:center;" value="Output" datatype="number" displayexp="text + &quot;%&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-9f6a07da" rowindex="0" colindex="4" columnname="ratedprice">
+              <cl:output std:sid="output-befe985c" style="text-align:center;" value="Output" datatype="number" format="s#,##0" displayexp="text + &quot;원&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a0c84cef" rowindex="0" colindex="0" columnname="productGroup"/>
+          </cl:griddetail>
+          <cl:gridfooter std:sid="gf-band-2e654c66">
+            <cl:gridrow std:sid="g-row-b29e3f24" height="20px"/>
+            <cl:gridcell std:sid="gf-cell-c02447e1" rowindex="0" colindex="2" rowspan="1" colspan="1" expr="getSum(&quot;price&quot;)">
+              <cl:output std:sid="output-fec143f0" value="Output" datatype="number" format="s#,##0" displayexp="text + &quot;원&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gf-cell-cf8e8ee2" rowindex="0" colindex="4" rowspan="1" colspan="1" expr="getSum(&quot;ratedprice&quot;)">
+              <cl:output std:sid="output-be881958" value="Output" datatype="number" format="s#,##0" displayexp="text + &quot;원&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gf-cell-b602bc8c" rowindex="0" colindex="1" expr="&quot;&quot;"/>
+            <cl:gridcell std:sid="gf-cell-d08a01ba" rowindex="0" colindex="3" expr="&quot;&quot;"/>
+            <cl:gridcell std:sid="gf-cell-c236d45a" rowindex="0" colindex="0" expr="&quot;&quot;"/>
+          </cl:gridfooter>
+          <cl:gridrowgrouplist std:sid="grg-list-53c0a09f">
+            <cl:gridrowgroup std:sid="gr-group-d961d085" groupcondition="productGroup">
+              <cl:gridgroupheader std:sid="grg-band-a007f79e">
+                <cl:gridrow std:sid="g-row-cadaef4a"/>
+                <cl:gridcell std:sid="gf-cell-24bd3f7b" rowindex="0" colindex="0" expr="productGroup"/>
+                <cl:gridcell std:sid="gf-cell-55648a76" rowindex="0" colindex="1" expr="&quot;&quot;"/>
+                <cl:gridcell std:sid="gf-cell-837d81a5" rowindex="0" colindex="2" expr="&quot;&quot;"/>
+                <cl:gridcell std:sid="gf-cell-179200e3" rowindex="0" colindex="3" expr="&quot;&quot;"/>
+                <cl:gridcell std:sid="gf-cell-408f03a4" rowindex="0" colindex="4" expr="&quot;&quot;"/>
+              </cl:gridgroupheader>
+              <cl:gridgroupfooter std:sid="grg-band-6893427d" visibleexpr="false">
+                <cl:gridrow std:sid="g-row-b1b84199"/>
+                <cl:gridcell std:sid="gf-cell-bd7622b7" rowindex="0" colindex="0" expr="&quot;&quot;"/>
+                <cl:gridcell std:sid="gf-cell-b1dfbd39" rowindex="0" colindex="1" expr="&quot;&quot;"/>
+                <cl:gridcell std:sid="gf-cell-d3668730" rowindex="0" colindex="2" expr="&quot;&quot;"/>
+                <cl:gridcell std:sid="gf-cell-d7b90acc" rowindex="0" colindex="3" expr="&quot;&quot;"/>
+                <cl:gridcell std:sid="gf-cell-d008030f" rowindex="0" colindex="4" expr="&quot;&quot;"/>
+              </cl:gridgroupfooter>
+            </cl:gridrowgroup>
+          </cl:gridrowgrouplist>
+        </cl:grid>
+        <cl:output std:sid="output-25c60a39" value="[getSum(&quot;컬럼이름&quot;)]&#xD;&#xA;1. 푸터의 좌측 숫자는 가격의 총합이다.&#xD;&#xA;2. 푸터의 우측 숫자는 할인된 가격의 총합이다.&#xD;&#xA;&#xD;&#xA;[collapsible = true]&#xD;&#xA;[startCollapsible = true]&#xD;&#xA;1. 그리드가 펼쳐져있다.&#xD;&#xA;2. 상품그룹 좌측에 화살표 아이콘을 클릭한다.&#xD;&#xA;3. 해당 로우가 접혀진다.">
+          <cl:formdata std:sid="f-data-c0be1119" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-202a9bfd" value="[clickMode = edit (편집모드)]&#xD;&#xA;1. 그리드를 클릭한다.&#xD;&#xA;2. 해당 셀을 수정할 수 있다.&#xD;&#xA;&#xD;&#xA;[filterable = true]&#xD;&#xA;1. 그리드 헤더 중 숫자 칼럼에 필터 아이콘이 보인다.&#xD;&#xA;&#xD;&#xA;[filterDialogButtons = [cancel, okay]]&#xD;&#xA;1. 그리드 헤더 중 숫자 우측에 필터 아이콘을 클릭한다.&#xD;&#xA;2. 필터 창 우측 하단에 버튼의 순서가 취소, 확인이다.&#xD;&#xA;&#xD;&#xA;[sortable = true]&#xD;&#xA;1. 그리드 헤더를 클릭한다.&#xD;&#xA;2. 행들이 정렬된다.">
+          <cl:formdata std:sid="f-data-04dc5248" row="2" col="0"/>
+        </cl:output>
+        <cl:grid std:sid="grid-d363e396" id="grd5" datasetid="ds1" clickmode="edit" selectionmulti="single" filter-dialog-buttons="cancel okay">
+          <cl:formdata std:sid="f-data-a3b997ba" row="2" col="1"/>
+          <cl:gridcolumn std:sid="g-column-a4ce8bee" visible="true"/>
+          <cl:gridcolumn std:sid="g-column-6ee6ad40"/>
+          <cl:gridcolumn std:sid="g-column-2e5ffdfb"/>
+          <cl:gridcolumn std:sid="g-column-d25508e7"/>
+          <cl:gridheader std:sid="gh-band-eb1ca6ac">
+            <cl:gridrow std:sid="g-row-1c2f700b"/>
+            <cl:gridcell std:sid="gh-cell-8950a53a" rowindex="0" colindex="0" targetcolumnname="Alpabet" sortable="true" filterable="false" text="알파벳"/>
+            <cl:gridcell std:sid="gh-cell-309cdf9e" rowindex="0" colindex="1" targetcolumnname="Number" sortable="true" filterable="true" text="숫자"/>
+            <cl:gridcell std:sid="gh-cell-322abe92" rowindex="0" colindex="2" targetcolumnname="Hangul" sortable="true" filterable="false" text="한글"/>
+            <cl:gridcell std:sid="gh-cell-f06088fa" rowindex="0" colindex="3" targetcolumnname="Characters" sortable="true" filterable="false" text="특수문자"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-5638250d">
+            <cl:gridrow std:sid="g-row-a65494de"/>
+            <cl:gridcell std:sid="gd-cell-2642a907" rowindex="0" colindex="0" columnname="Alpabet">
+              <cl:inputbox std:sid="i-box-96be1a85" id="ipb5"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-4f848e1c" rowindex="0" colindex="1" columnname="Number">
+              <cl:inputbox std:sid="i-box-0a206f05" id="ipb6"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-704b5a13" rowindex="0" colindex="2" columnname="Hangul">
+              <cl:inputbox std:sid="i-box-c51e314b" id="ipb7"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-ccbfcdb6" rowindex="0" colindex="3" columnname="Characters">
+              <cl:inputbox std:sid="i-box-57bb5174" id="ipb8"/>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:output std:sid="output-c66fa534" value="[suppressedCellType = merged]&#xD;&#xA;[mergedToIndexExpr : rate == 0 ? 4 : 2]&#xD;&#xA;1. 1, 5 번째 칼럼이 가격부터 할인된 가격까지 병합되어 있다.">
+          <cl:formdata std:sid="f-data-bf975657" row="3" col="0"/>
+        </cl:output>
+        <cl:grid std:sid="grid-79fd0cbe" id="grd4" datasetid="ds2" suppressedcelltype="merged">
+          <cl:formdata std:sid="f-data-2dc76272" row="3" col="1"/>
+          <cl:gridcolumn std:sid="g-column-992fb772"/>
+          <cl:gridcolumn std:sid="g-column-9f0f81a4"/>
+          <cl:gridcolumn std:sid="g-column-da4889e3"/>
+          <cl:gridcolumn std:sid="g-column-1568ab50"/>
+          <cl:gridcolumn std:sid="g-column-55479eb1"/>
+          <cl:gridheader std:sid="gh-band-176930e2">
+            <cl:gridrow std:sid="g-row-1ffe6313"/>
+            <cl:gridcell std:sid="gh-cell-e72716ce" rowindex="0" colindex="1" targetcolumnname="productName" sortable="false" filterable="false" text="상품명"/>
+            <cl:gridcell std:sid="gh-cell-9ea67246" rowindex="0" colindex="2" targetcolumnname="price" sortable="false" filterable="false" text="가격"/>
+            <cl:gridcell std:sid="gh-cell-61a4a67a" rowindex="0" colindex="3" targetcolumnname="rate" sortable="false" filterable="false" text="할인율"/>
+            <cl:gridcell std:sid="gh-cell-4b400231" rowindex="0" colindex="4" targetcolumnname="ratedprice" text="할인된가격"/>
+            <cl:gridcell std:sid="gh-cell-908771bd" rowindex="0" colindex="0" targetcolumnname="productGroup" text="상품그룹"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-b856f0cb">
+            <cl:gridrow std:sid="g-row-cf2794d0"/>
+            <cl:gridcell std:sid="gd-cell-1e072104" rowindex="0" colindex="1" columnname="productName">
+              <cl:output std:sid="output-52a151e5" style="text-align:center;" value="Output"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-69f3a736" rowindex="0" colindex="2" columnname="price" mergetoindexexpr="rate ==0 ? 4 : 2">
+              <cl:output std:sid="output-35bdb9c7" style="text-align:center;" value="Output" datatype="number" format="s#,##0" displayexp="text + &quot;원&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-79d09873" rowindex="0" colindex="3" columnname="rate">
+              <cl:output std:sid="output-cc09bd18" style="text-align:center;" value="Output" datatype="number" displayexp="text + &quot;%&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-35f20728" rowindex="0" colindex="4" columnname="ratedprice" mergetoindexexpr="rate ==0 ? 4:3">
+              <cl:output std:sid="output-5a4df528" style="text-align:center;" value="Output" datatype="number" format="s#,##0" displayexp="text + &quot;원&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-6c092e89" rowindex="0" colindex="0" columnname="productGroup">
+              <cl:output std:sid="output-c3c86eef" value="Output"/>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:grid std:sid="grid-772cd23c" id="grd3" datasetid="ds2" suppressedcelltype="merged">
+          <cl:formdata std:sid="f-data-8dd0c322" row="4" col="1"/>
+          <cl:gridcolumn std:sid="g-column-5f041b65"/>
+          <cl:gridcolumn std:sid="g-column-a4dc89d9"/>
+          <cl:gridcolumn std:sid="g-column-e27648e3"/>
+          <cl:gridcolumn std:sid="g-column-eab9c565"/>
+          <cl:gridcolumn std:sid="g-column-22f01d5f"/>
+          <cl:gridheader std:sid="gh-band-4ee5b207">
+            <cl:gridrow std:sid="g-row-292e0f6b"/>
+            <cl:gridcell std:sid="gh-cell-d5bfcfb8" rowindex="0" colindex="1" targetcolumnname="productName" sortable="false" filterable="false" text="상품명"/>
+            <cl:gridcell std:sid="gh-cell-246dd348" rowindex="0" colindex="2" targetcolumnname="price" sortable="false" filterable="false" text="가격"/>
+            <cl:gridcell std:sid="gh-cell-bee5ff99" rowindex="0" colindex="3" targetcolumnname="rate" sortable="false" filterable="false" text="할인율"/>
+            <cl:gridcell std:sid="gh-cell-1dfdd3ad" rowindex="0" colindex="4" targetcolumnname="ratedprice" text="할인된가격"/>
+            <cl:gridcell std:sid="gh-cell-d7cf176d" rowindex="0" colindex="0" targetcolumnname="productGroup" text="상품그룹"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-c40968aa">
+            <cl:gridrow std:sid="g-row-2a800f1e"/>
+            <cl:gridcell std:sid="gd-cell-9c1c541d" rowindex="0" colindex="1" columnname="productName">
+              <cl:output std:sid="output-660edf94" style="text-align:center;" value="Output"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-4fe91d4a" rowindex="0" colindex="2" columnname="price">
+              <cl:output std:sid="output-c9506f71" style="text-align:center;" value="Output" datatype="number" format="s#,##0" displayexp="text + &quot;원&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-8294e198" rowindex="0" colindex="3" columnname="rate">
+              <cl:output std:sid="output-c3310700" style="text-align:center;" value="Output" datatype="number" displayexp="text + &quot;%&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-b699d16a" rowindex="0" colindex="4" columnname="ratedprice" mergetoindexexpr="rate ==0 ? 4:3">
+              <cl:output std:sid="output-58b32689" style="text-align:center;" value="Output" datatype="number" format="s#,##0" displayexp="text + &quot;원&quot;"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-037e714f" rowindex="0" colindex="0" columnname="productGroup" suppressible="true">
+              <cl:output std:sid="output-56deb95f" value="Output"/>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:output std:sid="output-a0e4a533" value="[suppressedCellType = merged]&#xD;&#xA;[suppressible = true]&#xD;&#xA;1. 상품그룹에 생활용품과 가전제품이 4개 행씩 병합되어 있다.">
+          <cl:formdata std:sid="f-data-c35f74f5" row="4" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="250" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="200" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="250" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="250" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="250" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8c815f72"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-c8512681"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

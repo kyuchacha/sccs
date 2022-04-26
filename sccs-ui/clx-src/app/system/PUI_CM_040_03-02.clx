@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7f58e514" version="1.0.3655">
+  <head std:sid="head-862f67bf">
+    <screen std:sid="screen-9ee928d4" id="default" name="default" minwidth="1280px" width="1280px" height="900px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-394b1afc" id="tablet" name="tablet" maxwidth="1279px" width="760px" height="820px"/>
+    <cl:model std:sid="model-1bcc3d3a"/>
+    <cl:appspec title="계정 잠금 알림 화면"/>
+  </head>
+  <body std:sid="body-7da0131c">
+    <cl:output std:sid="output-c2ce3919" class="text-center" value="회원님의 계정은 로그인 시도 횟수 초과로 계정이&#xD;&#xA;잠금처리 중이오니 관리자에게 잠금처리 해제를 &#xD;&#xA;요청해주시기 바랍니다.">
+      <cl:formdata std:sid="f-data-2cd46372" row="0" col="0"/>
+    </cl:output>
+    <cl:group std:sid="group-63a95af8" clipcontent="false">
+      <cl:formdata std:sid="f-data-6aa00e7a" row="1" col="0"/>
+      <cl:button std:sid="button-f3648001" class="btn-primary" value="잠금해제 요청">
+        <cl:flowlayoutdata std:sid="f-data-ffee4819" width="100px" height="25px"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-f0e8d7c9" scrollable="false" hspacing="4" vspacing="0" halign="right" linewrap="false"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-d57aa748" scrollable="false" hspace="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

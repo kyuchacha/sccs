@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+		
+	<util:properties id="config" location="classpath:/egovframework/config/config-local.properties"/>
+	
+<!-- 	<context:property-placeholder  file-encoding="UTF-8" location="classpath:/egovframework/config/config-local.properties"/> -->
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+  		<property name="driverClassName" value="#{config['db.sccs.driver']}"/>
+  		<property name="url" value="#{config['db.sccs.url']}"/>
+  		<property name="username" value="#{config['db.sccs.user']}"/>
+  		<property name="password" value="#{config['db.sccs.passwd']}"/>
+ 	</bean>
+ 	
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:/egovframework/sqlmap/sql-map-config.xml"/>
+        <property name="mapperLocations" value="classpath:/egovframework/sqlmap/sql/**/*.xml"/>
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg ref="sqlSessionFactory"/>
+    </bean>
+ 	
+	<bean id="dataSourceOra" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+  		<property name="driverClassName" value="#{config['db.sms.driver']}"/>
+  		<property name="url" value="#{config['db.sms.url']}"/>
+  		<property name="username" value="#{config['db.sms.user']}"/>
+  		<property name="password" value="#{config['db.sms.passwd']}"/>
+ 	</bean>
+ 	
+    <bean id="sqlSessionFactoryOra" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:/egovframework/sqlmap/sql-map-config.xml"/>
+        <property name="mapperLocations" value="classpath:/egovframework/sqlmap/sql/**/*.xml"/>
+        <property name="dataSource" ref="dataSourceOra" />
+    </bean>
+    
+    
+</beans>

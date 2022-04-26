@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-898d97d1" version="1.0.0.0">
+  <head std:sid="head-3b0cb6a8">
+    <title>UtilSample04</title>
+    <screen std:sid="screen-dc38072b" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-679d5924" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-ef4dfece" id="tablet" name="tablet" minwidth="500px" maxwidth="1019px" width="500px" height="667px"/>
+    <screen std:sid="screen-880e1970" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-88700ca0"/>
+    <cl:appspec title="포맷 예제"/>
+  </head>
+  <body std:sid="body-01892ed2" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-2d4731f7" width="998px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grp1" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-b114e336" id="grp1">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-49860200" width="972px" height="645px"/>
+      <cl:output std:sid="output-c6a8a90e" id="otp1" style="font-weight:bold;" value="컨트롤의 dataType, format 속성값 또는 마스크 에디터를 통해 데이터의 포맷을 설정할 수 있다. 아래는 몇가지 예시를 들었으며 자세한 사항은 도움말을 참조.">
+        <cl:formdata std:sid="f-data-c9709eb3" row="0" col="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-6938dd7b" id="comformtitle2" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-37a45ad2" row="1" col="0"/>
+        <cl:property name="title" value="아웃풋 숫자포맷" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-46548c0d" id="grp2" class="form-box">
+        <cl:formdata std:sid="f-data-d9af410d" row="2" col="0"/>
+        <cl:output std:sid="output-62698d2b" id="opt1" style="background-color:#d7e4f2; text-align:center;" value="숫자포맷(음수포함 정수)">
+          <cl:formdata std:sid="f-data-7f4b6d2d" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-aa1580ef" id="opt22" value="dataType">
+          <cl:formdata std:sid="f-data-4cd0c1cd" row="0" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-71ef1d10" id="ipb1" readonly="true" value="number">
+          <cl:formdata std:sid="f-data-9d6e3d11" row="0" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-252d80aa" id="opt23" value="format">
+          <cl:formdata std:sid="f-data-ec1e9395" row="0" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-81a851d0" id="ipb5" readonly="true" value="s#,##9">
+          <cl:formdata std:sid="f-data-dab8d6f6" row="0" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-c8c690ea" id="opt8" value="입력값">
+          <cl:formdata std:sid="f-data-a18dd310" row="0" col="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-1142d8ed" id="ipb9" readonly="true" value="-12345">
+          <cl:formdata std:sid="f-data-82084085" row="0" col="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-b34e476a" id="opt25" value="결과값">
+          <cl:formdata std:sid="f-data-14ad53d3" row="0" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-987351ba" id="opt26" style="background-color:white; font-weight:normal; text-align:left;" value="-12345" datatype="number" format="s#,##9">
+          <cl:formdata std:sid="f-data-1a28df84" row="0" col="8"/>
+        </cl:output>
+        <cl:output std:sid="output-b8d08995" id="opt3" style="background-color:#d7e4f2; text-align:center;" value="양수포맷(정수)">
+          <cl:formdata std:sid="f-data-80e8135b" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-5f0bf1e8" id="opt27" value="dataType">
+          <cl:formdata std:sid="f-data-0677bbd9" row="1" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-f427b3d2" id="ipb2" readonly="true" value="number">
+          <cl:formdata std:sid="f-data-11efa651" row="1" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-a5d7a8dd" id="opt29" value="format">
+          <cl:formdata std:sid="f-data-9c22a7be" row="1" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-67ae38b2" id="ipb6" readonly="true" value="#,##9">
+          <cl:formdata std:sid="f-data-fff47990" row="1" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-84228639" id="opt10" value="입력값">
+          <cl:formdata std:sid="f-data-1f292ecb" row="1" col="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-8b677972" id="ipb10" readonly="true" value="-12345">
+          <cl:formdata std:sid="f-data-50c7f8dc" row="1" col="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-e67800dc" id="opt30" value="결과값">
+          <cl:formdata std:sid="f-data-8a511204" row="1" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-3ed256a7" id="opt43" style="background-color:white; font-weight:normal; text-align:left;" value="-12345" datatype="number" format="#,##9">
+          <cl:formdata std:sid="f-data-d2e5349a" row="1" col="8"/>
+        </cl:output>
+        <cl:output std:sid="output-cbc76065" id="opt4" style="background-color:#d7e4f2; text-align:center;" value="소수점1자리">
+          <cl:formdata std:sid="f-data-63d37484" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e9bdc0a5" id="opt31" value="dataType">
+          <cl:formdata std:sid="f-data-b03796a5" row="2" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-dfd4230f" id="ipb3" readonly="true" value="number">
+          <cl:formdata std:sid="f-data-67e441b1" row="2" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-2a1c2f55" id="opt33" value="format">
+          <cl:formdata std:sid="f-data-6770d630" row="2" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-3f64bd46" id="ipb7" readonly="true" value="s#,##0.0">
+          <cl:formdata std:sid="f-data-fa8bb418" row="2" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-70fb2692" id="opt9" value="입력값">
+          <cl:formdata std:sid="f-data-13c25be5" row="2" col="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-45127c52" id="ipb11" readonly="true" value="123.456">
+          <cl:formdata std:sid="f-data-51441816" row="2" col="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-02ed9231" id="opt34" value="결과값">
+          <cl:formdata std:sid="f-data-7eaf5f00" row="2" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-d9ff214f" id="opt44" style="background-color:white; font-weight:normal; text-align:left;" value="123.456" datatype="number" format="s#,##0.0">
+          <cl:formdata std:sid="f-data-6faeedba" row="2" col="8"/>
+        </cl:output>
+        <cl:output std:sid="output-b9f54b5c" id="opt5" style="background-color:#d7e4f2; text-align:center;" value="소수점2자리">
+          <cl:formdata std:sid="f-data-7bd6f041" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-64ad1dce" id="opt41" value="dataType">
+          <cl:formdata std:sid="f-data-e5ab8aeb" row="3" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-946d0028" id="ipb4" readonly="true" value="number">
+          <cl:formdata std:sid="f-data-e523cc90" row="3" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-b7338f19" id="opt37" value="format">
+          <cl:formdata std:sid="f-data-e9080d46" row="3" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-bf0d7573" id="ipb8" readonly="true" value="s#,##0.00">
+          <cl:formdata std:sid="f-data-301f75c9" row="3" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-fde12eb4" id="opt11" value="입력값">
+          <cl:formdata std:sid="f-data-ef1dd835" row="3" col="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-ab48b4e4" id="ipb12" readonly="true" value="123.456">
+          <cl:formdata std:sid="f-data-cce4eae7" row="3" col="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-4382b62f" id="opt35" value="결과값">
+          <cl:formdata std:sid="f-data-3cf6779f" row="3" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-19de656e" id="opt45" style="background-color:white; font-weight:normal; text-align:left;" value="123.456" datatype="number" format="s#,##0.00">
+          <cl:formdata std:sid="f-data-ab75bee2" row="3" col="8"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-cc394940" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="0" vseparatorwidth="0">
+          <cl:rows length="25" shadetype="NONE" shadecolor="transparent"/>
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:columns length="180" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:udc std:sid="ud-control-a7e0edf4" id="comformtitle3" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-9bd3fea4" row="3" col="0"/>
+        <cl:property name="title" value="아웃풋 날짜포맷" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-44a56eba" id="grp3" class="form-box">
+        <cl:formdata std:sid="f-data-3e79eed6" row="4" col="0"/>
+        <cl:output std:sid="output-0b1c3f86" id="opt12" style="background-color:#d7e4f2; text-align:center;" value="YYYY-MM-DD">
+          <cl:formdata std:sid="f-data-b4a13739" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-3d28e1d8" id="opt53" value="dataType">
+          <cl:formdata std:sid="f-data-f371dc2b" row="0" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-28171349" id="ipb17" readonly="true" value="date">
+          <cl:formdata std:sid="f-data-908deda6" row="0" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-3fe326ec" id="opt54" value="format">
+          <cl:formdata std:sid="f-data-15f10af0" row="0" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-88b872c6" id="ipb20" readonly="true" value="YYYY-MM-DD">
+          <cl:formdata std:sid="f-data-df790fa5" row="0" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-47b26958" id="opt38" value="입력값">
+          <cl:formdata std:sid="f-data-55d97367" row="0" col="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-f1c0dfb9" id="ipb23" readonly="true" value="20200610">
+          <cl:formdata std:sid="f-data-b1b52463" row="0" col="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-2e71e044" id="opt56" value="결과값">
+          <cl:formdata std:sid="f-data-740c9161" row="0" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-beaf065a" id="opt57" style="background-color:white; font-weight:normal; text-align:left;" value="20200610" datatype="date" format="YYYY-MM-DD">
+          <cl:formdata std:sid="f-data-865dde68" row="0" col="8"/>
+        </cl:output>
+        <cl:output std:sid="output-b93b7283" id="opt16" style="background-color:#d7e4f2; text-align:center;" value="DD/MM/YYYY">
+          <cl:formdata std:sid="f-data-9545c94c" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-d2937788" id="opt61" value="dataType">
+          <cl:formdata std:sid="f-data-cad86cc5" row="1" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-69bd9753" id="ipb18" readonly="true" value="date">
+          <cl:formdata std:sid="f-data-853d2244" row="1" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-4781d6e1" id="opt64" value="format">
+          <cl:formdata std:sid="f-data-a0fea2ac" row="1" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-4eeacbbb" id="ipb21" readonly="true" value="DD/MM/YYYY">
+          <cl:formdata std:sid="f-data-ead68d1d" row="1" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-aad20c20" id="opt68" value="입력값">
+          <cl:formdata std:sid="f-data-023c3ba9" row="1" col="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-373406d8" id="ipb24" readonly="true" value="20200610">
+          <cl:formdata std:sid="f-data-f134ee01" row="1" col="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-37dac6e2" id="opt70" value="결과값">
+          <cl:formdata std:sid="f-data-5c3726f1" row="1" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-b76ed279" id="opt73" style="background-color:white; font-weight:normal; text-align:left;" value="20200610" datatype="date" format="DD/MM/YYYY">
+          <cl:formdata std:sid="f-data-d297bbc2" row="1" col="8"/>
+        </cl:output>
+        <cl:output std:sid="output-6b44c359" id="opt21" style="background-color:#d7e4f2; text-align:center;" value="YY.MM.DD">
+          <cl:formdata std:sid="f-data-bcfd9963" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-5ec9b2be" id="opt62" value="dataType">
+          <cl:formdata std:sid="f-data-437b9147" row="2" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-bd7b0e81" id="ipb19" readonly="true" value="date">
+          <cl:formdata std:sid="f-data-249c39be" row="2" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-d0b1317a" id="opt65" value="format">
+          <cl:formdata std:sid="f-data-a7fd63e9" row="2" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-e6928c91" id="ipb22" readonly="true" value="YY.MM.DD">
+          <cl:formdata std:sid="f-data-79f571e9" row="2" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-947d3972" id="opt67" value="입력값">
+          <cl:formdata std:sid="f-data-63f4a770" row="2" col="5"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-929639ed" id="ipb25" readonly="true" value="20200610">
+          <cl:formdata std:sid="f-data-28fe9909" row="2" col="6"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-fb3f2297" id="opt71" value="결과값">
+          <cl:formdata std:sid="f-data-a69d1da1" row="2" col="7"/>
+        </cl:output>
+        <cl:output std:sid="output-909fefcd" id="opt74" style="background-color:white; font-weight:normal; text-align:left;" value="20200610" datatype="date" format="YY.MM.DD">
+          <cl:formdata std:sid="f-data-99cf79b2" row="2" col="8"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-42dc9742" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="0" vseparatorwidth="0">
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:columns length="180" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:udc std:sid="ud-control-c808025b" id="comformtitle4" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-60386e79" row="5" col="0"/>
+        <cl:property name="title" value="마스크 에디터를 통한 포맷" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-c30e3dd4" id="grp4" class="form-box">
+        <cl:formdata std:sid="f-data-f0b7a294" row="6" col="0"/>
+        <cl:output std:sid="output-9ab15cd6" id="opt48" style="background-color:#d7e4f2; text-align:center;" value="주민번호">
+          <cl:formdata std:sid="f-data-1f7c7439" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-ff449edb" id="opt78" value="mask">
+          <cl:formdata std:sid="f-data-1cb53032" row="0" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-dd5be682" id="ipb13" readonly="true" value="000000-0000000">
+          <cl:formdata std:sid="f-data-bd1f9fdb" row="0" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-906e44da" id="opt63" value="입력값">
+          <cl:formdata std:sid="f-data-b2e35718" row="0" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-b6bb9f95" id="ipb26" readonly="true" value="7012011234567">
+          <cl:formdata std:sid="f-data-b52989b8" row="0" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-636f7b40" id="opt81" value="결과값">
+          <cl:formdata std:sid="f-data-6e0fedfe" row="0" col="5"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-d10375e0" id="mse1" style="text-align:left;" value="7012011234567" mask="000000-0000000">
+          <cl:formdata std:sid="f-data-48d2b0de" row="0" col="6"/>
+        </cl:maskeditor>
+        <cl:output std:sid="output-0ac108d8" id="opt52" style="background-color:#d7e4f2; text-align:center;" value="문자+숫자">
+          <cl:formdata std:sid="f-data-c8b7fd25" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-af28b3e5" id="opt85" value="mask">
+          <cl:formdata std:sid="f-data-e94a8df9" row="1" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-74a70763" id="ipb14" readonly="true" value="F-00000">
+          <cl:formdata std:sid="f-data-0d056b44" row="1" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-b3cfacdf" id="opt90" value="입력값">
+          <cl:formdata std:sid="f-data-b57bd7dc" row="1" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-32e46f87" id="ipb27" readonly="true" value="34567">
+          <cl:formdata std:sid="f-data-cf774690" row="1" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-0655cb29" id="opt91" value="결과값">
+          <cl:formdata std:sid="f-data-47277452" row="1" col="5"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-9933c03e" id="mse2" style="text-align:left;" value="34567" mask="F-00000">
+          <cl:formdata std:sid="f-data-97db418f" row="1" col="6"/>
+        </cl:maskeditor>
+        <cl:output std:sid="output-e9edc430" id="opt60" style="background-color:#d7e4f2; text-align:center;" value="날짜">
+          <cl:formdata std:sid="f-data-a8d80294" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-593291b3" id="opt86" value="mask">
+          <cl:formdata std:sid="f-data-a7756760" row="2" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-c99505b0" id="ipb15" readonly="true" value="0000/00/00">
+          <cl:formdata std:sid="f-data-93608a44" row="2" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-2e6f28b1" id="opt89" value="입력값">
+          <cl:formdata std:sid="f-data-43635e43" row="2" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-3af1733c" id="ipb28" readonly="true" value="20200610">
+          <cl:formdata std:sid="f-data-4a72837e" row="2" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-ea9f86fb" id="opt92" value="결과값">
+          <cl:formdata std:sid="f-data-40db9daf" row="2" col="5"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-9b5c2d8a" id="mse3" style="text-align:left;" value="20200610" mask="0000/00/00">
+          <cl:formdata std:sid="f-data-343e21bf" row="2" col="6"/>
+        </cl:maskeditor>
+        <cl:output std:sid="output-7ad88509" id="opt69" style="background-color:#d7e4f2; text-align:center;" value="영문소문자+영문대문자+특수문자+숫자">
+          <cl:formdata std:sid="f-data-a704ff01" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-0c1b4cf3" id="opt72" value="mask">
+          <cl:formdata std:sid="f-data-d745320f" row="3" col="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-485a214b" id="ipb16" readonly="true" value="aaaaaa AA.00">
+          <cl:formdata std:sid="f-data-ebb3a0f7" row="3" col="2"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-8f5c7f1f" id="opt79" value="입력값">
+          <cl:formdata std:sid="f-data-14a250b3" row="3" col="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-c4273883" id="ipb29" readonly="true" value="hanwhaNO63">
+          <cl:formdata std:sid="f-data-f1bfa871" row="3" col="4"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-d67c28cd" id="opt80" value="결과값">
+          <cl:formdata std:sid="f-data-c84b1c6f" row="3" col="5"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-1c3feea1" id="mse4" style="text-align:left;" value="hanwhaNO63" mask="aaaaaa AA.00">
+          <cl:formdata std:sid="f-data-b2260654" row="3" col="6"/>
+        </cl:maskeditor>
+        <cl:formlayout std:sid="f-layout-54ea5ff2" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="0" vseparatorwidth="0">
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c01a5d81">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="120" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="95" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="118" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-e19f7d47"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

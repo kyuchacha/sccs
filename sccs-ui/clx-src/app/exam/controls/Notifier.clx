@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-f3ddac42"/>
+    <cl:appspec dev-comment="templates/CtrlTmpl.clx 템플릿 사용하여 작성 함." title="알림 관련 속성"/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:group std:sid="group-83e2c69a" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-dd803572" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-793bae76" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-000a9f26" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+        <cl:property name="searchBoxId" value="grpHeader" type="string"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-275b97fe" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-237d4771" id="grpData">
+      <cl:verticaldata std:sid="v-data-9e585805" width="400px" height="3000px" autosize="height"/>
+      <cl:group std:sid="group-cd8e0265">
+        <cl:verticaldata std:sid="v-data-721e5155" width="400px" height="800px" autosize="height"/>
+        <cl:output std:sid="output-439ecc8e" style="font-weight:700; font-size:2.5rem; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="알림">
+          <cl:verticaldata std:sid="v-data-8c3d53dc" width="100px" height="45px" autosize="height"/>
+        </cl:output>
+        <cl:output std:sid="output-48b7b760" style="font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" class="opt-tmpl" value="알림 표현하는 컨트롤입니다.&#xD;&#xA;&#xD;&#xA;사용자의 특정 상태나 동작에 따라 화면에 해당 내용을 전달하고자 할 때 알림 컨트롤을 사용합니다.&#xD;&#xA;&#xD;&#xA;알림의 종류에는 default, success, info, warning, danger가 있습니다. 전달하고자 하는 메시지의 내용에 따라 분류하여 해당 알림을 사용하실 수 있습니다.&#xD;&#xA;&#xD;&#xA;API나 NotificationCenter를 통해 알림이 와야지만 해당 알림에 맞는 메시지가 나타납니다.">
+          <cl:verticaldata std:sid="v-data-189f5ff8" width="100px" height="150px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-62079995" style="background-color:#FFF5EF;">
+          <cl:verticaldata std:sid="v-data-b3977571" width="1220px" height="100px" autosize="height"/>
+          <cl:output std:sid="output-a9b248ef" style="color:#FF9149; font-weight:bolder;" value="※ 알림 위치 주의사항">
+            <cl:verticaldata std:sid="v-data-8dbfa4b4" width="100px" height="25px"/>
+          </cl:output>
+          <cl:output std:sid="output-532ac550" style="color:#FF9149;" value="알림 컨트롤의 메시지는 알림 컨트롤이 보이는 위치를 기준으로 나타나기 때문에 알림 컨트롤은 항상 보이는 위치에 있어야 합니다.&#xD;&#xA;보이지 않는 탭 아이템 내부 또는 visible=false인 컨테이너 내부 등과 같은 곳에 알림 컨트롤이 포함될 경우 메시지는 출력되지 않습니다.">
+            <cl:verticaldata std:sid="v-data-7f6b1b60" width="100px" height="25px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-7607fc8d" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+        </cl:group>
+        <cl:group std:sid="group-36bfc6ee" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid;" class="attach-box">
+          <cl:verticaldata std:sid="v-data-f290ad19" width="1220px" height="300px" autosize="height"/>
+          <cl:group std:sid="group-14a3fb21">
+            <cl:verticaldata std:sid="v-data-2d530edc" width="1003px" height="30px" autosize="none"/>
+            <cl:button std:sid="button-388bfbff" id="btn1" value="사용자 정의">
+              <cl:listener std:sid="listener-82929d16" name="click" handler="onBtn1Click"/>
+              <cl:flowlayoutdata std:sid="f-data-003a6236" width="102px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:button std:sid="button-11a6d3ae" id="btn2" value="정보">
+              <cl:listener std:sid="listener-362e29a5" name="click" handler="onBtn2Click"/>
+              <cl:flowlayoutdata std:sid="f-data-290d0224" width="60px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:button std:sid="button-b87dc6ea" id="btn3" value="성공">
+              <cl:listener std:sid="listener-2e97b511" name="click" handler="onBtn3Click"/>
+              <cl:flowlayoutdata std:sid="f-data-202f07ed" width="60px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:button std:sid="button-ad371145" id="btn4" value="위험">
+              <cl:listener std:sid="listener-f5cdf7fc" name="click" handler="onBtn4Click"/>
+              <cl:flowlayoutdata std:sid="f-data-db02340e" width="60px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:button std:sid="button-5ca2c2fd" id="btn5" value="경고">
+              <cl:listener std:sid="listener-7112ce2d" name="click" handler="onBtn5Click"/>
+              <cl:flowlayoutdata std:sid="f-data-b10ee23f" width="60px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-0d75bdcc"/>
+          </cl:group>
+          <cl:group std:sid="group-7b83ef54">
+            <cl:verticaldata std:sid="v-data-1b88d3f0" width="200px" height="50px"/>
+            <cl:output std:sid="output-f372885d" class="text-center" value="위 버튼을 클릭하여 기본 알림 설정을 확인하세요">
+              <cl:formdata std:sid="f-data-e1f0286b" row="1" col="0"/>
+            </cl:output>
+            <cl:notifier std:sid="notifier-d657e9d4" id="ntf">
+              <cl:formdata std:sid="f-data-a1d55f2e" row="0" col="0"/>
+            </cl:notifier>
+            <cl:formlayout std:sid="f-layout-0695157e" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-815ebff0">
+            <cl:verticaldata std:sid="v-data-e58755c9" width="450px" height="300px" autosize="both"/>
+            <cl:output std:sid="output-24c723f0" class="text-center" value="&lt;컨트롤 동적 생성 코드>">
+              <cl:formdata std:sid="f-data-628e689a" row="1" col="0"/>
+            </cl:output>
+            <cl:udc std:sid="ud-control-45c1b289" id="ace1" type="udc.tmp.Ace">
+              <cl:formdata std:sid="f-data-ce3f300b" row="0" col="0"/>
+              <cl:property name="value" value="var notifier = new cpr.controls.Notifier(&quot;ntf1&quot;);&#xD;&#xA;notifier.style.css({&#xD;&#xA;&#x9;width: &quot;200px&quot;,&#xD;&#xA;&#x9;height: &quot;30px&quot;,&#xD;&#xA;&#x9;right: &quot;20px&quot;,&#xD;&#xA;&#x9;bottom: &quot;10px&quot;&#xD;&#xA;});&#xD;&#xA;// 알림 컨트롤의 표시할 수 있는 아이템의 최대 개수를 설정합니다.&#xD;&#xA;notifier.maxNotifyCount = 1;" type="string"/>
+            </cl:udc>
+            <cl:formlayout std:sid="f-layout-a2969db7" scrollable="true" hspace="5px" vspace="5px" top-margin="30px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="20" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-ada75444"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-7f9d24d7" spacing="30" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-de8c1411" class="card-inner">
+        <cl:verticaldata std:sid="v-data-b599e456" width="1100px" height="2000px" autosize="height"/>
+        <cl:output std:sid="output-93a4182c" style="font-weight:700; font-size:26px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" class="h1 pl-3 bg-primary text-white" value="자주 사용되는 속성">
+          <cl:verticaldata std:sid="v-data-b93d60a0" width="1220px" height="38px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-63aedf87" value="자주 사용되는 속성과 시나리오를 통한 예제를 확인할 수 있습니다. 자세한 사항은 Help Contents를 참조하시기 바랍니다.">
+          <cl:verticaldata std:sid="v-data-7a20e9d2" width="100px" height="141px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-27b9f331" class="card-inner">
+          <cl:verticaldata std:sid="v-data-8c86fba2" width="1220px" height="1500px" autosize="height"/>
+          <cl:output std:sid="output-696ccd84" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="maxNotifyCount">
+            <cl:verticaldata std:sid="v-data-fa6edbdf" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-6a755066" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-7a15b452" width="1140px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-d6122608" style="font-weight:700;" class="opt-tmpl" value="최대로 표시할 수 있는 알림의 숫자를 설정하는 속성입니다.">
+              <cl:verticaldata std:sid="v-data-157990b2" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-3d91933b" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:output std:sid="output-f26462ee" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="delay">
+            <cl:verticaldata std:sid="v-data-16d02086" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-fef9bcb6" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-c1dc4b7a" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-e6395e37" style="font-weight:700;" class="opt-tmpl" value="알림 창이 표시되는 시간을 설정하는 속성입니다.">
+              <cl:verticaldata std:sid="v-data-57dd456e" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-36af1903" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:output std:sid="output-91c688bd" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="scope">
+            <cl:verticaldata std:sid="v-data-56c9c6ba" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-76f158f2" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-8cf4da46" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-a6a72bc7" style="font-weight:700;" class="opt-tmpl" value="알림이 표시될 범위를 결정하는 속성입니다. 기본값은 system이며, app으로 변경 시 앱 영역 내에만 알림이 출력되게 됩니다.">
+              <cl:listener std:sid="listener-9d5a77f3" name="value-change" handler="onOutputValueChange"/>
+              <cl:verticaldata std:sid="v-data-0a2541f1" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-f4ac6e07" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:output std:sid="output-ce3f1f1f" style="color:#2263b3; font-weight:700; font-size:20px; font-family:sans-serif , 'Malgun Gothic' , 'Noto Sans KR';" value="icon">
+            <cl:verticaldata std:sid="v-data-591609f0" width="1220px" height="38px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-8d178c8d" style="background-color:#e9eff7; background-image:none;">
+            <cl:verticaldata std:sid="v-data-f34a70c9" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-5cf1b461" style="font-weight:700;" class="opt-tmpl" value="알림창에 아이콘을 설정하는 기능입니다.">
+              <cl:verticaldata std:sid="v-data-0f37ca5f" width="100px" height="40px" autosize="height"/>
+            </cl:output>
+            <cl:verticallayout std:sid="v-layout-498107d2" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+          </cl:group>
+          <cl:group std:sid="group-c9d1f0de" class="form-box vertical">
+            <cl:verticaldata std:sid="v-data-a8c9897a" width="1220px" height="80px" autosize="height"/>
+            <cl:output std:sid="output-647f8d4d" style="border-right-style:none; background-color:transparent; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="label" value="시나리오">
+              <cl:formdata std:sid="f-data-2293ec44" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-39377523" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="입력값">
+              <cl:formdata std:sid="f-data-f407e800" row="0" col="1"/>
+            </cl:output>
+            <cl:output std:sid="output-aa82cf29" style="border-right-style:none; background-color:transparent; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="label" value="기능확인">
+              <cl:formdata std:sid="f-data-9fbea777" row="0" col="2"/>
+            </cl:output>
+            <cl:output std:sid="output-a018938a" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="opt-tmpl" value="1) 하단의 알림 버튼을 클릭합니다.&#xD;&#xA;2) 알림이 3개까지 띄워지고, 알림이 10초간 표시되는 것을 확인합니다.&#xD;&#xA;3) 알림 버튼을 클릭한 뒤 다이얼로그 버튼을 클릭합니다.&#xD;&#xA;4) 다이얼로그 창 위로 알림 버튼이 보이는 것을 확인할 수 있습니다.">
+              <cl:formdata std:sid="f-data-e0b41856" row="1" col="0"/>
+            </cl:output>
+            <cl:button std:sid="button-e2de2607" id="btnInit" class="btn-primary" value="실행">
+              <cl:formdata std:sid="f-data-3b4bb04d" valign="CENTER" height="30" row="1" col="2"/>
+            </cl:button>
+            <cl:output std:sid="output-27e317b7" style="background-color:transparent; border-right-style:none; border-left-style:none; padding-left:15px; border-bottom-style:none; border-top-style:none; text-align:left;" class="opt-tmpl" value="maxNotifyCount = 3&#xD;&#xA;delay = 10000(10초)&#xD;&#xA;scope = system">
+              <cl:formdata std:sid="f-data-8c71edb3" row="1" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-b586c799" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+              <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="CUSTOM" shadecolor="#edeff6" minlength="0"/>
+              <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="300" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-4fca0a9f" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#babfc7; border-right-width:1px; border-left-color:#babfc7; border-right-color:#babfc7; border-left-width:1px; border-top-style:solid; background-color:#e9e9e9; border-left-style:solid; border-bottom-width:1px; border-top-color:#babfc7; border-bottom-style:solid; background-image:none;" class="attach-box">
+            <cl:verticaldata std:sid="v-data-cf6397a1" width="1220px" height="337px" autosize="height"/>
+            <cl:button std:sid="button-0898e323" id="btn7" value="다이얼로그 버튼">
+              <cl:listener std:sid="listener-ceec8767" name="click" handler="onBtn7Click"/>
+              <cl:verticaldata std:sid="v-data-7812967d" width="1003px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:button std:sid="button-1077d7db" id="btn6" value="알림 버튼">
+              <cl:listener std:sid="listener-bd6f52e2" name="click" handler="onBtn6Click"/>
+              <cl:verticaldata std:sid="v-data-647a969f" width="1003px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:group std:sid="group-2d521c14">
+              <cl:verticaldata std:sid="v-data-45a6dc00" width="200px" height="50px" autosize="both"/>
+              <cl:notifier std:sid="notifier-44c5ee59" id="ntf2" maxnotifycount="3" delay="10000" icon="001-south-korea.svg" close="true">
+                <cl:formdata std:sid="f-data-c7d831c3" valign="TOP" height="50" row="0" col="0"/>
+              </cl:notifier>
+              <cl:output std:sid="output-8297705a" class="text-center" value="&lt;기능 확인 컨트롤>">
+                <cl:formdata std:sid="f-data-d2ecfabf" row="1" col="0"/>
+              </cl:output>
+              <cl:formlayout std:sid="f-layout-297521a3" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-d6c780d1"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-8f3e7bcb" spacing="15" leftmargin="40" rightmargin="40" topmargin="20" bottommargin="40"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-fea69ec9" spacing="30" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-004c7dc4" spacing="20" leftmargin="50" rightmargin="50" topmargin="20" bottommargin="60"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="33"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

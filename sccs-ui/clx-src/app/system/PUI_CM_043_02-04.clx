@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8b0227a9" version="1.0.3556">
+  <head std:sid="head-22cf80b3">
+    <screen std:sid="screen-e7ffe748" id="default" name="default" minwidth="1680px" width="1680px" height="960px" useCustomWidth="true" useCustomHeight="true" customHeight="400" customWidth="480" active="false"/>
+    <screen std:sid="screen-4c4f87c7" id="tablet" name="tablet" maxwidth="1679px" width="760px" height="820px" active="true"/>
+    <cl:model std:sid="model-97b004f4"/>
+    <cl:appspec title="메뉴 선택 팝업"/>
+  </head>
+  <body std:sid="body-2ec7ccb4">
+    <cl:udc std:sid="ud-control-ed24ae0c" id="appheader1" visible="false" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-b2257d67" width="760px" height="30px"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+    </cl:udc>
+    <cl:udc std:sid="ud-control-a839a0ef" id="comformtitle1" type="udc.com.comFormTitle">
+      <cl:verticaldata std:sid="v-data-a9b50868" width="760px" height="25px"/>
+      <cl:property name="ctrl" value="frfMain" type="control"/>
+      <cl:property name="title" value="메뉴 목록" type="string"/>
+    </cl:udc>
+    <cl:tree std:sid="tree-3f2e5664" id="tre1" showlines="true" allowdrop="false" autoOpen="1">
+      <cl:verticaldata std:sid="v-data-43a1ea0f" width="760px" height="266px" autosize="height"/>
+      <cl:treeitem std:sid="t-item-7eaa9afb" label="방조제유지개발" value="value1"/>
+      <cl:treeitem std:sid="t-item-f6a07176" label="환경설정" value="value2" parent="value1"/>
+      <cl:treeitem std:sid="t-item-e66beb99" label="환경설정(하위)" value="value12" parent="value2"/>
+      <cl:treeitem std:sid="t-item-be4b8c40" label="방조제 계측정보 관리" value="value3" parent="value1"/>
+      <cl:treeitem std:sid="t-item-2e2d061d" label="방조제 모니터링" value="value4" parent="value1"/>
+      <cl:treeitem std:sid="t-item-467db303" label="홍수예경보시스템" value="value5"/>
+      <cl:treeitem std:sid="t-item-7921d416" label="기본정보관리" value="value6" parent="value5"/>
+      <cl:treeitem std:sid="t-item-ba8b3680" label="기본정보관리(하위)" value="value13" parent="value6"/>
+      <cl:treeitem std:sid="t-item-76618126" label="자료관리" value="value7" parent="value5"/>
+      <cl:treeitem std:sid="t-item-2c2e11e3" label="환경설정" value="value8" parent="value5"/>
+      <cl:treeitem std:sid="t-item-11903c41" label="통합관제" value="value9"/>
+      <cl:treeitem std:sid="t-item-31461a0f" label="배수갑문현황" value="value10" parent="value9"/>
+      <cl:treeitem std:sid="t-item-1df684f5" label="도로안전 현황" value="value11" parent="value9"/>
+      <cl:treeitem std:sid="t-item-27cc0a5a" label="도로안전 현황(하위)" value="value14" parent="value11"/>
+    </cl:tree>
+    <cl:group std:sid="group-9d60a4fa" id="grp2">
+      <cl:verticaldata std:sid="v-data-a4949b4d" width="760px" height="25px"/>
+      <cl:button std:sid="button-f83dfefa" id="btn1" class="btn-primary" value="선택완료">
+        <cl:flowlayoutdata std:sid="f-data-181c1f52" width="70px" height="25px" autosize="none"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-ed488825" scrollable="false" hspacing="4" vspacing="0" halign="right" linewrap="false"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-8373e337"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

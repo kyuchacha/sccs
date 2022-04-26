@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-949f6c1d" version="1.0.3164">
+  <head std:sid="head-9999155e">
+    <screen std:sid="screen-3c11ec9a" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-2217d00e" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e5c0964f" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-768e563e" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-93290ca0"/>
+    <cl:appspec title="이미지 관련 속성"/>
+  </head>
+  <body std:sid="body-b01bc8f4">
+    <cl:group std:sid="group-4f5c300e" id="grpSearch" class="header-box">
+      <cl:verticaldata std:sid="v-data-c32a0a24" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-921fa8d6" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-876214f7" width="500px" height="30px" autosize="none"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-5974fb62" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-89a19adc" id="grpData">
+      <cl:verticaldata std:sid="v-data-5d43a31c" width="400px" height="645px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="이미지(Image)는 사진 등의 이미지를 출력하는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-95977807" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-13d64b4e" row="1" col="0"/>
+        <cl:output std:sid="output-a665ba05" id="opt2" value="이미지맵(영역지정)&#xD;&#xA;1. 학동역 3번출구에 마우스를 갖다댄다.&#xD;&#xA;2. 지정한 영역이 보인다.&#xD;&#xA;&#xD;&#xA;[areaCoordinate = absolute]&#xD;&#xA;1. 이미지 영역의 모든 좌표를 절대좌표 취급한다.">
+          <cl:formdata std:sid="f-data-ad3fe2d2" row="0" col="0" rowspan="2" colspan="1"/>
+        </cl:output>
+        <cl:img std:sid="image-575d9388" id="img2" src="빌딩.PNG" areacoordinate="image-size">
+          <cl:formdata std:sid="f-data-d95bbb8a" halign="LEFT" width="700" row="0" col="1" rowspan="1" colspan="1"/>
+          <cl:area std:sid="a-item-5575eb13" label="label1" value="value1" shape="circle" coords="393,428,11"/>
+        </cl:img>
+        <cl:output std:sid="output-ec4ad75f" id="opt6" style="color:#757272;" value="이미지의 특정영역을 지정하여 맵정보를 추가할 수 있다.&#xD;&#xA;지정방법: 마우스 우측버튼 클릭 > AreaItem 추가 선택 > 마우스로 이미지 영역을 추가함&#xD;&#xA;&#xD;&#xA;이미지 컨트롤의 areaCoordinate 속성으로 이미지 영역의 좌표계를 절대 좌표 또는 상대 좌표로 설정할 수 있습니다. &#xD;&#xA;areaCoordinate  속성 설정 값&#xD;&#xA; - absolute(default) : 이미지영역의 모든 좌표를 절대 취급합니다. &#xD;&#xA; - image-size : 이미지 영역의 모든 좌표를 표시하는 이미지 파일의 원래 크기에 대한 상대 좌표로 취급합니다.">
+          <cl:formdata std:sid="f-data-1399cbbf" row="1" col="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="418" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-309ed75a" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-c99c9b0b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

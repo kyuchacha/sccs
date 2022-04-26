@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-db978090" version="1.0.0.0">
+  <head std:sid="head-a2b37844">
+    <title>Dashboard</title>
+    <screen std:sid="screen-d3b05449" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-59efc8b9" id="default" name="default" minwidth="1024px" maxwidth="1319px" width="1024px" height="768px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-3b9b79fe" id="tablet" name="tablet" minwidth="850px" maxwidth="1023px" width="850px" height="768px"/>
+    <screen std:sid="screen-c8de6f37" id="mobile" name="mobile" maxwidth="849px" width="550px" height="768px"/>
+    <cl:model std:sid="model-d85fc5b3">
+      <cl:dataset std:sid="d-set-eac3c2e0" id="dsStats">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-72ac29cc" name="title"/>
+          <cl:datacolumn std:sid="d-column-6716daad" name="value" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="title"><![CDATA[employee]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[200]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="title"><![CDATA[user]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[1235]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="title"><![CDATA[new project]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="title"><![CDATA[total project]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[61]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-4345d06a" id="dsTrnsct" sortcondition="">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-6a0efa21" name="orderId"/>
+          <cl:datacolumn std:sid="d-column-1333e482" name="blNm"/>
+          <cl:datacolumn std:sid="d-column-5f85c011" name="orderDt"/>
+          <cl:datacolumn std:sid="d-column-6e089eab" name="total"/>
+          <cl:datacolumn std:sid="d-column-27902b32" name="pymntStus"/>
+          <cl:datacolumn std:sid="d-column-4936985e" name="pymntTy"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="orderId"><![CDATA[#SK2544]]></cl:datavalue>
+            <cl:datavalue columnname="blNm"><![CDATA[Neal Matthews]]></cl:datavalue>
+            <cl:datavalue columnname="orderDt"><![CDATA[20201007]]></cl:datavalue>
+            <cl:datavalue columnname="total"><![CDATA[400]]></cl:datavalue>
+            <cl:datavalue columnname="pymntStus"><![CDATA[Paid]]></cl:datavalue>
+            <cl:datavalue columnname="pymntTy"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="orderId"><![CDATA[#SK2543]]></cl:datavalue>
+            <cl:datavalue columnname="blNm"><![CDATA[Jamal Burnett]]></cl:datavalue>
+            <cl:datavalue columnname="orderDt"><![CDATA[20201007]]></cl:datavalue>
+            <cl:datavalue columnname="total"><![CDATA[380]]></cl:datavalue>
+            <cl:datavalue columnname="pymntStus"><![CDATA[Changeback]]></cl:datavalue>
+            <cl:datavalue columnname="pymntTy"><![CDATA[danger]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="orderId"><![CDATA[#SK2542]]></cl:datavalue>
+            <cl:datavalue columnname="blNm"><![CDATA[Barry Dick]]></cl:datavalue>
+            <cl:datavalue columnname="orderDt"><![CDATA[20201005]]></cl:datavalue>
+            <cl:datavalue columnname="total"><![CDATA[384]]></cl:datavalue>
+            <cl:datavalue columnname="pymntStus"><![CDATA[Paid]]></cl:datavalue>
+            <cl:datavalue columnname="pymntTy"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="orderId"><![CDATA[#SK2541]]></cl:datavalue>
+            <cl:datavalue columnname="blNm"><![CDATA[Jacab Hunter]]></cl:datavalue>
+            <cl:datavalue columnname="orderDt"><![CDATA[20201004]]></cl:datavalue>
+            <cl:datavalue columnname="total"><![CDATA[412]]></cl:datavalue>
+            <cl:datavalue columnname="pymntStus"><![CDATA[Paid]]></cl:datavalue>
+            <cl:datavalue columnname="pymntTy"><![CDATA[success]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="orderId"><![CDATA[#SK2540]]></cl:datavalue>
+            <cl:datavalue columnname="blNm"><![CDATA[Juan Mitchell]]></cl:datavalue>
+            <cl:datavalue columnname="orderDt"><![CDATA[20201001]]></cl:datavalue>
+            <cl:datavalue columnname="total"><![CDATA[404]]></cl:datavalue>
+            <cl:datavalue columnname="pymntStus"><![CDATA[Refund]]></cl:datavalue>
+            <cl:datavalue columnname="pymntTy"><![CDATA[warning]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-77fc79ed" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a57fc067" id="appTitle">
+      <cl:verticaldata std:sid="v-data-cf315a4a" width="984px" height="25px" autosize="height"/>
+      <cl:output std:sid="output-f894da8e" class="h3" value="Overview">
+        <cl:formdata std:sid="f-data-37361a80" row="0" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-358b48f4">
+        <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-6cc1b31d" id="grp17">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:verticaldata std:sid="v-data-ef5220ef" width="400px" height="220px" autosize="none"/>
+      <cl:group std:sid="group-680ca20d" id="grp19" class="card card-bordered">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-d68d3441" row="0" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-fc4c15d9" class="card-title" value="Top Selling Products">
+          <cl:verticaldata std:sid="v-data-ea184f9d" width="100%" height="25px" autosize="none"/>
+        </cl:output>
+        <cl:output std:sid="output-10112b6a" class="h3" value="1456" datatype="number" format="s#,##0">
+          <cl:verticaldata std:sid="v-data-3cef5cf4" width="100px" height="25px" autosize="both"/>
+        </cl:output>
+        <cl:output std:sid="output-ae644b60" class="text-gray pb-2" value="eXbuilder6">
+          <cl:verticaldata std:sid="v-data-3839fd08" width="100px" height="25px" autosize="both"/>
+        </cl:output>
+        <cl:group std:sid="group-fbb702a5" id="grp21">
+          <cl:verticaldata std:sid="v-data-0fdc84bb" width="100%" height="105px" autosize="height"/>
+          <cl:group std:sid="group-7f69683a" id="grp22" class="border-top">
+            <cl:verticaldata std:sid="v-data-e1c5a167" width="400px" height="35px"/>
+            <cl:output std:sid="output-23912f94" class="text-gray" value="eXbuilder6">
+              <cl:formdata std:sid="f-data-04de1bc6" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-254c3eb6" value="1456">
+              <cl:formdata std:sid="f-data-008a680b" row="0" col="1"/>
+            </cl:output>
+            <cl:progress std:sid="progress-be37be30" id="pgr1" class="border-0 bg-transparent" value="1456" max="2000.0">
+              <cl:formdata std:sid="f-data-47a8d24a" valign="CENTER" height="5" row="0" col="2"/>
+            </cl:progress>
+            <cl:formlayout std:sid="f-layout-9bb03ca2" scrollable="false" hspace="3px" vspace="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="50" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-f311598e" id="grp23" class="border-top">
+            <cl:verticaldata std:sid="v-data-d2cdbbeb" width="400px" height="35px"/>
+            <cl:output std:sid="output-81fd7ff1" class="text-gray" value="eXERD">
+              <cl:formdata std:sid="f-data-ec4f19a9" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-2c1a4d3e" value="1123">
+              <cl:formdata std:sid="f-data-9be31343" row="0" col="1"/>
+            </cl:output>
+            <cl:progress std:sid="progress-ae28d1a2" id="pgr2" class="border-0 bg-transparent" value="1123" max="2000.0">
+              <cl:formdata std:sid="f-data-5b485ec6" valign="CENTER" height="5" row="0" col="2"/>
+              <cl:barstyle class="bg-success"/>
+            </cl:progress>
+            <cl:formlayout std:sid="f-layout-2ff2af44" scrollable="false" hspace="3px" vspace="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="50" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-8291c9af" id="grp24" class="border-top">
+            <cl:verticaldata std:sid="v-data-e57df0d8" width="400px" height="35px"/>
+            <cl:output std:sid="output-942c8781" class="text-gray" value="eXbuilder5">
+              <cl:formdata std:sid="f-data-88579ff0" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-8c3d9930" value="1026">
+              <cl:formdata std:sid="f-data-f8273400" row="0" col="1"/>
+            </cl:output>
+            <cl:progress std:sid="progress-fb3d7be9" id="pgr3" class="border-0 bg-transparent" value="1026" max="2000.0">
+              <cl:formdata std:sid="f-data-19621478" valign="CENTER" height="5" row="0" col="2"/>
+              <cl:barstyle class="bg-warning"/>
+            </cl:progress>
+            <cl:formlayout std:sid="f-layout-4a730507" scrollable="false" hspace="3px" vspace="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="50" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-a9325fb1" spacing="0"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-0cf6840e" distribution="center" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-3ae2ef58" hspace="20px" vspace="20px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-5fb8439f" id="grp16" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-eba4b424" width="400px" height="205px" autosize="height"/>
+      <cl:output std:sid="output-08fc74cf" class="card-title" value="Latest Transaction">
+        <cl:verticaldata std:sid="v-data-7c47d451" width="100px" height="25px"/>
+      </cl:output>
+      <cl:grid std:sid="grid-b5cd7af4" id="grd1" class="table-autosize" datasetid="dsTrnsct" autofit="2, 3, 4, 5" resizablecolumns="all" columnMovable="true">
+        <cl:verticaldata std:sid="v-data-6975a757" width="400px" height="200px" autosize="height"/>
+        <cl:gridcolumn std:sid="g-column-ffdc385f" width="35px"/>
+        <cl:gridcolumn std:sid="g-column-6df02442"/>
+        <cl:gridcolumn std:sid="g-column-7be20e6c" width="150px"/>
+        <cl:gridcolumn std:sid="g-column-f15b2ed7" width="115px"/>
+        <cl:gridcolumn std:sid="g-column-d684e142"/>
+        <cl:gridcolumn std:sid="g-column-7edccb2b" width="120px"/>
+        <cl:gridheader std:sid="gh-band-6f8a1c1d">
+          <cl:gridrow std:sid="g-row-d17bc3e8" height="35px"/>
+          <cl:gridcell std:sid="gh-cell-f2f0bdd6" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+          <cl:gridcell std:sid="gh-cell-d9340ad9" rowindex="0" colindex="1" targetcolumnname="orderId" sortable="false" filterable="false" text="Order ID"/>
+          <cl:gridcell std:sid="gh-cell-1f15cbe6" rowindex="0" colindex="2" targetcolumnname="blNm" sortable="false" filterable="false" text="billing Name"/>
+          <cl:gridcell std:sid="gh-cell-b1496fa6" rowindex="0" colindex="3" targetcolumnname="orderDt" sortable="false" filterable="false" text="Date"/>
+          <cl:gridcell std:sid="gh-cell-d1b9b363" rowindex="0" colindex="4" targetcolumnname="total" sortable="false" filterable="false" text="Total"/>
+          <cl:gridcell std:sid="gh-cell-9343ccfc" rowindex="0" colindex="5" targetcolumnname="pymntStus" sortable="false" filterable="false" text="Payment Status"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-64a26ea9">
+          <cl:gridrow std:sid="g-row-b9ed5dc0" height="32px"/>
+          <cl:gridcell std:sid="gd-cell-da96c43e" rowindex="0" colindex="0" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-ada35af9" rowindex="0" colindex="1" columnname="orderId">
+            <cl:output std:sid="output-e1623e6b" class="text-center" value="Output"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-20d13cc6" rowindex="0" colindex="2" columnname="blNm">
+            <cl:output std:sid="output-a5ffc1cb" class="text-center" value="Output"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-c81e248f" rowindex="0" colindex="3" columnname="orderDt">
+            <cl:output std:sid="output-2060d724" class="text-center" datatype="date" format="YYYY-MM-DD"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-4fd06c4e" rowindex="0" colindex="4" columnname="total">
+            <cl:output std:sid="output-d0a7db42" class="text-center" value="Output" displayexp="&quot;$&quot; + text"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-548d5a21" rowindex="0" colindex="5" columnname="pymntStus">
+            <cl:output std:sid="output-8ef0443a" style="text-align:left;">
+              <cl:expbind property="class" category="CLASS" expression="switch(pymntTy){&#xA;&#x9;case &quot;warning&quot; : &quot;badge badge-dot&quot; + &quot; badge-warning&quot;&#xA;&#x9;case &quot;danger&quot; : &quot;badge badge-dot&quot; + &quot; badge-danger&quot;&#xA;&#x9;default : &quot;badge badge-dot&quot; + &quot; badge-success&quot;&#xA;}"/>
+              <cl:celldata std:sid="c-data-b93953f4" valign="FILL" topSpacing="0" bottomSpacing="0" leftSpacing="5" rightSpacing="5"/>
+            </cl:output>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:verticallayout std:sid="v-layout-c0a2dc46" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+    </cl:group>
+    <cl:group std:sid="group-a0988dd8" id="grp1">
+      <cl:attribute name="needs-auto-height" value="true"/>
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:verticaldata std:sid="v-data-e4374d24" width="400px" height="386px" autosize="height"/>
+      <cl:group std:sid="group-aa572d70" id="grp2" class="card card-bordered">
+        <cl:formdata std:sid="f-data-41c034aa" row="0" col="0"/>
+        <cl:group std:sid="group-cc24b6d4" id="grp3">
+          <cl:verticaldata std:sid="v-data-64c290cd" width="440px" height="35px"/>
+          <cl:output std:sid="output-9bee8e81" class="card-title" value="New Employees">
+            <cl:formdata std:sid="f-data-d094b09c" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-20d0d6d7" class="text-primary text-center cursor-pointer" value="View All">
+            <cl:formdata std:sid="f-data-32a84aed" row="0" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-2448e90a" top-margin="0px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-8d97a54e" id="grp4" class="border-bottom">
+          <cl:verticaldata std:sid="v-data-bb9ac12a" width="400px" height="66px"/>
+          <cl:output std:sid="output-8a918151" class="badge-pill badge-dim badge-primary rounded-circle text-center" value="AB">
+            <cl:formdata std:sid="f-data-b0511f9d" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-12223dd9" class="fw-medium" value="Abu Bin Ishtiyak">
+            <cl:formdata std:sid="f-data-f91cbced" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-34a7019f" class="text-gray" value="info@softnio.com">
+            <cl:formdata std:sid="f-data-8d5d3c46" row="1" col="1"/>
+          </cl:output>
+          <cl:button std:sid="button-2cdb2919" id="btn2" class="bg-transparent border-0 btn-icon" value="" icon="../../../theme/common/images/com/main/dashboard/icon-more-horizontal.svg">
+            <cl:formdata std:sid="f-data-4920491b" valign="CENTER" height="20" row="0" col="2" rowspan="2" colspan="1"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-e444f823" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-7b9f6b12" id="grp5" class="border-bottom">
+          <cl:verticaldata std:sid="v-data-fbf1b11d" width="480px" height="66px" autosize="none"/>
+          <cl:output std:sid="output-f8195cb5" class="badge-pill badge-dim badge-info rounded-circle text-center" value="SW">
+            <cl:formdata std:sid="f-data-6cb433a3" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-fe75095c" class="fw-medium" value="Sharon Walker">
+            <cl:formdata std:sid="f-data-8037cb6b" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-71c65831" class="text-gray" value="sharon-90@example.com">
+            <cl:formdata std:sid="f-data-f603888a" row="1" col="1"/>
+          </cl:output>
+          <cl:button std:sid="button-e4dfdcda" id="btn3" class="bg-transparent border-0 btn-icon" value="" icon="../../../theme/common/images/com/main/dashboard/icon-more-horizontal.svg">
+            <cl:formdata std:sid="f-data-80df5f95" valign="CENTER" height="20" row="0" col="2" rowspan="2" colspan="1"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-3fe165cf" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-c713580e" id="grp6" class="border-bottom">
+          <cl:verticaldata std:sid="v-data-396b7209" width="480px" height="66px" autosize="none"/>
+          <cl:output std:sid="output-8eddfed3" class="badge-pill badge-dim badge-success rounded-circle text-center" value="GD">
+            <cl:formdata std:sid="f-data-d95f8124" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-6a9dc6fe" class="fw-medium" value="Gloria Oliver">
+            <cl:formdata std:sid="f-data-f3ce3c37" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-fe0e4dcb" class="text-gray" value="gloria_72@example.com">
+            <cl:formdata std:sid="f-data-c10a92e7" row="1" col="1"/>
+          </cl:output>
+          <cl:button std:sid="button-edec6a83" id="btn4" class="bg-transparent border-0 btn-icon" value="" icon="../../../theme/common/images/com/main/dashboard/icon-more-horizontal.svg">
+            <cl:formdata std:sid="f-data-564f677d" valign="CENTER" height="20" row="0" col="2" rowspan="2" colspan="1"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-491ba17c" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-19f8160c" id="grp7" class="border-bottom">
+          <cl:verticaldata std:sid="v-data-361c89a9" width="480px" height="66px" autosize="none"/>
+          <cl:output std:sid="output-6c6355ec" class="badge-pill badge-dim badge-warning rounded-circle text-center" value="PS">
+            <cl:formdata std:sid="f-data-1690065d" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-361c7a10" class="fw-medium" value="Phillip Sullivan">
+            <cl:formdata std:sid="f-data-9ca7731f" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-36763c05" class="text-gray" value="phillip-85@example.com">
+            <cl:formdata std:sid="f-data-b99915c5" row="1" col="1"/>
+          </cl:output>
+          <cl:button std:sid="button-b201d696" id="btn5" class="bg-transparent border-0 btn-icon" value="" icon="../../../theme/common/images/com/main/dashboard/icon-more-horizontal.svg">
+            <cl:formdata std:sid="f-data-c5f3eb3a" valign="CENTER" height="20" row="0" col="2" rowspan="2" colspan="1"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-925f906e" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-f37a3d8d" id="grp8">
+          <cl:verticaldata std:sid="v-data-c1fdc433" width="480px" height="66px" autosize="none"/>
+          <cl:output std:sid="output-9d81f63f" class="badge-pill badge-dim badge-danger rounded-circle text-center" value="HZ">
+            <cl:formdata std:sid="f-data-607042e3" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-c0e95df3" class="fw-medium" value="Hans Zimmer">
+            <cl:formdata std:sid="f-data-1eab6e85" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-b49282e1" class="text-gray" value="Hans@example.com">
+            <cl:formdata std:sid="f-data-1db8ee6a" row="1" col="1"/>
+          </cl:output>
+          <cl:button std:sid="button-7afce1c1" id="btn6" class="bg-transparent border-0 btn-icon" value="" icon="../../../theme/common/images/com/main/dashboard/icon-more-horizontal.svg">
+            <cl:formdata std:sid="f-data-6d2c338a" valign="CENTER" height="20" row="0" col="2" rowspan="2" colspan="1"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-6e40b908" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-1b2a1fa3" spacing="0" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="0"/>
+      </cl:group>
+      <cl:group std:sid="group-fc447aca" id="grp9" class="card card-bordered">
+        <cl:formdata std:sid="f-data-4420b4ad" row="0" col="1"/>
+        <cl:group std:sid="group-9502642e" id="grp10">
+          <cl:verticaldata std:sid="v-data-f71af0d3" width="440px" height="35px"/>
+          <cl:output std:sid="output-ecd6e13d" class="card-title" value="Recent Activities">
+            <cl:formdata std:sid="f-data-00f9bc03" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-867efa25" class="text-primary text-center cursor-pointer" value="View All">
+            <cl:formdata std:sid="f-data-caa595e0" row="0" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-8a870864" top-margin="0px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-4175b581" id="grp11" class="border-bottom">
+          <cl:verticaldata std:sid="v-data-eaf456fb" width="400px" height="66px"/>
+          <cl:output std:sid="output-cf127aca" class="bg-pink text-white rounded-circle text-center" value="AB">
+            <cl:formdata std:sid="f-data-1285eb7a" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-e9bfa081" value="Abu Bin Ishtiyak requested to using the TeamViewer9." ellipsis="true">
+            <cl:formdata std:sid="f-data-d06d6068" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-eb1b60f3" class="text-gray" value="2 hours ago">
+            <cl:formdata std:sid="f-data-a8d480cc" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-8396b882" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-f0cd1368" id="grp12" class="border-bottom">
+          <cl:verticaldata std:sid="v-data-69cb2f0e" width="480px" height="66px" autosize="none"/>
+          <cl:output std:sid="output-c913bb8b" class="bg-azure text-white rounded-circle text-center" value="SW">
+            <cl:formdata std:sid="f-data-e249dcaf" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-3d7c0414" value="Sharon Walker placed a Order." ellipsis="true">
+            <cl:formdata std:sid="f-data-835feb16" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-e4f2d609" class="text-gray" value="2 hours ago">
+            <cl:formdata std:sid="f-data-05ec503d" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-2870b419" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-6883be48" id="grp13" class="border-bottom">
+          <cl:verticaldata std:sid="v-data-136227c1" width="480px" height="66px" autosize="none"/>
+          <cl:output std:sid="output-c33487e4" class="bg-purple text-white rounded-circle text-center" value="GD">
+            <cl:formdata std:sid="f-data-4544b102" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-8d78c340" value="Gloria Oliver got a huge bonus." ellipsis="true">
+            <cl:formdata std:sid="f-data-ad21c6f5" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-478636d0" class="text-gray" value="2 hours ago">
+            <cl:formdata std:sid="f-data-e594dc71" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-5ad1dfe4" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-19f9d38d" id="grp14" class="border-bottom">
+          <cl:verticaldata std:sid="v-data-e7794a54" width="480px" height="66px" autosize="none"/>
+          <cl:output std:sid="output-d8445825" class="bg-indigo text-white rounded-circle text-center" value="PS">
+            <cl:formdata std:sid="f-data-b1908e5d" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-b0be9749" value="Phillip Sullivan is promoted." ellipsis="true">
+            <cl:formdata std:sid="f-data-5315d0b1" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-dfd7209c" class="text-gray" value="2 hours ago">
+            <cl:formdata std:sid="f-data-22098295" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-0a20a728" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-37debda9" id="grp15">
+          <cl:verticaldata std:sid="v-data-d59c4e26" width="480px" height="66px" autosize="none"/>
+          <cl:output std:sid="output-a2dd323b" class="bg-gray text-white rounded-circle text-center" value="HZ">
+            <cl:formdata std:sid="f-data-a9b80a99" row="0" col="0" rowspan="2" colspan="1"/>
+          </cl:output>
+          <cl:output std:sid="output-6464235c" value="Hans Zimmer finished a project." ellipsis="true">
+            <cl:formdata std:sid="f-data-8209e8a4" row="0" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-e246a867" class="text-gray" value="2 hours ago">
+            <cl:formdata std:sid="f-data-413f7249" row="1" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-af00d416" hspace="10px" vspace="0px" top-margin="10px" right-margin="20px" bottom-margin="10px" left-margin="20px">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8eef4394" spacing="0" leftmargin="0" rightmargin="0" topmargin="20" bottommargin="0"/>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-5a469b9a" hspace="20px" vspace="20px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-55385654" spacing="10" leftmargin="10" rightmargin="10" topmargin="10" bottommargin="10"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

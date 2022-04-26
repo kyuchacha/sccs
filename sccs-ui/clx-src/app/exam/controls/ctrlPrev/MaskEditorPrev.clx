@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cb69a08b" version="1.0.3164">
+  <head std:sid="head-2f34ec56">
+    <screen std:sid="screen-bd8d3506" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-6b7ec4c3" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-f31db8c9" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-435798b7" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-e9b3ee2e"/>
+    <cl:appspec title="마스크에디터 관련 속성"/>
+  </head>
+  <body std:sid="body-15a06256">
+    <cl:group std:sid="group-6ce56fa9" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-bb4e9ee5" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-1c4e6730" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-9ef394cf" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-c5976a4d" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-d3a04b7d" id="grpData">
+      <cl:verticaldata std:sid="v-data-2ed3fce4" width="400px" height="646px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="마스크에디터(MaskEditor)는 입력 형식을 지정할 수 있는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-e3a0be2f" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-8ebad580" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-37f32a80" id="opt1" value="[mask = 000000-0000000]&#xD;&#xA;1. 마스크에디터에 숫자,한글,영어를 입력한다.&#xD;&#xA;2. 숫자만 입력된다.">
+          <cl:formdata std:sid="f-data-bcbc6d7d" row="0" col="0"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-e86260bd" id="edm1" mask="000000-0000000">
+          <cl:formdata std:sid="f-data-9238f479" halign="LEFT" valign="CENTER" width="150" row="0" col="1"/>
+        </cl:maskeditor>
+        <cl:output std:sid="output-24b3157b" id="opt2" value="[mask = 000000-0******]&#xD;&#xA;1. 마스크에디터에 숫자를 입력한다.&#xD;&#xA;2. 뒷번호 중 2번째 자리부터 마스킹되서 표시된다.">
+          <cl:formdata std:sid="f-data-7a37ad7b" row="1" col="0"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-d513169c" id="edm2" mask="000000-0******">
+          <cl:formdata std:sid="f-data-681927de" halign="LEFT" valign="CENTER" width="150" row="1" col="1"/>
+        </cl:maskeditor>
+        <cl:output std:sid="output-33a896f4" value="[showClearButton = true]&#xD;&#xA;[buttonFocusable = true]&#xD;&#xA;1. 마스크에디터에 값을 입력한다.&#xD;&#xA;2. 우측에 x 표시가 보인다.&#xD;&#xA;3. Tab 키를 누른다.&#xD;&#xA;4. x 표시로 포커스가 간다.&#xD;&#xA;5. x 표시를 클릭한다.&#xD;&#xA;6. 값이 지워진다.">
+          <cl:formdata std:sid="f-data-a2372bfb" row="4" col="0"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-0e984013" id="mse1" showclearbutton="true" buttonfocusable="true">
+          <cl:formdata std:sid="f-data-ea39d54a" halign="LEFT" valign="CENTER" width="150" row="4" col="1"/>
+        </cl:maskeditor>
+        <cl:output std:sid="output-1d3c2d77" value="[inputLetter =uppercase (대문자)]&#xD;&#xA;1. 마스크에디터에 영어를 입력한다.&#xD;&#xA;2. 대문자로만 입력된다.">
+          <cl:formdata std:sid="f-data-a6c87175" row="2" col="0"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-eb252c22" id="mse2" inputletter="uppercase">
+          <cl:formdata std:sid="f-data-a1abd1a6" halign="LEFT" valign="CENTER" width="150" row="2" col="1"/>
+        </cl:maskeditor>
+        <cl:output std:sid="output-243f9e8c" value="[overwrite = true]&#xD;&#xA;1. 마스크에디터에 값을 입력한다.&#xD;&#xA;2. 다시 왼쪽에서부터 다른 값을 입력한다.&#xD;&#xA;3. 기존 값은 지워지고 새로운 값이 입력된다.">
+          <cl:formdata std:sid="f-data-0de924c3" row="3" col="0"/>
+        </cl:output>
+        <cl:maskeditor std:sid="m-editor-a1fc61eb" id="mse3" overwrite="true">
+          <cl:formdata std:sid="f-data-5012ff58" halign="LEFT" valign="CENTER" width="150" row="3" col="1"/>
+        </cl:maskeditor>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="60" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-45e13ef7" id="grp2" class="form-box">
+        <cl:formdata std:sid="f-data-a2db7b11" row="2" col="0"/>
+        <cl:output std:sid="output-09125d03" style="text-align:center;" class="cl-form-group" value="Mask 종류">
+          <cl:formdata std:sid="f-data-4376eb31" row="0" col="0" rowspan="1" colspan="2"/>
+        </cl:output>
+        <cl:output std:sid="output-82016ef6" style="text-align:center;" class="cl-form-group" value="설명">
+          <cl:formdata std:sid="f-data-5b9e8d30" row="1" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-ae514c4b" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="숫자 문자 입력">
+          <cl:formdata std:sid="f-data-5918cc5d" row="2" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-5b1d6f3a" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="영문 소문자">
+          <cl:formdata std:sid="f-data-d27c1c2f" row="3" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-c107a029" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="영문 대문자">
+          <cl:formdata std:sid="f-data-d6bcf37a" row="4" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-9752e693" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="영문 소문자 숫자">
+          <cl:formdata std:sid="f-data-95e17d20" row="5" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-1955ad31" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="영문 대문자 숫자">
+          <cl:formdata std:sid="f-data-18f6e34d" row="6" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-800fcf2b" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="영문 대소문자">
+          <cl:formdata std:sid="f-data-41c95051" row="7" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-82f63a96" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="영문 대소문자 숫자">
+          <cl:formdata std:sid="f-data-f670e225" row="8" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-91ed5495" style="background-color:#ffffff; padding-left:10px; text-align:left;" class="cl-form-group" value="(0-9a-zA-Z)를 *로 변환하여 보여줍니다. (시크릿 문자)">
+          <cl:formdata std:sid="f-data-3d90e8f1" row="9" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-6a639a10" style="text-align:center;" class="cl-form-group" value="포맷">
+          <cl:formdata std:sid="f-data-3454d00a" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f6fd210b" style="padding-right:20px;" class="cl-form-group" value="a">
+          <cl:formdata std:sid="f-data-559e02ae" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-ada7d063" style="padding-right:20px;" class="cl-form-group" value="A">
+          <cl:formdata std:sid="f-data-2b227516" row="4" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a57b93ec" style="padding-right:20px;" class="cl-form-group" value="z">
+          <cl:formdata std:sid="f-data-c7e85f70" row="5" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-b3524a3b" style="padding-right:20px;" class="cl-form-group" value="Z">
+          <cl:formdata std:sid="f-data-c87c6fcf" row="6" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-3337f90c" style="padding-right:20px;" class="cl-form-group" value="x">
+          <cl:formdata std:sid="f-data-e21df716" row="7" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-b4dbbdde" style="padding-right:20px;" class="cl-form-group" value="X">
+          <cl:formdata std:sid="f-data-ab38acf9" row="8" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-c6249206" style="padding-right:20px;" class="cl-form-group" value="*">
+          <cl:formdata std:sid="f-data-4aaa348c" row="9" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e21a8567" style="padding-right:20px;" class="cl-form-group" value="0">
+          <cl:formdata std:sid="f-data-7bfec94d" row="2" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-4bfbe705" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-be1fd34f" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="288" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="200"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-f27eb523"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

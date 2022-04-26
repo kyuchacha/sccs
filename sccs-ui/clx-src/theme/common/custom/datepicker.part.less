@@ -1,0 +1,49 @@
+@import "../settings.part.less";
+
+/* 데이트 피커 루트 스타일 */
+.cl-container.datepickers {
+	background-color: #ffffff;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	
+	/* 데이트 피커 버튼 스타일 */
+	.cl-button.datepicker-button {
+		background-image: url("../images/button/btn_input_calendar.png");
+		background-repeat: no-repeat;
+		background-color: transparent;
+		background-position: center;
+		background-size: 16px 16px;
+		border: none;
+		border-radius: 0;
+		
+	}
+	
+	/* 데이트 피커 스타일 */
+	.cl-dateinput.datepicker {
+		background-color: transparent;
+		border: none;
+		text-align: center;
+		min-width : 0px !important;
+		padding: 0px;
+		
+		.cl-text {
+			padding : 0px 0px 0px 0px; 
+		}
+	}
+	
+	/* 데이트 피커 구분선 스타일 */
+	.cl-formlayout-vertical-separator.datepicker {
+		background-color: @default-border-color;
+	}
+}
+
+/* 그리드 내 데이트 피커 스타일 */
+.cl-grid {
+	.cl-grid-cell {
+		.cl-container.datepickers {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0px;
+		}
+	}
+}

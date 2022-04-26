@@ -1,0 +1,185 @@
+@import "../custom-settings.part.less";
+
+ /* 탭 폴더 - disabled */
+.cl-tabfolder.cl-disabled {
+	.cl-tabfolder-header {
+		.cl-tabfolder-item {
+			background-color: @tab-item-disabled-background-color;
+			border-color: @tab-item-disabled-border-color;
+			color: @tab-item-disabled-text-color;
+			
+			&.cl-selected {
+				background-color: @tab-item-disabled-selected-background-color;
+				border-color: @tab-item-disabled-selected-border-color;
+				color: @tab-item-disabled-selected-text-color;
+			}
+		}
+	}
+	
+	.cl-tabfolder-body {
+		background-color: @tab-disabled-background-color;
+		border-color: @tab-disabled-border-color;
+		color: @tab-disabled-text-color;
+	}
+}
+
+/* 탭 폴더 */
+.cl-tabfolder {
+	font: @font-base;
+	color: @tab-text-color;
+
+	/* 헤더 */
+	.cl-tabfolder-header {
+		height: @tab-item-height;
+		
+		&.cl-top {
+			background-image: linear-gradient(@tab-border-color, @tab-border-color);
+			background-size: 100% 1px;
+			background-repeat: no-repeat;
+			background-position: 0px 100%;
+			
+			.cl-tabfolder-item {
+				&.cl-selected{
+					border-bottom-color: @transparent !important;
+				}
+			}
+		}
+		
+		&.cl-bottom {
+			background-image: linear-gradient(@tab-border-color, @tab-border-color);
+			background-size: 100% 1px;
+			background-repeat: no-repeat;
+			background-position: 100% 0px;
+			
+			.cl-tabfolder-item {
+				&.cl-selected{
+					border-top-color: @transparent !important;
+				}
+			}
+		}
+		
+		.cl-tabfolder-item + .cl-tabfolder-item {
+			margin-left: -1px;
+		}
+		
+		/* 스크롤 버튼 공통 */
+		.cl-tabfolder-prev,
+		.cl-tabfolder-next {
+			background-color: @tab-item-background-color;
+			border: @tab-item-border-base !important;
+			width: @tab-item-height;
+
+			&.cl-disabled {
+				background-color: @tab-item-background-color;
+			}
+		}
+		
+		/* 이전으로 스크롤 버튼 */
+		.cl-tabfolder-prev {
+			background-image: url("../images/controls/tabfolder/prev-button.png");
+
+			/* 이전으로 스크롤 버튼 - disabled */
+			&.cl-disabled {
+				background-image: url("../images/controls/tabfolder/prev-button-disabled.png");
+			}
+		}
+
+		/* 다음으로 스크롤 버튼 */
+		.cl-tabfolder-next {
+			background-image: url("../images/controls/tabfolder/next-button.png");
+
+			/* 다음으로 스크롤 버튼 - disabled */
+			&.cl-disabled {
+				background-image: url("../images/controls/tabfolder/next-button-disabled.png");
+			}
+		}
+	
+		/* 탭 헤더 아이템 */
+		.cl-tabfolder-item {
+			background-color: @tab-item-background-color;
+			border: @tab-item-border-base !important;
+
+			/* 탭 아이템 체크 박스 */
+			.cl-checkbox {
+				.cl-checkbox-icon {
+					background-image: url("../images/controls/checkbox/checkbox.png");
+				}
+				
+				&.cl-checked {
+					.cl-checkbox-icon {
+						background-image: url("../images/controls/checkbox/checkbox-checked.png");
+					}
+				}
+			}
+
+			/* 탭 헤더 아이템 닫기 버튼 */
+			.cl-tabfolder-button {
+				background-image: url("../images/controls/tabfolder/close-button.png");
+				/*background-size: 5px;*/
+				background-position: center;
+				width: 15px;
+				height: 15px;
+			}
+
+			/* 탭 헤더 아이템 - 선택됨 */
+			&.cl-selected{
+				background-color: @tab-item-selected-background-color;
+				border-color: @tab-item-border-color;
+				color: @tab-item-selected-text-color;
+
+				/* 탭 헤더 아이템 닫기 버튼 - 선택 됨 */
+				.cl-tabfolder-button {
+					 background-image: url("../images/controls/tabfolder/close-button-selected.png");
+				}
+			}
+	
+			/* 탭 헤더 아이템 - 호버 */
+			&:not(.cl-selected):hover {
+				background-color: @tab-item-hover-background-color;
+				color: @tab-item-hover-text-color;
+			}
+
+			/* 비활성 탭 아이템 */
+			&.cl-disabled {
+				background-color: @tab-item-disabled-background-color;
+				color: @tab-item-disabled-text-color;
+				
+				.cl-checkbox {
+					.cl-checkbox-icon {
+						background-image: url("../images/controls/checkbox/checkbox-disabled.png");
+						
+						&.cl-checked {
+							.cl-checkbox-icon {
+								background-image: url("../images/controls/checkbox/checkbox-checked-disabled.png");
+							}
+						}
+					}
+				}
+				
+				&:not(.cl-selected):hover {
+					background-color: @tab-item-disabled-background-color;
+					color: @tab-item-disabled-text-color;
+				}	
+				
+				.cl-tabfolder-button {
+					background-image: url("../images/controls/tabfolder/close-button-disabled.png");
+				}
+			}
+		}
+	}
+	
+	/* 탭폴더 바디 */
+	.cl-tabfolder-body {
+		background-color: @tab-background-color;
+		color: @tab-text-color;
+		border: @tab-border-base;
+		
+		&:first-child {
+			border-bottom: none;
+		}
+		
+		&:last-child {
+			border-top: none;
+		}
+	}
+}

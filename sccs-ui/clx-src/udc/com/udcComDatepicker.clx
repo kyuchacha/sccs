@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f7d9634c" version="1.0.0.0">
+  <head std:sid="head-ab53b879">
+    <title>udcComDatepicker</title>
+    <screen std:sid="screen-cb68671c" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-6207ec39" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-fc1f6778" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-8278f7f7"/>
+    <cl:appspec title="공통_시작일자종료일자선택UdcComDatepicker">
+      <cl:property name="delimiter" type="string" default="," bindable="true" std:desc="다중 선택된 값을 지정하거나 가져올 때의 구분자를 반환합니다."/>
+      <cl:property name="format" type="string" default="YYYYMMDD" bindable="true" std:desc="날짜를 표기 하는 형식을 반환합니다."/>
+      <cl:property name="mask" type="string" default="YYYY-MM-DD" bindable="true" std:desc="입력 받을 날짜의 형식을 반환합니다."/>
+      <cl:property name="value" type="string" bindable="true" std:desc="시작,종료 날짜 값"/>
+      <cl:property name="title" type="string" bindable="true" std:desc="데이트 피커 컨텐츠 타이틀 값. 컨트롤의 id가 입력되면 해당 컨트롤의 fieldLabel 또는 value를 타이틀로 사용합니다."/>
+      <cl:property name="requiredBgn" type="boolean" default="false" std:desc="시작일자 필수입력체크 여부"/>
+      <cl:property name="requiredEnd" type="boolean" default="false" std:desc="종료일자 필수입력체크 여부"/>
+      <cl:event name="before-value-change" type="cpr.events.CValueChangeEvent" std:desc="날짜가 선택되어 그 값이 저장되기 전에 발생하는 이벤트"/>
+      <cl:event name="value-change" type="cpr.events.CValueChangeEvent" std:desc="날짜가 선택되어 그 값이 저장되었을 때 발생하는 이벤트"/>
+      <cl:event name="open" type="cpr.events.CUIEvent" std:desc="날짜 선택 다이얼로그가 열렸을 때 발생하는 이벤트"/>
+      <cl:event name="close" type="cpr.events.CUIEvent" std:desc="날짜 선택 다이얼로그가 닫혔을 때 발생하는 이벤트"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-1a659253" style="top:0px; left:0px; width:250px; background-image:none; height:28px;" class="datepickers">
+    <cl:listener std:sid="listener-e896d3a7" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:listener std:sid="listener-fe0a25ff" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-ec2296b6" name="before-draw" handler="onBodyBeforeDraw"/>
+    <cl:dateinput std:sid="d-input-c6cc2b6e" id="dtiBgn" class="datepicker left" fieldLabel="시작일자" readonly="false" hidebutton="true" placeholder="시작일자">
+      <cl:listener std:sid="listener-faaa9fff" name="dblclick" handler="onDatepickerClick"/>
+      <cl:listener std:sid="listener-9fadb7a4" name="value-change" handler="onDtiBgnValueChange"/>
+      <cl:apppropbind property="format" category="PROPERTY" app-property="format"/>
+      <cl:apppropbind property="mask" category="PROPERTY" app-property="mask"/>
+      <cl:formdata std:sid="f-data-101be518" halign="FILL" valign="FILL" width="50" height="20" row="0" col="0"/>
+    </cl:dateinput>
+    <cl:dateinput std:sid="d-input-62b17b26" id="dtiEnd" class="datepicker right" fieldLabel="종료일자" readonly="false" hidebutton="true" placeholder="종료일자">
+      <cl:listener std:sid="listener-60377915" name="dblclick" handler="onDatepickerClick"/>
+      <cl:listener std:sid="listener-122aacb5" name="value-change" handler="onDtiEndValueChange"/>
+      <cl:apppropbind property="format" category="PROPERTY" app-property="format"/>
+      <cl:apppropbind property="mask" category="PROPERTY" app-property="mask"/>
+      <cl:formdata std:sid="f-data-69e06beb" halign="FILL" valign="FILL" width="50" height="20" row="0" col="2"/>
+    </cl:dateinput>
+    <cl:button std:sid="button-d0164246" id="btnOpen" class="datepicker-button" value="">
+      <cl:listener std:sid="listener-c030fd4f" name="click" handler="onBtnOpenClick"/>
+      <cl:attribute name="btnAuth" value="S"/>
+      <cl:formdata std:sid="f-data-2a3c535b" halign="FILL" valign="FILL" width="20" height="20" row="0" col="4"/>
+    </cl:button>
+    <cl:output std:sid="output-0e4f344e" id="otp1" style="border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none; text-align:center;" class="datepicker center" value="~">
+      <cl:formdata std:sid="f-data-9be03258" row="0" col="1"/>
+    </cl:output>
+    <cl:img std:sid="image-616640be" id="img1" style="background-color:#CCCCCC;">
+      <cl:formdata std:sid="f-data-4ff22614" halign="LEFT" valign="CENTER" width="1" height="12" row="0" col="3"/>
+    </cl:img>
+    <cl:formlayout std:sid="f-layout-4da0dfac" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" vseparatorclass="datepicker" vseparatorwidth="1">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="16" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="5" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

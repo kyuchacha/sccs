@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-06f83871" version="1.0.3642">
+  <head std:sid="head-2c8113b8">
+    <screen std:sid="screen-e1cf82ec" id="default" name="default" minwidth="1200px" width="1200px" height="768px"/>
+    <screen std:sid="screen-4cdcaf09" id="tablet" name="tablet" minwidth="850px" maxwidth="1199px" width="850px" height="768px"/>
+    <screen std:sid="screen-9bb881b2" id="mobile" name="mobile" maxwidth="849px" width="544px" height="768px"/>
+    <cl:model std:sid="model-b67b9cdb"/>
+    <cl:appspec title="다이얼로그로 호출된 화면"/>
+  </head>
+  <body std:sid="body-9ffc3cd4">
+    <cl:output std:sid="output-ce17f3ba" id="opt1" style="font-size:32px; text-align:center;" value="다이얼로그 페이지&#xD;&#xA;(ESC를 눌러서 닫을 수 있습니다.)">
+      <cl:xylayoutdata std:sid="xyl-data-87728dc6" width="500px" height="120px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+    </cl:output>
+    <cl:button std:sid="button-83035c25" id="btnDialogClose" value="다이얼로그 닫기">
+      <cl:xylayoutdata std:sid="xyl-data-92394633" bottom="50px" width="200px" height="50px" horizontalAnchor="CENTER" verticalAnchor="BOTTOM"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-22ab8907"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

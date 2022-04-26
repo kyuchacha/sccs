@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-f3ddac42"/>
+    <cl:appspec dev-comment="templates/SmplTmpl.clx 템플릿 사용하여 작성 함.&#xA;templates/CTmpl.clx 템플릿 사용하여 작성 함." title="통신 예제"/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:listener std:sid="listener-36b8a3e4" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-d1f5be83" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-01a0e506" width="1320px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3acdc2bb" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-80e24452" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-3e351495"/>
+    </cl:group>
+    <cl:group std:sid="group-72e4444f" id="grpData">
+      <cl:verticaldata std:sid="v-data-dd43b459" width="1320px" height="2056px" autosize="height"/>
+      <cl:group std:sid="group-b3d8d80f" id="grp1">
+        <cl:verticaldata std:sid="v-data-d00c67f8" width="1270px" height="150px" autosize="height"/>
+        <cl:group std:sid="group-7a48379f" id="grp3">
+          <cl:verticaldata std:sid="v-data-5f5680c1" width="1270px" height="40px" autosize="height"/>
+          <cl:output std:sid="output-bd633362" style="font-weight:bold; padding-left:1rem; font-size:2.5rem;" value="통신 예제">
+            <cl:formdata std:sid="f-data-d357b6a6" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3535aed2" scrollable="false" hspace="5px" vspace="5px" right-margin="50px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-36cb926d" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="이 페이지는 메인 앱과 임베디드 페이지 간, 메인 앱과 팝업창 간의 통신을 구현한 샘플입니다.">
+          <cl:verticaldata std:sid="v-data-cb26d0fa" width="1210px" height="46px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-7c14d27b" spacing="30" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-36fd7cc9" id="grp2">
+        <cl:verticaldata std:sid="v-data-28f18b44" width="1270px" height="345px" autosize="height"/>
+        <cl:output std:sid="output-d78c906d" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="시나리오">
+          <cl:verticaldata std:sid="v-data-0ccc2823" width="100px" height="40px"/>
+        </cl:output>
+        <cl:output std:sid="output-5ed83aea" id="ipbScenario" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="1. 임베디드 페이지에 앱 영역 인풋박스에 값을 입력 후 보내기 버튼을 클릭합니다.&#xD;&#xA;2. HTML페이지 아웃풋박스에 해당 값이 출력되는지 확인합니다.&#xD;&#xA;3. HTML페이지 인풋박스에 값을 입력 후 보내기 버튼을 클릭합니다.&#xD;&#xA;4. 앱 영역 아웃풋박스에 해당 값이 출력되는지 확인합니다.&#xD;&#xA;5. window 팝업창 영역에 window 팝업 새 창 열기 버튼을 클릭해서 팝업을 엽니다.&#xD;&#xA;6. 앱 영역 인풋박스에 값을 입력 후 보내기 버튼을 클릭합니다.&#xD;&#xA;7. 팝업창 아웃풋박스에 해당 값이 출력되는지 확인합니다.&#xD;&#xA;8. 팝업창 인풋박스에 값을 입력 후 보내기 버튼을 클릭합니다.&#xD;&#xA;9. 앱 영역 아웃풋박스에 해당 값이 출력되는지 확인합니다.">
+          <cl:verticaldata std:sid="v-data-560570a9" width="1210px" height="200px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-4fffe72b" spacing="30" topmargin="10" bottommargin="30"/>
+      </cl:group>
+      <cl:group std:sid="group-17cf44cc" id="grpFunction">
+        <cl:verticaldata std:sid="v-data-60df3a1f" width="1270px" height="1200px" autosize="height"/>
+        <cl:group std:sid="group-38132eaf" id="grpFuncFloating">
+          <cl:attribute name="floating-header" value="true"/>
+          <cl:verticaldata std:sid="v-data-bf7c3b0a" width="1270px" height="1200px" autosize="height"/>
+          <cl:output std:sid="output-1688a0bc" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="기능확인">
+            <cl:verticaldata std:sid="v-data-7f4968b6" width="1270px" height="40px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-c852421b" id="grp11" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#dedede; border-right-width:1px; border-left-color:#dedede; border-right-color:#dedede; border-left-width:1px; border-top-style:solid; background-color:#F0F0F0; border-left-style:solid; border-bottom-width:1px; border-top-color:#dedede; border-bottom-style:solid;">
+            <cl:verticaldata std:sid="v-data-153b5759" width="1210px" height="1200px" autosize="height"/>
+            <cl:group std:sid="group-498f236f" id="grp13" style="border-right-style:solid; border-bottom-color:darkGray; border-left-style:solid; border-left-color:darkGray; border-top-color:darkGray; border-bottom-style:solid; border-right-color:darkGray; border-top-style:solid;" fieldLabel="임베디드 앱">
+              <cl:verticaldata std:sid="v-data-8779e0ff" width="1320px" height="337px" autosize="none"/>
+              <cl:group std:sid="group-0a5e11aa" id="grp14" fieldLabel="임베디드 앱 통신">
+                <cl:formdata std:sid="f-data-5e69730b" row="2" col="0"/>
+                <cl:group std:sid="group-f2960c21" id="grp16">
+                  <cl:formdata std:sid="f-data-e8c77d1c" row="0" col="0"/>
+                  <cl:output std:sid="output-1c1179ba" style="font-weight:bold;" value="앱 영역">
+                    <cl:xylayoutdata std:sid="xyl-data-b48db500" top="10px" left="50px" width="120px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                  </cl:output>
+                  <cl:output std:sid="output-53c42b2a" id="mainEmbAppOpt" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; padding-left:5px; border-left-color:black; border-right-color:black; border-left-width:1px; border-top-style:solid; border-left-style:solid; border-bottom-width:1px; border-top-color:black; border-bottom-style:solid;" value="임베디드 앱에서 값 받아오기">
+                    <cl:xylayoutdata std:sid="xyl-data-de56f743" top="130px" left="50px" width="250px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                  </cl:output>
+                  <cl:inputbox std:sid="i-box-36c2b171" id="mainEmbAppIpb" placeholder="전송할 값을 입력해주세요.">
+                    <cl:xylayoutdata std:sid="xyl-data-9b706f55" top="90px" left="50px" width="250px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                  </cl:inputbox>
+                  <cl:button std:sid="button-b822b252" id="btnMsgEmbApp" value="보내기 버튼">
+                    <cl:listener std:sid="listener-aa84f95a" name="click" handler="onBtnMsgEmbAppClick"/>
+                    <cl:xylayoutdata std:sid="xyl-data-f5b3ca20" top="90px" left="310px" width="100px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                  </cl:button>
+                  <cl:xylayout std:sid="xylayout-b48e8748"/>
+                </cl:group>
+                <cl:embeddedapp std:sid="e-app-190edc2b" id="embApp" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" src="./embeddedApp.clx">
+                  <cl:listener std:sid="listener-7cb4e602" name="load" handler="onEmbAppLoad"/>
+                  <cl:formdata std:sid="f-data-179e07df" row="0" col="1"/>
+                </cl:embeddedapp>
+                <cl:formlayout std:sid="f-layout-65520656" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="600" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="400" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:udc std:sid="ud-control-dd807029" id="comformtitle3" type="udc.com.comFormTitle">
+                <cl:formdata std:sid="f-data-fecbd495" row="1" col="0"/>
+                <cl:property name="ctrl" value="grp14" type="control"/>
+              </cl:udc>
+              <cl:output std:sid="output-82380571" value="setAppProperty 함수를 사용해 메인 앱과 임베디드 앱의 통신을 구현한 샘플입니다.">
+                <cl:formdata std:sid="f-data-62f2d9aa" row="0" col="0"/>
+              </cl:output>
+              <cl:formlayout std:sid="f-layout-4de48c8f" scrollable="false" hspace="5px" vspace="5px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+                <cl:rows length="25" unit="PIXEL"/>
+                <cl:rows length="25" unit="PIXEL"/>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:group std:sid="group-170bf9f8" id="grp4" style="border-right-style:solid; border-bottom-color:darkGray; border-left-style:solid; border-left-color:darkGray; border-top-color:darkGray; border-bottom-style:solid; border-right-color:darkGray; border-top-style:solid;" fieldLabel="임베디드 페이지">
+              <cl:verticaldata std:sid="v-data-cbd157b7" width="1320px" height="337px" autosize="none"/>
+              <cl:udc std:sid="ud-control-919bb6a0" id="comformtitle2" type="udc.com.comFormTitle">
+                <cl:formdata std:sid="f-data-3dd4ddf4" row="1" col="0"/>
+                <cl:property name="ctrl" value="grp6" type="control"/>
+              </cl:udc>
+              <cl:group std:sid="group-7eeae0df" id="grp5">
+                <cl:formdata std:sid="f-data-31e901cc" row="2" col="0"/>
+                <cl:group std:sid="group-501fbd44" id="grp6" fieldLabel="임베디드 페이지 통신">
+                  <cl:formdata std:sid="f-data-43ce417e" row="0" col="0"/>
+                  <cl:group std:sid="group-0b5ce898" id="grp8">
+                    <cl:formdata std:sid="f-data-f093d410" row="0" col="0"/>
+                    <cl:output std:sid="output-04038e57" style="font-weight:bold;" value="앱 영역">
+                      <cl:xylayoutdata std:sid="xyl-data-3a4f64b3" top="10px" left="50px" width="120px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                    </cl:output>
+                    <cl:output std:sid="output-844f3abd" id="mainEmbPgOpt" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; padding-left:5px; border-left-color:black; border-right-color:black; border-left-width:1px; border-top-style:solid; border-left-style:solid; border-bottom-width:1px; border-top-color:black; border-bottom-style:solid;" value="임베디드 페이지에서 값 받아오기">
+                      <cl:xylayoutdata std:sid="xyl-data-54bc1ad6" top="130px" left="50px" width="250px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-953498fe" id="mainEmbPgIpb" placeholder="전송할 값을 입력해주세요.">
+                      <cl:xylayoutdata std:sid="xyl-data-92a78a8e" top="90px" left="50px" width="250px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                    </cl:inputbox>
+                    <cl:button std:sid="button-90631eb4" id="btnMsgEmbPg" value="보내기 버튼">
+                      <cl:listener std:sid="listener-0402774a" name="click" handler="onBtnMsgEmbPgClick"/>
+                      <cl:xylayoutdata std:sid="xyl-data-001d0181" top="90px" left="310px" width="100px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                    </cl:button>
+                    <cl:xylayout std:sid="xylayout-582d8916"/>
+                  </cl:group>
+                  <cl:embeddedpage std:sid="e-page-02ef6c1c" id="embPage" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" src="./embeddedPage.html">
+                    <cl:listener std:sid="listener-5b971bda" name="load" handler="onEmbPageLoad"/>
+                    <cl:formdata std:sid="f-data-ecb9ade5" row="0" col="1"/>
+                  </cl:embeddedpage>
+                  <cl:formlayout std:sid="f-layout-b48b47be" scrollable="false" hspace="5px" vspace="5px" top-margin="10px" right-margin="0px" bottom-margin="10px" left-margin="0px">
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:columns length="600" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                    <cl:columns length="400" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                    <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  </cl:formlayout>
+                </cl:group>
+                <cl:formlayout std:sid="f-layout-e562ce6c" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:output std:sid="output-c5e9bffb" value="setPageProperty 함수를 사용해 메인 앱과 임베디드 페이지 간의 통신을 구현한 샘플입니다.">
+                <cl:formdata std:sid="f-data-402b1f06" row="0" col="0"/>
+              </cl:output>
+              <cl:formlayout std:sid="f-layout-9206f2c7" scrollable="false" hspace="5px" vspace="5px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+                <cl:rows length="25" unit="PIXEL"/>
+                <cl:rows length="25" unit="PIXEL"/>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:group std:sid="group-565271f8" id="grp10" style="border-right-style:solid; border-bottom-color:darkGray; border-left-style:solid; border-left-color:darkGray; border-top-color:darkGray; border-bottom-style:solid; border-right-color:darkGray; border-top-style:solid;" fieldLabel="window 팝업창">
+              <cl:verticaldata std:sid="v-data-215cffb7" width="1320px" height="337px" autosize="none"/>
+              <cl:udc std:sid="ud-control-c56210cb" id="comformtitle1" type="udc.com.comFormTitle">
+                <cl:formdata std:sid="f-data-c6f4be1c" row="1" col="0"/>
+                <cl:property name="ctrl" value="grp12" type="control"/>
+              </cl:udc>
+              <cl:group std:sid="group-109dd57f" id="grp12" fieldLabel="window 팝업창 통신">
+                <cl:formdata std:sid="f-data-3e486840" row="2" col="0"/>
+                <cl:button std:sid="button-448682ba" id="btnPopUp" value="새 창 열기">
+                  <cl:listener std:sid="listener-8e923870" name="click" handler="onBtnPopUpClick"/>
+                  <cl:xylayoutdata std:sid="xyl-data-0c83ffdd" top="100px" left="644px" width="180px" height="70px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:button>
+                <cl:inputbox std:sid="i-box-613c5825" id="mainWindowIpb" placeholder="전송할 값을 입력해주세요.">
+                  <cl:xylayoutdata std:sid="xyl-data-ec5ccd3a" top="100px" left="50px" width="250px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:inputbox>
+                <cl:output std:sid="output-61a71996" id="mainWindowOpt" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; padding-left:5px; border-left-color:black; border-right-color:black; border-left-width:1px; border-top-style:solid; border-left-style:solid; border-bottom-width:1px; border-top-color:black; border-bottom-style:solid;" value="window 창에서 값 받아오기">
+                  <cl:xylayoutdata std:sid="xyl-data-03283028" top="140px" left="50px" width="250px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:output>
+                <cl:button std:sid="button-c130b556" id="btnMsgWindow" value="보내기 버튼">
+                  <cl:listener std:sid="listener-6a8254b3" name="click" handler="onBtnMsgWindowClick"/>
+                  <cl:xylayoutdata std:sid="xyl-data-3738c3b2" top="100px" left="310px" width="100px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:button>
+                <cl:output std:sid="output-5f9bfd34" style="font-weight:bold;" value="앱 영역">
+                  <cl:xylayoutdata std:sid="xyl-data-4d4549f9" top="20px" left="50px" width="120px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:output>
+                <cl:output std:sid="output-d1059e85" style="font-weight:bold;" value="window 팝업창">
+                  <cl:xylayoutdata std:sid="xyl-data-0ea8b72a" top="20px" left="620px" width="120px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+                </cl:output>
+                <cl:xylayout std:sid="xylayout-9d98f28a"/>
+              </cl:group>
+              <cl:output std:sid="output-f9ecb613" value="window.postMessage 함수를 사용해 메인 앱과 window 팝업창 간의 통신을 구현한 샘플입니다.">
+                <cl:formdata std:sid="f-data-47611e3b" row="0" col="0"/>
+              </cl:output>
+              <cl:formlayout std:sid="f-layout-18c7a437" scrollable="false" hspace="5px" vspace="5px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+                <cl:rows length="25" unit="PIXEL"/>
+                <cl:rows length="25" unit="PIXEL"/>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-93d454ee" leftmargin="30" rightmargin="30" topmargin="5" bottommargin="10"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-216b8a05" bottommargin="30"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-010e6b4c"/>
+      </cl:group>
+      <cl:output std:sid="output-35ca5e35" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="주요코드">
+        <cl:verticaldata std:sid="v-data-11eef6ad" width="1210px" height="40px" autosize="none"/>
+      </cl:output>
+      <cl:group std:sid="group-039b282d" id="grp15">
+        <cl:verticaldata std:sid="v-data-af83974e" width="1270px" height="350px" autosize="height"/>
+        <cl:group std:sid="group-ab27f594" id="grp7">
+          <cl:verticaldata std:sid="v-data-4c46d89c" width="1210px" height="310px" autosize="height"/>
+          <cl:group std:sid="group-0f31d2b7" id="grp9" class="form-box">
+            <cl:formdata std:sid="f-data-1e958806" row="0" col="0"/>
+            <cl:udc std:sid="ud-control-593e2675" id="ace1" type="udc.tmp.Ace">
+              <cl:listener std:sid="listener-e26aeb11" name="afterLoad" handler="onAce1AfterLoad"/>
+              <cl:verticaldata std:sid="v-data-9d1414d6" width="300px" height="300px" autosize="height"/>
+            </cl:udc>
+            <cl:verticallayout std:sid="v-layout-0e931855"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-37f3904b" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8f1d189a" spacing="20" leftmargin="30" rightmargin="30" topmargin="0" bottommargin="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8031eb1c" leftmargin="20" rightmargin="30" topmargin="30" bottommargin="30"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

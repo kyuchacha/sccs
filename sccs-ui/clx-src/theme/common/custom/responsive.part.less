@@ -1,0 +1,139 @@
+.cl-container.form-innr {
+	.cl-layout-wrap:not(.cl-first-row) {
+		border-top: 1px solid #eaeaea;
+	}
+	
+	.cl-container.collapsed {
+		.cl-formlayout-horizontal-separator {
+			background-color: transparent;
+		}
+	}
+}
+
+.cl-radiobutton.radio-eval {
+	.cl-radiobutton-item {
+		text-align: center;
+		
+		&:not(.cl-first-column) {
+			border-left: 1px solid #eaeaea;
+		}
+	}
+	
+	&.no-text {
+		font-size: 0px;
+		.cl-radiobutton-item {
+			.cl-text {
+				padding: 0px;
+			}
+		}
+	}
+}
+
+.cl-container.collapsed {
+	.cl-radiobutton.radio-eval {
+		.cl-radiobutton-item {
+			border: none;
+		}
+		
+		&.no-text {
+			.cl-radiobutton-item {
+				font-size: 14px;
+				text-align: left;
+				
+				.cl-text {
+					padding-left: 3px;
+				}
+			}
+		}
+	}
+	
+	.cl-output.text-center {
+		text-align: left !important;
+	}
+}
+
+.cl-radiobutton.radio-btns {
+	.cl-radiobutton-item {
+		border-radius: 35px;
+		border: 1px solid #eaeaea;
+		text-align: center;
+		
+		.cl-text {
+			padding: 0px;
+		}
+		
+		.cl-icon-wrapper,
+		.cl-radiobutton-icon {
+			width: 0px;
+			margin: 0px;
+		}
+		
+		&.cl-selected {
+			background-color: #444444;
+			color: #ffffff;
+		}
+	}
+}
+
+.cl-container.table {
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	
+	.cl-formlayout-row-shade.table-header {
+		background-color: #F6FBFF;
+	}
+	
+	.cl-control.table-header-cell {
+		text-align: center;
+	}
+	
+	.cl-container.table-row {
+		border-top: 1px solid #eaeaea;
+		
+		.cl-control.table-cell {
+			
+		}
+		
+		.cl-button.btn-expander {
+			background-color: transparent;
+			
+			&:before {
+				content: ">";
+				display: block;
+				position: absolute;
+				color: #333333;
+				left: calc(50% - 5px);
+			    top: calc(50% - 8px);
+			    width: 10px;
+			    height: 10px;
+			    text-align: center;
+			}
+		}
+		
+		&.selected {
+			background-color: #D9E3F2;
+		}
+	}
+	
+	.cl-container.table-accordion-row {
+		border-top: 1px solid #eaeaea;
+
+		.cl-output.title {
+			font-size: 16px;
+			font-weight: 600;
+		}
+			
+		.cl-output.label {
+			font-weight: 500;
+		}
+		
+		.cl-output:not(.label):not(.title) {
+			color: #999999;
+		}
+	}
+	
+	.cl-formlayout-horizontal-separator,
+	.cl-formlayout-vertical-separator {
+		background-color: #eaeaea;
+	}
+}

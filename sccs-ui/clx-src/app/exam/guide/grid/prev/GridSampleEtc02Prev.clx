@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-91e059a4" version="1.0.0.0">
+  <head std:sid="head-9c9cc893">
+    <title>GridSampleEtc02Prev</title>
+    <screen std:sid="screen-a4c554b4" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-7281f7a7" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-ace01854" id="tablet" name="tablet" minwidth="500px" maxwidth="1019px" width="500px" height="667px"/>
+    <screen std:sid="screen-ca881565" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-46eeb93e">
+      <cl:dataset std:sid="d-set-7b0e574d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b7e18eb7" name="gbnCd"/>
+          <cl:datacolumn std:sid="d-column-5c3a5f76" name="gbnName" datatype="expression" expression="switch(gbnCd) {&#xD;&#xA;case &quot;END&quot; : &quot;완료&quot;&#xD;&#xA;case &quot;ING&quot; : &quot;진행중&quot;&#xD;&#xA;case &quot;REQ&quot; : &quot;요청&quot;&#xD;&#xA;}"/>
+          <cl:datacolumn std:sid="d-column-2cb1e59c" name="bgcolor"/>
+          <cl:datacolumn std:sid="d-column-352a1fcc" name="color"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[END]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[pink]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[ING]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[skyblue]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[navy]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[REQ]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[gray]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[black]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[END]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[pink]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[END]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[pink]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[ING]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[skyblue]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[navy]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-7d18ba9d" id="dsCombo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f0418f71" name="cd"/>
+          <cl:datacolumn std:sid="d-column-e7ac42e1" name="cdNm"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="cd"><![CDATA[END]]></cl:datavalue>
+            <cl:datavalue columnname="cdNm"><![CDATA[완료]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd"><![CDATA[ING]]></cl:datavalue>
+            <cl:datavalue columnname="cdNm"><![CDATA[진행중]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd"><![CDATA[REQ]]></cl:datavalue>
+            <cl:datavalue columnname="cdNm"><![CDATA[요청]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="데이터셋 익스프레션 예제"/>
+  </head>
+  <body std:sid="body-5eb10eb2" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-64650207" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-20599463" width="998px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grp1" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-87605f82" id="grp1">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-d60ed626" width="972px" height="645px"/>
+      <cl:udc std:sid="ud-control-a4d56c82" id="comformtitle3" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-3f01708a" row="0" col="0"/>
+        <cl:property name="ctrl" value="grdList" type="control"/>
+      </cl:udc>
+      <cl:grid std:sid="grid-b4854dd5" id="grdList" fieldLabel="데이터셋의 익스프레션" readonly="true" datasetid="ds1">
+        <cl:formdata std:sid="f-data-43dfc187" row="1" col="0"/>
+        <cl:rowstyle>
+          <cl:relativebind property="background-color" category="STYLER" columnname="bgcolor"/>
+        </cl:rowstyle>
+        <cl:gridcolumn std:sid="g-column-e6d6af48"/>
+        <cl:gridcolumn std:sid="g-column-fc01e9bc"/>
+        <cl:gridcolumn std:sid="g-column-e01b48fb"/>
+        <cl:gridheader std:sid="gh-band-08901c39">
+          <cl:gridrow std:sid="g-row-32a88617" height="27px"/>
+          <cl:gridcell std:sid="gh-cell-418d8137" rowindex="0" colindex="0" targetcolumnname="gbnCd" sortable="false" filterable="false" text="구분"/>
+          <cl:gridcell std:sid="gh-cell-34261e54" rowindex="0" colindex="1" targetcolumnname="gbnName" sortable="false" filterable="false" text="구분명"/>
+          <cl:gridcell std:sid="gh-cell-182f22b0" rowindex="0" colindex="2" targetcolumnname="bgcolor" sortable="false" filterable="false" text="콤보 구분명"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-f3c7424f">
+          <cl:gridrow std:sid="g-row-892e68ac"/>
+          <cl:gridcell std:sid="gd-cell-b9492390" rowindex="0" colindex="0" columnname="gbnCd">
+            <cl:relativebind property="color" category="STYLER" columnname="color"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-29e9b88d" rowindex="0" colindex="1" columnname="gbnName"/>
+          <cl:gridcell std:sid="gd-cell-abdf3e57" rowindex="0" colindex="2" columnname="gbnCd">
+            <cl:combobox std:sid="c-box-d7ccd6c2" id="cmb1">
+              <cl:itemset datasetid="dsCombo" label="cdNm" value="cd"/>
+            </cl:combobox>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:udc std:sid="ud-control-f1f00df7" id="comformtitle2" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-3ebdd1b8" row="2" col="0"/>
+        <cl:property name="ctrl" value="grdList" type="control"/>
+      </cl:udc>
+      <cl:group std:sid="group-ba4bd0f2" id="grpFormCont" class="form-box">
+        <cl:formdata std:sid="f-data-5f961dfb" row="3" col="0"/>
+        <cl:output std:sid="output-5b7c19cc" id="otp25" value="시나리오">
+          <cl:formdata std:sid="f-data-25c1fad4" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f91a483c" id="otp26" value="추가설명">
+          <cl:formdata std:sid="f-data-66157e43" row="1" col="0"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-eb88b118" id="txa1" readonly="true" value="1. 데이터셋 의 컬럼 expression 사용방법 및 기능동작을 확인한다.&#xD;&#xA;2. 그리드내 콤보박스의 바인딩(label/value) 방법 및 기능동작을 확인한다. &#xD;&#xA;">
+          <cl:formdata std:sid="f-data-b28979d5" row="0" col="1"/>
+        </cl:textarea>
+        <cl:textarea std:sid="t-area-e7bded49" id="txa2" readonly="true" value="1. 데이터 셋 - 컬럼(expression), 콤보박스 - label / value 이용&#xD;&#xA;2. 데이터셋의 익스프레션을 이용하여 출력된 구분명과 콤보 구분명이 동일한지 확인한다.&#xD;&#xA;3. 그리드의 행의 배경색 - 그리드를 선택한 후 바인딩 - 스타일속성- rowStyle  (상대컬럼 바인딩) - background-color&#xD;&#xA;4. 그리드의 열의 폰트색 - 그리드편집기에서 열의 디테일 영역을 선택한 후 바인딩 - 스타일속성- color - (상대컬럼 바인딩)">
+          <cl:formdata std:sid="f-data-be8c649b" row="1" col="1"/>
+        </cl:textarea>
+        <cl:formlayout std:sid="f-layout-bea260c3" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-92c3a806">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-aeb4a762"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

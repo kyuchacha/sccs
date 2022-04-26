@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f301564f" version="1.0.3100">
+  <head std:sid="head-05535d14">
+    <screen std:sid="screen-1afc2bf1" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-a93ff4e8" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-7722b5be" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-7fb2350a" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-5c8977f8">
+      <cl:dataset std:sid="d-set-1789ef3e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f94c3a04" name="학번"/>
+          <cl:datacolumn std:sid="d-column-647c984a" name="이름"/>
+          <cl:datacolumn std:sid="d-column-4ba68a6f" name="학년"/>
+          <cl:datacolumn std:sid="d-column-edbdd80a" name="학과"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="학번"><![CDATA[2017244001]]></cl:datavalue>
+            <cl:datavalue columnname="이름"><![CDATA[홍길동]]></cl:datavalue>
+            <cl:datavalue columnname="학년"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="학과"><![CDATA[컴퓨터공학과]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="학번"><![CDATA[2020211002]]></cl:datavalue>
+            <cl:datavalue columnname="이름"><![CDATA[임꺽정]]></cl:datavalue>
+            <cl:datavalue columnname="학년"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="학과"><![CDATA[국어국문학과]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="아코디언 관련 속성"/>
+  </head>
+  <body std:sid="body-a1a25e8e">
+    <cl:group std:sid="group-6bcce5b8" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-2b88a41a" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-82a3feef" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-8bb9a497" width="1320px" height="30px" autosize="none"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-7f567358"/>
+    </cl:group>
+    <cl:group std:sid="group-40b752d5" id="grpData">
+      <cl:verticaldata std:sid="v-data-e33413c0" width="861px" height="643px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="아코디언(Accordion)은 슬라이드로 컨트롤들의 집합이나 컨트롤을 보여주는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-18f525a1" row="0" col="0" rowspan="1" colspan="2"/>
+      </cl:output>
+      <cl:group std:sid="group-164c62c6" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-1853c771" row="1" col="0" rowspan="1" colspan="2"/>
+        <cl:output std:sid="output-7a05da36" value="[titleCollapse = false]&#xD;&#xA;1. 타이틀에 여백 부분을 클릭한다.&#xD;&#xA;2. 아코디언이 펼쳐지지 않는다.&#xD;&#xA;3. 타이틀 우측에 아이콘(v)을 클릭한다.&#xD;&#xA;4. 아코디언이 펼쳐진다.">
+          <cl:formdata std:sid="f-data-1ff085ef" row="0" col="0"/>
+        </cl:output>
+        <cl:accordion std:sid="accordion-59066b73" id="acd1" titlecollapse="false">
+          <std:metadata>
+            <std:property key="active-index" value="2"/>
+          </std:metadata>
+          <cl:formdata std:sid="f-data-f39531e7" row="0" col="1"/>
+          <cl:sectionitem std:sid="s-item-65330e13" title="섹션아이템 타이틀">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-24650a81" id="grp2">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:textarea std:sid="t-area-44bdfbbe" id="txa5" style="font-size:15px;" value="섹션아이템 컨텐트">
+                <cl:xylayoutdata std:sid="xyl-data-35931f48" top="10px" left="10px" width="400px" height="40px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+              </cl:textarea>
+              <cl:xylayout std:sid="xylayout-e9aadaf7"/>
+            </cl:group>
+          </cl:sectionitem>
+        </cl:accordion>
+        <cl:output std:sid="output-ce2a5044" value="[multiple = true]&#xD;&#xA;1. item1의 타이틀을 클릭한다.&#xD;&#xA;2. item1 섹션아이템이 펼쳐진다.&#xD;&#xA;3. item2의 타이틀을 클릭한다.&#xD;&#xA;4. item2 섹션아이템이 펼치진다.&#xD;&#xA;5. 모든 아이템이 펼쳐진다.">
+          <cl:formdata std:sid="f-data-e9840edd" row="1" col="0"/>
+        </cl:output>
+        <cl:accordion std:sid="accordion-82ab444d" id="acd3" multiple="true">
+          <std:metadata>
+            <std:property key="active-index" value="1"/>
+          </std:metadata>
+          <cl:formdata std:sid="f-data-2a03b136" row="1" col="1"/>
+          <cl:sectionitem std:sid="s-item-bca23dab" title="item 1">
+            <std:metadata>
+              <std:property key="is-active-item" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-c977dda2" id="grp3">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:output std:sid="output-237b5edf" style="text-align:center;" value="펼쳐짐">
+                <cl:formdata std:sid="f-data-136629e2" row="0" col="0"/>
+              </cl:output>
+              <cl:formlayout std:sid="f-layout-09d2d626" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+          </cl:sectionitem>
+          <cl:sectionitem std:sid="s-item-96e3759c" title="item 2">
+            <cl:group std:sid="group-90cd84d4" id="grp8">
+              <std:metadata>
+                <std:property key="locked" value="true"/>
+              </std:metadata>
+              <cl:output std:sid="output-18e5632d" style="text-align:center;" value="펼쳐짐">
+                <cl:formdata std:sid="f-data-7f08df21" row="0" col="0"/>
+              </cl:output>
+              <cl:formlayout std:sid="f-layout-eac88c62" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+          </cl:sectionitem>
+        </cl:accordion>
+        <cl:formlayout std:sid="f-layout-cde1b71c" hspace="5px" vspace="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="0" vseparatorwidth="0">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-4ce5175b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

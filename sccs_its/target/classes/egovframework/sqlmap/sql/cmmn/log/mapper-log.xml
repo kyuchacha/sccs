@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="log">
+
+	<!-- 시스템 로그 등록 -->
+	<insert id="insertSyslog" parameterType="hashmap">
+        /* mapper-log.xml insertSyslog */
+        INSERT INTO TBCMLM000 (
+                 LOG_ID
+               , DMND_DT
+               , SRVC_URL
+               , SRVC_NM
+               , MTHD_NM
+               , PRCS_SE_CD
+               , PRCS_HR
+               , REG_IP
+               , REG_DT
+               , REG_ID
+        ) VALUES (
+                 ( SELECT NVL(MAX(LOG_ID), 0) + 1 FROM TBCMLM000 )
+               , TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS')
+               , #{svcUrl}
+               , #{svcNm}
+               , #{methodNm}
+               , #{processSeCd}
+               , #{processTime}
+               , #{rgtrIp}
+               , TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS')
+               , #{rgtrEmpno}
+             )
+	</insert>
+	
+	<!-- 에러 로그 등록 -->
+	<insert id="insertErrorlog" parameterType="hashmap">
+        /* mapper-log.xml insertErrorlog */
+        INSERT INTO TBCMLM001 (
+               ERR_ID
+             , DMND_DT
+             , SRVC_URL
+             , ERR_CN
+             , REG_IP
+             , REG_DT
+             , REG_ID
+             , MDFCN_DT
+             , MDFCN_ID
+             )
+        VALUES (
+                ( SELECT NVL(MAX(ERR_ID), 0) + 1 FROM TBCMLM001 )
+              , TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS')
+              , #{svcUrl}
+              , #{errorCn}
+              , #{rgtrIp}
+              , TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS')
+              , #{rgtrEmpno}
+              , TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS')
+              , #{rgtrEmpno}
+             )
+	</insert>
+	
+	<!-- 금일 접속 카운트 증감 -->
+	<insert id="updateDeVisitAccmlt" parameterType="hashMap">
+		 /* mapper-log.xml updateDeVisitAccmlt */
+		INSERT
+		  INTO T_VISIT_ACCMLT_SMMPRDY (
+			   VISIT_DE
+			 , VISIT_CNT
+		) VALUES (
+			   DATE_FORMAT(NOW(), '%Y-%m-%d')
+			 , 1
+		)
+		ON DUPLICATE KEY
+			UPDATE VISIT_CNT = VISIT_CNT + 1
+	</insert>
+	
+	<!-- 로그 관리 목록 공통 조건 -->
+	<sql id="selectLogMngListWhere">
+		 WHERE SL.REQUST_DT >= STR_TO_DATE(CONCAT(REPLACE(#{searchLogBeginDt}, '-', ''), ' 00:00:00'), '%Y%m%d %H:%i:%s')
+		   AND SL.REQUST_DT <![CDATA[<=]]> STR_TO_DATE(CONCAT(REPLACE(#{searchLogEndDt}, '-', ''), ' 23:59:59'), '%Y%m%d %H:%i:%s')
+		<if test='searchText != null and searchText != ""'>
+			<if test="searchCondition == 'uri'">
+		   		AND SL.SVC_URL LIKE CONCAT('%', #{searchText}, '%')
+		   	</if>
+		   	<if test="searchCondition == 'empno'">
+		   		AND SL.RGTR_EMPNO = #{searchText}
+		   	</if>
+		</if>
+	</sql>
+	
+	<!-- 로그 관리 조회 (페이징) -->
+	<select id="selectLogMngPageList" resultType="egovMap">
+		/* mapper-log.xml selectLogMngPageList */
+		SELECT DATE_FORMAT(SL.REQUST_DT, '%Y-%m-%d %H:%i:%s') AS REQUST_DT
+			 , SL.SVC_URL
+			 , (SELECT MN.MENU_NM
+			 	  FROM T_MENU MN
+			 	 WHERE MN.MENU_URL = SL.SVC_URL
+			 	 LIMIT 1) AS MENU_NM
+			 , SL.EMPNO
+			 , SL.RN
+			 , CU.EMP_NM
+		  FROM (SELECT LG.*
+		  		  FROM (SELECT SL.REQUST_DT
+							 , SL.SVC_URL
+							 , SL.RGTR_EMPNO AS EMPNO
+							 , ROW_NUMBER() OVER(ORDER BY SL.REQUST_DT DESC) AS RN
+						  FROM T_SYS_LOG SL
+						<include refid="selectLogMngListWhere"/>
+					  ) LG
+				 WHERE LG.RN BETWEEN #{firstIndex} AND #{lastIndex}
+		  	  ) SL
+		  LEFT JOIN T_CMMN_USER CU ON CU.EMPNO = SL.EMPNO
+	</select>
+	
+	<!-- 로그 관리 전체 건수 -->
+	<select id="selectLogMngCount" resultType="Integer">
+		/* mapper-log.xml selectLogMngCount */
+		SELECT COUNT(1)
+		  FROM T_SYS_LOG SL
+		<include refid="selectLogMngListWhere"/>
+	</select>
+	
+	<!-- 메뉴 이용횟수 조회 -->
+	<select id="selectMenuUseCntList" resultType="egovMap">
+		/* mapper-log.xml selectMenuUseCntList */
+		WITH RECURSIVE WI_MENU AS
+		(
+			SELECT PR.MENU_ID
+				 , PR.UPPER_MENU_ID
+				 , PR.MENU_NM
+				 , PR.MENU_URL
+				 , PR.USE_CNT
+				 , 1 AS LVL
+			  FROM T_MENU PR
+			 WHERE PR.UPPER_MENU_ID = '0'
+			   AND PR.USE_AT = 'Y'
+			   AND PR.MENU_INDICT_AT = 'Y'
+			 UNION ALL
+			SELECT CH.MENU_ID
+				 , CH.UPPER_MENU_ID
+				 , CONCAT(WM.MENU_NM, ' > ', CH.MENU_NM) AS MENU_NM
+				 , CH.MENU_URL
+				 , CH.USE_CNT
+				 , WM.LVL + 1 AS LVL
+			  FROM T_MENU CH
+			  JOIN WI_MENU WM ON WM.MENU_ID = CH.UPPER_MENU_ID
+			 WHERE CH.UPPER_MENU_ID != '0'
+			   AND CH.USE_AT = 'Y'
+			   AND CH.MENU_INDICT_AT = 'Y'
+		)
+		SELECT WM.MENU_ID
+			 , WM.MENU_NM AS MENU_LOCATION
+			 , FORMAT(IFNULL(WM.USE_CNT, 0), 0) AS USE_CNT
+			 , ROW_NUMBER() OVER(ORDER BY WM.USE_CNT DESC, WM.MENU_NM) AS RN
+		  FROM WI_MENU WM
+		 WHERE WM.MENU_URL != '#'
+	</select>
+</mapper>

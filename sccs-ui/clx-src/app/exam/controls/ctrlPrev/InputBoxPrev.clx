@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-100819a2" version="1.0.3164">
+  <head std:sid="head-98eaf85c">
+    <screen std:sid="screen-ea6d57d7" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-14f39910" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e2a9810d" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-8f9665ef" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-0dd527cd"/>
+    <cl:appspec title="인풋박스 관련 속성"/>
+  </head>
+  <body std:sid="body-acfb5b27">
+    <cl:group std:sid="group-1d022b77" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-ed51f92b" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-879ee540" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-aea5a2cf" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-300e7508" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-1ebe12be" id="grpData">
+      <cl:verticaldata std:sid="v-data-2b2ecdc9" width="400px" height="648px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="인풋박스(inputBox)는 데이터를 입력할 수 있는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-2930e479" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp2" class="cl-form-group">
+        <cl:formdata std:sid="f-data-b0543833" row="1" col="0"/>
+        <cl:output std:sid="output-37f32a80" id="opt1" value="[placeholder = '여기에 입력하세요']&#xD;&#xA;1. 인풋박스에 '여기에 입력하세요'라는 텍스트가 보인다.">
+          <cl:formdata std:sid="f-data-bcbc6d7d" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-05c28332" id="ipb1" placeholder="여기에 입력하세요.">
+          <cl:formdata std:sid="f-data-d13424b0" halign="LEFT" valign="CENTER" width="200" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-a665ba05" id="opt2" value="[secret = true]&#xD;&#xA;1. 인풋박스에 텍스트를 입력한다.&#xD;&#xA;2. 비공개되서 입력된다.">
+          <cl:formdata std:sid="f-data-7248e5c9" row="1" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-ccc988e7" id="ipb2" secret="true">
+          <cl:formdata std:sid="f-data-a9edb031" halign="LEFT" valign="CENTER" row="1" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-a1c37800" id="opt3" value="[maxLength = 20]&#xD;&#xA;1. 인풋박스에 텍스트를 입력한다.&#xD;&#xA;2. 20자 이후에는 입력되지 않는다.">
+          <cl:formdata std:sid="f-data-1a528e5d" row="2" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-4b573ae4" id="grp3">
+          <cl:formdata std:sid="f-data-7ea9d169" valign="CENTER" height="60" row="2" col="1"/>
+          <cl:inputbox std:sid="i-box-9ee5395b" id="ipb3" maxlength="20">
+            <cl:formdata std:sid="f-data-68164d25" halign="LEFT" width="200" row="0" col="0"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-8fd097e7" id="opt9" style="color:#757272;" value="DB의 문자셋에 따라 lengthUnit 값이 달라질 수 있다. 해당값은 일반적으로 매칭되는 DB 컬럼 사이즈를 지정한다.">
+            <cl:formdata std:sid="f-data-10a4bff8" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-0a8b07cc" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-279d5733" id="opt4" value="[inputFilter = ^[0-9]*$]&#xD;&#xA;1. 인풋박스에 숫자만 입력된다.">
+          <cl:formdata std:sid="f-data-f98b149c" row="3" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-ad8f1f8b" id="grp4">
+          <cl:formdata std:sid="f-data-cb17f965" valign="CENTER" height="60" row="3" col="1"/>
+          <cl:inputbox std:sid="i-box-d6c7de6a" id="ipb4" inputfilter="^[0-9]*$">
+            <cl:formdata std:sid="f-data-375c804c" halign="LEFT" width="200" row="0" col="0"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-000952bd" id="opt8" style="color:#757272;" value="인풋박스에 입력될 수 있는 문자열의 값을 정규표현식을 사용하여 제한할 수 있다.">
+            <cl:formdata std:sid="f-data-e5759d32" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-03e709a5" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-25ed18ab" id="opt5" value="[inputFilter = ^[0-9\-]*$]&#xD;&#xA;1. 인풋박스에 숫자와 하이픈만 입력된다.">
+          <cl:formdata std:sid="f-data-e98eea3c" row="4" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-49e761cf" id="ipb5" inputfilter="^[0-9\-]*$">
+          <cl:formdata std:sid="f-data-c9e70232" halign="LEFT" valign="CENTER" row="4" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-63d1b2e8" id="opt6" value="inputFilter = ^[a-zA-Z]*$&#xD;&#xA;1. 인풋박스에 영어 대문자와 소문자만 입력된다.">
+          <cl:formdata std:sid="f-data-d2942308" row="5" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-e434c4cd" id="ipb6" inputfilter="^[a-zA-Z]*$">
+          <cl:formdata std:sid="f-data-3f767665" halign="LEFT" valign="CENTER" row="5" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-25df813a" value="[autoSkip = true]&#xD;&#xA;1. 인풋박스에 포커스를 둔다.&#xD;&#xA;2. Enter키를 입력한다.&#xD;&#xA;3. 포커스가 다음 컨트롤로 이동한다.">
+          <cl:formdata std:sid="f-data-3ddf2d89" row="6" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-2035e454" id="grp5">
+          <cl:formdata std:sid="f-data-910ab86c" valign="CENTER" height="60" row="6" col="1"/>
+          <cl:inputbox std:sid="i-box-89756fac" id="ipb9" maxlength="10" autoskip="true">
+            <cl:formdata std:sid="f-data-30114e51" row="0" col="0"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-e49cf46d" style="color:#757272;" value="maxLength만큼 입력했거나 enter키를 눌렀을 때 다음 컨트롤로 포커스 이동 설정">
+            <cl:formdata std:sid="f-data-56e06d0d" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-8e59ee65" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-6a61cb1e" value="[showClearButton = true]&#xD;&#xA;[buttonFocusable = true]&#xD;&#xA;1. 인풋박스에 포커스를 둔다.&#xD;&#xA;2. Tab 키를 입력한다.&#xD;&#xA;3. 인풋박스 우측에 x 표시가 포커스 된다.&#xD;&#xA;4. x 표시 클릭 시 인풋박스 값이 지워진다.">
+          <cl:formdata std:sid="f-data-18987e9d" row="7" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-83faff4b" id="ipb7" value="가나다라" showclearbutton="true" buttonfocusable="true">
+          <cl:formdata std:sid="f-data-fab0daaf" halign="LEFT" valign="CENTER" row="7" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="100" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="100" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="100" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="100" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="100" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="100" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="100" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-6cb0259c" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-662791b8"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

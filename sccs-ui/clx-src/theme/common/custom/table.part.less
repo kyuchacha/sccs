@@ -1,0 +1,136 @@
+@import "../custom-settings.part.less";
+
+.cl-grid.thead-dark {
+	.cl-grid-header {
+		background-color: @gray-600;
+		
+		.cl-grid-cell {
+			color: @white;
+			
+			.cl-control {
+				color: @white;
+			}
+		}
+		
+		.cl-blank {
+			// background-color: @gray-600;
+		}
+		
+		.cl-filter {
+			background-image: url(../images/controls/grid/icon-filter2.png);
+			
+			&:hover {
+				 background-image: url(../images/controls/grid/icon-filter-hover.png);
+			}
+
+			&.cl-filtered {
+				 background-image: url(../images/controls/grid/icon-filter-on2.png);
+			}
+		}
+	}
+}
+
+.cl-grid.table-striped {
+	.cl-grid-detail {
+		.cl-grid-row {
+			&.cl-even-row {
+				background-color: @table-row-odd-background-color;
+				color: @table-row-odd-text-color;			
+			}
+		}
+	}
+}
+
+.cl-grid.table-borderless {
+	.cl-grid-cell {
+		border-right: none;
+	}
+}
+
+.cl-grid.table-hoverable {
+	.cl-grid-detail {
+		.cl-grid-row {
+			&.cl-hover, &:hover {
+				background-color: @table-row-hover-background-color;
+				color: @table-row-hover-text-color;
+			}
+		}
+	}
+}
+
+.cl-grid.table-autosize {
+	.cl-grid-detail {
+		.cl-grid-row:last-child {
+			.cl-grid-cell {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+ /************************************************
+ * 테이블 상태 컬럼 아이콘
+ ************************************************/
+ 
+.cl-output.state-txt {
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	
+	&.insert {
+		background-image: url("../images/controls/grid/ico_create.png") !important;
+	}
+	
+	&.update {
+		background-image: url("../images/controls/grid/ico_update.png") !important;
+	}
+	
+	&.delete {
+		background-image: url("../images/controls/grid/ico_delete.png") !important;
+	}
+}
+
+/************************************************
+ * 테이블 필수 컬럼
+ ************************************************/
+ 
+.cl-grid {
+	.cl-grid-header {
+		.cl-grid-cell {
+			&.require {
+				.cl-text {
+					&:before {
+						content: "*";
+						display: inline-block;
+						position: relative;
+						color: @danger;
+						top: 0px;
+						padding-right: 3px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/************************************************
+ * 테이블 내 readonly
+ ************************************************/
+ 
+.cl-grid {
+	.cl-grid-cell {
+		.cl-control {
+			&.cl-readonly {
+				background-color: #fafafa;
+			}
+		}
+	}
+	
+	&.cl-disabled {
+		.cl-grid-cell {
+			.cl-control {
+				background-color: @transparent !important;
+			}
+		}
+	}
+}

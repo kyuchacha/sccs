@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8b0227a9" version="1.0.3556">
+  <head std:sid="head-22cf80b3">
+    <screen std:sid="screen-8060aeaf" id="default" name="default" minwidth="1680px" width="1680px" height="960px" useCustomWidth="true" useCustomHeight="true" customHeight="430" customWidth="470" active="false"/>
+    <screen std:sid="screen-aa6f7c5f" id="tablet" name="tablet" maxwidth="1679px" width="760px" height="820px" useCustomWidth="true" useCustomHeight="true" customHeight="430" customWidth="470" active="true"/>
+    <cl:model std:sid="model-97b004f4">
+      <cl:dataset comment="메가 메뉴" std:sid="d-set-a1e801ff" id="dsAllMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-1a75e7e3" name="MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-b7d0e3e2" name="MENU_NM"/>
+          <cl:datacolumn std:sid="d-column-ce8bf8b8" name="UP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-18380ef4" name="TOP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-b7879d44" name="CALL_PAGE"/>
+          <cl:datacolumn std:sid="d-column-9bdc2fe6" name="PGM_ID"/>
+          <cl:datacolumn std:sid="d-column-4c100870" name="ICON"/>
+          <cl:datacolumn std:sid="d-column-a2bd6f9f" name="MENU_KEY"/>
+          <cl:datacolumn std:sid="d-column-1d8b7278" name="MOBILE_YN"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-b10a3408" id="dmSelectedMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-43c2ab6e" name="MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-7f56be84" name="MENU_NM"/>
+          <cl:datacolumn std:sid="d-column-df68e1d5" name="ISLEAF"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-6e26c1b1" id="subOnLoad" method="get" action="app/exam/data/main/main.json">
+        <cl:responsedata dataid="dsAllMenu"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="메뉴 선택 팝업"/>
+  </head>
+  <body std:sid="body-2ec7ccb4">
+    <cl:listener std:sid="listener-60b521fa" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-ed24ae0c" id="appheader1" visible="false" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-fad387f7" width="460px" height="30px"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+    </cl:udc>
+    <cl:udc std:sid="ud-control-a839a0ef" id="comformtitle1" type="udc.com.comFormTitle">
+      <cl:verticaldata std:sid="v-data-0bfd8191" width="460px" height="25px"/>
+      <cl:property name="ctrl" value="frfMain" type="control"/>
+      <cl:property name="title" value="메뉴 목록" type="string"/>
+    </cl:udc>
+    <cl:tree std:sid="tree-3f2e5664" id="treMenu" showlines="true" allowdrop="false" autoOpen="1">
+      <cl:listener std:sid="listener-f1ee3ec8" name="item-click" handler="onTreMenuItemClick"/>
+      <cl:verticaldata std:sid="v-data-9fdaf428" width="460px" height="333px"/>
+      <cl:treeitemset datasetid="dsAllMenu" label="MENU_NM" value="MENU_ID" tooltip="MENU_NM" parent="UP_MENU_ID"/>
+    </cl:tree>
+    <cl:group std:sid="group-9d60a4fa" id="grp2">
+      <cl:verticaldata std:sid="v-data-8ac338b1" width="460px" height="25px"/>
+      <cl:button std:sid="button-f83dfefa" id="btn1" class="btn-primary" value="선택완료">
+        <cl:listener std:sid="listener-813d7cb8" name="click" handler="onBtn1Click"/>
+        <cl:flowlayoutdata std:sid="f-data-181c1f52" width="70px" height="25px" autosize="none"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-ed488825" scrollable="false" hspacing="4" vspacing="0" halign="right" linewrap="false"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-40759ba4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

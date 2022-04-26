@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7f58e514" version="1.0.3655">
+  <head std:sid="head-862f67bf">
+    <screen std:sid="screen-de180da3" id="default" name="default" minwidth="1280px" width="1280px" height="900px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-0446ec72" id="tablet" name="tablet" maxwidth="1279px" width="760px" height="820px"/>
+    <cl:model std:sid="model-1bcc3d3a"/>
+    <cl:appspec title="세션 만료 안내화면"/>
+  </head>
+  <body std:sid="body-7da0131c">
+    <cl:output std:sid="output-c2ce3919" class="text-center" value="세션이 만료되었습니다.&#xD;&#xA;다시 로그인 하시기 바랍니다.">
+      <cl:formdata std:sid="f-data-54958233" row="0" col="0" rowspan="1" colspan="1"/>
+    </cl:output>
+    <cl:group std:sid="group-63a95af8" id="grp1" clipcontent="false">
+      <cl:formdata std:sid="f-data-6f318588" row="1" col="0"/>
+      <cl:button std:sid="button-f3648001" id="btn1" class="btn-primary" value="로그인">
+        <cl:flowlayoutdata std:sid="f-data-ffee4819" width="60px" height="25px"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-f0e8d7c9" scrollable="false" hspacing="4" vspacing="0" halign="right" linewrap="false"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-a9c6ba57" scrollable="false" hspace="5px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

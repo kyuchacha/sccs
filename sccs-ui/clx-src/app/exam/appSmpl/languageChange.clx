@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7242a53b" version="1.0.3642">
+  <head std:sid="head-c2381a67">
+    <screen std:sid="screen-1cb5e791" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-9c1d2d2c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-e8eeaf7b" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-352163f3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-f3ddac42"/>
+    <cl:appspec dev-comment="templates/SmplTmpl.clx 템플릿 사용하여 작성 함.&#xA;templates/CTmpl.clx 템플릿 사용하여 작성 함." title="다국어 샘플"/>
+  </head>
+  <body std:sid="body-b149489d">
+    <cl:group std:sid="group-d1f5be83" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-01a0e506" width="1320px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3acdc2bb" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-80e24452" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-3e351495"/>
+    </cl:group>
+    <cl:group std:sid="group-72e4444f" id="grpData">
+      <cl:verticaldata std:sid="v-data-dd43b459" width="1320px" height="2056px" autosize="height"/>
+      <cl:group std:sid="group-b3d8d80f" id="grp1">
+        <cl:verticaldata std:sid="v-data-d00c67f8" width="1270px" height="150px" autosize="height"/>
+        <cl:group std:sid="group-7a48379f" id="grp3">
+          <cl:verticaldata std:sid="v-data-5f5680c1" width="1270px" height="40px" autosize="height"/>
+          <cl:output std:sid="output-bd633362" style="font-weight:bold; padding-left:1rem; font-size:2.5rem;" value="다국어 샘플">
+            <cl:formdata std:sid="f-data-d357b6a6" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3535aed2" scrollable="false" hspace="5px" vspace="5px" right-margin="50px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="300" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-36cb926d" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="eXBuilder6에서는 언어 파일(source-path/language.json)을 이용하여 바인딩 타겟에 값을 제공합니다. 언어 뷰에서 등록된 항목을 바인딩 타겟 컨트롤에 드래그 앤 드롭하거나 바인딩 편집 대화상자에서 바인딩 유형을 다국어 사전 바인딩으로 지정한 후 용어 키에 키 패스를 지정하여 값을 제공합니다.">
+          <cl:verticaldata std:sid="v-data-cb26d0fa" width="1210px" height="46px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-7c14d27b" spacing="30" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-36fd7cc9" id="grp2">
+        <cl:verticaldata std:sid="v-data-28f18b44" width="1270px" height="300px" autosize="height"/>
+        <cl:output std:sid="output-d78c906d" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="시나리오">
+          <cl:verticaldata std:sid="v-data-0ccc2823" width="100px" height="40px"/>
+        </cl:output>
+        <cl:output std:sid="output-5ed83aea" id="ipbScenario" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="1. 다국어 변경 콤보박스에서 각 언어를 선택합니다.&#xD;&#xA;2. 다른 컨트롤들에 언어가 콤보박스에서 선택한 언어로 일괄 변경되는지 확인합니다.">
+          <cl:verticaldata std:sid="v-data-560570a9" width="1210px" height="107px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-4fffe72b" spacing="30" topmargin="10" bottommargin="30"/>
+      </cl:group>
+      <cl:group std:sid="group-17cf44cc" id="grpFunction">
+        <cl:verticaldata std:sid="v-data-60df3a1f" width="1270px" height="800px" autosize="height"/>
+        <cl:group std:sid="group-38132eaf" id="grpFuncFloating">
+          <cl:attribute name="floating-header" value="true"/>
+          <cl:verticaldata std:sid="v-data-bf7c3b0a" width="1270px" height="800px" autosize="height"/>
+          <cl:output std:sid="output-1688a0bc" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="기능확인">
+            <cl:verticaldata std:sid="v-data-7f4968b6" width="1270px" height="40px" autosize="none"/>
+          </cl:output>
+          <cl:group std:sid="group-c852421b" id="grp11" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#dedede; border-right-width:1px; border-left-color:#dedede; border-right-color:#dedede; border-left-width:1px; border-top-style:solid; background-color:#F0F0F0; border-left-style:solid; border-bottom-width:1px; border-top-color:#dedede; border-bottom-style:solid;">
+            <cl:verticaldata std:sid="v-data-153b5759" width="1210px" height="800px" autosize="height"/>
+            <cl:udc std:sid="ud-control-2a921043" id="comformtitle1" type="udc.com.comFormTitle">
+              <cl:verticaldata std:sid="v-data-e38c303d" width="1320px" height="25px" autosize="none"/>
+              <cl:property name="ctrl" value="grpForm" type="control"/>
+            </cl:udc>
+            <cl:group std:sid="group-357e4b25" id="grpForm" fieldLabel="다국어 변경">
+              <cl:verticaldata std:sid="v-data-1973ac9c" width="1320px" height="594px" autosize="height"/>
+              <cl:group std:sid="group-61021b28" id="grp4">
+                <cl:formdata std:sid="f-data-cf5f62e0" row="0" col="0" rowspan="1" colspan="1"/>
+                <cl:combobox std:sid="c-box-6d4af39d" id="cmbLang">
+                  <cl:listener std:sid="listener-8051b2f1" name="selection-change" handler="onCmbLangSelectionChange"/>
+                  <cl:flowlayoutdata std:sid="f-data-7b169637" width="120px" height="30px" autosize="none"/>
+                  <cl:item std:sid="item-3c6547f2" label="한국어" value="ko">
+                    <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M003"/>
+                  </cl:item>
+                  <cl:item std:sid="item-355ef95d" label="영어" value="en">
+                    <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M004"/>
+                  </cl:item>
+                  <cl:item std:sid="item-e1170b6a" label="일본어" value="ja">
+                    <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M005"/>
+                  </cl:item>
+                  <cl:item std:sid="item-3e0cb237" label="중국어" value="zh">
+                    <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M006"/>
+                  </cl:item>
+                </cl:combobox>
+                <cl:output std:sid="output-de5457de" value="※ 콤보박스의 언어에 따라 라벨 값이 변경됩니다.">
+                  <cl:flowlayoutdata std:sid="f-data-5bb4b84f" width="350px" height="25px" autosize="none"/>
+                </cl:output>
+                <cl:flowlayout std:sid="f-layout-7312f649"/>
+              </cl:group>
+              <cl:group std:sid="group-52aa4308" id="grp10">
+                <cl:attribute name="mobile-column-count" value="1"/>
+                <cl:attribute name="tablet-column-count" value="1"/>
+                <cl:formdata std:sid="f-data-cc81da76" row="1" col="0"/>
+                <cl:group std:sid="group-fefe706c" id="grp12" class="card">
+                  <cl:formdata std:sid="f-data-be970908" row="0" col="0" rowspan="2" colspan="1"/>
+                  <cl:output std:sid="output-23ac3e97" class="card-title" value="폼 컨트롤">
+                    <cl:langbind property="value" keypath="NLS-UI-M016"/>
+                    <cl:verticaldata std:sid="v-data-f8bf86fa" width="100px" height="25px"/>
+                  </cl:output>
+                  <cl:group std:sid="group-cb8fe009" id="grp13">
+                    <cl:verticaldata std:sid="v-data-172d2d20" width="400px" height="60px"/>
+                    <cl:output std:sid="output-467ea0e2" value="텍스트">
+                      <cl:langbind property="value" keypath="NLS-UI-M007"/>
+                      <cl:formdata std:sid="f-data-0e9074a8" row="0" col="0"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-119316ba" id="ipb1">
+                      <cl:langbind property="placeholder" keypath="NLS-INF-M054"/>
+                      <cl:formdata std:sid="f-data-76238536" row="1" col="0"/>
+                    </cl:inputbox>
+                    <cl:formlayout std:sid="f-layout-de5975e2" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-d593fd77" id="grp14">
+                    <cl:verticaldata std:sid="v-data-fa08bdac" width="400px" height="60px"/>
+                    <cl:output std:sid="output-ecde75c7" value="텍스트">
+                      <cl:langbind property="value" keypath="NLS-UI-M008"/>
+                      <cl:formdata std:sid="f-data-0cb965d1" row="0" col="0"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-702df545" id="ipb2" value="12345!@#$%" secret="true">
+                      <cl:langbind property="placeholder" keypath="NLS-INF-M054"/>
+                      <cl:formdata std:sid="f-data-33102e4a" row="1" col="0"/>
+                    </cl:inputbox>
+                    <cl:formlayout std:sid="f-layout-f503760e" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-9a31edd9" id="grp16">
+                    <cl:verticaldata std:sid="v-data-603fce25" width="400px" height="60px"/>
+                    <cl:output std:sid="output-ab63b24a" value="텍스트">
+                      <cl:langbind property="value" keypath="NLS-UI-M009"/>
+                      <cl:formdata std:sid="f-data-b527af44" row="0" col="0"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-e1dd0efd" id="ipb3" value="name@example.com">
+                      <cl:langbind property="placeholder" keypath="NLS-INF-M054"/>
+                      <cl:formdata std:sid="f-data-133156bf" row="1" col="0"/>
+                    </cl:inputbox>
+                    <cl:formlayout std:sid="f-layout-38d7a930" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-d74ceea1" id="grp17">
+                    <cl:verticaldata std:sid="v-data-4b86a271" width="400px" height="60px"/>
+                    <cl:output std:sid="output-2a4b5c3c" value="텍스트">
+                      <cl:langbind property="value" keypath="NLS-UI-M010"/>
+                      <cl:formdata std:sid="f-data-9f35bbe2" row="0" col="0"/>
+                    </cl:output>
+                    <cl:combobox std:sid="c-box-7e6fe88e" id="cmb2">
+                      <cl:formdata std:sid="f-data-d9743266" row="1" col="0"/>
+                      <cl:item std:sid="item-847ffc9e" label="1" value="1"/>
+                      <cl:item std:sid="item-8cb31415" label="2" value="2"/>
+                      <cl:item std:sid="item-1c9de8ca" label="3" value="3"/>
+                      <cl:item std:sid="item-f65af476" label="4" value="4"/>
+                      <cl:item std:sid="item-ce1ccb0f" label="5" value="5"/>
+                    </cl:combobox>
+                    <cl:formlayout std:sid="f-layout-b889473f" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-95221a2a" id="grp18">
+                    <cl:verticaldata std:sid="v-data-22e855fc" width="400px" height="123px"/>
+                    <cl:output std:sid="output-f1e563e3" value="텍스트">
+                      <cl:langbind property="value" keypath="NLS-UI-M011"/>
+                      <cl:formdata std:sid="f-data-2c1c3d07" row="0" col="0"/>
+                    </cl:output>
+                    <cl:listbox std:sid="l-box-9785dc7c" id="lbx1" multiple="true">
+                      <cl:formdata std:sid="f-data-1be76194" row="1" col="0"/>
+                      <cl:item std:sid="item-ec5eec63" label="1" value="1"/>
+                      <cl:item std:sid="item-9b9b24c1" label="2" value="2"/>
+                      <cl:item std:sid="item-77defb18" label="3" value="3"/>
+                      <cl:item std:sid="item-a671645d" label="4" value="4"/>
+                      <cl:item std:sid="item-8b2093fd" label="5" value="5"/>
+                    </cl:listbox>
+                    <cl:formlayout std:sid="f-layout-da05e7d3" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="95" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-a81f3130" id="grp19">
+                    <cl:verticaldata std:sid="v-data-417be743" width="400px" height="108px"/>
+                    <cl:output std:sid="output-b50ba757" value="텍스트">
+                      <cl:langbind property="value" keypath="NLS-UI-M012"/>
+                      <cl:formdata std:sid="f-data-e32d5385" row="0" col="0"/>
+                    </cl:output>
+                    <cl:textarea std:sid="t-area-5d0292fb" id="txa1">
+                      <cl:formdata std:sid="f-data-819df0bf" row="1" col="0"/>
+                    </cl:textarea>
+                    <cl:formlayout std:sid="f-layout-b90acbf8" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:verticallayout std:sid="v-layout-238bf9a5" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+                </cl:group>
+                <cl:group std:sid="group-7f62b3e4" id="grp20" class="card">
+                  <cl:attribute name="needs-auto-height" value="true"/>
+                  <cl:formdata std:sid="f-data-02a8f5ad" row="0" col="1"/>
+                  <cl:output std:sid="output-fe0ddb66" class="card-title" value="폼 컨트롤">
+                    <cl:langbind property="value" keypath="NLS-UI-M016"/>
+                    <cl:verticaldata std:sid="v-data-11da2350" width="100px" height="25px"/>
+                  </cl:output>
+                  <cl:group std:sid="group-96a3c998" id="grp21">
+                    <cl:verticaldata std:sid="v-data-aabd6f4b" width="400px" height="73px" autosize="height"/>
+                    <cl:output std:sid="output-48481d5d" value="텍스트">
+                      <cl:langbind property="value" keypath="NLS-UI-M014"/>
+                      <cl:formdata std:sid="f-data-9c453483" row="0" col="0"/>
+                    </cl:output>
+                    <cl:checkboxgroup std:sid="cb-group-32bfc548" id="cbg1" colcount="1">
+                      <cl:formdata std:sid="f-data-f4d44396" row="1" col="0"/>
+                      <cl:item std:sid="item-7ad4184f" label="체크박스" value="value1">
+                        <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M014"/>
+                      </cl:item>
+                      <cl:item std:sid="item-c8057122" label="체크박스" value="value2">
+                        <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M014"/>
+                      </cl:item>
+                      <cl:value>value2</cl:value>
+                    </cl:checkboxgroup>
+                    <cl:formlayout std:sid="f-layout-f9bfc52d" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="45" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-ed1b602c" id="grp22">
+                    <cl:verticaldata std:sid="v-data-1f5c0470" width="400px" height="73px" autosize="height"/>
+                    <cl:output std:sid="output-89fd1f91" value="텍스트">
+                      <cl:langbind property="value" category="PROPERTY" keypath="NLS-UI-M015"/>
+                      <cl:formdata std:sid="f-data-92bb66c5" row="0" col="0"/>
+                    </cl:output>
+                    <cl:radiobutton std:sid="r-button-9cbc26bd" id="rdb1" value="value2" colcount="1">
+                      <cl:formdata std:sid="f-data-cfb056a0" row="1" col="0"/>
+                      <cl:item std:sid="item-4fa95d1f" label="라디오" value="value1">
+                        <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M015"/>
+                      </cl:item>
+                      <cl:item std:sid="item-42100525" label="라디오" value="value2">
+                        <cl:langbind property="label" category="PROPERTY" keypath="NLS-UI-M015"/>
+                      </cl:item>
+                    </cl:radiobutton>
+                    <cl:formlayout std:sid="f-layout-a4dcd7ca" hspace="8px" vspace="8px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                      <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:rows length="45" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:verticallayout std:sid="v-layout-1f47e457" spacing="16" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+                </cl:group>
+                <cl:formlayout std:sid="f-layout-cb123a4d" hspace="20px" vspace="20px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                  <cl:rows length="250" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-60dbd3ac" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+                <cl:rows length="25" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:verticallayout std:sid="v-layout-93d454ee" leftmargin="30" rightmargin="30" topmargin="5" bottommargin="10"/>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-216b8a05" bottommargin="30"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-010e6b4c"/>
+      </cl:group>
+      <cl:output std:sid="output-35ca5e35" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="주요코드">
+        <cl:verticaldata std:sid="v-data-11eef6ad" width="1210px" height="40px" autosize="none"/>
+      </cl:output>
+      <cl:group std:sid="group-039b282d" id="grp15">
+        <cl:verticaldata std:sid="v-data-af83974e" width="1270px" height="350px" autosize="height"/>
+        <cl:group std:sid="group-ab27f594" id="grp7">
+          <cl:verticaldata std:sid="v-data-4c46d89c" width="1210px" height="310px" autosize="height"/>
+          <cl:group std:sid="group-0f31d2b7" id="grp9" class="form-box">
+            <cl:formdata std:sid="f-data-1e958806" row="0" col="0"/>
+            <cl:udc std:sid="ud-control-593e2675" id="ace1" type="udc.tmp.Ace">
+              <cl:listener std:sid="listener-a608a32f" name="afterLoad" handler="onAce1AfterLoad"/>
+              <cl:verticaldata std:sid="v-data-9d1414d6" width="300px" height="300px" autosize="height"/>
+            </cl:udc>
+            <cl:verticallayout std:sid="v-layout-0e931855"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-37f3904b" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-8f1d189a" spacing="20" leftmargin="30" rightmargin="30" topmargin="0" bottommargin="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8031eb1c" leftmargin="20" rightmargin="30" topmargin="30" bottommargin="30"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1a626b94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

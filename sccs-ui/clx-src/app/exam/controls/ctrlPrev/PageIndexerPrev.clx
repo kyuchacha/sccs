@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a8125aa1" version="1.0.3164">
+  <head std:sid="head-74d1f6fd">
+    <screen std:sid="screen-b6b53675" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-483ae901" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-30919638" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-23d8c474" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-e12825c8"/>
+    <cl:appspec title="페이지인덱서 관련 속성"/>
+  </head>
+  <body std:sid="body-12f9357e" style="color:#757272;">
+    <cl:listener std:sid="listener-bd2ff64a" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-3ee58d61" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-450bba7b" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3c9c538a" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-a4070505" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-e1f113fb" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-50e81711" id="grpData">
+      <cl:verticaldata std:sid="v-data-bbac41ad" width="400px" height="645px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="페이지인덱서(PageIndexer)는 대용량 데이터가 보이는 컨트롤에서 총 데이터양과 관계없이 화면에 출력하고자 하는 데이터양만큼만 보이도록 도와주는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-29f5a352" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp2" class="cl-form-group">
+        <cl:formdata std:sid="f-data-5a1be1b9" row="1" col="0"/>
+        <cl:output std:sid="output-528146f2" value="[totalRowCount = 100]&#xD;&#xA;1. 전체 행의 수가 100이다.&#xD;&#xA;&#xD;&#xA;[pageRowCount = 10]&#xD;&#xA;1. 한 페이지의 보여줄 행의 수가 10이다.">
+          <cl:formdata std:sid="f-data-00c22aaf" row="0" col="0"/>
+        </cl:output>
+        <cl:pageindexer std:sid="p-indexer-0c39d096" id="pix2" totalrowcount="100" startpageindex="3" currentpageindex="6" pagerowcount="10">
+          <cl:formdata std:sid="f-data-a2559703" valign="FILL" row="1" col="1" rowspan="2" colspan="1"/>
+        </cl:pageindexer>
+        <cl:pageindexer std:sid="p-indexer-4a6c62f3" id="pix4" totalrowcount="100" pagerowcount="10" viewpagecount="3">
+          <cl:formdata std:sid="f-data-5722cff2" row="3" col="1"/>
+        </cl:pageindexer>
+        <cl:pageindexer std:sid="p-indexer-7409af2d" id="pix5" totalrowcount="100" pagerowcount="10" pageindexwidth="50px">
+          <cl:formdata std:sid="f-data-548c3252" row="4" col="1"/>
+        </cl:pageindexer>
+        <cl:output std:sid="output-7dd7cc51" value="[startPageIndex = 3]&#xD;&#xA;1. 현재 보여지는 시작 인덱스가 3이다.&#xD;&#xA;&#xD;&#xA;[currentPageIndex = 6]&#xD;&#xA;1. 현재 선택된 페이지 인덱스가 6이다.">
+          <cl:formdata std:sid="f-data-4c01ae52" row="1" col="0" rowspan="2" colspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-2a3dfbae" value="[viewPageCount = 3]&#xD;&#xA;1. 보여지는 페이지 수가 3이다.">
+          <cl:formdata std:sid="f-data-8bb17da3" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-cbcbbb53" value="[pageIndexWidth = 50px]&#xD;&#xA;1. 페이지 인덱스 버튼의 너비가 50px이다.">
+          <cl:formdata std:sid="f-data-510cb5a9" row="4" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-d5e2513a" id="grp1">
+          <cl:formdata std:sid="f-data-684d14a5" row="0" col="1" rowspan="1" colspan="1"/>
+          <cl:pageindexer std:sid="p-indexer-f6abfcc7" id="pix1" totalrowcount="100" pagerowcount="10">
+            <cl:formdata std:sid="f-data-504170f9" row="0" col="0"/>
+          </cl:pageindexer>
+          <cl:output std:sid="output-49012333" style="color:#757272;" value="페이지 인덱스의 총 수 는  ( 전체 행의 수 / 한 페이지에 보여줄 행의 수 ) 에서 소수 첫째자리에서 올림한 수">
+            <cl:formdata std:sid="f-data-1b471a52" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-8af394fc" hspace="5px" vspace="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="40" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:pageindexer std:sid="p-indexer-2a082273" id="pix6" totalrowcount="100" pagerowcount="10" visiblefirstbutton="false">
+          <cl:formdata std:sid="f-data-d0db4d77" row="5" col="1"/>
+        </cl:pageindexer>
+        <cl:pageindexer std:sid="p-indexer-ecb37dd2" id="pix7" totalrowcount="100" pagerowcount="10" visiblelastbutton="false">
+          <cl:formdata std:sid="f-data-7feae517" row="6" col="1"/>
+        </cl:pageindexer>
+        <cl:pageindexer std:sid="p-indexer-9de3a97c" id="pix8" totalrowcount="100" pagerowcount="10" visiblenextbutton="false">
+          <cl:formdata std:sid="f-data-ca6d538f" row="7" col="1"/>
+        </cl:pageindexer>
+        <cl:pageindexer std:sid="p-indexer-924a5918" id="pix9" totalrowcount="100" pagerowcount="10" visibleprevbutton="false">
+          <cl:formdata std:sid="f-data-81347c03" row="8" col="1"/>
+        </cl:pageindexer>
+        <cl:output std:sid="output-2bea2c3a" value="[visibleFirstButton = false]&#xD;&#xA;1. 처음 버튼(&lt;&lt;)이 보이지 않는다.">
+          <cl:formdata std:sid="f-data-1384a0b8" row="5" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a9b351f1" value="[visibleLastButton = false]&#xD;&#xA;1. 마지막 버튼(>>)이 보이지 않는다.">
+          <cl:formdata std:sid="f-data-8819ddb8" row="6" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a2621bb3" value="[visibleNextButton = false]&#xD;&#xA;1. 이후 버튼(>)이 보이지 않는다.">
+          <cl:formdata std:sid="f-data-69bdb5ba" row="7" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-49228917" value="[visiblePrevButton = false]&#xD;&#xA;1. 이전 버튼(&lt;)이 보이지 않는다.">
+          <cl:formdata std:sid="f-data-3b8b22a7" row="8" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="2" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-95ecc239" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-9275a9d2"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

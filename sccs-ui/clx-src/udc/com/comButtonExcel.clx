@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-55323813" version="1.0.0.0">
+  <head std:sid="head-d7c81b75">
+    <title>Title2</title>
+    <screen std:sid="screen-632d6ac7" id="smuis" customHeight="600" customWidth="800" height="780px" minwidth="1320px" name="smuis" width="1320px"/>
+    <screen std:sid="screen-07d6ad8c" id="default" height="768px" maxwidth="1319px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-71b21687" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-ce86f85b" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-6d7cc3ff"/>
+    <cl:appspec dev-description="엑셀업로드 팝업용 UDC">
+      <cl:property bindable="false" std:desc="대상 그리드 객체" name="grid" type="control"/>
+      <cl:property bindable="true" std:desc="엑셀파일에서 데이터를 읽을 ROW의 시작인덱스(지정하지 않은 경우… 부모창의 그리드의 헤더 정보를 가지고 자동으로 셋팅됨)" name="startRowIndex" type="number"/>
+      <cl:property bindable="true" default="0" std:desc="엑셀파일에서 데이터를 읽을 CELL의 시작인덱스(디폴트: 0부터임)" name="startCellIndex" type="number"/>
+      <cl:property bindable="true" default="false" std:desc="숨긴 컬럼도 엑셀 임포트시 사용할 경우에 true로 지정(디폴트: false임)" name="showHiddenColumns" type="boolean"/>
+      <cl:property bindable="true" default="false" std:desc="중복된 데이터 제외할지 여부" name="ignoreDuplicate" type="boolean"/>
+      <cl:property std:desc="엑셀 업로드 호출전 사용자 체크함수" name="befCheckFunc" type="string"/>
+      <cl:event std:desc="자료내려받기 완료 후 발생 이벤트" name="complete" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-87eeef7c" style="top:0px; left:0px; width:90px; height:20px;">
+    <cl:listener std:sid="listener-b218b8c0" handler="onBodyLoad" name="load"/>
+    <cl:button std:sid="button-f0fae124" id="btnExlUpload" class="btn-pop" value="엑셀업로드">
+      <cl:listener std:sid="listener-119042f0" handler="onBtnExlUploadClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-684cf47e" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-0b48a846"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

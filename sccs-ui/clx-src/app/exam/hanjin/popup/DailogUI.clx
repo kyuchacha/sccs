@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-10838622" version="1.0.3388">
+  <head std:sid="head-30d1141c">
+    <screen std:sid="screen-bb866595" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-9f0f1727" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-80ebe331" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-ad343bb4">
+      <cl:dataset std:sid="d-set-64c23966" id="ds1">
+        <cl:listener std:sid="listener-5a05306e" name="load" handler="onDs1Load"/>
+        <cl:listener std:sid="listener-c1973d9c" name="insert" handler="onDs1Insert"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-5b71d61a" name="who" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-58b81761" name="content"/>
+          <cl:datacolumn std:sid="d-column-3105e759" name="time"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="who">who1</cl:datavalue>
+            <cl:datavalue columnname="content">content1</cl:datavalue>
+            <cl:datavalue columnname="time">time1</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="다이얼로그 UI"/>
+  </head>
+  <body std:sid="body-5863259f" style="top:0px; left:0px; width:600px; height:400px;">
+    <cl:listener std:sid="listener-2177017f" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-d8ca612e" id="grp1">
+      <cl:formdata std:sid="f-data-e4002e87" row="1" col="0" rowspan="1" colspan="2"/>
+      <cl:button std:sid="button-1d5a3bd6" id="btn3" class="pink" value="조직도">
+        <cl:listener std:sid="listener-fda53a87" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-6359936d" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-f86e0c84" id="btn4" class="pink" value="이모">
+        <cl:listener std:sid="listener-be48b67d" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-819fbd0d" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-564b258b" id="btn5" class="pink" value="새창">
+        <cl:listener std:sid="listener-ba9e7aba" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-e38fce71" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-f341af49" id="btn6" class="pink" value="타일일정">
+        <cl:listener std:sid="listener-30cca7a5" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-085dcf47" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-a9499715" id="btn7" class="green" value="근로시간">
+        <cl:listener std:sid="listener-8e612b87" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-4bdfa3a8" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-5c3bcc9e" id="btn8" class="green" value="코로나19 검사">
+        <cl:listener std:sid="listener-95f31df5" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-ba943dea" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-4b7e1ac2" id="btn9" class="green" value="번역">
+        <cl:listener std:sid="listener-20f63f1d" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-cc6552ae" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-aca3a8b4" id="btn10" class="blue" value="통역">
+        <cl:listener std:sid="listener-6aa655de" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-f45eb04e" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-5ed93167" id="btn11" class="blue" value="내 일정">
+        <cl:listener std:sid="listener-26a58976" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-99e7630f" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-3fde028e" id="btn12" class="gray" value="식단">
+        <cl:listener std:sid="listener-66ee79af" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-8997b1d2" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:button std:sid="button-df66a9bb" id="btn2" class="gray" value="날씨">
+        <cl:listener std:sid="listener-78eaf408" name="click" handler="autoCompleteButtonClick"/>
+        <cl:flowlayoutdata std:sid="f-data-34384b0a" width="100px" height="30px" autosize="width"/>
+      </cl:button>
+      <cl:flowlayout std:sid="f-layout-96bc7a79" animationduration="1.0"/>
+    </cl:group>
+    <cl:group std:sid="group-450dad41" id="grpContent">
+      <cl:formdata std:sid="f-data-993d559a" row="0" col="0" rowspan="1" colspan="2"/>
+      <cl:verticallayout std:sid="v-layout-d808ae3c"/>
+    </cl:group>
+    <cl:group std:sid="group-bb852d67" id="grp2">
+      <cl:formdata std:sid="f-data-cde9c047" row="2" col="0" rowspan="1" colspan="2"/>
+      <cl:inputbox std:sid="i-box-26ec7b63" id="ipbChat" placeholder="챗봇과 대화해 보세요.">
+        <cl:listener std:sid="listener-f844a790" name="keydown" handler="onIpb1Keydown"/>
+        <cl:listener std:sid="listener-4b8f5e13" name="clear" handler="onIpb1Clear"/>
+        <cl:attribute name="isExpand" value="N"/>
+        <cl:xylayoutdata std:sid="xyl-data-3664cd73" top="0px" right="0px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-67785c8e" id="btn1" style="background-color:transparent; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none;" value="#">
+        <cl:listener std:sid="listener-40946aac" name="click" handler="onButtonClick"/>
+        <cl:attribute name="isExpand" value="N"/>
+        <cl:xylayoutdata std:sid="xyl-data-38d4c846" top="0px" right="20px" bottom="0px" width="40px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-15453e98"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-e626db72" scrollable="false" hspace="5px" vspace="5px" top-margin="10px" right-margin="10px" bottom-margin="10px" left-margin="10px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:rows length="1" unit="PIXEL" autoSizing="true" hidden="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="40" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

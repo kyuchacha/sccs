@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e318ccca" version="1.0.0.0">
+  <head std:sid="head-fa96c35a">
+    <title>template102</title>
+    <screen std:sid="screen-21de67b2" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" active="false"/>
+    <screen std:sid="screen-34696539" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px" active="true"/>
+    <screen std:sid="screen-f70f2c53" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px" active="false"/>
+    <screen std:sid="screen-027fc54f" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px" active="false"/>
+    <cl:model std:sid="model-76dfbaed">
+      <cl:dataset std:sid="d-set-e183c60f" id="dsMenu">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-6c040683" name="label"/>
+          <cl:datacolumn std:sid="d-column-8303f690" name="value"/>
+          <cl:datacolumn std:sid="d-column-f4af343c" name="parent"/>
+          <cl:datacolumn comment="상위메뉴코드" std:sid="d-column-8f331676" name="column1"/>
+          <cl:datacolumn comment="메뉴코드" std:sid="d-column-070f43ab" name="column2"/>
+          <cl:datacolumn comment="메뉴명" std:sid="d-column-bc449b1d" name="column3"/>
+          <cl:datacolumn comment="메뉴URL" std:sid="d-column-c1e0cfeb" name="column4"/>
+          <cl:datacolumn comment="메뉴표시여부" std:sid="d-column-6754ed0a" name="column5"/>
+          <cl:datacolumn comment="순서" std:sid="d-column-84ada1f1" name="column6"/>
+          <cl:datacolumn comment="신청상태" std:sid="d-column-b45f08ec" name="column7"/>
+          <cl:datacolumn comment="신청일시" std:sid="d-column-036cf414" name="column8"/>
+          <cl:datacolumn comment="승인일시" std:sid="d-column-1e364e3b" name="column9"/>
+          <cl:datacolumn comment="그룹권한" std:sid="d-column-aaad4045" name="column10"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[방조제유지개발]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value1]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[환경설정]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value2]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value1]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[방조제 계측정보 관리]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value3]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[200100]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[11001103]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[방조제 계측정보 관리]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[/cm/menu/selectMenuList.do]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[표시]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[신청]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[value3, value2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[방조제 모니터링]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value4]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value2]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[200200]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[11001104]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[방조제 모니터링]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[/cm/menu/selectMenuList.do]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[표시]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[신청]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[홍수예경보시스템]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value5]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[기본정보관리]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value6]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value5]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[자료관리]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value7]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value5]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[300200]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[11001107]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[자료관리]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[/cm/menu/selectMenuList.do]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[표시]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[신청]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[환경설정]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value8]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value5]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[300300]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[11001108]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[환경설정]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[/cm/menu/selectMenuList.do]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[표시]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[신청]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[통합관제]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value9]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[배수갑문현황]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value10]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value9]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[400100]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[11001110]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[배수갑문현황]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[/cm/menu/selectMenuList.do]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[표시]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[신청]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[도로안정 현황]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value11]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value9]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[400200]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[11001111]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[도로안정 현황]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[/cm/menu/selectMenuList.do]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[표시]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[11]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[신청]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[기본정보관리]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[value13]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[value6]]></cl:datavalue>
+            <cl:datavalue columnname="column1"><![CDATA[400300]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[11001112]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[기본정보관리]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[/cm/menu/selectMenuList.do]]></cl:datavalue>
+            <cl:datavalue columnname="column5"><![CDATA[표시]]></cl:datavalue>
+            <cl:datavalue columnname="column6"><![CDATA[12]]></cl:datavalue>
+            <cl:datavalue columnname="column7"><![CDATA[신청]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column9"><![CDATA[2022-02-01 11:00:00]]></cl:datavalue>
+            <cl:datavalue columnname="column10"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="업무별 메뉴 관리"/>
+  </head>
+  <body std:sid="body-0d4597ef" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-76e872fe" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-c1df7347" id="grpHeader" class="header-box">
+      <cl:verticaldata std:sid="v-data-68a1aed8" width="1320px" height="67px" autosize="height"/>
+      <cl:udc std:sid="ud-control-79dd174f" id="appheader" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-b41a0317" width="1320px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-30980bfb" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-bf050e04" id="grpData">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:verticaldata std:sid="v-data-be2eb6d5" width="1320px" height="608px"/>
+      <cl:group std:sid="group-2a2bae34" id="grp1">
+        <cl:formdata std:sid="f-data-38f5a096" row="0" col="0"/>
+        <cl:udc std:sid="ud-control-d643pd06" id="comformtitle2" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-4db18aaf" row="0" col="0"/>
+          <cl:property name="title" value="메뉴 목록" type="string"/>
+        </cl:udc>
+        <cl:tree std:sid="tree-65e34e20" id="tre1" fieldLabel="부서정보" showlines="true">
+          <cl:listener std:sid="listener-a279ae07" name="selection-change" handler="onTre1SelectionChange"/>
+          <cl:formdata std:sid="f-data-22955521" row="1" col="0"/>
+          <cl:treeitemset datasetid="dsMenu" label="label" value="value" parent="parent"/>
+        </cl:tree>
+        <cl:formlayout std:sid="f-layout-e7f90f24" hspace="5px" vspace="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-1e846ef2" id="grp2">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-addc902f" row="0" col="1"/>
+        <cl:group std:sid="group-fd53d340" id="grp6">
+          <cl:formdata std:sid="f-data-cad1cce3" row="0" col="0"/>
+          <cl:udc std:sid="ud-control-1eb36973" id="comformtitle1" type="udc.com.comFormTitle">
+            <cl:formdata std:sid="f-data-0ade0af6" row="0" col="0" rowspan="1" colspan="1"/>
+            <cl:property name="title" value="메뉴 상세 정보" type="string"/>
+          </cl:udc>
+          <cl:button std:sid="button-e6c5cb4d" id="btnNew" class="btn-new" value="하위메뉴 등록">
+            <cl:formdata std:sid="f-data-24f1cd4c" row="0" col="1"/>
+          </cl:button>
+          <cl:udc std:sid="ud-control-5d55675a" id="combutton1" type="udc.com.comButton">
+            <cl:formdata std:sid="f-data-00ba3011" halign="FILL" valign="FILL" row="0" col="2"/>
+            <cl:property name="grid" value="grdMain" type="control"/>
+            <cl:property name="focusColumnName" value="EMPNO" type="string"/>
+            <cl:property name="visibleRestoreButton" value="false" type="boolean"/>
+            <cl:property name="visibleNewButton" value="false" type="boolean"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-0283bd89">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="115" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="125" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-7y3vwr17" id="frfMain" class="form-box" fieldLabel="사원정보">
+          <cl:attribute name="mobile-column-count" value=""/>
+          <cl:attribute name="tablet-column-count" value=""/>
+          <cl:selectioncontext selectionProvider="#tree-65e34e20"/>
+          <cl:formdata std:sid="f-data-812adb04" row="1" col="0"/>
+          <cl:output std:sid="output-9055b13e" id="opt2" class="require" value="상위메뉴코드">
+            <cl:formdata std:sid="f-data-2679be40" row="0" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-2291b723" id="ipb1">
+            <cl:relativebind property="value" columnname="column1"/>
+            <cl:formdata std:sid="f-data-732a83c5" row="0" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-00eeb5c8" class="require" value="메뉴코드">
+            <cl:formdata std:sid="f-data-6dced324" row="1" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-66605c61" id="ipb2">
+            <cl:relativebind property="value" columnname="column2"/>
+            <cl:formdata std:sid="f-data-fad67551" row="1" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-01d34d89" class="require" value="메뉴명">
+            <cl:formdata std:sid="f-data-0fccfbaa" row="2" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-d41f758a" id="ipb3">
+            <cl:relativebind property="value" columnname="column3"/>
+            <cl:formdata std:sid="f-data-aebdefe4" row="2" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-6c887d48" class="require" value="메뉴URL">
+            <cl:formdata std:sid="f-data-7777bd8f" row="3" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-5804849a" id="ipb4">
+            <cl:relativebind property="value" columnname="column4"/>
+            <cl:formdata std:sid="f-data-b70e8e8b" row="3" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-f47df865" class="require" value="메뉴표시여부">
+            <cl:formdata std:sid="f-data-e2e0701c" row="4" col="0"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-334ef721" id="cmb2">
+            <cl:relativebind property="value" columnname="column5"/>
+            <cl:formdata std:sid="f-data-9d004039" row="4" col="1"/>
+          </cl:combobox>
+          <cl:output std:sid="output-b4fdebdc" value="순서&#xD;&#xA;">
+            <cl:formdata std:sid="f-data-a8423cef" row="5" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-25966f7b" id="ipb5">
+            <cl:relativebind property="value" columnname="column6"/>
+            <cl:formdata std:sid="f-data-2e9ae45a" row="5" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-9515daeb" id="opt4" class="require" value="신청상태">
+            <cl:formdata std:sid="f-data-0d7d64dc" row="6" col="0"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-2a491342" id="cmb3">
+            <cl:relativebind property="value" columnname="column7"/>
+            <cl:formdata std:sid="f-data-26f1e230" row="6" col="1"/>
+          </cl:combobox>
+          <cl:output std:sid="output-a50ca128" value="신청일시">
+            <cl:formdata std:sid="f-data-0980438e" row="7" col="0"/>
+          </cl:output>
+          <cl:dateinput std:sid="d-input-78328659" id="dti3" enabled="false" mask="YYYY-MM-DD HH:mm:ss">
+            <cl:relativebind property="value" columnname="column8"/>
+            <cl:formdata std:sid="f-data-858fbcff" row="7" col="1"/>
+          </cl:dateinput>
+          <cl:output std:sid="output-e1777c4c" value="승인일시">
+            <cl:formdata std:sid="f-data-805ef897" row="8" col="0"/>
+          </cl:output>
+          <cl:dateinput std:sid="d-input-2f3166ea" id="dti2" enabled="false" mask="YYYY-MM-DD HH:mm:ss">
+            <cl:relativebind property="value" columnname="column9"/>
+            <cl:formdata std:sid="f-data-7add3f07" row="8" col="1"/>
+          </cl:dateinput>
+          <cl:output std:sid="output-1435fec9" value="그룹권한">
+            <cl:formdata std:sid="f-data-e802eb74" row="9" col="0"/>
+          </cl:output>
+          <cl:checkboxgroup std:sid="cb-group-74b21baa" id="cbg1" class="align-top" colcount="1" vspacing="6">
+            <cl:relativebind property="value" columnname="column10"/>
+            <cl:formdata std:sid="f-data-e3aae0fe" row="9" col="1"/>
+            <cl:item std:sid="item-80636521" label="관리자" value="value1"/>
+            <cl:item std:sid="item-9d72075c" label="신시 상황실" value="value2"/>
+            <cl:item std:sid="item-d60cc023" label="가력 상황실" value="value3"/>
+            <cl:item std:sid="item-660a6234" label="시설 운영부" value="value4"/>
+            <cl:item std:sid="item-af07edbb" label="유지 관리부" value="value5"/>
+          </cl:checkboxgroup>
+          <cl:formlayout std:sid="f-layout-c13d1b93" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="154" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-49b6d18b">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-fec0997e" user-resizing-mode="standard">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+        <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-b439c04b"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

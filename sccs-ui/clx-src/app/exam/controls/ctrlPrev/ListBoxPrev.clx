@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-27492fb9" version="1.0.3164">
+  <head std:sid="head-a252c5a5">
+    <screen std:sid="screen-9917e3ab" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-d341ad50" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-f92ad5f1" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-8536d980" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-3df2b5ad">
+      <cl:dataset std:sid="d-set-c85b3e93" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ed5f2999" name="LABEL"/>
+          <cl:datacolumn std:sid="d-column-e7f85651" name="VALUE"/>
+          <cl:datacolumn std:sid="d-column-704b3795" name="ICON"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="LABEL"><![CDATA[pink]]></cl:datavalue>
+            <cl:datavalue columnname="VALUE"><![CDATA[pink]]></cl:datavalue>
+            <cl:datavalue columnname="ICON"><![CDATA[app/exam/controls/001-south-korea.svg]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="LABEL"><![CDATA[red]]></cl:datavalue>
+            <cl:datavalue columnname="VALUE"><![CDATA[red]]></cl:datavalue>
+            <cl:datavalue columnname="ICON"><![CDATA[app/exam/controls/001-south-korea.svg]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="LABEL"><![CDATA[green]]></cl:datavalue>
+            <cl:datavalue columnname="VALUE"><![CDATA[green]]></cl:datavalue>
+            <cl:datavalue columnname="ICON"><![CDATA[app/exam/controls/001-south-korea.svg]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="LABEL"><![CDATA[blue]]></cl:datavalue>
+            <cl:datavalue columnname="VALUE"><![CDATA[blue]]></cl:datavalue>
+            <cl:datavalue columnname="ICON"><![CDATA[app/exam/controls/001-south-korea.svg]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="LABEL"><![CDATA[black]]></cl:datavalue>
+            <cl:datavalue columnname="VALUE"><![CDATA[black]]></cl:datavalue>
+            <cl:datavalue columnname="ICON"><![CDATA[app/exam/controls/001-south-korea.svg]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="LABEL"><![CDATA[yellow]]></cl:datavalue>
+            <cl:datavalue columnname="VALUE"><![CDATA[yellow]]></cl:datavalue>
+            <cl:datavalue columnname="ICON"><![CDATA[app/exam/controls/001-south-korea.svg]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="LABEL"><![CDATA[orange]]></cl:datavalue>
+            <cl:datavalue columnname="VALUE"><![CDATA[orange]]></cl:datavalue>
+            <cl:datavalue columnname="ICON"><![CDATA[app/exam/controls/001-south-korea.svg]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="LABEL"><![CDATA[purple]]></cl:datavalue>
+            <cl:datavalue columnname="VALUE"><![CDATA[purple]]></cl:datavalue>
+            <cl:datavalue columnname="ICON"><![CDATA[app/exam/controls/001-south-korea.svg]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="리스트박스 관련 속성"/>
+  </head>
+  <body std:sid="body-0be0afed">
+    <cl:group std:sid="group-a245e65c" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-c5b6101e" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-a3149109" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-940dbaf6" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-b6f20064" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-3e6b79ca" id="grpData">
+      <cl:verticaldata std:sid="v-data-75015b48" width="400px" height="645px" autosize="height"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="리스트박스(ListBox)는 미리 정해진 값들 중에서 단일 값을 선택하는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-8e39a9a5" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp2" class="cl-form-group">
+        <cl:formdata std:sid="f-data-7dddd19f" row="1" col="0"/>
+        <cl:output std:sid="output-90063766" value="[draggableItem = true]&#xD;&#xA;[allowDrop = true]&#xD;&#xA;1. 아이템을 다른 위치로 드래그앤드랍한다.&#xD;&#xA;2. 아이템의 위치가 변경된다.&#xD;&#xA;&#xD;&#xA;[multiple = true]&#xD;&#xA;1. 아이템을 클릭한다.&#xD;&#xA;2. Shift를 누른 채로 다른 아이템을 클릭한다.&#xD;&#xA;3. 여러 아이템들이 동시에 선택된다.">
+          <cl:formdata std:sid="f-data-f9c9fd3e" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f689b860" value="[displayExp : label + &quot;[&quot;+value+&quot;]&quot;]&#xD;&#xA;1. 아이템들이 pink[pink] 포맷으로 표시된다.">
+          <cl:formdata std:sid="f-data-52d5a790" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e9ef1880" value="[enabledItemExp : value != &quot;red&quot;]&#xD;&#xA;1. 아이템 중 red를 클릭한다.&#xD;&#xA;2. 클릭 되지 않는다.">
+          <cl:formdata std:sid="f-data-46751be8" row="2" col="0"/>
+        </cl:output>
+        <cl:listbox std:sid="l-box-d8bf787c" id="lbx2" multiple="true" draggableitem="true" allowdrop="true">
+          <cl:formdata std:sid="f-data-9dc2f983" halign="LEFT" valign="FILL" width="200" row="0" col="1"/>
+          <cl:itemset datasetid="ds1" label="LABEL" value="VALUE"/>
+          <cl:value>red</cl:value>
+        </cl:listbox>
+        <cl:listbox std:sid="l-box-7820fe34" id="lbx3" displayexp="label + &quot;[&quot;+value+&quot;]&quot;">
+          <cl:formdata std:sid="f-data-8237b5ab" halign="LEFT" valign="FILL" width="200" row="1" col="1"/>
+          <cl:itemset datasetid="ds1" label="LABEL" value="VALUE"/>
+        </cl:listbox>
+        <cl:listbox std:sid="l-box-28a90aad" id="lbx4" enableditemexp="value != &quot;red&quot;">
+          <cl:formdata std:sid="f-data-4b019880" halign="LEFT" valign="FILL" width="200" row="2" col="1"/>
+          <cl:itemset datasetid="ds1" label="LABEL" value="VALUE"/>
+        </cl:listbox>
+        <cl:output std:sid="output-0b7088a0" value="[filterExp : value != &quot;red&quot;]&#xD;&#xA;1. red 아이템이 보이지 않는다.">
+          <cl:formdata std:sid="f-data-edb16cbc" row="3" col="0"/>
+        </cl:output>
+        <cl:listbox std:sid="l-box-f0a2f518" id="lbx7" filterexp="value != &quot;red&quot;">
+          <cl:formdata std:sid="f-data-054b56cd" halign="LEFT" valign="FILL" width="200" row="3" col="1"/>
+          <cl:itemset datasetid="ds1" label="LABEL" value="VALUE"/>
+        </cl:listbox>
+        <cl:output std:sid="output-cc834f77" value="[showIcon = true]&#xD;&#xA;1. 아이템들의 왼쪽에 아이콘이 표시된다.">
+          <cl:formdata std:sid="f-data-24785c22" row="4" col="0"/>
+        </cl:output>
+        <cl:listbox std:sid="l-box-68a7d3ea" id="lbx8" showicon="true">
+          <cl:formdata std:sid="f-data-5f42cc65" halign="LEFT" valign="FILL" width="200" row="4" col="1"/>
+          <cl:itemset datasetid="ds1" label="LABEL" value="VALUE" icon="ICON"/>
+        </cl:listbox>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-4f9a17c9" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-c1dfc62c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

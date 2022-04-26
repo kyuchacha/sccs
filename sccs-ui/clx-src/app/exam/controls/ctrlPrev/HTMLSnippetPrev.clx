@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e4ab852e" version="1.0.3164">
+  <head std:sid="head-05de2849">
+    <screen std:sid="screen-e982fea1" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-d3b77175" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-90bc66eb" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-0657f31e" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-dce77b6f"/>
+    <cl:appspec title="HTML스니펫 관련 속성"/>
+  </head>
+  <body std:sid="body-f3d615e4">
+    <cl:group std:sid="group-0844a992" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-e802494c" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-5daeb225" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-7da11c08" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-52fa3231" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-37baa9ea" id="grpData">
+      <cl:verticaldata std:sid="v-data-7469c730" width="400px" height="647px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="HTML스니펫(HTMLSinppet)은 HTML 태그를 직접 사용할 수 있는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-cbb9b7a5" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-9f7dbbae" row="1" col="0"/>
+        <cl:htmlsnippet std:sid="htmlsnippet-609e86bc" id="hspt2" value="&lt;p>HTML Snippet&lt;/p>" src="htmlsnippet/pointerLockAPI.html">
+          <cl:formdata std:sid="f-data-8c1bfb5e" row="2" col="1"/>
+        </cl:htmlsnippet>
+        <cl:output std:sid="output-709a7ece" value="[HTMLSnippet에서 로드할 html의 url]&#xD;&#xA;1. HTML스니펫에 Pointer Lock API 관련 내용이 보인다.">
+          <cl:formdata std:sid="f-data-9748c66e" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-e5f7a19a" value="[unselectable = true]&#xD;&#xA;1. HTML스니펫에 텍스트를 드래그한다.&#xD;&#xA;2. 선택되지 않는다.">
+          <cl:formdata std:sid="f-data-264d2fb6" row="0" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-f306f8a5" id="grp2">
+          <cl:formdata std:sid="f-data-94192e6e" row="0" col="1" rowspan="1" colspan="1"/>
+          <cl:htmlsnippet std:sid="htmlsnippet-dc849f1b" id="hspt3" value="&lt;p>HTML Snippet&lt;/p>&#xD;&#xA;&lt;button>HTML Snippet&lt;/button>&#xD;&#xA;&lt;p style=&quot;color:red&quot;>HTML Snippet&lt;/p>&#xD;&#xA;&lt;button style=&quot;color:red&quot;>HTML Snippet&lt;/button>&#xD;&#xA;" unselectable="true">
+            <cl:formdata std:sid="f-data-6003dd00" row="0" col="0"/>
+          </cl:htmlsnippet>
+          <cl:formlayout std:sid="f-layout-4857ac8a" hspace="5px" vspace="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:htmlsnippet std:sid="htmlsnippet-14d1bcde" id="hspt4" value="&lt;p>HTML Snippet&lt;/p>&#xD;&#xA;&lt;button>HTML Snippet&lt;/button>&#xD;&#xA;&lt;p style=&quot;color:red&quot;>HTML Snippet&lt;/p>&#xD;&#xA;&lt;button style=&quot;color:red&quot;>HTML Snippet&lt;/button>&#xD;&#xA;" unselectable="false">
+          <cl:formdata std:sid="f-data-79e6765a" row="1" col="1"/>
+        </cl:htmlsnippet>
+        <cl:output std:sid="output-0b56559a" value="[unselectable = false]&#xD;&#xA;1. HTML스니펫에 텍스트를 드래그한다.&#xD;&#xA;2. 선택된다.">
+          <cl:formdata std:sid="f-data-0f786f17" row="1" col="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-bb82e41c" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-8007c05c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

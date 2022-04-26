@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ccf50f87" version="1.0.0.0">
+  <head std:sid="head-36af639d">
+    <title>InputBox</title>
+    <screen std:sid="screen-b79b02a2" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" active="true"/>
+    <screen std:sid="screen-c9856277" id="default" name="default" minwidth="1235px" maxwidth="1319px" width="1235px" height="675px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-4afb9164" id="notebook" name="notebook" minwidth="1020px" maxwidth="1234px" width="1020px" height="540px"/>
+    <screen std:sid="screen-00896419" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-c2bf2409" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-8a447e37">
+      <cl:datamap std:sid="d-map-2a14a808" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bd286656" name="column1" defaultvalue="1234567891234"/>
+          <cl:datacolumn std:sid="d-column-e0a8deff" name="column2" defaultvalue="20200301"/>
+          <cl:datacolumn std:sid="d-column-3469338c" name="column3" datatype="number" defaultvalue="320000500100"/>
+          <cl:datacolumn std:sid="d-column-fbeed30a" name="column4" datatype="number" defaultvalue="32.52"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="아웃풋 관련 속성"/>
+  </head>
+  <body std:sid="body-656f5d75" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-9e8af167" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-5c6c91e5" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-83007e81" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-e69c5a0f" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-d1cebfaa" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-e77bca3f" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-ab046cbb" id="grpData">
+      <cl:verticaldata std:sid="v-data-43dcddea" width="400px" height="645px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="아웃풋(Output)은 결과로부터 오는 값을 출력하는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-435bfc7b" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-a90d8f24" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:output std:sid="output-37f32a80" id="opt1" value="[format = 000000-0000000]&#xD;&#xA;1. 아웃풋에 출력되는 값이 주민등록번호 포맷이다.">
+          <cl:formdata std:sid="f-data-bcbc6d7d" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a665ba05" id="opt2" value="[dataType = date]&#xD;&#xA;[format = YYYY-MM-DD]&#xD;&#xA;1. 아웃풋에 출력되는 값이 YYYY-MM-DD 포맷이다.">
+          <cl:formdata std:sid="f-data-7248e5c9" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a1c37800" id="opt3" value="[dataType = number]&#xD;&#xA;[format = s#,##0]&#xD;&#xA;[displayExp = &quot;$&quot; + text]&#xD;&#xA;1. 아웃풋에 출력되는 값이 천자리 마다 콤마가 찍혔고 $가 붙어있다.">
+          <cl:formdata std:sid="f-data-1a528e5d" row="3" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-de85d342" id="grp2">
+          <cl:formdata std:sid="f-data-d226a76e" row="0" col="1"/>
+          <cl:output std:sid="output-06d0defd" id="opt10" format="000000-0000000" unselectable="false">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+            <cl:formdata std:sid="f-data-d84db880" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-000952bd" id="opt8" style="color:#757272;" value="dataType=string인 경우 format 속성을 지정하여 특정 문자열 데이터에 대한 마스킹 처리를 할 수 있습니다.">
+            <cl:formdata std:sid="f-data-1f507ff2" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-f96468eb" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-61d412ce" id="grp3">
+          <cl:formdata std:sid="f-data-c746a0e6" row="1" col="1"/>
+          <cl:output std:sid="output-9611906b" id="opt11" datatype="date" format="YYYY-MM-DD">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+            <cl:formdata std:sid="f-data-a45ebefc" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-d08c7d27" id="opt4" style="color:#757272;" value="데이터 유형이 날짜인 경우에 dataType=date로 지정하여 날짜 포맷으로 데이터를 표시할 수 있습니다.">
+            <cl:formdata std:sid="f-data-b36619df" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-883af99a" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-10290e7a" id="grp4">
+          <cl:formdata std:sid="f-data-d41bbf0b" row="3" col="1"/>
+          <cl:output std:sid="output-2f9f5deb" id="opt12" datatype="number" format="s#,##0" displayexp="&quot;$&quot; + text">
+            <cl:datamapbind property="value" datacontrolid="dm1" columnname="column3"/>
+            <cl:formdata std:sid="f-data-67a84272" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e82f2ac2" id="opt5" style="color:#757272;" value="데이터 유형이 숫자인 경우에 dataType=number로 지정하며, format 속성을 통해 숫자(금액, 소수점) 포맷으로 데이터를 표시할 수 있습니다.">
+            <cl:formdata std:sid="f-data-b248ebbf" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-947a7efe" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-aee6daae" value="[ellipsis = true]&#xD;&#xA;1. 아웃풋에 출력되는 값에 말줄임 표시가 되어 있다.">
+          <cl:formdata std:sid="f-data-c75325dc" row="5" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-8c31f60e" id="grp5">
+          <cl:formdata std:sid="f-data-0227b19a" row="5" col="1"/>
+          <cl:output std:sid="output-d854364f" value="가나다라마바사아자차카타파하" ellipsis="true">
+            <cl:formdata std:sid="f-data-f9147991" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-068e9ca5" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-074de7d1" value="[dataType = number]&#xD;&#xA;[decimalSeparator = ?]&#xD;&#xA;[digitGroupSeparator = !]&#xD;&#xA;1. 아웃풋에 출력되는 값이 정수 구분은 !, 소수 구분은 ?로 되어 있다.">
+          <cl:formdata std:sid="f-data-2e031e0b" row="4" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-9c76896a" value="[dataType = date]&#xD;&#xA;[dateValueFormat = DD/MM/YYYY]&#xD;&#xA;[format = YYYY-MM-DD]&#xD;&#xA;1. 아웃풋에 출력되는 값이 YYYY-MM-DD 포맷이다.">
+          <cl:formdata std:sid="f-data-b9789d53" row="2" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-77611eee" id="grp6">
+          <cl:formdata std:sid="f-data-287e1f98" row="2" col="1"/>
+          <cl:output std:sid="output-cdddef3f" style="color:#757272;" value="아웃풋의 value가 dateValueFormat의 형식을 분석후 설정한 format형식으로 반환합니다">
+            <cl:formdata std:sid="f-data-1831e225" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-8b244e1a" id="opt20" value="05/05/2021" datatype="date" dateValueFormat="DD/MM/YYYY" format="YYYY-MM-DD">
+            <cl:formdata std:sid="f-data-5200f4d6" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-e8d4fbce" hspace="5px" vspace="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-53b3db3e" id="grp7">
+          <cl:formdata std:sid="f-data-99b3c5c6" row="4" col="1"/>
+          <cl:output std:sid="output-7134f19b" value="123456789.123" datatype="number" format="s#,##0.#" decimalseparator="?" digitgroupseparator="!">
+            <cl:formdata std:sid="f-data-82ad49ee" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-9df9d601" style="color:#757272;" value="데이터 유형이 숫자인 경우에 dataType=number로 지정하며, digitSeparator, digitGroupSeperator를 통해 정수, 소수 구분자 표시 방법을 설정할 수 있습니다.">
+            <cl:formdata std:sid="f-data-32f000fd" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-63f15b10" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-b03eae89" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-03ad6d94"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

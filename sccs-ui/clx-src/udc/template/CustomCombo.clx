@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-52a24bb3" version="1.0.0.0">
+  <head std:sid="head-e72e6429">
+    <title>customcombo1</title>
+    <screen std:sid="screen-b88a8413" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-da6f0bd2" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-288b013a" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-3f88fb05">
+      <cl:dataset std:sid="d-set-a60dd493" id="combodata" filtercondition="">
+        <cl:dataview std:sid="d-view-fe4ea40a" id="dv1" filtercondition="value != 'add'"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대표이사]]></cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[부장]]></cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[차장]]></cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[과장]]></cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대리]]></cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[사원]]></cl:datavalue>
+            <cl:datavalue columnname="value">value6</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="combodata에 value=&quot;add&quot; 인경우 직급 추가를 할 수 있습니다.">
+      <cl:property bindable="true" default="left" name="popupPos" type="string"/>
+      <cl:property bindable="true" default="300" name="popupWidth" type="string"/>
+      <cl:property bindable="true" default="500" name="popupHeight" type="string"/>
+      <cl:property bindable="true" default="직급관리" name="addLabel" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-b20ac610" style="top:0px; left:0px; width:150px; height:30px;">
+    <cl:combobox std:sid="c-box-299e1904" id="cmb1" class="customcombo1" preventinput="true">
+      <cl:listener std:sid="listener-a45644ab" handler="onCmb1Close" name="close"/>
+      <cl:listener std:sid="listener-ee854d97" handler="onCmb1BeforeSelectionChange" name="before-selection-change"/>
+      <cl:listener std:sid="listener-991f2337" handler="onCmb1Open" name="open"/>
+      <cl:verticaldata std:sid="v-data-ddd900e6" height="30px" width="265px"/>
+      <cl:itemset datasetid="combodata" label="label" value="value"/>
+      <cl:liststyle class="customcombo-list1"/>
+      <cl:itemstyle>
+        <cl:expbind category="CLASS" property="class" expression="value == 'add'?&quot;cl-add-rank&quot;:&quot;&quot;"/>
+      </cl:itemstyle>
+    </cl:combobox>
+    <cl:verticallayout std:sid="v-layout-aeae1eaf"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

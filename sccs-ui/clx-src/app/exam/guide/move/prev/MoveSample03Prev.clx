@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-644862fd" version="1.0.0.0">
+  <head std:sid="head-1d39893e">
+    <title>Template06</title>
+    <screen std:sid="screen-274680db" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-254b140e" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-87a5c472" id="tablet" name="tablet" minwidth="800px" maxwidth="1019px" width="800px" height="768px"/>
+    <screen std:sid="screen-979171ec" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-cd87533e"/>
+    <cl:appspec title="다이얼로그"/>
+  </head>
+  <body std:sid="body-46822e7d" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-17265dda" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-48a6a69c" width="998px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grp1" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-87605f82" id="grp1">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-b7c9e3ee" width="972px" height="645px"/>
+      <cl:textarea std:sid="t-area-b9a98781" id="txaScript" class="form-box">
+        <cl:formdata std:sid="f-data-e6bd9924" row="5" col="0" rowspan="1" colspan="2"/>
+      </cl:textarea>
+      <cl:group std:sid="group-d715274a" id="grpFormFunc" class="form-box">
+        <cl:formdata std:sid="f-data-136b53ca" row="1" col="0" rowspan="3" colspan="1"/>
+        <cl:output std:sid="output-f1ef5dff" id="otp1" style="text-align:center;" value="No">
+          <cl:formdata std:sid="f-data-9ac657a6" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-1117b763" id="otp3" style="text-align:center;" value="함수">
+          <cl:formdata std:sid="f-data-2e0e8208" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-23c3477f" id="otp4" style="text-align:center;" value="동작">
+          <cl:formdata std:sid="f-data-40d3a62a" row="0" col="3"/>
+        </cl:output>
+        <cl:button std:sid="button-950ead6a" id="btn2" value="Modal 팝업호출">
+          <cl:listener std:sid="listener-4187d7d9" name="click" handler="onBtn2Click"/>
+          <cl:formdata std:sid="f-data-3fdd50b1" halign="FILL" valign="FILL" width="140" height="30" row="1" col="3"/>
+        </cl:button>
+        <cl:output std:sid="output-005aea89" id="otp6" style="text-align:center;" value="1">
+          <cl:formdata std:sid="f-data-d22d3804" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-bce1bacf" id="otp8" style="text-align:center;" value="3">
+          <cl:formdata std:sid="f-data-a7061645" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-6a49ef6b" id="otp12" style="text-align:center;" value="2">
+          <cl:formdata std:sid="f-data-7480884e" row="2" col="0"/>
+        </cl:output>
+        <cl:button std:sid="button-23bd54eb" id="btn4" value="팝업화면인가?">
+          <cl:listener std:sid="listener-ef718046" name="click" handler="onBtn4Click"/>
+          <cl:formdata std:sid="f-data-9fe4fd87" halign="FILL" valign="FILL" width="140" height="30" row="2" col="3"/>
+        </cl:button>
+        <cl:button std:sid="button-0d5e7111" id="btn5" value="window 팝업호출">
+          <cl:listener std:sid="listener-f410f585" name="click" handler="onBtn5Click"/>
+          <cl:formdata std:sid="f-data-cdbb758f" halign="FILL" valign="FILL" width="140" height="30" row="3" col="3"/>
+        </cl:button>
+        <cl:output std:sid="output-eb55c5c0" id="otp20" style="text-align:center;" value="설명">
+          <cl:formdata std:sid="f-data-b63812b8" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-cfba1990" id="otp2" style="text-align:center;" value="4">
+          <cl:formdata std:sid="f-data-054d1f09" row="4" col="0"/>
+        </cl:output>
+        <cl:button std:sid="button-7229d6d3" id="btn3" value="returnValue">
+          <cl:listener std:sid="listener-36436181" name="click" handler="onBtn3Click"/>
+          <cl:formdata std:sid="f-data-73703dfd" halign="FILL" valign="FILL" width="140" height="30" row="4" col="3"/>
+        </cl:button>
+        <cl:inputbox std:sid="i-box-67c4bd29" id="ipb1" readonly="true" value="open">
+          <cl:formdata std:sid="f-data-7db1635d" row="1" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-a685b721" id="ipb2" readonly="true" value="isPopup">
+          <cl:formdata std:sid="f-data-63fb4db8" row="2" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-b4eb2021" id="ipb3" readonly="true" value="windowOpen">
+          <cl:formdata std:sid="f-data-b69aa926" row="3" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-dc161cef" id="ipb4" readonly="true" value="callback">
+          <cl:formdata std:sid="f-data-e13a995e" row="4" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-5e3c622a" id="ipb5" readonly="true" value="Modal 팝업호출">
+          <cl:formdata std:sid="f-data-eda1318f" row="1" col="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-12aab608" id="ipb6" readonly="true" value="화면이 팝업인지 여부 리턴">
+          <cl:formdata std:sid="f-data-9f06c2fe" row="2" col="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-0eb97a8e" id="ipb7" readonly="true" value="윈도우팝업호출">
+          <cl:formdata std:sid="f-data-41a37d2c" row="3" col="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-53bb6b5e" id="ipb8" readonly="true" value="다이얼로그 닫힘 시 부모창에 파라미터 전달">
+          <cl:formdata std:sid="f-data-9993af93" row="4" col="2"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-4415f6ad" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="150" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-ba4bd0f2" id="grpFormCont" class="form-box">
+        <cl:formdata std:sid="f-data-ee19d052" row="1" col="1"/>
+        <cl:output std:sid="output-5b7c19cc" id="otp25" value="시나리오">
+          <cl:formdata std:sid="f-data-25c1fad4" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f91a483c" id="otp26" value="추가설명">
+          <cl:formdata std:sid="f-data-66157e43" row="1" col="0"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-ddefd29b" id="txa1" readonly="true" value="1. 왼쪽의 동작 버튼을 클릭한다. &#xD;&#xA;2. 기능동작 및 결과값을 확인한다. &#xD;&#xA;    isPopup()인경우 결과값 true/false 리턴함&#xD;&#xA;3. 하단의 스크립트내용을 확인한다.&#xD;&#xA;4. 스크립트내용을 복사하여 코딩에 활용한다.&#xD;&#xA;">
+          <cl:formdata std:sid="f-data-c773d028" row="0" col="1"/>
+        </cl:textarea>
+        <cl:textarea std:sid="t-area-97e6ea78" id="txa2" readonly="true" value=">화면 표준&#xD;&#xA;- 기본팝업 화면사이즈 : 800 X 600&#xD;&#xA;- 탭형팝업 화면사이즈 : 920 X 720&#xD;&#xA;1. 팝업에서의 파라미터 셋팅 방법은 &#xD;&#xA;   exam/sample/move/Sample03Sub1 참조">
+          <cl:formdata std:sid="f-data-acd97d61" row="1" col="1"/>
+        </cl:textarea>
+        <cl:formlayout std:sid="f-layout-bea260c3" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:udc std:sid="ud-control-a4d56c82" id="comformtitle3" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-9e0e74b3" row="0" col="0"/>
+        <cl:property name="title" value="기능(함수)" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-385a1b27" id="comformtitle2" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-79184078" row="0" col="1"/>
+        <cl:property name="title" value="시나리오" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-e3b45cbc" id="comformtitle4" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-23bc9ee0" row="2" col="1"/>
+        <cl:property name="title" value="결과값" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-3af2176a" id="comformtitle5" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-bc44f52e" row="4" col="0" rowspan="1" colspan="2"/>
+        <cl:property name="title" value="스크립트 내용" type="string"/>
+      </cl:udc>
+      <cl:inputbox std:sid="i-box-f6a735d6" id="otpRslt" readonly="true">
+        <cl:formdata std:sid="f-data-928e8bc1" row="3" col="1"/>
+      </cl:inputbox>
+      <cl:formlayout std:sid="f-layout-92c3a806" vspace="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-5b98e38f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

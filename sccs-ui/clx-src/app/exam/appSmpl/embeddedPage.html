@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>임베디드 페이지 샘플</title>
+<script type="text/javascript">
+	function getOutputText(){
+		if(_ownerApp){
+		  document.getElementById("embPageOpt").value = _ownerApp.lookup("mainEmbPgIpb").value;
+		}
+	}
+
+	function setAppText(){
+		if(_ownerApp) {
+	      _ownerApp.lookup("mainEmbPgOpt").value = document.getElementById("embPageIpb").value;
+		}
+	}
+	
+</script>
+</head>
+<body>
+<h3>HTML 임베디드 페이지</h3>
+<input id="embPageIpb" type="text" value="" style="margin-bottom:5px; margin-top:30px" placeholder="전송할 값을 입력해주세요." />
+<button onClick="setAppText()">보내기 버튼 </button>
+<br />
+<input id="embPageOpt" type="text" value="메인 앱에서 값 받아오기" style="margin-bottom:5px" />
+</body>
+</html>

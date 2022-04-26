@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-41b3e4b9" version="1.0.3556">
+  <head std:sid="head-8001e3cc">
+    <screen std:sid="screen-79cd34b3" id="default" name="default" minwidth="1280px" width="1280px" height="768px"/>
+    <screen std:sid="screen-9f02ecb8" id="tablet" name="tablet" maxwidth="1279px" width="800px" height="768px"/>
+    <cl:model std:sid="model-020f65b5"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-95867931">
+    <cl:udc std:sid="ud-control-79dd174f" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-9dd172fa" width="1680px" height="30px" autosize="none"/>
+    </cl:udc>
+    <cl:group std:sid="group-8ef410b1">
+      <cl:verticaldata std:sid="v-data-09f2b914" width="1220px" height="79px" autosize="height"/>
+      <cl:output std:sid="output-71a1011b" value="아래의 버튼을 클릭하여 팝업화면을 확인하세요. (윈도우 팝업이 아닌 컴포넌트로 작성함)">
+        <cl:verticaldata std:sid="v-data-6b1edfb3" width="100px" height="24px"/>
+      </cl:output>
+      <cl:group std:sid="group-90f2ad01">
+        <cl:verticaldata std:sid="v-data-6f122d80" width="400px" height="25px" autosize="height"/>
+        <cl:button std:sid="button-e20137d8" id="btnMdl1" class="btn-primary" value="초기화 비밀번호 부여">
+          <cl:listener std:sid="listener-347077ba" name="click" handler="onBtnMdl1Click2"/>
+          <cl:listener std:sid="listener-70e078a8" name="click" handler="onBtnMdl1Click"/>
+          <cl:flowlayoutdata std:sid="f-data-89aafd38" width="140px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-18d9f40b" id="btnMdl2" class="btn-primary" value="회원탈퇴 요청">
+          <cl:listener std:sid="listener-92ab11bf" name="click" handler="onBtnMdl2Click"/>
+          <cl:listener std:sid="listener-3336da3f" name="click" handler="onBtnMdl2Click2"/>
+          <cl:flowlayoutdata std:sid="f-data-6cea5d69" width="90px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-bb1474ec" id="btnMdl5" class="btn-primary" value="세션 만료 안내">
+          <cl:listener std:sid="listener-7cda183c" name="click" handler="onBtnMdl5Click"/>
+          <cl:listener std:sid="listener-af5e4285" name="click" handler="onBtnMdl5Click2"/>
+          <cl:flowlayoutdata std:sid="f-data-23028038" width="100px" height="25px" autosize="none"/>
+        </cl:button>
+        <cl:button std:sid="button-797e4518" id="btnMdl3" class="btn-primary" value="계정 잠금 알림">
+          <cl:listener std:sid="listener-5c01f689" name="click" handler="onBtnMdl3Click"/>
+          <cl:listener std:sid="listener-b5a01a47" name="click" handler="onBtnMdl3Click2"/>
+          <cl:flowlayoutdata std:sid="f-data-bbd96fd9" width="100px" height="25px"/>
+        </cl:button>
+        <cl:button std:sid="button-4abcf47c" id="btnMdl4" class="btn-primary" value="도움말 등록 메뉴 선택">
+          <cl:listener std:sid="listener-569888a7" name="click" handler="onButtonClick"/>
+          <cl:listener std:sid="listener-bd1f8847" name="click" handler="onBtnMdl4Click"/>
+          <cl:flowlayoutdata std:sid="f-data-83b7f69c" width="140px" height="25px" autosize="none"/>
+        </cl:button>
+        <cl:flowlayout std:sid="f-layout-ca3d266e" scrollable="false" hspacing="5"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-c79f2b51" scrollable="false" spacing="10"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-e76e51e2"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

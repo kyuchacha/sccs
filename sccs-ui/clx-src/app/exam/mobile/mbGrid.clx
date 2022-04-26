@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b83d3e8c" version="1.0.3633">
+  <head std:sid="head-8238ff04">
+    <screen std:sid="screen-d6e8f719" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-4ed25b5f" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-11987700" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-2dff609d" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-753f5a01">
+      <cl:dataset std:sid="d-set-3e09f83a" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="ID" std:sid="d-column-e5d365a0" name="col1"/>
+          <cl:datacolumn comment="성명" std:sid="d-column-e76e280c" name="col2"/>
+          <cl:datacolumn comment="전화번호" std:sid="d-column-7873f391" name="col3"/>
+          <cl:datacolumn comment="주소" std:sid="d-column-dcab3bad" name="col4"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="col1">ID0001</cl:datavalue>
+            <cl:datavalue columnname="col2">박보검</cl:datavalue>
+            <cl:datavalue columnname="col3">010-1234-5678</cl:datavalue>
+            <cl:datavalue columnname="col4">서울시 여의도</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1">ID0002</cl:datavalue>
+            <cl:datavalue columnname="col2">홍길동</cl:datavalue>
+            <cl:datavalue columnname="col3">010-1234-5678</cl:datavalue>
+            <cl:datavalue columnname="col4">서울시 동작구 123</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1">ID0003</cl:datavalue>
+            <cl:datavalue columnname="col2">이순신</cl:datavalue>
+            <cl:datavalue columnname="col3">010-1234-5678</cl:datavalue>
+            <cl:datavalue columnname="col4">경기도 의정부시 111</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1">ID0004</cl:datavalue>
+            <cl:datavalue columnname="col2">송혜교</cl:datavalue>
+            <cl:datavalue columnname="col3">010-1234-5678</cl:datavalue>
+            <cl:datavalue columnname="col4">서울시 노원구 중계동</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1">ID0004</cl:datavalue>
+            <cl:datavalue columnname="col2">이보영</cl:datavalue>
+            <cl:datavalue columnname="col3">010-1234-5678</cl:datavalue>
+            <cl:datavalue columnname="col4">서울시 강북구</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1">ID0005</cl:datavalue>
+            <cl:datavalue columnname="col2">임장군</cl:datavalue>
+            <cl:datavalue columnname="col3">010-1234-5678</cl:datavalue>
+            <cl:datavalue columnname="col4">서울시 여의도 영등포동</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1">ID0005</cl:datavalue>
+            <cl:datavalue columnname="col2">김토마토</cl:datavalue>
+            <cl:datavalue columnname="col3">010-1234-5678</cl:datavalue>
+            <cl:datavalue columnname="col4">서울시 여의도 영등포동</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1">ID0005</cl:datavalue>
+            <cl:datavalue columnname="col2">김퇴직</cl:datavalue>
+            <cl:datavalue columnname="col3">010-1234-5678</cl:datavalue>
+            <cl:datavalue columnname="col4">서울시 여의도 영등포동</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-fe73a893" id="dsListOrg">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="ID" std:sid="d-column-8ad5eda1" name="col1"/>
+          <cl:datacolumn comment="성명" std:sid="d-column-b40878de" name="col2"/>
+          <cl:datacolumn comment="전화번호" std:sid="d-column-76540e83" name="col3"/>
+          <cl:datacolumn comment="주소" std:sid="d-column-816e6e4f" name="col4"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="col1"><![CDATA[ID0001]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[박보검]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[010-1234-5678]]></cl:datavalue>
+            <cl:datavalue columnname="col4"><![CDATA[서울시 여의도]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1"><![CDATA[ID0002]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[홍길동]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[010-1234-5678]]></cl:datavalue>
+            <cl:datavalue columnname="col4"><![CDATA[서울시 동작구 123]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1"><![CDATA[ID0003]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[이순신]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[010-1234-5678]]></cl:datavalue>
+            <cl:datavalue columnname="col4"><![CDATA[경기도 의정부시 111]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1"><![CDATA[ID0004]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[송혜교]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[010-1234-5678]]></cl:datavalue>
+            <cl:datavalue columnname="col4"><![CDATA[서울시 노원구 중계동]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1"><![CDATA[ID0004]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[이보영]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[010-1234-5678]]></cl:datavalue>
+            <cl:datavalue columnname="col4"><![CDATA[서울시 강북구]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1"><![CDATA[ID0005]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[임장군]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[010-1234-5678]]></cl:datavalue>
+            <cl:datavalue columnname="col4"><![CDATA[서울시 여의도 영등포동]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1"><![CDATA[ID0005]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[김토마토]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[010-1234-5678]]></cl:datavalue>
+            <cl:datavalue columnname="col4"><![CDATA[서울시 여의도 영등포동]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="col1"><![CDATA[ID0005]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[김퇴직]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[010-1234-5678]]></cl:datavalue>
+            <cl:datavalue columnname="col4"><![CDATA[서울시 여의도 영등포동]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="templates/CModTmpl.clx 템플릿 사용하여 작성 함." title="모바일 그리드"/>
+  </head>
+  <body std:sid="body-57afee22">
+    <cl:group std:sid="group-d1f5be83" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-a4dd589f" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3acdc2bb" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-80e24452" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-3e351495"/>
+    </cl:group>
+    <cl:group std:sid="group-72e4444f" id="grpData">
+      <cl:verticaldata std:sid="v-data-ef3a4607" width="400px" height="1800px" autosize="height"/>
+      <cl:group std:sid="group-b3d8d80f">
+        <cl:verticaldata std:sid="v-data-d00c67f8" width="1270px" height="120px" autosize="height"/>
+        <cl:group std:sid="group-7a48379f" id="grp1">
+          <cl:verticaldata std:sid="v-data-5f5680c1" width="1270px" height="40px" autosize="height"/>
+          <cl:output std:sid="output-bd633362" style="font-weight:bold; padding-left:1rem; font-size:2.5rem;" value="모바일 그리드">
+            <cl:formdata std:sid="f-data-d357b6a6" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-f1d62e5f" style="font-weight:bold; padding-left:3rem; font-size:1.25rem; text-align:left;" class="text-primary" value="CtrlCopy.module.js">
+            <cl:formdata std:sid="f-data-1d79fade" valign="BOTTOM" height="35" row="0" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3535aed2" scrollable="false" hspace="5px" vspace="5px" right-margin="50px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-36cb926d" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="본 모듈은 컨트롤을 복사하는 기능을 제공합니다.&#xD;&#xA;모듈 내 convertGridToForm API를 사용해 모바일 형태의 그리드를 생성할 수 있습니다.">
+          <cl:verticaldata std:sid="v-data-cb26d0fa" width="1210px" height="46px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-7c14d27b" spacing="20" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-36fd7cc9">
+        <cl:verticaldata std:sid="v-data-28f18b44" width="1270px" height="345px" autosize="height"/>
+        <cl:output std:sid="output-d78c906d" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="시나리오">
+          <cl:verticaldata std:sid="v-data-0ccc2823" width="100px" height="40px"/>
+        </cl:output>
+        <cl:output std:sid="output-5ed83aea" id="ipbScenario" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="1. [모바일 그리드 팝업 열기] 버튼을 클릭해 팝업을 띄운다.&#xD;&#xA;2. 모바일 형태의 그리드를 확인한다.">
+          <cl:verticaldata std:sid="v-data-560570a9" width="1210px" height="107px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-8f14d7fc" id="grp2" style="background-color:#dff7fb;">
+          <cl:verticaldata std:sid="v-data-b32de9ee" width="1100px" height="100px" autosize="height"/>
+          <cl:output std:sid="output-564d9426" style="font-weight:bold;" class="text-info opt-tmpl" value="추가설명">
+            <cl:verticaldata std:sid="v-data-076d9fe9" width="100px" height="25px"/>
+          </cl:output>
+          <cl:output std:sid="output-28ab6d03" class="text-info opt-tmpl" value="컨트롤 복사 방식은 총 2가지 입니다.&#xD;&#xA;1. 일반 컨트롤 복사 / 그룹 컨트롤 복사&#xD;&#xA;- copy API 를 통해 컨트롤을 복사합니다. &#xD;&#xA;- 컨트롤 타입이 container인지 여부에 따라 내부적으로 그룹 복사 또는 일반 컨트롤 복사로 나뉩니다&#xD;&#xA;- 복사 가능한 컨트롤 : 인풋박스, 데이트인풋, 넘버에디터, 버튼, 마스크에디터, 아웃풋, 체크박스, 콤보박스, 라디오버튼, 체크박스그룹, 텍스트에리어, 이미지, HTML스니펫, 그룹, UDC&#xD;&#xA; &#xD;&#xA;2. 그리드 컨트롤 복사&#xD;&#xA;- 그리드는 폼 레이아웃 그룹을 통해 동일한 형태로 확인 할 수 있습니다. (3가지 타입)&#xD;&#xA;* 단, 행/열 병합은 지원하지 않습니다.&#xD;&#xA; &#xD;&#xA;2-1) origin&#xD;&#xA;- 런타임에 보여지는 그리드와 동일한 형태로 복사합니다.&#xD;&#xA;* 단, 형태는 동일하지만 폼 레이아웃으로 이루어져 있습니다.&#xD;&#xA;&#xD;&#xA;2-2) detail&#xD;&#xA;- 그리드에서 선택된 행의 디테일 정보를 프리폼 형태로 복사합니다.&#xD;&#xA;- 선택된 행이 없을 경우 첫번째 행을 선택하여 보여줍니다.&#xD;&#xA;&#xD;&#xA;2-3) page&#xD;&#xA;- detail 에서 제공하는 동일한 형태에서 타이틀 및 페이지 컨트롤을 함께 제공합니다.&#xD;&#xA;- 옵션을 통해 타이틀과 페이징에 대한 보임 여부, 스타일 등을 설정 할 수 있습니다.">
+            <cl:verticaldata std:sid="v-data-37c1bfe5" width="100px" height="25px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-ec928def" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-4fffe72b" spacing="20" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-38132eaf">
+        <cl:attribute name="floating-header" value="true"/>
+        <cl:verticaldata std:sid="v-data-3deed623" width="1270px" height="500px" autosize="height"/>
+        <cl:output std:sid="output-6ff41dc5" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="기능 확인">
+          <cl:verticaldata std:sid="v-data-cebb26e3" width="1270px" height="40px" autosize="none"/>
+        </cl:output>
+        <cl:group std:sid="group-fd1cea46" id="grp3" class="cl-form-group">
+          <cl:verticaldata std:sid="v-data-a040b6a2" width="1004px" height="45px" autosize="none"/>
+          <cl:output std:sid="output-ecfd16e9" value="모바일 화면">
+            <cl:formdata std:sid="f-data-1036c2c0" row="0" col="0"/>
+          </cl:output>
+          <cl:button std:sid="button-dc46b6a2" id="btn1" class="btn-primary" value="모바일 그리드 팝업 열기">
+            <cl:listener std:sid="listener-f6f508ea" name="click" handler="onBtn1Click"/>
+            <cl:formdata std:sid="f-data-deee9b3b" halign="LEFT" width="200" row="0" col="1" rowspan="1" colspan="1"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-6847b5be" hspace="10px" vspace="10px" top-margin="1fr" right-margin="5px" bottom-margin="1fr" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+            <cl:rows length="30" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="120" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-216b8a05" spacing="15" topmargin="20" bottommargin="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8031eb1c" leftmargin="20" rightmargin="30" topmargin="30" bottommargin="20"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-e062aef3"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

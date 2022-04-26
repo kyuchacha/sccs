@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5df16f26" version="1.0.0.0">
+  <head std:sid="head-d96bf7c3">
+    <title>cmnPCodeSch</title>
+    <screen std:sid="screen-e1aa072f" id="default" name="default" minwidth="1024px" width="1024px" height="768px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-661325a0" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-2487aa82" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-c4cd88f6">
+      <cl:dataset std:sid="d-set-cc8672fa" id="dsParty">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-1fbf0162" name="PARTY_ID" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-798e32f1" name="NM_KOR" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-5435c00f" name="NM_ENG" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-b4f3f186" name="NM_CHA" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-692578cf" name="GENDER_RCD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-ca47575d" name="BRTDY" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-ba5a3a2d" name="LNR_SLR_DIV_RCD"/>
+          <cl:datacolumn std:sid="d-column-faa2485b" name="NAT_RCD"/>
+          <cl:datacolumn std:sid="d-column-d48bee42" name="DEPT_CD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-f3bdc82f" name="DEPT_NM" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-8f707fd6" name="USER_DIV_CD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-99b465d3" name="USER_DIV_NM" datatype="string"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-c8faeab9" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c7f1e27f" name="strPartyDiv"/>
+          <cl:datacolumn std:sid="d-column-970dce4b" name="strPartyId"/>
+          <cl:datacolumn std:sid="d-column-e05c3f01" name="strNm"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="구성원">
+      <cl:property name="value" type="string" bindable="true" std:desc="검색인풋 바인딩 컬럼"/>
+      <cl:property name="required" type="string" bindable="true" std:desc="입력값 필수입력 체크여부(Y/공백)"/>
+      <cl:property name="iPartyId" type="string" bindable="true" std:desc="[검색] 구성원ID"/>
+      <cl:property name="iPartyDiv" type="string" bindable="true" std:desc="[검색] 구성원 구분값 (사용자구분코드)"/>
+      <cl:property name="iHostDiv" type="string" bindable="true" std:desc="[필터] 부모 화면 구분값 (구성원 구분 필터처리)"/>
+      <cl:property name="oPartyId" type="string" bindable="true" std:desc="구성원ID"/>
+      <cl:property name="oNmKor" type="string" bindable="true" std:desc="한글성명"/>
+      <cl:property name="oNmEng" type="string" bindable="true" std:desc="영문성명"/>
+      <cl:property name="oNmCha" type="string" bindable="true" std:desc="한자성명"/>
+      <cl:property name="oGenderRcd" type="string" bindable="true" std:desc="성별코드"/>
+      <cl:property name="oBrtdy" type="string" bindable="true" std:desc="생년월일"/>
+      <cl:property name="oDeptCd" type="string" bindable="true" std:desc="부서코드"/>
+      <cl:property name="oDeptNm" type="string" bindable="true" std:desc="부서명"/>
+      <cl:property name="oUserDivCd" type="string" bindable="true" std:desc="사용자구분코드"/>
+      <cl:property name="oUserDivNm" type="string" bindable="true" std:desc="사용자구분코드명"/>
+      <cl:property name="oNatRcd" type="string" bindable="true" std:desc="국가코드"/>
+      <cl:property name="oLnrSlrDivRcd" type="string" bindable="true" std:desc="음양력코드"/>
+      <cl:property name="iName" type="string" bindable="true" std:desc="[검색] 사용자명 (LIKE 조회)"/>
+      <cl:event name="search" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-2f3be71e" style="top:0px; left:0px; width:120px; height:20px;">
+    <cl:listener std:sid="listener-b09abb46" name="property-change" handler="onBodyPropertyChange"/>
+    <cl:button std:sid="button-9449e9a7" id="btnPopParty" class="btn-pop-search">
+      <cl:listener std:sid="listener-73ec09cb" name="click" handler="onBtnPopPartyClick"/>
+      <cl:xylayoutdata std:sid="xyl-data-a00c30a0" top="0px" right="0px" bottom="0px" width="20px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-c23449cc" id="ipbPartyId" style="text-align:center;" lengthunit="utf8" maxlength="15">
+      <cl:listener std:sid="listener-4293f0db" name="value-change" handler="onIpbPartyIdValueChange"/>
+      <cl:listener std:sid="listener-a96b3cf9" name="keydown" handler="onIpbPartyIdKeydown"/>
+      <cl:apppropbind property="value" category="PROPERTY" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-b4444272" top="0px" right="20px" bottom="0px" left="0px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+    </cl:inputbox>
+    <cl:xylayout std:sid="xylayout-d62f6419" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

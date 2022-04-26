@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-25ce58db" version="1.0.0.0">
+  <head std:sid="head-874584dd">
+    <title>Card</title>
+    <screen std:sid="screen-67916659" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-0d0916b5" id="tablet" name="tablet" minwidth="850px" maxwidth="1023px" width="850px" height="768px"/>
+    <screen std:sid="screen-3f915307" id="mobile" name="mobile" maxwidth="849px" width="550px" height="768px"/>
+    <cl:model std:sid="model-0eba4baa"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-44e933df" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a67290b0">
+      <cl:verticaldata std:sid="v-data-e28c215c" width="984px" height="26px" autosize="none"/>
+      <cl:output std:sid="output-3f9402e6" class="h3" value="Cards">
+        <cl:formdata std:sid="f-data-c8d7556a" row="0" col="0"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-ee852d92" id="breadcrumb1" type="udc.template.Breadcrumb">
+        <cl:formdata std:sid="f-data-6f30af8b" row="0" col="1"/>
+        <cl:property name="values" value="DESIGN GUIDE,CARDS" type="string"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-56c7324f">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-819c3feb" class="h6" value="Basic Examples">
+      <cl:verticaldata std:sid="v-data-98310a16" width="984px" height="25px" autosize="none"/>
+    </cl:output>
+    <cl:group std:sid="group-e25926e6" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-a5ee9a92" width="400px" height="335px"/>
+      <cl:group std:sid="group-4ff084cc" class="card card-bordered">
+        <cl:xylayoutdata std:sid="xyl-data-a3f2e516" top="20px" bottom="20px" left="20px" width="240px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+        <cl:img std:sid="image-a1c9bade" id="img1" src="../../../../../theme/common/images/img/jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg">
+          <cl:xylayoutdata std:sid="xyl-data-72759803" top="0px" right="0px" left="0px" height="120px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:img>
+        <cl:output std:sid="output-870f829a" class="card-title" value="Card with stretched link">
+          <cl:xylayoutdata std:sid="xyl-data-cd622ab8" top="130px" right="20px" left="20px" height="25px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-5103f2cc" value="Some quick example text to build on the card title and make up the bulk of the card's content.">
+          <cl:xylayoutdata std:sid="xyl-data-83bb3fbb" top="160px" right="20px" left="20px" height="80px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:button std:sid="button-fa181f14" id="btn1" value="Go somewhere">
+          <cl:xylayoutdata std:sid="xyl-data-fe0ed10f" top="245px" left="20px" width="120px" height="30px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-fcdf130b"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-b872a0da"/>
+    </cl:group>
+    <cl:output std:sid="output-54430f51" class="h6" value="Titles, text, and links">
+      <cl:verticaldata std:sid="v-data-bdc46047" width="984px" height="25px" autosize="none"/>
+    </cl:output>
+    <cl:group std:sid="group-0906ddd1" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-60040f20" width="400px" height="238px"/>
+      <cl:group std:sid="group-5bdb130a" class="card card-bordered">
+        <cl:xylayoutdata std:sid="xyl-data-0302ad3d" top="20px" left="20px" width="300px" height="198px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-9aca793c" class="card-title" value="Card title">
+          <cl:xylayoutdata std:sid="xyl-data-64f17b85" top="20px" right="20px" left="20px" height="25px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-7cab9199" class="card-subtitle" value="Card title">
+          <cl:xylayoutdata std:sid="xyl-data-f5d0bf9d" top="50px" right="20px" left="20px" height="25px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-1cd608ce" class="card-subtitle" value="Some quick example text to build on the card title and make up the bulk of the card's content.">
+          <cl:xylayoutdata std:sid="xyl-data-83cc6890" top="85px" right="20px" left="20px" height="60px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-49d466ea" class="card-link" value="Card link">
+          <cl:xylayoutdata std:sid="xyl-data-1a297403" top="155px" left="20px" width="70px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-ea66c238" class="card-link" value="Another link">
+          <cl:xylayoutdata std:sid="xyl-data-876045e7" top="155px" left="95px" width="90px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:xylayout std:sid="xylayout-50b5abe2"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-e6615aa6"/>
+    </cl:group>
+    <cl:output std:sid="output-c3c24e34" class="h6" value="Header and Footer">
+      <cl:verticaldata std:sid="v-data-36f6c1bc" width="984px" height="25px" autosize="none"/>
+    </cl:output>
+    <cl:group std:sid="group-c184c569" class="card card-bordered">
+      <cl:verticaldata std:sid="v-data-454d21e8" width="400px" height="310px" autosize="none"/>
+      <cl:group std:sid="group-edd939e8" class="card card-bordered">
+        <cl:xylayoutdata std:sid="xyl-data-b0c7c14f" top="20px" left="20px" width="300px" height="222px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:group std:sid="group-9409b25a">
+          <cl:xylayoutdata std:sid="xyl-data-9eefe84e" top="50px" right="20px" left="20px" height="160px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+          <cl:output std:sid="output-1dc27172" class="card-title" value="Card title">
+            <cl:xylayoutdata std:sid="xyl-data-8aa4424a" top="0px" right="0px" left="0px" height="25px" horizontalAnchor="BOTH"/>
+          </cl:output>
+          <cl:output std:sid="output-fd204d9a" class="card-subtitle" value="Card title">
+            <cl:xylayoutdata std:sid="xyl-data-4c01f2e2" top="30px" right="0px" left="0px" height="25px" horizontalAnchor="BOTH"/>
+          </cl:output>
+          <cl:output std:sid="output-6cc4ad59" class="card-subtitle" value="Some quick example text to build on the card title and make up the bulk of the card's content.">
+            <cl:xylayoutdata std:sid="xyl-data-9479da3e" top="65px" right="0px" left="0px" height="60px" horizontalAnchor="BOTH"/>
+          </cl:output>
+          <cl:output std:sid="output-968004f6" class="card-link" value="Card link">
+            <cl:xylayoutdata std:sid="xyl-data-d716a4bc" top="135px" left="0px" width="70px" height="25px"/>
+          </cl:output>
+          <cl:output std:sid="output-2ec66a2d" class="card-link" value="Another link">
+            <cl:xylayoutdata std:sid="xyl-data-a88f8c22" top="135px" left="75px" width="90px" height="25px"/>
+          </cl:output>
+          <cl:xylayout std:sid="xylayout-0d2dbbd2"/>
+        </cl:group>
+        <cl:group std:sid="group-d6e7a5fb" class="card-header border-bottom">
+          <cl:xylayoutdata std:sid="xyl-data-4fd1085d" top="0px" right="0px" left="0px" height="40px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+          <cl:output std:sid="output-6a81788e" class="text-secondary" value="Featured Title">
+            <cl:xylayoutdata std:sid="xyl-data-8a333119" right="20px" left="20px" height="25px" horizontalAnchor="BOTH" verticalAnchor="CENTER"/>
+          </cl:output>
+          <cl:xylayout std:sid="xylayout-9672820d"/>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-1f4755f4"/>
+      </cl:group>
+      <cl:group std:sid="group-3ac91636" class="card card-bordered">
+        <cl:xylayoutdata std:sid="xyl-data-2c1d9c0e" top="20px" left="330px" width="300px" height="265px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        <cl:group std:sid="group-14b6e020">
+          <cl:xylayoutdata std:sid="xyl-data-39bc2965" top="50px" right="20px" left="20px" height="160px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+          <cl:output std:sid="output-ca71b4da" class="card-title" value="Card title">
+            <cl:xylayoutdata std:sid="xyl-data-936be66c" top="0px" right="0px" left="0px" height="25px" horizontalAnchor="BOTH"/>
+          </cl:output>
+          <cl:output std:sid="output-18d8139c" class="card-subtitle" value="Card title">
+            <cl:xylayoutdata std:sid="xyl-data-696633a4" top="30px" right="0px" left="0px" height="25px" horizontalAnchor="BOTH"/>
+          </cl:output>
+          <cl:output std:sid="output-0b7f8df7" class="card-subtitle" value="Some quick example text to build on the card title and make up the bulk of the card's content.">
+            <cl:xylayoutdata std:sid="xyl-data-bbec1ca4" top="65px" right="0px" left="0px" height="60px" horizontalAnchor="BOTH"/>
+          </cl:output>
+          <cl:output std:sid="output-0ab73581" class="card-link" value="Card link">
+            <cl:xylayoutdata std:sid="xyl-data-a05848ba" top="135px" left="0px" width="70px" height="25px"/>
+          </cl:output>
+          <cl:output std:sid="output-257b4643" class="card-link" value="Another link">
+            <cl:xylayoutdata std:sid="xyl-data-a41cc965" top="135px" left="75px" width="90px" height="25px"/>
+          </cl:output>
+          <cl:xylayout std:sid="xylayout-ab9a6ff9"/>
+        </cl:group>
+        <cl:group std:sid="group-1489b41d" class="card-header border-bottom">
+          <cl:xylayoutdata std:sid="xyl-data-4d49435f" top="0px" right="0px" left="0px" height="40px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+          <cl:output std:sid="output-843ff70b" class="text-secondary" value="Featured Title">
+            <cl:xylayoutdata std:sid="xyl-data-8e2b3e29" right="20px" left="20px" height="25px" horizontalAnchor="BOTH" verticalAnchor="CENTER"/>
+          </cl:output>
+          <cl:xylayout std:sid="xylayout-e4f5c497"/>
+        </cl:group>
+        <cl:group std:sid="group-cbf657ff" class="card-footer border-top">
+          <cl:xylayoutdata std:sid="xyl-data-ab25ebf7" right="0px" bottom="0px" left="0px" height="40px" horizontalAnchor="BOTH" verticalAnchor="BOTTOM"/>
+          <cl:output std:sid="output-a353454a" class="text-gray" value="2 days ago">
+            <cl:xylayoutdata std:sid="xyl-data-19cc4f1e" right="20px" left="20px" height="25px" horizontalAnchor="BOTH" verticalAnchor="CENTER"/>
+          </cl:output>
+          <cl:xylayout std:sid="xylayout-faba115c"/>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-eaac074c"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-04a80e9e"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-437baad7" spacing="20" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

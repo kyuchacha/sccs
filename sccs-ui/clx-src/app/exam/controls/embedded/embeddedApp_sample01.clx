@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-47f3f56b" version="1.0.3519">
+  <head std:sid="head-0e20caac">
+    <screen std:sid="screen-692df204" id="default" name="default" minwidth="1200px" width="1200px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="375" customWidth="600"/>
+    <screen std:sid="screen-08858ea5" id="tablet" name="tablet" minwidth="850px" maxwidth="1199px" width="850px" height="768px"/>
+    <screen std:sid="screen-91c71564" id="mobile" name="mobile" maxwidth="849px" width="544px" height="768px"/>
+    <cl:model std:sid="model-13d50b37"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7b201485" style="background-color:white; background-image:none;">
+    <cl:listener std:sid="listener-990e26ee" name="load" handler="onBodyLoad"/>
+    <cl:output std:sid="output-ce17f3ba" style="font-size:30px; text-align:center;" value="임베디드 앱 화면">
+      <cl:verticaldata std:sid="v-data-8c0d5842" width="200px" height="90px"/>
+    </cl:output>
+    <cl:button std:sid="button-b076db3e" id="btn1" value="Button">
+      <cl:listener std:sid="listener-2d405345" name="click" handler="onBtn1Click"/>
+      <cl:verticaldata std:sid="v-data-dd4b4dcf" width="100px" height="20px"/>
+    </cl:button>
+    <cl:inputbox std:sid="i-box-7c3480a2" id="ipb1">
+      <cl:verticaldata std:sid="v-data-e06257b1" width="100px" height="20px"/>
+    </cl:inputbox>
+    <cl:verticallayout std:sid="v-layout-902207a4" distribution="center" spacing="10" leftmargin="100" rightmargin="100" topmargin="100" bottommargin="100"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

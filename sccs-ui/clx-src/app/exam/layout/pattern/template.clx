@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-0a8bf7c7" version="1.0.0.0">
+  <head std:sid="head-d8cc0682">
+    <title>template</title>
+    <screen std:sid="screen-3952d563" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-8a3cb43a" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-cf0c809c" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-1187e9d5" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-654b126b">
+      <cl:dataset std:sid="d-set-7a982bb9" id="dsAllMenu" filtercondition="MENU_LVL==3">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-42ed0bef" name="MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-f200f1a1" name="MENU_NM"/>
+          <cl:datacolumn std:sid="d-column-c7c4779e" name="CALL_PAGE"/>
+          <cl:datacolumn std:sid="d-column-f18a0a9c" name="UP_MENU_ID"/>
+          <cl:datacolumn std:sid="d-column-0b17cfe8" name="ICON"/>
+          <cl:datacolumn std:sid="d-column-80c1ec7f" name="MENU_LVL"/>
+          <cl:datacolumn std:sid="d-column-6c4b286f" name="MENU_KEY"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-89cda5f7" id="subOnLoad" action="app/exam/data/main/main.json">
+        <cl:responsedata dataid="dsAllMenu"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-92e7f869" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-654ec744" name="load" handler="onBodyLoad"/>
+    <cl:udc std:sid="ud-control-79dd174f" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-bbd59a9c" width="1320px" height="30px"/>
+    </cl:udc>
+    <cl:group std:sid="group-c04c7baa" id="grpData">
+      <cl:verticaldata std:sid="v-data-cd67a3d8" width="1320px" height="645px"/>
+      <cl:udc std:sid="ud-control-926d0bca" id="comtitle1" type="udc.com.comTitle">
+        <cl:formdata std:sid="f-data-46fd1e2a" row="0" col="0"/>
+        <cl:property name="ctrl" value="grdMain" type="control"/>
+      </cl:udc>
+      <cl:grid std:sid="grid-e994d68f" id="grdMain" fieldLabel="샘플화면 목록" readonly="true" datasetid="dsAllMenu" autofit="2, 3, 5">
+        <cl:listener std:sid="listener-cf96734a" name="selection-change" handler="onGrdMainSelectionChange"/>
+        <cl:listener std:sid="listener-55520180" name="row-dblclick" handler="onGrdMainRowDblclick"/>
+        <cl:formdata std:sid="f-data-1c4ecf1a" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-684bdba9" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-dd09dd34" width="50px"/>
+        <cl:gridcolumn std:sid="g-column-b5ad72b5" visible="false"/>
+        <cl:gridcolumn std:sid="g-column-70c500ff"/>
+        <cl:gridcolumn std:sid="g-column-afc5c992" visible="false"/>
+        <cl:gridcolumn std:sid="g-column-2095e34c" visible="false"/>
+        <cl:gridheader std:sid="gh-band-63b41c6a">
+          <cl:gridrow std:sid="g-row-33647537"/>
+          <cl:gridcell std:sid="gh-cell-3373c9a5" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+          <cl:gridcell std:sid="gh-cell-64c494bb" rowindex="0" colindex="1" sortable="false" filterable="false"/>
+          <cl:gridcell std:sid="gh-cell-9afa7a01" rowindex="0" colindex="2" targetcolumnname="MENU_ID" sortable="false" filterable="false" text="메뉴 ID"/>
+          <cl:gridcell std:sid="gh-cell-b8efb10e" rowindex="0" colindex="3" targetcolumnname="MENU_NM" sortable="false" filterable="false" text="메뉴명"/>
+          <cl:gridcell std:sid="gh-cell-5bffbbc7" rowindex="0" colindex="4" targetcolumnname="CALL_PAGE" text="메뉴 URL"/>
+          <cl:gridcell std:sid="gh-cell-d0083ec1" rowindex="0" colindex="5" targetcolumnname="MENU_LVL" sortable="false" filterable="false" text="메뉴 레벨"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-3410b25a">
+          <cl:gridrow std:sid="g-row-ecdd9b77"/>
+          <cl:gridcell std:sid="gd-cell-83a29639" rowindex="0" colindex="0" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-bd585c7d" rowindex="0" colindex="1" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-de222565" rowindex="0" colindex="2" columnname="MENU_ID">
+            <cl:output std:sid="output-8e925018" value="Output"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-2c9ec24b" rowindex="0" colindex="3" columnname="MENU_NM">
+            <cl:output std:sid="output-16fc2849" value="Output"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-94047e1f" rowindex="0" colindex="4" columnname="CALL_PAGE"/>
+          <cl:gridcell std:sid="gd-cell-3baf383b" rowindex="0" colindex="5" columnname="MENU_LVL">
+            <cl:output std:sid="output-ef0dc992" value="Output"/>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-ab1875f1" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-c979c968"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

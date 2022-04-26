@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cdebef13" version="1.0.0.0">
+  <head std:sid="head-82876107">
+    <title>GridSampleEtc06Prev</title>
+    <screen std:sid="screen-c63b3d3f" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-d3ba9616" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-c5872d07" id="tablet" name="tablet" minwidth="500px" maxwidth="1019px" width="500px" height="667px"/>
+    <screen std:sid="screen-fa911ccc" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-f47b43da">
+      <cl:dataset std:sid="d-set-4c17cfe1" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="구분항목" std:sid="d-column-58465be6" name="gbn" datatype="string"/>
+          <cl:datacolumn comment="항목1" std:sid="d-column-bae2504c" name="col1" datatype="number"/>
+          <cl:datacolumn comment="항목2" std:sid="d-column-f6b72b75" name="col2" datatype="number"/>
+          <cl:datacolumn comment="항목3" std:sid="d-column-d5204318" name="col3" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[A항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[101]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[102]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[103]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[A항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[15]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[25]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[A항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[101]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[102]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[103]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[A항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1">1</cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[B항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1">1</cl:datavalue>
+            <cl:datavalue columnname="col2">1</cl:datavalue>
+            <cl:datavalue columnname="col3">1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[A항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[11]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[12]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[A항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[40]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[B항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="col2">1</cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[15]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[31]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[A항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[15]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[32]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[A항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[33]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[200]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[34]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbn"><![CDATA[C항목]]></cl:datavalue>
+            <cl:datavalue columnname="col1"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="col2"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="col3"><![CDATA[15]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="그리드 소계 푸터"/>
+  </head>
+  <body std:sid="body-e011843f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-876b8555" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-482a1579" width="998px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grp1" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-87605f82" id="grp1">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-f2aea8e7" width="972px" height="645px"/>
+      <cl:group std:sid="group-ba4bd0f2" id="grpFormCont" class="form-box">
+        <cl:formdata std:sid="f-data-5f961dfb" row="3" col="0"/>
+        <cl:output std:sid="output-5b7c19cc" id="otp25" value="시나리오">
+          <cl:formdata std:sid="f-data-25c1fad4" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f91a483c" id="otp26" value="추가설명">
+          <cl:formdata std:sid="f-data-66157e43" row="1" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-e4a3afbf" id="ipb1" readonly="true" value="1. 그리드의 구분항목별 합계가 계산되어 그리드 푸터영역에 표시되는것을 확인한다.">
+          <cl:formdata std:sid="f-data-9f86bd71" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-875e5cc9" id="ipb2" readonly="true" value="익스프레션 함수를 이용하여서 해당 행의 그룹별 합계값을 계산하여 출력하는 화면 예제">
+          <cl:formdata std:sid="f-data-b8535bc6" row="1" col="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-bea260c3" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-fff96e67" id="grdList" readonly="true" datasetid="dsList" autofit="1, 2, 3, 4">
+        <cl:formdata std:sid="f-data-59bef552" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-1ab6ecaf" width="40px"/>
+        <cl:gridcolumn std:sid="g-column-50f913bf"/>
+        <cl:gridcolumn std:sid="g-column-414392cb"/>
+        <cl:gridcolumn std:sid="g-column-d5804494"/>
+        <cl:gridcolumn std:sid="g-column-1f7fafd5"/>
+        <cl:gridheader std:sid="gh-band-1ce2d7bb">
+          <cl:gridrow std:sid="g-row-91b78423" height="27px"/>
+          <cl:gridcell std:sid="gh-cell-125552a1" rowindex="0" colindex="0" sortable="false" filterable="false" text="No"/>
+          <cl:gridcell std:sid="gh-cell-de06ea54" rowindex="0" colindex="1" targetcolumnname="gbn" sortable="false" filterable="false" text="구분항목"/>
+          <cl:gridcell std:sid="gh-cell-ad3182cb" rowindex="0" colindex="2" targetcolumnname="col1" sortable="false" filterable="false" text="항목1"/>
+          <cl:gridcell std:sid="gh-cell-42723afe" rowindex="0" colindex="3" targetcolumnname="col2" sortable="false" filterable="false" text="항목2"/>
+          <cl:gridcell std:sid="gh-cell-1bd89d8f" rowindex="0" colindex="4" targetcolumnname="col3" sortable="false" filterable="false" text="항목3"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-1901cd3f">
+          <cl:gridrow std:sid="g-row-081fb468"/>
+          <cl:gridcell std:sid="gd-cell-272d055c" rowindex="0" colindex="0" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-1fcf7f64" rowindex="0" colindex="1" columnname="gbn"/>
+          <cl:gridcell std:sid="gd-cell-2b747c46" rowindex="0" colindex="2" columnname="col1"/>
+          <cl:gridcell std:sid="gd-cell-b8b607c6" rowindex="0" colindex="3" columnname="col2"/>
+          <cl:gridcell std:sid="gd-cell-6e1f2f0a" rowindex="0" colindex="4" columnname="col3"/>
+        </cl:griddetail>
+        <cl:gridfooter std:sid="gf-band-f660e4d7">
+          <cl:gridrow std:sid="g-row-a0f2ce09"/>
+          <cl:gridrow std:sid="g-row-4605fafd"/>
+          <cl:gridrow std:sid="g-row-91c0fb13"/>
+          <cl:gridrow std:sid="g-row-1f5ac812"/>
+          <cl:gridcell std:sid="gf-cell-9c2a9188" rowindex="3" colindex="0" rowspan="1" colspan="2" expr="&quot;합계&quot;"/>
+          <cl:gridcell std:sid="gf-cell-1d3a0d21" rowindex="3" colindex="2" expr="getSum(&quot;col1&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-0de3a1f9" rowindex="3" colindex="3" expr="getSum(&quot;col2&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-c64e1b36" rowindex="3" colindex="4" expr="getSum(&quot;col3&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-864f0105" rowindex="2" colindex="0" rowspan="1" colspan="2" expr="&quot;C항목 소계&quot;"/>
+          <cl:gridcell std:sid="gf-cell-cde11cc3" rowindex="2" colindex="2" expr="getConditionalSum(&quot;gbn=='C항목'&quot;, &quot;col1&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-f64589cb" rowindex="2" colindex="3" expr="getConditionalSum(&quot;gbn=='C항목'&quot;, &quot;col2&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-8125f306" rowindex="2" colindex="4" expr="getConditionalSum(&quot;gbn=='C항목'&quot;, &quot;col3&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-d992b186" rowindex="0" colindex="0" rowspan="1" colspan="2" expr="&quot;A항목 소계&quot;"/>
+          <cl:gridcell std:sid="gf-cell-5c940a30" rowindex="0" colindex="2" expr="getConditionalSum(&quot;gbn=='A항목'&quot;, &quot;col1&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-7e668c23" rowindex="0" colindex="3" expr="getConditionalSum(&quot;gbn=='A항목'&quot;, &quot;col2&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-4745123c" rowindex="0" colindex="4" expr="getConditionalSum(&quot;gbn=='A항목'&quot;, &quot;col3&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-cc95436b" rowindex="1" colindex="0" rowspan="1" colspan="2" expr="&quot;B항목 소계&quot;"/>
+          <cl:gridcell std:sid="gf-cell-d6d10d58" rowindex="1" colindex="2" expr="getConditionalSum(&quot;gbn=='B항목'&quot;, &quot;col1&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-1261ecc0" rowindex="1" colindex="3" expr="getConditionalSum(&quot;gbn=='B항목'&quot;, &quot;col2&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-82470920" rowindex="1" colindex="4" expr="getConditionalSum(&quot;gbn=='B항목'&quot;, &quot;col3&quot;)"/>
+        </cl:gridfooter>
+      </cl:grid>
+      <cl:udc std:sid="ud-control-a4d56c82" id="comformtitle3" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-3b486473" row="0" col="0"/>
+        <cl:property name="title" value="그리드의 소계를 푸터에 표현하는 예제" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-f845c798" id="comformtitle2" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-55f41914" row="2" col="0"/>
+        <cl:property name="title" value="시나리오" type="string"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-92c3a806" vspace="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-4a597d8e"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

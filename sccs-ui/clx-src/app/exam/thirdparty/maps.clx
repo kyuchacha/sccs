@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-1dcddcad" version="1.0.3633">
+  <head std:sid="head-00aae1a6">
+    <screen std:sid="screen-1a0afc01" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-0cf5ce8c" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-7caf3573" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-3704664c" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <link std:sid="link-5f05b1bf" href="../../../thirdparty/maps/naver.css" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-3dd6517a"/>
+    <cl:appspec title="지도 연동 예제"/>
+  </head>
+  <body std:sid="body-d3245cf3">
+    <cl:listener std:sid="listener-acc2ca0d" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-7d69468c" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-29bc18bb" width="400px" height="30px"/>
+      <cl:udc std:sid="ud-control-c8021f02" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-c610ab45" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-19aaad15"/>
+    </cl:group>
+    <cl:group std:sid="group-4042bcb8" id="grpData" fieldLabel="지도 연동 예제">
+      <cl:verticaldata std:sid="v-data-87088b73" width="400px" height="615px"/>
+      <cl:output std:sid="output-2854379d" value="카카오, 네이버, 구글의 지도 API를 연동한 화면입니다.">
+        <cl:formdata std:sid="f-data-5cc93948" row="0" col="0"/>
+      </cl:output>
+      <cl:tabfolder std:sid="t-folder-42dcae39" id="tab1">
+        <cl:formdata std:sid="f-data-47c1450c" row="1" col="0"/>
+        <cl:tabitem std:sid="t-item-8d6a80ea" selected="true" text="카카오">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-03231df4" id="grp1">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:embeddedpage std:sid="e-page-21dc9d74" id="embKakao" src="../../../thirdparty/maps/kakaoMapAPI.html">
+              <cl:xylayoutdata std:sid="xyl-data-2d903721" top="20px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            </cl:embeddedpage>
+            <cl:button std:sid="button-a32fc47e" id="btnSearchAddr" style="border-right-style:solid; color:#391B1B; border-top-width:2px; border-bottom-color:#391b1b; border-right-width:2px; font-weight:800; border-left-color:#391b1b; border-right-color:#391b1b; border-left-width:2px; border-top-style:solid; background-color:#fae301; border-left-style:solid; border-bottom-width:2px; border-top-color:#391b1b; border-bottom-style:solid; background-image:none;" value="주소 검색 팝업">
+              <cl:listener std:sid="listener-ccfbfeff" name="click" handler="onBtnSearchAddrClick"/>
+              <cl:listener std:sid="listener-f0ce6d5b" name="click" handler="onBtnSearchAddrClick2"/>
+              <cl:xylayoutdata std:sid="xyl-data-ad7c0737" top="60px" right="50px" width="160px" height="65px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+            </cl:button>
+            <cl:xylayout std:sid="xylayout-ee6d93c3"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-600f0044" text="네이버">
+          <cl:group std:sid="group-1115b30f" id="grp2">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:uicontrolshell std:sid="uic-shell-9963f2bd" id="shlNaver">
+              <cl:listener std:sid="listener-0b2b2c11" name="load" handler="onShlNaverLoad"/>
+              <cl:listener std:sid="listener-16676388" name="init" handler="onShlNaverInit"/>
+              <cl:xylayoutdata std:sid="xyl-data-e84d0141" top="20px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            </cl:uicontrolshell>
+            <cl:xylayout std:sid="xylayout-ec7a67f5"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-20b742dd" text="구글">
+          <cl:group std:sid="group-ba3dd64f" id="grp3">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:uicontrolshell std:sid="uic-shell-e9717ff8" id="shlGoogle">
+              <cl:listener std:sid="listener-f1c1e8b1" name="load" handler="onShlGoogleLoad"/>
+              <cl:listener std:sid="listener-7744c86b" name="init" handler="onShlGoogleInit"/>
+              <cl:xylayoutdata std:sid="xyl-data-0ca85a88" top="55px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+            </cl:uicontrolshell>
+            <cl:group std:sid="group-463b34e9" id="grpSearch1" class="search-box">
+              <cl:attribute name="mobile-column-count" value="2"/>
+              <cl:attribute name="tablet-column-count" value="2"/>
+              <cl:xylayoutdata std:sid="xyl-data-f090cddc" top="10px" right="20px" left="20px" height="37px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+              <cl:output std:sid="output-5d79a0ea" style="text-align:right;" value="주소">
+                <cl:formdata std:sid="f-data-cc109b34" row="0" col="0"/>
+              </cl:output>
+              <cl:inputbox std:sid="i-box-3118ab79" id="ipbSearch" tooltip="주소">
+                <cl:listener std:sid="listener-64fd7153" name="keyup" handler="onIpbSearchKeyup"/>
+                <cl:attribute name="autoKeydownSearch" value="Y"/>
+                <cl:formdata std:sid="f-data-6bc1bbea" row="0" col="1"/>
+              </cl:inputbox>
+              <cl:group std:sid="group-fe093515" id="grp4">
+                <cl:formdata std:sid="f-data-db8f6647" row="0" col="2" rowspan="1" colspan="1"/>
+                <cl:button std:sid="button-e5baf933" id="btnSearch" value="검색">
+                  <cl:listener std:sid="listener-093756c8" name="click" handler="onBtnSearchClick"/>
+                  <cl:formdata std:sid="f-data-e48a2781" row="0" col="0"/>
+                </cl:button>
+                <cl:button std:sid="button-7e533d11" id="myLocationBtn" value="내위치찾기">
+                  <cl:listener std:sid="listener-b784cb86" name="click" handler="onMyLocationBtnClick"/>
+                  <cl:formdata std:sid="f-data-cb189974" row="0" col="1"/>
+                </cl:button>
+                <cl:formlayout std:sid="f-layout-8c506c59" scrollable="false" hspace="5px" vspace="0px" top-margin="0px" right-margin="5px" bottom-margin="0px" left-margin="5px">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-d71c9c17" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+                <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="980" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+                <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:xylayout std:sid="xylayout-f5ee2445"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:formlayout std:sid="f-layout-73946c26" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="20px" bottom-margin="10px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-f22e3279"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

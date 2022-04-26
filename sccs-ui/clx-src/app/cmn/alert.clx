@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-72a05f9a" version="1.0.3263">
+  <head std:sid="head-ca712ed3">
+    <screen std:sid="screen-e210ab7a" id="default" name="default" minwidth="1024px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="250" customWidth="350" active="true"/>
+    <screen std:sid="screen-719a423c" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-db7b2fb0" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px" active="false"/>
+    <cl:model std:sid="model-c4ca34f6"/>
+    <cl:appspec title="알림"/>
+  </head>
+  <body std:sid="body-9e50a1fa">
+    <cl:listener std:sid="listener-64d4d42b" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-9c412ecf">
+      <cl:verticaldata std:sid="v-data-55099e9b" width="400px" height="200px" syncminheight="true" autosize="height"/>
+      <cl:output std:sid="output-c884fa68" id="optMsg" class="text-center" value="변경된 데이터가 존재합니다. &#xD;&#xA;계속하시겠습니까?">
+        <cl:formdata std:sid="f-data-877211a2" row="0" col="0"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-8314df4c" scrollable="true" hspace="10px" vspace="10px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-6a9f983c" class="form-box">
+      <cl:verticaldata std:sid="v-data-0e724ab9" width="400px" height="35px" autosize="height"/>
+      <cl:button std:sid="button-86308f46" id="btn2" class="btn-danger" value="취소">
+        <cl:listener std:sid="listener-b708085b" name="click" handler="onButtonClick2"/>
+        <cl:formdata std:sid="f-data-c9476843" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-c8d881af" id="btn1" class="btn-primary" value="확인">
+        <cl:listener std:sid="listener-88525b83" name="click" handler="onButtonClick"/>
+        <cl:formdata std:sid="f-data-413659ab" row="0" col="2"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-5df96c77" scrollable="false" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+        <cl:columns length="60" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="60" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-b29277c3"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

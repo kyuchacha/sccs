@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-784dc0ac" version="1.0.0.0">
+  <head std:sid="head-f51903b9">
+    <title>projMainDialog</title>
+    <screen std:sid="screen-e0992abe" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" useCustomWidth="true" useCustomHeight="true" customHeight="600" customWidth="850" active="true"/>
+    <screen std:sid="screen-4044a97f" id="default" name="default" minwidth="1024px" maxwidth="1319px" width="1024px" height="768px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-98fa48f7" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-b8d487b8" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-21300a24">
+      <cl:dataset std:sid="d-set-ba7836c0" id="ds_color"/>
+      <cl:dataset std:sid="d-set-226d5867" id="ds_colorTable">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f9122992" name="color1"/>
+          <cl:datacolumn std:sid="d-column-217cfb5a" name="color2"/>
+          <cl:datacolumn std:sid="d-column-ab034e21" name="color3"/>
+          <cl:datacolumn std:sid="d-column-97b95920" name="color4"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="색상표 팝업"/>
+  </head>
+  <body std:sid="body-5971d3d0" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-da7637b7" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-16c80df5" id="grp2" class="header-box">
+      <cl:verticaldata std:sid="v-data-18454e59" width="1024px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-7a3f2e09" id="appheader1" class="header-box" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-f04dedf0" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-5ba968fa" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-6da8617f" id="grpData">
+      <cl:verticaldata std:sid="v-data-9d7f0961" width="1024px" height="510px"/>
+      <cl:udc std:sid="ud-control-8785df8a" id="comformtitle1" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-c8fb27af" row="0" col="0"/>
+        <cl:property name="ctrl" value="grp1" type="control"/>
+      </cl:udc>
+      <cl:group std:sid="group-73772e1b" id="grp1" fieldLabel="색상표">
+        <cl:formdata std:sid="f-data-9e12574b" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:group std:sid="group-644b4b64" id="grp_color">
+          <cl:datarowcontext datacontrolid="ds_color" rowindex="0"/>
+          <cl:formdata std:sid="f-data-9a33f62a" row="0" col="0"/>
+          <cl:output std:sid="output-b5ac8202" id="opt1" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-a8a4ca83" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-d062ac66" row="0" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-e2469abb" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-e137fdf0" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-3d26f638" row="0" col="2"/>
+          </cl:output>
+          <cl:output std:sid="output-b49aa7f0" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-d35ccf3b" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-da2baea7" row="0" col="3"/>
+          </cl:output>
+          <cl:output std:sid="output-b3899e60" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-e009064c" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-91696d40" row="0" col="4"/>
+          </cl:output>
+          <cl:output std:sid="output-cc03eee8" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-51087b65" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-20655e22" row="0" col="5"/>
+          </cl:output>
+          <cl:output std:sid="output-23eaabc8" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-1f0b427c" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-447e423c" row="0" col="6"/>
+          </cl:output>
+          <cl:output std:sid="output-d0a28dcd" style="color:white; font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-b84a6e1d" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-1e1e7ada" row="0" col="7"/>
+          </cl:output>
+          <cl:output std:sid="output-800083c6" style="color:white; font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-3ee097f5" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-72b25965" row="0" col="8"/>
+          </cl:output>
+          <cl:output std:sid="output-ab3750df" style="color:white; font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-8c07470f" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-fe28513d" row="0" col="9"/>
+          </cl:output>
+          <cl:output std:sid="output-65a8e59a" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-26dc6a72" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-e433dfd1" row="0" col="10"/>
+          </cl:output>
+          <cl:output std:sid="output-0349b87d" style="color:white; font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-2bfd3c79" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-cfebbf62" row="0" col="11"/>
+          </cl:output>
+          <cl:output std:sid="output-62c2beaa" style="color:white; font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-90bd12fb" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-fb245318" row="0" col="12"/>
+          </cl:output>
+          <cl:output std:sid="output-12e291ff" style="color:white; font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-18c46337" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-0e9abf4d" row="0" col="13"/>
+          </cl:output>
+          <cl:output std:sid="output-762f2172" style="color:white; font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-58b0184d" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-bfd0df3a" row="0" col="14"/>
+          </cl:output>
+          <cl:output std:sid="output-c516c9c2" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-dd18d96f" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-5d79d171" row="0" col="15"/>
+          </cl:output>
+          <cl:output std:sid="output-f1f70b75" style="font-weight:bold; font-size:10px; text-align:center;" value="">
+            <cl:listener std:sid="listener-b6d34920" name="click" handler="onOutputClick"/>
+            <cl:formdata std:sid="f-data-7d8ca402" row="0" col="1"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-e3bfafb1" hspace="3px" vspace="0px">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+            <cl:columns length="45" unit="PIXEL" autoSizing="false"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-1da448fe" id="grd1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:black; border-top-color:black; border-bottom-style:solid; border-right-color:black; border-left-width:1px; border-top-style:solid;" readonly="false" datasetid="ds_colorTable" selectionunit="cell" resizablecolumns="none" columnMovable="false">
+          <cl:listener std:sid="listener-c2a9493f" name="cell-click" handler="onGrd1CellClick"/>
+          <cl:listener std:sid="listener-f2d51ed8" name="dblclick" handler="onGrd1Dblclick"/>
+          <cl:formdata std:sid="f-data-ebc76050" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-857f2fc1" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-bb0d7343" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-e4f26a8b" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-2a13a13d" width="50px"/>
+          <cl:gridheader std:sid="gh-band-d5e8dc42">
+            <cl:gridrow std:sid="g-row-4e19a4bd" height="0"/>
+            <cl:gridcell std:sid="gh-cell-734e81cb" rowindex="0" colindex="0" targetcolumnname="color1" sortable="false" filterable="false" text="color1"/>
+            <cl:gridcell std:sid="gh-cell-a212d1ea" rowindex="0" colindex="1" targetcolumnname="color2" sortable="false" filterable="false" text="color2"/>
+            <cl:gridcell std:sid="gh-cell-d7089130" rowindex="0" colindex="2" targetcolumnname="color3" sortable="false" filterable="false" text="color3"/>
+            <cl:gridcell std:sid="gh-cell-0cd61110" rowindex="0" colindex="3" targetcolumnname="color4" sortable="false" filterable="false" text="color4"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-3508d1f6">
+            <cl:gridrow std:sid="g-row-c4c81a9d"/>
+            <cl:gridcell std:sid="gd-cell-2f8ef285" rowindex="0" colindex="0" style="text-align:center;" columnname="color1">
+              <cl:output std:sid="output-8665a5f2" style="text-align:center;" value="Output">
+                <cl:relativebind property="backgroundColor" category="STYLER" columnname="color1"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-e10815b3" rowindex="0" colindex="1" columnname="color2">
+              <cl:output std:sid="output-d438a4e2" style="text-align:center;" value="Output">
+                <cl:relativebind property="backgroundColor" category="STYLER" columnname="color2"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-9531643f" rowindex="0" colindex="2" style="text-align:center;" columnname="color3">
+              <cl:output std:sid="output-9dd44895" style="text-align:center;" value="Output">
+                <cl:relativebind property="backgroundColor" category="STYLER" columnname="color3"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-bd3e014d" rowindex="0" colindex="3" style="text-align:center;" columnname="color4">
+              <cl:output std:sid="output-43d7370a" style="text-align:center;" value="Output">
+                <cl:relativebind property="backgroundColor" category="STYLER" columnname="color4"/>
+              </cl:output>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:group std:sid="group-1d53b637" id="grp3">
+          <cl:formdata std:sid="f-data-b9558ee8" row="2" col="0"/>
+          <cl:button std:sid="button-81e787f9" id="btnClose" value="화면닫기">
+            <cl:listener std:sid="listener-18428664" name="click" handler="onBtnCloseClick"/>
+            <cl:formdata std:sid="f-data-6cce4164" row="0" col="0"/>
+          </cl:button>
+          <cl:button std:sid="button-840c36c2" id="btnSelect" value="선택닫기">
+            <cl:listener std:sid="listener-5c344590" name="click" handler="onBtnSelectClick"/>
+            <cl:formdata std:sid="f-data-570a8ba7" row="0" col="2"/>
+          </cl:button>
+          <cl:formlayout std:sid="f-layout-bd0b0dc7" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="0" vseparatorwidth="0">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-69a1548c" hspace="5px" vspace="5px">
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows length="35" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-a6147fc8" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-a7c27cf4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

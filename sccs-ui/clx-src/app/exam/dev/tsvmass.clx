@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-eee918cd" version="1.0.0.0">
+  <head std:sid="head-d104df2a">
+    <title>oneGrid</title>
+    <screen std:sid="screen-294ad6b9" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-f0005719" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-aca592b1" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px" active="false"/>
+    <screen std:sid="screen-54a745b3" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-88ab537e">
+      <cl:dataset std:sid="d-set-d52dec06" id="dsCmnTmpReg" info="STUD_NO">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e7ae1f2d" name="PARTY_ID" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-d40a9ba4" name="STUD_NO" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-239b9432" name="REP_NM" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-02fe34f3" name="ENG_NM" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-32778d6d" name="CHA_NM" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-eb91974e" name="GENDER_RCD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-c32550e0" name="SSN" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-8e961d03" name="STUD_DIV_RCD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-2a1c9d0b" name="DEPT_CD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-c93e1c07" name="DAY_NIGHT_DIV_RCD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-8f6905ac" name="NAT_RCD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-25930d49" name="ZIPCODE" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-4a627a96" name="ADDR1" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-fba116b1" name="ADDR2" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-975d0ccd" name="CLP_NO" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-c4c27cc6" name="AEN" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-e88fc645" name="EMAIL" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-c1eddc51" name="BANK_RCD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-daacc2fb" name="ACCT_NO" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-09d7f970" name="OWNER_NM" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-ac1a3e3c" name="ATTC_FILE_NO" datatype="string"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-7b07a5c2" id="dsGenderRcd">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-6394c101" name="CD"/>
+          <cl:datacolumn std:sid="d-column-3b1a0556" name="CD_NM"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-3a80f4e3" id="dsStudDivRcd">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-573a9a46" name="CD"/>
+          <cl:datacolumn std:sid="d-column-e40e490e" name="CD_NM"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-7110304c" id="dsDayNightDivRcd">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bd7baa2b" name="CD"/>
+          <cl:datacolumn std:sid="d-column-50de2987" name="CD_NM"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-a441d6fe" id="dsNatRcd">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-596efea4" name="CD"/>
+          <cl:datacolumn std:sid="d-column-ca062483" name="CD_NM"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-033dd600" id="dsBankRcd">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-edf10ff3" name="CD"/>
+          <cl:datacolumn std:sid="d-column-e35fd424" name="CD_NM"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-1a51e54f" id="dmTime">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-27516ed8" name="strToday"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-e794e2e3" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d49ebc9a" name="strStudNo"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-dbc0b0ac" id="subOnload" action="/OneGrid/onLoad.do">
+        <cl:responsedata dataid="dsGenderRcd"/>
+        <cl:responsedata dataid="dsStudDivRcd"/>
+        <cl:responsedata dataid="dsDayNightDivRcd"/>
+        <cl:responsedata dataid="dsNatRcd"/>
+        <cl:responsedata dataid="dsBankRcd"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-9f9ccba1" id="subList" action="/OneGrid/listTsv.do" responsetype="blob" fallbackContentType="text/tab-separated-values">
+        <cl:requestdata dataid="dmParam"/>
+        <cl:responsedata dataid="dsCmnTmpReg"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="템플릿(대용량데이터)"/>
+  </head>
+  <body std:sid="body-9a01cec9" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-5f7badfe" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-d6bd93c0" id="grpHeader" class="header-box">
+      <cl:verticaldata std:sid="v-data-6696b860" width="1320px" height="67px" autosize="height"/>
+      <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-86940f9a" width="500px" height="30px"/>
+        <cl:property name="searchBoxId" value="grpSearch" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-463b34e9" id="grpSearch" class="search-box">
+        <cl:attribute name="mobile-column-count" value="2"/>
+        <cl:attribute name="tablet-column-count" value="2"/>
+        <cl:verticaldata std:sid="v-data-3b599b68" width="1320px" height="37px" autosize="height"/>
+        <cl:output std:sid="output-5d79a0ea" value="학번">
+          <cl:formdata std:sid="f-data-cc109b34" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-3118ab79" id="ipb2" tooltip="학번">
+          <cl:attribute name="autoKeydownSearch" value="Y"/>
+          <cl:datamapbind property="value" datacontrolid="dmParam" columnname="strStudNo"/>
+          <cl:formdata std:sid="f-data-6bc1bbea" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:group std:sid="group-fe093515" id="grp1">
+          <cl:formdata std:sid="f-data-db8f6647" row="0" col="2" rowspan="1" colspan="2"/>
+          <cl:udc std:sid="ud-control-970928f4" id="combtnsearch" type="udc.com.comBtnSearch">
+            <cl:listener std:sid="listener-a5c9d368" name="search" handler="onCombtnsearch1Search"/>
+            <cl:formdata std:sid="f-data-f1be4058" halign="FILL" width="60" row="0" col="1"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-8baf4bd0" hspace="5px" vspace="5px">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-d71c9c17" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-dd81a7c6" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-bba5c835" id="grpData">
+      <cl:verticaldata std:sid="v-data-1bb0cb61" width="1320px" height="608px"/>
+      <cl:group std:sid="group-f16fd064" id="grp2">
+        <cl:attribute name="mobile-column-count" value=""/>
+        <cl:attribute name="tablet-column-count" value=""/>
+        <cl:formdata std:sid="f-data-d2d32fbe" row="0" col="0"/>
+        <cl:udc std:sid="ud-control-96f4a800" id="comtitle1" type="udc.com.comTitle">
+          <cl:formdata std:sid="f-data-bc86dbe6" row="0" col="0"/>
+          <cl:property name="ctrl" value="grdCmnTmpReg" type="control"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-d121d507">
+          <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-7433d22d" id="grdCmnTmpReg" fieldLabel="학생정보" datasetid="dsCmnTmpReg" autofit="3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23" selectionmulti="multi">
+        <cl:formdata std:sid="f-data-c6a776ef" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-a7a8af61" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-9d8283d6" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-982c5c62" width="40px"/>
+        <cl:gridcolumn std:sid="g-column-323cb5dd" width="158px"/>
+        <cl:gridcolumn std:sid="g-column-0b0c5114"/>
+        <cl:gridcolumn std:sid="g-column-6c6948b2"/>
+        <cl:gridcolumn std:sid="g-column-e881973a"/>
+        <cl:gridcolumn std:sid="g-column-89af8973"/>
+        <cl:gridcolumn std:sid="g-column-ec1dda80"/>
+        <cl:gridcolumn std:sid="g-column-b948ba3d"/>
+        <cl:gridcolumn std:sid="g-column-adca38e9"/>
+        <cl:gridcolumn std:sid="g-column-afb05031"/>
+        <cl:gridcolumn std:sid="g-column-10a68cb3"/>
+        <cl:gridcolumn std:sid="g-column-d88a37f2"/>
+        <cl:gridcolumn std:sid="g-column-a01db3c6"/>
+        <cl:gridcolumn std:sid="g-column-192e2386"/>
+        <cl:gridcolumn std:sid="g-column-19fd2e52"/>
+        <cl:gridcolumn std:sid="g-column-9d20fe0a"/>
+        <cl:gridcolumn std:sid="g-column-b6b36a8a"/>
+        <cl:gridcolumn std:sid="g-column-99968910"/>
+        <cl:gridcolumn std:sid="g-column-6f8e099e"/>
+        <cl:gridcolumn std:sid="g-column-56cc80a4"/>
+        <cl:gridcolumn std:sid="g-column-9f11ea59"/>
+        <cl:gridcolumn std:sid="g-column-83c0be4f"/>
+        <cl:gridheader std:sid="gh-band-879cce07">
+          <cl:gridrow std:sid="g-row-8afde01c" height="27"/>
+          <cl:gridcell std:sid="gh-cell-770f808f" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+          <cl:gridcell std:sid="gh-cell-02694103" rowindex="0" colindex="2" sortable="false" filterable="false" text="No"/>
+          <cl:gridcell std:sid="gh-cell-d9958b9b" rowindex="0" colindex="3" class="require" text="구성원ID"/>
+          <cl:gridcell std:sid="gh-cell-1b15f477" rowindex="0" colindex="4" class="require" text="학번"/>
+          <cl:gridcell std:sid="gh-cell-56c31969" rowindex="0" colindex="5" class="require" text="성명"/>
+          <cl:gridcell std:sid="gh-cell-1645f386" rowindex="0" colindex="6" text="영문명"/>
+          <cl:gridcell std:sid="gh-cell-6b6cd257" rowindex="0" colindex="7" text="한자명"/>
+          <cl:gridcell std:sid="gh-cell-9c4c4ea5" rowindex="0" colindex="8" text="성별"/>
+          <cl:gridcell std:sid="gh-cell-9e841ce8" rowindex="0" colindex="9" text="주민번호"/>
+          <cl:gridcell std:sid="gh-cell-5c9e58d7" rowindex="0" colindex="10" text="학생상태"/>
+          <cl:gridcell std:sid="gh-cell-41f94a67" rowindex="0" colindex="11" text="부서코드"/>
+          <cl:gridcell std:sid="gh-cell-7d499e49" rowindex="0" colindex="12" text="주야구분"/>
+          <cl:gridcell std:sid="gh-cell-894a4f77" rowindex="0" colindex="13" text="국가"/>
+          <cl:gridcell std:sid="gh-cell-0f145ce1" rowindex="0" colindex="14" text="우편번호"/>
+          <cl:gridcell std:sid="gh-cell-9e2e22de" rowindex="0" colindex="15" text="주소1"/>
+          <cl:gridcell std:sid="gh-cell-a0005f58" rowindex="0" colindex="16" text="주소2"/>
+          <cl:gridcell std:sid="gh-cell-a55e5a04" rowindex="0" colindex="17" text="휴대폰번호"/>
+          <cl:gridcell std:sid="gh-cell-0661efcd" rowindex="0" colindex="18" text="사무실번호"/>
+          <cl:gridcell std:sid="gh-cell-791179fc" rowindex="0" colindex="19" text="이메일"/>
+          <cl:gridcell std:sid="gh-cell-0aff24fe" rowindex="0" colindex="20" text="은행"/>
+          <cl:gridcell std:sid="gh-cell-05dc8518" rowindex="0" colindex="21" text="계좌번호"/>
+          <cl:gridcell std:sid="gh-cell-1186a584" rowindex="0" colindex="22" text="소유주"/>
+          <cl:gridcell std:sid="gh-cell-2529e057" rowindex="0" colindex="23" text="파일순번"/>
+          <cl:gridcell std:sid="gh-cell-e05344a6" rowindex="0" colindex="1" text="F"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-bec269f8">
+          <cl:gridrow std:sid="g-row-14e22ec2"/>
+          <cl:gridcell std:sid="gd-cell-833f9127" rowindex="0" colindex="0" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-74b14971" rowindex="0" colindex="2" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-63645b57" rowindex="0" colindex="3" columnname="PARTY_ID">
+            <cl:inputbox std:sid="i-box-d1436628" id="ipb1">
+              <cl:attribute name="required" value="Y"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-c5504029" rowindex="0" colindex="4" columnname="STUD_NO">
+            <cl:inputbox std:sid="i-box-86486a8b" id="ipb4">
+              <cl:attribute name="required" value="Y"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-79339ae6" rowindex="0" colindex="5" columnname="REP_NM">
+            <cl:inputbox std:sid="i-box-02e45116" id="ipb5">
+              <cl:attribute name="required" value="Y"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-418b6469" rowindex="0" colindex="6" columnname="ENG_NM">
+            <cl:inputbox std:sid="i-box-35212392" id="ipb6"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-24805668" rowindex="0" colindex="7" columnname="CHA_NM">
+            <cl:inputbox std:sid="i-box-70182439" id="ipb7"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-17d9889c" rowindex="0" colindex="8" columnname="GENDER_RCD">
+            <cl:combobox std:sid="c-box-71fa02be" id="cmb1">
+              <cl:itemset datasetid="dsGenderRcd" label="CD_NM" value="CD"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-670e04e9" rowindex="0" colindex="9" columnname="SSN">
+            <cl:inputbox std:sid="i-box-a775a2a9" id="ipb9">
+              <cl:attribute name="columnType" value="ssn"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-11908534" rowindex="0" colindex="10" columnname="STUD_DIV_RCD">
+            <cl:combobox std:sid="c-box-01b9f4d3" id="cmb2">
+              <cl:itemset datasetid="dsStudDivRcd" label="CD_NM" value="CD"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-3d766495" rowindex="0" colindex="11" columnname="DEPT_CD">
+            <cl:inputbox std:sid="i-box-78e1a58a" id="ipb11"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-dd6896f6" rowindex="0" colindex="12" columnname="DAY_NIGHT_DIV_RCD">
+            <cl:combobox std:sid="c-box-41690e34" id="cmb3">
+              <cl:itemset datasetid="dsDayNightDivRcd" label="CD_NM" value="CD"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-5111856c" rowindex="0" colindex="13" columnname="NAT_RCD">
+            <cl:combobox std:sid="c-box-88da150e" id="cmb5">
+              <cl:itemset datasetid="dsNatRcd" label="CD_NM" value="CD"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-ab93cac9" rowindex="0" colindex="14" columnname="ZIPCODE">
+            <cl:inputbox std:sid="i-box-d81bded9" id="ipb14"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-67474b35" rowindex="0" colindex="15" columnname="ADDR1">
+            <cl:inputbox std:sid="i-box-44d85658" id="ipb15"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-50bfd2d1" rowindex="0" colindex="16" columnname="ADDR2">
+            <cl:inputbox std:sid="i-box-375eefdb" id="ipb16"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-c7229ab3" rowindex="0" colindex="17" columnname="CLP_NO">
+            <cl:inputbox std:sid="i-box-438e809a" id="ipb17">
+              <cl:attribute name="columnType" value="phone"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-32b798bc" rowindex="0" colindex="18" columnname="AEN">
+            <cl:inputbox std:sid="i-box-90b39773" id="ipb18"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-86cda616" rowindex="0" colindex="19" columnname="EMAIL">
+            <cl:inputbox std:sid="i-box-e06de482" id="ipb19">
+              <cl:attribute name="columnType" value="email"/>
+            </cl:inputbox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-26db215b" rowindex="0" colindex="20" columnname="BANK_RCD">
+            <cl:combobox std:sid="c-box-7070ec39" id="cmb4">
+              <cl:itemset datasetid="dsBankRcd" label="CD_NM" value="CD"/>
+            </cl:combobox>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-e1220cb4" rowindex="0" colindex="21" columnname="ACCT_NO">
+            <cl:inputbox std:sid="i-box-897362d9" id="ipb21"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-9ef99574" rowindex="0" colindex="22" columnname="OWNER_NM">
+            <cl:inputbox std:sid="i-box-0620d86d" id="ipb22"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-7eeec1f8" rowindex="0" colindex="23" columnname="ATTC_FILE_NO">
+            <cl:numbereditor std:sid="n-editor-d68c8dcd" id="nbe1"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-6340ef9a" rowindex="0" colindex="1">
+            <cl:output std:sid="output-3fcab117"/>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-ac960930">
+        <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-d2d06308"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

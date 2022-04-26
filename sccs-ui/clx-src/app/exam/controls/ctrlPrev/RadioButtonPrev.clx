@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ccf50f87" version="1.0.0.0">
+  <head std:sid="head-36af639d">
+    <title>InputBox</title>
+    <screen std:sid="screen-40c29cf2" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" customHeight="600" customWidth="800" active="true"/>
+    <screen std:sid="screen-7cd0f33f" id="default" name="default" minwidth="1235px" maxwidth="1319px" width="1235px" height="675px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-cd23d0ba" id="notebook" name="notebook" minwidth="1020px" maxwidth="1234px" width="1020px" height="540px"/>
+    <screen std:sid="screen-df9538bc" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-14b2f7b5" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-8a447e37">
+      <cl:dataset std:sid="d-set-fc003b0e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-770501cb" name="CD"/>
+          <cl:datacolumn std:sid="d-column-7a3d0ae3" name="CD_NM"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[서울]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[수원]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[울산광역시]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[부산광역시]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="CD"><![CDATA[50]]></cl:datavalue>
+            <cl:datavalue columnname="CD_NM"><![CDATA[광주광역시]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="라디오버튼 관련 속성"/>
+  </head>
+  <body std:sid="body-656f5d75" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-cd5e7e55" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-01d4f21f" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-b7fe56b8" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-bfff458c" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-80f7f4e3" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-c30a1734" id="grpData">
+      <cl:verticaldata std:sid="v-data-18464f13" width="400px" height="647px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="라디오버튼(RadioButton)은 여러 가지 선택 사항 중 한 가지 만 선택하는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-58331b29" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-f39d7c2c" id="grp2" class="cl-form-group">
+        <cl:formdata std:sid="f-data-281a2f97" row="1" col="0"/>
+        <cl:output std:sid="output-452d2687" id="opt3" value="[fixedWidth = true]&#xD;&#xA;1. 아이템의 넓이가 고정되어 있다.">
+          <cl:formdata std:sid="f-data-dab2fe77" row="0" col="0"/>
+        </cl:output>
+        <cl:radiobutton std:sid="r-button-04f5c0eb" id="rdb1">
+          <cl:formdata std:sid="f-data-fd78e37b" row="0" col="1"/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:radiobutton>
+        <cl:output std:sid="output-20cd6ed1" id="opt4" value="[fixedWidth = false]&#xD;&#xA;1. 아이템의 길이에 따라 각각 넓이가 조절되었다.">
+          <cl:formdata std:sid="f-data-12da1757" row="1" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-e2ddc811" id="grp1">
+          <cl:formdata std:sid="f-data-432103a7" row="1" col="1"/>
+          <cl:radiobutton std:sid="r-button-6cb885a2" id="rdb2" fixedwidth="false">
+            <cl:formdata std:sid="f-data-ec576c87" row="0" col="0"/>
+            <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+          </cl:radiobutton>
+          <cl:output std:sid="output-8fd097e7" id="opt9" style="color:#757272;" value="fixedWidth 속성을 false로 지정하면, 각 아이템 넓이에 맞게 아이템간의 간격이 조정된다.">
+            <cl:formdata std:sid="f-data-080b858e" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-1711372e" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-be27935c" id="opt5" value="[colCount = 3]&#xD;&#xA;1. 한 줄에 3개 아이템만 표시된다.">
+          <cl:formdata std:sid="f-data-069cd3e1" row="2" col="0"/>
+        </cl:output>
+        <cl:radiobutton std:sid="r-button-cc51df65" id="rdb3" colcount="3">
+          <cl:formdata std:sid="f-data-fb95bbe7" row="2" col="1"/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:radiobutton>
+        <cl:output std:sid="output-6b7bd64c" value="[iconAlign = right]&#xD;&#xA;1. 아이콘이 오른쪽에 위치한다.">
+          <cl:formdata std:sid="f-data-c75b5284" row="3" col="0"/>
+        </cl:output>
+        <cl:radiobutton std:sid="r-button-be46320b" id="rdb8" iconalign="right">
+          <cl:formdata std:sid="f-data-d07dda3f" row="3" col="1"/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:radiobutton>
+        <cl:output std:sid="output-80a3a12f" value="[itemSpacing = 30]&#xD;&#xA;1. 아이템 간격이 30px이다.&#xD;&#xA;&#xD;&#xA;[displayExp = CD_NM +[CD]]&#xD;&#xA;1. 아이템이 서울[10] 포맷으로 표시된다.">
+          <cl:formdata std:sid="f-data-110631c3" row="4" col="0"/>
+        </cl:output>
+        <cl:radiobutton std:sid="r-button-5231d8d9" id="rdb5" colcount="3" hspacing="30" vspacing="30" displayexp="CD_NM + &quot;[&quot;+CD+&quot;]&quot;">
+          <cl:formdata std:sid="f-data-e2e25a5c" row="4" col="1"/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:radiobutton>
+        <cl:output std:sid="output-b5e3a643" id="opt6" value="[enabledItemExp = (value == '20' || value == '30') ? false : true]&#xD;&#xA;1. 2, 3번째 값은 비활성화 되어있다.">
+          <cl:formdata std:sid="f-data-09c3595d" row="5" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-be3c7024" id="grp3">
+          <cl:formdata std:sid="f-data-a9befbb3" row="5" col="1"/>
+          <cl:radiobutton std:sid="r-button-b2df03fa" id="rdb4" enableditemexp="(value == '20' || value == '30') ? false : true">
+            <cl:formdata std:sid="f-data-a662adc2" row="0" col="0"/>
+            <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+          </cl:radiobutton>
+          <cl:output std:sid="output-b52560ee" id="opt10" style="color:#757272;" value="enabledItemExp 속성을 사용하여, 특정 아이템들의 활성/비활성 상태를 지정할 수 있다.">
+            <cl:formdata std:sid="f-data-b4a6380b" row="1" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-1d66ea59" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-5edf1bbd" value="[filterExp = CD_NM == &quot;서울&quot;]&#xD;&#xA;1. 서울을 제외한 다른 값들은 표시되지 않는다.">
+          <cl:formdata std:sid="f-data-c016004e" row="6" col="0"/>
+        </cl:output>
+        <cl:radiobutton std:sid="r-button-c64771d9" id="rdb6" filterexp="CD_NM == &quot;서울&quot;" colcount="3">
+          <cl:formdata std:sid="f-data-0231ff3f" row="6" col="1"/>
+          <cl:itemset datasetid="ds1" label="CD_NM" value="CD"/>
+        </cl:radiobutton>
+        <cl:formlayout std:sid="f-layout-8cf910ce" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="2" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-2033d3d3" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-0a0a8c5a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

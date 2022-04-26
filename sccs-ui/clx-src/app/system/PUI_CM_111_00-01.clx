@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-2s986xr5" version="1.0.0.0">
+  <head std:sid="head-kkhha280">
+    <title></title>
+    <screen std:sid="screen-27fbae5f" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" active="true"/>
+    <screen std:sid="screen-ce16f6b0" id="default" name="default" minwidth="1235px" maxwidth="1319px" width="1235px" height="675px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-85529673" id="tablet" name="tablet" minwidth="760px" maxwidth="1234px" width="760px" height="820px"/>
+    <screen std:sid="screen-a343122b" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-0282vnqm">
+      <cl:dataset std:sid="d-set-432676f0" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="알림설정ID" std:sid="d-column-feaf59cb" name="column1"/>
+          <cl:datacolumn comment="단위 시스템" std:sid="d-column-4e8c1aab" name="column2"/>
+          <cl:datacolumn comment="알림제목" std:sid="d-column-25b6ce09" name="column3"/>
+          <cl:datacolumn comment="알림내용 예시" std:sid="d-column-371e811a" name="column4"/>
+          <cl:datacolumn comment="SMS 내용" std:sid="d-column-7fb9b952" name="column8"/>
+          <cl:datacolumn comment="전송시점" std:sid="d-column-a127f656" name="column10"/>
+          <cl:datacolumn comment="SMS 발송대상 권한" std:sid="d-column-62e7d1ff" name="column11"/>
+          <cl:datacolumn comment="사용여부" std:sid="d-column-84ad242d" name="column12"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS001]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[홍수예경보시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[비밀번호 초기화]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 비밀번호 초기화 요청…]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS002]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[홍수예경보시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[탈퇴요청]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 회원탈퇴 요청을 …]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS003]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[홍수예경보시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[장애발생]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 비밀번호 초기화 요청…]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS004]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[홍수예경보시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[정비요청]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 회원탈퇴 요청을 …]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS005]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[홍수예경보시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[정비확인요청]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 비밀번호 초기화 요청…]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS006]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[기상정보수집시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[장애발생]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 회원탈퇴 요청을 …]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS007]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[기상정보수집시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[정비요청]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 비밀번호 초기화 요청…]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS008]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[기상정보수집시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[정비확인요청]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 회원탈퇴 요청을 …]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS009]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[통합관제시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[센서등록]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 비밀번호 초기화 요청…]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[SMS010]]></cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[통합관제시스템]]></cl:datavalue>
+            <cl:datavalue columnname="column3"><![CDATA[정비확인요청]]></cl:datavalue>
+            <cl:datavalue columnname="column4"><![CDATA[홍길동 회원님 회원탈퇴 요청을 …]]></cl:datavalue>
+            <cl:datavalue columnname="column8"><![CDATA[@{userNm} 회원님의 비밀번호 초기화 요청되었습니다]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-c5404af8" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-56ab4dfc" name="column1"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[홍수예경보시스템]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[기상정보수집시스템]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1"><![CDATA[통합관제시스템]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="알림 설정 정보 목록"/>
+  </head>
+  <body std:sid="body-ry370va4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-0136bb34" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-797bfd48" id="grpHeader" class="header-box">
+      <cl:verticaldata std:sid="v-data-7d5f80d6" width="1320px" height="67px" autosize="height"/>
+      <cl:udc std:sid="ud-control-26z2neey" id="appheader" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-f489482c" width="1320px" height="30px" autosize="none"/>
+        <cl:property name="grpDataIds" value="grpData" type="string"/>
+        <cl:property name="ctrl" type="control"/>
+        <cl:property name="focusColumnName" value="PGM_ID" type="string"/>
+      </cl:udc>
+      <cl:group std:sid="group-463b34e9" id="grpSearch" class="search-box">
+        <cl:attribute name="mobile-column-count" value="2"/>
+        <cl:attribute name="tablet-column-count" value="2"/>
+        <cl:verticaldata std:sid="v-data-5cde8614" width="1320px" height="37px" autosize="height"/>
+        <cl:output std:sid="output-133195b8" value="단위 시스템">
+          <cl:formdata std:sid="f-data-b5eb4adc" row="0" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-b336aa93" id="cmbJob2" fieldLabel="직급">
+          <cl:formdata std:sid="f-data-45420176" row="0" col="1"/>
+          <cl:item std:sid="t-item-f172f30f" label="홍수경보시스템" value=""/>
+        </cl:combobox>
+        <cl:output std:sid="output-5d79a0ea" value="알림 제목">
+          <cl:formdata std:sid="f-data-cc109b34" row="0" col="2"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-77135524" id="ipb5">
+          <cl:formdata std:sid="f-data-61a36e38" row="0" col="3"/>
+        </cl:inputbox>
+        <cl:group std:sid="group-db847603" id="grp4">
+          <cl:formdata std:sid="f-data-2ebd266b" row="0" col="4" rowspan="1" colspan="2"/>
+          <cl:udc std:sid="ud-control-416f01a3" id="combtnsearch1" type="udc.com.comBtnSearch">
+            <cl:listener std:sid="listener-d7a7788b" name="search" handler="onCombtnsearchSearch"/>
+            <cl:formdata std:sid="f-data-0712c4df" halign="RIGHT" valign="FILL" width="60" row="0" col="1"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-6b407e27">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-d71c9c17" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-3064a56b" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-9fzd160s" id="grpData">
+      <cl:attribute name="mobile-column-count" value="1"/>
+      <cl:attribute name="tablet-column-count" value="1"/>
+      <cl:verticaldata std:sid="v-data-b0eb0a88" width="1320px" height="608px"/>
+      <cl:group std:sid="group-b2d1cb22" id="grp1">
+        <cl:formdata std:sid="f-data-221737da" row="0" col="0"/>
+        <cl:group std:sid="group-2cb8b1d4" id="grp5">
+          <cl:formdata std:sid="f-data-6197063d" row="0" col="0" rowspan="1" colspan="1"/>
+          <cl:udc std:sid="ud-control-96f4a800" id="comtitle1" type="udc.com.comTitle">
+            <cl:formdata std:sid="f-data-52e1e072" row="0" col="0"/>
+            <cl:property name="title" value="알림 설정 템플릿 목록" type="string"/>
+            <cl:property name="ctrl" value="grdMain" type="control"/>
+          </cl:udc>
+          <cl:udc std:sid="ud-control-8c0f1085" id="combutton1" type="udc.com.comButton">
+            <cl:listener std:sid="listener-33cac9a7" name="save" handler="onComButtonSave"/>
+            <cl:formdata std:sid="f-data-3d08e3a6" row="0" col="1"/>
+            <cl:property name="grid" value="grdMain" type="control"/>
+            <cl:property name="focusColumnName" value="EMPNO" type="string"/>
+            <cl:property name="visibleRestoreButton" value="false" type="boolean"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-31deb0fa">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="195" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-yf9p4oo0" id="grdMain" fieldLabel="알림설정 템플릿 목록" datasetid="ds1" autofit="3, 4, 5, 6">
+          <cl:attribute name="bindDataFormId" value="frfMain"/>
+          <cl:formdata std:sid="f-data-2ad82bdd" row="1" col="0" rowspan="1" colspan="1"/>
+          <cl:gridcolumn std:sid="g-column-5014911c" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-503a5804" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-228eb73b" width="40px"/>
+          <cl:gridcolumn std:sid="g-column-2ee9890f"/>
+          <cl:gridcolumn std:sid="g-column-7b920ed9" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-4be29a43"/>
+          <cl:gridcolumn std:sid="g-column-411f6061" width="300px"/>
+          <cl:gridheader std:sid="gh-band-be987fd4">
+            <cl:gridrow std:sid="g-row-c411149d" height="27px"/>
+            <cl:gridcell std:sid="gh-cell-59e707d4" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+            <cl:gridcell std:sid="gh-cell-e3753ea7" rowindex="0" colindex="2" sortable="false" filterable="false" text="NO"/>
+            <cl:gridcell std:sid="gh-cell-1383d660" rowindex="0" colindex="3" targetcolumnname="column1" sortable="false" filterable="false" text="알림설정ID"/>
+            <cl:gridcell std:sid="gh-cell-118d66b9" rowindex="0" colindex="4" targetcolumnname="column2" sortable="false" filterable="false" text="단위 시스템"/>
+            <cl:gridcell std:sid="gh-cell-29cf5693" rowindex="0" colindex="5" targetcolumnname="column3" sortable="false" filterable="false" text="알림제목"/>
+            <cl:gridcell std:sid="gh-cell-0ed0d05c" rowindex="0" colindex="6" targetcolumnname="column4" sortable="false" filterable="false" text="알림내용 예시"/>
+            <cl:gridcell std:sid="gh-cell-6a738c41" rowindex="0" colindex="1" text="F"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-5aacf377">
+            <cl:gridrow std:sid="g-row-aea54f0f" height="25px"/>
+            <cl:gridcell std:sid="gd-cell-1387e35f" rowindex="0" colindex="0" columntype="checkbox"/>
+            <cl:gridcell std:sid="gd-cell-c668c79d" rowindex="0" colindex="2" columntype="rowindex"/>
+            <cl:gridcell std:sid="gd-cell-4db81a52" rowindex="0" colindex="3" columnname="column1">
+              <cl:output std:sid="output-f8da312d" value="Output">
+                <cl:celldata std:sid="c-data-eed88063"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-7a3dec71" rowindex="0" colindex="4" columnname="column2">
+              <cl:output std:sid="output-7fcd07f3" value="Output">
+                <cl:celldata std:sid="c-data-894fda54"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-2c4b977e" rowindex="0" colindex="5" columnname="column3">
+              <cl:output std:sid="output-d9a49564" value="Output">
+                <cl:celldata std:sid="c-data-0b5dbdf1"/>
+              </cl:output>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f1a9e2e5" rowindex="0" colindex="6" columnname="column4">
+              <cl:output std:sid="output-96ed295e" ellipsis="true"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-aaeed07a" rowindex="0" colindex="1" columnname="">
+              <cl:output std:sid="output-c66a7912">
+                <cl:celldata std:sid="c-data-889e4ec9"/>
+              </cl:output>
+            </cl:gridcell>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-ff550218">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-1e846ef2" id="grp2">
+        <cl:attribute name="needs-auto-height" value="true"/>
+        <cl:formdata std:sid="f-data-ae11677a" row="1" col="0"/>
+        <cl:udc std:sid="ud-control-a839a0ef" id="comformtitle1" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-5cfcb904" row="0" col="0"/>
+          <cl:property name="ctrl" value="frfMain" type="control"/>
+        </cl:udc>
+        <cl:group std:sid="group-7y3vwr17" id="frfMain" class="form-box" fieldLabel="알림 설정 템플릿 정보 등록">
+          <cl:selectioncontext selectionProvider="#grid-yf9p4oo0"/>
+          <cl:formdata std:sid="f-data-e380c4d4" row="1" col="0"/>
+          <cl:output std:sid="output-8d790df8" class="label require" value="알림 설정ID">
+            <cl:formdata std:sid="f-data-f9bc6b8b" row="0" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-fc15fdb3" id="grp3">
+            <cl:formdata std:sid="f-data-5c22b669" row="0" col="1"/>
+            <cl:inputbox std:sid="i-box-6e91784b" id="ipb1">
+              <cl:relativebind property="value" columnname="column1"/>
+              <cl:flowlayoutdata std:sid="f-data-6379c311" width="200px" height="25px"/>
+            </cl:inputbox>
+            <cl:button std:sid="button-8e887b8a" id="btn2" class="btn-gray" value="중복 조회">
+              <cl:flowlayoutdata std:sid="f-data-23cf4e50" width="80px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-cc177622" scrollable="false" hspacing="5" vspacing="0" linewrap="false"/>
+          </cl:group>
+          <cl:output std:sid="output-41fb96a8" class="label require" value="단위시스템">
+            <cl:formdata std:sid="f-data-c2974b01" row="1" col="0"/>
+          </cl:output>
+          <cl:combobox std:sid="c-box-86cd29b5" id="cmb1" preventinput="true">
+            <cl:relativebind property="value" columnname="column2"/>
+            <cl:formdata std:sid="f-data-c960024b" row="1" col="1"/>
+            <cl:item std:sid="t-item-e24ac05b" label="홍수예경보시스템" value="홍수예경보시스템"/>
+            <cl:item std:sid="t-item-39299c95" label="기상정보수집시스템" value="기상정보수집시스템"/>
+            <cl:item std:sid="t-item-54b9dca2" label="통합관제시스템" value="통합관제시스템"/>
+          </cl:combobox>
+          <cl:output std:sid="output-12921c69" class="label require" value="알림 제목">
+            <cl:formdata std:sid="f-data-6316fa00" row="2" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-480150d7" id="ipb2">
+            <cl:relativebind property="value" columnname="column3"/>
+            <cl:formdata std:sid="f-data-a8595ec8" row="2" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-6b8e6f71" class="label require" value="알림 내용">
+            <cl:formdata std:sid="f-data-b0985df0" row="3" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-3d5658d4" id="ipb3">
+            <cl:relativebind property="value" columnname="column8"/>
+            <cl:formdata std:sid="f-data-c9484167" row="3" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-f303eb83" class="label require" value="알림 예시">
+            <cl:formdata std:sid="f-data-6c97e49b" row="4" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-b87436d6" id="ipb4">
+            <cl:relativebind property="value" columnname="column4"/>
+            <cl:formdata std:sid="f-data-cb25cb21" row="4" col="1"/>
+          </cl:inputbox>
+          <cl:output std:sid="output-b861e0b8" class="label require" value="전송시점">
+            <cl:formdata std:sid="f-data-e381f113" row="5" col="0"/>
+          </cl:output>
+          <cl:checkboxgroup std:sid="cb-group-077d6528" id="cbg2" colcount="-1" fixedwidth="false" hspacing="10" vspacing="12">
+            <cl:relativebind property="value" columnname="column10"/>
+            <cl:formdata std:sid="f-data-9faa37e3" row="5" col="1"/>
+            <cl:item std:sid="item-89017f98" label="즉시" value="value1"/>
+            <cl:item std:sid="item-a3e8880b" label="당일" value="value2"/>
+            <cl:item std:sid="item-a31eb130" label="1일전" value="value3"/>
+            <cl:item std:sid="item-0d1b7c79" label="3일전" value="value4"/>
+            <cl:item std:sid="item-59b7a321" label="7일전" value="value5"/>
+            <cl:item std:sid="item-7128ca4f" label="14일전" value="value6"/>
+            <cl:item std:sid="item-e0dd4d67" label="30일전" value="value7"/>
+            <cl:item std:sid="item-32b306a6" label="60일전" value="value8"/>
+          </cl:checkboxgroup>
+          <cl:output std:sid="output-6f6af086" class="label require" value="알림 발송&#xD;&#xA;대상 권한">
+            <cl:formdata std:sid="f-data-9f70f0be" valign="FILL" height="50" row="6" col="0"/>
+          </cl:output>
+          <cl:checkboxgroup std:sid="cb-group-fbf82e5a" id="cbg1" class="align-top" colcount="1" fixedwidth="true" hspacing="0" vspacing="5">
+            <cl:relativebind property="value" columnname="column11"/>
+            <cl:formdata std:sid="f-data-4c1f4625" row="6" col="1"/>
+            <cl:item std:sid="item-e4ca2b7d" label="관리자" value="value1"/>
+            <cl:item std:sid="item-050d0281" label="신시 상황실" value="value2"/>
+            <cl:item std:sid="item-01bbe80a" label="가력 상황실" value="value3"/>
+            <cl:item std:sid="item-5391c451" label="시설 운영부" value="value4"/>
+            <cl:item std:sid="item-5ea8b2b2" label="유지 관리부" value="value5"/>
+          </cl:checkboxgroup>
+          <cl:output std:sid="output-04f73beb" class="label require" value="사용여부">
+            <cl:formdata std:sid="f-data-1d76a19b" row="7" col="0"/>
+          </cl:output>
+          <cl:group std:sid="group-52ea27eb" id="grp6">
+            <cl:formdata std:sid="f-data-20981e22" row="7" col="1"/>
+            <cl:radiobutton std:sid="r-button-e4adab4f" id="rdb1" colcount="-1" fixedwidth="false" hspacing="12" vspacing="12">
+              <cl:relativebind property="value" columnname="column12"/>
+              <cl:flowlayoutdata std:sid="f-data-61a0665e" width="200px" height="100%" autosize="width"/>
+              <cl:item std:sid="item-7b2a071a" label="사용" value="value1"/>
+              <cl:item std:sid="item-7011f4ce" label="미사용" value="value2"/>
+            </cl:radiobutton>
+            <cl:flowlayout std:sid="f-layout-ab1da346" scrollable="false" hspacing="0" vspacing="0" linewrap="false"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-c13d1b93" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:rows length="125" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL"/>
+            <cl:columns length="120" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-49b6d18b">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-521e0aad" user-resizing-mode="standard" hspace="5px" vspace="5px">
+        <cl:rows length="2" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="375" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-8a061284"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

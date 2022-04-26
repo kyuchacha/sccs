@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-dcd5c1b7" version="1.0.3167">
+  <head std:sid="head-f4115a92">
+    <screen std:sid="screen-ecfb7ddd" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" active="true"/>
+    <screen std:sid="screen-317b42a4" id="default" name="default" minwidth="1024px" maxwidth="1319px" width="1024px" height="768px" customHeight="600" customWidth="800" active="false"/>
+    <screen std:sid="screen-b51ef7eb" id="tablet" name="tablet" minwidth="850px" maxwidth="1023px" width="850px" height="768px" active="false"/>
+    <screen std:sid="screen-310adcbe" id="mobile" name="mobile" maxwidth="849px" width="550px" height="768px" active="false"/>
+    <cl:model std:sid="model-2dfb148e">
+      <cl:dataset std:sid="d-set-7d9f056d" id="dsLanDivRCd">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-e648f04c" name="CD"/>
+          <cl:datacolumn std:sid="d-column-ec53ab91" name="CD_NM"/>
+          <cl:datacolumn std:sid="d-column-4e014c03" name="CD_PRP1"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-0d7779e2" id="dsParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-c2f71909" name="USER_ID"/>
+          <cl:datacolumn std:sid="d-column-88c63b89" name="PWD"/>
+          <cl:datacolumn std:sid="d-column-54f0118b" name="default.locale"/>
+          <cl:datacolumn std:sid="d-column-0541f15c" info="직접로그인여부" name="directLoginYn" defaultvalue="N"/>
+          <cl:datacolumn std:sid="d-column-c36d3f22" info="중복 로그인 여부" name="forceLoginYn" defaultvalue="N"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-053fcb6b" id="subLogin" action="/com/sccs/cm/us/actionLogin.do" mediatype="application/x-www-form-urlencoded">
+        <cl:requestdata dataid="dsParam"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-46a06107" id="subLocale" action="/i18n/locale.do" responsetype="javascript"/>
+    </cl:model>
+    <cl:appspec title="로그인"/>
+  </head>
+  <body std:sid="body-d6cbb884" class="login-body">
+    <cl:listener std:sid="listener-f3bfb686" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-ca5f35d2" class="login-box">
+      <cl:formdata std:sid="f-data-84fdc030" row="0" col="0"/>
+      <cl:group std:sid="group-448130bb">
+        <cl:xylayoutdata std:sid="xyl-data-64e20405" width="460px" height="570px" horizontalAnchor="CENTER" verticalAnchor="CENTER"/>
+        <cl:img std:sid="image-763708fe" src="../../../theme/common/images/com/main/logo.png">
+          <cl:xylayoutdata std:sid="xyl-data-861976fe" top="0px" left="0px" width="135px" height="70px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+        </cl:img>
+        <cl:group std:sid="group-c9895063" class="tit-box">
+          <cl:xylayoutdata std:sid="xyl-data-af298e69" top="70px" right="0px" left="0px" height="36px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+          <cl:output std:sid="output-9a848c8e" class="h1" value="새만금">
+            <cl:flowlayoutdata std:sid="f-data-86831a89" width="70px" height="36px" autosize="width"/>
+          </cl:output>
+          <cl:output std:sid="output-2f5a2e3f" class="h2" value="종합통제시스템">
+            <cl:flowlayoutdata std:sid="f-data-b5235901" width="140px" height="32px" autosize="width"/>
+          </cl:output>
+          <cl:flowlayout std:sid="f-layout-6dac9f29" scrollable="false" vspacing="0" valign="bottom" linewrap="false"/>
+        </cl:group>
+        <cl:output std:sid="output-8d2e0766" class="welcome" value="오늘도&#xA;좋은 하루 되세요!">
+          <cl:xylayoutdata std:sid="xyl-data-d6d8bc3d" top="146px" right="0px" left="0px" height="90px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-3a1d3751" class="bg-light" value="">
+          <cl:xylayoutdata std:sid="xyl-data-a7190553" top="286px" right="0px" left="0px" height="1px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:output std:sid="output-191dd9cc" class="h4 text-dark" value="로그인">
+          <cl:xylayoutdata std:sid="xyl-data-3f5ea9c3" top="326px" right="0px" left="0px" height="28px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-a66dfb6c" id="ipbUserNm" class="form-field" fieldLabel="아이디" placeholder="아이디">
+          <cl:listener std:sid="listener-dbe51591" name="keydown" handler="onIpbUserNmKeydown"/>
+          <cl:attribute name="required" value="Y"/>
+          <cl:datamapbind property="value" datacontrolid="dsParam" columnname="USER_ID"/>
+          <cl:xylayoutdata std:sid="xyl-data-7ce3d637" top="362px" right="0px" left="0px" height="50px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-854cbb9c" id="ipbPw" class="form-field" fieldLabel="비밀번호" secret="true" placeholder="비밀번호">
+          <cl:listener std:sid="listener-382f042b" name="keydown" handler="onIpbPwKeydown"/>
+          <cl:attribute name="required" value="Y"/>
+          <cl:datamapbind property="value" datacontrolid="dsParam" columnname="PWD"/>
+          <cl:xylayoutdata std:sid="xyl-data-afadec1f" top="421px" right="0px" left="0px" height="50px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-f8c9e67e" id="btnLogin" class="btn-indigo btn-lg" value="로그인">
+          <cl:listener std:sid="listener-984dcb8b" name="click" handler="onBtnLoginClick"/>
+          <cl:xylayoutdata std:sid="xyl-data-c8c82f98" top="480px" right="0px" left="0px" height="50px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        </cl:button>
+        <cl:group std:sid="group-623ed98d">
+          <cl:xylayoutdata std:sid="xyl-data-6994f0d8" top="540px" right="0px" left="0px" height="30px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+          <cl:checkbox std:sid="c-box-b0923903" id="cbxRmbr" value="" text="아이디 저장">
+            <cl:listener std:sid="listener-f8d4edf6" name="value-change" handler="onCbxRmbrValueChange"/>
+            <cl:formdata std:sid="f-data-16e7ef14" row="0" col="0"/>
+          </cl:checkbox>
+          <cl:group std:sid="group-ba5ab3db">
+            <cl:formdata std:sid="f-data-bb35827e" row="0" col="1"/>
+            <cl:button std:sid="button-15c702cb" id="btnRst" class="btn-transparent" value="비밀번호 초기화">
+              <cl:listener std:sid="listener-8a8fdc83" name="click" handler="onBtnRstClick"/>
+              <cl:flowlayoutdata std:sid="f-data-df7f0c2f" width="102px" height="30px" autosize="width"/>
+            </cl:button>
+            <cl:output std:sid="output-81acbd33" class="bg-light" value="">
+              <cl:flowlayoutdata std:sid="f-data-3f4ed983" width="1px" height="14px"/>
+            </cl:output>
+            <cl:button std:sid="button-3d409d80" id="btnRgst" class="btn-transparent" value="계정잠김 해제">
+              <cl:listener std:sid="listener-4c4e49fd" name="click" handler="onBtnRgstClick"/>
+              <cl:flowlayoutdata std:sid="f-data-661604d9" width="102px" height="30px" autosize="width"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-53028f89" scrollable="false" hspacing="12" vspacing="0" halign="right" valign="middle"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-fb04531b" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="98" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:xylayout std:sid="xylayout-35e4d080"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-83d7f4e5"/>
+    </cl:group>
+    <cl:group std:sid="group-86e30bf2">
+      <cl:formdata std:sid="f-data-b0933af1" row="0" col="1"/>
+      <cl:img std:sid="image-32755aaf" src="../../../theme/common/images/com/login/login_bg.png">
+        <cl:xylayoutdata std:sid="xyl-data-a5cf695d" right="0px" width="1233px" height="1190px" horizontalAnchor="RIGHT" verticalAnchor="CENTER"/>
+      </cl:img>
+      <cl:xylayout std:sid="xylayout-1fcbfe02" scrollable="false"/>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-580b7197" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="680" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

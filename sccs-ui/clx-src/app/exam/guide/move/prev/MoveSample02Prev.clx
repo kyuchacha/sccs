@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-644862fd" version="1.0.0.0">
+  <head std:sid="head-1d39893e">
+    <title>Template06</title>
+    <screen std:sid="screen-edc9f488" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-d1f8ddf1" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-c85288a3" id="tablet" name="tablet" minwidth="800px" maxwidth="1019px" width="800px" height="768px"/>
+    <screen std:sid="screen-74b8b07f" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-cd87533e"/>
+    <cl:appspec title="MDI전환"/>
+  </head>
+  <body std:sid="body-46822e7d" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-17265dda" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-2e78e8d8" width="998px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grp1" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-87605f82" id="grpData">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-7bfc1ab9" width="972px" height="645px" autosize="none"/>
+      <cl:textarea std:sid="t-area-b9a98781" id="txaScript">
+        <cl:formdata std:sid="f-data-f3acf739" row="5" col="0" rowspan="1" colspan="2"/>
+      </cl:textarea>
+      <cl:group std:sid="group-d715274a" id="grpFormFunc" class="form-box">
+        <cl:formdata std:sid="f-data-c05cb31c" row="1" col="0" rowspan="3" colspan="1"/>
+        <cl:output std:sid="output-f1ef5dff" id="otp1" style="text-align:center;" value="No">
+          <cl:formdata std:sid="f-data-9ac657a6" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-1117b763" id="otp3" style="text-align:center;" value="함수">
+          <cl:formdata std:sid="f-data-2e0e8208" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-eb55c5c0" id="otp20" style="text-align:center;" value="설명">
+          <cl:formdata std:sid="f-data-b63812b8" row="0" col="2"/>
+        </cl:output>
+        <cl:output std:sid="output-23c3477f" id="otp4" style="text-align:center;" value="동작">
+          <cl:formdata std:sid="f-data-40d3a62a" row="0" col="3"/>
+        </cl:output>
+        <cl:output std:sid="output-005aea89" id="otp6" style="text-align:center;" value="1">
+          <cl:formdata std:sid="f-data-d22d3804" row="1" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-4ec0433e" id="ipb3" readonly="true" value="open">
+          <cl:formdata std:sid="f-data-0f7946ff" row="1" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-784aefce" id="ipb1" readonly="true" value="화면을 메인MDI에 추가한다.">
+          <cl:formdata std:sid="f-data-ede6950d" row="1" col="2"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-21b4345b" id="btn1" value="MDI메뉴 호출">
+          <cl:listener std:sid="listener-64509423" name="click" handler="onBtn1Click"/>
+          <cl:formdata std:sid="f-data-62065517" halign="FILL" valign="FILL" width="140" height="30" row="1" col="3"/>
+        </cl:button>
+        <cl:output std:sid="output-e98211f0" id="otp2" style="text-align:center;" value="2">
+          <cl:formdata std:sid="f-data-e074bc44" row="2" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-03a20a78" id="ipb4" readonly="true" value="getMenuParam">
+          <cl:formdata std:sid="f-data-82c228c5" row="2" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-c35323de" id="ipb2" readonly="true" value="현재화면의 파라미터를 취득한다.">
+          <cl:formdata std:sid="f-data-96c09d9c" row="2" col="2"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-28d26cfe" id="btn2" value="메뉴파라미터">
+          <cl:listener std:sid="listener-7b60f214" name="click" handler="onBtn2Click"/>
+          <cl:formdata std:sid="f-data-cf9e8cc9" halign="FILL" valign="FILL" width="140" height="30" row="2" col="3"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-4415f6ad" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="130" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="150" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-ba4bd0f2" id="grpFormCont" class="form-box">
+        <cl:formdata std:sid="f-data-ee19d052" row="1" col="1"/>
+        <cl:output std:sid="output-5b7c19cc" id="otp25" value="시나리오">
+          <cl:formdata std:sid="f-data-25c1fad4" row="0" col="0"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-f856945a" id="txa1" readonly="true" value="&#xD;&#xA;1. MDI메뉴 호출을 클릭하여 메인MDI에 아이템이 추가되는지 확인한다.&#xD;&#xA;2. 메뉴파라미터를 클릭하여 전달된 파라미터를 확인한다.">
+          <cl:formdata std:sid="f-data-a48ca201" row="0" col="1"/>
+        </cl:textarea>
+        <cl:output std:sid="output-f91a483c" id="otp26" value="추가설명">
+          <cl:formdata std:sid="f-data-66157e43" row="1" col="0"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-5ce416fa" id="txa2" readonly="true">
+          <cl:formdata std:sid="f-data-f9593b0a" row="1" col="1"/>
+        </cl:textarea>
+        <cl:formlayout std:sid="f-layout-bea260c3" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:udc std:sid="ud-control-a4d56c82" id="comformtitle3" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-170358f7" row="0" col="0"/>
+        <cl:property name="title" value="기능(함수)" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-41d590de" id="comformtitle2" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-cc6299a8" row="0" col="1"/>
+        <cl:property name="title" value="시나리오" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-d5470d10" id="comformtitle4" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-cfbd2d47" row="2" col="1"/>
+        <cl:property name="title" value="결과값" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-7ff4ca4d" id="comformtitle5" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-709591c0" row="4" col="0" rowspan="1" colspan="2"/>
+        <cl:property name="title" value="스크립트 내용" type="string"/>
+      </cl:udc>
+      <cl:inputbox std:sid="i-box-7109def0" id="otpRslt" readonly="true">
+        <cl:formdata std:sid="f-data-741e2e01" row="3" col="1"/>
+      </cl:inputbox>
+      <cl:formlayout std:sid="f-layout-92c3a806" vspace="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="150" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-f5f58990"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,192 @@
+@import "../custom-settings.part.less";
+
+/* 공통 요소 */
+
+
+
+/* 컨트롤 템플릿*/
+.CtrlTmpl {
+	/* 루트 컨테이너 배경색 */
+	background-color: #F8F9FA;
+	color: #3B454F;
+	
+	/* 템플릿 기본 아웃풋 */
+	.cl-output.opt-tmpl {
+		line-height: 1.7;
+		color: #3B454F;
+	}
+	
+	/* 컨트롤 속성명 아웃풋 */
+	.opt-prop-title {
+		color: #1B4F8D;
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+	
+	/* 타이틀 바 */
+	.content-header {
+		font-size: 1.5rem;
+		font-weight: 500;
+		border-radius: 0.5rem;
+		color: @white;
+		background-color: #1B4F8D;
+		padding-left: 1rem;
+	}
+	
+	/* 컨텐트 박스 */
+	.content-outline {
+		background-color: @white;
+		border: 2px solid #F6F7F8;
+		border-radius: 0.5rem;
+		box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.01), -5px -5px 25px rgba(0, 0, 0, 0.03);
+		padding: 1rem 1.5rem;
+		
+		.content-default-ctrl {
+			margin: 0 1rem;
+			border: solid 1px #C5CDD5;
+			background-color: #E2E6EA;
+			border-radius: @component-border-radius;
+		}
+		
+		.content-func {
+			border: solid 1px #A3B0BD;
+			background-color: #E2E6EA;
+			border-radius: 4px;
+		}
+	}
+	
+	/* 프리폼 박스 */
+	.cl-container.content-form-box {
+		background-color: @white;
+    	border : 1px solid @component-border-color;
+    	border-radius: 4px;
+		.cl-output {
+	    	font: @font-base;
+	    	text-align: center;
+	    	font-weight: bold;
+	    	color: #3B454F;
+			&.content-form-opt {
+				text-align: left;
+				font-weight: normal;
+				padding-left: 1rem;
+			}
+		}
+		
+		.cl-formlayout-column-shade {
+			background-color: #d6defa;
+		}
+		
+		.cl-formlayout-row-shade {
+			background-color: #d6defa;
+		}
+		
+		.cl-formlayout-vertical-separator,
+		.cl-formlayout-horizontal-separator {
+			background-color: @form-separator-background-color;
+		}
+		
+		&.type-box {
+			.cl-output {
+				color: #184a6d;
+			}
+			
+			.cl-formlayout-column-shade {
+				background-color: #d4e5f0;
+			}
+			
+			.cl-formlayout-row-shade {
+				background-color: #d4e5f0;
+			}
+		}
+	}
+}
+
+
+
+/* 공통모듈 예제 */
+.CModTmpl {
+	/* 루트 컨테이너 배경색 */
+//	background-color: #F6F7F8;
+	background-color: #F8F9FA;
+	color: #3B454F;
+	
+	/* 공통모듈 기본 아웃풋 */
+	.cl-output.opt-tmpl {
+		line-height: 1.7;
+		color: #3B454F;
+	}
+	
+	/* 타이틀 바 */
+	.content-header {
+		font-size: 1.5rem;
+		font-weight: 500;
+		border-radius: 0.5rem;
+		color: @white;
+		background-color: #1B4F8D;
+//		background-color: #1C5294;
+		padding-left: 1rem;
+	}
+	
+	
+	/* 컨텐트 박스 */
+	.content-outline {
+		background-color: @white;
+		border: 2px solid #F6F7F8;
+		border-radius: 0.5rem;
+		box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.01), -5px -5px 25px rgba(0, 0, 0, 0.03);
+		padding: 1rem 1.5rem;
+		
+		.content-func {
+			margin: 0 1rem;
+			border: solid 1px #dedede;
+		}
+	}
+	
+	/* 추가설명 박스 */
+	.content-info {
+		background-color: #d4e5f0;
+		border: 1px solid #bfd7e9;
+		border-radius: 0.25rem;
+		
+		.content-info-title {
+			font-weight: bold;
+			color: #184a6d;
+		}
+		.content-info-text {
+			color: #184a6d;
+		}
+	}
+	
+	/* 프리폼 박스 */
+	.cl-container.content-form-box {
+		background-color: @white;
+    	border : 1px solid @component-border-color;
+    	border-radius: 4px;
+		.cl-output {
+	    	font: @font-base;
+	    	text-align: center;
+	    	font-weight: bold;
+	    	color: #3B454F;
+			&.content-form-opt {
+				text-align: left;
+				font-weight: normal;
+				padding-left: 1rem;
+			}
+		}
+		
+		.cl-formlayout-column-shade {
+//			background-color: #D2E2F6;
+			background-color: #d6defa;
+		}
+		
+		.cl-formlayout-row-shade {
+//			background-color: #D2E2F6;
+			background-color: #d6defa;
+		}
+		
+		.cl-formlayout-vertical-separator,
+		.cl-formlayout-horizontal-separator {
+			background-color: @form-separator-background-color;
+		}
+	}
+}

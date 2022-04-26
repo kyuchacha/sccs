@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7f58e514" version="1.0.3655">
+  <head std:sid="head-862f67bf">
+    <screen std:sid="screen-a8684667" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-299dd839" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-7c0b592c" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-963eef57" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-1bcc3d3a"/>
+    <cl:appspec title="초기화 비밀번호 부여"/>
+  </head>
+  <body std:sid="body-7da0131c">
+    <cl:udc std:sid="ud-control-ed24ae0c" id="appheader1" visible="false" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-21d952f5" width="1320px" height="30px"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+    </cl:udc>
+    <cl:group std:sid="group-66beb213" id="grp4">
+      <cl:verticaldata std:sid="v-data-7570ec47" width="800px" height="125px" autosize="height"/>
+      <cl:group std:sid="group-da5b28fd" id="grp6">
+        <cl:formdata std:sid="f-data-45b4d855" height="80" row="0" col="0"/>
+        <cl:group std:sid="group-90573034" id="grp2">
+          <cl:formdata std:sid="f-data-ca038a65" row="0" col="0"/>
+          <cl:udc std:sid="ud-control-4fceffb3" id="comformtitle2" type="udc.com.comFormTitle">
+            <cl:formdata std:sid="f-data-7d955697" row="0" col="0"/>
+            <cl:property name="ctrl" type="control"/>
+            <cl:property name="title" value="회원 탈퇴승인" type="string"/>
+          </cl:udc>
+          <cl:group std:sid="group-28a9f7b7" id="grp7">
+            <cl:formdata std:sid="f-data-5a427d66" row="0" col="1" ignore-layout-spacing="false"/>
+            <cl:button std:sid="button-4d94704c" id="btnClose2" class="btn-primary" value="확인">
+              <cl:flowlayoutdata std:sid="f-data-b9d9d8e2" width="60px" height="25px" autosize="none"/>
+            </cl:button>
+            <cl:flowlayout std:sid="f-layout-42bb875e" scrollable="false" halign="right" linewrap="false"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-80c02227">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-eb8c9a6a" id="grp3" class="form-box">
+          <cl:formdata std:sid="f-data-c1857628" row="1" col="0" rowspan="1" colspan="1"/>
+          <cl:output std:sid="output-09da526e" value="내용">
+            <cl:formdata std:sid="f-data-61a76dec" row="0" col="0"/>
+          </cl:output>
+          <cl:htmlsnippet std:sid="htmlsnippet-e9ef418a" id="hspt2" value="&lt;p>새만금종합통제시스템 - &lt;span>홍길동&lt;/span> 회원님의 초기화 비밀번호는&#xD;&#xA;[ &lt;span>********&lt;span> ]입니다.&#xD;&#xA;&lt;/p>">
+            <cl:formdata std:sid="f-data-c6fc4bbe" row="0" col="1"/>
+          </cl:htmlsnippet>
+          <cl:output std:sid="output-95c19728" class="require" value="휴대폰 번호">
+            <cl:formdata std:sid="f-data-f107de57" row="1" col="0"/>
+          </cl:output>
+          <cl:inputbox std:sid="i-box-7686a217" id="ipb2">
+            <cl:formdata std:sid="f-data-84c36754" row="1" col="1"/>
+          </cl:inputbox>
+          <cl:formlayout std:sid="f-layout-2122cd66" scrollable="false" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="0" vseparatorwidth="0">
+            <cl:rows length="25" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="120" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-723678d6" scrollable="false" hspace="0px" vspace="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="60" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-9e1e302b" id="grp5">
+        <cl:formdata std:sid="f-data-f337bc88" row="1" col="0"/>
+        <cl:button std:sid="button-85cd144e" id="btnSelect" class="btn-pop-close" value="취소">
+          <cl:formdata std:sid="f-data-cbc1354c" row="0" col="1"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-366e667b" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-c9d396b5" hspace="0px" vspace="5px">
+        <cl:rows length="90" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-d302f399" spacing="5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

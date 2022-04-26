@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-92487e4a" version="1.0.0.0">
+  <head std:sid="head-98cc955e">
+    <title>ProductList</title>
+    <screen std:sid="screen-7d327610" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-8fcce908" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-07fc6f7a" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-880c5ae7">
+      <cl:dataset std:sid="d-set-61427eb9" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-562cd8e9" name="RN" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-5a724017" name="NO"/>
+          <cl:datacolumn std:sid="d-column-6e57af25" name="NAME"/>
+          <cl:datacolumn std:sid="d-column-d7f42db5" name="EMAIL"/>
+          <cl:datacolumn std:sid="d-column-a53c67e4" name="PHONE"/>
+          <cl:datacolumn std:sid="d-column-4d0ceb14" name="HIRE_DATE" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-e586da30" name="DEPT_CD" datatype="string"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-5891d19b" id="dsDeptList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-226d4e55" name="DEPT_CD" datatype="string"/>
+          <cl:datacolumn std:sid="d-column-17797431" name="DEPT_NM"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-aaec2ccd" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-af233a0f" name="empNm"/>
+          <cl:datacolumn std:sid="d-column-7b2553a4" name="deptCd"/>
+          <cl:datacolumn std:sid="d-column-a70c2e5f" name="deptNm"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-901d7006" id="dmPage">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-87503592" name="totCnt" defaultvalue="0"/>
+          <cl:datacolumn std:sid="d-column-ff360250" name="rowSize" defaultvalue="10"/>
+          <cl:datacolumn std:sid="d-column-4d716c2f" name="pageIdx" defaultvalue="1"/>
+          <cl:datacolumn std:sid="d-column-a1b80883" name="sortCondition" defaultvalue="asc"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-17246ba2" id="dm_msg">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-50cedd1e" name="CODE"/>
+          <cl:datacolumn std:sid="d-column-5522b4ae" name="MESSAGE"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-2efe451d" id="subList" async="false" action="/com/sccs/cm/guide/selectList.do">
+        <cl:listener std:sid="listener-cfb56e7c" name="submit-success" handler="onSubListSubmitSuccess"/>
+        <cl:requestdata dataid="dmParam"/>
+        <cl:requestdata dataid="dmPage"/>
+        <cl:responsedata dataid="dsList"/>
+        <cl:responsedata dataid="dmPage"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-2a8363ad" id="subSave" action="/com/sccs/cm/guide/save.do">
+        <cl:listener std:sid="listener-1d7838e8" name="submit-success" handler="onSubSaveSubmitSuccess"/>
+        <cl:listener std:sid="listener-7e3c4a0f" name="submit-error" handler="onSubSaveSubmitError"/>
+        <cl:requestdata dataid="dsList"/>
+        <cl:responsedata dataid="dm_msg"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-9c72283f" id="subInit" action="/com/sccs/cm/guide/selectDeptList.do">
+        <cl:listener std:sid="listener-f4384f9b" name="submit-success" handler="onSubInitSubmitSuccess"/>
+        <cl:responsedata dataid="dsDeptList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="그리드 조회 화면"/>
+  </head>
+  <body std:sid="body-3d86ce92" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-e57c0bc9" name="init" handler="onBodyInit"/>
+    <cl:group std:sid="group-5c60108f" id="grpSearch" class="search-box">
+      <cl:xylayoutdata std:sid="xyl-data-405cc5a4" top="20px" width="984px" height="106px" horizontalAnchor="CENTER" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-bce0aef4" class="label" value="이름">
+        <cl:xylayoutdata std:sid="xyl-data-f51a900c" top="20px" bottom="58px" left="20px" width="100px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-1cb7d6f0" id="ipb1">
+        <cl:listener std:sid="listener-ede45c1b" name="keydown" handler="onIpb1Keydown"/>
+        <cl:datamapbind property="value" datacontrolid="dmParam" columnname="empNm"/>
+        <cl:xylayoutdata std:sid="xyl-data-990c4b64" top="20px" right="95px" bottom="58px" left="125px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-6937fcfc" id="btnSearch" class="btn-search" value="조회">
+        <cl:listener std:sid="listener-fa9a390b" name="click" handler="onBtnSearchClick"/>
+        <cl:xylayoutdata std:sid="xyl-data-6108acf4" top="20px" right="15px" bottom="20px" width="70px" horizontalAnchor="RIGHT" verticalAnchor="BOTH"/>
+      </cl:button>
+      <cl:output std:sid="output-3e7df9bf" class="label" value="부서">
+        <cl:xylayoutdata std:sid="xyl-data-51805253" top="58px" bottom="20px" left="20px" width="100px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-70f83cd7" id="searchButton" type="udc.SearchButton">
+        <cl:listener std:sid="listener-16f9638a" name="search" handler="onSearchButtonSearch"/>
+        <cl:xylayoutdata std:sid="xyl-data-758e2b9d" top="58px" left="125px" width="315px" height="25px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      </cl:udc>
+      <cl:xylayout std:sid="xylayout-b1291918"/>
+    </cl:group>
+    <cl:grid std:sid="grid-21ffd959" id="grdMst" readonly="false" datasetid="dsList" autofit="0, 3, 4, 5, 6" clickmode="edit" resizablecolumns="none" columnMovable="false">
+      <cl:xylayoutdata std:sid="xyl-data-90b1e9e8" top="187px" right="20px" left="20px" height="466px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:rowstyle>
+        <cl:expbind property="background-color" category="STYLER" expression="(getIndex() / 2  )== 0 ? red : blue"/>
+      </cl:rowstyle>
+      <cl:gridcolumn std:sid="g-column-783a344e" width="25px"/>
+      <cl:gridcolumn std:sid="g-column-40201964" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-dd15b77f"/>
+      <cl:gridcolumn std:sid="g-column-18b3255b" width="149px"/>
+      <cl:gridcolumn std:sid="g-column-3c57ca07"/>
+      <cl:gridcolumn std:sid="g-column-2f557083"/>
+      <cl:gridcolumn std:sid="g-column-7875b6c3"/>
+      <cl:gridheader std:sid="gh-band-7617f40c">
+        <cl:gridrow std:sid="g-row-fa96eb61" height="30px"/>
+        <cl:gridcell std:sid="gh-cell-efe50556" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+        <cl:gridcell std:sid="gh-cell-e1ebb65e" rowindex="0" colindex="1" sortable="false" filterable="false" text="순번"/>
+        <cl:gridcell std:sid="gh-cell-e3ba4e54" rowindex="0" colindex="2" targetcolumnname="NAME" sortable="false" filterable="false" text="이름"/>
+        <cl:gridcell std:sid="gh-cell-1451cee3" rowindex="0" colindex="3" targetcolumnname="EMAIL" sortable="false" filterable="false" text="이메일"/>
+        <cl:gridcell std:sid="gh-cell-065c3568" rowindex="0" colindex="4" targetcolumnname="PHONE" sortable="false" filterable="false" text="전화번호"/>
+        <cl:gridcell std:sid="gh-cell-29c0fabc" rowindex="0" colindex="5" targetcolumnname="HIRE_DATE" sortable="false" filterable="false" text="고용일자"/>
+        <cl:gridcell std:sid="gh-cell-b69db309" rowindex="0" colindex="6" targetcolumnname="DEPT_CD" sortable="false" filterable="false" text="부서"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-dea675be">
+        <cl:gridrow std:sid="g-row-1fd40177" height="30px"/>
+        <cl:gridcell std:sid="gd-cell-9b28d636" rowindex="0" colindex="0" columntype="checkbox"/>
+        <cl:gridcell std:sid="gd-cell-d2a088de" rowindex="0" colindex="1" columntype="normal" columnname="RN"/>
+        <cl:gridcell std:sid="gd-cell-a701b13f" rowindex="0" colindex="2" columnname="NAME">
+          <cl:inputbox std:sid="i-box-1f76f51a" id="ipb6"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-510dfc57" rowindex="0" colindex="3" columnname="EMAIL">
+          <cl:inputbox std:sid="i-box-e83f86a8" id="ipb8"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-464c95b5" rowindex="0" colindex="4" columnname="PHONE">
+          <cl:maskeditor std:sid="m-editor-16376a5a" id="mse1" mask="000-0000-0000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-7bdc3fa7" rowindex="0" colindex="5" columnname="HIRE_DATE">
+          <cl:dateinput std:sid="d-input-6843d080" id="dti1" mask="YYYY-MM-DD"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-15122dbc" rowindex="0" colindex="6" columnname="DEPT_CD">
+          <cl:combobox std:sid="c-box-1c63c4df" id="cmb1">
+            <cl:itemset datasetid="dsDeptList" label="DEPT_NM" value="DEPT_CD"/>
+          </cl:combobox>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:group std:sid="group-f3c99c6c" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-aa24ddae" top="149px" right="20px" width="240px" height="28px" horizontalAnchor="RIGHT" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-fb54090d" id="btnInsert" value="신규">
+        <cl:listener std:sid="listener-2724cff9" name="click" handler="onBtnInsertClick"/>
+        <cl:formdata std:sid="f-data-d7876f0c" row="0" col="0"/>
+      </cl:button>
+      <cl:button std:sid="button-4bdcdfc4" id="btnDelete" value="삭제">
+        <cl:listener std:sid="listener-21c8dc33" name="click" handler="onBtnDeleteClick"/>
+        <cl:formdata std:sid="f-data-a844004c" row="0" col="1"/>
+      </cl:button>
+      <cl:button std:sid="button-a380542a" id="btnSave" value="저장">
+        <cl:listener std:sid="listener-7d390663" name="click" handler="onBtnSaveClick"/>
+        <cl:formdata std:sid="f-data-e0fcfce6" row="0" col="2"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-6773aa08" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:pageindexer std:sid="p-indexer-4171095d" id="pageIndex" viewpagecount="10">
+      <cl:listener std:sid="listener-aad824c5" name="selection-change" handler="onPageIndexSelectionChange"/>
+      <cl:datamapbind property="totalRowCount" category="PROPERTY" datacontrolid="dmPage" columnname="totCnt"/>
+      <cl:datamapbind property="pageRowCount" category="PROPERTY" datacontrolid="dmPage" columnname="rowSize"/>
+      <cl:xylayoutdata std:sid="xyl-data-96321bff" top="663px" width="984px" height="40px" horizontalAnchor="CENTER" verticalAnchor="TOP"/>
+    </cl:pageindexer>
+    <cl:xylayout std:sid="xylayout-374ea99c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

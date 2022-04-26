@@ -1,0 +1,95 @@
+@import "../custom-settings.part.less";
+
+ /* 서치 인풋 */
+.cl-searchinput {
+	font: @font-base;
+	background-color: @input-background-color;
+	background-image: @input-background-image;
+	border: @input-border-base;
+	color: @input-text-color;
+
+	/* 서치 인풋 텍스트 */
+	.cl-text {
+		padding: @input-padding-0 @input-padding-x;
+		&.cl-placeholder {
+			color: @input-placeholder-text-color !important;
+		}
+	}
+
+	/* 서치 인풋 Clear버튼 */
+	.cl-searchinput-clear {
+		background-image: url("../images/controls/inputbox/clear-button.png");
+		background-size: 10px;
+		background-position: left center;
+		width: 15px;
+	}
+
+	/* 서치 인풋 검색버튼 */
+	.cl-searchinput-search {
+		background-image: url("../images/controls/inputbox/search-button.png");
+		background-size: 14px;
+		width: 19px;
+
+		/* 검색버튼이 왼쪽에 표시될때 상태 */
+		&.cl-left {
+			background-position: right center;
+		}
+		
+		/* 검색버튼이 오른쪽에 표시될때 상태 */
+		&.cl-right {
+			background-position: left center;
+		}
+	}
+	
+	&:not(.cl-disabled) {
+		/* Clear버튼 hover시 Clear버튼 스타일 */
+		.cl-searchinput-clear:hover,
+		.cl-searchinput-clear:active {
+			background-image: url("../images/controls/inputbox/clear-button.png");
+			opacity: 1;
+		}
+		
+		/* 검색버튼 hover시 검색버튼 스타일 */
+		.cl-searchinput-search:hover,
+		.cl-searchinput-search:active {
+			background-image: url("../images/controls/inputbox/search-button.png");
+			opacity: 1;
+		}
+	}
+
+	&.cl-disabled{ 
+		/* 서치 인풋 disabled 상태 검색버튼 */
+		.cl-searchinput-search {
+			background-image: url("../images/controls/inputbox/search-button-disabled.png");
+		}
+		/* 서치 인풋 disabled 상태 Clear버튼 */
+		.cl-searchinput-clear{
+			background-image: url("../images/controls/inputbox/clear-button-disabled.png");
+		}
+	}
+}
+
+/* 서치 인풋 disabled 상태 */
+.cl-searchinput.cl-disabled {
+	color: @input-disabled-text-color;
+	background-color: @input-disabled-background-color;
+	border-color: @input-disabled-border-color;
+
+	/* 서치 인풋 disabled 상태 텍스트*/
+	input {
+		color : @input-disabled-text-color;
+	}
+}
+
+/* 서치 인풋 포커스 상태 */
+.cl-searchinput.cl-focus {
+	border-color: @input-focus-border-color;
+
+	.cl-searchinput-search{
+		background-image: url("../images/controls/inputbox/search-button.png");
+	}
+
+	.cl-searchinput-clear{
+		background-image: url("../images/controls/inputbox/clear-button.png");
+	}
+}

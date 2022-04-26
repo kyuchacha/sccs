@@ -1,0 +1,53 @@
+ @import "../custom-settings.part.less";
+
+/************************************************
+ * 로그인
+ ************************************************/
+ 
+.cl-container.login-box {
+	background-color: @component-background-color;
+	
+	.cl-container.tit-box {
+		.cl-output.h1 {
+			color: #0e2c82;
+			font-weight: @font-weight-extra-bold;
+		}
+		.cl-output.h2 {
+			color: #0e2c82;
+			font-weight: @font-weight-regular;
+			opacity: .75;
+		}
+	}
+	
+	.cl-output.welcome {
+		color: @gray-600;
+		font-size: 42px;
+		font-weight: @font-weight-light;
+		
+		.cl-text {
+			line-height: 1.1;
+		}
+	}
+	
+	.cl-inputbox.form-field {
+		background-color: #edf1fa;
+		border-color: #d4d7de;
+		border-radius: 8px;
+		font-size: @h5-font-size;
+		
+		.cl-text.cl-placeholder {
+			color: #6f737e !important;
+		}
+	}
+	
+	.cl-button.btn-indigo {
+		border-radius: 8px;
+		font-weight: @font-weight-regular;
+	}
+	
+	.cl-button {
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			transform: scale(1);
+		}
+	}
+}

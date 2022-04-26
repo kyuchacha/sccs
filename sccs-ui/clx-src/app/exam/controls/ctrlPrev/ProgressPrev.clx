@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-de679b76" version="1.0.3164">
+  <head std:sid="head-0f9e250d">
+    <screen std:sid="screen-4d9646c0" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-181478ee" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-f1eda29d" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-28055b3f" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-45b0da7c"/>
+    <cl:appspec title="프로그레스 관련 속성"/>
+  </head>
+  <body std:sid="body-b94d821a">
+    <cl:group std:sid="group-4c56b45c" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-58ff6163" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-1feb54e6" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-19bdebfe" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-100877bd" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-5d09722f" id="grpData">
+      <cl:verticaldata std:sid="v-data-ab4e5485" width="400px" height="644px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="프로그레스(Progress)는 작업의 진행 상태를 시각적으로 표현하는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-5673ec27" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-9443ac65" row="1" col="0" rowspan="1" colspan="1"/>
+        <cl:progress std:sid="progress-2d94d01b" id="pgr2" value="50" max="200.0">
+          <cl:formdata std:sid="f-data-b78af050" halign="FILL" valign="CENTER" row="2" col="1"/>
+        </cl:progress>
+        <cl:output std:sid="output-ca3b7790" value="[value = 50]&#xD;&#xA;1. 프로그레스의 값이 50이다.">
+          <cl:formdata std:sid="f-data-2cc26e5a" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-5140907a" value="[max = 200 , value = 50]&#xD;&#xA;1. 프로그레스의 값은 50이고, 최대값은 200이다.">
+          <cl:formdata std:sid="f-data-4575f622" row="2" col="0"/>
+        </cl:output>
+        <cl:progress std:sid="progress-391db159" id="pgr4" style="text-align:right;" value="50" showtext="true" displayexp="value + &quot;%&quot;">
+          <cl:formdata std:sid="f-data-049abb9f" halign="FILL" valign="CENTER" row="3" col="1"/>
+        </cl:progress>
+        <cl:output std:sid="output-ed51d039" value="[displayExp = value + &quot;%&quot;]&#xD;&#xA;1. 프로그레스 우측에 50%가 표시된다.">
+          <cl:formdata std:sid="f-data-410170f5" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-cccfbd93" value="[showText = true]&#xD;&#xA;1. 프로그레스 내부에 100이 표시된다.">
+          <cl:formdata std:sid="f-data-2b3a43e7" row="1" col="0"/>
+        </cl:output>
+        <cl:progress std:sid="progress-314268cc" id="pgr1" value="100" showtext="true">
+          <cl:formdata std:sid="f-data-36f7c0c2" halign="FILL" valign="CENTER" row="1" col="1"/>
+        </cl:progress>
+        <cl:progress std:sid="progress-5282f9d0" id="pgr3" value="50">
+          <cl:formdata std:sid="f-data-55a27a2e" halign="FILL" valign="CENTER" row="0" col="1"/>
+        </cl:progress>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-547cd9b5" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-52eeaced"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

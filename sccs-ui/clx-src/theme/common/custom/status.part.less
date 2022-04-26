@@ -1,0 +1,93 @@
+@import "../custom-settings.part.less";
+
+/* 인풋 계열 공통 */
+.cl-inputbox, 
+.cl-searchinput, 
+.cl-numbereditor, 
+.cl-maskeditor, 
+.cl-textarea,
+.cl-dateinput,
+.cl-combobox,
+.cl-fileinput {
+	&.require {
+		background-color: @warning-dim !important;
+		border-color: @input-border-color;
+	}
+}
+
+/* 인풋 계열 확장 */
+.cl-numbereditor.require {
+	.cl-numbereditor-buttons:not(.cl-disabled) {
+		border-left-color: @input-border-color;
+		
+		.cl-numbereditor-increase:hover,
+		.cl-numbereditor-decrease:hover {
+		}
+		
+		.cl-numbereditor-increase:active,
+		.cl-numbereditor-decrease:active {
+		}
+	}
+}
+
+.cl-linkedcombobox.require {
+	.cl-linkedcombobox-combo {
+		background-color: @warning-dim;
+		border-color: @input-border-color;
+	}
+}
+
+/* 에러 상태 */
+.cl-inputbox, 
+.cl-searchinput, 
+.cl-numbereditor, 
+.cl-maskeditor, 
+.cl-textarea,
+.cl-dateinput,
+.cl-combobox,
+.cl-fileinput {
+	&.danger {
+		background-color: @danger-dim;
+		border-color: @danger;
+		
+		.cl-text {
+			&.cl-placeholder {
+				color: @gray-500 !important;
+			}
+		}
+	}
+	&.invalid{
+		border : 2px solid red !important;
+	}
+}
+
+/* 인풋 계열 확장 */
+.cl-numbereditor.danger {
+	.cl-numbereditor-buttons:not(.cl-disabled) {
+		border-left-color: @danger;
+		
+		.cl-numbereditor-increase:hover,
+		.cl-numbereditor-decrease:hover {
+		}
+		
+		.cl-numbereditor-increase:active,
+		.cl-numbereditor-decrease:active {
+		}
+	}
+}
+
+.cl-fileinput.danger {
+	&:before {
+		border-left-color: @danger;
+		background-color: @danger;
+		color: @white;
+	}
+}
+
+.cl-linkedcombobox.danger {
+	.cl-linkedcombobox-combo {
+		background-color: @danger-dim;
+		border-color: @danger;
+	}
+}
+

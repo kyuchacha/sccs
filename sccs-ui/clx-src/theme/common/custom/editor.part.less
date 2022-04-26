@@ -1,0 +1,87 @@
+@import "../settings.part.less";
+@import "../custom-settings.part.less";
+
+/*
+ * 일반 코드미러
+ */
+.default-cm {
+	
+}
+
+/*
+ * 임베디드된 코드미러
+ */
+.embedded-cm {
+	+ .CodeMirror {
+		height: auto !important;
+	}
+}
+
+
+/************************************************
+ * 메인
+ ************************************************/
+
+.cl-container.ace-editor-buttons {
+	background-color: @white;
+	border: @component-border-base;
+	border-bottom: none;
+	border-top-left-radius: @component-border-radius;
+	border-top-right-radius: @component-border-radius;
+
+	&.cl-last-row {
+		border-bottom: @component-border-base;
+		border-bottom-left-radius: @component-border-radius;
+		border-bottom-right-radius: @component-border-radius;
+	}
+
+	/* 버튼 공통 스타일 */
+	.cl-button {
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.cl-checkbox.folding-editor {
+		padding: 0px;
+		
+		.cl-checkbox-icon {
+			background-image: url("../images/udc/icon-code-s-line.svg");
+			width: 25px;
+			min-height: 25px;
+		}
+		
+		&.cl-checked {
+			.cl-checkbox-icon {
+				background-image: url("../images/udc/icon-code-s-slash-line.svg");
+			}
+		}
+	}
+
+	.cl-button.btn-copy {
+		background-image: url("../images/udc/icon-clipboard-line.svg");
+		
+		&:not(.cl-disabled):hover,
+		&:focus, &.cl-focus,
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-image: url("../images/udc/icon-clipboard-line-on.svg");
+		}
+	}
+	
+	.cl-button.btn-share {
+		background-image: url("../images/udc/icon-share-box-line.svg");
+		
+		&:not(.cl-disabled):hover,
+		&:focus, &.cl-focus,
+		&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+			background-image: url("../images/udc/icon-share-box-line-on.svg");
+		}
+	}
+}
+
+.ace-editor {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

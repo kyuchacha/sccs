@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5b944d77" version="1.0.0.0">
+  <head std:sid="head-6d95569f">
+    <title>officeClipboard</title>
+    <screen std:sid="screen-1a6bfbd8" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-56549d84" id="tablet" name="tablet" minwidth="800px" maxwidth="1023px" width="800px" height="768px"/>
+    <screen std:sid="screen-4cde58ef" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-79104abc">
+      <cl:dataset std:sid="d-set-88a1eb05" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn comment="사원번호" std:sid="d-column-54a45aba" name="EMPL_NO"/>
+          <cl:datacolumn comment="성명" std:sid="d-column-ffd5c972" name="EMPL_NM"/>
+          <cl:datacolumn comment="부서" std:sid="d-column-bda6ad8e" name="EMPL_DEPT"/>
+          <cl:datacolumn comment="입사일자" std:sid="d-column-0ea763da" name="ECNY_DE" datatype="string"/>
+          <cl:datacolumn comment="근속기준일" std:sid="d-column-8da9af97" name="CNWK_STDDE" datatype="string"/>
+          <cl:datacolumn comment="근속년수" std:sid="d-column-be5d33a7" name="CNWK_YYCNT" datatype="number"/>
+          <cl:datacolumn comment="잔여연차(D-E+F)" std:sid="d-column-ad073c04" name="REMNDR_YRYC" datatype="expression" expression="THSYY_YRYC - USE_YRYC + MDAT_YRYC"/>
+          <cl:datacolumn comment="근속연차(A)" std:sid="d-column-95ac1ab8" name="CNWK_YRYC" datatype="number"/>
+          <cl:datacolumn comment="이월연차(B)" std:sid="d-column-3652b0fc" name="CYFD_YRYC" datatype="number"/>
+          <cl:datacolumn comment="기초조정연차(C)" std:sid="d-column-3526464a" name="BSIS_MDAT_YRYC" datatype="number"/>
+          <cl:datacolumn comment="당년연차(A+B+C)=(D)" std:sid="d-column-3917f9e9" name="THSYY_YRYC" datatype="expression" expression="CNWK_YRYC + CYFD_YRYC + BSIS_MDAT_YRYC"/>
+          <cl:datacolumn comment="사용연차(E)" std:sid="d-column-c912e513" name="USE_YRYC" datatype="number"/>
+          <cl:datacolumn comment="조정연차(F)" std:sid="d-column-8d8e7c77" name="MDAT_YRYC" datatype="number"/>
+          <cl:datacolumn comment="초과가능여부" std:sid="d-column-81343a65" name="EXCESS_POSBL_AT"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-90c62886" id="subList" action="app/exam/data/temp/copyPaste.json">
+        <cl:responsedata dataid="dsList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="복사/붙여넣기"/>
+  </head>
+  <body std:sid="body-fedae648" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-b9749ce9" name="load" handler="onBodyLoad"/>
+    <cl:listener std:sid="listener-90b03972" name="keydown" handler="onBodyKeydown"/>
+    <cl:group std:sid="group-bb9c4ae6" class="card card-bordered">
+      <cl:xylayoutdata std:sid="xyl-data-0b6c3316" top="53px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-91e5a79d" class="card-title" value="데이터 복사/붙여넣기">
+        <cl:xylayoutdata std:sid="xyl-data-bd65142c" top="20px" right="20px" left="20px" height="25px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      </cl:output>
+      <cl:group std:sid="group-34906697" class="search-box">
+        <cl:xylayoutdata std:sid="xyl-data-f80ce866" top="50px" right="20px" left="20px" height="58px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+        <cl:button std:sid="button-0e34a5a9" id="btnRvrt" class="btn-dark btn-icon s-18" value="그리드 초기화" icon="../../../theme/images/controls/button/btn_ico_cancel_w.png">
+          <cl:listener std:sid="listener-25ef1dbf" name="click" handler="onBtnRvrtClick"/>
+          <cl:formdata std:sid="f-data-c602ed5e" row="0" col="2"/>
+        </cl:button>
+        <cl:output std:sid="output-80149dfb" class="label" value="복사/붙여넣기 대상">
+          <cl:formdata std:sid="f-data-7e27bec6" row="0" col="0"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-853636ba" id="cmbCpPst">
+          <cl:formdata std:sid="f-data-f8272109" halign="LEFT" width="100" row="0" col="1"/>
+          <cl:item std:sid="item-0b0e84c4" label="그리드" value="grid"/>
+          <cl:item std:sid="item-6773c9dc" label="오피스" value="office"/>
+        </cl:combobox>
+        <cl:formlayout std:sid="f-layout-25285574" hspace="5px" vspace="5px" top-margin="12px" right-margin="20px" bottom-margin="12px" left-margin="20px">
+          <cl:rows length="32" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-6d816261" id="grdMst" datasetid="dsList" autofit="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13" selectionunit="cell" selectionmulti="multi" resizablecolumns="all" columnMovable="true">
+        <cl:listener std:sid="listener-9ed9f96a" name="before-paste" handler="onGrdMstBeforePaste"/>
+        <cl:listener std:sid="listener-0c2c0801" name="copy" handler="onGrdMstCopy"/>
+        <cl:xylayoutdata std:sid="xyl-data-6cdb4597" top="113px" right="20px" bottom="20px" left="20px" horizontalAnchor="BOTH" verticalAnchor="BOTH"/>
+        <cl:gridcolumn std:sid="g-column-06e0a011"/>
+        <cl:gridcolumn std:sid="g-column-3d10dd70"/>
+        <cl:gridcolumn std:sid="g-column-96c035bd"/>
+        <cl:gridcolumn std:sid="g-column-4c5130be"/>
+        <cl:gridcolumn std:sid="g-column-86ad5691"/>
+        <cl:gridcolumn std:sid="g-column-a34e5417"/>
+        <cl:gridcolumn std:sid="g-column-fb1cd5a5" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-e6af5383"/>
+        <cl:gridcolumn std:sid="g-column-74ead769"/>
+        <cl:gridcolumn std:sid="g-column-87a555ee" width="120px"/>
+        <cl:gridcolumn std:sid="g-column-07f8d89c"/>
+        <cl:gridcolumn std:sid="g-column-37f50190"/>
+        <cl:gridcolumn std:sid="g-column-01d03b56"/>
+        <cl:gridcolumn std:sid="g-column-fa58a1db"/>
+        <cl:gridheader std:sid="gh-band-183c515e">
+          <cl:gridrow std:sid="g-row-b2390899" height="50px"/>
+          <cl:gridcell std:sid="gh-cell-f7a92029" rowindex="0" colindex="0" targetcolumnname="EMPL_NO" sortable="false" filterable="false" text="사원번호"/>
+          <cl:gridcell std:sid="gh-cell-b32203db" rowindex="0" colindex="1" targetcolumnname="EMPL_NM" sortable="false" filterable="false" text="성명"/>
+          <cl:gridcell std:sid="gh-cell-83071af1" rowindex="0" colindex="2" targetcolumnname="EMPL_DEPT" sortable="false" filterable="false" text="부서"/>
+          <cl:gridcell std:sid="gh-cell-825ba980" rowindex="0" colindex="3" targetcolumnname="ECNY_DE" sortable="false" filterable="false" text="입사일자"/>
+          <cl:gridcell std:sid="gh-cell-f00fac8b" rowindex="0" colindex="4" targetcolumnname="CNWK_STDDE" sortable="false" filterable="false" text="근속기준일"/>
+          <cl:gridcell std:sid="gh-cell-2c0200e1" rowindex="0" colindex="5" targetcolumnname="CNWK_YYCNT" sortable="false" filterable="false" text="근속년수"/>
+          <cl:gridcell std:sid="gh-cell-4677d32d" rowindex="0" colindex="6" targetcolumnname="REMNDR_YRYC" sortable="false" filterable="false" text="잔여연차(D-E+F)"/>
+          <cl:gridcell std:sid="gh-cell-53f9634c" rowindex="0" colindex="7" targetcolumnname="CNWK_YRYC" sortable="false" filterable="false" text="근속연차(A)"/>
+          <cl:gridcell std:sid="gh-cell-dabafc60" rowindex="0" colindex="8" targetcolumnname="CYFD_YRYC" sortable="false" filterable="false" text="이월연차(B)"/>
+          <cl:gridcell std:sid="gh-cell-dd7dc919" rowindex="0" colindex="9" targetcolumnname="BSIS_MDAT_YRYC" sortable="false" filterable="false" text="기초조정연차(C)"/>
+          <cl:gridcell std:sid="gh-cell-b152ce06" rowindex="0" colindex="10" targetcolumnname="THSYY_YRYC" sortable="false" filterable="false" text="당년연차&#xD;&#xA;(A+B+C)=(D)"/>
+          <cl:gridcell std:sid="gh-cell-91d52232" rowindex="0" colindex="11" targetcolumnname="USE_YRYC" sortable="false" filterable="false" text="사용연차(E)"/>
+          <cl:gridcell std:sid="gh-cell-580f2537" rowindex="0" colindex="12" targetcolumnname="MDAT_YRYC" sortable="false" filterable="false" text="조정연차(F)"/>
+          <cl:gridcell std:sid="gh-cell-e6572b37" rowindex="0" colindex="13" targetcolumnname="EXCESS_POSBL_AT" sortable="false" filterable="false" text="초과가능여부"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-f41dfe83">
+          <cl:gridrow std:sid="g-row-6f432dbb" height="38px"/>
+          <cl:gridcell std:sid="gd-cell-cd1a516d" rowindex="0" colindex="0" columnname="EMPL_NO">
+            <cl:inputbox std:sid="i-box-318ba057" id="ipb1"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-61e24d21" rowindex="0" colindex="1" columnname="EMPL_NM">
+            <cl:inputbox std:sid="i-box-66bc21f7" id="ipb2"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-b556b220" rowindex="0" colindex="2" columnname="EMPL_DEPT">
+            <cl:inputbox std:sid="i-box-4dea6c87" id="ipb3"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-02dd8922" rowindex="0" colindex="3" columnname="ECNY_DE">
+            <cl:dateinput std:sid="d-input-c00b9012" id="dti1"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-14a9d7dd" rowindex="0" colindex="4" columnname="CNWK_STDDE">
+            <cl:dateinput std:sid="d-input-4a8db415" id="dti2"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-a151f450" rowindex="0" colindex="5" columnname="CNWK_YYCNT">
+            <cl:numbereditor std:sid="n-editor-7f190127" id="nbe1" format="s#,##0.0"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-47a7b717" rowindex="0" colindex="6" columnname="REMNDR_YRYC">
+            <cl:output std:sid="output-7002d8c7" style="background-color:#ff9; text-align:right;" value="Output" datatype="number" format="s#,##0.0"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-f5c33a61" rowindex="0" colindex="7" columnname="CNWK_YRYC">
+            <cl:numbereditor std:sid="n-editor-039cbab8" id="nbe3" format="s#,##0.0"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-829a348e" rowindex="0" colindex="8" columnname="CYFD_YRYC">
+            <cl:numbereditor std:sid="n-editor-2722b34f" id="nbe4" format="s#,##0.0"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-dd7f4646" rowindex="0" colindex="9" columnname="BSIS_MDAT_YRYC">
+            <cl:numbereditor std:sid="n-editor-090ab3fd" id="nbe5" format="s#,##0.0"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-127c2144" rowindex="0" colindex="10" columnname="THSYY_YRYC">
+            <cl:output std:sid="output-607fbf32" class="text-right" value="Output" datatype="number" format="s#,##0.0"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-da9d79e1" rowindex="0" colindex="11" columnname="USE_YRYC">
+            <cl:numbereditor std:sid="n-editor-a51b9ba0" id="nbe7" format="s#,##0.0"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-336f73e8" rowindex="0" colindex="12" columnname="MDAT_YRYC">
+            <cl:numbereditor std:sid="n-editor-79dc57e3" id="nbe2" format="s#,##0.0"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-50f441c0" rowindex="0" colindex="13" columnname="EXCESS_POSBL_AT">
+            <cl:output std:sid="output-83d0e070" class="text-center">
+              <cl:expbind property="value" category="PROPERTY" expression="EXCESS_POSBL_AT == &quot;Y&quot; ? &quot;가능&quot; : &quot;불가&quot;"/>
+            </cl:output>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:xylayout std:sid="xylayout-3e17cf17"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-cfe867fb"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

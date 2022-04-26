@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4d8e0fa3" version="1.0.3125">
+  <head std:sid="head-337f1d44">
+    <screen std:sid="screen-461e4e82" id="default" name="default" width="1024px" height="768px"/>
+    <screen std:sid="screen-b3dba316" id="tablet" name="tablet" width="500px" height="667px"/>
+    <screen std:sid="screen-18512b3f" id="mobile" name="mobile" width="350px" height="525px"/>
+    <cl:model std:sid="model-fb6f25f9"/>
+    <cl:appspec title="모바일 캘린더"/>
+  </head>
+  <body std:sid="body-185104a6">
+    <cl:listener std:sid="listener-1f2723c6" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-fd1cea46" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-8863b75e" top="10px" right="10px" left="10px" height="42px" horizontalAnchor="BOTH" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-ecfd16e9" class="label" value="모바일 버전">
+        <cl:formdata std:sid="f-data-1036c2c0" row="0" col="0"/>
+      </cl:output>
+      <cl:button std:sid="button-dc46b6a2" class="btn-primary" value="DEMO">
+        <cl:listener std:sid="listener-6dff590a" name="click" handler="onButtonClick"/>
+        <cl:formdata std:sid="f-data-deee9b3b" halign="LEFT" row="0" col="1" rowspan="1" colspan="1"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-6847b5be" hspace="10px" vspace="10px" top-margin="1fr" right-margin="5px" bottom-margin="1fr" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+        <cl:rows length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="120" unit="PIXEL" autoSizing="true" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-f039fcaf"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

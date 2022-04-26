@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="guide">
+
+	<select id="getTotalCount" resultType="int">
+		SELECT COUNT(*) 
+		FROM SAMPLE
+		WHERE 1 = 1
+		<if test='EMP_NM != null and EMP_NM != ""'>
+		  AND NAME LIKE '%' || #{EMP_NM} || '%'
+		</if>
+		<if test='DEPT_CD != null and DEPT_CD != ""'>
+		  AND DEPT_CD = #{DEPT_CD}
+		</if>
+	</select>	
+	
+	<select id="getList" resultType="HashMap">
+		SELECT *
+		FROM (  SELECT NO
+					 , NAME
+					 , EMAIL
+					 , PHONE
+					 , HIRE_DATE
+					 , DEPT_CD
+					 , ROW_NUMBER() OVER(ORDER BY NAME ASC) AS RN
+				FROM SAMPLE
+				WHERE 1 = 1
+				<if test='EMP_NM != null and EMP_NM != ""'>
+				  AND NAME LIKE '%' || #{EMP_NM} || '%'
+				</if>
+				<if test='DEPT_CD != null and DEPT_CD != ""'>
+				  AND DEPT_CD = #{DEPT_CD}
+				</if>
+				)
+		WHERE RN BETWEEN #{STARTIDX} AND #{ENDIDX}
+	</select>
+	
+	<select id="getDeptTotalCount" resultType="int">
+		SELECT COUNT(*) FROM DEPT
+	</select>	
+	
+	<select id="getDeptList" resultType="HashMap">
+		SELECT DEPT_CD
+		     , DEPT_NM
+   	    FROM DEPT
+   	    WHERE 1 = 1
+		<if test='DEPT_NM != null and DEPT_NM != ""'>
+		  AND DEPT_NM LIKE '%' || #{DEPT_NM} || '%'
+		</if>
+	</select>
+	
+	<insert id="insertSample" parameterType="hashMap" useGeneratedKeys="true" keyProperty="NO">
+		<selectKey keyProperty="NO" resultType="String" order="BEFORE">
+			SELECT NVL(MAX(NO), 0)+1 FROM SAMPLE
+		</selectKey>
+        INSERT INTO SAMPLE (
+            NO
+          , NAME
+          , EMAIL
+          , PHONE
+          , HIRE_DATE
+          , DEPT_CD
+        ) VALUES (
+            #{NO}
+          , #{NAME}
+          , #{EMAIL}
+          , #{PHONE}
+          , #{HIRE_DATE}
+          , #{DEPT_CD}
+        )
+	</insert>
+	
+	<update id="updateSample" parameterType="hashMap">
+        UPDATE SAMPLE
+            SET NAME = #{NAME}
+              , EMAIL = #{EMAIL}
+              , PHONE = #{PHONE}
+              , HIRE_DATE = #{HIRE_DATE}
+			  , DEPT_CD = #{DEPT_CD} 
+        WHERE NO = #{NO}
+	</update>
+	
+	<delete id="deleteSample" parameterType="hashMap">
+        DELETE FROM SAMPLE WHERE NO = #{NO}
+	</delete>
+	
+</mapper>

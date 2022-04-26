@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e37cd25e" version="1.0.3125">
+  <head std:sid="head-eea11afa">
+    <screen std:sid="screen-4e5f1dc6" id="mobile" name="mobile" width="350px" height="525px" active="true"/>
+    <cl:model std:sid="model-e652665b"/>
+    <cl:appspec title="모바일 팝업 캘린더"/>
+  </head>
+  <body std:sid="body-e8eb7d1a">
+    <cl:output std:sid="output-c707465d" class="h3" value="모바일 캘린더">
+      <cl:verticaldata std:sid="v-data-dc4bc166" width="288px" height="43px" autosize="height"/>
+    </cl:output>
+    <cl:output std:sid="output-14455ee3" value="별도의 스크립팅 없이 사용자 속성을 통해 기능을 확인 할 수 있습니다.&#xD;&#xA;*사용자 속성 : mobile-calendar&#xD;&#xA;&#xD;&#xA;아래 데이트 인풋을 클릭하여 모바일 캘린더 팝업을 확인하십시오.">
+      <cl:verticaldata std:sid="v-data-9d9022dd" width="288px" height="160px" autosize="height"/>
+    </cl:output>
+    <cl:dateinput std:sid="d-input-27e80fba" id="dtiTest">
+      <cl:attribute name="mobile-calendar" value="true"/>
+      <cl:verticaldata std:sid="v-data-3261bd78" width="288px" height="30px" autosize="none"/>
+    </cl:dateinput>
+    <cl:verticallayout std:sid="v-layout-3da85d7e" spacing="10" leftmargin="20" rightmargin="20" topmargin="20" bottommargin="20"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

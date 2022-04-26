@@ -1,0 +1,70 @@
+table {
+	border: solid 1px black;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+td {
+	border: solid 1px black;
+	overflow: hidden;
+}
+
+.approval_table {
+	width: 200px;
+	float: right;
+	margin-bottom: 10px;
+}
+
+.approval_table td {
+	height: 30px;
+	text-align: center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.page {
+	width: 21cm;
+
+	padding: 2cm;
+	margin: 1cm auto;
+}
+
+.content {
+	padding: 1cm;
+}
+
+@page {
+	size: A4;
+	margin: 0;
+}
+@media print {
+	html, body {
+		margin: 0;
+		padding: 0;
+		page-break-after: avoid;
+		page-break-before: avoid
+	}
+	body, .page {
+		margin-top: -1px
+	} /*서브픽셀 해결1*/
+	.page:first-child {
+		page-break-before: auto;
+		page-break-inside: avoid
+	}
+	.page {
+		overflow: hidden;
+		position: relative;
+		width: 210mm;
+		page-break-before: always;
+		padding: 2cm;
+	}
+}

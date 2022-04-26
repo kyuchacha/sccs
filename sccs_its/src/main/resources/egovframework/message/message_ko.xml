@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+    <comment>msg_ko</comment>
+ 	
+    <entry key="MSG_CM_PRC_S001">정상적으로 처리되었습니다.</entry>
+    <entry key="MSG_CM_REG_S001">정상적으로 등록되었습니다.</entry>
+    <entry key="MSG_CM_UPD_S001">정상적으로 수정되었습니다.</entry>
+    <entry key="MSG_CM_DEL_S001">정상적으로 삭제되었습니다.</entry>
+    
+  
+    <entry key="MSG_CM_PRC_E001">데이터 처리 중 오류가 발생하였습니다.</entry>
+    <entry key="MSG_CM_REG_E001">데이터 등록 중 오류가 발생하였습니다.</entry>
+    <entry key="MSG_CM_UPD_E001">데이터 수정 중 오류가 발생하였습니다.</entry>
+    <entry key="MSG_CM_DEL_E001">데이터 삭제 중 오류가 발생하였습니다.</entry>
+    
+    <entry key="MSG_CM_US_E001">이미 사용중인 아이디입니다.</entry>
+    <entry key="MSG_CM_US_M001">이용 가능한 아이디입니다.</entry>
+    <entry key="MSG_CM_US_M002">아이디 혹은 비밀번호가 일치하지 않습니다.</entry>
+    <entry key="MSG_CM_US_M003">회원님은 가입승인요청 상태입니다.</entry>
+    <entry key="MSG_CM_US_M004">회원님은 비밀번호 5회 실패로 계정잠김 상태입니다.</entry>
+    <entry key="MSG_CM_US_M005">회원님은 장기간 미 접속으로 계정잠김 상태입니다.</entry>
+    <entry key="MSG_CM_US_M006">회원님은 탈퇴신청 상태입니다.</entry>
+    <entry key="MSG_CM_US_M007">회원님은 탈퇴승인 상태입니다.</entry>
+    <entry key="MSG_CM_US_M008">회원님은 비밀번호 초기화 상태입니다.</entry>
+    <entry key="MSG_CM_US_M009">이미 로그인한 사용자가 있습니다. 로그인하시겠습니까?</entry>
+    <entry key="MSG_CM_US_M000">로그아웃 되었습니다.</entry>
+
+    
+<!--     
+    <entry key="MSG_E0001">오류가 발생하였습니다.</entry>
+    <entry key="MSG_E0002">데이터 처리 중 오류가 발생하였습니다.</entry>
+    <entry key="MSG_E0003">데이터 조회 중 오류가 발생하였습니다.</entry>
+    <entry key="MSG_E0004">알 수 없는 오류가 발생하였습니다.</entry>
+    <entry key="MSG_E0005">업로드 할 수 없는 파일 확장자가 존재합니다.</entry>
+	<entry key="MSG_E0006">ID 또는 비밀번호가 일치하지 않습니다.</entry>
+	<entry key="MSG_E0007">등록된 직원이 아닙니다. 관리자에게 문의해주세요.</entry>
+	<entry key="MSG_E0008">로그인 오류 횟수가 초과되었습니다. 관리자에게 문의해주세요.</entry>
+	<entry key="MSG_E0009">데이터가 중복되었습니다.</entry>
+	
+	<entry key="MSG_E0010_1">해당 일자의 일지가 존재합니다.</entry>
+	<entry key="MSG_E0010_2">이전 일지를 먼저 작성하세요.</entry>
+	<entry key="MSG_E0011_1">이미 등록된 선박입니다.</entry>
+	<entry key="MSG_E0011_2">이전 일지를 먼저 작성하세요.</entry>
+	
+	<entry key="MSG_DIARY_E0010_1">일지가 삭제 되었습니다.</entry>
+	<entry key="MSG_DIARY_E0010_2">일지 삭제가 실패했습니다.</entry>
+	
+	<entry key="MSG_E0012">신규 시스템에서 생성된 문서만 삭제 가능합니다.</entry>
+	<entry key="MSG_E0013">최종승인 이후에는 삭제가 불가능합니다.</entry>
+	<entry key="MSG_E0014">작성자만 삭제가 가능합니다. 계정을 확인해주세요.</entry>
+	<entry key="MSG_E0015">회계계정을 확인해주세요.</entry>
+	<entry key="MSG_E0016">청구수량을 확인해주세요.</entry>
+	<entry key="MSG_E0017">회계계정 또는 카드/직구매 를 확인해주세요.</entry>
+	<entry key="MSG_E0018">신청 파트가 없습니다. 파트를 추가해주세요.</entry>
+	<entry key="MSG_E0019">선적일자을 입력해주세요.</entry>
+	<entry key="MSG_E0020">승인수량을 전부 입력해주세요.</entry>
+	<entry key="MSG_E0021">추정단가를 전부 입력해주세요.</entry>
+	<entry key="MSG_E0022">신청서 정보를 조회 할 수 없습니다.&#13;&#10;확인 바랍니다.</entry>
+	
+	<entry key="MSG_E0023">접속할 수 있는 관리자의 IP가 아닙니다. 유지보수팀에 문의바랍니다.</entry>
+ -->	
+</properties>

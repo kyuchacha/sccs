@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ba7b9c0d" version="1.0.0.0">
+  <head std:sid="head-9ac1f743">
+    <title>GridSampleEtc08Prev</title>
+    <screen std:sid="screen-395e75c0" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-b06f839e" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-299aa622" id="tablet" name="tablet" minwidth="500px" maxwidth="1019px" width="500px" height="667px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-03a5197f" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-91101896">
+      <cl:dataset std:sid="d-set-9718d784" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-2e88d12b" name="bankName"/>
+          <cl:datacolumn std:sid="d-column-3a52075a" name="accountNo"/>
+          <cl:datacolumn std:sid="d-column-043ef77c" name="accountName"/>
+          <cl:datacolumn std:sid="d-column-2ada84b6" name="balance" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-f8c835fa" name="modifiedDate"/>
+          <cl:datacolumn std:sid="d-column-07e1f333" name="field"/>
+          <cl:datacolumn std:sid="d-column-7ec7bbf4" name="level" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-722c7013" name="value" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-4035ea8d" name="parentValue" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-de39aeaf" name="grp"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[연금계리]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000001]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName1</cl:datavalue>
+            <cl:datavalue columnname="balance">1</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field1</cl:datavalue>
+            <cl:datavalue columnname="level">1</cl:datavalue>
+            <cl:datavalue columnname="value">1</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[부담금]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000002]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName2</cl:datavalue>
+            <cl:datavalue columnname="balance">2</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field2</cl:datavalue>
+            <cl:datavalue columnname="level">2</cl:datavalue>
+            <cl:datavalue columnname="value">2</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[지급]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000003]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName3</cl:datavalue>
+            <cl:datavalue columnname="balance">3</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field3</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value">3</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[공통]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000004]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName4</cl:datavalue>
+            <cl:datavalue columnname="balance">4</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field4</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value">4</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[계약관리]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000005]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName5</cl:datavalue>
+            <cl:datavalue columnname="balance">5</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field5</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value">5</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[정정변경]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000006]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName6</cl:datavalue>
+            <cl:datavalue columnname="balance">6</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field6</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value">6</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[수수료]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000007]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName7</cl:datavalue>
+            <cl:datavalue columnname="balance">7</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field7</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value">7</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[수수료납입안내]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000008]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName8</cl:datavalue>
+            <cl:datavalue columnname="balance">8</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field8</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value">8</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[수수료영수증]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000009]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName9</cl:datavalue>
+            <cl:datavalue columnname="balance">9</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field9</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value">9</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[상품관리]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000010]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName10</cl:datavalue>
+            <cl:datavalue columnname="balance">10</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field10</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="value">10</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[상품조회]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000011]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName11</cl:datavalue>
+            <cl:datavalue columnname="balance">11</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field11</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value">11</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[수수료납입안내]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000012]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName12</cl:datavalue>
+            <cl:datavalue columnname="balance">12</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field12</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value">12</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[11]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[적립비율]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000013]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName13</cl:datavalue>
+            <cl:datavalue columnname="balance">13</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field13</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value">13</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[지급제한]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000014]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName14</cl:datavalue>
+            <cl:datavalue columnname="balance">14</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field14</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value">14</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[상품조회]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000015]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName15</cl:datavalue>
+            <cl:datavalue columnname="balance">15</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field15</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="value">15</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[수수료납입안내]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000016]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName16</cl:datavalue>
+            <cl:datavalue columnname="balance">16</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field16</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value">16</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[15]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[수수료입금]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000017]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName17</cl:datavalue>
+            <cl:datavalue columnname="balance">17</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field17</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="value">17</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[15]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[영수증조회]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000018]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName18</cl:datavalue>
+            <cl:datavalue columnname="balance">18</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field18</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value">18</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[17]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[영수증발행]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000019]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName19</cl:datavalue>
+            <cl:datavalue columnname="balance">19</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field19</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value">19</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[17]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[영수증관리]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000020]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName20</cl:datavalue>
+            <cl:datavalue columnname="balance">20</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field20</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="value">20</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[17]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[발행권한설정]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000021]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName21</cl:datavalue>
+            <cl:datavalue columnname="balance">21</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field21</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="value">21</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="bankName"><![CDATA[상품제공수수료영수증관리]]></cl:datavalue>
+            <cl:datavalue columnname="accountNo"><![CDATA[000022]]></cl:datavalue>
+            <cl:datavalue columnname="accountName">accountName22</cl:datavalue>
+            <cl:datavalue columnname="balance">22</cl:datavalue>
+            <cl:datavalue columnname="modifiedDate"><![CDATA[2020-04-29]]></cl:datavalue>
+            <cl:datavalue columnname="field">field22</cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="value">22</cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="grp"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="그리드 트리구조(트리셀)"/>
+  </head>
+  <body std:sid="body-2e05ab1d" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-1c99f26a" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-4433e427" width="998px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grp1" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-87605f82" id="grp1">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-53cb4c64" width="972px" height="645px"/>
+      <cl:group std:sid="group-ba4bd0f2" id="grpFormCont" class="form-box">
+        <cl:formdata std:sid="f-data-5f961dfb" row="3" col="0"/>
+        <cl:output std:sid="output-5b7c19cc" id="otp25" value="시나리오">
+          <cl:formdata std:sid="f-data-25c1fad4" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-f91a483c" id="otp26" value="추가설명">
+          <cl:formdata std:sid="f-data-66157e43" row="1" col="0"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-98f094a4" id="txa1" readonly="true" value="1. 그리드의 구분 항목으로 트리구조가 표시되는것을 확인한다.&#xD;&#xA;2. 로딩시 트리의 펼쳐짐이 입력된 레벨까지 펼쳐졌는지 확인한다. (예제화면은 3레벨로 설정됨)&#xD;&#xA;3. 트리셀의 접기/펼치기의 동작을 확인한다.">
+          <cl:formdata std:sid="f-data-bb00ddda" row="0" col="1"/>
+        </cl:textarea>
+        <cl:textarea std:sid="t-area-0dce5872" id="txa2" readonly="true" value="1. 트리구조를 위한 데이터셋은 위에서부터 level을 기준으로 데이터를 구조화하여 표시한다. (level이 depth )  - number로 구성 &#xD;&#xA;2. 트리셀 컨트롤을 트리로 표시해야하는 구간에 배치한 후 level을 데이터로 명시한다. &#xD;&#xA;3. 로딩시 접는 옵션은 Properties - startCollapseLevel 속성을 숫자로 기입한다.  (-1입력시 모두 펼쳐짐) ">
+          <cl:formdata std:sid="f-data-4aed707c" row="1" col="1"/>
+        </cl:textarea>
+        <cl:formlayout std:sid="f-layout-bea260c3" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-e2be0fcc" id="grdList" readonly="true" datasetid="ds1" resizablecolumns="none" columnMovable="false" collapsible="true">
+        <cl:formdata std:sid="f-data-5001d383" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-3a66ede2"/>
+        <cl:gridcolumn std:sid="g-column-b810f8d4" width="70px"/>
+        <cl:gridcolumn std:sid="g-column-218f4fdb" width="70px"/>
+        <cl:gridcolumn std:sid="g-column-8a5d9dbe" width="70px"/>
+        <cl:gridcolumn std:sid="g-column-d6bc36dc" width="70px"/>
+        <cl:gridcolumn std:sid="g-column-b680ed3b" width="70px"/>
+        <cl:gridcolumn std:sid="g-column-4c9b7b52" width="46px" visible="false"/>
+        <cl:gridheader std:sid="gh-band-91c14daf">
+          <cl:gridrow std:sid="g-row-51aab4c8" height="27px"/>
+          <cl:gridcell std:sid="gh-cell-9b01dfc2" rowindex="0" colindex="1" targetcolumnname="bankName" sortable="false" filterable="false" text="은행명"/>
+          <cl:gridcell std:sid="gh-cell-6d063483" rowindex="0" colindex="2" targetcolumnname="accountNo" sortable="false" filterable="false" text="계좌번호"/>
+          <cl:gridcell std:sid="gh-cell-b62269a9" rowindex="0" colindex="3" targetcolumnname="accountName" sortable="false" filterable="false" text="계좌별명"/>
+          <cl:gridcell std:sid="gh-cell-41f72954" rowindex="0" colindex="4" targetcolumnname="balance" sortable="false" filterable="false" text="잔고"/>
+          <cl:gridcell std:sid="gh-cell-92221237" rowindex="0" colindex="5" targetcolumnname="modifiedDate" sortable="false" filterable="false" text="수정일"/>
+          <cl:gridcell std:sid="gh-cell-1c8d8bee" rowindex="0" colindex="0" text="구분"/>
+          <cl:gridcell std:sid="gh-cell-a75a29f6" rowindex="0" colindex="6"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-a5c35cbf">
+          <cl:gridrow std:sid="g-row-6249d0ba"/>
+          <cl:gridcell std:sid="gd-cell-9d308fb8" rowindex="0" colindex="1" columnname="bankName" suppressible="true"/>
+          <cl:gridcell std:sid="gd-cell-0bf1fba9" rowindex="0" colindex="2" columnname="accountNo"/>
+          <cl:gridcell std:sid="gd-cell-21247af1" rowindex="0" colindex="3" columnname="accountName"/>
+          <cl:gridcell std:sid="gd-cell-b2e12584" rowindex="0" colindex="4" columnname="balance">
+            <cl:numbereditor std:sid="n-editor-91215e0e" id="nbe1" style="text-align:right;"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-86e9b6b4" rowindex="0" colindex="5" columnname="modifiedDate"/>
+          <cl:gridcell std:sid="gd-cell-372bd108" rowindex="0" colindex="0" columnname="bankName" suppressible="true">
+            <cl:treecell std:sid="t-cell-344ee7a4" startcollapselevel="3">
+              <cl:relativebind property="level" category="PROPERTY" columnname="level"/>
+              <cl:expbind property="class" category="CLASS" expression="switch(level) {&#xD;&#xA;&#x9;case 1 : &quot;oneDepth&quot;&#xD;&#xA;&#x9;case 2 : &quot;twoDepth&quot;&#xD;&#xA;&#x9;case 3 : &quot;threeDepth&quot;&#xD;&#xA;&#x9;case 4 : &quot;fourDepth&quot;&#xD;&#xA;&#x9;case 5 : &quot;fiveDepth&quot;&#xD;&#xA;}"/>
+              <cl:expbind property="indent" category="PROPERTY" expression="switch (level) {&#xD;&#xA;&#x9;case 1 : 7&#xD;&#xA;&#x9;case 2 : 18&#xD;&#xA;&#x9;case 3 : 28&#xD;&#xA;&#x9;case 4 : 23&#xD;&#xA;&#x9;case 5 : 20&#xD;&#xA;}"/>
+            </cl:treecell>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-13bc2389" rowindex="0" colindex="6" columnname="grp"/>
+        </cl:griddetail>
+        <cl:gridfooter std:sid="gf-band-97c199b5">
+          <cl:gridrow std:sid="g-row-a896b912"/>
+          <cl:gridcell std:sid="gf-cell-0c786dc1" rowindex="0" colindex="0" rowspan="1" colspan="4" expr="&quot;총계&quot;"/>
+          <cl:gridcell std:sid="gf-cell-1b23ed4d" rowindex="0" colindex="4" style="text-align:right;" expr="getSum(&quot;balance&quot;)"/>
+          <cl:gridcell std:sid="gf-cell-5e751cff" rowindex="0" colindex="5" expr="&quot;&quot;"/>
+          <cl:gridcell std:sid="gf-cell-f059e178" rowindex="0" colindex="6" expr="&quot;&quot;"/>
+        </cl:gridfooter>
+        <cl:gridrowgrouplist std:sid="grg-list-ba1a8e48">
+          <cl:gridrowgroup std:sid="gr-group-48772562" groupcondition="grp">
+            <cl:gridgroupfooter std:sid="gf-band-e5ec2bb1">
+              <cl:gridrow std:sid="g-row-3cae63f2"/>
+              <cl:gridcell std:sid="gf-cell-8c1e7c75" rowindex="0" colindex="1" rowspan="1" colspan="3" expr="&quot;소계&quot;"/>
+              <cl:gridcell std:sid="gf-cell-66629744" rowindex="0" colindex="4" style="text-align:right;" expr="getSum(&quot;balance&quot;)"/>
+              <cl:gridcell std:sid="gf-cell-1290ed8a" rowindex="0" colindex="5" expr="&quot;&quot;"/>
+              <cl:gridcell std:sid="gf-cell-280e7016" rowindex="0" colindex="6" expr="&quot;&quot;"/>
+              <cl:gridcell std:sid="gf-cell-6953f162" rowindex="0" colindex="0" expr="&quot;&quot;"/>
+            </cl:gridgroupfooter>
+          </cl:gridrowgroup>
+        </cl:gridrowgrouplist>
+      </cl:grid>
+      <cl:udc std:sid="ud-control-a4d56c82" id="comformtitle3" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-1413ef19" row="0" col="0"/>
+        <cl:property name="title" value="그리드 트리구조(트리셀) 예제" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-b7d58bad" id="comformtitle2" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-933f3a18" row="2" col="0"/>
+        <cl:property name="title" value="시나리오" type="string"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-92c3a806" vspace="5px">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-89490155"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

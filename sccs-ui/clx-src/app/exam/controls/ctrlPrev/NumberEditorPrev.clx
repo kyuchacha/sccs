@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e7b15711" version="1.0.3164">
+  <head std:sid="head-40bd6676">
+    <screen std:sid="screen-04dd01b7" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-d8438aeb" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-80883abe" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-974b5702" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-59233096">
+      <cl:datamap std:sid="d-map-2a14a808" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-af1189ce" name="column1" defaultvalue="2020"/>
+          <cl:datacolumn std:sid="d-column-bf8fd01c" name="column2" defaultvalue=""/>
+          <cl:datacolumn std:sid="d-column-a009ee41" name="column3" datatype="number" defaultvalue="12.59"/>
+          <cl:datacolumn std:sid="d-column-f3c55a3d" name="column4" datatype="number" defaultvalue="123456789123"/>
+          <cl:datacolumn std:sid="d-column-41e03898" name="column5" datatype="number" defaultvalue="3000"/>
+          <cl:datacolumn std:sid="d-column-a8b074e5" name="column6" datatype="number" defaultvalue="-123456"/>
+          <cl:datacolumn std:sid="d-column-19d9db4d" name="column7" datatype="number" defaultvalue="32546789568120"/>
+          <cl:datacolumn std:sid="d-column-f1fa04c3" name="column8" datatype="number" defaultvalue="1234567.999"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="넘버에디터 관련 속성"/>
+  </head>
+  <body std:sid="body-b7071bec">
+    <cl:group std:sid="group-1a88b633" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-79ffa4e5" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-a0ca9a9d" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-3e4676a5" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-b24dac79" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-72f25f2e" id="grpData">
+      <cl:verticaldata std:sid="v-data-1fce3b59" width="400px" height="644px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="넘버에디터(NumberEditor)는 숫자를 입력하는 컨트롤입니다.">
+        <cl:formdata std:sid="f-data-6547bdc5" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-985aa1b5" row="1" col="0"/>
+        <cl:output std:sid="output-37f32a80" id="opt1" value="[min = 1900.0]&#xD;&#xA;1. 넘버에디터에 1900을 입력한다.&#xD;&#xA;2. 우측 아래 화살표를 클릭한다.&#xD;&#xA;3. 숫자가 내려가지 않는다.">
+          <cl:formdata std:sid="f-data-bcbc6d7d" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-a1c37800" id="opt3" value="[format = 999,999,999,999]&#xD;&#xA;1. 넘버데이터에 숫자를 더 입력한다.&#xD;&#xA;2. 12자리 이상은 입력되지 않는다.">
+          <cl:formdata std:sid="f-data-1a528e5d" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-279d5733" id="opt4" value="[format = 999,999,999,990]&#xD;&#xA;1. 넘버에디터에 값이 없을 때 0이 표시된다.">
+          <cl:formdata std:sid="f-data-f98b149c" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-25ed18ab" id="opt5" value="[format = 99.99]&#xD;&#xA;1. 넘버에디터에 소수점 둘째 자리까지 입력된다.">
+          <cl:formdata std:sid="f-data-e98eea3c" row="3" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-63d1b2e8" id="opt6" value="[spinButton = false]&#xD;&#xA;1. 스핀버튼이 보이지 않는다.">
+          <cl:formdata std:sid="f-data-e67d2282" row="5" col="0"/>
+        </cl:output>
+        <cl:numbereditor std:sid="n-editor-15ca0c55" id="nbe1" min="1900.0" max="9999.0" format="9999">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+          <cl:formdata std:sid="f-data-1fd5e289" row="0" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-812c8c3b" id="nbe3" format="999,999,999,999">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column4"/>
+          <cl:formdata std:sid="f-data-a4bca59b" row="1" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-ebddd104" id="nbe4" format="999,999,999,990">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column2"/>
+          <cl:formdata std:sid="f-data-a78253cc" row="2" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-57d73bd3" id="nbe5" format="99.99">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column3"/>
+          <cl:formdata std:sid="f-data-a097b1de" row="3" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-ab80c548" id="nbe6" spinbutton="false">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column5"/>
+          <cl:formdata std:sid="f-data-64337c6a" row="5" col="1"/>
+        </cl:numbereditor>
+        <cl:output std:sid="output-94d2b3af" id="opt8" value="[format = s999,999]&#xD;&#xA;1. 넘버에디터에 음수 입력이 가능하다.">
+          <cl:formdata std:sid="f-data-6098b637" row="4" col="0"/>
+        </cl:output>
+        <cl:numbereditor std:sid="n-editor-88db3f94" id="nbe7" format="s999,999">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column6"/>
+          <cl:formdata std:sid="f-data-c2c743ab" row="4" col="1"/>
+        </cl:numbereditor>
+        <cl:output std:sid="output-fabf1bff" id="opt9" readonly="true" value="[readOnly = true]&#xD;&#xA;1. 넘버에디터에 숫자를 입력한다.&#xD;&#xA;2. 입력 되지 않는다.&#xD;&#xA;3. 스핀버튼을 클릭한다.&#xD;&#xA;4. 숫자가 증감하지 않는다.">
+          <cl:formdata std:sid="f-data-f08dc06d" row="6" col="0"/>
+        </cl:output>
+        <cl:numbereditor std:sid="n-editor-d396dde9" id="nbe8" readonly="true">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column7"/>
+          <cl:formdata std:sid="f-data-9bf8287c" row="6" col="1"/>
+        </cl:numbereditor>
+        <cl:output std:sid="output-56e9852f" value="[step = 10]&#xD;&#xA;1. 스핀버튼을 클릭한다.&#xD;&#xA;2. 10씩 증감한다.">
+          <cl:formdata std:sid="f-data-e0c3020d" row="7" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-2da6e035" value="[preventInput = true]&#xD;&#xA;1. 넘버에디터에 숫자를 입력한다.&#xD;&#xA;2. 입력 되지 않는다.&#xD;&#xA;3. 스핀버튼을 클릭한다.&#xD;&#xA;4. 숫자가 증감한다.">
+          <cl:formdata std:sid="f-data-34805951" row="8" col="0"/>
+        </cl:output>
+        <cl:numbereditor std:sid="n-editor-63417ee5" id="nbe9" step="10.0">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+          <cl:formdata std:sid="f-data-15bdccc8" row="7" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-6a622185" id="nbe10" preventinput="true">
+          <cl:formdata std:sid="f-data-49d678f2" row="8" col="1"/>
+        </cl:numbereditor>
+        <cl:output std:sid="output-1581d931" value="[autoSelect = true]&#xD;&#xA;1. 넘버에디터를 클릭한다.&#xD;&#xA;2. 수 전체가 선택된다.">
+          <cl:formdata std:sid="f-data-9caa2d62" row="9" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-26d8af3e" value="[showClearButton = true]&#xD;&#xA;[buttonFocusable = true]&#xD;&#xA;1. 넘버에디터에 숫자를 클릭한다.&#xD;&#xA;2. Tab 키를 누른다.&#xD;&#xA;3. x 표시로 포커스가 이동한다.&#xD;&#xA;4. x 표시를 누르면 숫자가 지워진다.">
+          <cl:formdata std:sid="f-data-be24b317" row="10" col="0"/>
+        </cl:output>
+        <cl:numbereditor std:sid="n-editor-26b49a9a" id="nbe11" autoselect="true">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+          <cl:formdata std:sid="f-data-d7c2c425" row="9" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-b8fd80bb" id="nbe12" showclearbutton="true" buttonfocusable="true">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column1"/>
+          <cl:formdata std:sid="f-data-17bf9045" row="10" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-0ffcd260" id="nbe13" enabledinputmask="false">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column4"/>
+          <cl:formdata std:sid="f-data-a4a7db03" row="11" col="1"/>
+        </cl:numbereditor>
+        <cl:output std:sid="output-6bb37ac4" value="[enabledInputMask = false]&#xD;&#xA;1. 넘버에디터에 숫자를 입력한다.&#xD;&#xA;2. 숫자가 마스킹 되지 않는다.">
+          <cl:formdata std:sid="f-data-62409598" row="11" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-b7890d89" value="[displayExp = &quot;$&quot; + text]&#xD;&#xA;1. 숫자에 $ 표시가 붙는다.">
+          <cl:formdata std:sid="f-data-fed87430" row="12" col="0"/>
+        </cl:output>
+        <cl:numbereditor std:sid="n-editor-7a736b93" id="nbe14" displayexp="&quot;$&quot; + text">
+          <cl:datamapbind property="value" datacontrolid="dm1" columnname="column4"/>
+          <cl:formdata std:sid="f-data-47ea26b5" row="12" col="1"/>
+        </cl:numbereditor>
+        <cl:output std:sid="output-e153fc65" value="[소수 구분자 decimalSeparator = ?]&#xD;&#xA;[정수 구분자 digitGroupSeparator = !]&#xD;&#xA;1. 정수 구분은 !, 소수 구분은 ?로 표시된다.">
+          <cl:formdata std:sid="f-data-a69bdffd" row="14" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-6b7d1249" value="[placeholder = '숫자를 입력하세요']&#xD;&#xA;1. 넘버에디터에 '숫자를 입력하세요'라는 텍스트가 보인다.">
+          <cl:formdata std:sid="f-data-2169edb2" row="13" col="0"/>
+        </cl:output>
+        <cl:numbereditor std:sid="n-editor-04515bc1" id="nbe15" placeholder="숫자를 입력하세요">
+          <cl:formdata std:sid="f-data-aac8b9e1" row="13" col="1"/>
+        </cl:numbereditor>
+        <cl:numbereditor std:sid="n-editor-380ddc36" id="nbe16" format="s#,##0.###" decimalseparator="?" digitgroupseparator="!">
+          <cl:datamapbind property="value" category="PROPERTY" datacontrolid="dm1" columnname="column8"/>
+          <cl:formdata std:sid="f-data-4401a507" row="14" col="1"/>
+        </cl:numbereditor>
+        <cl:group std:sid="group-e3114513" id="grp2" class="form-box">
+          <cl:formdata std:sid="f-data-39296d6f" row="0" col="2" rowspan="15" colspan="1"/>
+          <cl:output std:sid="output-5da607c8" style="text-align:center;" class="cl-form-group" value="포맷">
+            <cl:formdata std:sid="f-data-f7994221" row="1" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-99521ac4" style="padding-right:20px;" class="cl-form-group" value="s">
+            <cl:formdata std:sid="f-data-e4326070" row="2" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-decd18c4" style="padding-right:20px;" class="cl-form-group" value="0">
+            <cl:formdata std:sid="f-data-c2d2ef9a" row="3" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-cd78f568" style="padding-right:20px;" class="cl-form-group" value="9">
+            <cl:formdata std:sid="f-data-a3a5e494" row="4" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-0225c981" style="padding-right:20px;" class="cl-form-group" value=",">
+            <cl:formdata std:sid="f-data-10a790a6" row="5" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-ab366df8" style="padding-right:20px;" class="cl-form-group" value=".">
+            <cl:formdata std:sid="f-data-9521c93b" row="6" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-72ccd292" style="padding-right:20px;" class="cl-form-group" value="#">
+            <cl:formdata std:sid="f-data-221267e3" row="7" col="0"/>
+          </cl:output>
+          <cl:output std:sid="output-4ad98152" style="text-align:center;" value="Format 종류">
+            <cl:formdata std:sid="f-data-9801378c" row="0" col="0" rowspan="1" colspan="2"/>
+          </cl:output>
+          <cl:output std:sid="output-69761348" style="text-align:center;" class="cl-form-group" value="설명">
+            <cl:formdata std:sid="f-data-83425797" row="1" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-a2cb6a0a" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="음수/양수 문자 표시 여부. 첫 번째로 지정해야 동작합니다.">
+            <cl:formdata std:sid="f-data-b7c3a709" row="2" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-8759d932" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="[0~9]입력 받으며 값이 없으면 0을 채웁니다. 설정된 길이만큼 포맷팅됩니다.">
+            <cl:formdata std:sid="f-data-d691ece0" row="3" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-392d1d8d" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="[0~9]입력 받으며 값이 없으면 채우지 않습니다. 설정된 길이만큼 포맷팅됩니다.">
+            <cl:formdata std:sid="f-data-43b1443f" row="4" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-14309be6" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="숫자 구분자 콤마를 표시합니다.">
+            <cl:formdata std:sid="f-data-74186a2f" row="5" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-9eecf789" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="소수점을 표시합니다.">
+            <cl:formdata std:sid="f-data-0348fbfa" row="6" col="1"/>
+          </cl:output>
+          <cl:output std:sid="output-e8483100" style="background-color:#ffffff; padding-left:10px; text-align:left;" value="[0~9]입력 받으며 값이 없으면 채우지 않습니다. 이 포맷팅은 길이 제한 없는 숫자입력이 설정됩니다.&#xD;&#xA;포맷의 정수부 또는 소수부의 마지막에 '#'문자가 입력이 되어 있으면 무제한으로 입력이 가능합니다.&#xD;&#xA;중간에 문자가 입력되어 있는 경우 포맷 문자 '9'와 같습니다.">
+            <cl:formdata std:sid="f-data-8d1c84f7" row="7" col="1"/>
+          </cl:output>
+          <cl:group std:sid="group-502453a3" id="grp3">
+            <cl:formdata std:sid="f-data-95017c96" row="8" col="0" rowspan="1" colspan="2"/>
+            <cl:xylayout std:sid="xylayout-572a2a1c"/>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-d7ee6551" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+            <cl:rows length="30" unit="PIXEL" shadetype="NONE" shadecolor="transparent"/>
+            <cl:rows length="30" unit="PIXEL"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="30" unit="PIXEL" autoSizing="true"/>
+            <cl:rows length="200" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:rows length="1" unit="FRACTION" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="50" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="60" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="30" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="40" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="2" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-099c3719" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-1666e289"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

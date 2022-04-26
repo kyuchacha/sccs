@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8135a22d" version="1.0.3164">
+  <head std:sid="head-c2ba22a6">
+    <screen std:sid="screen-53c7f848" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-8de5a27f" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-cf15c554" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-e02d7938" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-14047e17"/>
+    <cl:appspec title="임베디드페이지 관련 속성"/>
+  </head>
+  <body std:sid="body-f216342f">
+    <cl:group std:sid="group-bc69e8c0" id="grpSearch">
+      <cl:verticaldata std:sid="v-data-8910021b" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-86507bd2" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-3103bd05" width="500px" height="30px"/>
+        <cl:property name="initializeYn" value="N" type="enumeration"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-fff6be53" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-7e9b45c5" id="grpData">
+      <cl:verticaldata std:sid="v-data-1578ebee" width="400px" height="645px"/>
+      <cl:output std:sid="output-c75b85d4" id="opt7" value="임베디드페이지(EmbeddedPage)는 외부에 웹 페이지를 앱에 포함하여 보여주는 컨트롤입니다.">
+        <cl:listener std:sid="listener-014c9bdb" name="value-change" handler="onOpt7ValueChange"/>
+        <cl:formdata std:sid="f-data-55a3c277" row="0" col="0"/>
+      </cl:output>
+      <cl:group std:sid="group-40b752d5" id="grp1" class="cl-form-group">
+        <cl:formdata std:sid="f-data-aaa663e2" row="1" col="0"/>
+        <cl:embeddedpage std:sid="e-page-0ed8448a" id="embpage1" src="embedded/embeddedPage_sample01.html" frameName="EmbbededPage">
+          <cl:formdata std:sid="f-data-a50198d7" row="0" col="1"/>
+        </cl:embeddedpage>
+        <cl:output std:sid="output-da29c1d8" value="[frameName = EmbeddedPage]&#xD;&#xA;1. F12를 눌러 개발자 모드를 연다.&#xD;&#xA;2. 검색할 페이지 요소를 통해 우측 임베디드 앱을 클릭한다.&#xD;&#xA;3. iframe 에 name 속성이 EmbeddedPage 이다.">
+          <cl:listener std:sid="listener-674fc213" name="value-change" handler="onOutputValueChange"/>
+          <cl:formdata std:sid="f-data-99ae3cb5" row="0" col="0"/>
+        </cl:output>
+        <cl:embeddedpage std:sid="e-page-26f07edd" id="embpage3" src="embedded/embeddedPage_sample01.html" scrolling="no">
+          <cl:formdata std:sid="f-data-2683d1eb" row="1" col="1"/>
+        </cl:embeddedpage>
+        <cl:output std:sid="output-be8c4bbd" value="[scrolling = no]&#xD;&#xA;1. 임베디드 앱 위에서 스크롤을 내려본다.&#xD;&#xA;2. 스크롤이 생기지 않는다.">
+          <cl:formdata std:sid="f-data-888a31db" row="1" col="0"/>
+        </cl:output>
+        <cl:group std:sid="group-6f23f11c" id="grp2">
+          <cl:formdata std:sid="f-data-8e56df30" row="2" col="0" rowspan="1" colspan="2"/>
+          <cl:xylayout std:sid="xylayout-6412f2d8"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-fde03606" hspace="5px" vspace="5px" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px" hseparatorwidth="1" hseparatortype="BY_CLASS" vseparatorwidth="1" vseparatortype="BY_CLASS">
+          <cl:rows length="200" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="200" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="300" unit="PIXEL" autoSizing="false" shadetype="BY_CLASS" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-29e5be90" scrollable="false" hspace="0px" vspace="0px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-3fa33579"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler>
+      <std:guide position="918"/>
+    </std:hruler>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

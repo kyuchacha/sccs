@@ -1,0 +1,675 @@
+@import "../custom-settings.part.less";
+
+.btn-lg {
+	font-size: @h5-font-size;
+	border-radius: @border-radius-lg;
+	line-height: 1.25rem;
+}
+
+.btn-sm {
+	font-size: @font-size-sm;
+	border-radius: @border-radius-sm;
+	line-height: 1.25rem;
+}
+
+.btn-round {
+	border-radius: @border-radius-circle !important;
+}
+
+.btn-square {
+	border-radius: @border-radius-0;
+}
+
+/************************************************
+ * 투명 버튼
+ ************************************************/
+ 
+.cl-button.btn-transparent {
+	background-color: @transparent;
+	border: none;
+	border-radius: @component-border-radius-0;
+	
+	&:not(.cl-disabled):hover {
+ 		background-color: @transparent;
+ 	}
+ 	
+ 	&:focus,
+ 	&.cl-focus {
+ 		background-color: @transparent;
+ 	}
+ 	
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+ 		background-color: @transparent;
+ 	}
+}
+
+/************************************************
+ * 색상 버튼
+ ************************************************/
+
+.cl-button.btn-primary {
+	background-color: @primary;
+	border-color: @primary;
+	color: @white;
+	
+	&:not(.cl-disabled):hover {
+		background-color: @primary;
+		border-color: @primary;
+		color: @white;
+ 	}
+ 	
+ 	&:focus,
+ 	&.cl-focus {
+		background-color: @primary;
+		border-color: @primary;
+		color: @white;
+ 	}
+ 	
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+		background-color: @primary;
+		border-color: @primary;
+		color: @white;
+ 	}
+ 	
+ 	&.cl-disabled {
+ 		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+ 	}
+}
+
+.cl-button.btn-secondary {
+	background-color: @secondary;
+	border-color: @secondary;
+	color: @white;
+	
+	&:not(.cl-disabled):hover {
+		background-color: @secondary;
+		border-color: @secondary;
+		color: @white;
+ 	}
+ 	
+ 	&:focus,
+ 	&.cl-focus {
+		background-color: @secondary;
+		border-color: @secondary;
+		color: @white;
+ 	}
+ 	
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+		background-color: @secondary;
+		border-color: @secondary;
+		color: @white;
+ 	}
+ 	
+ 	&.cl-disabled {
+ 		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+ 	}
+}
+
+.cl-button.btn-dark {
+	background-color: @dark;
+	border-color: @dark;
+	color: @white;
+	
+	&:not(.cl-disabled):hover {
+		background-color: @dark;
+		border-color: @dark;
+		color: @white;
+ 	}
+ 	
+ 	&:focus,
+ 	&.cl-focus {
+		background-color: @dark;
+		border-color: @dark;
+		color: @white;
+ 	}
+ 	
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+		background-color: @dark;
+		border-color: @dark;
+		color: @white;
+ 	}
+ 	
+ 	&.cl-disabled {
+ 		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+ 	}
+}
+
+.cl-button.btn-gray {
+	background-color: @gray;
+	border-color: @gray;
+	color: @white;
+	
+	&:not(.cl-disabled):hover {
+		background-color: @gray;
+		border-color: @gray;
+		color: @white;
+ 	}
+ 	
+ 	&:focus,
+ 	&.cl-focus {
+		background-color: @gray;
+		border-color: @gray;
+		color: @white;
+ 	}
+ 	
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+		background-color: @gray;
+		border-color: @gray;
+		color: @white;
+ 	}
+ 	
+ 	&.cl-disabled {
+ 		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+ 	}
+}
+
+.cl-button.btn-indigo {
+	background-color: @indigo;
+	border-color: @indigo;
+	color: @white;
+	
+	&:not(.cl-disabled):hover {
+		background-color: @indigo;
+		border-color: @indigo;
+		color: @white;
+ 	}
+ 	
+ 	&:focus,
+ 	&.cl-focus {
+		background-color: @indigo;
+		border-color: @indigo;
+		color: @white;
+ 	}
+ 	
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+		background-color: @indigo;
+		border-color: @indigo;
+		color: @white;
+ 	}
+ 	
+ 	&.cl-disabled {
+ 		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+ 	}
+}
+
+/************************************************
+ * 아웃라인 버튼
+ ************************************************/
+ 
+.cl-button.btn-outline-primary {
+	background-color: @white;
+	border-color: @primary;
+	color: @primary;
+	
+	&:not(.cl-disabled):hover {
+		background-color: @white;
+		border-color: @primary;
+		color: @primary;
+ 	}
+ 	
+ 	&:focus,
+ 	&.cl-focus {
+		background-color: @white;
+		border-color: @primary;
+		color: @primary;
+ 	}
+ 	
+ 	&:not(.cl-disabled).cl-activated,
+ 	&:not(.cl-disabled):active {
+		background-color: @white;
+		border-color: @primary;
+		color: @primary;
+ 	}
+ 	
+ 	&.cl-disabled {
+ 		background-color: @btn-disabled-background-color;
+		border-color: @btn-disabled-border-color;
+		color: @btn-disabled-text-color;
+ 	}
+}
+
+.cl-button.btn-new {
+	background-position: 8px center, left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+	background-image: url("../images/button/btn_new.png"), linear-gradient(#fff, #f2f2f2);
+	color : @black;
+	border-color : #c5c5c5;
+	
+	&:not(.cl-disabled):hover{
+		font-weight : @font-weight-bold;
+		color : @black;
+	}
+	
+	&:focus, &.cl-focus{
+	}
+
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: url("../images/button/btn_new.png"), linear-gradient(#fff, #f2f2f2);
+		opacity: 0.3;
+	}
+	
+	&.cl-disabled{
+	}
+}
+
+.cl-button.btn-delete {
+	background-position: 8px center, left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+	background-image: url("../images/button/btn_del.png"), linear-gradient(#fff, #f2f2f2);
+	color : @black;
+	border-color : #c5c5c5;
+	
+	&:not(.cl-disabled):hover{
+		font-weight : @font-weight-bold;
+		color : @black;
+	}
+	
+	&:focus, &.cl-focus{
+	}
+
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: url("../images/button/btn_del.png"), linear-gradient(#fff, #f2f2f2);
+		opacity: 0.3;
+	}
+	
+	&.cl-disabled{
+	}
+}
+
+.cl-button.btn-delete-save {
+	color: @white;
+	border:none;
+	text-shadow: none;
+	background-position: 8px center, left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+	background-image: url("../images/button/btn_save.png"), linear-gradient(@primary, @primary);
+	
+	&:not(.cl-disabled):hover{
+		color: @white;
+		font-weight : @font-weight-bold;
+	}
+	
+	&:focus, &.cl-focus{
+	}
+
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: url("../images/button/btn_save.png"), linear-gradient(@primary, @primary);
+		opacity: 0.3;
+	}
+	
+	&.cl-disabled{
+	}
+}
+
+/* 저장 버튼 스타일 */  
+.cl-button.btn-save {
+	color: @white;
+	border:none;
+	text-shadow: none;
+	background-position: 8px center, left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+	background-image: url("../images/button/btn_save.png"), linear-gradient(@primary, @primary);
+	
+	&:not(.cl-disabled):hover{
+		color: @white;
+		font-weight : @font-weight-bold;
+	}
+	
+	&:focus, &.cl-focus{
+	}
+
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: url("../images/button/btn_save.png"), linear-gradient(@primary, @primary);
+		opacity: 0.3;
+	}
+	
+	&.cl-disabled{
+	}
+}
+
+/* 취소 버튼 스타일 */  
+.cl-button.btn-restore{
+	background-position: 8px center, left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+	background-image: url("../images/button/btn_restore.png"), linear-gradient(#fff, #f2f2f2);
+	color : @black;
+	border-color : #c5c5c5;
+	
+	&:not(.cl-disabled):hover{
+		font-weight : @font-weight-bold;
+		color : @black;
+	}
+	
+	&:focus, &.cl-focus{
+	}
+
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: url("../images/button/btn_restore.png"), linear-gradient(#fff, #f2f2f2);
+		opacity: 0.3;
+	}
+	
+	&.cl-disabled{
+	}
+}
+
+/* 조회 버튼 스타일 */ 
+.cl-button.btn-search {
+	color: @white;
+	border:none;
+	text-shadow: none;
+	background-position: 8px center, left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+	background-image: url("../images/button/btn_search.png"), linear-gradient(@primary, @primary);
+	&:not(.cl-disabled):hover{
+		color: @white;
+		font-weight : @font-weight-bold;
+	}
+	
+	&:focus, &.cl-focus{
+	}
+
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: url("../images/button/btn_search.png"), linear-gradient(@primary, @primary);
+		opacity: 0.3;
+	}
+	
+	&.cl-disabled{
+		//color:@btn-disabled-text-color;
+	}
+}
+
+/* button 돋보기 검색 */
+.cl-button.btn-pop-search, .cl-button.btn-pop-search:hover, .cl-button.btn-pop-search.cl-hover, .cl-button.btn-pop-search:active, .cl-button.btn-pop-search.cl-active {
+	background:url("../images/icon/ico-search2.png") no-repeat;
+	background-position: center;
+	background-color: #62a8ea;
+	border-style: none;
+	border-radius: 1px;
+	
+	&:hover {
+		background-color: #89BCEB;
+	}
+	&.cl-disabled {
+		border-color: #7B8390;
+		background-color: #BDC1C8;
+	}
+}
+
+/* 팝업화면 닫기 버튼 */
+.cl-button.btn-pop-close, .cl-button.btn-pop-close:hover, .cl-button.btn-pop-close.cl-hover, .cl-button.btn-pop-close:active, .cl-button.btn-pop-close.cl-active{
+//	color: #ffffff;
+	text-shadow: none;
+	background-image:linear-gradient(#D6E3F0, #ACC7E0);
+	border-color: #2070b8;
+}
+
+/* 조회조건 접기/펼치기 마이너스 버튼 */
+.cl-button.btn-header-minus, .cl-button.btn-header-minus:hover, .cl-button.btn-header-minus.cl-hover, .cl-button.btn-header-minus:active, .cl-button.btn-header-minus.cl-active {
+	border-style: none;
+	background-color: transparent;
+	background-image: url("../images/icon/ico-minus.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* 조회조건 접기/펼치기 플러스 버튼 */
+.cl-button.btn-header-plus, .cl-button.btn-header-plus:hover, .cl-button.btn-header-plus.cl-hover, .cl-button.btn-header-plus:active, .cl-button.btn-header-plus.cl-active {
+	border-style: none;
+	background-color: transparent;
+	background-image: url("../images/icon/ico-plus.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.btn-search-box-expand {
+    -webkit-animation:spin 1s linear;
+    -moz-animation:spin 1s linear;
+    animation:spin 1s linear;
+    
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+
+.btn-top-large-menu{
+	border:none;
+	background : none;
+	font-size : 16px;
+	font-weight : bold;
+	color:  @white;
+}
+
+.cl-button.btn-menu-path{
+	color : #000;
+	text-shadow: none;
+	text-align: left;
+	background-color: transparent;
+	background-image: none;
+	font-size : @h6-font-size;
+	border:none;
+	&:hover {
+		background-color: transparent;
+		background-image: none;
+		color : @secondary;
+	}
+	&.cl-disabled {
+	}
+}
+
+/* 팝업호출 버튼 스타일 */
+.cl-button.btn-pop, .cl-button.btn-pop:hover, .cl-button.btn-pop.cl-hover, .cl-button.btn-pop:active, .cl-button.btn-pop.cl-active{
+	color: #ffffff !important;
+	text-shadow: none;
+	text-align: center;
+	background-color: @secondary;
+	background-image: none;
+	border-color: #242D3E;
+	border-radius: 4px;
+	&:hover {
+		color: #FFFFFF;
+		background-color: #242D3E;
+	}
+	&.cl-disabled {
+		border-color: #7B8390;
+		background-color: #7B8390;
+	}
+}
+
+/* MDI 즐겨찾기 버튼 */
+.cl-button.btn-mdi-favor, .cl-button.btn-mdi-favor:hover, .cl-button.btn-mdi-favor.cl-hover, .cl-button.btn-mdi-favor:active, .cl-button.btn-mdi-favor.cl-active {
+	border-color: #DDDDDD;
+	border-radius: 1px;
+	background-color: #ffffff;
+	background-image: url("../images/menu/ico-bookmark.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	&:hover {
+		background-color: #E8EAEB;
+	}
+}
+/* MDI 화면Refresh 버튼 */
+.cl-button.btn-mdi-refresh, .cl-button.btn-mdi-refresh:hover, .cl-button.btn-mdi-refresh.cl-hover, .cl-button.btn-mdi-refresh:active, .cl-button.btn-mdi-refresh.cl-active {
+	border-color: #DDDDDD;
+	border-radius: 1px;
+	background-color: #ffffff;
+	background-image: url("../images/menu/ico-refresh.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	&:hover {
+		background-color: #E8EAEB;
+	}
+}
+/* MDI 전체닫기 버튼 */
+.cl-button.btn-mdi-closeall, .cl-button.btn-mdi-closeall:hover, .cl-button.btn-mdi-closeall.cl-hover, .cl-button.btn-mdi-closeall:active, .cl-button.btn-mdi-closeall.cl-active {
+	border-color: #DDDDDD;
+	border-radius: 1px;
+	background-color: #ffffff;
+	background-image: url("../images/menu/ico-close.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	&:hover {
+		background-color: #E8EAEB;
+	}
+}
+
+/* MDI 분할 버튼 */
+.cl-button.btn-mdi-divide, .cl-button.btn-mdi-divide:hover, .cl-button.btn-mdi-divide.cl-hover, .cl-button.btn-mdi-divide:active, .cl-button.btn-mdi-divide.cl-active {
+	border-color: #DDDDDD;
+	border-radius: 1px;
+	background-color: #ffffff;
+	background-image: url("../images/main/icon-layout-vertical.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size : 18px;
+	
+	&:hover {
+		background-color: #E8EAEB;
+	}
+}
+
+
+/* Button Icon Position */
+.cl-button.btn-icon {
+	background-position: center;
+}
+
+.cl-button.btn-icon-left {
+	background-position: 5px center;
+}
+
+.cl-button.btn-icon-right {
+	background-position: ~'calc(100%- 5px)' center;
+}
+
+/* Button Icon */
+.cl-button.btn-icon-close {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='18' height='18'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z' fill='rgba(85,89,99,1)'/%3E%3C/svg%3E") !important;
+}
+
+.cl-button.btn-movenext {
+	color: @white;
+	border:none;
+	text-shadow: none;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+	background-image: url("../images/icon/menu/btn_next.gif");
+	&:not(.cl-disabled):hover{
+		color: @white;
+		font-weight : @font-weight-bold;
+	}
+	
+	&:focus, &.cl-focus{
+	}
+
+	&:not(.cl-disabled).cl-activated, &:not(.cl-disabled):active {
+		background-image: url("../images/icon/menu/btn_next.gif");
+	}
+	
+	&.cl-disabled{
+		//color:@btn-disabled-text-color;
+	}
+}
+
+.splitterHorizontal {
+    display: inline-block;
+    border-width: 0 1px;
+    border-color: #dde0e7;
+    border-style: solid;
+    background-color: #f5f6fb;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    background-image:none;
+    border-radius:6px;
+	&:hover{
+		background-color: #eaeff9;
+		border-color: #c1c9d9;
+	}
+}
+
+.btnSplitterH {
+    width: 6px;
+    height: 40px;
+    position: relative;
+    top: 45%;
+    border-radius: 6px;
+    background-color: #b8bec8;
+    background-image:none;
+    border: 0;
+    cursor: pointer;
+	&:hover{
+		background-color: #3163c7;
+	}
+}
+
+.btn-common(@bg-color, @font-color) {
+	background: none;
+	border: none;
+	background-color: @bg-color;
+	border-radius: 16px;
+	color: @font-color;
+	padding: 5px;
+	
+	&:hover{
+		background-color: @bg-color;
+		color: @font-color;
+	}
+	
+	&:active{
+		background-color: @bg-color;
+		opacity: 0.5;
+		color: @font-color;
+	}
+}
+
+
+.cl-button.pink {
+	.btn-common(#FFA2A9, white);
+}
+
+.cl-button.green {
+	.btn-common(#61B6C3, white);
+}
+
+.cl-button.blue {
+	.btn-common(white, #174C7A);
+	border: solid 2px #174C7A;
+}
+
+.cl-button.gray {
+	.btn-common(white, #8A8B88);
+	border: solid 1px #8A8B88;
+}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e318ccca" version="1.0.0.0">
+  <head std:sid="head-fa96c35a">
+    <title>template102</title>
+    <screen std:sid="screen-21de67b2" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-34696539" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-f70f2c53" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-027fc54f" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-76dfbaed">
+      <cl:dataset std:sid="d-set-741e567b" id="dsJob">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-ff752969" name="CD_NM"/>
+          <cl:datacolumn std:sid="d-column-271cf556" name="CD"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-258675a6" id="dsEmp" info="EMPNO">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-d4e24a93" name="EMPNO" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-fe6cbf17" name="ENAME"/>
+          <cl:datacolumn std:sid="d-column-a6b42478" name="JOB"/>
+          <cl:datacolumn std:sid="d-column-b5000dbd" name="MGR" datatype="number"/>
+          <cl:datacolumn std:sid="d-column-cc5f1a0c" name="HIREDATE"/>
+          <cl:datacolumn std:sid="d-column-359fdfa7" name="SAL" datatype="decimal"/>
+          <cl:datacolumn std:sid="d-column-7a701430" name="COMM" datatype="decimal"/>
+          <cl:datacolumn std:sid="d-column-18ca17b9" name="DEPTNO" datatype="number"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-d6005456" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-8023eded" name="strEName"/>
+          <cl:datacolumn std:sid="d-column-0359a045" name="strJob"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-fzpm4w0i" id="subOnLoad" action="app/exam/data/temp/template.json" mediatype="application/x-www-form-urlencoded">
+        <cl:responsedata dataid="dsJob"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-f9533bk7" id="subList" action="app/exam/data/temp/template.json" mediatype="application/x-www-form-urlencoded">
+        <cl:requestdata dataid="dmParam"/>
+        <cl:responsedata dataid="dsEmp"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-m152171n" id="subSave" action="app/exam/data/temp/template.json" mediatype="application/x-www-form-urlencoded">
+        <cl:requestdata dataid="dsEmp"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="템플릿(그리드 다중행)"/>
+  </head>
+  <body std:sid="body-0d4597ef" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-ce018613" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-c1df7347" id="grpHeader" class="header-box">
+      <cl:verticaldata std:sid="v-data-b2724da9" width="1320px" height="67px" autosize="height"/>
+      <cl:udc std:sid="ud-control-79dd174f" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-b41a0317" width="1320px" height="30px"/>
+      </cl:udc>
+      <cl:group std:sid="group-463b34e9" id="grpSearch" class="search-box">
+        <cl:attribute name="mobile-column-count" value="2"/>
+        <cl:attribute name="tablet-column-count" value="2"/>
+        <cl:verticaldata std:sid="v-data-86075c8c" width="1320px" height="37px" autosize="height"/>
+        <cl:output std:sid="output-cdcc400f" value="사원명">
+          <cl:formdata std:sid="f-data-a8fbcab6" row="0" col="0"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-9708a920" id="ipbEName" fieldLabel="사원명">
+          <cl:attribute name="autoKeydownSearch" value="Y"/>
+          <cl:datamapbind property="value" category="PROPERTY" datacontrolid="dmParam" columnname="strEName"/>
+          <cl:formdata std:sid="f-data-7e44a59a" row="0" col="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-133195b8" value="직급">
+          <cl:formdata std:sid="f-data-b5eb4adc" row="0" col="2"/>
+        </cl:output>
+        <cl:combobox std:sid="c-box-c58827e2" id="cmbJob" fieldLabel="직급">
+          <cl:datamapbind property="value" category="PROPERTY" datacontrolid="dmParam" columnname="strJob"/>
+          <cl:formdata std:sid="f-data-cdd12c91" row="0" col="3"/>
+          <cl:item std:sid="t-item-a83082ff" label="전체" value=""/>
+          <cl:itemset datasetid="dsJob" label="CD_NM" value="CD"/>
+        </cl:combobox>
+        <cl:group std:sid="group-db847603" id="grp4">
+          <cl:formdata std:sid="f-data-1d2f7c5e" row="0" col="4" rowspan="1" colspan="2"/>
+          <cl:udc std:sid="ud-control-416f01a3" id="combtnsearch1" type="udc.com.comBtnSearch">
+            <cl:listener std:sid="listener-c0f1759d" name="search" handler="onCombtnsearchSearch"/>
+            <cl:formdata std:sid="f-data-0712c4df" halign="RIGHT" valign="FILL" width="60" row="0" col="1"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-6b407e27">
+            <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="3" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-d71c9c17" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" minlength="0"/>
+          <cl:columns length="120" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="200" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="transparent" minlength="0"/>
+          <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-30980bfb" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-bf050e04" id="grpData">
+      <cl:verticaldata std:sid="v-data-7cd5195c" width="1320px" height="608px"/>
+      <cl:group std:sid="group-df446704" id="grp3" class="grpTitle">
+        <cl:formdata std:sid="f-data-c0f2f636" row="0" col="0"/>
+        <cl:udc std:sid="ud-control-7f73012b" id="comtitle1" type="udc.com.comTitle">
+          <cl:formdata std:sid="f-data-cceebb3b" row="0" col="0"/>
+          <cl:property name="ctrl" value="grdMain" type="control"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-da07531f" id="combutton1" type="udc.com.comButton">
+          <cl:listener std:sid="listener-886a6ad1" name="save" handler="onComButtonSave"/>
+          <cl:formdata std:sid="f-data-e8883f97" row="0" col="1"/>
+          <cl:property name="grid" value="grdMain" type="control"/>
+          <cl:property name="focusColumnName" value="EMPNO" type="string"/>
+        </cl:udc>
+        <cl:formlayout std:sid="f-layout-05682657">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="260" unit="PIXEL" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:grid std:sid="grid-yf9p4oo0" id="grdMain" fieldLabel="직원 정보" datasetid="dsEmp" autofit="3, 4, 5, 6">
+        <cl:formdata std:sid="f-data-0763d055" row="1" col="0"/>
+        <cl:gridcolumn std:sid="g-column-x8ikfe38" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-w0p5fn6w" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-2121mphb" width="40px"/>
+        <cl:gridcolumn std:sid="g-column-4ea0f050"/>
+        <cl:gridcolumn std:sid="g-column-c9ffa02d"/>
+        <cl:gridcolumn std:sid="g-column-5d1fd393"/>
+        <cl:gridcolumn std:sid="g-column-26334cdf" width="120px"/>
+        <cl:gridheader std:sid="gh-band-ps1mzyt4">
+          <cl:gridrow std:sid="g-row-k20754x4" height="27px"/>
+          <cl:gridrow std:sid="g-row-35445f87"/>
+          <cl:gridcell std:sid="gh-cell-zu02ii6t" rowindex="0" colindex="0" rowspan="2" colspan="1" columntype="checkbox"/>
+          <cl:gridcell std:sid="gh-cell-268w017u" rowindex="0" colindex="1" rowspan="2" colspan="1" text="F"/>
+          <cl:gridcell std:sid="gh-cell-1e0e93aw" rowindex="0" colindex="2" rowspan="2" colspan="1" text="No"/>
+          <cl:gridcell std:sid="gh-cell-bb92f9ef" rowindex="0" colindex="3" class="require" targetcolumnname="EMPNO" text="사원번호"/>
+          <cl:gridcell std:sid="gh-cell-33b7c4fd" rowindex="0" colindex="4" targetcolumnname="ENAME" text="사원명"/>
+          <cl:gridcell std:sid="gh-cell-6eb8a382" rowindex="1" colindex="6" rowspan="1" colspan="1" targetcolumnname="DEPTNO" text="부서코드"/>
+          <cl:gridcell std:sid="gh-cell-e3c81989" rowindex="1" colindex="5" rowspan="1" colspan="1" targetcolumnname="COMM" text="성과금"/>
+          <cl:gridcell std:sid="gh-cell-032f5639" rowindex="1" colindex="4" rowspan="1" colspan="1" targetcolumnname="SAL" text="급여"/>
+          <cl:gridcell std:sid="gh-cell-915328fd" rowindex="1" colindex="3" rowspan="1" colspan="1" targetcolumnname="HIREDATE" text="입사일"/>
+          <cl:gridcell std:sid="gh-cell-f6f32820" rowindex="0" colindex="6" targetcolumnname="MGR" text="관리자 사원번호"/>
+          <cl:gridcell std:sid="gh-cell-9c104a6d" rowindex="0" colindex="5" targetcolumnname="JOB" text="직급"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-07825384">
+          <cl:gridrow std:sid="g-row-nh7gl17j" height="25px"/>
+          <cl:gridrow std:sid="g-row-ebf18d28"/>
+          <cl:gridcell std:sid="gd-cell-suahd082" rowindex="0" colindex="0" rowspan="2" colspan="1" style="text-align:center;" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-g2kiw0mg" rowindex="0" colindex="1" rowspan="2" colspan="1">
+            <cl:output std:sid="output-muxgqk04" style="text-align:center;"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-x45s4706" rowindex="0" colindex="2" rowspan="2" colspan="1" style="text-align:center;" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-bc4427a9" rowindex="0" colindex="3" columnname="EMPNO">
+            <cl:inputbox std:sid="i-box-525d5533" id="ipb7" style="text-align:center;" inputfilter="[0-9]"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-ac4fb608" rowindex="0" colindex="4" columnname="ENAME">
+            <cl:inputbox std:sid="i-box-511eb7c3" id="ipb8" style="text-align:center;"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-e9f2bc44" rowindex="1" colindex="6" rowspan="1" colspan="1" columnname="DEPTNO">
+            <cl:inputbox std:sid="i-box-28d0d782" id="ipb9" style="text-align:center;"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-ff98562f" rowindex="1" colindex="5" rowspan="1" colspan="1" columnname="COMM">
+            <cl:numbereditor std:sid="n-editor-7b405759" id="nbe2"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-ec14101d" rowindex="1" colindex="4" rowspan="1" colspan="1" columnname="SAL">
+            <cl:numbereditor std:sid="n-editor-c853ef60" id="nbe1"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-89c8adb2" rowindex="1" colindex="3" rowspan="1" colspan="1" columnname="HIREDATE">
+            <cl:dateinput std:sid="d-input-f0b83331" id="dti1" format="YYYY-MM-DD"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-8f04ba48" rowindex="0" colindex="6" columnname="MGR">
+            <cl:inputbox std:sid="i-box-5a4ace94" id="ipb10" style="text-align:center;"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-c9ae8163" rowindex="0" colindex="5" columnname="JOB">
+            <cl:combobox std:sid="c-box-1b1b3ee4" id="cmb1" style="text-align:center;">
+              <cl:itemset datasetid="dsJob" label="CD_NM" value="CD"/>
+            </cl:combobox>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-fec0997e">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-298eafaf"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

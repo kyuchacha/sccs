@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-644862fd" version="1.0.0.0">
+  <head std:sid="head-1d39893e">
+    <title>Template06</title>
+    <screen std:sid="screen-558b5595" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-592530ad" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-035aafb1" id="tablet" name="tablet" minwidth="800px" maxwidth="1019px" width="800px" height="768px"/>
+    <screen std:sid="screen-064a0667" id="mobile" name="mobile" maxwidth="799px" width="550px" height="768px"/>
+    <cl:model std:sid="model-cd87533e">
+      <cl:dataset std:sid="d-set-9ddaaea4" id="dsList">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-64be526a" name="funcName"/>
+          <cl:datacolumn std:sid="d-column-28673b5e" name="description"/>
+          <cl:datacolumn std:sid="d-column-2f14a57d" name="action"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="임베디드앱"/>
+  </head>
+  <body std:sid="body-46822e7d" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-7ee5f720" name="init" handler="onBodyInit"/>
+    <cl:udc std:sid="ud-control-90836987" id="appheader" type="udc.com.appHeader">
+      <cl:verticaldata std:sid="v-data-45409dfe" width="998px" height="30px" autosize="none"/>
+      <cl:property name="initializeYn" value="N" type="enumeration"/>
+      <cl:property name="groupBoxIds" value="grp1" type="string"/>
+    </cl:udc>
+    <cl:group std:sid="group-87605f82" id="grp1">
+      <cl:attribute name="fillLayout" value="Y"/>
+      <cl:verticaldata std:sid="v-data-6de99737" width="972px" height="645px"/>
+      <cl:group std:sid="group-7a5ba759" id="grp2">
+        <cl:formdata std:sid="f-data-7e3dbdc4" row="4" col="0" rowspan="1" colspan="2"/>
+        <cl:group std:sid="group-ba4bd0f2" id="grpFormCont" class="form-box">
+          <cl:formdata std:sid="f-data-5200a145" row="1" col="0"/>
+          <cl:output std:sid="output-5b7c19cc" id="otp25" value="시나리오">
+            <cl:formdata std:sid="f-data-25c1fad4" row="0" col="0"/>
+          </cl:output>
+          <cl:textarea std:sid="t-area-0e99c78e" id="txa1" readonly="true" value="1. 상단의 동작 버튼을 클릭한다. &#xD;&#xA;2. 임베디드앱 영역에 해당 화면이 호출되는것을 &#xD;&#xA;    확인한다.&#xD;&#xA;   [화면A호출] 버튼 클릭시, &#xD;&#xA;   전달되는 파라미터를 확인할 수 있다.&#xD;&#xA;3. 해당 스크립트내용을 확인한다.&#xD;&#xA;4. 스크립트내용을 복사하여 코딩에 활용한다.&#xD;&#xA;&#xD;&#xA;">
+            <cl:formdata std:sid="f-data-bc853d06" row="0" col="1"/>
+          </cl:textarea>
+          <cl:formlayout std:sid="f-layout-bea260c3" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+            <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:udc std:sid="ud-control-ca02002a" id="comformtitle4" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-815c937b" row="0" col="0"/>
+          <cl:property name="title" value="시나리오" type="string"/>
+        </cl:udc>
+        <cl:udc std:sid="ud-control-6f85feb7" id="comformtitle5" type="udc.com.comFormTitle">
+          <cl:formdata std:sid="f-data-f21eba4a" row="0" col="1"/>
+          <cl:property name="title" value="스크립트 내용" type="string"/>
+        </cl:udc>
+        <cl:textarea std:sid="t-area-06ebde89" id="txaScript">
+          <cl:formdata std:sid="f-data-67f159d6" row="1" col="1"/>
+        </cl:textarea>
+        <cl:formlayout std:sid="f-layout-518c9c6b">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="132" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-d715274a" id="grpFormFunc" class="form-box">
+        <cl:formdata std:sid="f-data-bdb3216b" row="1" col="0" rowspan="1" colspan="2"/>
+        <cl:output std:sid="output-f1ef5dff" id="otp1" style="text-align:center;" value="No">
+          <cl:formdata std:sid="f-data-9ac657a6" row="0" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-1117b763" id="otp3" style="text-align:center;" value="함수">
+          <cl:formdata std:sid="f-data-2e0e8208" row="0" col="1"/>
+        </cl:output>
+        <cl:output std:sid="output-23c3477f" id="otp4" style="text-align:center;" value="동작">
+          <cl:formdata std:sid="f-data-40d3a62a" row="0" col="3"/>
+        </cl:output>
+        <cl:output std:sid="output-005aea89" id="otp6" style="text-align:center;" value="1">
+          <cl:formdata std:sid="f-data-d22d3804" row="1" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-6a49ef6b" id="otp12" style="text-align:center;" value="2">
+          <cl:formdata std:sid="f-data-7480884e" row="2" col="0"/>
+        </cl:output>
+        <cl:output std:sid="output-eb55c5c0" id="otp20" style="text-align:center;" value="설명">
+          <cl:formdata std:sid="f-data-f6da2c5c" row="0" col="2"/>
+        </cl:output>
+        <cl:group std:sid="group-c2c3989e" id="grp4">
+          <cl:formdata std:sid="f-data-8ab98e5a" row="1" col="3"/>
+          <cl:button std:sid="button-950ead6a" id="btn2" class="btn-blue" value="화면A 호출">
+            <cl:listener std:sid="listener-7cdd74a7" name="click" handler="onBtn2Click"/>
+            <cl:xylayoutdata std:sid="xyl-data-f6e87fa3" top="0px" bottom="0px" left="10px" width="100px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:button std:sid="button-fb7fe166" id="btn4" class="btn-light" value="화면B 호출">
+            <cl:listener std:sid="listener-71c9ad04" name="click" handler="onBtn4Click"/>
+            <cl:xylayoutdata std:sid="xyl-data-d0e0c84a" top="0px" bottom="0px" left="120px" width="100px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-27d8eb7c"/>
+        </cl:group>
+        <cl:group std:sid="group-46da89fc" id="grp5">
+          <cl:formdata std:sid="f-data-5a471dc5" row="2" col="3"/>
+          <cl:button std:sid="button-23bd54eb" id="btn3" class="btn-blue" value="함수호출">
+            <cl:listener std:sid="listener-b6bcae44" name="click" handler="onBtn3Click"/>
+            <cl:xylayoutdata std:sid="xyl-data-0defc476" top="0px" bottom="0px" left="10px" width="100px" horizontalAnchor="LEFT" verticalAnchor="BOTH"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-35fc413f"/>
+        </cl:group>
+        <cl:inputbox std:sid="i-box-0b2e4107" id="ipb1" readonly="true" value="loadPage">
+          <cl:formdata std:sid="f-data-481aa579" row="1" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-96e4a552" id="ipb2" readonly="true" value="callAppMethod">
+          <cl:formdata std:sid="f-data-785a895d" row="2" col="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-a9a226a8" id="ipb3" readonly="true" value="임베디드앱에 화면호출">
+          <cl:formdata std:sid="f-data-791fd934" row="1" col="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-3944b860" id="ipb4" readonly="true" value="임베디드앱내의 함수호출">
+          <cl:formdata std:sid="f-data-ff3265a9" row="2" col="2"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-4415f6ad" top-margin="5px" right-margin="5px" bottom-margin="5px" left-margin="5px">
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="24" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="160" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:udc std:sid="ud-control-a4d56c82" id="comformtitle3" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-e646e714" row="0" col="0" rowspan="1" colspan="2"/>
+        <cl:property name="title" value="기능(함수)" type="string"/>
+      </cl:udc>
+      <cl:udc std:sid="ud-control-047c8532" id="comformtitle2" type="udc.com.comFormTitle">
+        <cl:formdata std:sid="f-data-927a4905" row="2" col="0" rowspan="1" colspan="2"/>
+        <cl:property name="title" value="예시(임베디드앱 영역)" type="string"/>
+      </cl:udc>
+      <cl:embeddedapp std:sid="e-app-81e803d5" id="eda1">
+        <cl:formdata std:sid="f-data-1434dceb" row="3" col="0" rowspan="1" colspan="2"/>
+      </cl:embeddedapp>
+      <cl:formlayout std:sid="f-layout-92c3a806">
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="90" unit="PIXEL" autoSizing="true" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="2" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-64f47a59"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

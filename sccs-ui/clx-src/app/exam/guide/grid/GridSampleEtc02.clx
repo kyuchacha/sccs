@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-b83d3e8c" version="1.0.3633">
+  <head std:sid="head-8238ff04">
+    <screen std:sid="screen-d6e8f719" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px"/>
+    <screen std:sid="screen-4ed25b5f" id="default" name="default" minwidth="1020px" maxwidth="1319px" width="1020px" height="540px"/>
+    <screen std:sid="screen-11987700" id="tablet" name="tablet" minwidth="760px" maxwidth="1019px" width="760px" height="820px"/>
+    <screen std:sid="screen-2dff609d" id="mobile" name="mobile" maxwidth="759px" width="320px" height="568px"/>
+    <cl:model std:sid="model-753f5a01">
+      <cl:dataset std:sid="d-set-7b0e574d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-b7e18eb7" name="gbnCd"/>
+          <cl:datacolumn std:sid="d-column-5c3a5f76" name="gbnName" datatype="expression" expression="switch(gbnCd) {&#xD;&#xA;case &quot;END&quot; : &quot;완료&quot;&#xD;&#xA;case &quot;ING&quot; : &quot;진행중&quot;&#xD;&#xA;case &quot;REQ&quot; : &quot;요청&quot;&#xD;&#xA;}"/>
+          <cl:datacolumn std:sid="d-column-2cb1e59c" name="bgcolor"/>
+          <cl:datacolumn std:sid="d-column-352a1fcc" name="color"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[END]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[pink]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[ING]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[skyblue]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[navy]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[REQ]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[gray]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[black]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[END]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[pink]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[END]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[pink]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="gbnCd"><![CDATA[ING]]></cl:datavalue>
+            <cl:datavalue columnname="bgcolor"><![CDATA[skyblue]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[navy]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-7d18ba9d" id="dsCombo">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-f0418f71" name="cd"/>
+          <cl:datacolumn std:sid="d-column-e7ac42e1" name="cdNm"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="cd"><![CDATA[END]]></cl:datavalue>
+            <cl:datavalue columnname="cdNm"><![CDATA[완료]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd"><![CDATA[ING]]></cl:datavalue>
+            <cl:datavalue columnname="cdNm"><![CDATA[진행중]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="cd"><![CDATA[REQ]]></cl:datavalue>
+            <cl:datavalue columnname="cdNm"><![CDATA[요청]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-comment="templates/CModTmpl.clx 템플릿 사용하여 작성 함." title="데이터셋의 익스프레션 예제"/>
+  </head>
+  <body std:sid="body-57afee22">
+    <cl:group std:sid="group-d1f5be83" id="grpHeader">
+      <cl:verticaldata std:sid="v-data-a4dd589f" width="400px" height="30px" autosize="height"/>
+      <cl:udc std:sid="ud-control-3acdc2bb" id="appheader1" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-80e24452" width="500px" height="30px"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-3e351495"/>
+    </cl:group>
+    <cl:group std:sid="group-72e4444f" id="grpData">
+      <cl:verticaldata std:sid="v-data-ef3a4607" width="400px" height="1800px" autosize="height"/>
+      <cl:group std:sid="group-b3d8d80f">
+        <cl:verticaldata std:sid="v-data-d00c67f8" width="1270px" height="120px" autosize="height"/>
+        <cl:group std:sid="group-7a48379f" id="grp1">
+          <cl:verticaldata std:sid="v-data-5f5680c1" width="1270px" height="40px" autosize="height"/>
+          <cl:output std:sid="output-bd633362" style="font-weight:bold; padding-left:1rem; font-size:2.5rem;" value="데이터 셋의 익스프레션">
+            <cl:formdata std:sid="f-data-d357b6a6" row="0" col="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-3535aed2" scrollable="false" hspace="5px" vspace="5px" right-margin="50px">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="100" unit="PIXEL" autoSizing="true" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:output std:sid="output-36cb926d" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="이 페이지는 데이터 셋의 익스프레션 기능에 대해 설명합니다.">
+          <cl:verticaldata std:sid="v-data-cb26d0fa" width="1210px" height="46px" autosize="height"/>
+        </cl:output>
+        <cl:verticallayout std:sid="v-layout-7c14d27b" spacing="20" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-36fd7cc9">
+        <cl:verticaldata std:sid="v-data-28f18b44" width="1270px" height="345px" autosize="height"/>
+        <cl:output std:sid="output-d78c906d" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="시나리오">
+          <cl:verticaldata std:sid="v-data-0ccc2823" width="100px" height="40px"/>
+        </cl:output>
+        <cl:output std:sid="output-5ed83aea" id="ipbScenario" style="padding-left:1rem; font-size:1rem;" class="opt-tmpl" value="1. 데이터셋의 컬럼 expression 사용방법 및 기능동작을 확인한다.&#xD;&#xA;2. 그리드내 콤보박스의 바인딩(label/value) 방법 및 기능동작을 확인한다.">
+          <cl:verticaldata std:sid="v-data-560570a9" width="1210px" height="107px" autosize="height"/>
+        </cl:output>
+        <cl:group std:sid="group-8f14d7fc" id="grp2" style="background-color:#dff7fb;">
+          <cl:verticaldata std:sid="v-data-b32de9ee" width="1100px" height="100px" autosize="height"/>
+          <cl:output std:sid="output-564d9426" style="font-weight:bold;" class="text-info opt-tmpl" value="추가설명">
+            <cl:verticaldata std:sid="v-data-076d9fe9" width="100px" height="25px"/>
+          </cl:output>
+          <cl:output std:sid="output-28ab6d03" class="text-info opt-tmpl" value="1. 데이터 셋 - 컬럼(expression), 콤보박스 - label / value 이용&#xD;&#xA;2. 데이터셋의 익스프레션을 이용하여 출력된 구분명과 콤보 구분명이 동일한지 확인한다.&#xD;&#xA;3. 그리드 행의 배경색 - 그리드를 선택한 후 바인딩 - 스타일속성 rowStyle(상대컬럼 바인딩) - background-color&#xD;&#xA;4. 그리드 열의 폰트색 - 그리드 편집기에서 열의 디테일 영역을 선택한 후 바인딩 - 스타일속성 - color(상대컬럼바인딩)">
+            <cl:verticaldata std:sid="v-data-37c1bfe5" width="100px" height="25px" autosize="height"/>
+          </cl:output>
+          <cl:verticallayout std:sid="v-layout-ec928def" leftmargin="30" rightmargin="30" topmargin="20" bottommargin="20"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-4fffe72b" spacing="20" topmargin="20" bottommargin="40"/>
+      </cl:group>
+      <cl:group std:sid="group-38132eaf">
+        <cl:attribute name="floating-header" value="true"/>
+        <cl:verticaldata std:sid="v-data-3deed623" width="1270px" height="1000px" autosize="height"/>
+        <cl:output std:sid="output-6ff41dc5" style="font-weight:bold; padding-left:1rem; font-size:1.75rem;" class="h1 pl-3 bg-primary text-white" value="기능 확인">
+          <cl:verticaldata std:sid="v-data-cebb26e3" width="1270px" height="40px" autosize="none"/>
+        </cl:output>
+        <cl:group std:sid="group-c852421b" id="grp3" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#dedede; border-right-width:1px; border-left-color:#dedede; border-right-color:#dedede; border-left-width:1px; border-top-style:solid; background-color:#F0F0F0; border-left-style:solid; border-bottom-width:1px; border-top-color:#dedede; border-bottom-style:solid;">
+          <cl:listener std:sid="listener-9a539dfd" name="click" handler="onGrp11Click"/>
+          <cl:verticaldata std:sid="v-data-153b5759" width="1210px" height="300px" autosize="height"/>
+          <cl:group std:sid="group-29a1815c" id="grp5">
+            <cl:verticaldata std:sid="v-data-159afb90" width="860px" height="250px" autosize="height"/>
+            <cl:output comment="optFunc" std:sid="output-bcf55a75" style="text-align:center;" class="opt-tmpl" value="&lt;기능 확인 컨트롤>">
+              <cl:expbind property="tooltip" category="PROPERTY" expression="#ipbScenario.value"/>
+              <cl:formdata std:sid="f-data-517acb4d" row="0" col="0"/>
+            </cl:output>
+            <cl:grid std:sid="grid-b4854dd5" id="grdList" fieldLabel="데이터셋의 익스프레션" readonly="true" datasetid="ds1">
+              <cl:formdata std:sid="f-data-cde305d0" row="1" col="0"/>
+              <cl:rowstyle>
+                <cl:relativebind property="background-color" category="STYLER" columnname="bgcolor"/>
+              </cl:rowstyle>
+              <cl:gridcolumn std:sid="g-column-e6d6af48"/>
+              <cl:gridcolumn std:sid="g-column-fc01e9bc"/>
+              <cl:gridcolumn std:sid="g-column-e01b48fb"/>
+              <cl:gridheader std:sid="gh-band-08901c39">
+                <cl:gridrow std:sid="g-row-32a88617" height="27px"/>
+                <cl:gridcell std:sid="gh-cell-418d8137" rowindex="0" colindex="0" targetcolumnname="gbnCd" sortable="false" filterable="false" text="구분"/>
+                <cl:gridcell std:sid="gh-cell-34261e54" rowindex="0" colindex="1" targetcolumnname="gbnName" sortable="false" filterable="false" text="구분명"/>
+                <cl:gridcell std:sid="gh-cell-182f22b0" rowindex="0" colindex="2" targetcolumnname="bgcolor" sortable="false" filterable="false" text="콤보 구분명"/>
+              </cl:gridheader>
+              <cl:griddetail std:sid="gd-band-f3c7424f">
+                <cl:gridrow std:sid="g-row-892e68ac"/>
+                <cl:gridcell std:sid="gd-cell-b9492390" rowindex="0" colindex="0" columnname="gbnCd">
+                  <cl:relativebind property="color" category="STYLER" columnname="color"/>
+                </cl:gridcell>
+                <cl:gridcell std:sid="gd-cell-29e9b88d" rowindex="0" colindex="1" columnname="gbnName"/>
+                <cl:gridcell std:sid="gd-cell-abdf3e57" rowindex="0" colindex="2" columnname="gbnCd">
+                  <cl:combobox std:sid="c-box-d7ccd6c2" id="cmb1">
+                    <cl:itemset datasetid="dsCombo" label="cdNm" value="cd"/>
+                  </cl:combobox>
+                </cl:gridcell>
+              </cl:griddetail>
+            </cl:grid>
+            <cl:formlayout std:sid="f-layout-0a2e3427" scrollable="false" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" left-margin="0px">
+              <cl:rows length="25" unit="PIXEL" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:rows length="1" unit="FRACTION" autoSizing="false" hidden="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:verticallayout std:sid="v-layout-93d454ee" leftmargin="30" rightmargin="30" topmargin="5" bottommargin="10"/>
+        </cl:group>
+        <cl:verticallayout std:sid="v-layout-216b8a05" spacing="15" topmargin="20" bottommargin="0"/>
+      </cl:group>
+      <cl:verticallayout std:sid="v-layout-8031eb1c" leftmargin="20" rightmargin="30" topmargin="30" bottommargin="20"/>
+    </cl:group>
+    <cl:verticallayout std:sid="v-layout-e062aef3"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

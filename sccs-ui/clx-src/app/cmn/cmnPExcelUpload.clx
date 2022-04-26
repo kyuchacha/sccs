@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-714cc2bf" version="1.0.0.0">
+  <head std:sid="head-2bacf21a">
+    <title>cmnPExcelUpload</title>
+    <screen std:sid="screen-eb627c1a" id="eXFrame" name="eXFrame" minwidth="1320px" width="1320px" height="680px" useCustomWidth="true" useCustomHeight="false" customHeight="600" customWidth="800"/>
+    <screen std:sid="screen-c8f6bd20" id="default" name="default" minwidth="1024px" maxwidth="1319px" width="1024px" height="768px" useCustomWidth="true" useCustomHeight="true" customHeight="450" customWidth="800"/>
+    <screen std:sid="screen-2fa70391" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-288a926b" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-b3531f0e">
+      <cl:dataset std:sid="d-set-a2ccf9e1" id="dsExcel" altercolumnlayout="client">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bf6c8178" name="CELL0"/>
+          <cl:datacolumn std:sid="d-column-da71043e" name="CELL1"/>
+          <cl:datacolumn std:sid="d-column-d2880c30" name="CELL2"/>
+          <cl:datacolumn std:sid="d-column-19d027cb" name="CELL3"/>
+          <cl:datacolumn std:sid="d-column-8850bc97" name="CELL4"/>
+          <cl:datacolumn std:sid="d-column-0c408a9b" name="CELL5"/>
+          <cl:datacolumn std:sid="d-column-7995091e" name="CELL6"/>
+          <cl:datacolumn std:sid="d-column-38cb0dd7" name="CELL7"/>
+          <cl:datacolumn std:sid="d-column-2a52e184" name="CELL8"/>
+          <cl:datacolumn std:sid="d-column-5efbe6e7" name="CELL9"/>
+          <cl:datacolumn std:sid="d-column-fc2f8d1c" name="CELL10"/>
+          <cl:datacolumn std:sid="d-column-52dab71f" name="CELL11"/>
+          <cl:datacolumn std:sid="d-column-cd6c63f0" name="CELL12"/>
+          <cl:datacolumn std:sid="d-column-53852eaa" name="CELL13"/>
+          <cl:datacolumn std:sid="d-column-22fe6b83" name="CELL14"/>
+          <cl:datacolumn std:sid="d-column-7fc4da27" name="CELL15"/>
+          <cl:datacolumn std:sid="d-column-0b38f405" name="CELL16"/>
+          <cl:datacolumn std:sid="d-column-5134d9d6" name="CELL17"/>
+          <cl:datacolumn std:sid="d-column-b4282124" name="CELL18"/>
+          <cl:datacolumn std:sid="d-column-7d6d924a" name="CELL19"/>
+          <cl:datacolumn std:sid="d-column-24a761f0" name="CELL20"/>
+          <cl:datacolumn std:sid="d-column-a44339f7" name="CELL21"/>
+          <cl:datacolumn std:sid="d-column-83434d69" name="CELL22"/>
+          <cl:datacolumn std:sid="d-column-6b414c13" name="CELL23"/>
+          <cl:datacolumn std:sid="d-column-add6b5a3" name="CELL24"/>
+          <cl:datacolumn std:sid="d-column-2ef5b0a8" name="CELL25"/>
+          <cl:datacolumn std:sid="d-column-4b7319b9" name="CELL26"/>
+          <cl:datacolumn std:sid="d-column-3560a2cb" name="CELL27"/>
+          <cl:datacolumn std:sid="d-column-35467ed7" name="CELL28"/>
+          <cl:datacolumn std:sid="d-column-3cc45948" name="CELL29"/>
+          <cl:datacolumn std:sid="d-column-f6d83321" name="CELL30"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-758ee4ca" id="dsHeaderColumns">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-db340352" name="CD_NM"/>
+          <cl:datacolumn std:sid="d-column-e86da150" name="CD"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-b295f9ad" id="dmColumn">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-58c419ee" name="H_0"/>
+          <cl:datacolumn std:sid="d-column-6de53a30" name="H_1"/>
+          <cl:datacolumn std:sid="d-column-71162832" name="H_2"/>
+          <cl:datacolumn std:sid="d-column-2f3b2164" name="H_3"/>
+          <cl:datacolumn std:sid="d-column-3cec4f99" name="H_4"/>
+          <cl:datacolumn std:sid="d-column-e8afcd21" name="H_5"/>
+          <cl:datacolumn std:sid="d-column-2021c2f0" name="H_6"/>
+          <cl:datacolumn std:sid="d-column-4e38b4bd" name="H_7"/>
+          <cl:datacolumn std:sid="d-column-558e89ab" name="H_8"/>
+          <cl:datacolumn std:sid="d-column-e245903f" name="H_9"/>
+          <cl:datacolumn std:sid="d-column-9b1fe6a5" name="H_10"/>
+          <cl:datacolumn std:sid="d-column-fc3f1b5d" name="H_11"/>
+          <cl:datacolumn std:sid="d-column-0eca0898" name="H_12"/>
+          <cl:datacolumn std:sid="d-column-bc9ed885" name="H_13"/>
+          <cl:datacolumn std:sid="d-column-795a07ce" name="H_14"/>
+          <cl:datacolumn std:sid="d-column-692884e2" name="H_15"/>
+          <cl:datacolumn std:sid="d-column-482bf3da" name="H_16"/>
+          <cl:datacolumn std:sid="d-column-413edc84" name="H_17"/>
+          <cl:datacolumn std:sid="d-column-b0eba55f" name="H_18"/>
+          <cl:datacolumn std:sid="d-column-e6ed860b" name="H_19"/>
+          <cl:datacolumn std:sid="d-column-28487b28" name="H_20"/>
+          <cl:datacolumn std:sid="d-column-012b8f89" name="H_21"/>
+          <cl:datacolumn std:sid="d-column-5f5cef1d" name="H_22"/>
+          <cl:datacolumn std:sid="d-column-725d627a" name="H_23"/>
+          <cl:datacolumn std:sid="d-column-de2856e6" name="H_24"/>
+          <cl:datacolumn std:sid="d-column-14e58afe" name="H_25"/>
+          <cl:datacolumn std:sid="d-column-2210fd2d" name="H_26"/>
+          <cl:datacolumn std:sid="d-column-f46aaebb" name="H_27"/>
+          <cl:datacolumn std:sid="d-column-1c295bde" name="H_28"/>
+          <cl:datacolumn std:sid="d-column-74aaaa10" name="H_29"/>
+          <cl:datacolumn std:sid="d-column-35a76ce7" name="H_30"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-33cd36af" id="dmParam">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-bd118e84" name="startRowIndex" defaultvalue="1"/>
+          <cl:datacolumn std:sid="d-column-a6a81630" name="startCellIndex" defaultvalue="0"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:datamap std:sid="d-map-424d4f7f" id="dmConfig">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-88d43b92" name="preventSelectionItem" datatype="string" defaultvalue="N"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-4a16d518" id="subUpload" action="/CmnExcelImport/import.do" mediatype="multipart/form-data">
+        <cl:requestdata dataid="dmParam"/>
+        <cl:responsedata dataid="dsExcel"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="엑셀 업로드팝업"/>
+  </head>
+  <body std:sid="body-d424f3c6" style="top:0px; left:0px; width:800px; height:600px;" visible="true">
+    <cl:listener std:sid="listener-eeeb85f6" name="load" handler="onBodyLoad"/>
+    <cl:group std:sid="group-228866ef" id="grp1" class="header-box">
+      <cl:formdata std:sid="f-data-0be1bfb5" row="0" col="0"/>
+      <cl:udc std:sid="ud-control-cc18e6d3" type="udc.com.appHeader">
+        <cl:verticaldata std:sid="v-data-547b17b3" width="790px" height="30px" autosize="none"/>
+        <cl:property name="visibleSearchButton" value="false" type="boolean"/>
+      </cl:udc>
+      <cl:verticallayout std:sid="v-layout-79805272" scrollable="false" spacing="0"/>
+    </cl:group>
+    <cl:group std:sid="group-e19b0e91" id="grp2">
+      <cl:formdata std:sid="f-data-806a54a9" row="1" col="0"/>
+      <cl:group std:sid="group-a7b195bf" id="grp3">
+        <cl:formdata std:sid="f-data-852daafd" row="1" col="0"/>
+        <cl:button std:sid="button-4d94704c" id="btnClose" class="btn-pop-close" value="화면닫기">
+          <cl:listener std:sid="listener-6a53dce9" name="click" handler="onBtnCloseClick"/>
+          <cl:formdata std:sid="f-data-e9561f96" row="0" col="0"/>
+        </cl:button>
+        <cl:button std:sid="button-85cd144e" id="btnSelect" class="btn-pop-close" value="자료 내려받기">
+          <cl:listener std:sid="listener-4268d4ee" name="click" handler="onBtnSelectClick"/>
+          <cl:formdata std:sid="f-data-f64a4f8f" row="0" col="2"/>
+        </cl:button>
+        <cl:fileinput std:sid="f-input-21d39ed0" id="fileinput1" visible="false" placeholder="엑셀업로드용" limitfileunit="mb" limitfilesize="20" acceptfile=".xls,.xlsx">
+          <cl:listener std:sid="listener-48ffd941" name="value-change" handler="onFileinput1ValueChange"/>
+          <cl:formdata std:sid="f-data-6fe11abc" row="0" col="1"/>
+        </cl:fileinput>
+        <cl:formlayout std:sid="f-layout-939ec664" top-margin="5px" right-margin="0px" bottom-margin="5px" left-margin="0px">
+          <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="70" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-7f6f4d8e" id="grpData">
+        <cl:formdata std:sid="f-data-1c492c96" row="0" col="0"/>
+        <cl:grid std:sid="grid-f8718b75" id="grdExl" fieldLabel="업로드목록" datasetid="dsExcel" showdeletedrow="false" autofit="none">
+          <cl:attribute name="columnSortFix" value="Y"/>
+          <cl:formdata std:sid="f-data-73e2b324" row="1" col="0"/>
+          <cl:gridcolumn std:sid="g-column-1133ece0" width="25px"/>
+          <cl:gridcolumn std:sid="g-column-65480312" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-8671c50a" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-328f32db" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-27b48d9e" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-3fd7047c" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-03a17e17" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-9f78ed41" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-7a64eace" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-47c9b48f" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-1872ea38" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-cf644336" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-ba2ca163" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-eb60f942" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-dd85ca37" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-5c0dcd83" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-8d632092" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-623ae0f2" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-5b344bad" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-96d0931e" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-712e9b79" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-1d765a3b" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-f5261dc9" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-979df89a" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-31273587" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-f63ef287" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-95ce5480" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-1f6b2e55" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-dfedc50b" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-a4642f58" width="150px"/>
+          <cl:gridcolumn std:sid="g-column-1f0b881a" width="150px"/>
+          <cl:gridheader std:sid="gh-band-4b72fcec">
+            <cl:gridrow std:sid="g-row-52503c77"/>
+            <cl:gridcell std:sid="gh-cell-520e7ddc" rowindex="0" colindex="1" sortable="false" text="">
+              <cl:combobox std:sid="c-box-5140b2e0" id="cmb1">
+                <cl:datamapbind property="value" category="PROPERTY" datacontrolid="dmColumn" columnname="H_0"/>
+                <cl:item std:sid="t-item-451a76ef" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-de1ba95c" rowindex="0" colindex="2" text="">
+              <cl:combobox std:sid="c-box-ae3d69e8" id="cmb2">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_1"/>
+                <cl:item std:sid="t-item-6d6d133e" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-22cceccf" rowindex="0" colindex="3" text="">
+              <cl:combobox std:sid="c-box-ccf2f2e4" id="cmb3">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_2"/>
+                <cl:item std:sid="t-item-cbb39f87" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-1f9161b7" rowindex="0" colindex="4" text="">
+              <cl:combobox std:sid="c-box-24cfb11f" id="cmb4">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_3"/>
+                <cl:item std:sid="t-item-43cbee20" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-703c714c" rowindex="0" colindex="5" text="">
+              <cl:combobox std:sid="c-box-55c4246b" id="cmb5">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_4"/>
+                <cl:item std:sid="t-item-6c5fd286" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-3b018b35" rowindex="0" colindex="6" text="">
+              <cl:combobox std:sid="c-box-325d3027" id="cmb6">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_5"/>
+                <cl:item std:sid="t-item-0be57ec3" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-341dc744" rowindex="0" colindex="7" text="">
+              <cl:combobox std:sid="c-box-fde2e288" id="cmb7">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_6"/>
+                <cl:item std:sid="t-item-0f6c248d" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-7993a80c" rowindex="0" colindex="8" text="">
+              <cl:combobox std:sid="c-box-f3113200" id="cmb8">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_7"/>
+                <cl:item std:sid="t-item-1120da87" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-3a6a74f7" rowindex="0" colindex="9" text="">
+              <cl:combobox std:sid="c-box-d9a6f8a7" id="cmb9">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_8"/>
+                <cl:item std:sid="t-item-37e3fa1d" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-4ca0ece4" rowindex="0" colindex="10" text="">
+              <cl:combobox std:sid="c-box-1ec41f1d" id="cmb10">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_9"/>
+                <cl:item std:sid="t-item-1bb96e69" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-e519e92d" rowindex="0" colindex="11" text="">
+              <cl:combobox std:sid="c-box-13780362" id="cmb11">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_10"/>
+                <cl:item std:sid="t-item-8dbfcda0" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-33b4b3f8" rowindex="0" colindex="12" text="">
+              <cl:combobox std:sid="c-box-d9dd781e" id="cmb12">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_11"/>
+                <cl:item std:sid="t-item-c9f85064" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-1f1edca7" rowindex="0" colindex="13" text="">
+              <cl:combobox std:sid="c-box-cc77b75d" id="cmb13">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_12"/>
+                <cl:item std:sid="t-item-ef9ca52b" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-d9c6f681" rowindex="0" colindex="14" text="">
+              <cl:combobox std:sid="c-box-82db0640" id="cmb14">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_13"/>
+                <cl:item std:sid="t-item-54c0323f" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-89be9054" rowindex="0" colindex="15" text="">
+              <cl:combobox std:sid="c-box-7f3970c3" id="cmb15">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_14"/>
+                <cl:item std:sid="t-item-3d40fec5" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-9e625dbb" rowindex="0" colindex="16" text="">
+              <cl:combobox std:sid="c-box-5893d1b5" id="cmb16">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_15"/>
+                <cl:item std:sid="t-item-34ac490a" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-3ac373fb" rowindex="0" colindex="17" text="">
+              <cl:combobox std:sid="c-box-52232a1e" id="cmb17">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_16"/>
+                <cl:item std:sid="t-item-eae88b3f" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-32375200" rowindex="0" colindex="18" text="">
+              <cl:combobox std:sid="c-box-db1adb80" id="cmb18">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_17"/>
+                <cl:item std:sid="t-item-9163d496" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-15220d3a" rowindex="0" colindex="19" text="">
+              <cl:combobox std:sid="c-box-06b2fd64" id="cmb19">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_18"/>
+                <cl:item std:sid="t-item-4b0c22dc" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-1c3065d2" rowindex="0" colindex="20" text="">
+              <cl:combobox std:sid="c-box-28abe799" id="cmb20">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_19"/>
+                <cl:item std:sid="t-item-0623a4a9" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-a65dbd04" rowindex="0" colindex="21" text="">
+              <cl:combobox std:sid="c-box-19479062" id="cmb21">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_20"/>
+                <cl:item std:sid="t-item-ff3fc458" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-230c63c6" rowindex="0" colindex="22" text="">
+              <cl:combobox std:sid="c-box-bd3ba553" id="cmb22">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_21"/>
+                <cl:item std:sid="t-item-0bb595c3" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-19b0d215" rowindex="0" colindex="23" text="">
+              <cl:combobox std:sid="c-box-5c2cd5f2" id="cmb23">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_22"/>
+                <cl:item std:sid="t-item-94627615" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-670571af" rowindex="0" colindex="24" text="">
+              <cl:combobox std:sid="c-box-89988768" id="cmb24">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_23"/>
+                <cl:item std:sid="t-item-f58e95ab" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-64b040e4" rowindex="0" colindex="25" text="">
+              <cl:combobox std:sid="c-box-ec5f6fa8" id="cmb25">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_24"/>
+                <cl:item std:sid="t-item-e8195a74" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-365dc6e5" rowindex="0" colindex="26" text="">
+              <cl:combobox std:sid="c-box-4447c974" id="cmb26">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_25"/>
+                <cl:item std:sid="t-item-6767e022" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-f9676a35" rowindex="0" colindex="27" text="">
+              <cl:combobox std:sid="c-box-42fd2781" id="cmb27">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_26"/>
+                <cl:item std:sid="t-item-e30283a2" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-da822e77" rowindex="0" colindex="28" text="">
+              <cl:combobox std:sid="c-box-992853a8" id="cmb28">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_27"/>
+                <cl:item std:sid="t-item-e8f3de61" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-b49da991" rowindex="0" colindex="29" text="">
+              <cl:combobox std:sid="c-box-19a7453a" id="cmb29">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_28"/>
+                <cl:item std:sid="t-item-2f9fe066" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-69099b16" rowindex="0" colindex="30" text="">
+              <cl:combobox std:sid="c-box-b881b93d" id="cmb30">
+                <cl:datamapbind property="value" datacontrolid="dmColumn" columnname="H_29"/>
+                <cl:item std:sid="t-item-e9a4f85c" label="" value=""/>
+                <cl:itemset datasetid="dsHeaderColumns" label="CD_NM" value="CD"/>
+              </cl:combobox>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gh-cell-658e7f8e" rowindex="0" colindex="0" columntype="checkbox"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-d94d989a">
+            <cl:gridrow std:sid="g-row-1644a94b"/>
+            <cl:gridcell std:sid="gd-cell-78901890" rowindex="0" colindex="1" columnname="CELL0">
+              <cl:inputbox std:sid="i-box-b2dc47cd" id="ipb1"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-6b89f87e" rowindex="0" colindex="2" columnname="CELL1">
+              <cl:inputbox std:sid="i-box-60d05d02" id="ipb2"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-e67dee1b" rowindex="0" colindex="3" columnname="CELL2">
+              <cl:inputbox std:sid="i-box-bb06c1e1" id="ipb3"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-f4ce9fab" rowindex="0" colindex="4" columnname="CELL3">
+              <cl:inputbox std:sid="i-box-67a4f077" id="ipb4"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-968dc6b1" rowindex="0" colindex="5" columnname="CELL4">
+              <cl:inputbox std:sid="i-box-f593b00b" id="ipb5"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-1a0c7c2c" rowindex="0" colindex="6" columnname="CELL5">
+              <cl:inputbox std:sid="i-box-63244f39" id="ipb6"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-23097901" rowindex="0" colindex="7" columnname="CELL6">
+              <cl:inputbox std:sid="i-box-58fa260e" id="ipb7"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-2543e63b" rowindex="0" colindex="8" columnname="CELL7">
+              <cl:inputbox std:sid="i-box-21327d97" id="ipb8"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-40ee949e" rowindex="0" colindex="9" columnname="CELL8">
+              <cl:inputbox std:sid="i-box-a2d3d6c2" id="ipb9"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-40cc0e81" rowindex="0" colindex="10" columnname="CELL9">
+              <cl:inputbox std:sid="i-box-7ad273c5" id="ipb10"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a003b2be" rowindex="0" colindex="11" columnname="CELL10">
+              <cl:inputbox std:sid="i-box-7845f727" id="ipb11"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-b436b261" rowindex="0" colindex="12" columnname="CELL11">
+              <cl:inputbox std:sid="i-box-9583bbd3" id="ipb12"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-45b61f5c" rowindex="0" colindex="13" columnname="CELL12">
+              <cl:inputbox std:sid="i-box-26813a86" id="ipb13"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-e5cc0871" rowindex="0" colindex="14" columnname="CELL13">
+              <cl:inputbox std:sid="i-box-f13fce7a" id="ipb14"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-2ebbdb94" rowindex="0" colindex="15" columnname="CELL14">
+              <cl:inputbox std:sid="i-box-ab156d3f" id="ipb15"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a5877966" rowindex="0" colindex="16" columnname="CELL15">
+              <cl:inputbox std:sid="i-box-f551073d" id="ipb16"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-e619cbbd" rowindex="0" colindex="17" columnname="CELL16">
+              <cl:inputbox std:sid="i-box-6ca41030" id="ipb17"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-95c4c702" rowindex="0" colindex="18" columnname="CELL17">
+              <cl:inputbox std:sid="i-box-2b324fbc" id="ipb18"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-0e560850" rowindex="0" colindex="19" columnname="CELL18">
+              <cl:inputbox std:sid="i-box-cdf02ce4" id="ipb19"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-c87631c5" rowindex="0" colindex="20" columnname="CELL19">
+              <cl:inputbox std:sid="i-box-e4095b27" id="ipb20"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-117fa69b" rowindex="0" colindex="21" columnname="CELL20">
+              <cl:inputbox std:sid="i-box-f1c1fae1" id="ipb21"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-505ecf67" rowindex="0" colindex="22" columnname="CELL21">
+              <cl:inputbox std:sid="i-box-5607c632" id="ipb22"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-3dd376cf" rowindex="0" colindex="23" columnname="CELL22">
+              <cl:inputbox std:sid="i-box-0f36e8cb" id="ipb23"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-82cce76a" rowindex="0" colindex="24" columnname="CELL23">
+              <cl:inputbox std:sid="i-box-dc4c7cf9" id="ipb24"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-dfb636f7" rowindex="0" colindex="25" columnname="CELL24">
+              <cl:inputbox std:sid="i-box-a0ccc046" id="ipb25"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-c84205ae" rowindex="0" colindex="26" columnname="CELL25">
+              <cl:inputbox std:sid="i-box-f62e2174" id="ipb26"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-9674179e" rowindex="0" colindex="27" columnname="CELL26">
+              <cl:inputbox std:sid="i-box-9949829a" id="ipb27"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-a5e348b9" rowindex="0" colindex="28" columnname="CELL27">
+              <cl:inputbox std:sid="i-box-f3b1a045" id="ipb28"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-e7365d9b" rowindex="0" colindex="29" columnname="CELL28">
+              <cl:inputbox std:sid="i-box-4541fdcc" id="ipb29"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-356a99d1" rowindex="0" colindex="30" columnname="CELL29">
+              <cl:inputbox std:sid="i-box-b4754dcc" id="ipb30"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gd-cell-17f16b71" rowindex="0" colindex="0" columntype="checkbox"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:group std:sid="group-18123090" id="grp4">
+          <cl:attribute name="not_responsive_target" value="true"/>
+          <cl:formdata std:sid="f-data-ff65ef04" row="0" col="0"/>
+          <cl:group std:sid="group-7d300632" id="grp5">
+            <cl:formdata std:sid="f-data-a5068c22" row="0" col="2"/>
+            <cl:button std:sid="button-3fd4ce64" id="btnOpen" value="파일열기">
+              <cl:listener std:sid="listener-6606c3b2" name="click" handler="onBtnOpenClick"/>
+              <cl:formdata std:sid="f-data-59fb3f03" row="0" col="0"/>
+            </cl:button>
+            <cl:button std:sid="button-a9f3a04d" id="btnDelete" class="btn-delete" value="삭제">
+              <cl:listener std:sid="listener-4e69fd36" name="click" handler="onBtnDeleteClick"/>
+              <cl:formdata std:sid="f-data-66917786" row="0" col="1"/>
+            </cl:button>
+            <cl:formlayout std:sid="f-layout-2d449466" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="60" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-3bab8f35" id="grp6">
+            <cl:formdata std:sid="f-data-fe07fb34" row="0" col="1"/>
+            <cl:output std:sid="output-a5744b23" id="opt3" style="font-size:9pt;" value="[">
+              <cl:formdata std:sid="f-data-30b748fb" row="0" col="0"/>
+            </cl:output>
+            <cl:output std:sid="output-e2ef941e" id="opt4" style="font-size:9pt; text-align:right;" value="]">
+              <cl:formdata std:sid="f-data-6dd8721a" row="0" col="2"/>
+            </cl:output>
+            <cl:output std:sid="output-0a858444" id="optRowCount" style="font-size:9pt; text-align:center;">
+              <cl:expbind property="value" category="PROPERTY" expression="#dsExcel.getRowCount()"/>
+              <cl:formdata std:sid="f-data-05cfdd1a" row="0" col="1"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-1790f938" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="5" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="5" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:udc std:sid="ud-control-0c9e4aae" id="comtitle1" type="udc.com.comTitle">
+            <cl:formdata std:sid="f-data-28a1c4de" row="0" col="0"/>
+            <cl:property name="showExportExcel" value="false" type="boolean"/>
+            <cl:property name="ctrl" value="grdExl" type="control"/>
+          </cl:udc>
+          <cl:formlayout std:sid="f-layout-3c6bb5b8">
+            <cl:rows length="20" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="80" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+            <cl:columns length="150" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-d579cc0e">
+          <cl:rows length="20" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-87efd91b" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:formlayout std:sid="f-layout-95913bc9">
+      <cl:rows length="30" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+      <cl:rows length="1" unit="FRACTION"/>
+      <cl:columns length="1" unit="FRACTION"/>
+    </cl:formlayout>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
