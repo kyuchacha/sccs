@@ -15,6 +15,7 @@
 		<egovframework.rte.version>3.8.0</egovframework.rte.version>
 	</properties>
 	
+	
  
 	<repositories>
 		<repository>
@@ -494,7 +495,7 @@
  					<goal>copy-resources</goal>
  				</goals>
  					<configuration>
- 						<outputDirectory>${basedir}/target/sccs_its/WEB-INF/classes</outputDirectory>
+ 						<outputDirectory>${basedir}/target/{Web Project Deploy Name}/WEB-INF/classes</outputDirectory>
  						<resources>
  							<resource>
  								<directory>exbuilder/config</directory>
@@ -512,10 +513,10 @@
  					<goal>copy-resources</goal>
  				</goals>
  				<configuration>
- 					<outputDirectory>${basedir}/target/sccs_its/ui</outputDirectory>
+ 					<outputDirectory>${basedir}/target/{Web Project DeployName}/ui</outputDirectory>
  					<resources>
  						<resource>
-	 						<directory>.exbuilder-fragments/sccs_ui</directory>
+	 						<directory>.exbuilder-fragments/{eXbuilder6 Project Name}</directory>
 	 						<includes>
 	 							<include>env.json</include>
 	 						</includes>
