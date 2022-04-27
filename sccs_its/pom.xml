@@ -504,7 +504,7 @@
  					<goal>copy-resources</goal>
  				</goals>
  					<configuration>
- 						<outputDirectory>${basedir}/target/sccs_its/WEB-INF/classes</outputDirectory>
+ 						<outputDirectory>D:/git_project/sccs/sccs_its/target/sccs_its-1.0.0/WEB-INF/classes</outputDirectory>
  						<resources>
  							<resource>
  								<directory>exbuilder/config</directory>
@@ -522,7 +522,7 @@
  					<goal>copy-resources</goal>
  				</goals>
  				<configuration>
- 					<outputDirectory>${basedir}/target/sccs_its/ui</outputDirectory>
+ 					<outputDirectory>D:/git_project/sccs/sccs_its/target/sccs_its-1.0.0/sccs_its/ui</outputDirectory>
  					<resources>
  						<resource>
 	 						<directory>.exbuilder-fragments/sccs_ui</directory>
