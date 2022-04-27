@@ -522,7 +522,7 @@
  					<goal>copy-resources</goal>
  				</goals>
  				<configuration>
- 					<outputDirectory>D:/git_project/sccs/sccs_its/target/sccs_its-1.0.0/sccs_its/ui</outputDirectory>
+ 					<outputDirectory>D:/git_project/sccs/sccs_ui/clx-build</outputDirectory>
  					<resources>
  						<resource>
 	 						<directory>.exbuilder-fragments/sccs_ui</directory>
