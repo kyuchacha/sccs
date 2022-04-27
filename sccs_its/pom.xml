@@ -15,7 +15,16 @@
 		<egovframework.rte.version>3.8.0</egovframework.rte.version>
 	</properties>
 	
-	
+	<distributionManagement>
+		 <repository>
+		 	<uniqueVersion>false</uniqueVersion>
+		 	<id>corp1</id>
+		 	<name>Corporate Repository</name>
+		 	<url>file://D:/20220427</url> <!-- 배포할 경로 -->
+			 <layout>default</layout>
+		 </repository>
+	</distributionManagement>
+			
  
 	<repositories>
 		<repository>
@@ -495,7 +504,7 @@
  					<goal>copy-resources</goal>
  				</goals>
  					<configuration>
- 						<outputDirectory>${basedir}/target/{Web Project Deploy Name}/WEB-INF/classes</outputDirectory>
+ 						<outputDirectory>${basedir}/target/sccs_its/WEB-INF/classes</outputDirectory>
  						<resources>
  							<resource>
  								<directory>exbuilder/config</directory>
@@ -513,10 +522,10 @@
  					<goal>copy-resources</goal>
  				</goals>
  				<configuration>
- 					<outputDirectory>${basedir}/target/{Web Project DeployName}/ui</outputDirectory>
+ 					<outputDirectory>${basedir}/target/sccs_its/ui</outputDirectory>
  					<resources>
  						<resource>
-	 						<directory>.exbuilder-fragments/{eXbuilder6 Project Name}</directory>
+	 						<directory>.exbuilder-fragments/sccs_ui</directory>
 	 						<includes>
 	 							<include>env.json</include>
 	 						</includes>
